@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Apache 2.0 License
 
-from __future__ import annotations
 from typing import List, Dict, Any
 from src.core.base.BaseAgent import BaseAgent
 from src.core.base.utilities import as_tool

@@ -20,16 +20,38 @@ Phase 21: MsgSpec high-performance serialization.
 """
 
 from src.infrastructure.storage.serialization.fast_serializer import (
-    BinarySerializer, CBORSerializer, JSONSerializer, MsgPackSerializer,
-    PickleSerializer, SerializationFormat, Serializer, SerializerRegistry,
-    SerializerStats, fast_deserialize, fast_serialize, from_json, from_msgpack,
-    get_serializer_registry, to_json, to_msgpack)
+    BinarySerializer,
+    CBORSerializer,
+    JSONSerializer,
+    MsgPackSerializer,
+    PickleSerializer,
+    SerializationFormat,
+    Serializer,
+    SerializerRegistry,
+    SerializerStats,
+    fast_deserialize,
+    fast_serialize,
+    from_json,
+    from_msgpack,
+    get_serializer_registry,
+    to_json,
+    to_msgpack,
+)
+
 from src.infrastructure.storage.serialization.msg_spec_serializer import (  # noqa: F401
     # Availability; Encoders; Chat helpers; Benchmarking
-    MSGSPEC_AVAILABLE, BenchmarkResult, JSONEncoder, MsgPackEncoder,
-    TypedSerializer, benchmark_serialization, decode_chat_response,
-    decode_stream_chunk, encode_chat_request, is_msgspec_available,
-    require_msgspec)
+    MSGSPEC_AVAILABLE,
+    BenchmarkResult,
+    JSONEncoder,
+    MsgPackEncoder,
+    TypedSerializer,
+    benchmark_serialization,
+    decode_chat_response,
+    decode_stream_chunk,
+    encode_chat_request,
+    is_msgspec_available,
+    require_msgspec,
+)
 
 __all__ = [
     # Phase 19: FastSerializer
@@ -65,28 +87,17 @@ __all__ = [
 
 # Conditionally export Struct types from MsgSpecSerializer
 if MSGSPEC_AVAILABLE:
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ChatCompletionChunk as ChatCompletionChunk  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ChatCompletionRequest as ChatCompletionRequest  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ChatCompletionResponse as ChatCompletionResponse  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ChatMessage as ChatMessage  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        EmbeddingRequest as EmbeddingRequest  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        EmbeddingResponse as EmbeddingResponse  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        FunctionCall as FunctionCall  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        FunctionDefinition as FunctionDefinition  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        Role as Role  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ToolCall as ToolCall  # noqa: F401
-    from src.infrastructure.storage.serialization.msg_spec_serializer import \
-        ToolDefinition as ToolDefinition  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ChatCompletionChunk  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ChatCompletionRequest  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ChatCompletionResponse  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ChatMessage  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import EmbeddingRequest  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import EmbeddingResponse  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import FunctionCall  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import FunctionDefinition  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import Role  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ToolCall  # noqa: F401
+    from src.infrastructure.storage.serialization.msg_spec_serializer import ToolDefinition  # noqa: F401
 
     __all__.extend(
         [

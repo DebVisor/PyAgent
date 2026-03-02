@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Alerting.py module.
@@ -6,7 +7,6 @@ Alerting.py module.
 # Copyright 2026 PyAgent Authors
 # Logic for thresholds, alerting, and retention enforcement.
 
-from __future__ import annotations
 
 import logging
 from datetime import datetime

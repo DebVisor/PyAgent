@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,12 +19,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # limitations under the License.
 
-"""
-Autonomous Fleet Self-Improvement Loop.
-Scans the workspace for issues, applies autonomous fixes, and harvests external intelligence.
-"""
-
-from __future__ import annotations
 import os
 import sys
 
@@ -32,16 +27,16 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from src.core.base.version import VERSION
-import json
-import time
-import logging
-import argparse
-import subprocess
-import re
-from pathlib import Path
-from typing import List, Dict, Any
-from src.infrastructure.fleet.FleetManager import FleetManager
+    from src.core.base.version import VERSION
+    import json
+    import time
+    import logging
+    import argparse
+    import subprocess
+    import re
+    from pathlib import Path
+    from typing import List, Dict, Any
+    from src.infrastructure.fleet.FleetManager import FleetManager
 
 # Phase 120: Load environment variables if available
 try:
@@ -52,7 +47,20 @@ except ImportError:
 
 __version__ = VERSION
 
-def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_path: str = None, current_cycle: int = 1, model_name: str = "gemini-3-flash") -> None:
+"""
+Autonomous Fleet Self-Improvement Loop.
+Scans the workspace for issues, applies autonomous fixes, and harvests external intelligence.
+"""
+
+
+def run_cycle(
+    fleet: FleetManager,
+    root: str,
+    prompt_path: str | None = None,
+    context_path: str | None = None,
+    current_cycle: int = 1,
+    model_name: str = "gemini-3-flash"
+) -> None:
     """Run a single improvement cycle."""
     start_time = time.time()
     print(f"\n--- CYCLE {current_cycle} STARTING ---")
@@ -61,10 +69,10 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
     # 0. Load Strategic Directive / Directives
     strategic_note = ""
     target_dirs = ["src"]
-    
+
     # Load and merge both prompt and context files
     directive_files = [f for f in [prompt_path, context_path] if f]
-    
+
     for directive_file in directive_files:
         p_path = Path(directive_file)
         if not p_path.is_absolute():
@@ -75,7 +83,7 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
                 strategic_note += "\n" + file_content
             except Exception as e:
                 print(f" - Failed to load {directive_file}: {e}")
-    
+
     # Parse merged directives
     if strategic_note:
         # Parse @focus: markers to reduce scan surface (Cycle Time Optimization)
@@ -96,9 +104,9 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
             else:
                 target_dirs = [d.strip() for d in focus_val.split(",") if d.strip()]
             print(f" - Directive Focus: {target_dirs}")
-        
+
         # Parse and execute @cmd: markers (Proactive Fixes)
-        import shlex
+            import shlex
         cmd_matches = re.findall(r"@cmd:\s*(.*)", strategic_note, re.IGNORECASE)
         for cmd in cmd_matches:
             clean_cmd = cmd.strip().strip('"').strip("'")
@@ -124,21 +132,20 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
         combined_stats["issues_found"] += stats.get("issues_found", 0)
         combined_stats["fixes_applied"] += stats.get("fixes_applied", 0)
         combined_stats["details"].extend(stats.get("details", []))
-    
+
     stats = combined_stats
-    
     print("\nScan complete:")
     print(f" - Files Scanned: {stats['files_scanned']}")
     print(f" - Issues Found: {stats['issues_found']}")
     print(f" - Autonomous Fixes Applied: {stats['fixes_applied']}")
-    
+
     # 2. Log what is 'broken' (issues not fixed)
     broken_items = []
     for detail in stats['details']:
         unfixed = [i for i in detail['issues'] if not i.get('fixed')]
         if unfixed:
             broken_items.append({"file": detail['file'], "remaining_issues": unfixed})
-    
+
     if broken_items:
         print("\n--- Remaining Technical Debt / Issues ---")
         for item in broken_items:
@@ -146,7 +153,7 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
             # Filter matches for the orchestrator itself if they are false positives (Phase 149)
             if "run_fleet_self_improvement.py" in item['file']:
                 issues_to_print = [issue for issue in item['remaining_issues'] if "subprocess.run" not in str(issue) and "time.sleep" not in str(issue)]
-            
+
             if issues_to_print:
                 print(f"File: {item['file']}")
                 for issue in issues_to_print:
@@ -163,7 +170,7 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
         with open(library_path) as f:
             library = json.load(f)
         print(f" - Fleet Intelligence Library contains {len(library)} indexed agents.")
-        
+
         # Performance/Complexity check
         high_comp = [e for e in library if e.get("taxonomy", {}).get("logic_complexity") == "High"]
         if high_comp:
@@ -178,13 +185,13 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
     with open(doc_path, "w", encoding="utf-8") as f:
         f.write("# Swarm Auto-Generated Documentation\n\n")
         f.write(doc_res)
-    
+
     # Re-trigger maintenance log if it was overwritten
     maintenance_summary = f"\n## {time.strftime('%Y-%m-%d')} - Maintenance Cycle Summary\n"
     maintenance_summary += f"The fleet's SelfImprovementOrchestrator completed a cycle over {stats['files_scanned']} files. Re-stabilization phase engaged.\n"
     with open(doc_path, "a", encoding="utf-8") as f:
         f.write(maintenance_summary)
-        
+
     print(f" - Updated documentation logged to {doc_path}")
 
     # 4. Explainability Log
@@ -203,10 +210,10 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
     test_result = "By using compressed sharding and adler32 hashing for high-speed indexing."
     fleet.recorder.record_interaction("internal_fleet_optimizer", "logic-v1", test_prompt, test_result)
     print(" - Interaction archived to compressed local shard.")
-    
+
     # 6. External Federated Learning (Phase 112+)
     consult_external_models(fleet, broken_items, prompt_path=prompt_path, model_name=model_name)
-    
+
     # 7. Knowledge Synthesis (Phase 108)
     print("\n[Intelligence] Synthesizing collective knowledge...")
     try:
@@ -224,19 +231,19 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
         if p_path.exists():
             print(f"\n[Maintenance] Area '@focus: {target_dirs}' is CLEAN. Pruning directive...")
             content = p_path.read_text(encoding="utf-8")
-            
+
             # Remove ONLY the first focus and commands that are now verified (Phase 135 fix)
             # DYNAMIC MULTI-LINE PRUNING (Phase 141)
             new_content = re.sub(r"^@focus:.*?\].*?\n", "", content, count=1, flags=re.MULTILINE | re.IGNORECASE | re.DOTALL)
             if new_content == content:
                 # Fallback if no brackets
                 new_content = re.sub(r"^@focus:.*$\n?", "", content, count=1, flags=re.MULTILINE | re.IGNORECASE)
-            
+
             new_content = re.sub(r"^@cmd:.*$\n?", "", new_content, count=1, flags=re.MULTILINE | re.IGNORECASE)
             # For python blocks, we use DOTALL so we need to be careful. 
             # We'll remove the first python block if it exists.
             new_content = re.sub(r"^@python:\s*\"\"\"(.*?)\"\"\"\n?", "", new_content, count=1, flags=re.DOTALL | re.IGNORECASE)
-            
+
             # Also remove completed task markers if they exist
             new_content = re.sub(r"^- \[x\].*$\n?", "", new_content, flags=re.MULTILINE | re.IGNORECASE)
             new_content = re.sub(r"^# DONE.*$\n?", "", new_content, flags=re.MULTILINE | re.IGNORECASE)
@@ -248,7 +255,13 @@ def run_cycle(fleet: FleetManager, root: str, prompt_path: str = None, context_p
     duration = time.time() - start_time
     print(f"\n=== CYCLE {current_cycle} COMPLETE (Time spent: {duration:.2f}s) ===")
 
-def consult_external_models(fleet: FleetManager, broken_items: list[dict[str, Any]], prompt_path: str = None, model_name: str = "gemini-3-flash") -> list[dict[str, str]]:
+
+def consult_external_models(
+    fleet: FleetManager,
+    broken_items: list[dict[str, Any]],
+    prompt_path: str | None = None,
+    model_name: str = "gemini-3-flash"
+) -> list[dict[str, str]]:
     """
     Queries external model backends (Ollama, Gemini, and Agentic Copilot) 
     to extract lessons for the fleet.
@@ -256,11 +269,11 @@ def consult_external_models(fleet: FleetManager, broken_items: list[dict[str, An
     import requests
     from src.infrastructure.backend.LLMClient import LLMClient
     from pathlib import Path
-    
+
     ai = LLMClient(requests, workspace_root=str(fleet.workspace_root))
-    
+
     print("\n[Federated Learning] Consulting external models for specialized lessons...")
-    
+
     # Context of current health
     if broken_items:
         context = f"The fleet currently has issues in {len(broken_items)} files. Top issue: {broken_items[0]['file']}."
@@ -275,7 +288,7 @@ def consult_external_models(fleet: FleetManager, broken_items: list[dict[str, An
             note_path = Path(fleet.workspace_root) / prompt_path
     else:
         note_path = Path(fleet.workspace_root) / "docs" / "notes" / "note.txt"
-        
+
     if note_path.exists():
         try:
             strategic_note = note_path.read_text(encoding="utf-8")
@@ -331,8 +344,9 @@ def consult_external_models(fleet: FleetManager, broken_items: list[dict[str, An
             print(f" - Successfully integrated {len(lessons)} external insights into Hive Mind.")
         except Exception as e:
             print(f" - Failed to contribute insights to Intelligence Orchestrator: {e}")
-            
+
     return lessons
+
 
 def _cycle_throttle(delay: int, root: str, target_dirs: list[str]) -> None:
     """
@@ -343,7 +357,7 @@ def _cycle_throttle(delay: int, root: str, target_dirs: list[str]) -> None:
     try:
         from watchfiles import watch
         print(f"\n[Watcher] Waiting for modifications in {target_dirs}...")
-        
+
         # Build absolute paths for watching
         watch_paths = []
         for d in target_dirs:
@@ -352,7 +366,7 @@ def _cycle_throttle(delay: int, root: str, target_dirs: list[str]) -> None:
                 p = Path(root) / d
             if p.exists():
                 watch_paths.append(str(p))
-        
+
         if not watch_paths:
             watch_paths = [root]
 
@@ -383,7 +397,7 @@ def main() -> None:
 
     root = os.getcwd()
     fleet = FleetManager(root)
-    
+
     print("=== SWARM SELF-IMPROVEMENT CYCLE INITIATED ===")
     print(f"Scanning workspace: {root}")
 
@@ -398,7 +412,7 @@ def main() -> None:
         prompt_path = args.prompt
         context_path = args.context
         model_name = args.model
-        
+
         # We need to track target_dirs across cycles for the watcher
         # Start with default 'src'
         last_target_dirs = ["src"]
@@ -411,10 +425,10 @@ def main() -> None:
                 print(f"Running in CONTINUOUS mode with {args.delay}s delay/Watcher. Press Ctrl+C to stop.")
             else:
                 print(f"Running {num_cycles} cycles with {args.delay}s delay/Watcher. Press Ctrl+C to stop.")
-                
+
             while True:
                 current_cycle += 1
-                
+
                 # run_cycle might update prompt_path but we need the focus dirs
                 # We can peek at the prompt to see what the next focus is
                 if prompt_path:
@@ -438,16 +452,17 @@ def main() -> None:
                             pass
 
                 run_cycle(fleet, root, prompt_path=prompt_path, context_path=context_path, current_cycle=current_cycle, model_name=model_name)
-                
+
                 if not is_infinite and current_cycle >= num_cycles:
                     break
-                    
+
                 print("\nWaiting before next cycle... (Press Ctrl+C to stop)")
                 _cycle_throttle(args.delay, root, last_target_dirs)
-                
+
     except KeyboardInterrupt:
         print("\n=== STOPPING SELF-IMPROVEMENT (User Interrupt) ===")
         sys.exit(0)
 
 if __name__ == "__main__":
     main()
+    

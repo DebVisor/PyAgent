@@ -539,8 +539,8 @@ Created through agent integration to achieve synergy between specialized capabil
 
 if __name__ == "__main__":
     # Example usage
-    import tempfile
-    from pathlib import Path
+import tempfile
+from pathlib import Path
 
     with tempfile.TemporaryDirectory() as tmpdir:
         orchestrator = DynamicAgentEvolutionOrchestrator(Path(tmpdir))

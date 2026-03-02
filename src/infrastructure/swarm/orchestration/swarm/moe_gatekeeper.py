@@ -25,9 +25,9 @@ import numpy as np
 
 from src.core.base.common.models.communication_models import (
     ExpertProfile, MoERoutingDecision)
-from src.infrastructure.engine.models.similarity import \
+    from src.infrastructure.engine.models.similarity import \
     EmbeddingSimilarityService
-from src.infrastructure.swarm.orchestration.swarm.audit_logger import SwarmAuditLogger
+    from src.infrastructure.swarm.orchestration.swarm.audit_logger import SwarmAuditLogger
 
 logger: logging.Logger = logging.getLogger(__name__)
 
@@ -119,7 +119,7 @@ class MoEGatekeeper:
             if len(expert_vec) == 0:
                 # Mock a vector based on domains if empty
                 # Use a specific seed based on the domain string for deterministic testing
-                import zlib
+            import zlib
                 seed: int = zlib.adler32(" ".join(profile.domains).encode()) & 0xFFFFFFFF
                 np.random.seed(seed)
                 expert_vec: np.ndarray[tuple[int, ...], np.dtype[np.floating[np._32Bit]]] = np.random.randn(384).astype(np.float32)

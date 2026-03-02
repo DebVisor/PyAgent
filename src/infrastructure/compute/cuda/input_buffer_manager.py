@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,13 +28,14 @@ Beyond vLLM:
 - Zero-copy staging when possible
 """
 
-from __future__ import annotations
 
 from _thread import LockType
 import logging
 import threading
 from abc import ABC, abstractmethod
 from collections import defaultdict
+from collections import Counter
+import time
 from dataclasses import dataclass
 from enum import Enum, auto
 from typing import Any, Dict, List, Optional, Set, Tuple, TypeVar
@@ -99,9 +101,9 @@ class BufferEntry:
 
     def mark_in_use(self) -> None:
         """Mark buffer as in use."""
-        import time
-
         self.state = BufferState.IN_USE
+        self.last_used = time.time()
+        self.use_count += 1
         self.last_used = time.time()
         self.use_count += 1
 
@@ -425,8 +427,6 @@ class PredictiveBufferManager(InputBufferManager):
         recent: List[int] = self._size_history[-100:]
 
         # Return most common sizes
-        from collections import Counter
-
         counter: Counter[int] = Counter(recent)
         return [size for size, _ in counter.most_common(n)]
 

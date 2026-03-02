@@ -19,12 +19,20 @@ Extension Registry Package - Phase 20
 Plugin system for managing extensible component registries.
 """
 
-from .extension_registry import (ExtensionInfo, ExtensionManager,  # noqa: F401
-                                 GlobalRegistry, LazyExtensionManager,
-                                 MultiExtensionManager, TypedExtensionManager,
-                                 create_lazy_registry, create_multi_registry,
-                                 create_registry, create_typed_registry,
-                                 get_global_registry)
+from .extension_registry import (
+    ExtensionInfo,
+    ExtensionManager,  # noqa: F401
+    GlobalRegistry,
+    LazyExtensionManager,
+    MultiExtensionManager,
+    TypedExtensionManager,
+    create_lazy_registry,
+    create_multi_registry,
+    create_registry,
+    create_typed_registry,
+    get_global_registry,
+)
+from .agent_registry import AgentRegistry  # noqa: F401
 
 __all__ = [
     "ExtensionManager",
@@ -38,4 +46,5 @@ __all__ = [
     "create_multi_registry",
     "create_lazy_registry",
     "get_global_registry",
+    "AgentRegistry",
 ]

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Mcp server.py module.
 """
 
 
-from __future__ import annotations
 
 from fastapi import FastAPI
 try:
@@ -27,10 +27,20 @@ except ImportError:
         """Dummy FastApiMCP class for type checking when package is missing."""
         def __init__(self, *args: object, **kwargs: object) -> None:
             pass
+        
+        def tool(self):
+            """Decorator shim for `@mcp.tool()` used in code/tests.
 
-from src.core.base.lifecycle.version import VERSION
-from src.logic.agents.cognitive.graph_memory_agent import GraphMemoryAgent
-from src.logic.agents.development.spec_tool_agent import SpecToolAgent
+            Returns a decorator that leaves the function unchanged.
+            """
+            def _decorator(func):
+                return func
+
+            return _decorator
+
+            from src.core.base.lifecycle.version import VERSION
+            from src.logic.agents.cognitive.graph_memory_agent import GraphMemoryAgent
+            from src.logic.agents.development.spec_tool_agent import SpecToolAgent
 
 __version__ = VERSION
 

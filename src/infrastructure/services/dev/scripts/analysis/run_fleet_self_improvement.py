@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Autonomous Fleet Self-Improvement Loop - scans workspace for issues and applies fixes."""
 
-from __future__ import annotations
 
 import argparse
 import json
@@ -52,8 +52,8 @@ except ImportError:
 # pylint: disable=wrong-import-position
 from src.core.base.lifecycle.version import VERSION  # noqa: E402
 from src.infrastructure.swarm.fleet.fleet_manager import FleetManager  # noqa: E402
-from src.observability.structured_logger import StructuredLogger  # noqa: E402
-from src.infrastructure.services.dev.scripts.analysis.prompt_optimizer_agent import PromptOptimizerAgent  # noqa: E402
+    from src.observability.structured_logger import StructuredLogger  # noqa: E402
+    from src.infrastructure.services.dev.scripts.analysis.prompt_optimizer_agent import PromptOptimizerAgent  # noqa: E402
 # pylint: enable=wrong-import-position
 
 
@@ -105,7 +105,7 @@ class DirectiveParser:
         if not self.strategic_note:
             return
 
-        import shlex
+            import shlex
 
         cmd_matches = re.findall(r"@cmd:\s*(.*)", self.strategic_note, re.IGNORECASE)
         for cmd in cmd_matches:

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 OutputProcessor - Request output management and state tracking.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's v1/engine/output_processor.py - manages per-request state,
 detokenization, and output batching.
 """
 
-from __future__ import annotations
 
 import asyncio
 import time

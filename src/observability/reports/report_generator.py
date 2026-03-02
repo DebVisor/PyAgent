@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Report generation logic for agent source files."""
 
-from __future__ import annotations
 
 from argparse import Namespace
 import ast
@@ -492,6 +492,7 @@ if __name__ == "__main__":
         """Main entry point."""
         # Internal CLI for repairing/refreshing autodocs
         import argparse
+        from argparse import Namespace
 
         parser = argparse.ArgumentParser(description="Repair or refresh autodocs for the workspace.")
         parser.add_argument("--src", type=str, help="Source directory for agent files (default: src/)")
@@ -517,16 +518,7 @@ if __name__ == "__main__":
 
         generator = ReportGenerator(agent_dir=agent_dir_main, output_dir=output_dir_main)
         results: dict[str, Any] = generator.process_all_files()
+        print("Autodoc generation finished.")
 
-        print("Generation completed.")
-        print(f"Files Processed: {results.get('count', 0)}")
-        print(f"Files Skipped: {results.get('skipped', 0)}")
-        print(f"Errors: {results.get('errors', 0)}")
-
-        if not args.no_dashboard:
-            dashboard_content: str = generator.generate_full_report()
-            dashboard_path: Path = output_dir_main / "AUTODOC_DASHBOARD.md"
-            dashboard_path.write_text(dashboard_content, encoding="utf-8")
-            print(f"Dashboard generated at {dashboard_path}")
-
+if __name__ == '__main__':
     main()

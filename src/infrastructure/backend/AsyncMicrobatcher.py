@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 AsyncMicrobatcher - Async micro-batching for LLM operations.
 
@@ -6,7 +7,6 @@ with configurable batch size and timeout.
 
 Phase 17: vLLM Pattern Integration
 """
-from __future__ import annotations
 import asyncio
 import time
 from collections.abc import Callable, Awaitable

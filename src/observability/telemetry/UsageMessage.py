@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 UsageMessage - Structured telemetry for platform detection and async reporting.
 
@@ -7,7 +8,6 @@ and reporting usage statistics with privacy-respecting opt-out support.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 import os
 import platform
@@ -315,7 +315,7 @@ class UsageMessage:
             self.cuda_version = gpu_info.get("cuda_version")
         
         # Environment variables
-        import json
+            import json
         env_data = {
             var: os.environ.get(var)
             for var in _ENV_VARS_TO_COLLECT

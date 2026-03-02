@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Phase 322: Fleet Autonomous Update Mixin
 
-from __future__ import annotations
 import threading
 import time
 import subprocess

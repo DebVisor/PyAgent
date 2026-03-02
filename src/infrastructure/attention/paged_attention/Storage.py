@@ -1,5 +1,5 @@
-# SPDX-License-Identifier: Apache-2.0
 from __future__ import annotations
+# SPDX-License-Identifier: Apache-2.0
 from dataclasses import dataclass, field
 from typing import Sequence
 import numpy as np

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-"""
-AgentRegistryCore logic for version compatibility and manifest validation.
-Pure logic component to be potentially rustified.
-
-Phase 15 Rust Optimizations:
-- topological_sort_rust: O(V+E) topological ordering for agent load order
-- to_snake_case_rust: Fast CamelCase to snake_case conversion
-- detect_cycles_rust: DFS-based cycle detection in dependency graphs
-"""
-
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import os
 import logging
@@ -34,18 +23,24 @@ logger = logging.getLogger(__name__)
 
 try:
     from rust_core import topological_sort_rust, to_snake_case_rust
+    from rust_core import detect_cycles_rust
+    _RUST_CYCLES = True
     _RUST_ACCEL = True
 except ImportError:
     _RUST_ACCEL = False
-
-# Additional Rust functions for Phase 15
-try:
-    from rust_core import detect_cycles_rust
-    _RUST_CYCLES = True
-except ImportError:
     _RUST_CYCLES = False
 
 __version__ = VERSION
+
+"""
+AgentRegistryCore logic for version compatibility and manifest validation.
+Pure logic component to be potentially rustified.
+
+Phase 15 Rust Optimizations:
+- topological_sort_rust: O(V+E) topological ordering for agent load order
+- to_snake_case_rust: Fast CamelCase to snake_case conversion
+- detect_cycles_rust: DFS-based cycle detection in dependency graphs
+"""
 
 
 class AgentRegistryCore:
@@ -179,7 +174,7 @@ class AgentRegistryCore:
             except Exception:
                 pass
         # Python fallback
-        import re
+                import re
         s1 = re.sub("(.)([A-Z][a-z]+)", r"\1_\2", name)
         return re.sub("([a-z0-9])([A-Z])", r"\1_\2", s1).lower()
 

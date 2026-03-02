@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Scheduler Statistics.
 
@@ -10,7 +11,6 @@ Comprehensive metrics for LLM inference scheduling:
 Inspired by vLLM's v1/metrics/stats.py architecture.
 """
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

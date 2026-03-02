@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Module: tensor_parallel_transfer
 Implements tensor parallel transfer for distributed KV storage in PyAgent.
@@ -35,7 +36,6 @@ Key Patterns:
 - Rust-accelerated bitmask aggregation for TP shards
 """
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any, List

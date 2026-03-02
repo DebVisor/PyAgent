@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@
 Llama 3 tool call parser.
 """
 
-from __future__ import annotations
 
 import contextlib
 import json
@@ -28,7 +28,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from .base import (StreamingToolState, ToolCall, ToolParser, ToolParseResult,
                    ToolParserType)
-from .json_parser import JsonToolParser
+                   from .json_parser import JsonToolParser
 
 
 class Llama3ToolParser(ToolParser):

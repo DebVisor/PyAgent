@@ -1,12 +1,12 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.logic.agents.development.HandyAgent import HandyAgent
+from src.logic.agents.development.HandyAgent import HandyAgent
 
 class HandyCoreMixin:
     """Mixin for core recording and evaluation logic in HandyAgent."""

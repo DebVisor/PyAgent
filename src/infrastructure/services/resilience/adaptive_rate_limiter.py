@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +25,6 @@ Goes beyond vLLM with production-grade rate limiting including:
 Phase 18: Beyond vLLM - Resilience Patterns
 """
 
-from __future__ import annotations
 
 import asyncio
 import functools
@@ -113,9 +113,8 @@ class TokenBucket:
         self._last_refill = time.monotonic()
         self._lock = threading.Lock()
         self._stats = RateLimiterStats()
-
-        import time as _time
-        self._sleep_fn: Callable[[float], None] = sleep_fn or _time.sleep
+        
+        self._sleep_fn: Callable[[float], None] = sleep_fn or time.sleep
 
     @property
     def stats(self) -> RateLimiterStats:

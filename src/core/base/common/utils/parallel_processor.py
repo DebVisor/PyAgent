@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@ Manager for parallel execution.
 (Facade for src.core.base.common.execution_core)
 """
 
-from __future__ import annotations
 
 import logging
 from concurrent.futures import ThreadPoolExecutor
@@ -37,7 +37,7 @@ try:
 except ImportError:
     HAS_TQDM = False
 
-from src.core.base.common.execution_core import ExecutionCore
+    from src.core.base.common.execution_core import ExecutionCore
 
 
 class ParallelProcessor:

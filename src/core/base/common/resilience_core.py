@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Centralized Resilience and Fault Tolerance Core.
 Standardizes retry, backoff, and circuit breaker logic across the swarm.
 """
 
-from __future__ import annotations
 
 import asyncio
 import functools
@@ -31,7 +31,7 @@ try:
 except ImportError:
     rc = None  # type: ignore[assignment]
 
-from .base_core import BaseCore
+    from .base_core import BaseCore
 
 logger = logging.getLogger("pyagent.resilience")
 

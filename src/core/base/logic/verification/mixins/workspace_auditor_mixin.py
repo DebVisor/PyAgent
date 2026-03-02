@@ -199,5 +199,6 @@ class WorkspaceAuditorMixin:
             return has_defs, False
 
         from functools import reduce
+
         has_defs, not_stub = reduce(evaluate_structural_node, tree.body, (False, False))
         return has_defs and not not_stub

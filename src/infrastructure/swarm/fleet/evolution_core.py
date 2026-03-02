@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ EvolutionCore logic for agent fleet adaptation.
 Contains pure logic for template generation and hyperparameter optimization.
 """
 
-from __future__ import annotations
 from typing import Dict
 
 class EvolutionCore:
@@ -36,7 +36,7 @@ class EvolutionCore:
         return f'''#!/usr/bin/env python3
 
         from src.core.base.BaseAgent import BaseAgent
-import logging
+        import logging
 __version__ = VERSION
 
 class {name}Agent(BaseAgent):

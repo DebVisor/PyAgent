@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# SPDX-License-Identifier: Apache-2.0
-"""
-Mamba Mixer - Implementation of Mamba-1 and Mamba-2 mixer layers.
-"""
-
-# pylint: disable=invalid-name
-
-from __future__ import annotations
-
 import math
-
 import numpy as np
 
 # Optional torch import
@@ -36,11 +27,15 @@ except ImportError:
     torch = None  # type: ignore
     F = None  # type: ignore
 
-from src.infrastructure.compute.ssm.mamba.config import (MambaConfig,
+    from src.infrastructure.compute.ssm.mamba.config import (MambaConfig,
                                                          MambaOutput,
                                                          MambaState)
-from src.infrastructure.compute.ssm.mamba.ops import (CausalConv1d,
+                                                         from src.infrastructure.compute.ssm.mamba.ops import (CausalConv1d,
                                                       SelectiveScan)
+
+"""
+Mamba Mixer - Implementation of Mamba-1 and Mamba-2 mixer layers.
+"""
 
 
 class MambaMixer:

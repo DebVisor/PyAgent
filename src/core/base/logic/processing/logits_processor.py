@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@ top-k, top-p, repetition penalty, and bad words filtering.
 Phase 23: Advanced Serialization & Validation
 """
 
-from __future__ import annotations
 
 from collections.abc import Sequence
 from typing import TYPE_CHECKING, Protocol
@@ -458,7 +458,7 @@ class FrequencyPenaltyProcessor:
             return logits
 
         # Count frequencies
-        from collections import Counter
+            from collections import Counter
 
         freq = Counter(input_ids)
 

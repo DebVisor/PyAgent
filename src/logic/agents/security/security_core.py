@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Combines scanning for secrets, command auditing, shell script analysis, and inje
 This is designed for high-performance static analysis and future Rust migration.
 """
 
-from __future__ import annotations
 
 import importlib.util
 from pathlib import Path
@@ -28,11 +28,11 @@ from src.core.base.common.types.security_issue_type import SecurityIssueType
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-from src.logic.agents.security.mixins.security_auditor_mixin import \
+    from src.logic.agents.security.mixins.security_auditor_mixin import \
     SecurityAuditorMixin
-from src.logic.agents.security.mixins.security_reporter_mixin import \
+    from src.logic.agents.security.mixins.security_reporter_mixin import \
     SecurityReporterMixin
-from src.logic.agents.security.mixins.security_scanner_mixin import \
+    from src.logic.agents.security.mixins.security_scanner_mixin import \
     SecurityScannerMixin
 
 _RUST_AVAILABLE = importlib.util.find_spec("rust_core") is not None

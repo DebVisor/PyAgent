@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Data-parallel coordination logic.
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -28,7 +28,7 @@ import numpy as np
 
 from .config import (EngineIdentity, EngineState, LoadBalancingStrategy,
                      ParallelConfig)
-from .messages import MetricsMessage
+                     from .messages import MetricsMessage
 
 logger = logging.getLogger(__name__)
 

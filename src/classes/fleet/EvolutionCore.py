@@ -21,8 +21,8 @@ class EvolutionCore:
         """Constructs the code content for a new agent. Returns multi-line string."""
         return f'''#!/usr/bin/env python3
 
-from src.classes.base_agent import BaseAgent
-import logging
+        from src.classes.base_agent import BaseAgent
+        import logging
 
 class {name}Agent(BaseAgent):
     """

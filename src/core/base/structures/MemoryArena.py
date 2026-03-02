@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Memory Arena - Bump allocator for temporary allocations.
 
 Phase 19: Beyond vLLM - Performance Patterns
 Arena allocation for reduced allocation overhead.
 """
-from __future__ import annotations
 
 import mmap
 import threading

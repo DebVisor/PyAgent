@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Intel XPU (GPU/Accelerator) platform implementation.
 """
 
-from __future__ import annotations
 
 from typing import List, Set
 

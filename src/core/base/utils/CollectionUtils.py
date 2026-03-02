@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Collection Utilities Module - Phase 20: Production Infrastructure
 ==================================================================
@@ -20,7 +21,6 @@ Features:
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import itertools
 from collections import defaultdict

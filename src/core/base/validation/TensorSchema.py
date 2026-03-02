@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 TensorSchema - Tensor shape validation with symbolic dimensions.
 
@@ -7,7 +8,6 @@ with symbolic dimension names that can be resolved at runtime.
 Phase 23: Advanced Serialization & Validation
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any, get_type_hints, get_origin, get_args, Union, Annotated

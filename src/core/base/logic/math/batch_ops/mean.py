@@ -22,7 +22,7 @@ try:
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
-import numpy as np
+    import numpy as np
 
 def mean_batch_invariant(
     tensor: Any,
@@ -46,7 +46,7 @@ def mean_batch_invariant(
             count = tensor.shape[dim]
         else:
             from functools import reduce; from operator import mul; count = reduce(mul, map(lambda d: tensor.shape[d], dim), 1)
-    result = total / count
+                result = total / count
     if dtype is not None:
         result = result.to(dtype)
     return result

@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Base class for grammar engines.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Set

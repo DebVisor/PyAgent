@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Run static-safety checks on extracted candidates.
 Tries to run `bandit` and `semgrep` if available. Writes JSON outputs under ./.external/static_checks/
 Usage:
   python src/tools/run_static_checks.py src/external_candidates/auto
 """
-from __future__ import annotations
 import sys
 from pathlib import Path
 import subprocess

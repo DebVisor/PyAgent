@@ -37,7 +37,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from enum import Enum
 
-from pydantic import BaseModel, Field, ValidationError, validator
+from pydantic import BaseModel, Field, ValidationError, field_validator
 
 logger = logging.getLogger(__name__)
 
@@ -290,6 +290,7 @@ class RateLimiter:
     """Rate limiting for agent requests."""
 
     def __init__(self, requests_per_window: int = 100, window_seconds: int = 60):
+        """Initialize rate limiter."""
         self.requests_per_window = requests_per_window
         self.window_seconds = window_seconds
         self.requests: Dict[str, List[datetime]] = {}
@@ -335,6 +336,7 @@ class Guardrail:
     """Comprehensive guardrail system combining multiple safety mechanisms."""
 
     def __init__(self, config: Optional[SafetyConfig] = None):
+        """Initialize guardrail with configuration."""
         self.config = config or SafetyConfig()
         self.input_validator = InputValidator(self.config)
         self.output_validator = OutputValidator(self.config)
@@ -390,6 +392,7 @@ class Guardrail:
 
         @wraps(func)
         async def guarded_function(*args, **kwargs) -> T:
+            """Guarded function that validates input and output automatically."""
             # Extract parameters - try kwargs first, then positional args
             input_content = kwargs.get(input_param)
             user_id = kwargs.get(user_id_param) if user_id_param else None
@@ -437,8 +440,10 @@ class ResilienceDecorator:
     ):
         """Decorator that retries a function with exponential backoff."""
         def decorator(func):
+            """Decorator that implements retry logic with exponential backoff."""
             @wraps(func)
             async def wrapper(*args, **kwargs):
+                """Wrapper function that applies the retry with exponential backoff logic."""
                 delay = initial_delay
                 last_exception = None
 
@@ -469,12 +474,14 @@ class ResilienceDecorator:
     ):
         """Circuit breaker decorator."""
         def decorator(func):
+            """Decorator that implements a circuit breaker pattern."""
             failures = 0
             last_failure_time = None
             state = "closed"  # closed, open, half-open
 
             @wraps(func)
             async def wrapper(*args, **kwargs):
+                """Wrapper function that applies the circuit breaker logic."""
                 nonlocal failures, last_failure_time, state
 
                 now = time.time()
@@ -522,14 +529,18 @@ class ResearchSummary(BaseModel):
     key_findings: List[str] = Field(..., description="A list of 3-5 key findings")
     confidence_score: float = Field(..., ge=0.0, le=1.0, description="Confidence score from 0.0 to 1.0")
 
-    @validator('title')
+    @field_validator('title')
+    @classmethod
     def validate_title(cls, v):
+        """Validate that title is at least 5 characters long after stripping whitespace."""
         if len(v.strip()) < 5:
             raise ValueError('Title must be at least 5 characters long')
         return v
 
-    @validator('key_findings')
+    @field_validator('key_findings')
+    @classmethod
     def validate_findings(cls, v):
+        """Validate that there are between 3 and 5 key findings."""
         if len(v) < 3:
             raise ValueError('Must have at least 3 key findings')
         if len(v) > 5:
@@ -556,8 +567,10 @@ def create_default_guardrail(level: SafetyLevel = SafetyLevel.MODERATE) -> Guard
 def validate_with_schema(schema: BaseModel):
     """Decorator to validate function output against a schema."""
     def decorator(func):
+        """Decorator that validates the output of a function against a Pydantic schema."""
         @wraps(func)
         async def wrapper(*args, **kwargs):
+            """Validate the output of the function against the provided schema."""
             result = await func(*args, **kwargs)
 
             try:

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 AWS Bedrock cloud provider connector.
 
@@ -5,7 +6,6 @@ Provides integration with AWS Bedrock for inference requests,
 supporting Claude, Titan, and other Bedrock-hosted models.
 """
 
-from __future__ import annotations
 
 import os
 import time

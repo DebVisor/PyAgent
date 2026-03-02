@@ -12,17 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Models for agent configuration, state, and plugins."""
-
 from __future__ import annotations
 
 import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from typing import Any
-
-from .base_models import (_empty_dict_str_any,
-                          _empty_dict_str_callable_any_any, _empty_list_str)
+from functools import reduce
+from .base_models import (_empty_dict_str_any, _empty_dict_str_callable_any_any, _empty_list_str)
 from .core_enums import AgentPriority, HealthStatus
 
 
@@ -107,7 +104,6 @@ class AgentPipeline:
 
     def execute(self, data: Any) -> Any:
         """Execute all steps regarding the pipeline sequentially functionally."""
-        from functools import reduce
         return reduce(lambda res, name: self.steps[name](res), self.step_order, data)
 
 
@@ -146,7 +142,6 @@ class AgentRouter:
         match = next(filter(lambda r: r[0](data), self.routes), None)
         if match:
             return match[1](data)
-        
         if self.default_handler:
             return self.default_handler(data)
         return data

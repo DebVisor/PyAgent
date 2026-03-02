@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Handy core mixin.py module.
@@ -6,13 +7,12 @@ Handy core mixin.py module.
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 
 import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.logic.agents.specialists.handy_agent import HandyAgent
+from src.logic.agents.specialists.handy_agent import HandyAgent
 
 
 class HandyCoreMixin:

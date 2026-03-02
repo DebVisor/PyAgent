@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Self healing orchestrator.py module.
 """
 
 
-from __future__ import annotations
 
 import logging
 import time
@@ -27,7 +27,7 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.base.logic.agent_verification import (CodeHealthAuditor,
                                                     CodeIntegrityVerifier)
 
-from .self_healing_core import SelfHealingCore
+                                                    from .self_healing_core import SelfHealingCore
 
 if TYPE_CHECKING:
     from src.infrastructure.swarm.fleet.fleet_manager import FleetManager

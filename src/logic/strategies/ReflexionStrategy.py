@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Apache 2.0 License
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 from .AgentStrategy import AgentStrategy
 from typing import Dict, List, Optional, TYPE_CHECKING
 import logging
 
 if TYPE_CHECKING:
-    from collections.abc import Callable
+from collections.abc import Callable
     BackendFunction = Callable[[str, str | None, list[dict[str, str]] | None], str]
 
 __version__ = VERSION

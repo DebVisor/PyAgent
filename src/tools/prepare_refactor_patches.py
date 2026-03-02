@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Generate prioritized bandit report and prepare AST-based refactor patch proposals.
 
 Produces:
@@ -7,7 +8,6 @@ Produces:
 
 This script does NOT apply patches; it only writes suggestions for reviewers.
 """
-from __future__ import annotations
 import json
 from pathlib import Path
 import ast

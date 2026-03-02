@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Base Classes
 
@@ -5,7 +6,6 @@
 Base classes and data structures for tool parsing.
 """
 
-from __future__ import annotations
 
 import json
 from abc import ABC, abstractmethod

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 40: Input Preprocessor - Unified Prompt Processing
 # Inspired by vLLM's inputs/preprocess.py and inputs/data.py
@@ -13,7 +14,6 @@ Provides:
 - Input size estimation for batch scheduling
 """
 
-from __future__ import annotations
 
 import re
 import time

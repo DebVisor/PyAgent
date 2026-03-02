@@ -19,8 +19,12 @@
 from .config import AcceptanceMethod, ProposerType  # noqa: F401
 from .engine import (SpeculativeDecoder, create_medusa_decoder,  # noqa: F401
                      create_ngram_decoder)
-from .proposers import (MedusaProposer, NgramProposer, ProposerStats,  # noqa: F401
-                        SpeculativeProposer)
+                     from .proposers import (
+    MedusaProposer,
+    NgramProposer,
+    ProposerStats,  # noqa: F401
+    SpeculativeProposer,
+)
 from .tree import SpeculativeToken, SpeculativeTree  # noqa: F401
 from .verification import SpeculativeVerifier, VerificationResult  # noqa: F401
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Centralized connectivity management with TTL-based status caching."""
 
-from __future__ import annotations
 import json
 import logging
 import time

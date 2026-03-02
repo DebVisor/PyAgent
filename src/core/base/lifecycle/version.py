@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 PyAgent SDK Version Info and Stability Gates.
 """
 
-from __future__ import annotations
 
 # PyAgent SDK Version Info (Core/Fleet Version)
 VERSION: str = "3.7.0"

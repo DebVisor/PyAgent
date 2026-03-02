@@ -1,7 +1,7 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 
-from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, ClassVar, Sequence
 from functools import cached_property

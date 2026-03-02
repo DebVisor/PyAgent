@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Apply conservative patch proposals generated from bandit findings.
 
 This script re-uses the heuristics in `prepare_refactor_patches.py` to
@@ -9,7 +10,6 @@ risky imports, replace eval/exec with a RuntimeError), writes a backup
 This is intentionally conservative and deterministic so it can run
 automatically in CI or overnight runs.
 """
-from __future__ import annotations
 import shutil
 import sys
 from pathlib import Path

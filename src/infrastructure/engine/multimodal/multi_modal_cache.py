@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Facade for Multimodal Cache.
 Delegates to modularized sub-packages in src/infrastructure/multimodal/cache/.
 """
 
-from __future__ import annotations
 
 from .cache import (CacheBackend, CacheEntry, CacheStats, HashAlgorithm,
                     IPCMultiModalCache, MediaHash, MediaType,

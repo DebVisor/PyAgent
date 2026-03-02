@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 AdaptiveRateLimiter - Token bucket with burst handling and adaptive limits.
 
@@ -9,7 +10,6 @@ Goes beyond vLLM with production-grade rate limiting including:
 
 Phase 18: Beyond vLLM - Resilience Patterns
 """
-from __future__ import annotations
 import asyncio
 import inspect
 import functools

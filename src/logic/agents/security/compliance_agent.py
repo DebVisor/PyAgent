@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,7 +34,6 @@ Compliance agent.py module.
 """
 
 
-from __future__ import annotations
 
 from pathlib import Path
 
@@ -42,8 +42,8 @@ from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
-from .mixins.privacy_assessment_mixin import PrivacyAssessmentMixin
-from .mixins.privacy_scanner_mixin import PrivacyScannerMixin
+    from .mixins.privacy_assessment_mixin import PrivacyAssessmentMixin
+    from .mixins.privacy_scanner_mixin import PrivacyScannerMixin
 
 __version__ = VERSION
 

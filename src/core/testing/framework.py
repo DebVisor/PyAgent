@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-from __future__ import annotations
 
 import asyncio
 import json
@@ -119,15 +118,12 @@ class AgentTestingPyramidCore:
     async def run_test_pyramid(self, test_filter: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Run the complete testing pyramid.
-
         Args:
             test_filter: Optional filter for test selection
-
         Returns:
             Test execution summary
         """
         self.logger.info("Starting Agent Testing Pyramid execution")
-
         start_time = time.time()
 
         # Run tests in order: unit -> integration -> e2e
@@ -140,22 +136,17 @@ class AgentTestingPyramidCore:
         }
 
         total_time = time.time() - start_time
-
         # Generate summary
         summary = self._generate_test_summary(results, total_time)
-
         self.logger.info(f"Testing Pyramid complete in {total_time:.2f}s")
         return summary
 
     async def _run_unit_tests(self, test_filter: Optional[Dict[str, Any]] = None) -> List[TestResult]:
         """Run unit tests."""
         self.logger.info("Running unit tests")
-
         results = []
-
         # Discover and run unit tests
         test_files = list(self.unit_tests.glob("test_*.py"))
-
         for test_file in test_files:
             if self._matches_filter(test_file, test_filter):
                 result = await self._run_pytest_file(test_file, TestType.UNIT)
@@ -166,12 +157,9 @@ class AgentTestingPyramidCore:
     async def _run_integration_tests(self, test_filter: Optional[Dict[str, Any]] = None) -> List[TestResult]:
         """Run integration tests."""
         self.logger.info("Running integration tests")
-
         results = []
-
         # Discover and run integration tests
         test_files = list(self.integration_tests.glob("test_*.py"))
-
         for test_file in test_files:
             if self._matches_filter(test_file, test_filter):
                 result = await self._run_pytest_file(test_file, TestType.INTEGRATION)
@@ -182,12 +170,9 @@ class AgentTestingPyramidCore:
     async def _run_e2e_tests(self, test_filter: Optional[Dict[str, Any]] = None) -> List[TestResult]:
         """Run end-to-end tests."""
         self.logger.info("Running E2E tests")
-
         results = []
-
         # Load and run scenario-based E2E tests
         scenario_files = list(self.scenarios_dir.glob("*.yaml"))
-
         for scenario_file in scenario_files:
             if self._matches_filter(scenario_file, test_filter):
                 scenario_results = await self._run_scenario_tests(scenario_file)
@@ -230,7 +215,6 @@ class AgentTestingPyramidCore:
     async def _run_pytest_file(self, test_file: Path, test_type: TestType) -> TestResult:
         """Run a pytest file and return results."""
         start_time = time.time()
-
         try:
             # Run pytest programmatically
             result = pytest.main([
@@ -239,11 +223,8 @@ class AgentTestingPyramidCore:
                 "--capture=no",
                 "-v"
             ])
-
             duration = time.time() - start_time
-
             status = TestStatus.PASSED if result == 0 else TestStatus.FAILED
-
             return TestResult(
                 test_id=str(test_file),
                 test_type=test_type,
@@ -267,10 +248,9 @@ class AgentTestingPyramidCore:
     async def _run_scenario_tests(self, scenario_file: Path) -> List[TestResult]:
         """Run scenario-based E2E tests."""
         results = []
-
         try:
             # Load scenario configuration
-            with open(scenario_file, 'r') as f:
+            with open(scenario_file, 'r', encoding='utf-8') as f:
                 scenario_data = yaml.safe_load(f)
 
             suite = TestSuite(**scenario_data)

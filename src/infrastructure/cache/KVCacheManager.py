@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 KV Cache Manager.
 
@@ -9,7 +10,6 @@ GPU/CPU KV cache orchestration for transformer inference:
 Inspired by vLLM's v1/core/kv_cache_manager.py architecture.
 """
 
-from __future__ import annotations
 
 import threading
 import time

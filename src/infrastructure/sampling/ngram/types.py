@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 N-gram Proposer Types - Enums and Configuration for n-gram matching.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import Enum, auto

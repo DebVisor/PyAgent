@@ -6,6 +6,8 @@
 from src.version import VERSION
 import sys
 from pathlib import Path
+from src.classes.base_agent import create_main_function
+from src.logic.agents.development.coder_agent import CoderAgent
 
 # Ensure project root and src are in path for modular imports
 root = Path(__file__).parent.parent
@@ -14,8 +16,6 @@ if str(root) not in sys.path:
 if str(root / "src") not in sys.path:
     sys.path.append(str(root / "src"))
 
-    from src.base_agent import create_main_function
-from src.classes.coder import *
 
 # Create main function using the helper
 main = create_main_function(

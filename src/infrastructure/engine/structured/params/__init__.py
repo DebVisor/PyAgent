@@ -22,11 +22,14 @@ from .config import StructuredOutputConfig, ValidationResult  # noqa: F401
 from .constraints import (ChoiceConstraint, GrammarConstraint,
                           JsonSchemaConstraint, OutputConstraint,
                           RegexConstraint, TypeConstraint)
-from .enums import (ConstraintType, GuidedDecodingBackend, SchemaFormat,
+                          from .enums import (ConstraintType, GuidedDecodingBackend, SchemaFormat,
                     StructuredOutputType, WhitespacePattern)  # noqa: F401
-from .factory import (combine_constraints, create_choice_constraint,
-                      create_json_constraint,
-                      create_regex_constraint)  # noqa: F401
+                    from .factory import (
+    combine_constraints,
+    create_choice_constraint,
+    create_json_constraint,
+    create_regex_constraint,
+)  # noqa: F401
 from .validator import StructuredOutputValidator  # noqa: F401
 
 __all__ = [

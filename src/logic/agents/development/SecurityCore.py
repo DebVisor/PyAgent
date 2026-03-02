@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Combines scanning for secrets, command auditing, shell script analysis, and inje
 This is designed for high-performance static analysis and future Rust migration.
 """
 
-from __future__ import annotations
 
 import importlib.util
 from pathlib import Path

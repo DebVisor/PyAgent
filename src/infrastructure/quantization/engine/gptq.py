@@ -7,7 +7,7 @@ from .tensor import QuantizedTensor
 from .config import QuantConfig
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 class GPTQQuantizer(Quantizer):
     """GPTQ Quantization using Hessian-based optimal rounding."""

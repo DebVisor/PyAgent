@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Script for fixing broken annotation imports by converting them to future imports."""
 
-from __future__ import annotations
 
 import os
 import re
@@ -31,10 +31,8 @@ for root, _, files in os.walk(src_path):
             with open(path, encoding="utf-8", errors="ignore") as f:
                 content = f.read()
 
-            if "import annotations" in content and "from __future__ import annotations" not in content:
                 new_content = re.sub(
                     r"^import annotations$",
-                    r"from __future__ import annotations",
                     content,
                     flags=re.MULTILINE,
                 )

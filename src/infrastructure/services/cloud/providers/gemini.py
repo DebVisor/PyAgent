@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,13 +19,13 @@ Google Gemini cloud provider connector.
 Provides integration with Google's Gemini API for inference requests.
 """
 
-from __future__ import annotations
 
 import os
 import time
 from typing import AsyncIterator, Dict, List, Optional
 
 from httpx import AsyncClient
+
 
 from httpx import Response
 
@@ -34,8 +35,24 @@ from httpx import AsyncClient
 
 from httpx import Response
 
-from ..base import (AuthenticationError, CloudProviderBase, CloudProviderError,
-                    InferenceRequest, InferenceResponse, RateLimitError)
+try:
+    from ..base import (
+        AuthenticationError,
+        CloudProviderBase,
+        CloudProviderError,
+        InferenceRequest,
+        InferenceResponse,
+        RateLimitError,
+    )
+except Exception:
+    from src.infrastructure.services.cloud.providers.base import (
+        AuthenticationError,
+        CloudProviderBase,
+        CloudProviderError,
+        InferenceRequest,
+        InferenceResponse,
+        RateLimitError,
+    )
 
 
 class GeminiConnector(CloudProviderBase):

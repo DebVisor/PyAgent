@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Management logic regarding KV offloading eviction policies and tiers.
 """
 
-from __future__ import annotations
 
 import logging
 from collections import OrderedDict
@@ -32,8 +32,8 @@ try:
 except ImportError:
     HAS_RUST = False
 
-from .base import OffloadingBackend, OffloadingManager
-from .models import (BlockHash, BlockStatus, LoadStoreSpec, OffloadingEvent,
+    from .base import OffloadingBackend, OffloadingManager
+    from .models import (BlockHash, BlockStatus, LoadStoreSpec, OffloadingEvent,
                      PrepareStoreOutput)
 
 logger = logging.getLogger(__name__)

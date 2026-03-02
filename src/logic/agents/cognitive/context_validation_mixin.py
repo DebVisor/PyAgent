@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
 
 """Mixin for context validation capabilities."""
 
-from __future__ import annotations
 import re
 from typing import Any
 from src.core.base.common.models import ValidationRule

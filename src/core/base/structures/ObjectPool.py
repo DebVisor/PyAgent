@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Object Pool for reducing GC pressure.
 
 Phase 19: Beyond vLLM - Performance Patterns
 Reusable object pooling to minimize allocations.
 """
-from __future__ import annotations
 
 import threading
 import time

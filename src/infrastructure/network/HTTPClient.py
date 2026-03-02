@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 HTTPClient - Unified sync/async HTTP client with session reuse.
 
@@ -5,7 +6,6 @@ Refactored to modular package structure for Phase 317.
 Decomposed into mixins for sync, async, and retry logic.
 """
 
-from __future__ import annotations
 
 from typing import Any
 from src.infrastructure.network.http.connection import HTTPConnection

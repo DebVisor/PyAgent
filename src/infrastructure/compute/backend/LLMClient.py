@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Centralized LLM client for various backends."""
 
-from __future__ import annotations
 
 import json
 import logging
@@ -344,5 +344,5 @@ class LLMClient:
 
         return result
 
-import os
+        import os
 

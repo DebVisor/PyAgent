@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Module: batch_dcp_wrapper - Batch DCP attention wrapper regarding PyAgent engine."""
 
-from __future__ import annotations
 
 import logging
 import time
@@ -33,6 +33,8 @@ try:
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
+    torch = None
+    dist = None
 
 
 class BatchPhase(Enum):
@@ -261,7 +263,7 @@ class BatchDCPPrefillWrapper(BatchExecutor):
         # Plan token positions (ragged layout)
         def get_positions() -> Dict[str, Tuple[int, int]]:
             # Accumulate positions
-            from functools import reduce
+        from functools import reduce
             initial: Tuple[int, Dict[str, Tuple[int, int]]] = (0, {})
 
             def acc_pos(state: Tuple[int, Dict[str, Tuple[int, int]]], req: BatchRequest) -> Tuple[int, Dict[str, Tuple[int, int]]]:

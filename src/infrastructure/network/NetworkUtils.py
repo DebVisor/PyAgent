@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Network Utilities Module - Phase 20: Production Infrastructure
 ===============================================================
@@ -19,7 +20,6 @@ Features:
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import contextlib
 import ipaddress

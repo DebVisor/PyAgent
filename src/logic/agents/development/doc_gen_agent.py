@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@ Autonomous agent for extracting docstrings and generating Markdown documentation
 Generates Sphinx/Jekyll-compatible docs for the PyAgent codebase.
 """
 
-from __future__ import annotations
 
 # pylint: disable=too-many-ancestors
 

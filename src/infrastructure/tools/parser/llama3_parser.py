@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Llama 3 Parser
 
@@ -5,7 +6,6 @@
 Llama 3 tool call parser.
 """
 
-from __future__ import annotations
 
 import json
 import re

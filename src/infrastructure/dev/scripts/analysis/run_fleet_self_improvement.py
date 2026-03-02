@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,14 +14,6 @@
 # limitations under the License.
 
 
-"""
-Autonomous Fleet Self-Improvement Loop.
-Scans the workspace for issues, applies autonomous fixes, and harvests external intelligence.
-"""
-
-# ruff: noqa: E402
-
-from __future__ import annotations
 import os
 import sys
 
@@ -31,21 +24,28 @@ project_root = os.path.abspath(
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from src.core.base.Version import VERSION
-import json
-import time
-import logging
-import argparse
-import subprocess
-import re
-from pathlib import Path
-from typing import Any
-from src.infrastructure.fleet.FleetManager import FleetManager
-from src.observability.StructuredLogger import StructuredLogger
+    from src.core.base.Version import VERSION
+    import json
+    import time
+    import logging
+    import argparse
+    import subprocess
+    import re
+    from pathlib import Path
+    from typing import Any
+    from src.infrastructure.fleet.FleetManager import FleetManager
+    from src.observability.StructuredLogger import StructuredLogger
+
+"""
+Autonomous Fleet Self-Improvement Loop.
+Scans the workspace for issues, applies autonomous fixes, and harvests external intelligence.
+"""
+
 
 # Phase 317: Specialized helpers to reduce complexity
 class DirectiveParser:
     """Parses strategic directives from prompt and context files."""
+
     def __init__(self, root: str, prompt_path: str | None, context_path: str | None):
         self.root = Path(root)
         self.prompt_path = prompt_path
@@ -91,8 +91,8 @@ class DirectiveParser:
         """Extracts and runs @cmd: markers."""
         if not self.strategic_note:
             return
-
         import shlex
+
         cmd_matches = re.findall(r"@cmd:\s*(.*)", self.strategic_note, re.IGNORECASE)
         for cmd in cmd_matches:
             clean_cmd = cmd.strip().strip('"').strip("'")
@@ -432,6 +432,7 @@ def _cycle_throttle(
 
 
 def main() -> None:
+    """Orchestrates the autonomous fleet self-improvement loop with configurable cycles and directives."""
     parser = argparse.ArgumentParser(description="PyAgent Fleet Self-Improvement Loop")
     parser.add_argument("--cycles", "-c", type=int, default=1)
     parser.add_argument("--delay", "-d", type=int, default=60)

@@ -1,8 +1,8 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """Speculative decoding orchestrator."""
 
-from __future__ import annotations
 from typing import Any, Callable, Dict, List, Optional, Tuple
 import numpy as np
 from .config import AcceptanceMethod

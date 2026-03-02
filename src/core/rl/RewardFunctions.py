@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Reward Functions for Agent Reinforcement - Phase 319 Enhanced
 
-from __future__ import annotations
 import math
 from typing import Any, Callable, Dict, List, Optional
 from dataclasses import dataclass

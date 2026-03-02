@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,7 +28,6 @@ Beyond vLLM innovations:
 - Bad phrase detection
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import Enum, auto
@@ -45,7 +45,7 @@ try:
 except ImportError:
     HAS_RUST = False
 
-from .logits_processor_v2 import (BatchUpdate, LogitsProcessor,
+    from .logits_processor_v2 import (BatchUpdate, LogitsProcessor,
                                   MoveDirectionality)
 
 _SMALLEST_LOGIT = float("-inf")

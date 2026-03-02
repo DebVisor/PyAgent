@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 
 """
@@ -6,7 +7,6 @@ Manager for validation rules.
 (Facade for src.core.base.common.validation_core)
 """
 
-from __future__ import annotations
 from typing import Any
 from pathlib import Path
 from src.core.base.common.validation_core import ValidationCore

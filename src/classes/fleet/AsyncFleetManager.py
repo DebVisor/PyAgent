@@ -71,8 +71,8 @@ class AsyncFleetManager(FleetManager):
 
 if __name__ == "__main__":
     # Test script
-    from src.classes.context.KnowledgeAgent import KnowledgeAgent
-    from src.classes.coder.SecurityGuardAgent import SecurityGuardAgent
+from src.classes.context.KnowledgeAgent import KnowledgeAgent
+from src.classes.coder.SecurityGuardAgent import SecurityGuardAgent
     
     root = "c:/DEV/PyAgent"
     afleet = AsyncFleetManager(root)

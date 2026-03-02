@@ -1,0 +1,28 @@
+name: industry-standard-reviewer
+version: 1.0.0
+description: Simulates a Senior Engineer PR review to teach professional communication and industry naming standards. Use to prepare students for professional engineering environments and code review cultures.
+inputs:
+  submission_diff:
+    type: string
+    required: true
+  persona_level:
+    type: string
+    enum: [supportive, strict, pragmatic]
+    default: pragmatic
+outputs:
+  review_comments:
+    type: array
+    items:
+      type: object
+capabilities:
+  - Tone and style analysis.
+  - Focus on Clean Code principles.
+constraints:
+  - Simulated review; does not replace human mentor.
+security:
+  - Diff data processed locally.
+examples:
+  - input:
+      submission_diff: "var a = 1;"
+    output:
+      review_comments: [{comment: "Rename 'a' to something descriptive."}]

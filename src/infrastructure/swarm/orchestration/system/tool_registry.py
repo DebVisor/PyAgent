@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +17,13 @@
 Tool registry.py module.
 """
 
-from __future__ import annotations
 
 import asyncio
 import inspect
 import logging
 from collections.abc import Callable
 from typing import TYPE_CHECKING, Any
+from collections import namedtuple
 
 from .tool_core import ToolCore
 
@@ -70,7 +71,6 @@ class ToolRegistry:
 
     def list_tools(self) -> list[Any]:
         """Returns metadata for all registered tools."""
-        from collections import namedtuple
 
         ToolMeta = namedtuple("ToolMeta", ["name", "owner", "category", "priority", "sync"])
 

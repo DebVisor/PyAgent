@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Registry for MCP tool servers and session management.
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging

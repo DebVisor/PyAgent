@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 RequestMetrics - Comprehensive timing breakdown for request processing.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's sequence.py RequestMetrics for production latency analysis.
 
 Phase 17: vLLM Pattern Integration
 """
-from __future__ import annotations
 import time
 from dataclasses import dataclass, field
 from typing import Optional

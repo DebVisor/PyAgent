@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Execution engine for the sampling pipeline.
 """
 
-from __future__ import annotations
 from typing import List, Optional
 import numpy as np
 from .Params import SamplingParams, SamplingState

@@ -1,0 +1,38 @@
+name: code-review-assistant
+version: 1.0.0
+description: Provides automated, context-aware code reviews focusing on logic errors and style violations. Use during Pull Request cycles to identify potential bugs and maintain high code quality standards.
+inputs:
+  diff:
+    type: string
+    description: The git diff or pull request content to review.
+    required: true
+  guidelines_path:
+    type: string
+    description: Path to custom coding guidelines.
+outputs:
+  review_comments:
+    type: array
+    items:
+      type: object
+      properties:
+        file:
+          type: string
+        line:
+          type: integer
+        severity:
+          type: string
+        message:
+          type: string
+capabilities:
+  - Static analysis for bug patterns.
+  - Editorconfig/Lint rule alignment checks.
+  - Dead code identification.
+constraints:
+  - Cannot infer high-level architectural intent.
+security:
+  - Diffs processed locally.
+examples:
+  - input:
+      diff: "--- a/main.py\n+print('hello')"
+    output:
+      review_comments: []

@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Transition Dynamics for Markov Decision Processes - Phase 319 Enhanced
 
-from __future__ import annotations
 from typing import Any, Dict, List, Tuple, Optional, Set
 from dataclasses import dataclass, field
 import random

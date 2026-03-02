@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Run only generated `test_auto_*.py` tests under `tests/unit/`.
 This script collects matching test files and invokes pytest on them directly to avoid
 collecting unrelated tests.
 """
-from __future__ import annotations
 from pathlib import Path
 import sys
 import argparse

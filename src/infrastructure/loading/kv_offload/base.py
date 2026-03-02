@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Base classes for KV offloading backends and managers.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import Dict, Iterable, List, Optional

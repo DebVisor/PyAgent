@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Module: base_agent
-Principal agent interface for PyAgent, supporting mixin-based architecture.
-"""
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,43 +25,40 @@ from typing import Any
 
 try:
     import requests
-
     HAS_REQUESTS = True
 except ImportError:
     requests = None
     HAS_REQUESTS = False
 
-from src.core.base.common.models.communication_models import CascadeContext
-from src.core.base.common.models import CacheEntry, EventType, PromptTemplate, FailureClassification
-from src.core.base.execution.shell_executor import ShellExecutor
-from src.core.base.lifecycle.agent_core import BaseCore
-from src.core.base.lifecycle.base_agent_core import BaseAgentCore
-from src.core.base.lifecycle.version import VERSION
-from src.core.base.mixins.governance_mixin import GovernanceMixin
+    from src.core.base.common.models.communication_models import CascadeContext
+    from src.core.base.common.models import CacheEntry, EventType, PromptTemplate, FailureClassification
+    from src.core.base.execution.shell_executor import ShellExecutor
+    from src.core.base.lifecycle.agent_core import BaseCore
+    from src.core.base.lifecycle.base_agent_core import BaseAgentCore
+    from src.core.base.lifecycle.version import VERSION
+    from src.core.base.mixins.governance_mixin import GovernanceMixin
 # Import Mixins for Synaptic Modularization (Phase 317)
 from src.core.base.mixins.config_mixin import ConfigMixin
 from src.core.base.mixins.environment_mixin import EnvironmentMixin
-from src.core.base.mixins.expertise_mixin import ExpertiseMixin
-from src.core.base.mixins.governance_mixin import GovernanceMixin
-from src.core.base.mixins.identity_mixin import IdentityMixin
-from src.core.base.mixins.knowledge_mixin import KnowledgeMixin
-from src.core.base.mixins.multimodal_mixin import MultimodalMixin
-from src.core.base.mixins.orchestration_mixin import OrchestrationMixin
-from src.core.base.mixins.persistence_mixin import PersistenceMixin
-from src.core.base.mixins.reflection_mixin import ReflectionMixin
-from src.core.base.mixins.security_mixin import SecurityMixin
-from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
-from src.core.base.mixins.stream_manager_mixin import StreamManagerMixin
-from src.core.base.mixins.task_manager_mixin import TaskManagerMixin
-from src.core.base.mixins.tool_framework_mixin import ToolFrameworkMixin
+    from src.core.base.mixins.expertise_mixin import ExpertiseMixin
+    from src.core.base.mixins.governance_mixin import GovernanceMixin
+    from src.core.base.mixins.identity_mixin import IdentityMixin
+    from src.core.base.mixins.knowledge_mixin import KnowledgeMixin
+    from src.core.base.mixins.multimodal_mixin import MultimodalMixin
+    from src.core.base.mixins.orchestration_mixin import OrchestrationMixin
+    from src.core.base.mixins.persistence_mixin import PersistenceMixin
+    from src.core.base.mixins.reflection_mixin import ReflectionMixin
+    from src.core.base.mixins.security_mixin import SecurityMixin
+    from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
+    from src.core.base.mixins.stream_manager_mixin import StreamManagerMixin
+    from src.core.base.mixins.task_manager_mixin import TaskManagerMixin
+    from src.core.base.mixins.tool_framework_mixin import ToolFrameworkMixin
 
 # Advanced components (Lazy loaded or optional)
 try:
     # pylint: disable=unused-import
-    from src.infrastructure.swarm.orchestration.signals.signal_registry import \
-        SignalRegistry
-    from src.infrastructure.swarm.orchestration.system.tool_registry import \
-        ToolRegistry
+    from src.infrastructure.swarm.orchestration.signals.signal_registry import SignalRegistry
+    from src.infrastructure.swarm.orchestration.system.tool_registry import ToolRegistry
     from src.logic.agents.cognitive.long_term_memory import LongTermMemory
 except (ImportError, ValueError):
     LongTermMemory = None
@@ -90,17 +83,18 @@ class BaseAgent(
     TaskManagerMixin,
     ToolFrameworkMixin,
     EnvironmentMixin,
+    ConfigMixin,
 ):
     """
     Core AI Agent Shell (Synaptic modularization Phase 317).
     Inherits domain logic from specialized Mixins to maintain low complexity.
     """
-
     # Class-level attributes for shared state
     _prompt_templates: dict[str, PromptTemplate] = {}
     _response_cache: dict[str, CacheEntry] = {}
     _plugins: dict[str, Any] = {}
     _event_hooks: dict[EventType, list[collections.abc.Callable[[dict[str, Any]], None]]] = {}
+
 
     @classmethod
     def register_plugin(cls, name_or_plugin: Any, plugin: Any | None = None) -> None:
@@ -115,6 +109,7 @@ class BaseAgent(
             plugin_obj = plugin
         cls._plugins[name] = plugin_obj
 
+
     @classmethod
     def unregister_plugin(cls, name: str) -> bool:
         """Unregister a plugin."""
@@ -123,17 +118,20 @@ class BaseAgent(
             return True
         return False
 
+
     @classmethod
     def get_plugin(cls, name: str) -> Any:
         """Get a registered plugin."""
         return cls._plugins.get(name)
 
+
     def __init__(self, file_path: str = ".", **kwargs: Any) -> None:
         """Initialize the BaseAgent with decentralized initialization."""
         self.file_path = Path(file_path)
-        self._workspace_root = kwargs.get("repo_root") or BaseCore.detect_workspace_root(self.file_path)
+        workspace = kwargs.get("repo_root") or BaseCore.detect_workspace_root(self.file_path)
+        self._workspace_root = Path(workspace) if isinstance(workspace, str) else workspace
         self.agent_logic_core = BaseAgentCore()
-        self.core = BaseCore(workspace_root=self._workspace_root)
+        self.core = BaseCore(workspace_root=str(self._workspace_root))
 
         self.previous_content = ""
         self.current_content = ""
@@ -155,6 +153,7 @@ class BaseAgent(
         StreamManagerMixin.__init__(self, **kwargs)
         TaskManagerMixin.__init__(self, **kwargs)
         ToolFrameworkMixin.__init__(self, **kwargs)
+        EnvironmentMixin.__init__(self, **kwargs)
 
         self._config = self.agent_logic_core.load_config_from_env()
         GovernanceMixin.__init__(self, config=self._config, **kwargs)
@@ -175,6 +174,7 @@ class BaseAgent(
 
         # Context for task lineage
         self.context: CascadeContext | None = kwargs.get("context", None)
+
 
     def _load_system_prompt(self) -> str:
         """Load system prompt from file if available, otherwise use class-defined or minimal fallback."""
@@ -199,7 +199,7 @@ class BaseAgent(
         except (OSError, ValueError, UnicodeError) as e:
             if hasattr(self, 'logger') and self.logger:
                 self.logger.warning(f"[Robustness] Failed to load system prompt for {self.agent_name}: {e}", exc_info=True)
-        except Exception as e:  # pylint: disable=broad-exception-caught
+        except Exception:  # pylint: disable=broad-exception-caught
             # Unexpected error: log and re-raise to avoid masking bugs
             if hasattr(self, 'logger') and self.logger:
                 self.logger.exception(f"[Robustness] Unexpected error loading system prompt for {self.agent_name}")
@@ -208,15 +208,17 @@ class BaseAgent(
         # Tertiary: Minimal fallback prompt
         return "You are an AI."
 
+
     def _run_command(self, cmd: list[str], timeout: int = 120) -> subprocess.CompletedProcess[str]:
         """Run a shell command."""
         return ShellExecutor.run_command(
             cmd,
-            self._workspace_root,
+            str(self._workspace_root),
             self.agent_name,
             models_config=getattr(self, "models", None),
             timeout=timeout,
         )
+
 
     def run(self, prompt: str | None = None) -> str:
         """
@@ -229,7 +231,6 @@ class BaseAgent(
             return "No prompt provided."
 
         # import asyncio  # pylint: disable=import-outside-toplevel
-
         try:
             # Check if there is an existing running event loop (Python 3.7+)
             try:
@@ -256,6 +257,7 @@ class BaseAgent(
                     pass
             self._notify_webhooks("agent_error", {"error": str(e), "failure_type": f_type})
             return f"Error: {e} (Type: {f_type})"
+
 
     def _notify_webhooks(self, event: str, data: dict[str, Any]) -> None:
         """Helper to notify registered webhooks."""
@@ -287,6 +289,7 @@ class BaseAgent(
                 # Unexpected errors should be logged fully but not mask other bugs
                 logging.exception(f"[Robustness] Unexpected error while notifying webhook {url}: {e}")
 
+
     def _classify_exception(self, e: Exception) -> str:
         """
         Classify exception into FailureClassification enum.
@@ -306,6 +309,7 @@ class BaseAgent(
 
         return FailureClassification.UNKNOWN.value
 
+
     async def run_async(self, prompt: str) -> str:
         """Main execution entry point (formerly run)."""
         self.previous_content = self.current_content
@@ -321,6 +325,7 @@ class BaseAgent(
         self.current_content = result
         return result
 
+
     async def think(self, prompt: str) -> str:
         """
         The core synaptic processing method.
@@ -329,8 +334,8 @@ class BaseAgent(
         logging.info("[%s] Reasoning on prompt: %s...", self.__class__.__name__, prompt[:50])
 
         # 1. Governance & Quota Checks
-        if hasattr(self, "_check_preemption"):
-            await self._check_preemption()
+        if hasattr(self, "check_preemption") and callable(getattr(self, "check_preemption")):
+            await self.check_preemption()
 
         if hasattr(self, "quotas"):
             exceeded, reason = self.quotas.check_quotas()
@@ -386,7 +391,7 @@ class BaseAgent(
                     getattr(self, "context").log_failure(
                         stage=f"{self.__class__.__name__}.think",
                         error=str(e),
-                        stack_trace=traceback.format_exc(),
+                        traceback=traceback.format_exc(),
                         failure_type=f_type,
                         details={"prompt_preview": prompt[:100]}
                     )
@@ -398,9 +403,11 @@ class BaseAgent(
             logging.exception("[Robustness] Unexpected error in think execution, re-raising")
             raise
 
+
     def get_model(self) -> str:
         """Get the current model name."""
         return self._model or "gemini-3-flash"
+
 
     def __enter__(self) -> BaseAgent:
         """Enter context."""
@@ -415,7 +422,23 @@ class BaseAgent(
                 result = asyncio.run(self.run_async(self._system_prompt))
 
             self._notify_webhooks("agent_complete", {"status": "success", "result": result})
-            return result
+
+            import json  # pylint: disable=import-outside-toplevel
+            res_str = json.dumps(result)
+
+            # Check for record_interaction or record
+            if self.recorder is not None:
+                if hasattr(self.recorder, "record_interaction"):
+                    self.recorder.record_interaction(
+                        provider="unknown", model=self._model, prompt=self._system_prompt, result=res_str, meta={}
+                    )
+                elif hasattr(self.recorder, "record"):
+                    try:
+                        self.recorder.record(self._system_prompt, result)
+                    except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
+                        logging.debug("[Robustness] BaseAgent: Failed to record interaction: %s", e, exc_info=True)
+
+            return self
         except RuntimeError as e:
             f_type = self._classify_exception(e)
             if hasattr(self, "context") and self.context:
@@ -429,27 +452,56 @@ class BaseAgent(
                 except (RuntimeError, ValueError):
                     pass
             self._notify_webhooks("agent_error", {"error": str(e), "failure_type": f_type})
-            return f"Error: {e} (Type: {f_type})"
+            return self
 
-        import json  # pylint: disable=import-outside-toplevel
-        res_str = json.dumps(result)
-
-        # Check for record_interaction or record
-        if hasattr(self.recorder, "record_interaction"):
-            self.recorder.record_interaction(
-                provider="unknown", model=self._model, prompt=self._system_prompt, result=res_str, meta={}
-            )
-        elif hasattr(self.recorder, "record"):
-
-            try:
-                self.recorder.record(self._system_prompt, result)
-            except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
-                logging.debug("[Robustness] BaseAgent: Failed to record interaction: %s", e, exc_info=True)
 
     def verify_self(self, result: str) -> tuple[bool, str]:
         """Verify the integrity of a generated result."""
         return self.agent_logic_core.verify_self(result, 1.0)
 
+
     def _get_fallback_response(self) -> str:
         """Return a standardized fallback response."""
         return self.agent_logic_core.get_fallback_response()
+
+
+    async def _process_task(self, task_data: dict[str, Any]) -> dict[str, Any]:
+        """
+        Process a task from the queue (abstract method from TaskQueueMixin).
+        """
+        task_id = task_data.get("id", "unknown")
+        try:
+            prompt = task_data.get("prompt", "")
+            result = await self.think(prompt)
+            return {
+                "task_id": task_id,
+                "status": "completed",
+                "result": result,
+            }
+        except Exception as e:  # pylint: disable=broad-exception-caught
+            logging.error("Failed to process task %s: %s", task_id, e, exc_info=True)
+            return {
+                "task_id": task_id,
+                "status": "failed",
+                "error": str(e),
+            }
+
+
+    async def get_task_status(
+        self, cascade_context: CascadeContext | None = None
+    ) -> dict[str, Any]:
+        """
+        Get the status of a task or all queued tasks.
+        """
+        if cascade_context is None:
+            # Return all task results if no specific cascade_context provided
+            if not hasattr(self, "task_results"):
+                return {}
+            return self.task_results if self.task_results else {}
+        # Return specific task result if cascade_context is provided
+        if not hasattr(self, "task_results"):
+            return {}
+        task_id = getattr(cascade_context, "task_id", None)
+        if task_id is None:
+            return {}
+        return self.task_results.get(task_id, {})

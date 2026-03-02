@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@
 
 # pylint: disable=too-many-ancestors
 
-from __future__ import annotations
 
 import logging
 from pathlib import Path
@@ -30,16 +30,11 @@ from src.core.base.common.types.refactoring_pattern import RefactoringPattern
 from src.core.base.common.types.style_rule import StyleRule
 from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
-from src.logic.agents.development.coder_core import (
-    DEFAULT_PYTHON_STYLE_RULES, CoderCore)
-from src.logic.agents.development.mixins.agent.agent_language_mixin import \
-    AgentLanguageMixin
-from src.logic.agents.development.mixins.agent.agent_metrics_mixin import \
-    AgentMetricsMixin
-from src.logic.agents.development.mixins.agent.agent_refactor_mixin import \
-    AgentRefactorMixin
-from src.logic.agents.development.mixins.agent.agent_style_mixin import \
-    AgentStyleMixin
+from src.logic.agents.development.coder_core import DEFAULT_PYTHON_STYLE_RULES, CoderCore
+from src.logic.agents.development.mixins.agent.agent_language_mixin import AgentLanguageMixin
+from src.logic.agents.development.mixins.agent.agent_metrics_mixin import AgentMetricsMixin
+from src.logic.agents.development.mixins.agent.agent_refactor_mixin import AgentRefactorMixin
+from src.logic.agents.development.mixins.agent.agent_style_mixin import AgentStyleMixin
 
 __version__ = VERSION
 

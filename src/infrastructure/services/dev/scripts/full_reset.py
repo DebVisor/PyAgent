@@ -7,6 +7,7 @@ Re-scaffolds the entire swarm structure from a manifest.
 import os
 import time
 from src.infrastructure.dev.core.RebirthCore import RebirthCore
+import yaml
 
 def full_reset() -> None:
     root = os.getcwd()
@@ -31,7 +32,6 @@ def full_reset() -> None:
             "docs": ["INSTALL.md"]
         }
         os.makedirs(os.path.dirname(manifest_path), exist_ok=True)
-        import yaml
         with open(manifest_path, "w") as f:
             yaml.dump(default_manifest, f)
             

@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Fleet lookup mixin.py module.
@@ -5,29 +6,22 @@ Fleet lookup mixin.py module.
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.infrastructure.compute.backend.local_context_recorder import \
+from src.infrastructure.compute.backend.local_context_recorder import \
         LocalContextRecorder
-    from src.infrastructure.compute.backend.sql_metadata_handler import \
-        SqlMetadataHandler
-    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
-    from src.infrastructure.swarm.orchestration.healing.self_healing_orchestrator import \
-        SelfHealingOrchestrator
-    from src.infrastructure.swarm.orchestration.intel.self_improvement_orchestrator import \
-        SelfImprovementOrchestrator
-    from src.infrastructure.swarm.orchestration.signals.signal_registry import \
-        SignalRegistry
-    from src.infrastructure.swarm.orchestration.system.tool_registry import \
-        ToolRegistry
-    from src.logic.agents.cognitive.context.engines.global_context_engine import \
-        GlobalContextEngine
-    from src.observability.stats.metrics_engine import (ModelFallbackEngine,
-                                                        ObservabilityEngine)
+from src.infrastructure.compute.backend.sql_metadata_handler import SqlMetadataHandler
+from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+# Note: runtime imports avoided to prevent circular imports; type-only imports above
+from src.infrastructure.swarm.orchestration.healing.self_healing_orchestrator import SelfHealingOrchestrator
+from src.infrastructure.swarm.orchestration.intel.self_improvement_orchestrator import SelfImprovementOrchestrator
+from src.infrastructure.swarm.orchestration.signals.signal_registry import SignalRegistry
+from src.infrastructure.swarm.orchestration.system.tool_registry import ToolRegistry
+        from src.logic.agents.cognitive.context.engines.global_context_engine import GlobalContextEngine
+        from src.observability.stats.metrics_engine import ModelFallbackEngine, ObservabilityEngine
 
 
 class FleetLookupMixin:

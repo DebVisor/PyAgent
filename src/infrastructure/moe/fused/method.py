@@ -7,10 +7,16 @@ from .utils import determine_expert_map
 
 try:
     import torch
-    import torch.nn.functional as F
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
+if HAS_TORCH:
+    try:
+        import torch.nn.functional as F
+    except Exception:
+        F = None
+else:
+    F = None
 
 class FusedMoEMethodBase(ABC):
     """Base class for MoE computation methods."""

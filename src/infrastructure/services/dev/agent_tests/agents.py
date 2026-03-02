@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 Agents.py module.
 """
 
-from __future__ import annotations
 
 import ast
 import hashlib
@@ -27,13 +27,17 @@ from typing import Any
 
 from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
-from src.infrastructure.services.dev.agent_tests.enums import (CoverageType,
-                                                               TestPriority,
-                                                               TestStatus)
-from src.infrastructure.services.dev.agent_tests.models import (CoverageGap,
-                                                                TestCase,
-                                                                TestFactory,
-                                                                TestRun)
+from src.infrastructure.services.dev.agent_tests.enums import (
+    CoverageType,
+    TestPriority,
+    TestStatus,
+)
+from src.infrastructure.services.dev.agent_tests.models import (
+    CoverageGap,
+    TestCase,
+    TestFactory,
+    TestRun,
+)
 
 __version__ = VERSION
 

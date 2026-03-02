@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CpuGpuBufferPool.py - Paired CPU/GPU tensor buffers.
 
@@ -8,7 +9,6 @@ transfers.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Optional, Dict, Any, List, Tuple

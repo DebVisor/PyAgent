@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Engine.py module.
 """
 
-from __future__ import annotations
 
 import json
 import os
@@ -26,8 +26,8 @@ from typing import Any, Dict, List, Optional
 
 from .config import (ArchitectureSpec, ModelArchitecture, ModelCapability,
                      ModelInfo, QuantizationType, VRAMEstimate)
-from .detector import ArchitectureDetector
-from .estimator import VRAMEstimator
+                     from .detector import ArchitectureDetector
+                     from .estimator import VRAMEstimator
 
 
 class ModelRegistry:

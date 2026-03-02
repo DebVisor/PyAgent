@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Auto-extracted class from agent_coder.py"""
 
-from __future__ import annotations
 
 from base_agent import BaseAgent
 from dataclasses import dataclass, field

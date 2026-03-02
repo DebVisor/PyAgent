@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +14,6 @@
 # limitations under the License.
 
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import logging
 import time
@@ -26,7 +26,7 @@ __version__ = VERSION
 
 if TYPE_CHECKING:
     from ..agent import BaseAgent
-    from src.infrastructure.backend.LocalContextRecorder import LocalContextRecorder
+    from src.infrastructure.compute.backend.LocalContextRecorder import LocalContextRecorder
 
 class BatchRequest:
     """Request in a batch processing queue."""

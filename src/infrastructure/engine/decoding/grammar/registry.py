@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Backend selection and dispatching logic for structured output grammars.
 """
 
-from __future__ import annotations
 
 import json
 import logging
@@ -29,9 +29,9 @@ import numpy as np
 
 from .base import (StructuredOutputGrammar, StructuredOutputOptions,
                    StructuredOutputsParams)
-from .ebnf_grammar import EBNFGrammar
-from .json_constraint import JSONSchemaGrammar
-from .regex_constraint import ChoiceGrammar, RegexGrammar
+                   from .ebnf_grammar import EBNFGrammar
+                   from .json_constraint import JSONSchemaGrammar
+                   from .regex_constraint import ChoiceGrammar, RegexGrammar
 
 logger = logging.getLogger(__name__)
 

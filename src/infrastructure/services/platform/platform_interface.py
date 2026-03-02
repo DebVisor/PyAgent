@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Facade for Platform Abstraction.
 Delegates to modularized sub-packages in src/infrastructure/platform/.
 """
 
-from __future__ import annotations
 
 from typing import Optional
 
@@ -29,10 +29,10 @@ from .cuda import CudaPlatform
 from .models import (AttentionBackend, CpuArchitecture, DeviceCapability,
                      DeviceFeature, DeviceInfo, MemoryInfo, PlatformConfig,
                      PlatformType, QuantizationType)
-from .registry import PlatformRegistry
-from .rocm import RocmPlatform
-from .tpu import TpuPlatform
-from .xpu import XpuPlatform
+                     from .registry import PlatformRegistry
+                     from .rocm import RocmPlatform
+                     from .tpu import TpuPlatform
+                     from .xpu import XpuPlatform
 
 __all__ = [
     "PlatformType",

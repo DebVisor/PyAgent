@@ -199,7 +199,7 @@ class SelfImprovementCoordinator:
                 return
 
         # 2. Instantiate Director for cross-agent orchestration
-        from src.infrastructure.swarm.orchestration.swarm.director_agent import \
+                from src.infrastructure.swarm.orchestration.swarm.director_agent import \
             DirectorAgent
 
         # Use a temporary or the main improvements file

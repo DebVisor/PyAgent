@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Api.py module.
@@ -6,7 +7,6 @@ Api.py module.
 # Copyright 2026 PyAgent Authors
 # Stats API server engine.
 
-from __future__ import annotations
 
 import json
 import logging

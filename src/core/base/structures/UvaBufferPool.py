@@ -1,3 +1,4 @@
+from __future__ import annotations
 """UvaBufferPool - Zero-copy GPU transfers via Unified Virtual Addressing.
 
 This module implements UVA (Unified Virtual Addressing) buffer management
@@ -17,7 +18,6 @@ Example:
     >>> pool.release(buffer)
 """
 
-from __future__ import annotations
 
 import threading
 import time
@@ -191,7 +191,7 @@ class UvaBuffer:
                 self._cpu_tensor[:data.numel()].copy_(data.view(-1))
             elif hasattr(data, '__array__'):
                 # Numpy array
-                import numpy as np
+            import numpy as np
                 flat = np.asarray(data).ravel()
                 self._cpu_tensor[:len(flat)].copy_(
                     torch.from_numpy(flat)

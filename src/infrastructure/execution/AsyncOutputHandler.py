@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 AsyncOutputHandler.py - Async copy streams and CUDA event synchronization.
 
@@ -7,7 +8,6 @@ handling for overlapping compute and data transfer.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Optional, Dict, Any, List, Callable, TypeVar

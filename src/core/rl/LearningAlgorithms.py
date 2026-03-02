@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Reinforcement Learning Algorithms Implementation - Phase 319 Enhanced
 
-from __future__ import annotations
 import numpy as np
 from typing import Any, List, Dict, Tuple, Optional, Callable
 from dataclasses import dataclass, field

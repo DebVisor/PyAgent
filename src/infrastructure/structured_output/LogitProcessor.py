@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 39: Logit Processor for Constrained Generation
 # Inspired by vLLM's structured output framework
@@ -12,12 +13,12 @@ Provides:
 - Temperature/top-p/top-k integration
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union
 import numpy as np
+import time
 
 
 # =============================================================================
@@ -163,8 +164,7 @@ class ConstrainedLogitProcessor(LogitProcessor):
         """Apply token constraints."""
         if not self._enabled:
             return logits
-        
-        import time
+
         start = time.perf_counter()
         
         batch_size = logits.shape[0]
@@ -243,8 +243,7 @@ class BitmaskLogitProcessor(LogitProcessor):
         """Apply bitmask constraints."""
         if not self._enabled:
             return logits
-        
-        import time
+
         start = time.perf_counter()
         
         batch_size = logits.shape[0]
@@ -340,8 +339,7 @@ class BiasLogitProcessor(LogitProcessor):
         """Apply biases to logits."""
         if not self._enabled or not self._biases:
             return logits
-        
-        import time
+
         start = time.perf_counter()
         
         result = logits.copy()

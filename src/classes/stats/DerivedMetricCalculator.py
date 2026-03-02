@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Auto-extracted class from agent_stats.py"""
 
-from __future__ import annotations
 
 from .DerivedMetric import DerivedMetric
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Clients for distributed communication.
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging
@@ -29,9 +29,9 @@ from typing import Callable, Dict, Generic, List, Optional, TypeVar
 
 from .config import (EngineIdentity, LoadBalancingStrategy, ParallelConfig,
                      WorkerIdentity)
-from .coordinator import DPCoordinator
-from .messages import RequestMessage, ResponseMessage
-from .worker import BaseWorker, WorkerProcess
+                     from .coordinator import DPCoordinator
+                     from .messages import RequestMessage, ResponseMessage
+                     from .worker import BaseWorker, WorkerProcess
 
 logger = logging.getLogger(__name__)
 

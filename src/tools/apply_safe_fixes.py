@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Apply safe, automated fixes over extracted candidate files.
 
 Currently implements:
@@ -8,7 +9,6 @@ Currently implements:
 Writes unified diff patches to `.external/patches/` and optionally applies changes when
 `--apply` is passed. Re-runs static checks and generated tests after applying fixes.
 """
-from __future__ import annotations
 import argparse
 from pathlib import Path
 import difflib

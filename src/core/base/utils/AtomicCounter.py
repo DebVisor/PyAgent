@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 AtomicCounter - Thread-safe counter with Rust acceleration.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's counter.py patterns for high-frequency atomic operations.
 
 Phase 17: vLLM Pattern Integration
 """
-from __future__ import annotations
 import threading
 from typing import Optional
 

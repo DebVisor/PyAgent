@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Delegation management for agent cascading.
 Enables agents to launch sub-tasks by spawning other specialized agents.
 """
 
-from __future__ import annotations
 
 import logging
 from pathlib import Path

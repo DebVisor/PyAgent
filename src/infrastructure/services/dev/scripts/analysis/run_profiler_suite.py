@@ -32,7 +32,7 @@ print(f"DEBUG: After cleaning sys.path: {sys.path[:3]}")
 try:
     # Force profile rust_core BEFORE other imports
     import rust_core
-    print(f"DEBUG: rust_core file: {getattr(rust_core, '__file__', 'None')}")
+        print(f"DEBUG: rust_core file: {getattr(rust_core, '__file__', 'None')}")
 
     # Now we can add project_root for other imports
     sys.path.insert(0, str(project_root))

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Auto-extracted class from agent_context.py"""
 
-from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING
 if TYPE_CHECKING:
-    from src.classes.base_agent import BaseAgent
+from src.classes.base_agent import BaseAgent
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum

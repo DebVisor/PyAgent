@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,13 +18,13 @@ Shell execution core for agents.
 Handles subprocess spawning, environment propagation, and interaction recording.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import os
 import subprocess
 import logging
 import asyncio
 from typing import List, Any, Optional, Dict
+from src.core.base.sandbox import SandboxManager
 
 __version__ = VERSION
 
@@ -60,7 +61,6 @@ class ShellExecutor:
         env = EnvironmentSanitizer.sanitize(env)
         
         # Phase 132: Apply Sandbox if running in plugin directory
-        from src.core.base.sandbox import SandboxManager
         if "plugins" in workspace_root or any("plugins" in c for c in cmd):
             logging.info(f"ShellExecutor: Activating Sandbox Lockdown for {agent_name}")
             env = SandboxManager.get_sandboxed_env(env)

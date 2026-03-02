@@ -61,9 +61,9 @@ def bulk_replace_files(
     try:
         # pylint: disable=import-outside-toplevel
         from ...rust_bridge import RustBridge
-    except (ImportError, ValueError):
+            except (ImportError, ValueError):
         # pylint: disable=import-outside-toplevel
-        from src.core.rust_bridge import RustBridge
+                from src.core.rust_bridge import RustBridge
 
 
     if RustBridge.is_rust_active():
@@ -88,9 +88,9 @@ def bulk_replace(
     try:
         # pylint: disable=import-outside-toplevel
         from ...rust_bridge import RustBridge
-    except (ImportError, ValueError):
+            except (ImportError, ValueError):
         # pylint: disable=import-outside-toplevel
-        from src.core.rust_bridge import RustBridge
+                from src.core.rust_bridge import RustBridge
 
     if RustBridge.is_rust_active():
         str_paths = [str(p) for p in file_paths]

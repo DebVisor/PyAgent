@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Base classes for cloud provider integration.
 
@@ -5,7 +6,6 @@ Defines the abstract interface that all cloud providers must implement,
 along with standardized request/response dataclasses.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field

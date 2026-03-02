@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Storage engine.py module.
@@ -7,7 +8,6 @@ Storage engine.py module.
 # Backup, snapshot, and compression engine.
 # Phase 16: Rust acceleration for JSON serialization and compression
 
-from __future__ import annotations
 
 import contextlib
 import json
@@ -223,6 +223,6 @@ class StatsCompressor:
         try:
             return json.loads(payload.decode("utf-8"))
         except json.JSONDecodeError as e:  # pylint: disable=broad-exception-caught, unused-variable
-            import traceback
+        import traceback
             traceback.print_exc()
             return payload

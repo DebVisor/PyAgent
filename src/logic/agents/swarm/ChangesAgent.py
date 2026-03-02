@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Auto-extracted class from agent_changes.py"""
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 from .ChangelogEntry import ChangelogEntry
 from .ChangelogTemplate import ChangelogTemplate
@@ -140,7 +140,7 @@ class ChangesAgent(
         # This intentionally bypasses BaseAgent.improve_content() caching so
         # tests that monkeypatch base_agent.BaseAgent.run_subagent remain
         # deterministic even when earlier test runs have populated caches.
-        from src.core.base.BaseAgent import entrypoint as _base_agent
+            from src.core.base.BaseAgent import entrypoint as _base_agent
 
         try:
             full_prompt = self._build_prompt_with_history(enhanced_prompt)

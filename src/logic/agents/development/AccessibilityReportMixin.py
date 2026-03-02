@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 
-from __future__ import annotations
 from src.core.base.types.AccessibilityReport import AccessibilityReport
 from src.core.base.types.AccessibilitySeverity import AccessibilitySeverity
 

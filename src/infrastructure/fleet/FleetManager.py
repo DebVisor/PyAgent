@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-"""Coordinator for deploying and aggregating results from multiple agents."""
-
-from __future__ import annotations
-from src.core.base.Version import VERSION
 import logging
 from pathlib import Path
 from typing import Any, TYPE_CHECKING
+
+from src.core.base.Version import VERSION
 from src.observability.StructuredLogger import StructuredLogger
 from src.infrastructure.fleet.WorkflowState import WorkflowState
 from src.infrastructure.fleet.AgentRegistry import AgentRegistry
@@ -47,6 +45,8 @@ if TYPE_CHECKING:
 __version__ = VERSION
 
 logger = StructuredLogger(__name__)
+
+"""Coordinator for deploying and aggregating results from multiple agents."""
 
 
 class FleetManager(

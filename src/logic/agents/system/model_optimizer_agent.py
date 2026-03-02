@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Agent specializing in model inference optimization and low-VRAM strategies."""
 
-from __future__ import annotations
 
 import json
 import logging
@@ -153,7 +153,7 @@ class ModelOptimizerAgent(BaseAgent):
     def get_airllm_setup_code(self, model_id: str, compression: str = "4bit") -> str:
         """Generates boilerplate code for running large models via AirLLM."""
         return f"""
-from airllm import AutoModel
+        from airllm import AutoModel
 __version__ = VERSION
 
 # Load large model {model_id} with {compression} compression

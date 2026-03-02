@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Delegation management for agent cascading.
 Enables agents to launch sub-tasks by spawning other specialized agents.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import os
 import logging
@@ -25,6 +25,7 @@ from pathlib import Path
 from typing import Optional, Any
 from src.core.base.registry import AgentRegistry
 from src.core.base.models import CascadeContext, AgentPriority
+import importlib
 
 __version__ = VERSION
 
@@ -69,7 +70,6 @@ class AgentDelegator:
             else:
                 module_name = f"src.{type_clean}.{agent_type}"
             
-            import importlib
             module = importlib.import_module(module_name)
             agent_class = getattr(module, agent_type)
             
@@ -91,10 +91,6 @@ class AgentDelegator:
                     return result
             finally:
                 pass
-                
-        except Exception as e:
-            logging.error(f"Delegation to {agent_type} failed: {e}")
-            return f"Error: Delegation failed - {str(e)}"
                 
         except Exception as e:
             logging.error(f"Delegation to {agent_type} failed: {e}")

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +24,6 @@ Phase 15 Rust Optimizations:
 - detect_cycles_rust: DFS-based cycle detection in dependency graphs
 """
 
-from __future__ import annotations
 
 import contextlib
 import logging
@@ -172,7 +172,7 @@ class AgentRegistryCore:
             with contextlib.suppress(AttributeError, RuntimeError, ValueError):
                 return to_snake_case_rust(name)
         # Python fallback
-        import re
+                import re
 
         s1 = re.sub("(.)([A-Z][a-z]+)", r"\1_\2", name)
         return re.sub("([a-z0-9])([A-Z])", r"\1_\2", s1).lower()

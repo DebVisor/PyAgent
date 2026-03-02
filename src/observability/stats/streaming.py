@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Streaming.py module.
@@ -6,7 +7,6 @@ Streaming.py module.
 # Copyright 2026 PyAgent Authors
 # Real-time stats streaming engine.
 
-from __future__ import annotations
 
 import contextlib
 import logging

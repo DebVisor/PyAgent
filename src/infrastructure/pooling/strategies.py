@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Strategy-based poolers for sequence representations.
 """
 
-from __future__ import annotations
 
 import math
 from abc import ABC, abstractmethod

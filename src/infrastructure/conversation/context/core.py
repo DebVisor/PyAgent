@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Core conversation context classes.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json
@@ -219,6 +219,7 @@ class AgenticContext(ConversationContext):
     ) -> List[ToolExecution]:
         """Queue tool calls from assistant response."""
         from .models import ToolExecution
+
         executions = []
         for tc in tool_calls:
             func = tc.get("function", {})

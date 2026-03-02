@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Coordinator for deploying and aggregating results from multiple agents."""
 
-from __future__ import annotations
 
 import contextlib
 import logging
@@ -24,31 +24,19 @@ from typing import TYPE_CHECKING, Any
 
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.swarm.fleet.agent_registry import AgentRegistry
-from src.infrastructure.swarm.fleet.fleet_consensus_manager import \
-    FleetConsensusManager
-from src.infrastructure.swarm.fleet.fleet_execution_core import \
-    FleetExecutionCore
-from src.infrastructure.swarm.fleet.fleet_interaction_recorder import \
-    FleetInteractionRecorder
-from src.infrastructure.swarm.fleet.fleet_lifecycle_manager import \
-    FleetLifecycleManager
+from src.infrastructure.swarm.fleet.fleet_consensus_manager import FleetConsensusManager
+from src.infrastructure.swarm.fleet.fleet_execution_core import FleetExecutionCore
+from src.infrastructure.swarm.fleet.fleet_interaction_recorder import FleetInteractionRecorder
+from src.infrastructure.swarm.fleet.fleet_lifecycle_manager import FleetLifecycleManager
 from src.infrastructure.swarm.fleet.fleet_routing_core import FleetRoutingCore
-from src.infrastructure.swarm.fleet.mixins.fleet_delegation_mixin import \
-    FleetDelegationMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_discovery_mixin import \
-    FleetDiscoveryMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_lifecycle_mixin import \
-    FleetLifecycleMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_lookup_mixin import \
-    FleetLookupMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_routing_mixin import \
-    FleetRoutingMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_task_mixin import \
-    FleetTaskMixin
-from src.infrastructure.swarm.fleet.mixins.fleet_update_mixin import \
-    FleetUpdateMixin
-from src.infrastructure.swarm.fleet.orchestrator_registry import \
-    OrchestratorRegistry
+from src.infrastructure.swarm.fleet.mixins.fleet_delegation_mixin import FleetDelegationMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_discovery_mixin import FleetDiscoveryMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_lifecycle_mixin import FleetLifecycleMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_lookup_mixin import FleetLookupMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_routing_mixin import FleetRoutingMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_task_mixin import FleetTaskMixin
+from src.infrastructure.swarm.fleet.mixins.fleet_update_mixin import FleetUpdateMixin
+from src.infrastructure.swarm.fleet.orchestrator_registry import OrchestratorRegistry
 from src.infrastructure.swarm.fleet.workflow_state import WorkflowState
 from src.observability.structured_logger import StructuredLogger
 
@@ -205,8 +193,7 @@ if __name__ == "__main__":
 
     # These agents are used for the demo below
     from src.logic.agents.cognitive.knowledge_agent import KnowledgeAgent
-    from src.logic.agents.security.security_guard_agent import \
-        SecurityGuardAgent
+    from src.logic.agents.security.security_guard_agent import SecurityGuardAgent
 
     fleet.register_agent(
         "Knowledge",
@@ -216,7 +203,7 @@ if __name__ == "__main__":
     fleet.register_agent(
         "Security",
         SecurityGuardAgent,
-        str(root / "src.logic.agents.security.security_guard_agent.py"),
+        str(root / "src/logic/agents/security/security_guard_agent.py"),
     )
 
     workflow = [
@@ -230,9 +217,9 @@ if __name__ == "__main__":
 
     # report = fleet.execute_workflow("Initial Audit", workflow) # Async call, requires await or asyncio.run
     # For now, just logging calls replacement
-    logger.info("FleetManager demo execution started")
+    logging.info("FleetManager demo execution started")
     # print(report)
     # print("\nTelemetry Summary:")
     # print(json.dumps(fleet.telemetry.get_summary(), indent=2))
     if hasattr(fleet, "telemetry"):
-        logger.info("Telemetry Summary", summary=fleet.telemetry.get_summary())
+        logging.info("Telemetry Summary")

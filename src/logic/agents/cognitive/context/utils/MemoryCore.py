@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ MemoryCore logic for PyAgent.
 Handles episode structuring, utility scoring, and rank-based filtering.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 from typing import Dict, List, Any, Optional
 from datetime import datetime

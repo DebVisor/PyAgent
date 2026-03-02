@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 
-from __future__ import annotations
 import re
 from typing import Any, TYPE_CHECKING
 if TYPE_CHECKING:
-    from .ChangelogEntry import ChangelogEntry
+from .ChangelogEntry import ChangelogEntry
 
 class ChangelogValidationMixin:
     """Mixin for validating changelog entries and content."""

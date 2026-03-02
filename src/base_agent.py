@@ -1,11 +1,4 @@
-__logic_category__ = "General"
 #!/usr/bin/env python3
-# Copyright (c) 2025 PyAgent contributors
-
-"""
-Base Agent Module: Core agent functionality and CLI entry points.
-"""
-
 
 from src.version import VERSION
 import sys
@@ -23,12 +16,20 @@ if str(root / "src") not in sys.path:
 
 from src.classes.base_agent import *
 
+try:
+    from src.core.base.utilities import create_main_function
+except Exception:
+    from src.classes.base_agent.utilities import create_main_function
+
 # Shared CLI helper instance
 main = create_main_function(
     BaseAgent,
     "Base Agent: AI-powered file improvement",
-    "Path to the file to improve"
+    "Path to the file to improve",
 )
 
 if __name__ == "__main__":
     main()
+
+__all__ = ["create_main_function"]
+__logic_category__ = "General"

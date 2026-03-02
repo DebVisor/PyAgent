@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 Phase 45: ARC Offload Base
 Abstract base for offloading managers.
 """
 
-from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Optional, TYPE_CHECKING
 from src.infrastructure.kv_transfer.arc.types import BlockHash, LoadStoreSpec, PrepareStoreOutput

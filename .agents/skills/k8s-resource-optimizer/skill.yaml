@@ -1,0 +1,44 @@
+name: k8s-resource-optimizer
+version: 1.0.0
+description: Analyzes Kubernetes resource usage metrics and historical data to suggest optimal CPU and Memory requests and limits. Use to reduce cloud costs, prevent OOMKills, and improve overall cluster reliability by right-sizing your deployments.
+inputs:
+  manifest_path:
+    type: string
+    description: Path to the K8s deployment YAML to optimize.
+    required: true
+  usage_metrics:
+    type: object
+    description: Historical metrics (e.g., from Prometheus) for the pods.
+outputs:
+  recommendations:
+    type: array
+    items:
+      type: object
+      properties:
+        container:
+          type: string
+        current:
+          type: object
+        suggested:
+          type: object
+        savings_estimate:
+          type: string
+capabilities:
+  - Analysis of peak vs. average resource usage.
+  - Correlation between resource limits and historical throttling or OOM events.
+  - Automated generation of 'Patch' YAML to apply recommendations.
+constraints:
+  - Requires accurate historical metrics for precise recommendations.
+  - Recommendations favor stability over aggressive cost-cutting by default.
+security:
+  - Does not require direct cluster access if metrics are provided as input.
+  - Analyzes configuration only; does not modify live clusters automatically.
+examples:
+  - input:
+      manifest_path: "./deploy.yaml"
+    output:
+      recommendations:
+        - container: "api-server"
+          current: {cpu: "1", mem: "2Gi"}
+          suggested: {cpu: "500m", mem: "1Gi"}
+          savings_estimate: "$15/month"

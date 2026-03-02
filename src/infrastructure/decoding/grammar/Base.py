@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Base classes and parameters for structured output grammar.
 """
 
-from __future__ import annotations
 
 import json
 from abc import ABC, abstractmethod

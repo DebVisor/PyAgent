@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 BloomFilter - Probabilistic data structure for fast membership testing.
 
@@ -9,7 +10,6 @@ Goes beyond vLLM with space-efficient set operations:
 
 Phase 18: Beyond vLLM - Advanced Data Structures
 """
-from __future__ import annotations
 import hashlib
 import math
 from typing import Any, Iterator

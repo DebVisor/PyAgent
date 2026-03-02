@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,17 +15,15 @@
 
 """Base model classes and utility functions."""
 
-from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Optional
 import time
-
 from .core_enums import (AuthMethod, FilePriority,
                          SerializationFormat, EnvironmentStatus, EnvironmentIsolation)
-from ._factories import (
+                         from ._factories import (
     _empty_agent_event_handlers, _empty_dict_str_any,
     _empty_dict_str_callable_any_any, _empty_dict_str_configprofile,
     _empty_dict_str_filepriority, _empty_dict_str_float,

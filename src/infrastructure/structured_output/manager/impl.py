@@ -2,6 +2,7 @@ from __future__ import annotations
 import json
 from typing import Any, Callable, Dict, List, Optional, Sequence
 import numpy as np
+import re
 from .base import StructuredOutputGrammar
 from .config import GrammarSpec
 
@@ -18,8 +19,7 @@ class SimpleRegexGrammar(StructuredOutputGrammar):
         token_strings: Optional[Dict[int, str]] = None,
     ):
         super().__init__(grammar_spec, vocab_size, request_id)
-        
-        import re
+
         self._pattern = re.compile(grammar_spec.spec)
         self._generated_text = ""
         self._token_strings = token_strings or {}

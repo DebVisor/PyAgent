@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """
 AST-based extractor: reads .external/refactor_report.json, selects safe Python files,
 and extracts them into `src/external_candidates/auto/` with provenance headers.
@@ -17,7 +18,6 @@ Usage:
 This script makes small, reversible changes: writes new files under src/external_candidates/auto
 and tests under tests/unit/. It does not modify `.external`.
 """
-from __future__ import annotations
 import argparse
 import json
 import ast

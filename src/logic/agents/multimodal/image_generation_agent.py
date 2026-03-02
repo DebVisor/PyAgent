@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Image Generation Agent for PyAgent.
 Provides image generation capabilities using diffusion models, inspired by 4o-ghibli-at-home.
 """
 
-from __future__ import annotations
 
 import os
 import time
@@ -35,8 +35,8 @@ except ImportError:
     FluxPipeline = None
     HAS_DIFFUSERS = False
 
-from src.core.base.lifecycle.base_agent import BaseAgent
-from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
+    from src.core.base.lifecycle.base_agent import BaseAgent
+    from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
 
 
 class ImageGenerationAgent(BaseAgent, TaskQueueMixin):

@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Mistral tokenizer implementation.
 """
 
-from __future__ import annotations
 
 from typing import List, Optional, Sequence
 
@@ -27,7 +27,7 @@ class MistralTokenizer(BaseTokenizer):
             self._tokenizer = MT.from_model(self.config.model_name)
         except ImportError:
             from transformers import AutoTokenizer
-            self._tokenizer = AutoTokenizer.from_pretrained(
+                self._tokenizer = AutoTokenizer.from_pretrained(
                 self.config.model_name,
                 trust_remote_code=True,
             )

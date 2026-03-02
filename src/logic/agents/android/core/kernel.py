@@ -2,7 +2,7 @@ import os
 import time
 import subprocess
 import json
-from typing import Dict, Any
+from typing import Dict, Any, List
 from openai import OpenAI
 import sanitizer
 
@@ -12,7 +12,16 @@ MODEL = "gpt-4o"  # Or "gpt-4-turbo" for faster/cheaper execution
 SCREEN_DUMP_PATH = "/sdcard/window_dump.xml"
 LOCAL_DUMP_PATH = "window_dump.xml"
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+_OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+if _OPENAI_API_KEY:
+    try:
+        client = OpenAI(api_key=_OPENAI_API_KEY)
+    except Exception:
+        # Fail-safe: if client cannot be constructed at import-time, set to None
+        client = None
+else:
+    # Tests/import-time checks shouldn't require an active OpenAI client.
+    client = None
 
 def run_adb_command(command: List[str]):
     """Executes a shell command via ADB."""

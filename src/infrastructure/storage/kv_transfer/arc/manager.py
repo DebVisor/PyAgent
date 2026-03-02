@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Phase 45: ARC Offload Manager
 Implementation of Adaptive Replacement Cache (ARC) and variants.
 """
 
-from __future__ import annotations
 
 import threading
 import time
@@ -28,7 +28,7 @@ from src.core.base.logic.connectivity_manager import ConnectivityManager
 from src.infrastructure.storage.kv_transfer.arc.base import OffloadingManager
 from src.infrastructure.storage.kv_transfer.arc.types import (
     BlockHash, BlockState, BlockStatus, OffloadingEvent, PrepareStoreOutput)
-from src.infrastructure.storage.kv_transfer.k_vzap import (KVzapConfig,
+    from src.infrastructure.storage.kv_transfer.k_vzap import (KVzapConfig,
                                                            KVzapPruner)
 
 if TYPE_CHECKING:

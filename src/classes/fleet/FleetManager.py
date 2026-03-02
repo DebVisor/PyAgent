@@ -11,15 +11,15 @@ from concurrent.futures import ThreadPoolExecutor, TimeoutError
 
 # Type Hinting Imports (Phase 106)
 if TYPE_CHECKING:
-    from src.classes.backend.LocalContextRecorder import LocalContextRecorder
-    from src.classes.backend.SqlAgent import SqlAgent
-    from src.classes.stats.ObservabilityEngine import ObservabilityEngine
-    from src.classes.orchestration.ToolRegistry import ToolRegistry
-    from src.classes.orchestration.SignalRegistry import SignalRegistry
-    from src.classes.stats.ModelFallbackEngine import ModelFallbackEngine
-    from src.classes.context.GlobalContextEngine import GlobalContextEngine
-    from src.classes.orchestration.SelfHealingOrchestrator import SelfHealingOrchestrator
-    from src.classes.orchestration.SelfImprovementOrchestrator import SelfImprovementOrchestrator
+from src.classes.backend.LocalContextRecorder import LocalContextRecorder
+from src.classes.backend.SqlAgent import SqlAgent
+from src.classes.stats.ObservabilityEngine import ObservabilityEngine
+from src.classes.orchestration.ToolRegistry import ToolRegistry
+from src.classes.orchestration.SignalRegistry import SignalRegistry
+from src.classes.stats.ModelFallbackEngine import ModelFallbackEngine
+from src.classes.context.GlobalContextEngine import GlobalContextEngine
+from src.classes.orchestration.SelfHealingOrchestrator import SelfHealingOrchestrator
+from src.classes.orchestration.SelfImprovementOrchestrator import SelfImprovementOrchestrator
 
 # Core Components
 from src.classes.base_agent import BaseAgent
@@ -205,7 +205,7 @@ class FleetManager:
         """
         from src.version import SDK_VERSION
         from src.classes.fleet.VersionGate import VersionGate
-        
+
         if not VersionGate.is_compatible(SDK_VERSION, remote_version):
             logging.warning(f"Fleet: Rejecting remote node {node_url} (Incompatible version {remote_version})")
             return

@@ -32,12 +32,12 @@ class SkillManagerCore:
         discovered = []
         if not os.path.exists(self.skills_dir):
             return discovered
-            
+
         for root, _, files in os.walk(self.skills_dir):
             if "mcp.json" in files:
                 manifest_path = os.path.join(root, "mcp.json")
                 try:
-                    with open(manifest_path, 'r') as f:
+                    with open(manifest_path, 'r', encoding='utf-8') as f:
                         manifest = json.load(f)
                         skill_name = manifest.get("name", os.path.basename(root))
                         self.active_skills[skill_name] = manifest
@@ -47,7 +47,9 @@ class SkillManagerCore:
         return discovered
 
     def get_skill_manifest(self, skill_name: str) -> Optional[Dict[str, Any]]:
+        """Retrieves the manifest for a registered skill by name."""
         return self.active_skills.get(skill_name)
+
 
     async def ensure_tool_installed(self, tool_name: str, install_cmd: List[str]) -> bool:
         """
@@ -69,8 +71,8 @@ class SkillManagerCore:
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE
             )
-            stdout, stderr = await process.communicate()
-            
+            _, stderr = await process.communicate()
+
             if process.returncode == 0:
                 print(f"Successfully installed {tool_name}")
                 return True
@@ -81,20 +83,21 @@ class SkillManagerCore:
             print(f"Exception during JIT installation of {tool_name}: {e}")
             return False
 
+
     async def jit_install_from_manifest(self, skill_name: str) -> bool:
         """Installs dependencies defined in the skill's mcp.json."""
         manifest = self.get_skill_manifest(skill_name)
         if not manifest:
             return False
-            
+
         install_info = manifest.get("install")
         if not install_info:
             return True # Nothing to install
-            
+
         cmd = install_info.get("command")
         check_binary = install_info.get("check_binary", skill_name)
-        
+
         if not cmd:
             return True
-            
+
         return await self.ensure_tool_installed(check_binary, cmd)

@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Lock-Free Queue for high-performance concurrent operations.
 
 Phase 19: Beyond vLLM - Performance Patterns
 Wait-free and lock-free data structures.
 """
-from __future__ import annotations
 
 import threading
 import time

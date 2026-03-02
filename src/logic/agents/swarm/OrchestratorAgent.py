@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Standardized OrchestratorAgent for Swarm Intelligence
 
-from __future__ import annotations
 import logging
 import time
 from pathlib import Path
@@ -73,7 +73,7 @@ class OrchestratorAgent(BaseAgent, OrchestratorFeatures):
             self.plugins = {}
         
         # Use the mixin implementation
-        from src.logic.agents.swarm.OrchestratorPluginMixin import OrchestratorPluginMixin
+            from src.logic.agents.swarm.OrchestratorPluginMixin import OrchestratorPluginMixin
         OrchestratorPluginMixin.register_plugin(self, plugin)
 
     @property
@@ -184,7 +184,7 @@ class OrchestratorAgent(BaseAgent, OrchestratorFeatures):
             return "Orchestrator: No loop implementation found."
             
         # Call modern async run via runner
-        import asyncio
+            import asyncio
         try:
             # Check if there is an existing event loop
             try:

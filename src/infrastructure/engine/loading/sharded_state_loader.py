@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,6 +12,24 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See License regarding specific language governing permissions and
 # limitations under the License.
+
+from _thread import LockType
+import asyncio
+import concurrent.futures
+import glob
+import os
+import re
+import threading
+from dataclasses import dataclass
+from typing import (Any, Callable, Dict, Generator, List, Optional, Tuple)
+
+from torch._tensor import Tensor
+
+try:
+    import rust_core
+    HAS_RUST = True
+except ImportError:
+    HAS_RUST = False
 
 """
 Sharded State Loader regarding PyAgent
@@ -29,33 +48,6 @@ vLLM Patterns:
 - _filter_subtensors regarding shared storage handling
 - Parallel weight download and loading
 """
-
-from __future__ import annotations
-
-from _thread import LockType
-import asyncio
-import concurrent.futures
-import glob
-import os
-import re
-import threading
-from dataclasses import dataclass
-from typing import (TYPE_CHECKING, Any, Callable, Dict, Generator, List,
-                    Optional, Tuple)
-
-from torch._tensor import Tensor
-
-from torch._tensor import Tensor
-
-if TYPE_CHECKING:
-    pass
-
-try:
-    import rust_core
-
-    HAS_RUST = True
-except ImportError:
-    HAS_RUST = False
 
 
 @dataclass
@@ -143,14 +135,13 @@ class SubtensorFilter:
         def get_end_ptr(tensor: Any) -> int:
             """Get end pointer of tensor data."""
             return tensor.view(-1)[-1].data_ptr() + tensor.element_size()
-
         result: Dict[str, Any] = {}
 
         def _process_group(group: List[Tuple[str, Any]]) -> None:
             def _check_strict(item: Tuple[str, Any]) -> bool:
                 k, t = item
                 a, b = t.data_ptr(), get_end_ptr(t)
-                
+
                 def is_strictly_contained_in(other: Tuple[str, Any]) -> bool:
                     k2, t2 = other
                     if k == k2 or not t2.is_contiguous():
@@ -166,6 +157,8 @@ class SubtensorFilter:
 
                 if not any(map(is_strictly_contained_in, group)):
                     result[k] = t
+                    return True
+                return False
 
             list(map(_check_strict, group))
 
@@ -280,7 +273,7 @@ class ShardedStateLoader:
                 # Use list conversion to avoid nested iteration in generator
                 return list(map(lambda n: (n, f.get_tensor(n)), f.keys()))
 
-        import itertools
+                import itertools
         return itertools.chain.from_iterable(map(_yield_from_shard, shard_files))
 
 
@@ -359,8 +352,11 @@ class IncrementalShardLoader:
 
         def _process_shard(shard_file: str) -> None:
             shard_data: Dict[str, Any] = self.load_shard(shard_file)
-            if callback:
-                list(map(lambda item: callback(item[0], item[1]), list(shard_data.items())))
+            if callback is not None:
+                def _invoke_callback(item: Tuple[str, Any]) -> None:
+                    """Invoke callback regarding a single tensor item."""
+                    callback(item[0], item[1])
+                list(map(_invoke_callback, list(shard_data.items())))
 
         list(map(_process_shard, shard_files))
 
@@ -435,7 +431,9 @@ class AsyncShardLoader:
             self._start_prefetch(shard_files[: self.prefetch_count])
 
             import itertools
-            return itertools.chain.from_iterable(map(_gen_shard_items, range(len(shard_files))))
+            return itertools.chain.from_iterable(
+                map(_gen_shard_items, range(len(shard_files)))
+            )
 
         finally:
             pass # Cleanup handled outside if needed or by executor shutdown

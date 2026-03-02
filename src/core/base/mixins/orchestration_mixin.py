@@ -33,6 +33,7 @@ class OrchestrationMixin:
     def __init__(self, **_kwargs: Any) -> None:
         self.fleet: Any = None
         self._strategy: Any = None
+        self.context: Any = None
 
         try:
             # pylint: disable=import-outside-toplevel
@@ -45,11 +46,10 @@ class OrchestrationMixin:
 
         try:
             # pylint: disable=import-outside-toplevel
-            from src.infrastructure.swarm.orchestration.system.tool_registry import \
-                ToolRegistry
+            from src.infrastructure.swarm.orchestration.tools.tool_registry import ToolRegistry
 
             self.tool_registry = ToolRegistry()
-        except (ImportError, ValueError):
+        except (ImportError, ValueError, ModuleNotFoundError, AttributeError):
             self.tool_registry = None
 
     @property
@@ -100,21 +100,30 @@ class OrchestrationMixin:
             exceeded, reason = getattr(self, "quotas").check_quotas()
             if exceeded:
                 # pylint: disable=import-outside-toplevel
-                from src.core.base.common.base_exceptions import CycleInterrupt
+            from src.core.base.common.base_exceptions import CycleInterrupt
 
                 raise CycleInterrupt(reason)
 
+        execution_engine_cls = None
         try:
             # pylint: disable=import-outside-toplevel
-            from src.infrastructure.compute.backend import \
-                execution_engine as ab
-        except ImportError:
-            sys.path.append(str(Path(__file__).parent.parent.parent.parent))
-            # pylint: disable=import-outside-toplevel
-            from src.infrastructure.compute.backend import \
-                execution_engine as ab
+            from src.infrastructure.compute.backend import execution_engine as ee_module
 
-        result: str | None = await asyncio.to_thread(ab.run_subagent, description, prompt, original_content)
+            execution_engine_cls = getattr(ee_module, "ExecutionEngine", None)
+            if execution_engine_cls is None:
+                logging.debug("ExecutionEngine class not found in execution_engine module")
+        except (ImportError, ModuleNotFoundError, AttributeError) as e:
+            logging.debug("Failed to import ExecutionEngine module: %s", e)
+
+        if execution_engine_cls is None:
+            raise ModuleNotFoundError(
+                "ExecutionEngine not found. Ensure 'src.infrastructure.compute.backend.execution_engine' module exists "
+                "and exports an 'ExecutionEngine' class."
+            )
+
+        engine = execution_engine_cls()
+
+        result: str | None = await asyncio.to_thread(engine.run_subagent, description, prompt, original_content)
 
         if hasattr(self, "quotas") and result:
             getattr(self, "quotas").update_usage(len(prompt) // 4, len(result) // 4)
@@ -165,7 +174,7 @@ class OrchestrationMixin:
         try:
             # pylint: disable=import-outside-toplevel
             from src.infrastructure import backend as ab
-        except ImportError:
+                except ImportError:
             return {}
         return ab.get_backend_status()
 
@@ -175,7 +184,7 @@ class OrchestrationMixin:
         try:
             # pylint: disable=import-outside-toplevel
             from src.infrastructure import backend as ab
-        except ImportError:
+                except ImportError:
             return "Backends unavailable"
         return ab.describe_backends()
 

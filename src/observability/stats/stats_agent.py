@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Auto-extracted class from agent_stats.py"""
 
-from __future__ import annotations
 
 import csv
 import hashlib
@@ -35,13 +35,13 @@ try:
 except ImportError:
     HAS_RUST = False
 
-from src.core.base.lifecycle.version import VERSION
-from src.observability.stats.observability_core import (Alert, AlertSeverity,
+    from src.core.base.lifecycle.version import VERSION
+    from src.observability.stats.observability_core import (Alert, AlertSeverity,
                                                         Metric, MetricSnapshot,
                                                         MetricType,
                                                         RetentionPolicy,
                                                         StatsCore, Threshold)
-from src.observability.structured_logger import StructuredLogger
+                                                        from src.observability.structured_logger import StructuredLogger
 
 __version__: str = VERSION
 

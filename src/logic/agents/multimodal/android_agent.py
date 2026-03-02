@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Android agent.py module.
 """
 
 
-from __future__ import annotations
 
 import logging
 import time
@@ -29,7 +29,7 @@ from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-from src.logic.agents.multimodal.core.android_core import AndroidCore
+    from src.logic.agents.multimodal.core.android_core import AndroidCore
 
 __version__ = VERSION
 

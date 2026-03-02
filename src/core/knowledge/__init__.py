@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Core Knowledge Storage Interfaces for PyAgent.
 Designed to handle high-volume parameters with efficient access patterns.
 """
 
-from __future__ import annotations
 
 from src.core.base.lifecycle.version import VERSION
 

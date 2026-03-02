@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Reinforcement Learning Action Space Definition - Phase 319 Enhanced
 
-from __future__ import annotations
 from typing import Any, List, Union, Dict, Optional, Tuple
 from dataclasses import dataclass
 import numpy as np

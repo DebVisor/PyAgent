@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Thought debugger.py module.
@@ -6,7 +7,6 @@ Thought debugger.py module.
 # Copyright 2026 PyAgent Authors
 # Phase 269: Interactive Thought Debugger
 
-from __future__ import annotations
 
 import logging
 import sys

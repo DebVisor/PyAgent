@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Fallback incremental detokenization for non-fast tokenizers.
 """
 
-from __future__ import annotations
 
 from typing import (
     List,

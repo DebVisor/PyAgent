@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Core conversation context classes.
 """
 
-from __future__ import annotations
 
 import json
 import time
@@ -28,8 +28,8 @@ from typing import Any, Callable, Dict, List, Optional
 
 from .models import (ContextConfig, ContextSnapshot, ContextState,
                      ConversationTurn, TokenMetrics, ToolExecution, TurnType)
-from .orchestrator import ToolOrchestrator
-from .tracker import TurnTracker
+                     from .orchestrator import ToolOrchestrator
+                     from .tracker import TurnTracker
 
 
 class ConversationContext(ABC):

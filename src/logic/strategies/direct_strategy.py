@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Direct strategy.py module.
@@ -6,7 +7,6 @@ Direct strategy.py module.
 # Copyright 2026 PyAgent Authors
 # Apache 2.0 License
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
@@ -15,7 +15,7 @@ from src.core.base.lifecycle.version import VERSION
 from .agent_strategy import AgentStrategy
 
 if TYPE_CHECKING:
-    from collections.abc import Callable
+from collections.abc import Callable
 
     BackendFunction = Callable[[str, str | None, list[dict[str, str]] | None], str]
 

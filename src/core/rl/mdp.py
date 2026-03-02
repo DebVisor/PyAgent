@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Mdp.py module.
@@ -5,7 +6,6 @@ Mdp.py module.
 # Copyright 2026 PyAgent Authors
 # Markov Decision Process (MDP) Implementation - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import logging
 import random

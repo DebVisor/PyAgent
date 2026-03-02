@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Groq cloud provider connector.
 
@@ -5,7 +6,6 @@ Provides integration with Groq's ultra-fast inference API,
 optimized for low-latency LLM inference.
 """
 
-from __future__ import annotations
 
 import os
 import time

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
@@ -18,7 +19,6 @@ Beyond vLLM:
 - Dynamic precision switching (FP16/BF16/FP32)
 """
 
-from __future__ import annotations
 
 import logging
 import math
@@ -42,6 +42,8 @@ try:
     HAS_TRITON = True
 except ImportError:
     HAS_TRITON = False
+    triton = None
+    tl = None
 
 
 class AttentionBackend(Enum):

@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 Phase 45: ARC Offload Types
 Data structures and enums for ARC offloading.
 """
 
-from __future__ import annotations
 import time
 from dataclasses import dataclass, field
 from enum import Enum, auto

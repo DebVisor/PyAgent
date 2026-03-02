@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Base Prompt Renderer class.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import Any, List, Optional, Tuple

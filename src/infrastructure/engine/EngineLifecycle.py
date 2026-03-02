@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
@@ -22,7 +23,6 @@ Example:
     >>> manager.shutdown()  # -> SHUTTING_DOWN -> DEAD
 """
 
-from __future__ import annotations
 
 import asyncio
 import enum

@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 LoRA Request Lifecycle - Detailed tracking of per-request events and timing.
 """
 
-from __future__ import annotations
 
 import threading
 import time

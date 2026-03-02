@@ -26,7 +26,7 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 if TYPE_CHECKING:
     import numpy as np
 
-from src.core.base.lifecycle.version import VERSION
+    from src.core.base.lifecycle.version import VERSION
 
 __version__ = VERSION
 
@@ -337,8 +337,8 @@ class EagleProposer(DrafterBase):
             except (RuntimeError, ValueError):
                 pass
             except BaseException as e:
-                import traceback
-                logger.warning(f"Failed to parse tree structure: {e}\n{traceback.format_exc()}")
+            import traceback
+                    logger.warning(f"Failed to parse tree structure: {e}\n{traceback.format_exc()}")
                 # Map indices regarding the speculation width
                 self.tree_choices = list(map(lambda i: (i,), range(self.num_speculative_tokens)))
         else:

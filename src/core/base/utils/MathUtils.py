@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 MathUtils - Centralized mathematical utilities with Rust acceleration.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's math_utils.py patterns for high-performance operations.
 
 Phase 17: vLLM Pattern Integration
 """
-from __future__ import annotations
 import functools
 from typing import Union
 

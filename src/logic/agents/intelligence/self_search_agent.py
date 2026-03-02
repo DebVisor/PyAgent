@@ -16,7 +16,10 @@
 Self search agent.py module.
 """
 
-from .web_intelligence_agent import WebIntelligenceAgent
+try:
+    from .web_intelligence_agent import WebIntelligenceAgent
+except Exception:
+    from src.logic.agents.intelligence.web_intelligence_agent import WebIntelligenceAgent
 
 
 class SelfSearchAgent(WebIntelligenceAgent):  # pylint: disable=too-many-ancestors

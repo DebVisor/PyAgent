@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 
@@ -17,7 +18,6 @@ Key Patterns:
 - Rust-accelerated PP stage mapping logic
 """
 
-from __future__ import annotations
 
 import logging
 from typing import (

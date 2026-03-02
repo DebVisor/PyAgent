@@ -1,0 +1,33 @@
+name: concept-mastery-validator
+version: 1.0.0
+description: Verifies alignment between curriculum modules and generated projects to ensure no knowledge gaps. Use to audit the logical flow of a teaching program and ensure students are prepared for assigned tasks.
+inputs:
+  curriculum_path:
+    type: string
+    required: true
+  project_spec_path:
+    type: string
+    required: true
+outputs:
+  validation_results:
+    type: object
+    properties:
+      alignment_score:
+        type: integer
+      gaps_detected:
+        type: array
+capabilities:
+  - Hidden dependency detection.
+  - Requirement-to-module cross-referencing.
+constraints:
+  - Accuracy depends on file description quality.
+security:
+  - Safe structural analysis.
+examples:
+  - input:
+      curriculum_path: "curr.yaml"
+      project_spec_path: "proj.yaml"
+    output:
+      validation_results:
+        alignment_score: 100
+        gaps_detected: []

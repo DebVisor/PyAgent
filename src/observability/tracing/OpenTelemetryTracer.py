@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 OpenTelemetry Tracing Module - Phase 20: Production Infrastructure
 ===================================================================
@@ -16,7 +17,6 @@ Features:
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import functools
 import logging
@@ -74,11 +74,11 @@ try:
     from opentelemetry.trace.propagation.tracecontext import (
         TraceContextTextMapPropagator,
     )
-    
+
     _is_otel_imported = True
 except ImportError:
-    import traceback
-    otel_import_error_traceback = traceback.format_exc()
+import traceback
+        otel_import_error_traceback = traceback.format_exc()
 
 
 P = ParamSpec("P")

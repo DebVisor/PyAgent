@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Executor interface and implementations for distributed execution.
 """
 
-from __future__ import annotations
 
 import logging
 import os

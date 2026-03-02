@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Extension Registry Module - Phase 20: Production Infrastructure
 ================================================================
@@ -16,7 +17,6 @@ Features:
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -439,7 +439,7 @@ class LazyExtensionManager:
     def _import_class(self, spec: str) -> type:
         """Import a class from a module:class spec."""
         import importlib
-        
+
         module_path, class_name = spec.rsplit(":", 1)
         module = importlib.import_module(module_path)
         return getattr(module, class_name)

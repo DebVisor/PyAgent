@@ -29,20 +29,32 @@ Phase 24: Advanced Observability & Parsing
 """
 
 # Convenience functions
-from src.interface.slash_commands.api import (execute_command,
-                                              get_slash_commands,
-                                              process_prompt)
-from src.interface.slash_commands.core import (CommandContext,
-                                               CommandDefinition,
-                                               CommandRegistry, CommandResult,
-                                               ParsedCommand, ProcessedPrompt,
-                                               SlashCommands, parse_commands)
-from src.interface.slash_commands.loader import (discover_command_modules,
-                                                 load_commands,
-                                                 reload_commands)
-from src.interface.slash_commands.registry import (command,
-                                                   get_global_registry,
-                                                   register, register_command)
+from src.interface.slash_commands.api import (
+  execute_command,
+  get_slash_commands,
+  process_prompt,
+)
+from src.interface.slash_commands.core import (
+  CommandContext,
+  CommandDefinition,
+  CommandRegistry,
+  CommandResult,
+  ParsedCommand,
+  ProcessedPrompt,
+  SlashCommands,
+  parse_commands,
+)
+from src.interface.slash_commands.loader import (
+  discover_command_modules,
+  load_commands,
+  reload_commands,
+)
+from src.interface.slash_commands.registry import (
+  command,
+  get_global_registry,
+  register,
+  register_command,
+)
 
 __all__ = [
     # Core classes

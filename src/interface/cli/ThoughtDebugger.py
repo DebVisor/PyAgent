@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Phase 269: Interactive Thought Debugger
 
-from __future__ import annotations
 import sys
 import time
 import json

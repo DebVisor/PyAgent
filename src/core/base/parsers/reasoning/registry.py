@@ -3,7 +3,7 @@
 
 import importlib
 import logging
-from typing import Any, ClassVar, Callable, type
+from typing import Any, ClassVar, Callable, Type
 from .base import ReasoningParser
 
 logger = logging.getLogger(__name__)
@@ -14,11 +14,11 @@ class ReasoningParserManager:
     Central registry for ReasoningParser implementations.
     """
     
-    reasoning_parsers: ClassVar[dict[str, type[ReasoningParser]]] = {}
+    reasoning_parsers: ClassVar[dict[str, Type[ReasoningParser]]] = {}
     lazy_parsers: ClassVar[dict[str, tuple[str, str]]] = {}  # name -> (module, class)
     
     @classmethod
-    def register_module(cls, name: str, parser_class: type[ReasoningParser]) -> None:
+    def register_module(cls, name: str, parser_class: Type[ReasoningParser]) -> None:
         """
         Register a parser class.
         """
@@ -39,7 +39,7 @@ class ReasoningParserManager:
         logger.debug(f"Registered lazy reasoning parser: {name} -> {module_path}.{class_name}")
     
     @classmethod
-    def get_reasoning_parser(cls, name: str) -> type[ReasoningParser]:
+    def get_reasoning_parser(cls, name: str) -> Type[ReasoningParser]:
         """
         Retrieve a registered parser class.
         """
@@ -56,7 +56,7 @@ class ReasoningParserManager:
         )
     
     @classmethod
-    def _load_lazy_parser(cls, name: str) -> type[ReasoningParser]:
+    def _load_lazy_parser(cls, name: str) -> Type[ReasoningParser]:
         """Import and cache a lazily registered parser."""
         module_path, class_name = cls.lazy_parsers[name]
         
@@ -90,11 +90,11 @@ class ReasoningParserManager:
         return parser_cls(tokenizer, **kwargs)
 
 
-def reasoning_parser(name: str) -> Callable[[type[ReasoningParser]], type[ReasoningParser]]:
+def reasoning_parser(name: str) -> Callable[[Type[ReasoningParser]], Type[ReasoningParser]]:
     """
     Decorator to register a reasoning parser.
     """
-    def decorator(cls: type[ReasoningParser]) -> type[ReasoningParser]:
+    def decorator(cls: Type[ReasoningParser]) -> Type[ReasoningParser]:
         ReasoningParserManager.register_module(name, cls)
         return cls
     return decorator

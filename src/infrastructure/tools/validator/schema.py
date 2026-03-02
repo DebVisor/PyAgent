@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Schema Validation
 
@@ -5,7 +6,6 @@
 Schema validation for tool calls.
 """
 
-from __future__ import annotations
 
 from typing import Any, Dict, List, Tuple
 

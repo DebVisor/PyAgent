@@ -1,30 +1,31 @@
+#!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Phase 320: Fleet Discovery Mixin
 
-from __future__ import annotations
 import os
-import logging
-from typing import List, Dict, Any, Optional
+from typing import List
 from src.infrastructure.network.LANDiscovery import LANDiscovery, PeerInfo
 from src.observability.StructuredLogger import StructuredLogger
 
 logger = StructuredLogger(__name__)
 
+
 class FleetDiscoveryMixin:
     """
     Mixin for FleetManager to support LAN-based peer discovery and synchronization.
     """
-    
+
     def init_discovery(self, agent_id: str, service_port: int = 8000):
         """Initializes the LAN discovery service."""
         # Security: Check for discovery secret in environment
         secret = os.environ.get("PYAGENT_DISCOVERY_SECRET")
-        
+
         metadata = {
             "version": getattr(self, "version", "unknown"),
             "capabilities": list(getattr(self, "_capability_hints", {}).keys())[:10]
         }
-        
+
         self._discovery = LANDiscovery(
             agent_id=agent_id,
             service_port=service_port,
@@ -69,13 +70,16 @@ class FleetDiscoveryMixin:
             for peer in peers:
                 try:
                     url = f"http://{peer.ip}:{peer.port}/discovery/peers"
-                    async with session.get(url, timeout=5) as response:
+                    timeout = aiohttp.ClientTimeout(total=5)
+                    async with session.get(url, timeout=timeout) as response:
                         if response.status == 200:
                             data = await response.json()
                             remote_peers = data.get("peers", [])
                             for rp in remote_peers:
                                 # Logic to update local discovery with merged peers
                                 if hasattr(self, "_discovery"):
-                                    self._discovery._update_peer(rp)
+                                    # Merge remote peer into local discovery registry
+                                    peer_obj = PeerInfo(**rp) if isinstance(rp, dict) else rp
+                                    self._discovery._peers[peer_obj.agent_id] = peer_obj
                 except Exception as e:
                     logger.debug(f"FleetDiscovery: Failed to sync with {peer.agent_id}: {e}")

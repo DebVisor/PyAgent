@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Phase 45: Engine Client Factory
 Factory functions for creating engine clients.
 """
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING, Callable, Optional
 
@@ -29,10 +29,11 @@ from src.infrastructure.engine.engine_client.types import (ClientMode,
                                                            EngineClientConfig)
 
 if TYPE_CHECKING:
-    from src.infrastructure.engine.engine_client.base import \
-        EngineCoreClientBase
-    from src.infrastructure.engine.engine_client.types import (EngineOutput,
-                                                               SchedulerOutput)
+    from src.infrastructure.engine.engine_client.base import EngineCoreClientBase
+    from src.infrastructure.engine.engine_client.types import (
+        EngineOutput,
+        SchedulerOutput,
+    )
 
 
 def auto_select_client_mode(num_gpus: int = 1, use_dp: bool = False) -> ClientMode:

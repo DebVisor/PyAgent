@@ -145,8 +145,7 @@ class SelfImprovementCoordinator:
         Reads health stats and documentation context to trigger repairs.
         """
         from src.infrastructure.orchestration.healing.SelfHealingOrchestrator import SelfHealingOrchestrator
-        from src.infrastructure.orchestration.healing.SelfHealingOrchestrator import SelfHealingOrchestrator
-        
+
         # Initialize orchestrator (which now loads overrides from docs/prompt)
         orchestrator = SelfHealingOrchestrator(None) # type: ignore
         

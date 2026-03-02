@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,28 +13,23 @@
 # limitations under the License.
 
 from __future__ import annotations
-from src.core.base.Version import VERSION
+
 import os
 from pathlib import Path
 from typing import Any, TYPE_CHECKING
-from src.core.base.BaseAgent import BaseAgent
-from src.infrastructure.orchestration.core.SelfImprovementCore import (
-    SelfImprovementCore,
-)
+
+from src.core.base.version import VERSION
+from src.core.base.base_agent import BaseAgent
+from src.infrastructure.orchestration.core.self_improvement_core import (SelfImprovementCore)
+from src.infrastructure.orchestration.intel.self_improvement_analysis import (SelfImprovementAnalysis)
+from src.infrastructure.orchestration.intel.self_improvement_fixer import (SelfImprovementFixer)
+from src.infrastructure.backend.llm_client import LLMClient
+from .mixins.orchestrator_cycle_mixin import OrchestratorCycleMixin
+from .mixins.orchestrator_scan_mixin import OrchestratorScanMixin
+from .mixins.orchestrator_results_mixin import OrchestratorResultsMixin
 
 if TYPE_CHECKING:
-    from src.infrastructure.fleet.FleetManager import FleetManager
-    from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import (
-        SelfImprovementAnalysis,
-    )
-    from src.infrastructure.orchestration.intel.SelfImprovementFixer import (
-        SelfImprovementFixer,
-    )
-
-from src.infrastructure.backend.LLMClient import LLMClient
-from .mixins.OrchestratorCycleMixin import OrchestratorCycleMixin
-from .mixins.OrchestratorScanMixin import OrchestratorScanMixin
-from .mixins.OrchestratorResultsMixin import OrchestratorResultsMixin
+    from src.infrastructure.fleet.fleet_manager import FleetManager
 
 __version__ = VERSION
 
@@ -74,10 +70,6 @@ class SelfImprovementOrchestrator(
 
         # Phase 107: AI-assisted refactoring
         import requests
-
-        from .SelfImprovementAnalysis import SelfImprovementAnalysis
-        from .SelfImprovementFixer import SelfImprovementFixer
-
         self.ai: LLMClient = LLMClient(requests, workspace_root=self.workspace_root)
         self.core: SelfImprovementCore = SelfImprovementCore(workspace_root=self.workspace_root)
         self.analysis: SelfImprovementAnalysis = SelfImprovementAnalysis(workspace_root=self.workspace_root)

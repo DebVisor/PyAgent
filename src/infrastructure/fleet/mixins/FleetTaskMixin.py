@@ -1,13 +1,13 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import logging
 from typing import Any, TYPE_CHECKING
 from src.core.base.models import AgentPriority
 
 if TYPE_CHECKING:
-    from src.infrastructure.fleet.FleetManager import FleetManager
+from src.infrastructure.fleet.FleetManager import FleetManager
 
 class FleetTaskMixin:
     """Mixin for task execution, preemption, and consensus management in FleetManager."""

@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 Phase 45: ARC Offload Backends
 Backends for block storage in the ARC offloading system.
 """
 
-from __future__ import annotations
 import threading
 from abc import ABC, abstractmethod
 from src.infrastructure.kv_transfer.arc.types import BlockStatus, BlockState, OffloadMedium, LoadStoreSpec, BlockHash

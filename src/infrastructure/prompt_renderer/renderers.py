@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Core renderers for prompt rendering.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any, Dict, List, Optional, Tuple

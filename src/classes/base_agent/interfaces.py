@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-
 from __future__ import annotations
+
 from typing import Protocol, runtime_checkable, Dict, Any, List, Optional
 from pathlib import Path
 

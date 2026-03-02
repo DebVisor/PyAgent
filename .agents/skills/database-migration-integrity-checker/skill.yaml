@@ -1,0 +1,44 @@
+name: database-migration-integrity-checker
+version: 1.0.0
+description: Audits SQL migration files for destructive actions, potential table locks, and compatibility issues. Use before applying migrations to production databases to prevent downtime and ensure data integrity.
+inputs:
+  migration_files_path:
+    type: string
+    description: Directory containing the .sql migration files.
+    required: true
+  database_type:
+    type: string
+    enum: [postgres, mysql, sqlite]
+    default: postgres
+outputs:
+  audit_results:
+    type: array
+    items:
+      type: object
+      properties:
+        file:
+          type: string
+        risk_level:
+          type: string
+          enum: [low, medium, high, critical]
+        finding:
+          type: string
+        suggestion:
+          type: string
+capabilities:
+  - Detection of 'DROP COLUMN' or 'DROP TABLE' operations.
+  - Identification of DDL that causes exclusive locks on large tables (e.g., adding a column with a default value in older Postgres).
+  - Verification of syntax against specific database engines.
+constraints:
+  - Cannot detect data-level issues (e.g., data loss due to a bad WHERE clause) without a schema.
+security:
+  - Scans SQL text locally; does not require database connection.
+examples:
+  - input:
+      migration_files_path: "./migrations"
+    output:
+      audit_results:
+        - file: "002_drop_users.sql"
+          risk_level: "critical"
+          finding: "DROP TABLE detected"
+          suggestion: "Ensure you have a backup and this is truly intended."

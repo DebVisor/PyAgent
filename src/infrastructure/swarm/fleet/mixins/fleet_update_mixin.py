@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Fleet update mixin.py module.
@@ -5,7 +6,6 @@ Fleet update mixin.py module.
 # Copyright 2026 PyAgent Authors
 # Phase 322: Fleet Autonomous Update Mixin
 
-from __future__ import annotations
 
 import subprocess
 import threading

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,15 +19,16 @@
 Base class for incremental detokenization.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import List, Optional, Tuple, Union
 
 from src.infrastructure.engine.tokenization.detokenizer.stop_checker import \
     StopChecker
-from src.infrastructure.engine.tokenization.detokenizer.types import (
-    DetokenizeResult, TokenizerLike)
+    from src.infrastructure.engine.tokenization.detokenizer.types import (
+    DetokenizeResult,
+    TokenizerLike,
+)
 
 
 class IncrementalDetokenizer(ABC):

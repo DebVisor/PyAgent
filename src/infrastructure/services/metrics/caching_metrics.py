@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +25,6 @@ Beyond vLLM:
 - Memory pressure indicators
 """
 
-from __future__ import annotations
 
 import threading
 import time
@@ -328,7 +328,7 @@ class CachingMetrics:
         """Get evictions regarding reason."""
         with self._lock:
             # Phase 336: Functional reduction regarding reason breakdown
-            from functools import reduce
+        from functools import reduce
 
             def update_breakdown(acc: Dict[EvictionReason, int], event: EvictionEvent) -> Dict[EvictionReason, int]:
                 acc[event.reason] = acc.get(event.reason, 0) + 1

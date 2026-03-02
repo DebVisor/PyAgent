@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Mixin for fixing Python syntax patterns and common type hint errors.
 """
 
-from __future__ import annotations
 
 import logging
 import re
@@ -27,15 +27,16 @@ logger = logging.getLogger(__name__)
 class SyntaxFixerMixin:
     """Provides automated fixes for specific Python syntax patterns."""
 
+
     def fix_invalid_for_loop_type_hints(self, file_path: Path) -> bool:
         """
         Fixes 'for x: Type in' -> 'for x in' which is invalid Python syntax.
-        Regex pattern: for\s+(\w+):\s*[^i]*?\s+in\s+
+        Regex pattern: for\\s+(\\w+):\\s*[\\w\\[\\],\\s]*?\\s+in\\s+
         """
         try:
             content = file_path.read_text(encoding='utf-8')
             # Pattern matches: for var: type in, for var: dict[str, Any] in, etc.
-            pattern = r'for\s+(\w+):\s*[^i]*?\s+in\s+'
+            pattern = r'for\\s+(\\w+):\\s*[\\w\\[\\],\\s]*?\\s+in\\s+'
             if re.search(pattern, content):
                 fixed = re.sub(pattern, r'for \1 in ', content)
                 if fixed != content:
@@ -46,6 +47,7 @@ class SyntaxFixerMixin:
         except Exception as e:
             logger.error(f"Failed to fix for-loop syntax in {file_path}: {e}")
             return False
+
 
     def check_unmatched_triple_quotes(self, file_path: Path) -> list[int]:
         """
@@ -62,7 +64,7 @@ class SyntaxFixerMixin:
                     break
                 indices.append(idx)
                 i = idx + 3
-            
+
             if len(indices) % 2 != 0:
                 line_numbers = [content.count('\n', 0, idx) + 1 for idx in indices]
                 logger.warning(f"Unmatched triple quotes found in {file_path} at lines: {line_numbers}")

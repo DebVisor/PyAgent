@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ AgentRegistry: Central registry for all active agent instances.
 Provides discovery and cross-agent communication.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import logging
 from typing import TYPE_CHECKING, Optional

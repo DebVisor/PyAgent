@@ -81,10 +81,11 @@ class AnalysisCore:
                 return [node.module]
             return []
 
-        import_lists = map(_get_node_imports, ast.walk(tree))
-        
-        from itertools import chain
-        flat_imports = list(chain.from_iterable(import_lists))
+            import_lists = map(_get_node_imports, ast.walk(tree))
+
+            from itertools import chain
+
+            flat_imports = list(chain.from_iterable(import_lists))
 
         # Unique imports in order functionally
         seen: Set[str] = set()

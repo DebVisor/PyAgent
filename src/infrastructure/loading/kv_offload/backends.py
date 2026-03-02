@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Storage backends for KV block offloading.
 """
 
-from __future__ import annotations
 
 import threading
 from typing import Dict, Iterable, List

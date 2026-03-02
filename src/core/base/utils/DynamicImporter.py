@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 DynamicImporter - Runtime import utilities for dynamic module loading.
 
@@ -19,7 +20,6 @@ Use Cases:
 - Testing with mock module substitution
 """
 
-from __future__ import annotations
 
 import importlib
 import importlib.util

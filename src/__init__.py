@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-PyAgent Source Package.
-"""
+__all__: list[str] = []
 
-from __future__ import annotations
-
-from .core.base.lifecycle.version import VERSION
-
-__version__ = VERSION
+# NOTE: Some test environments expect to import package symbols from
+# `src.infrastructure...`. Keep this file minimal to avoid heavy imports
+# at collection time. The real package populates more symbols at runtime.

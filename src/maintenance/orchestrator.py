@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Recovered and standardized for Phase 317
 
@@ -9,7 +10,6 @@ This module coordinates system-wide maintenance cycles, including dependency
 audits, configuration hygiene checks, and environment stabilization.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any

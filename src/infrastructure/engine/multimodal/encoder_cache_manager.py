@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,7 +32,6 @@ Features beyond vLLM:
 - LRU eviction with priority support
 """
 
-from __future__ import annotations
 
 import hashlib
 import time
@@ -573,7 +573,7 @@ class MultiTierEncoderCache:
         if not self.disk_path or key not in self._disk_index:
             return None
 
-        import os
+            import os
 
         filepath: str = os.path.join(self.disk_path, self._disk_index[key])
 
@@ -590,7 +590,7 @@ class MultiTierEncoderCache:
         if not self.disk_path:
             return False
 
-        import os
+            import os
 
         os.makedirs(self.disk_path, exist_ok=True)
 

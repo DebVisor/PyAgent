@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,7 +40,6 @@ Available lazy imports:
     - get_tp_transfer() -> TensorParallelTransfer class
 """
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING, Type
 
@@ -63,25 +63,25 @@ __all__ = [
 if TYPE_CHECKING:
     from src.infrastructure.engine.attention.paged_attention_engine import \
         PagedAttentionEngine
-    from src.infrastructure.engine.reasoning.reasoning_engine import \
+        from src.infrastructure.engine.reasoning.reasoning_engine import \
         ReasoningEngine
-    from src.infrastructure.engine.speculative.eagle_proposer import \
+        from src.infrastructure.engine.speculative.eagle_proposer import \
         EagleProposer
-    from src.infrastructure.services.tools.tool_parser_framework import \
+        from src.infrastructure.services.tools.tool_parser_framework import \
         ToolParserRegistry
-    from src.infrastructure.storage.kv_transfer.arc_offload_manager import \
+        from src.infrastructure.storage.kv_transfer.arc_offload_manager import \
         ARCOffloadManager
-    from src.infrastructure.storage.kv_transfer.mooncake_connector import \
+        from src.infrastructure.storage.kv_transfer.mooncake_connector import \
         MooncakeConnector
-    from src.infrastructure.storage.kv_transfer.nixl_connector import \
+        from src.infrastructure.storage.kv_transfer.nixl_connector import \
         NixlConnector
-    from src.infrastructure.storage.kv_transfer.pipeline_parallel_transfer import \
+        from src.infrastructure.storage.kv_transfer.pipeline_parallel_transfer import \
         PipelineParallelTransfer
-    from src.infrastructure.storage.kv_transfer.tensor_parallel_transfer import \
+        from src.infrastructure.storage.kv_transfer.tensor_parallel_transfer import \
         TensorParallelTransfer
-    from src.infrastructure.swarm.worker.decode_only_worker import \
+        from src.infrastructure.swarm.worker.decode_only_worker import \
         DecodeOnlyWorker
-    from src.infrastructure.swarm.worker.disaggregated_prefill_worker import \
+        from src.infrastructure.swarm.worker.disaggregated_prefill_worker import \
         DisaggregatedPrefillWorker
 
 

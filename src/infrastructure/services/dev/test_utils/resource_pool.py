@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Auto-extracted class from agent_test_utils.py"""
 
-from __future__ import annotations
 
 import threading
 import time
@@ -73,11 +73,10 @@ class ResourcePool:
 
     def wait_available(self, count: int = 1, timeout: float = 10.0) -> bool:
         """Wait for resources to be available."""
-        import time as time_module
 
-        start = time_module.time()
-        while time_module.time() - start < timeout:
+        start = time.time()
+        while time.time() - start < timeout:
             if self.acquire(count) is not None:
                 return True
-            time_module.sleep(0.1)
+            time.sleep(0.1)
         return False

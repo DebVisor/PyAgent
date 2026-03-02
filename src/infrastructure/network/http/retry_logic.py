@@ -5,7 +5,7 @@ import time
 from typing import Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.infrastructure.network.http.connection import HTTPConnection
+from src.infrastructure.network.http.connection import HTTPConnection
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +20,7 @@ class RetryHTTPMixin:
     ) -> Any:
         """GET JSON with automatic retry on failure."""
         import requests
-        
+
         last_error: Exception | None = None
         delay = self.retry_delay
         
@@ -56,7 +56,7 @@ class RetryHTTPMixin:
     ) -> Any:
         """Async GET JSON with automatic retry on failure."""
         import aiohttp
-        
+
         last_error: Exception | None = None
         delay = self.retry_delay
         

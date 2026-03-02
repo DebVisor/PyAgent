@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 TorchCompileIntegration - Integration with torch.compile for model optimization.
 
@@ -13,7 +14,6 @@ Beyond vLLM:
 - Incremental compilation
 """
 
-from __future__ import annotations
 
 import functools
 import logging

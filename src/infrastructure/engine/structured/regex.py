@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Regex-based grammar engine.
 """
 
-from __future__ import annotations
 
 import contextlib
 import sys
@@ -39,8 +39,8 @@ else:
     import sre_constants as _sre_constants  # type: ignore
     import sre_parse as _sre_parse  # type: ignore
 
-from .base import GrammarEngine
-from .models import FSMTransitionTable
+    from .base import GrammarEngine
+    from .models import FSMTransitionTable
 
 # Align constants across different Python versions
 _LITERAL = _sre_constants.LITERAL

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +21,6 @@ Implements graph-vector hybrid memory with FalkorDB + Qdrant for revolutionary
 conversational memory capabilities.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json
@@ -50,7 +50,7 @@ except ImportError:  # Allow tests to import without full qdrant client installe
     UnexpectedResponse = Exception  # type: ignore[misc,assignment]
 
 try:  # Allow tests to import without full qdrant client installed
-    from qdrant_client.models import Distance, PayloadSchemaType, PointStruct, VectorParams
+from qdrant_client.models import Distance, PayloadSchemaType, PointStruct, VectorParams
 except Exception:  # pragma: no cover - degraded import path
     try:
         from qdrant_client.http import models as _qmodels
@@ -73,7 +73,7 @@ if PointStruct is None:  # pragma: no cover - test shim
             self.payload = payload
 
 
-from werkzeug.exceptions import HTTPException
+            from werkzeug.exceptions import HTTPException
 
 # Make OpenAI import optional to allow running without it
 try:
@@ -86,8 +86,8 @@ try:
 except ImportError:  # pragma: no cover - optional dependency
     spacy = None
 
-from src.core.base.state import StateTransaction
-from src.core.base.models.communication_models import CascadeContext
+    from src.core.base.state import StateTransaction
+    from src.core.base.models.communication_models import CascadeContext
 
 logging.basicConfig(
     level=logging.INFO,

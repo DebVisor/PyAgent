@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +29,6 @@ Beyond vLLM innovations:
 - Streaming constraint checking
 """
 
-from __future__ import annotations
 
 import asyncio
 import hashlib
@@ -48,7 +48,7 @@ except ImportError:
 try:
     # Optional internal rust core bridge
     import pyagent_rust_core # type: ignore
-    HAS_RUST = True
+        HAS_RUST = True
 except ImportError:
     HAS_RUST = False
 

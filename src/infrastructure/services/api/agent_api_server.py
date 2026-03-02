@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 FastAPI-based API gateway for the PyAgent fleet.
 """
 
-from __future__ import annotations
 
 import json
 import time
@@ -29,7 +29,7 @@ from pydantic import BaseModel
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.services.api.fleet_load_balancer import \
     FleetLoadBalancer
-from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 
 __version__ = VERSION
 

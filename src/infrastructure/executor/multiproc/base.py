@@ -49,7 +49,7 @@ class Executor(ABC):
         from src.infrastructure.executor.multiproc.uniproc import UniprocExecutor
         from src.infrastructure.executor.multiproc.multiproc_logic import MultiprocExecutor
         from src.infrastructure.executor.multiproc.distributed import DistributedExecutor
-        
+
         if backend == ExecutorBackend.MULTIPROC:
             return MultiprocExecutor
         elif backend == ExecutorBackend.UNIPROC:

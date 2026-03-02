@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 
@@ -11,7 +12,6 @@ It utilizes RDMA techniques and peer-to-peer memory copies to minimize CPU overh
 Inspired by vLLM's NixlConnector and advanced distributed communication patterns.
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -35,9 +35,9 @@ try:
 except ImportError:
     np = None
 
-from src.core.rust_bridge import RustBridge
-from src.core.lazy_loader import LazyLoader
-from src.infrastructure.kv_transfer.KVTransferConnector import (
+    from src.core.rust_bridge import RustBridge
+    from src.core.lazy_loader import LazyLoader
+    from src.infrastructure.kv_transfer.KVTransferConnector import (
     KVConnectorBase,
     KVConnectorRole,
     KVTransferConfig,

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 InputBatch.py - Structured batch management for model execution.
 
@@ -7,7 +8,6 @@ buffers and structured batch state for efficient model execution.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any, Optional, List, Dict, Sequence

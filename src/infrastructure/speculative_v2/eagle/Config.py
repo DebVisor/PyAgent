@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Configuration for EAGLE speculative decoding.
 """
 
-from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum, auto
 

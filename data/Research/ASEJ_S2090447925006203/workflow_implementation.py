@@ -57,6 +57,6 @@ class ArchitecturalDesignAgent:
 
     def _calculate_shannon_entropy(self, geometry):
         # Simplified complexity metric for architectural form
-        import math
+    import math
         # ... logic ...
         return 0.86 # Placeholder score

@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 Mamba Configuration and State Classes.
 """
 
-from __future__ import annotations
 
 import math
 from dataclasses import dataclass

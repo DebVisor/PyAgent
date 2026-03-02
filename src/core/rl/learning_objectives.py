@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Learning objectives.py module.
@@ -5,7 +6,6 @@ Learning objectives.py module.
 # Copyright 2026 PyAgent Authors
 # Learning Objectives and Goals for Fleet Optimization - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

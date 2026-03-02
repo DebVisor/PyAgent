@@ -1,5 +1,5 @@
-
 from __future__ import annotations
+
 import hashlib
 import hmac
 from typing import Dict, Any

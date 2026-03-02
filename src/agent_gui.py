@@ -7,7 +7,7 @@ GUI Agent: Provides a graphical user interface for PyAgent.
 
 from src.version import VERSION
 import sys
-# import tkinter as tk
+import tkinter as tk
 
 from pathlib import Path
 
@@ -18,7 +18,8 @@ if str(root) not in sys.path:
 if str(root / "src") not in sys.path:
     sys.path.append(str(root / "src"))
 
-from src.classes.gui.MainApp import PyAgentGUI
+    from src.classes.gui.MainApp import PyAgentGUI
+
 
 def main() -> None:
     root = tk.Tk()

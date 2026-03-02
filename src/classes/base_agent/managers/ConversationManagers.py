@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright (c) 2025 PyAgent contributors
 
-from __future__ import annotations
 from typing import Any, List
 from ..models import MessageRole, ConversationMessage
 

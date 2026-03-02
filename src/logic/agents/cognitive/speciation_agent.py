@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Speciation Agent module for agent evolution and niche specialization."""
 
-from __future__ import annotations
 
 import logging
 import os
@@ -71,7 +71,7 @@ class SpeciationAgent(BaseAgent):
                 "SpeciationAgent: LLM returned no distinct code or returned prompt. Using skeleton."
             )
             specialized_code = f"""
-from src.core.base.lifecycle.base_agent import BaseAgent
+            from src.core.base.lifecycle.base_agent import BaseAgent
 class {new_agent_name}(BaseAgent):
     \"\"\"Specialized agent evolved by SpeciationAgent.\"\"\"
     def __init__(self, workspace_path: str) -> None:
@@ -151,10 +151,10 @@ class {new_agent_name}(BaseAgent):
             rel_import = f"src.{rel_import}"
 
         test_code = f"""
-import unittest
-import os
-from {rel_import} import {agent_name}
-from src.core.base.lifecycle.version import VERSION
+        import unittest
+        import os
+        from {rel_import} import {agent_name}
+        from src.core.base.lifecycle.version import VERSION
 __version__ = VERSION
 
 class Test{agent_name}(unittest.TestCase):

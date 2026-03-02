@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """PerformanceAgent identifies and suggests code optimizations."""
 
 # Copyright 2026 PyAgent Authors
@@ -14,7 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import annotations
 
 import logging
 import re
@@ -28,10 +28,10 @@ try:
 except ImportError:
     HAS_RUST_CORE = False
 
-from src.core.base.common.types.optimization_suggestion import \
+    from src.core.base.common.types.optimization_suggestion import \
     OptimizationSuggestion
-from src.core.base.common.types.optimization_type import OptimizationType
-from src.core.base.lifecycle.version import VERSION
+    from src.core.base.common.types.optimization_type import OptimizationType
+    from src.core.base.lifecycle.version import VERSION
 
 logger = logging.getLogger(__name__)
 

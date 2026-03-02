@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Main orchestrator for GPU-resident batch management.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any, List, Optional
@@ -21,7 +21,7 @@ except ImportError:
     HAS_TORCH = False
     torch = None  # type: ignore
 
-from .models import (
+    from .models import (
     BatchUpdateBuilder,
     CachedRequestState,
     InputBatch,

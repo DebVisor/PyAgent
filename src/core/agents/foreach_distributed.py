@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0
 
@@ -10,7 +11,6 @@ scratch area (or recorder). The implementation is intentionally small and
 synchronous to make dry-run and staged runs deterministic and easy to test.
 """
 
-from __future__ import annotations
 
 import json
 import logging

@@ -1,0 +1,38 @@
+name: clinical-trial-schema-designer
+version: 1.0.0
+description: Analyzes clinical trial protocols and generates CDISC-compliant (SDTM/ADaM) data schemas. Use when designing data ingestion pipelines for clinical research or preparing regulatory submissions.
+inputs:
+  protocol_text:
+    type: string
+    description: The raw text of the clinical trial protocol.
+    required: true
+  target_standard:
+    type: string
+    enum: [SDTM, ADaM, CDASH]
+    default: SDTM
+outputs:
+  schema_definition:
+    type: object
+    description: The generated data schema in JSON format.
+  mapping_logic:
+    type: array
+    items:
+      type: string
+capabilities:
+  - Study variable extraction (Demographics, Adverse Events).
+  - Automated CDISC domain mapping.
+  - Pydantic/SQL schema generation.
+constraints:
+  - Accuracy depends on protocol text quality.
+  - Custom designs may require manual refinement.
+security:
+  - Protocols are intellectual property; process securely.
+  - Does not handle actual patient results.
+examples:
+  - input:
+      protocol_text: "Study will track heart rate daily..."
+    output:
+      schema_definition:
+        domain: "VS"
+        variables: ["VSTESTCD", "VSORRES"]
+      mapping_logic: ["Map 'heart rate' to VSTESTCD='HR'"]

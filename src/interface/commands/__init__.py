@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +17,14 @@
 Slash commands package.
 """
 
-from __future__ import annotations
 
 from typing import Any, Callable
 
 from .base import (AsyncCommandHandler, CommandContext, CommandDefinition,  # noqa: F401
                    CommandHandler, CommandResult, ParsedCommand,
                    ProcessedPrompt)
-from .parser import CommandParser, SlashCommands, parse_commands  # noqa: F401
-from .registry import CommandRegistry  # noqa: F401
+                   from .parser import CommandParser, SlashCommands, parse_commands  # noqa: F401
+                   from .registry import CommandRegistry  # noqa: F401
 
 __all__ = [
     "CommandContext",

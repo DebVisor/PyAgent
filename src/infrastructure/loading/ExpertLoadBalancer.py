@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Expert Load Balancer for PyAgent
 
@@ -17,7 +18,6 @@ vLLM Patterns:
 - Expert weight rearrangement
 """
 
-from __future__ import annotations
 
 import asyncio
 import concurrent.futures

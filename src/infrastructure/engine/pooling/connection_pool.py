@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +20,6 @@ Phase 19: Beyond vLLM - Performance Patterns
 Connection pooling to reduce connection overhead.
 """
 
-from __future__ import annotations
-
 import contextlib
 import threading
 import time
@@ -28,8 +27,7 @@ from collections import deque
 from contextlib import contextmanager
 from dataclasses import dataclass
 from enum import Enum, auto
-from typing import (Any, Callable, Dict, Generic, Iterator, List, Optional, Protocol,
-                    Set, TypeVar, runtime_checkable)
+from typing import (Any, Callable, Dict, Generic, Iterator, List, Optional, Protocol, Set, TypeVar, runtime_checkable)
 
 T = TypeVar("T")
 
@@ -57,6 +55,7 @@ class Pingable(Protocol):
 
     def ping(self) -> bool:
         """Check if resource is healthy."""
+        ...
 
 
 @dataclass
@@ -322,12 +321,12 @@ class ConnectionPool(Generic[T]):
                 total = self._stats.current_idle + self._stats.current_in_use
                 if total < self._max_size:
                     with contextlib.suppress(Exception):
-                        pooled = self._create_connection()
-                        if pooled:
-                            pooled.state = ConnectionState.IN_USE
-                            pooled.use_count = 1
+                        new_pooled: Optional[PooledConnection[T]] = self._create_connection()
+                        if new_pooled:
+                            new_pooled.state = ConnectionState.IN_USE
+                            new_pooled.use_count = 1
 
-                            self._in_use.add(pooled)
+                            self._in_use.add(new_pooled)
                             self._stats.current_in_use += 1
                             self._stats.peak_in_use = max(
                                 self._stats.peak_in_use,
@@ -337,7 +336,7 @@ class ConnectionPool(Generic[T]):
                             wait_time = (time.monotonic() - start) * 1000
                             self._stats.total_wait_time_ms += wait_time
 
-                            return pooled.connection
+                            return new_pooled.connection
 
                 # Wait for a connection to be released
                 remaining = deadline - time.monotonic()
@@ -580,7 +579,7 @@ class MultiHostPool(Generic[T]):
 
         for host in hosts:
             self._pools[host] = ConnectionPool(
-                factory=lambda h=host: factory(h),
+                factory=lambda h=host, f=factory: f(h),
                 max_size=connections_per_host,
             )
 

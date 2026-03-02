@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Hierarchical DP coordinator with locality awareness.
 """
 
-from __future__ import annotations
 
 import logging
 import threading

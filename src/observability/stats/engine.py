@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Engine.py module.
@@ -6,7 +7,6 @@ Engine.py module.
 # Copyright 2026 PyAgent Authors
 # Observability and statistics engines/orchestrators.
 
-from __future__ import annotations
 
 import logging
 import time

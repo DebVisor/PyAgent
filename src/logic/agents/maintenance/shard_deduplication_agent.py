@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Agent for deduplicating redundant data in shards.
 """
 
-from __future__ import annotations
 
 import gzip
 import hashlib
@@ -140,7 +140,7 @@ class ShardDeduplicationAgent(BaseAgent):
 
 if __name__ == "__main__":
     # Simple CLI for testing
-    import sys
+import sys
     logging.basicConfig(level=logging.INFO)
     
     target_dir = sys.argv[1] if len(sys.argv) > 1 else "data/logs/external_ai_learning"

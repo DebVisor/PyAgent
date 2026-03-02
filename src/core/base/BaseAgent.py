@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """BaseAgent main class and core agent logic."""
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import subprocess
 from pathlib import Path
@@ -29,6 +29,7 @@ from src.core.base.models import (
 from src.core.base.AgentCore import BaseCore
 from src.core.base.BaseAgentCore import BaseAgentCore
 from src.core.base.ShellExecutor import ShellExecutor
+import asyncio
 
 # Import Mixins for Synaptic Modularization (Phase 317)
 from src.core.base.mixins.IdentityMixin import IdentityMixin
@@ -165,7 +166,6 @@ class BaseAgent(
             self._notify_webhooks("agent_complete", {"status": "success"})
             return "No prompt provided."
             
-        import asyncio
         try:
             # Check if there is an existing event loop
             try:
@@ -234,7 +234,7 @@ class BaseAgent(
             full_prompt += f"USER: {prompt}"
 
         # 3. Execution via Backend
-        import asyncio
+            import asyncio
         try:
             from src.infrastructure import backend as ab
             

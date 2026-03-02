@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ OrchestratorAgent: The central coordination unit of the PyAgent swarm.
 Manages task decomposition, agent delegation, and collaborative workflow execution.
 """
 
-from __future__ import annotations
 
 """
 Orchestrator agent.py module.
@@ -109,7 +109,7 @@ class OrchestratorAgent(OrchestratorFeatures):  # pylint: disable=too-many-ances
             self.plugins = {}
 
         # Use the mixin implementation
-        from src.logic.agents.swarm.orchestrator_plugin_mixin import \
+            from src.logic.agents.swarm.orchestrator_plugin_mixin import \
             OrchestratorPluginMixin
 
         if plugin:
@@ -219,7 +219,7 @@ class OrchestratorAgent(OrchestratorFeatures):  # pylint: disable=too-many-ances
             return "Orchestrator: No loop implementation found."
 
         # Call modern async run via runner
-        import asyncio
+            import asyncio
 
         try:
             # Check if there is an existing event loop

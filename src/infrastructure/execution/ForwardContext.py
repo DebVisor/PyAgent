@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 ForwardContext.py - Execution context management for model forward passes.
 
@@ -7,7 +8,6 @@ attention metadata, batch descriptors, and data parallel coordination.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 import threading
 import time

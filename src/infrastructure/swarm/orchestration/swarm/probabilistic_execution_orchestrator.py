@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Probabilistic execution orchestrator.py module.
 """
 
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any
@@ -114,7 +114,7 @@ class ProbabilisticExecutionOrchestrator:
 
         # Fallback: Pick the most frequent result (simplistic consensus)
         # For non-string objects, we convert to string for comparison
-        from collections import Counter
+                from collections import Counter
 
         str_results = [str(r) for r in results]
         most_common_str = Counter(str_results).most_common(1)[0][0]

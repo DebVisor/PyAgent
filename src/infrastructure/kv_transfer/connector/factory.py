@@ -1,16 +1,16 @@
+from __future__ import annotations
 """
 Phase 45: KV Transfer Connector Factory
 Registry and factory for KV transfer connectors.
 """
 
-from __future__ import annotations
 import logging
 from typing import Any, Dict, List, Optional, TYPE_CHECKING
 from src.infrastructure.kv_transfer.connector.decode_bench import DecodeBenchConnector
 
 if TYPE_CHECKING:
-    from src.infrastructure.kv_transfer.connector.base import KVConnectorBase
-    from src.infrastructure.kv_transfer.connector.types import KVTransferConfig
+from src.infrastructure.kv_transfer.connector.base import KVConnectorBase
+from src.infrastructure.kv_transfer.connector.types import KVTransferConfig
 
 logger = logging.getLogger(__name__)
 

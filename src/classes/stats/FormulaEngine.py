@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Shell for FormulaEngine using pure core logic."""
 
-from __future__ import annotations
 import logging
 from typing import Any, Dict, List, Optional
 from .FormulaValidation import FormulaValidation

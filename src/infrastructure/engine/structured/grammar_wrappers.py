@@ -25,8 +25,8 @@ try:
 except ImportError:
     HAS_NUMPY = False
 
-from .compiled_grammar import CompiledGrammar
-from .grammar_matcher import GrammarMatcher
+    from .compiled_grammar import CompiledGrammar
+    from .grammar_matcher import GrammarMatcher
 
 
 class XGrammarGrammar:

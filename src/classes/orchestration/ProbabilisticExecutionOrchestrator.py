@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-
 from __future__ import annotations
+
 import logging
 import json
 import random
@@ -8,7 +8,7 @@ from typing import Dict, List, Any, Optional, TYPE_CHECKING
 from src.classes.base_agent import BaseAgent
 
 if TYPE_CHECKING:
-    from src.classes.fleet.FleetManager import FleetManager
+from src.classes.fleet.FleetManager import FleetManager
 
 class ProbabilisticExecutionOrchestrator:
     """
@@ -79,7 +79,7 @@ class ProbabilisticExecutionOrchestrator:
 
         # Fallback: Pick the most frequent result (simplistic consensus)
         # For non-string objects, we convert to string for comparison
-        from collections import Counter
+                from collections import Counter
         str_results = [str(r) for r in results]
         most_common_str = Counter(str_results).most_common(1)[0][0]
         

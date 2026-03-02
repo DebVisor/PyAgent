@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 Phase 45: ARC Offload Manager
 Implementation of Adaptive Replacement Cache (ARC) and variants.
 """
 
-from __future__ import annotations
 import time
 import threading
 from collections import OrderedDict
@@ -14,10 +14,10 @@ from src.infrastructure.kv_transfer.arc.types import (
 )
 
 if TYPE_CHECKING:
-    import torch
-    from src.infrastructure.kv_transfer.arc.backend import Backend
-    from src.infrastructure.kv_transfer.arc.types import LoadStoreSpec
-    from src.infrastructure.kv_transfer.KVzap import KVzapPruner, KVzapConfig
+import torch
+from src.infrastructure.kv_transfer.arc.backend import Backend
+from src.infrastructure.kv_transfer.arc.types import LoadStoreSpec
+from src.infrastructure.kv_transfer.KVzap import KVzapPruner, KVzapConfig
 
 
 class ARCOffloadManager(OffloadingManager):

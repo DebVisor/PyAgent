@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """Backend implementation handlers for SubagentRunner."""
 
-from __future__ import annotations
 
 import logging
 import os

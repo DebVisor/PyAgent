@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Optional
 from .tensor import QuantizedTensor
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 class DequantizedLinear:
     """Dequantized linear layer for inference."""

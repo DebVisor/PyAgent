@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 EngineCoreClient - Client interfaces for engine communication.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's v1/engine/core_client.py - provides various client
 implementations for communicating with EngineCore.
 """
 
-from __future__ import annotations
 
 import asyncio
 import queue

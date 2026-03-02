@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,13 +21,12 @@ across the codebase. Functions include counting leaves, computing depth,
 filtering leaves by predicate, and validating leaf values.
 """
 
-from __future__ import annotations
 
 from typing import Callable
 
 from src.core.base.common.utils.jsontree.iteration import (
     json_iter_leaves, json_iter_leaves_with_path)
-from src.core.base.common.utils.jsontree.types import _T, JSONTree
+    from src.core.base.common.utils.jsontree.types import _T, JSONTree
 
 
 def json_count_leaves(value: JSONTree[_T]) -> int:

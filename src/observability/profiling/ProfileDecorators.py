@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 ProfileDecorators - cProfile-based profiling utilities.
 
@@ -8,7 +9,6 @@ with cProfile, integrated with RustProfiler for unified reporting.
 
 Phase 17: vLLM Pattern Integration (P2)
 """
-from __future__ import annotations
 import cProfile
 import pstats
 import io

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Synchronizes learned insights ('Lessons Learned') between distributed fleet node
 Uses InterFleetBridgeOrchestrator to transmit knowledge without raw data leakage.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any
@@ -26,7 +26,7 @@ from typing import Any
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.swarm.orchestration.connectivity.inter_fleet_bridge_orchestrator import \
     InterFleetBridgeOrchestrator
-from src.logic.agents.cognitive.knowledge_agent import KnowledgeAgent
+    from src.logic.agents.cognitive.knowledge_agent import KnowledgeAgent
 
 __version__ = VERSION
 

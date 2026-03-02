@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,11 +16,12 @@
 
 """Auto-extracted class from agent_test_utils.py"""
 
-from __future__ import annotations
 
 from typing import Any
 
 from src.core.base.lifecycle.version import VERSION
+import os
+import platform
 
 __version__ = VERSION
 
@@ -29,9 +31,6 @@ class EnvironmentDetector:
 
     def detect(self) -> dict[str, Any]:
         """Detect environment information."""
-        import os
-        import platform
-
         is_ci = any(env in os.environ for env in ["CI", "CONTINUOUS_INTEGRATION", "BUILD_ID", "GITHUB_ACTIONS"])
         system = platform.system().lower()
         if system == "windows":

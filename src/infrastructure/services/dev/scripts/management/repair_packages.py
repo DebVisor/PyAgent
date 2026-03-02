@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Repair packages.py module.
 """
 
 
-from __future__ import annotations
 
 import os
 from pathlib import Path
@@ -104,7 +104,7 @@ def main() -> None:
         skip_to_class = False
 
         for line in lines:
-            if "from src.agent.CircuitBreakerCore import CircuitBreakerCore" in line:
+            if "from src.logic.agents.CircuitBreakerCore import CircuitBreakerCore" in line:
                 new_lines.append(
                     "from src.core.base.CircuitBreaker import CircuitBreaker as CircuitBreakerImpl\n"
                 )

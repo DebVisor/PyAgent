@@ -1,8 +1,8 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """Tree structure for speculative tokens."""
 
-from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import List, Optional
 

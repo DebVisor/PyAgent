@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 SovereigntyOrchestrator: Management of federated data and privacy boundaries.
 
@@ -6,7 +7,6 @@ distributed agents adhere to local privacy constraints and negotiate
 task agreements within a secure, multi-agent environment.
 """
 
-from __future__ import annotations
 import logging
 from typing import Dict, Any, List
 

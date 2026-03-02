@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ attention metadata, batch descriptors, and data parallel coordination.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 import threading
 import time

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Namespaces.py module.
@@ -6,7 +7,6 @@ Namespaces.py module.
 # Copyright 2026 PyAgent Authors
 # Metric namespace management engine.
 
-from __future__ import annotations
 
 from typing import Any
 

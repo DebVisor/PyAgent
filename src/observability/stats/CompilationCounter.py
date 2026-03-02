@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CompilationCounter - Statistics and counters for compilation metrics.
 
@@ -13,7 +14,6 @@ Beyond vLLM:
 - Trend analysis
 """
 
-from __future__ import annotations
 
 import logging
 import threading

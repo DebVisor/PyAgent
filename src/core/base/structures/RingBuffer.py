@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 RingBuffer - Fixed-size circular buffer for efficient streaming data.
 
@@ -9,7 +10,6 @@ Goes beyond vLLM with lock-free ring buffer patterns:
 
 Phase 18: Beyond vLLM - Advanced Data Structures
 """
-from __future__ import annotations
 import threading
 import time
 from collections.abc import Iterator

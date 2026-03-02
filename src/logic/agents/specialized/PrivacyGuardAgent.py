@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Privacy guard agent.py module.
@@ -5,7 +6,6 @@ Privacy guard agent.py module.
 # Copyright 2026 PyAgent Authors
 # Apache 2.0 License
 
-from __future__ import annotations
 
 import asyncio
 import os

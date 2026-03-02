@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@ PyAgent CLI Interface.
 Connects to the Fleet Load Balancer via the Agent API Server.
 """
 
-from __future__ import annotations
 
 import argparse
 import sys
@@ -34,11 +34,11 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.progress import (BarColumn, Progress, SpinnerColumn,
                            TaskProgressColumn, TextColumn)
-from rich.table import Table
+                           from rich.table import Table
 
-from src.core.base.lifecycle.version import VERSION
-from src.core.base.logic.connectivity_manager import ConnectivityManager
-from src.infrastructure.compute.backend.local_context_recorder import \
+                           from src.core.base.lifecycle.version import VERSION
+                           from src.core.base.logic.connectivity_manager import ConnectivityManager
+                           from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
 # from functools import lru_cache

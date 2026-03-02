@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 GPUMemoryAllocator: GPU memory optimization with sleep/wake and pooling.
 
@@ -12,7 +13,6 @@ Beyond vLLM:
 - Automatic fragmentation management
 """
 
-from __future__ import annotations
 import logging
 import threading
 import time

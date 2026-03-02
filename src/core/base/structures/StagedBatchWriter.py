@@ -1,3 +1,4 @@
+from __future__ import annotations
 """StagedBatchWriter - Batched GPU writes with Triton kernel support.
 
 This module implements staged batch writes where multiple CPU-side changes
@@ -16,7 +17,6 @@ Example:
     >>> writer.apply_writes(stream=cuda_stream)  # Batch apply via kernel
 """
 
-from __future__ import annotations
 
 import threading
 import time

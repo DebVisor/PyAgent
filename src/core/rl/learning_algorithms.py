@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Learning algorithms.py module.
@@ -5,7 +6,6 @@ Learning algorithms.py module.
 # Copyright 2026 PyAgent Authors
 # Reinforcement Learning Algorithms Implementation - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import logging
 import random

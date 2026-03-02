@@ -10,7 +10,7 @@ from .weights import LoRALayerWeights
 from .model import LoRAModel
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 
 def create_lora_weights(

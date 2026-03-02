@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Base.py module.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import Any, List
@@ -70,9 +70,9 @@ class Executor(ABC):
         """Get executor class for backend (factory pattern)."""
         from src.infrastructure.services.executor.multiproc.distributed import \
             DistributedExecutor
-        from src.infrastructure.services.executor.multiproc.multiproc_logic import \
+            from src.infrastructure.services.executor.multiproc.multiproc_logic import \
             MultiprocExecutor
-        from src.infrastructure.services.executor.multiproc.uniproc import \
+            from src.infrastructure.services.executor.multiproc.uniproc import \
             UniprocExecutor
 
         if backend == ExecutorBackend.MULTIPROC:

@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Action space.py module.
@@ -5,7 +6,6 @@ Action space.py module.
 # Copyright 2026 PyAgent Authors
 # Reinforcement Learning Action Space Definition - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import random
 from dataclasses import dataclass

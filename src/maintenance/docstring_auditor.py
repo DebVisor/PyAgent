@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0
 
@@ -9,7 +10,6 @@ of Python modules flagged with missing module-level docstrings. Provides a
 helper to generate a small next-batch file listing modules to address.
 """
 
-from __future__ import annotations
 
 import re
 from pathlib import Path

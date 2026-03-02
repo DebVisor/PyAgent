@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Ensures high-integrity changes by requiring 2/3 agreement from a committee of ag
 Used for critical infrastructure or security logic changes.
 """
 
-from __future__ import annotations
 
 import asyncio
 import asyncio
@@ -94,7 +94,7 @@ class ByzantineConsensusAgent(BaseAgent):  # pylint: disable=too-many-ancestors
 
         if agreement_score >= required_quorum:
             # Find the winning hash
-            from collections import defaultdict
+        from collections import defaultdict
             hash_weights = defaultdict(float)
             for v in vote_payloads:
                 hash_weights[v["hash"]] += v["weight"]
@@ -138,7 +138,7 @@ class ByzantineConsensusAgent(BaseAgent):  # pylint: disable=too-many-ancestors
                     except (IOError, AttributeError):
                         pass
 
-                import re
+                        import re
                 match = re.search(r"(\d+\.\d+)", score_response)
                 score = float(match.group(1)) if match else 0.7
             except (ValueError, TypeError, RuntimeError) as e:

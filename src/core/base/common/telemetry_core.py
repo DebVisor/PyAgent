@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Centralized Telemetry and Metrics Core.
 Provides high-performance aggregation, alerting, and cross-tier observability.
 """
 
-from __future__ import annotations
 
 import logging
 import time
@@ -30,7 +30,7 @@ try:
 except ImportError:
     rc = None
 
-from .base_core import BaseCore
+    from .base_core import BaseCore
 
 logger = logging.getLogger("pyagent.telemetry")
 

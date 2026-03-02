@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,16 +19,18 @@
 Fallback incremental detokenization for non-fast tokenizers.
 """
 
-from __future__ import annotations
 
 from typing import List, Optional, Tuple
 
-from src.infrastructure.engine.tokenization.detokenizer.base import \
-    IncrementalDetokenizer
-from src.infrastructure.engine.tokenization.detokenizer.stop_checker import \
-    StopChecker
-from src.infrastructure.engine.tokenization.detokenizer.types import \
-    TokenizerLike
+from src.infrastructure.engine.tokenization.detokenizer.base import (
+    IncrementalDetokenizer,
+)
+from src.infrastructure.engine.tokenization.detokenizer.stop_checker import (
+    StopChecker,
+)
+from src.infrastructure.engine.tokenization.detokenizer.types import (
+    TokenizerLike,
+)
 
 
 class SlowIncrementalDetokenizer(IncrementalDetokenizer):

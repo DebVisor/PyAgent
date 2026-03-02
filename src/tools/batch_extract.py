@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Batch extractor: split a large refactor report into chunks and run
 `extract_candidates.py` in parallel subprocesses.
 
@@ -9,7 +10,6 @@ extract broadly. Use `--allow-top-level` and `--allow-no-defs` to be permissive.
 WARNING: this automates extraction at scale and may produce many files. Do not
 run on untrusted machines unless you understand the risks.
 """
-from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
@@ -88,7 +88,7 @@ def main():
         report_paths.append(rp)
 
     # run in parallel pools of size workers
-    from concurrent.futures import ThreadPoolExecutor, as_completed
+        from concurrent.futures import ThreadPoolExecutor, as_completed
     results = []
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
         futs = {ex.submit(run_chunk, rp, extra): rp for rp in report_paths}

@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Base class for incremental detokenization.
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import (

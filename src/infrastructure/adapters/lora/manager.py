@@ -1,8 +1,8 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """High-level manager for multi-adapter serving."""
 
-from __future__ import annotations
 import numpy as np
 from typing import Any, TYPE_CHECKING
 from .config import LoRAConfig
@@ -11,7 +11,7 @@ from .model import LoRAModel
 from .registry import LoRARegistry
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 
 class LoRAManager:

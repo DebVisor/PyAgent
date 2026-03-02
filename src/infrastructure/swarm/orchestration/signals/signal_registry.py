@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Recovered and standardized for Phase 317
 
@@ -12,7 +13,6 @@ For more information, visit:
 No commands will be executed.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any

@@ -81,7 +81,7 @@ class PersistenceMixin:
             return True
         except Exception as e:
             import logging
-            logging.error(f"File write failed: {e}")
+                logging.error(f"File write failed: {e}")
             return False
 
     def _write_dry_run_diff(self) -> bool:

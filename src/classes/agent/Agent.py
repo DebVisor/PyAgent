@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +27,6 @@ resource allocation, and final response synthesis. It implements advanced
 self-healing and multi-agent synergy protocols.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 from src.core.base.AgentPluginBase import AgentPluginBase
 from src.core.base.ConfigLoader import ConfigLoader

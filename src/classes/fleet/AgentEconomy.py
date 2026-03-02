@@ -77,4 +77,4 @@ class AgentEconomy:
             "timestamp": time.time()
         }
 
-import json
+        import json

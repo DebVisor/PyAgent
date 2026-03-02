@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Vllm backend.py module.
 """
 
 
-from __future__ import annotations
 
 import logging
 
@@ -42,7 +42,7 @@ class VllmBackend(LLMBackend):
             logging.debug("vLLM skipped due to connection cache.")
             return ""
 
-        import os
+            import os
 
         base_url = kwargs.get("base_url") or os.environ.get("DV_VLLM_BASE_URL") or "http://localhost:8000"
         url = base_url.rstrip("/") + "/v1/chat/completions"

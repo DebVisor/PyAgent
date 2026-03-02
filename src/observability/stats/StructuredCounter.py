@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 StructuredCounter - Dataclass-based structured metric counters.
 
@@ -7,7 +8,6 @@ with snapshot/diff capabilities and testing support.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 import copy
 from contextlib import contextmanager

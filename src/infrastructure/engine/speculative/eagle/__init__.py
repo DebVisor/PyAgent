@@ -20,11 +20,11 @@ EAGLE speculative decoding implementation.
 
 from .base import (AttentionMetadata, CpuGpuBuffer, InputBuffer,  # noqa: F401
                    TreeAttentionMetadata)
-from .config import AttentionBackend, EagleConfig, EagleMethod  # noqa: F401
-from .models import DraftModelWrapper, DraftOutput, SimpleDraftModel  # noqa: F401
-from .proposer import AsyncEagleProposer, EagleProposer, EagleProposerFactory  # noqa: F401
-from .stats import AcceptanceStats  # noqa: F401
-from .tree import SpeculativeTree, TreeNode  # noqa: F401
+                   from .config import AttentionBackend, EagleConfig, EagleMethod  # noqa: F401
+                   from .models import DraftModelWrapper, DraftOutput, SimpleDraftModel  # noqa: F401
+                   from .proposer import AsyncEagleProposer, EagleProposer, EagleProposerFactory  # noqa: F401
+                   from .stats import AcceptanceStats  # noqa: F401
+                   from .tree import SpeculativeTree, TreeNode  # noqa: F401
 
 __all__ = [
     "EagleConfig",

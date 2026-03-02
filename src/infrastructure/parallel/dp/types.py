@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Types and configuration for data parallel coordination.
 """
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

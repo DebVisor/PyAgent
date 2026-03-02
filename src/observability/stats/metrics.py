@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Metrics.py module.
@@ -6,7 +7,6 @@ Metrics.py module.
 # Copyright 2026 PyAgent Authors
 # Core data structures for metrics and telemetry.
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import datetime

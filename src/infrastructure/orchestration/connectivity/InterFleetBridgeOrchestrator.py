@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Phase 319: Multi-Cloud Teleportation (Inter-Fleet Bridge)
 
-from __future__ import annotations
 import logging
 import asyncio
 from typing import Any, Dict, List, Optional

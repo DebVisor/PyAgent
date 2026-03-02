@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,11 +27,10 @@ Provides:
 - Temperature/top-p/top-k integration
 """
 
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Callable, Dict, List, Optional, Set
+from typing import Callable, Dict, List, Optional, Set, Tuple
 
 import numpy as np  # noqa: F401
 
@@ -453,7 +453,7 @@ class CompositeLogitProcessor(LogitProcessor):
             return logits
 
         # Phase 336: Functional reduction regarding processor chain
-        from functools import reduce
+            from functools import reduce
         
         def apply_processor(current_logits: np.ndarray, processor: LogitProcessor) -> np.ndarray:
             if processor.is_enabled():

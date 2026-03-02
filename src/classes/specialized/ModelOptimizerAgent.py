@@ -72,7 +72,7 @@ class ModelOptimizerAgent(BaseAgent):
     def get_airllm_setup_code(self, model_id: str, compression: str = "4bit") -> str:
         """Generates boilerplate code for running large models via AirLLM."""
         return f"""
-from airllm import AutoModel
+        from airllm import AutoModel
 
 # Load large model {model_id} with {compression} compression
 # This allows running 70B+ models on low-VRAM consumer GPUs

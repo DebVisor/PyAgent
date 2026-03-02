@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 LazyLoader - Lazy module loading utilities.
 
@@ -6,7 +7,6 @@ Only loads modules when they are actually accessed.
 
 Phase 17: vLLM Pattern Integration (P2)
 """
-from __future__ import annotations
 import importlib
 import sys
 from typing import Any, Callable, TypeVar, TYPE_CHECKING
@@ -121,7 +121,7 @@ class LazyImport:
             
         Example:
             # In __init__.py
-            from src.core.base.utils.LazyLoader import LazyImport
+        from src.core.base.utils.LazyLoader import LazyImport
             
             _LAZY_ATTRS = {
                 'HeavyClass': 'mypackage.heavy:HeavyClass',

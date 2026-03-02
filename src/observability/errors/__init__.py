@@ -1,37 +1,124 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 
 """Lazy-loading entry point for observability.errors."""
 
-from __future__ import annotations
 from typing import Any, TYPE_CHECKING
 from src.core.base.lifecycle.version import VERSION
 from src.core.lazy_loader import ModuleLazyLoader
 
 if TYPE_CHECKING:
-    from .auto_fix_suggester import AutoFixSuggester
+from .auto_fix_suggester import AutoFixSuggester
+try:
     from .blame_info import BlameInfo
+except Exception:  # pragma: no cover - optional component may be absent
+    BlameInfo = None
+
+try:
     from .code_context import CodeContext
+except Exception:  # pragma: no cover - optional component may be absent
+    CodeContext = None
+
+try:
     from .context_aggregator import ContextAggregator
+except Exception:  # pragma: no cover - optional component may be absent
+    ContextAggregator = None
+
+try:
     from .custom_err import CustomError
+except Exception:  # pragma: no cover - optional component may be absent
+    CustomError = None
+
+try:
     from .error_agent import ErrorAgent
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorAgent = None
+
+try:
     from .error_category import ErrorCategory
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorCategory = None
+
+try:
     from .error_classifier import ErrorClassifier
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorClassifier = None
+
+try:
     from .error_database import ErrorDatabase
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorDatabase = None
+
+try:
     from .error_descriptor import ErrorDescriptor
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorDescriptor = None
+
+try:
     from .error_handler import ErrorHandler
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorHandler = None
+
+try:
     from .error_manager import ErrorManager
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorManager = None
+
+try:
     from .error_priority import ErrorPriority
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorPriority = None
+
+try:
     from .error_report import ErrorReport
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorReport = None
+
+try:
     from .error_severity import ErrorSeverity
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorSeverity = None
+
+try:
     from .error_stats import ErrorStats
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorStats = None
+
+try:
     from .error_status import ErrorStatus
+except Exception:  # pragma: no cover - optional component may be absent
+    ErrorStatus = None
+
+try:
     from .notification_manager import NotificationManager
+except Exception:  # pragma: no cover - optional component may be absent
+    NotificationManager = None
+
+try:
     from .resolution_recommendation import ResolutionRecommendation
+except Exception:  # pragma: no cover - optional component may be absent
+    ResolutionRecommendation = None
+
+try:
     from .root_cause_analysis import RootCauseAnalysis
+except Exception:  # pragma: no cover - optional component may be absent
+    RootCauseAnalysis = None
+
+try:
     from .solution_verifier import SolutionVerifier
+except Exception:  # pragma: no cover - optional component may be absent
+    SolutionVerifier = None
+
+try:
     from .source_location import SourceLocation
+except Exception:  # pragma: no cover - optional component may be absent
+    SourceLocation = None
+
+try:
     from .suggested_fix import SuggestedFix
+except Exception:  # pragma: no cover - optional component may be absent
+    SuggestedFix = None
 
 _LAZY_REGISTRY = {
     "AutoFixSuggester": ("src.observability.errors.auto_fix_suggester", "AutoFixSuggester"),

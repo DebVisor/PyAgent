@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Script for final namespace correction and import migration."""
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import os
 import re
@@ -33,12 +33,12 @@ def fix_imports(content: str) -> str:
         content = re.sub(rf'^\s*from ({mod})(\b\s+import|\b\s+)', r'from src.\1\2', content, flags=re.MULTILINE)
         content = re.sub(rf'^\s*import ({mod})(\b\s*$)', r'from src import \1', content, flags=re.MULTILINE)
 
-    content = content.replace('from classes.', 'from src.')
+    content = content.replace('from src.', 'from src.')
     # Fix src.agent -> src.logic.agents
-    content = content.replace('from src.agent.', 'from src.logic.agents.')
-    content = content.replace('import src.agent.', 'import src.logic.agents.')
+    content = content.replace('from src.logic.agents.', 'from src.logic.agents.')
+    content = content.replace('import src.logic.agents.', 'import src.logic.agents.')
     # Handle the specific case in agent_deprecated.py
-    content = content.replace('from src.agent import *', 'from src.logic.agents.swarm.OrchestratorAgent import *') # Assuming Agent.py has the stuff
+    content = content.replace('from src.logic.agents.swarm.OrchestratorAgent import *', 'from src.logic.agents.swarm.OrchestratorAgent import *') # Assuming Agent.py has the stuff
     
     return content
 

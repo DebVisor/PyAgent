@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Script for finding all legacy import patterns across the workspace."""
 
-from __future__ import annotations
 
 import os
 
@@ -30,7 +30,7 @@ for root_dir in ["src", "tests"]:
                 try:
                     with open(path, encoding="utf-8") as f:
                         for i, line in enumerate(f):
-                            if "from agent_" in line or "import agent_" in line or "from classes." in line:
+                            if "from agent_" in line or "import agent_" in line or "from src." in line:
                                 results.append(f"{path}:{i + 1}:{line.strip()}")
                 except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
                     pass

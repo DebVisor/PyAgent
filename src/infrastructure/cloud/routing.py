@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Intelligent routing for multi-cloud AI providers.
 
@@ -5,7 +6,6 @@ Routes requests to the optimal provider based on model availability,
 latency requirements, budget constraints, and provider health.
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging

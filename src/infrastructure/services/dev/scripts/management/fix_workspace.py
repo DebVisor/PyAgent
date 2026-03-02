@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Script for reconciling workspace-wide module imports and missing __init__.py files."""
 
-from __future__ import annotations
 
 import os
 import re
@@ -59,7 +59,7 @@ def fix_imports(content: str) -> str:
             flags=re.MULTILINE,
         )
 
-    content = content.replace("from classes.", "from src.")
+    content = content.replace("from src.", "from src.")
     return content
 
 
@@ -104,7 +104,7 @@ if os.path.exists(cb_path):
         content = f.read()
     if "src.agent.CircuitBreakerCore" in content or "CircuitBreakerCore" in content:
         content = content.replace(
-            "from src.agent.CircuitBreakerCore import CircuitBreakerCore",
+            "from src.logic.agents.CircuitBreakerCore import CircuitBreakerCore",
             "from src.core.base.CircuitBreaker import CircuitBreaker as CircuitBreakerImpl",
         )
         content = content.replace("CircuitBreakerCore", "CircuitBreakerImpl")

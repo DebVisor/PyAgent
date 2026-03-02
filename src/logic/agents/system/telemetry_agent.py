@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,7 +30,6 @@ Supports observability, monitoring, and health diagnostics.
 """
 
 
-from __future__ import annotations
 
 import json
 import time
@@ -41,7 +41,7 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.base.logic.connectivity_manager import ConnectivityManager
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-from src.observability.structured_logger import StructuredLogger
+    from src.observability.structured_logger import StructuredLogger
 
 __version__ = VERSION
 

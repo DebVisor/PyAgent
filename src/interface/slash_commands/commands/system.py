@@ -156,7 +156,7 @@ def cmd_cpu(_ctx: CommandContext) -> CommandResult:
     except ImportError:
         return CommandResult.fail("psutil not installed")
 
-    import platform
+        import platform
 
     cpu_count = psutil.cpu_count()
     cpu_count_physical = psutil.cpu_count(logical=False)

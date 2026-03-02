@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Cloud Infrastructure Module - Multi-cloud integration for PyAgent.
 
@@ -5,7 +6,6 @@ Provides unified interface for cloud AI providers with intelligent routing,
 budget management, and health-aware failover.
 """
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING
 

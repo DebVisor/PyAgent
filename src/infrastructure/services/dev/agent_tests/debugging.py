@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +16,9 @@
 
 """Debugging utilities for test execution."""
 
-from __future__ import annotations
 
 import json
+import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
@@ -25,7 +26,7 @@ from typing import Any
 from src.core.base.lifecycle.version import VERSION
 
 from .enums import ExecutionMode
-from .models import ExecutionTrace
+from .models import ExecutionTrace, TestProfile
 
 __version__ = VERSION
 
@@ -130,15 +131,11 @@ class TestProfiler:
 
     def __init__(self) -> None:
         """Initialize test profiler."""
-        from .models import TestProfile
-
         self.profiles: dict[str, TestProfile] = {}
         self._start_times: dict[str, float] = {}
 
     def start_profiling(self, test_id: str) -> None:
         """Start profiling a test."""
-        import time
-
         self._start_times[test_id] = time.time()
 
     def stop_profiling(
@@ -149,11 +146,6 @@ class TestProfiler:
         function_calls: int = 0,
     ) -> Any:
         """Stop profiling and record results."""
-
-        import time
-
-        from .models import TestProfile
-
         start = self._start_times.pop(test_id, time.time())
         cpu_time = (time.time() - start) * 1000
         profile = TestProfile(

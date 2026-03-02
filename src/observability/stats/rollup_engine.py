@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Rollup engine.py module.
@@ -7,7 +8,6 @@ Rollup engine.py module.
 # Rollup, query, and correlation analyzer engine.
 # Phase 16: Rust acceleration for aggregation and percentile calculations
 
-from __future__ import annotations
 
 import contextlib
 import logging
@@ -309,7 +309,7 @@ class CorrelationAnalyzer:
                 return None
             correlation: float = numerator / (denom_a * denom_b)
 
-        from types import SimpleNamespace
+            from types import SimpleNamespace
 
         result = SimpleNamespace(
             metric_a=metric_a,

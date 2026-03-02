@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-
 from __future__ import annotations
+
 import logging
 import json
 from typing import Dict, List, Any, Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.classes.fleet.FleetManager import FleetManager
+from src.classes.fleet.FleetManager import FleetManager
 
 class InterleavingOrchestrator:
     """

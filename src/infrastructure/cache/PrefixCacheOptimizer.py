@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 PrefixCacheOptimizer: Prefix cache hit optimization with radix tree.
 
@@ -11,7 +12,6 @@ Beyond vLLM:
 - Multi-tier cache (L1 hot, L2 warm, L3 cold)
 """
 
-from __future__ import annotations
 import logging
 import threading
 import time

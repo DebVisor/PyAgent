@@ -1,12 +1,12 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import re
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.logic.agents.security.ComplianceAgent import ComplianceAgent
+from src.logic.agents.security.ComplianceAgent import ComplianceAgent
 
 class PrivacyScannerMixin:
     """Mixin for PII scanning and masking in ComplianceAgent."""

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Unified logic for metric calculation, processing, and management.
 
-from __future__ import annotations
 import json
 import logging
 import time
@@ -25,7 +25,7 @@ try:
 except ImportError:
 
     psutil = None
-from .exporters import PrometheusExporter, OTelManager, MetricsExporter
+    from .exporters import PrometheusExporter, OTelManager, MetricsExporter
 
 try:
     from src.observability.reports.GrafanaGenerator import (
@@ -33,7 +33,7 @@ try:
     )
 except ImportError:
     GrafanaGenerator = None
-from src.core.base.Version import VERSION
+    from src.core.base.Version import VERSION
 
 __version__ = VERSION
 

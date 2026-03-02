@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,7 +33,6 @@ Example:
     >>> pool.release(buffer)
 """
 
-from __future__ import annotations
 
 import threading
 import time
@@ -209,7 +209,7 @@ class UvaBuffer:
                 self._cpu_tensor[: data.numel()].copy_(data.view(-1))
             elif hasattr(data, "__array__"):
                 # Numpy array
-                import numpy as np
+            import numpy as np
 
                 flat = np.asarray(data).ravel()
                 self._cpu_tensor[: len(flat)].copy_(torch.from_numpy(flat))
@@ -647,7 +647,7 @@ class UvaBackedTensor:
         else:
             element_size = 4  # Assume float32
 
-        import math
+            import math
 
         self.size = math.prod(shape) * element_size
 

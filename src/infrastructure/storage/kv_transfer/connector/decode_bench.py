@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,15 +18,12 @@ Phase 45: Decode Bench KV Connector
 KV Connector for decode instance benchmarking.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 
-from src.infrastructure.storage.kv_transfer.connector.base import \
-    KVConnectorBase
-from src.infrastructure.storage.kv_transfer.connector.types import \
-    KVConnectorMetadata
+from src.infrastructure.storage.kv_transfer.connector.base import KVConnectorBase
+from src.infrastructure.storage.kv_transfer.connector.types import KVConnectorMetadata
 
 if TYPE_CHECKING:
     from src.infrastructure.storage.kv_transfer.connector.types import (

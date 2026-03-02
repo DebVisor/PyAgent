@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # StreamAgent: n8n and External Workflow Integration - Phase 319 Enhanced
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 import json

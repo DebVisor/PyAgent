@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Linear.py module.
-"""
-
-from __future__ import annotations
-
 from typing import TYPE_CHECKING
 
 import numpy as np
@@ -28,6 +23,10 @@ from .tensor import QuantizedTensor
 
 if TYPE_CHECKING:
     from numpy.typing import NDArray
+
+"""
+Linear.py module.
+"""
 
 
 class LinearQuantizer(Quantizer):
@@ -120,8 +119,8 @@ class LinearQuantizer(Quantizer):
 
         num_groups = (in_features + self.config.group_size - 1) // self.config.group_size
 
-        scales = []
-        zps = [] if not self.config.symmetric else None
+        scales: list[NDArray[np.float32]] = []
+        zps: list[NDArray[np.int32]] = []
 
         for g in range(num_groups):
             start = g * self.config.group_size
@@ -142,9 +141,9 @@ class LinearQuantizer(Quantizer):
                 scales.append(scale)
                 zps.append(zp)
 
-        scales = np.stack(scales, axis=1).astype(np.float32)
-        zps = np.stack(zps, axis=1).astype(np.int32) if zps else None
-        return scales, zps
+        scales_array: NDArray[np.float32] = np.stack(scales, axis=1).astype(np.float32)
+        zps_array: NDArray[np.int32] | None = np.stack(zps, axis=1).astype(np.int32) if zps and not self.config.symmetric else None
+        return scales_array, zps_array
 
     def quantize_linear(
         self,

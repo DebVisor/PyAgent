@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Core logic for semantic and literal search across the codebase.
 """
 
-from __future__ import annotations
 
 import logging
 from pathlib import Path
@@ -47,8 +47,7 @@ class SearchCore(BaseCore):
             try:
                 return rc.find_literal_rust(query, str(root_dir), file_pattern)  # pylint: disable=no-member
             except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
- # pylint: disable=broad-exception-caught
-                pass
+                logger.debug(f"Rust acceleration unavailable: {e}")
 
         results = []
         for path in root_dir.rglob(file_pattern):
@@ -58,8 +57,7 @@ class SearchCore(BaseCore):
                 content = path.read_text(encoding="utf-8")
                 if query in content:
                     results.append({"path": str(path), "line": 0})  # Simplified
-            except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
- # pylint: disable=broad-exception-caught
+            except Exception:  # pylint: disable=broad-exception-caught
                 continue
         return results
 
@@ -69,8 +67,7 @@ class SearchCore(BaseCore):
             try:
                 return rc.semantic_rank_rust(query, documents)  # pylint: disable=no-member
             except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
- # pylint: disable=broad-exception-caught
-                pass
+                logger.debug(f"Rust semantic_rank_rust unavailable: {e}")
         # Fallback to simple keyword density (mock)
         return list(range(len(documents)))
 
@@ -80,7 +77,7 @@ class SearchCore(BaseCore):
             return rc.vector_search_rust(query_vec, index, top_k)  # pylint: disable=no-member
 
         # Simple Python cosine similarity fallback
-        import math  # pylint: disable=import-outside-toplevel
+            import math  # pylint: disable=import-outside-toplevel
 
         def cosine_sim(v1: list[float], v2: list[float]) -> float:
             dot = sum(a * b for a, b in zip(v1, v2))

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Models for fleet - wide state and resource management."""
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field
@@ -23,7 +23,7 @@ from typing import Any
 from .base_models import (_empty_dict_str_any, _empty_dict_str_float,
                           _empty_dict_str_int, _empty_dict_str_str,
                           _empty_list_str)
-from .core_enums import RateLimitStrategy
+                          from .core_enums import RateLimitStrategy
 
 
 @dataclass(slots=True)

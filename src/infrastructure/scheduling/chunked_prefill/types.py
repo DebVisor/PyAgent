@@ -1,6 +1,6 @@
+from __future__ import annotations
 """Types and data structures for chunked prefill."""
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

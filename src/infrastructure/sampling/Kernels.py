@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
 Core sampling kernels and strategies.
 """
 
-from __future__ import annotations
 from typing import Optional
 import numpy as np
 from .Params import SamplingParams, SamplingState

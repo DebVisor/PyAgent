@@ -1,8 +1,8 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """LoRA model container."""
 
-from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, TYPE_CHECKING
 import numpy as np
@@ -11,7 +11,7 @@ from .config import LoRAConfig
 from .weights import LoRALayerWeights
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 
 @dataclass

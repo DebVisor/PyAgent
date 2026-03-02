@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # WebSearchEssayAgent: Research-driven Essay Writing Specialist - Phase 319 Enhanced
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 import json

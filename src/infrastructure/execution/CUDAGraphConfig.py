@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CUDAGraphConfig.py - CUDA graph mode management and configuration.
 
@@ -7,7 +8,6 @@ and replay management for optimized inference.
 Phase 29: Execution Context, Batching & Async Streaming
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Optional, Dict, Any, List, Tuple, Set, Callable

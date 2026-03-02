@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Transition dynamics.py module.
@@ -5,7 +6,6 @@ Transition dynamics.py module.
 # Copyright 2026 PyAgent Authors
 # Transition Dynamics for Markov Decision Processes - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import math
 import random

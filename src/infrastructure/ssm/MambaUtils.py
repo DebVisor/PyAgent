@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Mamba Utilities.
 
@@ -5,7 +6,6 @@ vLLM Pattern: vllm/model_executor/layers/mamba/mamba_utils.py
 Utility functions for Mamba computation.
 """
 
-from __future__ import annotations
 
 import math
 from dataclasses import dataclass

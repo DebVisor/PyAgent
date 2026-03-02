@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Monitoring.py module.
@@ -6,14 +7,13 @@ Monitoring.py module.
 # Copyright 2026 PyAgent Authors
 # System resource monitoring engine.
 
-from __future__ import annotations
 
 import logging
 import platform
 from pathlib import Path
 from typing import Any
 
-from psutil._common import sdiskusage
+# psutil's internal namedtuple types may vary across versions; avoid importing internal symbols
 
 try:
     import psutil
@@ -46,7 +46,7 @@ class ResourceMonitor:
         try:
             stats["cpu_usage_pct"] = psutil.cpu_percent(interval=None)
             stats["memory_usage_pct"] = psutil.virtual_memory().percent
-            disk: sdiskusage = psutil.disk_usage(str(self.workspace_root))
+            disk = psutil.disk_usage(str(self.workspace_root))
             stats["disk_free_gb"] = round(disk.free / (1024**3), 2)
             if stats["cpu_usage_pct"] > 90 or stats["memory_usage_pct"] > 90:
                 stats["status"] = "CRITICAL"

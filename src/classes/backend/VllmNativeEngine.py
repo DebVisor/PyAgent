@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ High-performance native vLLM engine for PyAgent's 'Own AI'.
 Optimized for local inference and future trillion-parameter context handling.
 """
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 from typing import Any
@@ -241,8 +241,8 @@ class VllmNativeEngine:
         if self._llm:
             # vLLM doesn't have a simple 'off' but we can delete reference
             # and try to trigger GC or rely on process exit.
-            import gc
-            import torch
+        import gc
+        import torch
 
             del self._llm
             self._llm = None

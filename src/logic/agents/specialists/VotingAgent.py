@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # VotingAgent: Consensus and Multi-Agent Voting Specialist - Phase 319 Enhanced
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 import json

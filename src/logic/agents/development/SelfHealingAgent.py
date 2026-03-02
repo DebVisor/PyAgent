@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Agent specializing in self-healing through telemetry analysis and error correction."""
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import os
 from typing import Any
@@ -61,7 +61,7 @@ class SelfHealingAgent(BaseAgent):
             except Exception as e:
                 # Log but don't fail - dynamic prompt is optional enhancement
                 import logging
-                logging.getLogger(__name__).debug("Failed to load dynamic prompt: %s", e)
+                    logging.getLogger(__name__).debug("Failed to load dynamic prompt: %s", e)
     @as_tool
     async def discover_peers_and_budget(self) -> str:
         """Discovers available peers and current cloud budget status."""

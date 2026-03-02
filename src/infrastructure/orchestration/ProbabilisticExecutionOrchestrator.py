@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,14 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# limitations under the License.
 
-from __future__ import annotations
+
 from src.core.base.version import VERSION
 import logging
 from typing import Dict, List, Any, TYPE_CHECKING
@@ -33,7 +28,7 @@ class ProbabilisticExecutionOrchestrator:
     Implements 'Wave-function collapse' execution for Phase 28.
     Runs multiple parallel task variations and selects the most stable/optimal outcome.
     """
-    
+
     def __init__(self, fleet: FleetManager) -> None:
         self.fleet = fleet
 
@@ -42,7 +37,7 @@ class ProbabilisticExecutionOrchestrator:
         Executes a task multiple times and collapses the results into a single high-confidence output.
         """
         logging.info(f"ProbabilisticExecutionOrchestrator: Executing task '{task}' with {variations} variations.")
-        
+
         results = []
         for i in range(variations):
             try:
@@ -60,11 +55,9 @@ class ProbabilisticExecutionOrchestrator:
 
         # Wave-function collapse: Select the best result
         collapsed_result = self._collapse(task, results)
-        
+
         confidence = self._calculate_confidence(results, collapsed_result)
-        
         logging.info(f"Probabilistic execution complete. Confidence: {confidence:.2f}")
-        
         return {
             "status": "success",
             "final_result": collapsed_result,
@@ -81,7 +74,7 @@ class ProbabilisticExecutionOrchestrator:
         if hasattr(self.fleet, 'reality_anchor') and self.fleet.reality_anchor:
             best_result = None
             highest_score = -1.0
-            
+
             for res in results:
                 try:
                     verification = self.fleet.reality_anchor.verify_claim(str(res))
@@ -91,16 +84,16 @@ class ProbabilisticExecutionOrchestrator:
                         best_result = res
                 except Exception:
                     continue
-            
+
             if best_result is not None:
                 return best_result
 
         # Fallback: Pick the most frequent result (simplistic consensus)
         # For non-string objects, we convert to string for comparison
-        from collections import Counter
+                from collections import Counter
         str_results = [str(r) for r in results]
         most_common_str = Counter(str_results).most_common(1)[0][0]
-        
+
         # Find the original object corresponding to the most common string
         for r in results:
             if str(r) == most_common_str:

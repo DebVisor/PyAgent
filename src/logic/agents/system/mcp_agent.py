@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """
 Module: mcp_agent
 Implements Model Context Protocol (MCP) agent logic for PyAgent core base.
@@ -22,7 +23,6 @@ Acts as a bridge between the PyAgent fleet and external MCP servers.
 Inspired by mcp-server-spec-driven-development and awesome-mcp-servers.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

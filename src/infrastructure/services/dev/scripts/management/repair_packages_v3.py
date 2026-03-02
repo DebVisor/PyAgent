@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Repair packages v3.py module.
 """
 
 
-from __future__ import annotations
 
 import os
 import re
@@ -133,9 +133,9 @@ def main() -> None:
         with open(cb_path, encoding="utf-8") as f:
             c = f.read()
 
-        if "from src.agent.CircuitBreakerCore import CircuitBreakerCore" in c:
+        if "from src.logic.agents.CircuitBreakerCore import CircuitBreakerCore" in c:
             c = c.replace(
-                "from src.agent.CircuitBreakerCore import CircuitBreakerCore",
+                "from src.logic.agents.CircuitBreakerCore import CircuitBreakerCore",
                 "from src.core.base.CircuitBreaker import CircuitBreaker as CircuitBreakerImpl",
             )
             c = c.replace(

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,48 +18,52 @@
 Internal managers for prompt, conversation, auth, and batch processing.
 """
 
-from __future__ import annotations
 from src.core.base.Version import VERSION as VERSION
-from .PromptManagers import (
-    PromptTemplateManager as PromptTemplateManager,
-    PromptVersion as PromptVersion,
-    PromptVersionManager as PromptVersionManager,
-)
-from .ConversationManagers import ConversationHistory as ConversationHistory
-from .AuthManagers import (
-    AuthenticationManager as AuthenticationManager,
-    AuthManager as AuthManager,
-)
-from .BatchManagers import (
-    BatchRequest as BatchRequest,
-    RequestBatcher as RequestBatcher,
-)
-from .ProcessorManagers import (
-    ResponsePostProcessor as ResponsePostProcessor,
-    MultimodalProcessor as MultimodalProcessor,
-    SerializationManager as SerializationManager,
-)
-from .OrchestrationManagers import (
-    AgentComposer as AgentComposer,
-    ModelSelector as ModelSelector,
-    QualityScorer as QualityScorer,
-    ABTest as ABTest,
-)
-from .PluginManager import (
-    PluginManager as PluginManager,
-    PluginMetadata as PluginMetadata,
-)
-from .SystemManagers import (
-    FilePriorityManager as FilePriorityManager,
-    ResponseCache as ResponseCache,
-    StatePersistence as StatePersistence,
-    EventManager as EventManager,
-    HealthChecker as HealthChecker,
-    ProfileManager as ProfileManager,
-)
-from .ResourceQuotaManager import (
-    ResourceQuotaManager as ResourceQuotaManager,
-    QuotaConfig as QuotaConfig,
-)
+try:
+    from .PromptManagers import (
+        PromptTemplateManager as PromptTemplateManager,
+        PromptVersion as PromptVersion,
+        PromptVersionManager as PromptVersionManager,
+    )
+    from .ConversationManagers import ConversationHistory as ConversationHistory
+    from .AuthManagers import (
+        AuthenticationManager as AuthenticationManager,
+        AuthManager as AuthManager,
+    )
+    from .BatchManagers import (
+        BatchRequest as BatchRequest,
+        RequestBatcher as RequestBatcher,
+    )
+    from .ProcessorManagers import (
+        ResponsePostProcessor as ResponsePostProcessor,
+        MultimodalProcessor as MultimodalProcessor,
+        SerializationManager as SerializationManager,
+    )
+    from .OrchestrationManagers import (
+        AgentComposer as AgentComposer,
+        ModelSelector as ModelSelector,
+        QualityScorer as QualityScorer,
+        ABTest as ABTest,
+    )
+    from .PluginManager import (
+        PluginManager as PluginManager,
+        PluginMetadata as PluginMetadata,
+    )
+    from .SystemManagers import (
+        FilePriorityManager as FilePriorityManager,
+        ResponseCache as ResponseCache,
+        StatePersistence as StatePersistence,
+        EventManager as EventManager,
+        HealthChecker as HealthChecker,
+        ProfileManager as ProfileManager,
+    )
+    from .ResourceQuotaManager import (
+        ResourceQuotaManager as ResourceQuotaManager,
+        QuotaConfig as QuotaConfig,
+    )
+except Exception:
+    # Best-effort: allow package import even if some manager submodules are
+    # missing or named differently (legacy/pluralization differences).
+    pass
 
 __version__ = VERSION

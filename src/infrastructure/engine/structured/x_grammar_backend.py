@@ -44,12 +44,12 @@ try:
 except ImportError:
     HAS_NUMPY = False
 
-from .compiled_grammar import CompiledGrammar
-from .enums import GrammarType, VocabType
-from .grammar_compiler import GrammarCompiler
-from .grammar_matcher import GrammarMatcher
-from .grammar_wrappers import CompositeGrammar, XGrammarGrammar
-from .tokenizer_info import TokenizerInfo
+    from .compiled_grammar import CompiledGrammar
+    from .enums import GrammarType, VocabType
+    from .grammar_compiler import GrammarCompiler
+    from .grammar_matcher import GrammarMatcher
+    from .grammar_wrappers import CompositeGrammar, XGrammarGrammar
+    from .tokenizer_info import TokenizerInfo
 
 
 class XGrammarBackend:

@@ -1,5 +1,5 @@
-# SPDX-License-Identifier: Apache-2.0
 from __future__ import annotations
+# SPDX-License-Identifier: Apache-2.0
 import time
 import uuid
 from abc import ABC, abstractmethod

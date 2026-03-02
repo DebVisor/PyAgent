@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Rust bridge profiler.py module.
@@ -5,7 +6,6 @@ Rust bridge profiler.py module.
 # Copyright 2026 PyAgent Authors
 # Rust Bridge Profiler: Comprehensive metadata tracking for Rust-accelerated functions.
 
-from __future__ import annotations
 
 import logging
 import time

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Prediction engine.py module.
@@ -6,7 +7,6 @@ Prediction engine.py module.
 # Copyright 2026 PyAgent Authors
 # Forecasting and change detection engine.
 
-from __future__ import annotations
 
 import contextlib
 import logging

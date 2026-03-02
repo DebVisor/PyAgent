@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Auto-extracted class from agent_improvements.py"""
 
-from __future__ import annotations
 
 import json
 import logging
@@ -26,15 +26,15 @@ from typing import TYPE_CHECKING, Any
 if TYPE_CHECKING:
     from .improvement_manager import ImprovementManager
 
-from src.core.base.lifecycle.base_agent import BaseAgent
-from src.core.base.lifecycle.version import VERSION
+    from src.core.base.lifecycle.base_agent import BaseAgent
+    from src.core.base.lifecycle.version import VERSION
 
-from .effort_estimate import EffortEstimate
-from .improvement import Improvement
-from .improvement_category import ImprovementCategory
-from .improvement_priority import ImprovementPriority
-from .improvement_status import ImprovementStatus
-from .improvement_template import ImprovementTemplate
+    from .effort_estimate import EffortEstimate
+    from .improvement import Improvement
+    from .improvement_category import ImprovementCategory
+    from .improvement_priority import ImprovementPriority
+    from .improvement_status import ImprovementStatus
+    from .improvement_template import ImprovementTemplate
 
 __version__ = VERSION
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -40,7 +41,6 @@ Fix headers.py module.
 
 def fix_header(lines: list[str], filename: str = "") -> list[str]:
     shebang = None
-    _future = "from __future__ import annotations\n"
     _v_import = "from src.core.base.lifecycle.version import VERSION\n"
     _v_assign = "__version__ = VERSION\n"
 

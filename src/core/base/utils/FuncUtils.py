@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Function Utilities Module - Phase 20: Production Infrastructure
 ================================================================
@@ -18,7 +19,6 @@ Features:
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import functools
 import inspect

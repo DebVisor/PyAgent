@@ -1,8 +1,8 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """Request and metrics data structures for scheduling."""
 
-from __future__ import annotations
 import time
 from dataclasses import dataclass, field
 from typing import Any, Optional

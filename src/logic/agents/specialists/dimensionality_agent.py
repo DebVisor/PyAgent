@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +24,6 @@ Dimensionality agent.py module.
 # DimensionalityAgent: Feature Compression and Latent Space Mapping - Phase 319 Enhanced
 # Phase 16: Rust acceleration for PCA reduction, embedding stats, k-means clustering
 
-from __future__ import annotations
 
 import contextlib
 import json
@@ -349,7 +349,7 @@ class DimensionalityAgent(BaseAgent):
             except (AttributeError, RuntimeError, TypeError):
                 pass
 
-        import random
+                import random
 
         random.seed(42)  # Reproducible
 

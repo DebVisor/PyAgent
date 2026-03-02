@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Core protocols and interfaces for the PyAgent framework.
 Provides structural typing (Protocols) for agents, orchestrators, and components.
 """
 
-from __future__ import annotations
 
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
@@ -120,6 +120,7 @@ class Loadable(Protocol):  # pylint: disable=too-few-public-methods
 
     def load(self, path: Path | None = None) -> bool:
         """Loads state from file."""
+        raise NotImplementedError()
 
 
 @runtime_checkable
@@ -128,6 +129,7 @@ class Saveable(Protocol):  # pylint: disable=too-few-public-methods
 
     def save(self, path: Path | None = None) -> bool:
         """Saves state to file."""
+        raise NotImplementedError()
 
 
 @runtime_checkable

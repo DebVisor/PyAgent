@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 N-gram Accelerators - Numba and Rust-based high-performance matching.
 """
 
-from __future__ import annotations
 
 import numpy as np
 

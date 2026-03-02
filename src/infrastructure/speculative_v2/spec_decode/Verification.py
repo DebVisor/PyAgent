@@ -1,13 +1,14 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Verification logic for speculative decoding.
 """
 
-from __future__ import annotations
 import math
 import time
 import threading
+import random
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -17,8 +18,8 @@ try:
 except ImportError:
     HAS_RUST = False
 
-from .Config import SpecDecodeConfig, VerificationStrategy
-from .Metadata import SpecDecodeMetadataV2, TreeVerificationMetadata
+    from .Config import SpecDecodeConfig, VerificationStrategy
+    from .Metadata import SpecDecodeMetadataV2, TreeVerificationMetadata
 
 
 @dataclass(slots=True)
@@ -76,7 +77,6 @@ class SpecDecodeVerifier:
                 metadata.draft_token_ids, draft_logprobs, target_logprobs, self.sampling_eps
             )
             return VerificationResult(accepted_tokens=accepted, num_accepted=len(accepted), acceptance_mask=mask, target_logprobs=target_logprobs, draft_logprobs=draft_logprobs)
-        import random
         accepted, mask = [], []
         for i, (draft_token, draft_lp, target_lp) in enumerate(zip(metadata.draft_token_ids, draft_logprobs, target_logprobs)):
             ratio = math.exp(min(0, target_lp - draft_lp))

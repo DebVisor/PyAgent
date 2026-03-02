@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,7 +39,6 @@ Example usage:
         return _lazy_modules.load(name)
 """
 
-from __future__ import annotations
 
 import importlib
 from functools import lru_cache
@@ -181,7 +181,7 @@ class ModuleLazyLoader:
 
     Example:
         # In your module's __init__.py:
-        from src.core.lazy_loader import ModuleLazyLoader
+    from src.core.lazy_loader import ModuleLazyLoader
 
         _lazy = ModuleLazyLoader({
             "EagleProposer": ("src.infrastructure.speculative_v2.EagleProposer", "EagleProposer"),

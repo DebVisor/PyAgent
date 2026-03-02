@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Speculative tree structures for EAGLE.
 """
 
-from __future__ import annotations
 import math
 from dataclasses import dataclass, field
 from typing import cast

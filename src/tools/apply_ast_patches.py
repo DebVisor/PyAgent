@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Apply unified-diff patches from .external/patches_ast to workspace files.
 
 This script applies patches conservatively: it verifies context lines before applying
 and backs up original files as `.bak` when a patch is applied.
 """
-from __future__ import annotations
 from pathlib import Path
 import re
 import sys

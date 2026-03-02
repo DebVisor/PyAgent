@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Facade for MCP Tool Server Integration.
 Delegates to modularized sub-packages in src/infrastructure/mcp_tools/.
 """
 
-from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 
@@ -28,8 +28,8 @@ from .base import MCPToolServer as MCPToolServerBase
 from .local import LocalMCPServer
 from .models import (MCPServerConfig, MCPServerType, MCPSession, SessionState,
                      ToolCall, ToolResult, ToolSchema, ToolStatus)
-from .registry import MCPServerRegistry, SessionManager
-from .sse import SSEMCPServer
+                     from .registry import MCPServerRegistry, SessionManager
+                     from .sse import SSEMCPServer
 
 # For backward compatibility mapping
 MCPToolServer = MCPToolServerBase

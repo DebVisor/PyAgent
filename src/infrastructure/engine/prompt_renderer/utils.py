@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,31 +13,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
-"""
-Utility functions and loaders for prompt rendering.
-"""
-
-from __future__ import annotations
-
 import base64
 import contextlib
 from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING
 
-from .models import (EmbeddingInput, PromptConfig, RenderResult,
-                     TruncationResult, TruncationStrategy)
+from .models import (EmbeddingInput, PromptConfig, RenderResult, TruncationResult, TruncationStrategy)
 from .salt import CacheSaltGenerator
 from .truncation import TruncationManager
 
 if TYPE_CHECKING:
     from .renderers import ChatRenderer, CompletionRenderer
 
+"""
+Utility functions and loaders for prompt rendering.
+"""
+
 
 class EmbeddingLoader:
     """Load embeddings from various formats."""
 
-    ENCODINGS: Dict[str, Tuple[str | int]] = {
+    ENCODINGS: Dict[str, Tuple[str, int]] = {
         "float32": ("f", 4),
         "float16": ("e", 2),
         "bfloat16": ("e", 2),
@@ -69,7 +65,7 @@ class EmbeddingLoader:
     @classmethod
     def load_file(cls, path: str, encoding: str = "float32") -> EmbeddingInput:
         """Load embeddings from file."""
-        with open(path, 'rb', encoding='utf-8') as f:
+        with open(path, 'rb') as f:
             data: str = base64.b64encode(f.read()).decode()
         return cls.load_base64(data, encoding)
 
@@ -112,6 +108,7 @@ def render_prompt(
         **kwargs,
     )
 
+    renderer: ChatRenderer | CompletionRenderer
     if messages is not None:
         renderer = ChatRenderer(tokenizer, max_tokens or 4096)
     else:
@@ -134,8 +131,7 @@ def apply_chat_template(
                 add_generation_prompt=add_generation_prompt,
                 tokenize=False,
             )
-
-    from .renderers import ChatRenderer
+            from .renderers import ChatRenderer
 
     renderer = ChatRenderer()
     return renderer.apply_template(

@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # TrustAgent: Multi-dimensional Socio-Emotional Analysis Agent - Phase 319 Enhanced
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 import time

@@ -1,13 +1,13 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import os
 import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
+from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
 
 class ResearchAnalysisMixin:
     """Mixin for research report updates and lesson harvesting in SelfImprovementAnalysis."""

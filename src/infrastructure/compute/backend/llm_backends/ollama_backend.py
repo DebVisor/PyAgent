@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Ollama backend.py module.
 """
 
 
-from __future__ import annotations
 
 import logging
 
@@ -63,8 +63,8 @@ class OllamaBackend(LLMBackend):
             self._update_status("ollama", True)
             return content
         except Exception as e:
-            import traceback
-            print(f"[OllamaBackend] ERROR: {e}\n{traceback.format_exc()}")
+        import traceback
+                print(f"[OllamaBackend] ERROR: {e}\n{traceback.format_exc()}")
             logging.debug(f"Ollama call failed: {e}")
             self._update_status("ollama", False)
             self._record(

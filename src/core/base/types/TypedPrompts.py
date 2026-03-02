@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 TypedPrompts - Type-safe prompt schemas with type guards.
 
@@ -7,7 +8,6 @@ with TypedDict schemas and TypeIs type guards.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 from typing import Any, Generic, Literal, TypeAlias, TypeVar
 

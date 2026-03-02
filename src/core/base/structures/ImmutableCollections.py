@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 ImmutableCollections - Read-only collection wrappers.
 
@@ -8,7 +9,6 @@ sequence/mapping protocol compatibility.
 Phase 23: Advanced Serialization & Validation
 """
 
-from __future__ import annotations
 
 from collections.abc import Sequence, Mapping, Iterator, Hashable
 from typing import TypeVar, Generic, overload, Any

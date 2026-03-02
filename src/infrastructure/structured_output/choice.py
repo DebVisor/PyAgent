@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Choice-based grammar engine.
 """
 
-from __future__ import annotations
 
 import json
 from typing import Dict, List, Optional

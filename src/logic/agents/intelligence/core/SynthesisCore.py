@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 SynthesisCore handles synthetic data generation for fine-tuning.
 It also implements the Feature Store logic for vectorized insights.
 """
 
-from __future__ import annotations
 import random
 import logging
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CUDAGraphManager - CUDA graph capture and replay management.
 
@@ -13,7 +14,6 @@ Beyond vLLM:
 - Memory-aware graph selection
 """
 
-from __future__ import annotations
 
 import dataclasses
 import gc

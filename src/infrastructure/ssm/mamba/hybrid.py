@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 Hybrid Mamba Mixer - Combining SSM with Attention.
 """
 
-from __future__ import annotations
 
 import math
 import numpy as np

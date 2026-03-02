@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Draft model wrappers and outputs for EAGLE.
 """
 
-from __future__ import annotations
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 

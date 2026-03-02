@@ -35,17 +35,30 @@ from .attention_backend_registry import (AttentionBackend,  # noqa: F401
                                          NaiveAttentionBackend,
                                          TorchSDPABackend,
                                          get_attention_registry)
-from .batch_dcp_wrapper import (AllReduceStrategy, BatchDCPDecodeWrapper,  # noqa: F401
+                                         from .batch_dcp_wrapper import (AllReduceStrategy, BatchDCPDecodeWrapper,  # noqa: F401
                                 BatchDCPPrefillWrapper, BatchMetadata,
                                 BatchPhase, BatchRequest, DCPPlanConfig,
                                 ExecutionPlan, UnifiedBatchWrapper,
                                 create_decode_wrapper, create_prefill_wrapper,
                                 create_unified_wrapper)
-from .triton_attention_ops import AttentionBackend as TritonAttentionBackend  # noqa: F401
-from .triton_attention_ops import (AttentionConfig, AttentionKernel,  # noqa: F401
-                                   KVSplitConfig, NaiveAttention,
-                                   PrecisionMode, SlidingWindowAttention,
-                                   TritonAttentionOps, create_attention_ops)
+_TRITON_IMPORTED = False
+try:
+    from .triton_attention_ops import AttentionBackend as TritonAttentionBackend  # noqa: F401
+    from .triton_attention_ops import (AttentionConfig, AttentionKernel,  # noqa: F401
+                                       KVSplitConfig, NaiveAttention,
+                                       PrecisionMode, SlidingWindowAttention,
+                                       TritonAttentionOps, create_attention_ops)
+    _TRITON_IMPORTED = True
+except Exception:
+    TritonAttentionBackend = None
+    AttentionConfig = None
+    AttentionKernel = None
+    KVSplitConfig = None
+    NaiveAttention = None
+    PrecisionMode = None
+    SlidingWindowAttention = None
+    TritonAttentionOps = None
+    create_attention_ops = None
 
 __all__ = [
     # Phase 33
@@ -84,3 +97,15 @@ __all__ = [
     "create_prefill_wrapper",
     "create_unified_wrapper",
 ]
+if _TRITON_IMPORTED:
+    __all__.extend([
+        "TritonAttentionBackend",
+        "AttentionConfig",
+        "AttentionKernel",
+        "KVSplitConfig",
+        "NaiveAttention",
+        "PrecisionMode",
+        "SlidingWindowAttention",
+        "TritonAttentionOps",
+        "create_attention_ops",
+    ])

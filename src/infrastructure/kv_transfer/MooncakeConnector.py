@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 
@@ -19,7 +20,6 @@ Key Features:
 - Rust-accelerated buffer management
 """
 
-from __future__ import annotations
 
 import collections
 import logging
@@ -43,9 +43,9 @@ try:
 except ImportError:
     np = None
 
-from src.core.rust_bridge import RustBridge
-from src.core.lazy_loader import LazyLoader
-from src.infrastructure.kv_transfer.KVTransferConnector import (
+    from src.core.rust_bridge import RustBridge
+    from src.core.lazy_loader import LazyLoader
+    from src.infrastructure.kv_transfer.KVTransferConnector import (
     KVConnectorBase,
     KVConnectorRole,
     KVTransferConfig,

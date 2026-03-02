@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
+
 """
 Convenience functions for LM Studio.
 """
@@ -32,12 +31,10 @@ def lmstudio_chat(
 ) -> str:
     """Convenience function for quick LM Studio chat."""
     try:
-        import lmstudio
-
+        import lmstudio  # type: ignore[import-not-found]
         llm = lmstudio.llm(model) if model else lmstudio.llm()
-        chat = lmstudio.Chat(system_prompt)
+        chat = lmstudio.Chat(system_prompt)  # type: ignore[attr-defined]
         chat.add_user_message(prompt)
-
         result = llm.respond(chat)
         return str(result)
 
@@ -53,12 +50,10 @@ def lmstudio_stream(
 ) -> Iterator[str]:
     """Convenience function for streaming LM Studio chat."""
     try:
-        import lmstudio
-
+        import lmstudio  # type: ignore[import-not-found]
         llm = lmstudio.llm(model) if model else lmstudio.llm()
-        chat = lmstudio.Chat(system_prompt)
+        chat = lmstudio.Chat(system_prompt)  # type: ignore[attr-defined]
         chat.add_user_message(prompt)
-
         for fragment in llm.respond_stream(chat):
             yield str(fragment)
 
@@ -77,12 +72,12 @@ async def lmstudio_chat_async(
     This function is robust to different SDK shapes for `client.llm`.
     """
     try:
-        import lmstudio
+        import lmstudio  # type: ignore[import-not-found]
         import inspect
-
+        from typing import Any
         async with lmstudio.AsyncClient(host) as client:
             llm_accessor = client.llm
-
+            llm: Any
             if hasattr(llm_accessor, "get"):
                 llm = await (llm_accessor.get(model) if model else llm_accessor.get())
             else:
@@ -93,12 +88,14 @@ async def lmstudio_chat_async(
                     else:
                         llm = maybe
                 else:
-                    # Fallback to module-level helper
-                    llm = lmstudio.llm(model) if model else lmstudio.llm()
+                    # Fallback to module-level helper (if available)
+                    if hasattr(lmstudio, "llm"):
+                        llm = lmstudio.llm(model) if model else lmstudio.llm()
+                    else:
+                        raise AttributeError("lmstudio.llm not available on this SDK version")
 
-            chat = lmstudio.Chat(system_prompt)
+            chat = lmstudio.Chat(system_prompt)  # type: ignore[attr-defined]
             chat.add_user_message(prompt)
-
             result = await llm.respond(chat)
             return str(result)
 

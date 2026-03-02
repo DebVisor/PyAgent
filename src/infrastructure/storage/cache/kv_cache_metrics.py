@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """
 Module: kv_cache_metrics
 Tracks and reports KV cache metrics regarding distributed inference in PyAgent.
@@ -36,7 +37,6 @@ Features beyond vLLM:
 - Export to various formats
 """
 
-from __future__ import annotations
 
 import random
 import statistics
@@ -338,8 +338,8 @@ class KVCacheMetricsCollector:
                 total_blocks_sampled=len(self._block_metrics),
             )
 
-        import itertools
-        from functools import reduce
+            import itertools
+            from functools import reduce
 
         lifetimes = list(map(lambda e: e.lifetime_seconds, self._eviction_events))
         idle_times = list(map(lambda e: e.idle_seconds, self._eviction_events))
@@ -383,7 +383,7 @@ class KVCacheMetricsCollector:
         if not self._eviction_events:
             return {}
 
-        from functools import reduce
+            from functools import reduce
 
         lifetimes = list(map(lambda e: e.lifetime_seconds, self._eviction_events))
         min_lt = min(lifetimes)
@@ -409,7 +409,7 @@ class KVCacheMetricsCollector:
         if not self._eviction_events:
             return {"status": "no_data"}
 
-        import itertools
+            import itertools
 
         access_counts = list(map(lambda e: e.access_count, self._eviction_events))
         all_gaps = list(itertools.chain.from_iterable(map(lambda e: e.reuse_gaps_seconds, self._eviction_events)))

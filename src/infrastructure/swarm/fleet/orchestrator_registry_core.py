@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Orchestrator registry core.py module.
 """
 
 
-from __future__ import annotations
 
 import os
 from typing import Any
@@ -116,7 +116,7 @@ class OrchestratorRegistryCore:
             except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
                 pass
         # Python fallback
-        import re
+                import re
 
         s1 = re.sub("(.)([A-Z][a-z]+)", r"\1_\2", name)
         return re.sub("([a-z0-9])([A-Z])", r"\1_\2", s1).lower()

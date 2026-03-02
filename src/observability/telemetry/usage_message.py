@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ and reporting usage statistics with privacy-respecting opt-out support.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 import contextlib
 import os
@@ -334,7 +334,7 @@ class UsageMessage:
             self.cuda_version = gpu_info.get("cuda_version")
 
         # Environment variables
-        import json
+            import json
 
         env_data: dict[str, str | None] = {var: os.environ.get(var) for var in _ENV_VARS_TO_COLLECT if os.environ.get(var)}
         if env_data:

@@ -31,6 +31,7 @@ logger = logging.getLogger(__name__)
 class MCPClient:
     """Manager for LM Studio SDK clients and sessions with Model Context Protocol support."""
 
+
     def __init__(self, base_url: str, api_token: Optional[str] = None):
         """Initialize MCP client manager.
         
@@ -40,8 +41,9 @@ class MCPClient:
         """
         self.base_url = base_url
         self.api_token = api_token
-        self._sync_client: Optional["lmstudio.Client"] = None
-        self._async_client: Optional["lmstudio.AsyncClient"] = None
+        self._sync_client: Optional[Any] = None
+        self._async_client: Optional[Any] = None
+
 
     def get_sync_client(self) -> "lmstudio.Client":
         """Get or create synchronous SDK client.
@@ -51,9 +53,8 @@ class MCPClient:
         """
         if self._sync_client is not None:
             return self._sync_client
-        
+
         import lmstudio
-        
         try:
             api_url = self.base_url
             # Ensure scheme is present
@@ -68,6 +69,7 @@ class MCPClient:
             logger.error(f"[LMStudio] Failed to connect sync client to {self.base_url}: {e}")
             raise
 
+
     def get_async_client(self) -> "lmstudio.AsyncClient":
         """Get or create asynchronous SDK client.
         
@@ -76,9 +78,8 @@ class MCPClient:
         """
         if self._async_client is not None:
             return self._async_client
-        
+
         import lmstudio
-        
         try:
             api_url = self.base_url
             # Ensure scheme is present
@@ -91,6 +92,7 @@ class MCPClient:
         except Exception as e:
             logger.error(f"[LMStudio] Failed to create async client to {self.base_url}: {e}")
             raise
+
 
     def get_llm(self, client: Any, model: str = "") -> Any:
         """Fetch LLM model from SDK client.
@@ -108,19 +110,19 @@ class MCPClient:
             LLM model handle.
         """
         import lmstudio
-        
+
         llm_accessor = client.llm
         logger.debug(
             f"[LMStudio] LLM accessor type={type(llm_accessor)} "
             f"has_get={hasattr(llm_accessor, 'get')} callable={callable(llm_accessor)}"
         )
-        
+
         # Try `.get()` method if present
         if hasattr(llm_accessor, "get"):
             llm = llm_accessor.get(model) if model else llm_accessor.get()
             logger.debug(f"[LMStudio] Got LLM via .get() accessor: {type(llm)}")
             return llm
-        
+
         # Try callable accessor
         if callable(llm_accessor):
             try:
@@ -129,11 +131,12 @@ class MCPClient:
                 return llm
             except TypeError:
                 logger.debug("[LMStudio] Callable accessor failed, trying module-level helper")
-        
+
         # Fallback to module-level helper
         llm = lmstudio.llm(model) if model else lmstudio.llm()
         logger.debug(f"[LMStudio] Got LLM via module-level helper: {type(llm)}")
         return llm
+
 
     async def get_async_llm(self, client: Any, model: str = "") -> Any:
         """Fetch LLM model from async SDK client.
@@ -148,16 +151,14 @@ class MCPClient:
             Async LLM model handle.
         """
         import lmstudio
-        
         llm_accessor = client.llm
-        
         # Try async `.get()` method if present
         if hasattr(llm_accessor, "get"):
             maybe = llm_accessor.get(model) if model else llm_accessor.get()
             if inspect.isawaitable(maybe):
                 return await maybe
             return maybe
-        
+
         # Try callable accessor which may return awaitable
         if callable(llm_accessor):
             try:
@@ -167,9 +168,10 @@ class MCPClient:
                 return maybe
             except TypeError:
                 logger.debug("[LMStudio] Async callable accessor failed, trying module-level helper")
-        
+
         # Fallback to module-level helper (returns sync model)
         return lmstudio.llm(model) if model else lmstudio.llm()
+
 
     def get_embedding_model(self, client: Any, model: str = "") -> Any:
         """Fetch embedding model from SDK client.
@@ -182,7 +184,6 @@ class MCPClient:
             Embedding model handle.
         """
         import lmstudio
-        
         if hasattr(client, "embedding_model"):
             emb_accessor = client.embedding_model
             if hasattr(emb_accessor, "get"):
@@ -192,9 +193,10 @@ class MCPClient:
                     return emb_accessor(model) if model else emb_accessor()
                 except TypeError:
                     pass
-        
+
         # Fallback to module-level helper
         return lmstudio.embedding_model(model) if model else lmstudio.embedding_model()
+
 
     def close(self) -> None:
         """Close all SDK clients."""
@@ -204,6 +206,6 @@ class MCPClient:
             except Exception as e:
                 logger.warning(f"[LMStudio] Error closing sync client: {e}")
             self._sync_client = None
-        
+
         if self._async_client is not None:
             self._async_client = None

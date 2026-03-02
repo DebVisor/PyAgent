@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Phase 45: KV Transfer Connector Factory
 Registry and factory for KV transfer connectors.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
@@ -26,10 +26,8 @@ from src.infrastructure.storage.kv_transfer.connector.decode_bench import \
     DecodeBenchConnector
 
 if TYPE_CHECKING:
-    from src.infrastructure.storage.kv_transfer.connector.base import \
-        KVConnectorBase
-    from src.infrastructure.storage.kv_transfer.connector.types import \
-        KVTransferConfig
+    from src.infrastructure.storage.kv_transfer.connector.base import KVConnectorBase
+    from src.infrastructure.storage.kv_transfer.connector.types import KVTransferConfig
 
 logger = logging.getLogger(__name__)
 

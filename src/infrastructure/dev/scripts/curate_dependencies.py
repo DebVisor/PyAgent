@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Phase 311: Autonomous Dependency Curation.
 Scans the workspace for imports and cross-references with requirements.txt.
 """
 
-from __future__ import annotations
 import os
 import re
 from pathlib import Path

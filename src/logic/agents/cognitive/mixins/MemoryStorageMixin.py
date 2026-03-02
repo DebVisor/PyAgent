@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import json
 import time
 import logging
@@ -9,7 +9,7 @@ from typing import TYPE_CHECKING
 from src.core.base.BaseUtilities import as_tool
 
 if TYPE_CHECKING:
-    from src.logic.agents.cognitive.HierarchicalMemoryAgent import HierarchicalMemoryAgent
+from src.logic.agents.cognitive.HierarchicalMemoryAgent import HierarchicalMemoryAgent
 
 class MemoryStorageMixin:
     """Mixin for memory storage and promotion in HierarchicalMemoryAgent."""

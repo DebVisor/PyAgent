@@ -1,12 +1,12 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from src.logic.agents.security.ComplianceAgent import ComplianceAgent
+from src.logic.agents.security.ComplianceAgent import ComplianceAgent
 
 class PrivacyAssessmentMixin:
     """Mixin for conducting Privacy Impact Assessments in ComplianceAgent."""

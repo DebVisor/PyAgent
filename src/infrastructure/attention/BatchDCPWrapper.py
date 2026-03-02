@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the PyAgent project
 """
@@ -17,7 +18,6 @@ Beyond vLLM:
 - Memory-aware batching with spill prevention
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging
@@ -54,6 +54,8 @@ try:
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
+    torch = None
+    dist = None
 
 
 class BatchPhase(Enum):

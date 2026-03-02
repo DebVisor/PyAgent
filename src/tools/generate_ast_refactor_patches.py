@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Generate conservative AST-based refactor patch proposals for top-priority files.
 
 This script:
@@ -12,7 +13,6 @@ This script:
 Notes:
 - This only writes patch proposals and does not modify source files.
 """
-from __future__ import annotations
 import json
 from pathlib import Path
 import ast

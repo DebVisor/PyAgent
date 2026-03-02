@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CacheInfo - LRU Cache with hit/miss statistics and pinned items.
 
@@ -5,7 +6,6 @@ Inspired by vLLM's cache.py patterns for production cache monitoring.
 
 Phase 17: vLLM Pattern Integration
 """
-from __future__ import annotations
 import threading
 import time
 from collections import OrderedDict

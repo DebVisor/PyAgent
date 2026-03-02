@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 40: Advanced Sampling Parameters
 # Inspired by vLLM's sampling_params.py
@@ -14,7 +15,6 @@ Provides:
 - Adaptive top-k/top-p based on entropy
 """
 
-from __future__ import annotations
 
 import math
 from dataclasses import dataclass, field

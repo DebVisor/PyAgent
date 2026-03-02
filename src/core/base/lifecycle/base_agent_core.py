@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
@@ -7,7 +8,6 @@
 Modularized via the 'core_logic' subpackage to maintain <500 line limit.
 """
 
-from __future__ import annotations
 
 import logging
 import os

@@ -17,15 +17,22 @@
 N-gram Proposer Package - Speculative decoding via pattern matching.
 """
 
-from src.infrastructure.engine.sampling.ngram.factory import \
-    create_ngram_proposer
-from src.infrastructure.engine.sampling.ngram.index import (SuffixIndex,
-                                                            SuffixTreeProposer)
+from src.infrastructure.engine.sampling.ngram.factory import (
+    create_ngram_proposer,
+)
+from src.infrastructure.engine.sampling.ngram.index import (
+    SuffixIndex,
+    SuffixTreeProposer,
+)
 from src.infrastructure.engine.sampling.ngram.proposer import (
-    AdaptiveNgramProposer, NgramProposer)
-from src.infrastructure.engine.sampling.ngram.types import (MatchingStrategy,
-                                                            NgramConfig,
-                                                            ProposalStats)
+    AdaptiveNgramProposer,
+    NgramProposer,
+)
+from src.infrastructure.engine.sampling.ngram.types import (
+    MatchingStrategy,
+    NgramConfig,
+    ProposalStats,
+)
 
 __all__ = [
     "MatchingStrategy",

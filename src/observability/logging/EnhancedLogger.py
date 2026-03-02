@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 EnhancedLogger - Extended logging with deduplication and scope control.
 
@@ -7,7 +8,6 @@ methods and scope-aware logging for distributed systems.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 import logging
 from collections.abc import Hashable

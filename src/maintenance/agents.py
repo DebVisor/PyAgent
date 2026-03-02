@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Recovered and standardized for Phase 317
 
@@ -9,7 +10,6 @@ This module provides tools for verifying agent integrity, cleaning up
 obsolete agent logs, and ensuring agent-specific reminders are generated.
 """
 
-from __future__ import annotations
 
 import logging
 from datetime import datetime

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Agent for comprehensive security scanning using patterns from aem-hacker.
 Implements vulnerability scanning, payload generation, SSRF detection, and reconnaissance.
 """
 
-from __future__ import annotations
 
 import asyncio
 from typing import Any, Dict, List, Optional

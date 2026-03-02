@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Module: triton_attention_ops - Triton-based attention operations."""
-
-from __future__ import annotations
 
 import logging
 import math
@@ -23,7 +21,7 @@ from dataclasses import dataclass, field
 from enum import Enum, auto
 from typing import Any, Dict, List, Optional
 
-from torch import Tensor
+import torch
 
 logger: logging.Logger = logging.getLogger(__name__)
 
@@ -38,10 +36,11 @@ except ImportError:
 try:
     import triton
     import triton.language as tl
-
     HAS_TRITON = True
 except ImportError:
     HAS_TRITON = False
+
+"""Module: triton_attention_ops - Triton-based attention operations."""
 
 
 class AttentionBackend(Enum):
@@ -161,12 +160,9 @@ class AttentionKernel(ABC):
         """Check if kernel supports given context length during execution."""
 
 
-PAGED_ATTENTION_KERNEL = None
+PAGED_ATTENTION_KERNEL: Optional[Any] = None
 
 if HAS_TRITON and HAS_TORCH:
-    import triton
-    import triton.language as tl
-
     @triton.jit
     def _paged_attention_kernel_impl(
         output_ptr: tl.tensor,
@@ -267,6 +263,9 @@ if HAS_TRITON and HAS_TORCH:
         out_offset = batch_idx * stride_output_batch + head_idx * stride_output_head
         tl.store(output_ptr + out_offset + dim_offsets * stride_output_dim, acc)
 
+    # Assign the compiled kernel
+    PAGED_ATTENTION_KERNEL = _paged_attention_kernel_impl
+
 
 class TritonPagedAttention(AttentionKernel):
     """Triton-based paged attention kernel.
@@ -280,16 +279,19 @@ class TritonPagedAttention(AttentionKernel):
 
     def forward(
         self,
-        query: "torch.Tensor",
-        key: "torch.Tensor",
-        value: "torch.Tensor",
+        query: torch.Tensor,
+        key: torch.Tensor,
+        value: torch.Tensor,
         metadata: AttentionMetadata,
-        k_cache: Optional["torch.Tensor"] = None,
-        v_cache: Optional["torch.Tensor"] = None,
-    ) -> "torch.Tensor":
+        k_cache: Optional[torch.Tensor] = None,
+        v_cache: Optional[torch.Tensor] = None,
+    ) -> torch.Tensor:
         """Execute Triton paged attention."""
         if not HAS_TRITON:
             raise RuntimeError("Triton not available")
+
+        if PAGED_ATTENTION_KERNEL is None:
+            raise RuntimeError("Triton kernel not compiled")
 
         batch_size, num_heads, head_dim = query.shape
 
@@ -365,16 +367,16 @@ class NaiveAttention(AttentionKernel):
 
     def _forward_torch(
         self,
-        query: "torch.Tensor",
-        key: "torch.Tensor",
-        value: "torch.Tensor",
+        query: torch.Tensor,
+        key: torch.Tensor,
+        value: torch.Tensor,
         _metadata: AttentionMetadata,
-    ) -> "torch.Tensor":
+    ) -> torch.Tensor:
         """PyTorch implementation."""
         # Standard attention computation
-        scores: Tensor = torch.matmul(query, key.transpose(-2, -1)) * self.scale
-        attn_weights: Tensor = torch.softmax(scores, dim=-1)
-        output: Tensor = torch.matmul(attn_weights, value)
+        scores: torch.Tensor = torch.matmul(query, key.transpose(-2, -1)) * self.scale
+        attn_weights: torch.Tensor = torch.softmax(scores, dim=-1)
+        output: torch.Tensor = torch.matmul(attn_weights, value)
         return output
 
     def _forward_numpy(
@@ -422,22 +424,22 @@ class SlidingWindowAttention(AttentionKernel):
         _, _, seq_len, _ = query.shape
 
         # Create sliding window mask
-        causal_mask: Tensor = torch.ones(seq_len, seq_len, device=query.device, dtype=torch.bool)
-        causal_mask: Tensor = torch.tril(causal_mask)
+        causal_mask: torch.Tensor = torch.ones(seq_len, seq_len, device=query.device, dtype=torch.bool)
+        causal_mask: torch.Tensor = torch.tril(causal_mask)
 
         # Apply sliding window logic using vectorized operations
-        rows: Tensor = torch.arange(seq_len, device=query.device, dtype=torch.long).view(-1, 1)
-        cols: Tensor = torch.arange(seq_len, device=query.device, dtype=torch.long).view(1, -1)
-        window_mask: Tensor = (cols > (rows - self.window_size)).to(torch.bool)
+        rows: torch.Tensor = torch.arange(seq_len, device=query.device, dtype=torch.long).view(-1, 1)
+        cols: torch.Tensor = torch.arange(seq_len, device=query.device, dtype=torch.long).view(1, -1)
+        window_mask: torch.Tensor = (cols > (rows - self.window_size)).to(torch.bool)
 
-        mask: Tensor = causal_mask & window_mask
-        mask: Tensor = mask.unsqueeze(0).unsqueeze(0)  # [1, 1, seq, seq]
+        mask: torch.Tensor = causal_mask & window_mask
+        mask: torch.Tensor = mask.unsqueeze(0).unsqueeze(0)  # [1, 1, seq, seq]
 
         # Compute attention
-        scores: Tensor = torch.matmul(query, key.transpose(-2, -1)) * self.scale
-        scores: Tensor = scores.masked_fill(~mask, float("-inf"))
-        attn_weights: Tensor = torch.softmax(scores, dim=-1)
-        output: Tensor = torch.matmul(attn_weights, value)
+        scores: torch.Tensor = torch.matmul(query, key.transpose(-2, -1)) * self.scale
+        scores: torch.Tensor = scores.masked_fill(~mask, float("-inf"))
+        attn_weights: torch.Tensor = torch.softmax(scores, dim=-1)
+        output: torch.Tensor = torch.matmul(attn_weights, value)
 
         return output
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 BlockPoolManager: Advanced KV block pool management with LRU/ARC eviction.
 
@@ -12,7 +13,6 @@ Beyond vLLM:
 - Detailed eviction metrics and residency tracking
 """
 
-from __future__ import annotations
 import logging
 import threading
 import time

@@ -16,22 +16,10 @@ Tests for __init__
 Auto-generated test template - expand with actual test cases
 """
 
-import pytest
-import sys
-from pathlib import Path
-
-# Add src to path for imports
-src_path = Path(__file__).parent.parent
-if str(src_path) not in sys.path:
-    sys.path.insert(0, str(src_path))
-
-try:
-    from infrastructure.orchestration.core.distributed.__init__ import *
-except ImportError as e:
-    pytest.skip(f"Cannot import module: {e}", allow_module_level=True)
+import importlib
 
 
-def test_module_imports():
-    """Test that the module imports without errors."""
-    assert True  # If we got here, imports worked
+def test_import_src_infrastructure_orchestration_core_distributed___init__():
+    mod = importlib.import_module("src.infrastructure.orchestration.core.distributed.__init__")
+    assert mod is not None
 

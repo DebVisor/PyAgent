@@ -1,10 +1,6 @@
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
-"""
-Local (in-process) MCP tool server implementation.
-"""
-
+#!/usr/bin/env python3
 from __future__ import annotations
+
 
 import asyncio
 import time
@@ -96,3 +92,7 @@ class LocalMCPServer(MCPToolServer):
                 error=str(e),
                 duration_ms=(time.time() - start_time) * 1000,
             )
+
+
+# Backwards-compat alias expected by older modules
+LocalToolServer = LocalMCPServer

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +25,6 @@ Goes beyond vLLM with space-efficient set operations:
 Phase 18: Beyond vLLM - Advanced Data Structures
 """
 
-from __future__ import annotations
 
 import hashlib
 import math
@@ -187,7 +187,7 @@ class BloomFilter:
         if self._size != other._size or self._num_hashes != other._num_hashes:
             raise ValueError("Filters must have same size and hash count")
 
-        import operator
+            import operator
         new_bits = bytearray(map(operator.or_, self._bits, other._bits))
 
         bf = BloomFilter(

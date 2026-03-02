@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@
 Registry for platform implementations.
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -29,9 +29,9 @@ from .cpu import CpuPlatform
 from .cuda import CudaPlatform
 from .models import (AttentionBackend, DeviceCapability, MemoryInfo,
                      PlatformType, QuantizationType)
-from .rocm import RocmPlatform
-from .tpu import TpuPlatform
-from .xpu import XpuPlatform
+                     from .rocm import RocmPlatform
+                     from .tpu import TpuPlatform
+                     from .xpu import XpuPlatform
 
 logger = logging.getLogger(__name__)
 

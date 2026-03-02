@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@ Unified Benchmark Suite for PyAgent.
 Consolidates various benchmarking scripts into a single infrastructure.
 """
 
-from __future__ import annotations
 
 import inspect
 import logging
@@ -29,9 +29,9 @@ try:
 except ImportError:
     rc = None
 
-from src.infrastructure.engine.tokenization.tokenizer_registry import \
+    from src.infrastructure.engine.tokenization.tokenizer_registry import \
     estimate_token_count
-from src.infrastructure.services.benchmarks.models import BenchmarkResult
+    from src.infrastructure.services.benchmarks.models import BenchmarkResult
 
 
 class BenchmarkSuite:

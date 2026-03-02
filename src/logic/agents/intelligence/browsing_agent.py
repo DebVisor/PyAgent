@@ -16,7 +16,10 @@
 Browsing agent.py module.
 """
 
-from .web_intelligence_agent import WebIntelligenceAgent
+try:
+    from .web_intelligence_agent import WebIntelligenceAgent
+except Exception:  # fallback when module executed without package context
+from src.logic.agents.intelligence.web_intelligence_agent import WebIntelligenceAgent
 
 
 class BrowsingAgent(WebIntelligenceAgent):  # pylint: disable=too-many-ancestors

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Tool Registry
 
@@ -5,7 +6,6 @@
 Tool parser registry for managing parser types and model mappings.
 """
 
-from __future__ import annotations
 
 import re
 import threading

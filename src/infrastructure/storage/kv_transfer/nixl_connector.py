@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Module: nixl_connector
 Connector for Nixl distributed KV storage in PyAgent.
@@ -30,7 +31,6 @@ It utilizes RDMA techniques and peer-to-peer memory copies to minimize CPU overh
 Inspired by vLLM's NixlConnector and advanced distributed communication patterns.
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -45,9 +45,9 @@ try:
 except ImportError:
     np = None
 
-from src.core.lazy_loader import LazyLoader
-from src.core.rust_bridge import RustBridge
-from src.infrastructure.storage.kv_transfer.kv_transfer_connector import (
+    from src.core.lazy_loader import LazyLoader
+    from src.core.rust_bridge import RustBridge
+    from src.infrastructure.storage.kv_transfer.kv_transfer_connector import (
     KVConnectorBase, KVTransferConfig)
 
 if TYPE_CHECKING:

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Federation.py module.
@@ -6,7 +7,6 @@ Federation.py module.
 # Copyright 2026 PyAgent Authors
 # Stats federation engine.
 
-from __future__ import annotations
 
 import logging
 from datetime import datetime

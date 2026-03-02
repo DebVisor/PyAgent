@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Google Gemini cloud provider connector.
 
 Provides integration with Google's Gemini API for inference requests.
 """
 
-from __future__ import annotations
 
 import os
 import time

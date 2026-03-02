@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,10 @@
 # limitations under the License.
 
 
-"""Agent namespace containing specialized swarm agent implementations."""
+"""Agent namespace containing specialized swarm agent implementations.
 
-from __future__ import annotations
+This file is intentionally minimal to avoid import-time side-effects during
+pytest collection. Individual modules should be imported directly in tests.
+"""
 
-from src.core.base.lifecycle.version import VERSION
-
-from .swarm.orchestrator_agent import OrchestratorAgent as Agent  # noqa: F401
-
-__all__ = ["Agent"]
-__version__ = VERSION
+__all__: list[str] = []

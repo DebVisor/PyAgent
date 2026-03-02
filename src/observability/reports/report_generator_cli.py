@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Report generator cli.py module.
-"""
-
-# Ensure project root and src are in path for modular imports
-
-from __future__ import annotations
 
 from argparse import Namespace
 import sys
@@ -37,37 +31,52 @@ if str(root / "src") not in sys.path:
 
 __version__: str = VERSION
 
+"""
+Report generator cli.py module.
+"""
+
 
 def _sha256_text(text: str) -> str:
     """Helper for legacy tests."""
-
     import hashlib
-
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+class ReportGeneratorCli:
+    """Minimal CLI wrapper used by the package and tests.
+
+    Provides a small programmatic interface for generating and exporting
+    reports without executing top-level CLI behavior at import time.
+    """
+
+    def __init__(self, directory: str = ".", output: str = "reports") -> None:
+        self.directory = directory
+        self.output = output
+
+    def run(self) -> str:
+        generator = ReportGenerator(self.directory)
+        report: str = generator.generate_full_report()
+
+        output_dir = Path(self.output)
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        exporter = ReportExporter()
+        exporter.export(report, ExportFormat.HTML, output_dir / "report.html")
+        (output_dir / "PROGRESS_DASHBOARD.md").write_text(report, encoding="utf-8")
+
+        return str(output_dir)
 
 
 def main() -> None:
     import argparse
-
     parser = argparse.ArgumentParser(description="Generate Agent Reports")
     parser.add_argument("--dir", default=".", help="Directory to scan")
     parser.add_argument("--output", default="reports", help="Output directory")
     args: Namespace = parser.parse_args()
 
-    generator = ReportGenerator(args.dir)
-    report: str = generator.generate_full_report()
-
-    output_dir = Path(args.output)
-
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    exporter = ReportExporter()
-    # Export as HTML to the output directory
-    exporter.export(report, ExportFormat.HTML, output_dir / "report.html")
-    # Also save the markdown version as the progress dashboard
-    (output_dir / "PROGRESS_DASHBOARD.md").write_text(report, encoding="utf-8")
-
-    print(f"Reports generated in {args.output}")
+    cli = ReportGeneratorCli(directory=args.dir, output=args.output)
+    out = cli.run()
+    print(f"Reports generated in {out}")
 
 
 if __name__ == "__main__":

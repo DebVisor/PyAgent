@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Unified Connectivity and Networking Core.
 Handles low-level host networking and high-level agent communication.
 """
 
-from __future__ import annotations
 
 import contextlib
 import logging
@@ -89,7 +89,7 @@ class ConnectivityCore(BaseCore):
             with urllib.request.urlopen(target_url, timeout=2) as response:
                 return response.status == 200
         except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
- # pylint: disable=broad-exception-caught
+            # pylint: disable=broad-exception-caught
             return False
 
     # --- Network Utilities (formerly NetworkCore) ---
@@ -110,7 +110,7 @@ class ConnectivityCore(BaseCore):
                 s.connect(target)
                 return s.getsockname()[0]
         except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
- # pylint: disable=broad-exception-caught
+            # pylint: disable=broad-exception-caught
             return "127.0.0.1"
 
     @staticmethod

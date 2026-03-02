@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Core logic for fleet sharding and partitioning.
 """
 
-from __future__ import annotations
 
 from .base_core import BaseCore
 
@@ -47,7 +47,7 @@ class ShardCore(BaseCore):
                 pass
 
         # Fallback to simple hash-based sharding
-        import hashlib  # pylint: disable=import-outside-toplevel
+                import hashlib  # pylint: disable=import-outside-toplevel
 
         h = hashlib.md5(key.encode()).digest()
         seed = int.from_bytes(h[:8], "big")

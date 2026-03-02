@@ -22,7 +22,7 @@ try:
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
-import numpy as np
+    import numpy as np
 
 def softmax_batch_invariant(
     tensor: Any,

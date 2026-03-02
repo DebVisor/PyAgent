@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Base loader class for all media types.
 """
 
-from __future__ import annotations
 
 import hashlib
 from abc import ABC, abstractmethod

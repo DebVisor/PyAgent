@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,6 @@ Based on the Chain-of-Recursive-Thoughts framework for breakthrough
 problem-solving and response quality through recursive thinking.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json
@@ -68,8 +68,13 @@ class CoRTReasoningCore:
         self.inference_engine = inference_engine
         self.logger = logging.getLogger("pyagent.reasoning.cort.core")
 
-    async def think_and_respond(self, user_input: str, context: Optional[CascadeContext] = None,
-                               verbose: bool = True) -> CoRTResult:
+
+    async def think_and_respond(
+        self, 
+        user_input: str, 
+        context: Optional[CascadeContext] = None,
+        verbose: bool = True
+    ) -> CoRTResult:
         """
         Process user input with recursive thinking.
 
@@ -158,9 +163,11 @@ class CoRTReasoningCore:
         )
 
         if verbose:
-            self.logger.info(f"🤔 CoRT process complete in {processing_time:.2f}s with {confidence_score:.2f} confidence")
-
+            self.logger.info(
+                f"🤔 CoRT process complete in {processing_time:.2f}s with {confidence_score:.2f} confidence"
+            )
         return result
+
 
     async def _determine_thinking_rounds(self, prompt: str) -> int:
         """
@@ -281,7 +288,7 @@ Then on a new line, explain your choice in one sentence."""
                 else:
                     # Look for number
                     import re
-                    numbers = re.findall(r'\d+', first_line)
+                        numbers = re.findall(r'\d+', first_line)
                     if numbers:
                         choice = numbers[0]
 
@@ -346,12 +353,29 @@ class CoRTAgentMixin:
     Mixin to add CoRT reasoning capabilities to agents.
 
     Integrates CoRT reasoning into the agent workflow.
+    Requires the subclass to implement process_input(user_input, context) method.
     """
 
     def __init__(self, *args, cort_core: Optional[CoRTReasoningCore] = None, **kwargs):
         super().__init__(*args, **kwargs)
         self.cort_core = cort_core
         self.enable_cort_reasoning = True
+
+    async def process_input(self, user_input: str, context: Optional[CascadeContext] = None) -> Dict[str, Any]:
+        """
+        Base process_input method. Must be overridden by subclass.
+
+        Args:
+            user_input: User input to process
+            context: Optional cascade context
+
+        Returns:
+            Processing result
+
+        Raises:
+            NotImplementedError: If not overridden by subclass
+        """
+        raise NotImplementedError("Subclass must implement process_input method")
 
     async def process_with_cort(self, user_input: str, context: Optional[CascadeContext] = None) -> Dict[str, Any]:
         """

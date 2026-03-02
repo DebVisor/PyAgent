@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Agent specializing in self-healing through telemetry analysis and error correction."""
 
-from __future__ import annotations
 
 from typing import Any
 
@@ -63,7 +63,7 @@ class SelfHealingAgent(BaseAgent):
                     self._system_prompt += f"\n\nProject Context:\n{overview}"
             except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
                 # Log but don't fail - dynamic prompt is optional enhancement
-                import logging
+            import logging
 
                 logging.getLogger(__name__).debug("Failed to load dynamic prompt: %s", e)
 
@@ -73,7 +73,7 @@ class SelfHealingAgent(BaseAgent):
         if self.coordinator is None:
             return "❌ Error: Self-healing coordinator is not initialized."
 
-        import logging
+            import logging
 
         logger = logging.getLogger(__name__)
 

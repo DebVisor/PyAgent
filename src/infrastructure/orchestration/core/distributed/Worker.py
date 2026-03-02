@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Distributed worker implementations.
 """
 
-from __future__ import annotations
 
 import logging
 import multiprocessing as mp

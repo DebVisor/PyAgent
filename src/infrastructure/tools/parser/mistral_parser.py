@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Mistral Parser
 
@@ -5,7 +6,6 @@
 Mistral AI tool call parser.
 """
 
-from __future__ import annotations
 
 import json
 from typing import Optional, Tuple

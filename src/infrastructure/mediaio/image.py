@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Image loader implementation.
 """
 
-from __future__ import annotations
 
 import io
 from pathlib import Path
@@ -104,7 +104,7 @@ class ImageLoader(MediaLoader):
                     return await resp.read()
         except ImportError:
             import urllib.request
-            with urllib.request.urlopen(url) as resp:
+                with urllib.request.urlopen(url) as resp:
                 return resp.read()
     
     def _detect_format(self, data: bytes) -> ImageFormat:

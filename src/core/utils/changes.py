@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Agent specializing in tracking, summarizing, and documenting code changes."""
 
-from __future__ import annotations
 
 import sys
 from pathlib import Path
@@ -31,9 +31,9 @@ if str(root) not in sys.path:
 if str(root / "src") not in sys.path:
     sys.path.append(str(root / "src"))
 
-from src.core.base.common.base_utilities import \
+    from src.core.base.common.base_utilities import \
     create_main_function  # noqa: E402
-from src.logic.agents.swarm.changes_agent import ChangesAgent  # noqa: E402
+    from src.logic.agents.swarm.changes_agent import ChangesAgent  # noqa: E402
 
 # Create main function using the helper
 main = create_main_function(

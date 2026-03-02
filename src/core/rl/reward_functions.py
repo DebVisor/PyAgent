@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Reward functions.py module.
@@ -5,7 +6,6 @@ Reward functions.py module.
 # Copyright 2026 PyAgent Authors
 # Reward Functions for Agent Reinforcement - Phase 319 Enhanced
 
-from __future__ import annotations
 
 import math
 from dataclasses import dataclass

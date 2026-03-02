@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Budget management for cloud AI spending.
 
 Provides thread-safe cost tracking with daily/monthly limits and alerts.
 """
 
-from __future__ import annotations
 
 import threading
 from dataclasses import dataclass, field

@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 LoRA Stats Types - Enums and DataClasses for LoRA adapter tracking.
 """
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
@@ -12,7 +13,6 @@ Implements vLLM's batch_invariant.py patterns for deterministic execution:
 Beyond vLLM: Automatic precision selection based on input dtype.
 """
 
-from __future__ import annotations
 
 import logging
 import math
@@ -380,7 +380,7 @@ def gelu_batch_invariant(input: Any) -> Any:
     """
     if not HAS_TORCH:
         # Numpy GELU using error function
-        from scipy import special
+    from scipy import special
         return 0.5 * input * (1.0 + special.erf(input / math.sqrt(2.0)))
     
     # Use PyTorch's GELU with tanh approximation for speed

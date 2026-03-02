@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Configuration and state enums for distributed coordination.
 """
 
-from __future__ import annotations
 
 import uuid
 from dataclasses import dataclass, field

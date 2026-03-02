@@ -1,7 +1,7 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Learning Objectives and Goals for Fleet Optimization - Phase 319 Enhanced
 
-from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional, Callable
 from enum import Enum

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 Standardized validation logic for reports, improvements, and configs.
 """
 
-from __future__ import annotations
 
 import fnmatch
 import json
@@ -29,9 +29,9 @@ try:
 except ImportError:
     rc = None
 
-from src.core.base.common.models import ValidationRule
+    from src.core.base.common.models import ValidationRule
 
-from .base_core import BaseCore
+    from .base_core import BaseCore
 
 logger = logging.getLogger("pyagent.validation")
 

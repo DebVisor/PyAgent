@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 Agents.py module.
@@ -6,7 +7,6 @@ Agents.py module.
 # Copyright 2026 PyAgent Authors
 # Observability agents for monitoring, reporting, and transparency.
 
-from __future__ import annotations
 
 import json
 import logging

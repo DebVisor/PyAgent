@@ -16,7 +16,10 @@
 Data science agent.py module.
 """
 
-from .data_intelligence_agent import DataIntelligenceAgent
+try:
+    from .data_intelligence_agent import DataIntelligenceAgent
+except Exception:
+    from src.logic.agents.intelligence.data_intelligence_agent import DataIntelligenceAgent
 
 
 class DataScienceAgent(DataIntelligenceAgent):  # pylint: disable=too-many-ancestors

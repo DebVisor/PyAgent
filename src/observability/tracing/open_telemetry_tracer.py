@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +31,6 @@ This module is required for Phase 315 documentation parity.
 Author: PyAgent Phase 20
 """
 
-from __future__ import annotations
 
 import functools
 import logging
@@ -71,19 +71,19 @@ try:
     from opentelemetry.context.context import Context
     from opentelemetry.sdk.environment_variables import \
         OTEL_EXPORTER_OTLP_TRACES_PROTOCOL
-    from opentelemetry.sdk.trace import TracerProvider
-    from opentelemetry.sdk.trace.export import (BatchSpanProcessor,
+        from opentelemetry.sdk.trace import TracerProvider
+        from opentelemetry.sdk.trace.export import (BatchSpanProcessor,
                                                 SimpleSpanProcessor,
                                                 SpanExporter)
-    from opentelemetry.trace import (Span, SpanKind, Status, StatusCode,
+                                                from opentelemetry.trace import (Span, SpanKind, Status, StatusCode,
                                      Tracer, get_current_span,
                                      get_tracer_provider, set_tracer_provider)
-    from opentelemetry.trace.propagation.tracecontext import \
+                                     from opentelemetry.trace.propagation.tracecontext import \
         TraceContextTextMapPropagator
 
     _is_otel_imported = True
 except ImportError:
-    import traceback
+import traceback
 
     otel_import_error_traceback = traceback.format_exc()
 

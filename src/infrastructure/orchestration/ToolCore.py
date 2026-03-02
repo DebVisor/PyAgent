@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # limitations under the License.
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 import inspect
 import re
@@ -129,10 +129,10 @@ class ToolCore:
         import random
         if not candidates:
             raise ValueError("No candidate tools for selection.")
-            
+
         # Select 'tournament_size' random candidates
         sample = random.sample(candidates, min(len(candidates), tournament_size))
-        
+
         # Winner is the one with highest relevance score
         winner = max(sample, key=lambda x: x[1])
         return winner[0]

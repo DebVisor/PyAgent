@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright (c) 2026 PyAgent Authors. All rights reserved.
 # Phase 41: Tool Parser Framework - Model-Specific Parsing
 
@@ -23,7 +24,6 @@ The actual implementations have been split into:
 - registry/ - Parser registry and streaming parser
 """
 
-from __future__ import annotations
 
 # Re-export from parser module
 from .parser import (

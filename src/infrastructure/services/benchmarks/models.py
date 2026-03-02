@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Models.py module.
@@ -5,7 +6,6 @@ Models.py module.
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional

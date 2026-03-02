@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Context manager for coordinating multiple conversation contexts.
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Move completed rows from .external/tracking.md to .external/completed.md
 
 Idempotent: will not duplicate entries already present in completed.md.
 It treats table rows where the second column (status) contains
 case-insensitive 'completed'|'done'|'finished' as completed.
 """
-from __future__ import annotations
 from pathlib import Path
 import datetime
 

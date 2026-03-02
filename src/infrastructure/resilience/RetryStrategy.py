@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 RetryStrategy - Exponential backoff with jitter for resilient retries.
 
@@ -9,7 +10,6 @@ Goes beyond vLLM with production-grade retry patterns including:
 
 Phase 18: Beyond vLLM - Resilience Patterns
 """
-from __future__ import annotations
 import asyncio
 import inspect
 import functools

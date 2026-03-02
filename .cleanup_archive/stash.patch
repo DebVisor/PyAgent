@@ -43,12 +43,12 @@ index e76c4122..aeef0c6b 100644
 --- a/src/maintenance/orchestrator.py
 +++ b/src/maintenance/orchestrator.py
 @@ -1,7 +1,7 @@
- import asyncio
- import sys
- from pathlib import Path
+import asyncio
+import sys
+from pathlib import Path
 -from .utils import GitManager, get_timestamp
 +from .utils import GitManager, get_timestamp, run_command
- from .agents import PytestAgent, MypyAgent, RuffAgent, Flake8Agent, UnittestAgent, ReminderAgent
+from .agents import PytestAgent, MypyAgent, RuffAgent, Flake8Agent, UnittestAgent, ReminderAgent
  
  class MaintenanceOrchestrator:
 @@ -46,7 +46,7 @@ class MaintenanceOrchestrator:

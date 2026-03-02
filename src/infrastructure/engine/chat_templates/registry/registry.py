@@ -23,7 +23,7 @@ from typing import Any, Callable, Dict, List, Optional
 from .base import ChatTemplate
 from .config import (BUILTIN_TEMPLATES, MODEL_TEMPLATE_MAP, TemplateConfig,
                      TemplateInfo, TemplateType)
-from .jinja import JinjaTemplate
+                     from .jinja import JinjaTemplate
 
 logger = logging.getLogger(__name__)
 

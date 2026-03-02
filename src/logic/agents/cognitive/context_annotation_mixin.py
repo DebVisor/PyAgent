@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
 
 """Mixin for context annotation capabilities."""
 
-from __future__ import annotations
 import hashlib
 from datetime import datetime
 from src.logic.agents.cognitive.context.models.context_annotation import ContextAnnotation

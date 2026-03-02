@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Fleet task mixin.py module.
@@ -5,7 +6,6 @@ Fleet task mixin.py module.
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 
-from __future__ import annotations
 
 import logging
 from typing import TYPE_CHECKING, Any
@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING, Any
 from src.core.base.common.models import AgentPriority
 
 if TYPE_CHECKING:
-    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 
 
 class FleetTaskMixin:

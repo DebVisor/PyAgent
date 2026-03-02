@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Tool Framework Mixin for BaseAgent.
 Provides schema-based tool creation and management, inspired by Adorable's tool system.
 """
 
-from __future__ import annotations
 
 import inspect
 import json
@@ -36,7 +36,7 @@ except ImportError:
     Field = lambda **kwargs: None
     ValidationError = Exception
 
-from src.core.base.common.models.communication_models import CascadeContext
+    from src.core.base.common.models.communication_models import CascadeContext
 
 
 @dataclass
@@ -213,7 +213,7 @@ class ToolFrameworkMixin:
                     raise ToolValidationError(f"Required parameter '{param.name}' not provided")
 
             # Execute with timeout
-            import asyncio
+                    import asyncio
             result = await asyncio.wait_for(
                 tool_def.execute_function(**kwargs),
                 timeout=self.max_tool_execution_time

@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Autonomous Dependency Curation: Scans the workspace for imports and cross-references with requirements.txt.
@@ -17,7 +18,6 @@ Phase 311 utility for the PyAgent fleet.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import annotations
 
 import re
 from pathlib import Path

@@ -12,7 +12,7 @@ try:
     import chromadb
     from chromadb.config import Settings
     HAS_CHROMADB = True
-except ImportError:
+except Exception:
     HAS_CHROMADB = False
 
 class LongTermMemory:

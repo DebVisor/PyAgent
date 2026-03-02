@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 FlatLogprobs - Memory-efficient flat storage for token log probabilities.
 
@@ -7,7 +8,6 @@ to list[dict[int, Logprob]] by flattening into primitive type arrays.
 Phase 24: Advanced Observability & Parsing
 """
 
-from __future__ import annotations
 
 from collections.abc import Iterable, Iterator, MutableSequence, Sequence
 from dataclasses import dataclass, field

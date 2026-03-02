@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Auto-extracted class from agent_backend.py"""
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -28,8 +28,8 @@ from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
-from .queued_request import QueuedRequest
-from .request_priority import RequestPriority
+    from .queued_request import QueuedRequest
+    from .request_priority import RequestPriority
 
 # Infrastructure
 __version__ = VERSION

@@ -34,5 +34,5 @@ class AgentCard(BaseModel):
     owner_team: Optional[str] = None
     last_updated: float = field(default_factory=lambda: 0.0)
 
-    class Config:
+    class ConfigDict:
         arbitrary_types_allowed = True

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,6 @@
 
 """Script for standardizing the position of __future__ imports at the top of files."""
 
-from __future__ import annotations
 
 import os
 
@@ -30,12 +30,10 @@ for root, _, files in os.walk(src_path):
             with open(path, encoding="utf-8", errors="ignore") as f:
                 content = f.read()
 
-            if "from __future__ import annotations" in content:
                 lines = content.splitlines()
                 annotation_line = ""
                 other_lines = []
                 for line in lines:
-                    if "from __future__ import annotations" in line:
                         annotation_line = line
                     else:
                         other_lines.append(line)
@@ -50,7 +48,6 @@ for root, _, files in os.walk(src_path):
                     ):
                         insert_idx += 1
 
-                    other_lines.insert(insert_idx, "from __future__ import annotations")
                     new_content = "\n".join(other_lines) + ("\n" if content.endswith("\n") else "")
 
                     if new_content != content:

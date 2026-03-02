@@ -31,7 +31,7 @@ from typing import Any, Dict, List, Optional, Callable, Union, Protocol
 from dataclasses import dataclass, field
 from enum import Enum
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 
 logger = logging.getLogger(__name__)
 
@@ -78,8 +78,10 @@ class AgentCard(BaseModel):
     skills: List[AgentSkill] = Field(default_factory=list, description="Agent skills")
     metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
 
-    @validator('url')
+    @field_validator('url')
+    @classmethod
     def validate_url(cls, v):
+        """Validate that the URL starts with http:// or https://."""
         if not v.startswith(('http://', 'https://')):
             raise ValueError('URL must start with http:// or https://')
         return v

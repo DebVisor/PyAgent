@@ -1,9 +1,9 @@
+from __future__ import annotations
 """
 Phase 45: KV Transfer Connector Types
 Shared types and configurations for KV transfer connectors.
 """
 
-from __future__ import annotations
 import logging
 from dataclasses import dataclass, field
 from enum import Enum, auto

@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 Mamba Operations - Causal Convolution and Selective Scan.
 """
 
-from __future__ import annotations
 
 import math
 import numpy as np

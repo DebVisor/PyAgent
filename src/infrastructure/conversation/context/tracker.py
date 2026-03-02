@@ -1,10 +1,10 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
 """
 Conversation turn tracking logic.
 """
 
-from __future__ import annotations
 
 import uuid
 from typing import Any, Dict, List, Optional

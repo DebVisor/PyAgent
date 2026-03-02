@@ -1,16 +1,16 @@
+from __future__ import annotations
 """
 Phase 45: Decode Bench KV Connector
 KV Connector for decode instance benchmarking.
 """
 
-from __future__ import annotations
 import logging
 from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING
 from src.infrastructure.kv_transfer.connector.base import KVConnectorBase
 from src.infrastructure.kv_transfer.connector.types import KVConnectorMetadata
 
 if TYPE_CHECKING:
-    from src.infrastructure.kv_transfer.connector.types import (
+from src.infrastructure.kv_transfer.connector.types import (
         KVTransferConfig, ForwardContext, Request, KVCacheBlocks
     )
 

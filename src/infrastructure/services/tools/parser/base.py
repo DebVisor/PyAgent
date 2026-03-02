@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +20,13 @@
 Base classes and data structures for tool parsing.
 """
 
-from __future__ import annotations
 
 import json
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from enum import Enum, auto
 from typing import Any, Dict, List, Optional, Tuple
+import uuid
 
 # =============================================================================
 # Enums
@@ -185,8 +186,6 @@ class ToolParser(ABC):
 
     def _generate_call_id(self, index: int = 0) -> str:
         """Generate a unique call ID."""
-        import uuid
-
         return f"call_{uuid.uuid4().hex[:24]}"
 
 

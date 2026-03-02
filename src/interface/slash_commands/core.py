@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Core classes for SlashCommands system.
 Contains the fundamental types and parsing logic.
 """
 
-from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
@@ -454,7 +454,7 @@ class SlashCommands:
         try:
             return defn.handler(ctx)
         except Exception as e:  # pylint: disable=broad-except
-            import traceback
+        import traceback
             print(f"Unexpected error in command handler: {e}\n{traceback.format_exc()}")
             return CommandResult.fail(str(e))
 
@@ -495,7 +495,7 @@ class SlashCommands:
                 try:
                     result = defn.handler(ctx)
                 except Exception as e:  # pylint: disable=broad-except
-                    import traceback
+                import traceback
                     print(f"Unexpected error in command handler: {e}\n{traceback.format_exc()}")
                     result = CommandResult.fail(str(e))
             else:

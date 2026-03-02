@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,34 +16,33 @@
 
 """Test agent functionality - extracted classes."""
 
-from __future__ import annotations
 
 from src.core.base.lifecycle.version import VERSION
 
 from .agents import TestsAgent  # noqa: F401
 from .debugging import (ExecutionReplayer, TestProfiler, TestRecorder,  # noqa: F401
                         TestReplayer)
-from .dependency_injection import DependencyInjector  # noqa: F401
-from .enums import (BrowserType, CoverageType, ExecutionMode, MutationOperator,  # noqa: F401
+                        from .dependency_injection import DependencyInjector  # noqa: F401
+                        from .enums import (BrowserType, CoverageType, ExecutionMode, MutationOperator,  # noqa: F401
                     TestPriority, TestSourceType, TestStatus)
-from .environment import DataFactory, EnvironmentProvisioner  # noqa: F401
-from .models import (AggregatedResult, ContractTest, CoverageGap,  # noqa: F401
+                    from .environment import DataFactory, EnvironmentProvisioner  # noqa: F401
+                    from .models import (AggregatedResult, ContractTest, CoverageGap,  # noqa: F401
                      CrossBrowserConfig, ExecutionTrace, GeneratedTest,
                      Mutation, ProvisionedEnvironment, Recording, ReplayResult,
                      ScheduleSlot, TestCase, TestDependency, TestEnvironment,
                      TestFactory, TestProfile, TestRun, ValidationResult,
                      VisualRegressionConfig, _empty_action_list,
                      _empty_dict_any, _empty_str_list)
-from .mutation_testing import MutationRunner, MutationTester  # noqa: F401
-from .optimization import CoverageGapAnalyzer, TestSuiteOptimizer  # noqa: F401
-from .parallelization import ParallelizationStrategy  # noqa: F401
-from .scheduling import CrossBrowserRunner, TestScheduler  # noqa: F401
-from .test_generation import TestCaseMinimizer, TestDocGenerator, TestGenerator  # noqa: F401
-from .test_management import (BaselineComparisonResult, BaselineManager,  # noqa: F401
+                     from .mutation_testing import MutationRunner, MutationTester  # noqa: F401
+                     from .optimization import CoverageGapAnalyzer, TestSuiteOptimizer  # noqa: F401
+                     from .parallelization import ParallelizationStrategy  # noqa: F401
+                     from .scheduling import CrossBrowserRunner, TestScheduler  # noqa: F401
+                     from .test_generation import TestCaseMinimizer, TestDocGenerator, TestGenerator  # noqa: F401
+                     from .test_management import (BaselineComparisonResult, BaselineManager,  # noqa: F401
                               ContractValidator, DIContainer,
                               FlakinessDetector, ImpactAnalyzer,
                               QuarantineManager, TestPrioritizer)
-from .testing_utils import (ContractTestRunner, ResultAggregator,  # noqa: F401
+                              from .testing_utils import (ContractTestRunner, ResultAggregator,  # noqa: F401
                             TestMetricsCollector, VisualRegressionTester)
 
 # Enums

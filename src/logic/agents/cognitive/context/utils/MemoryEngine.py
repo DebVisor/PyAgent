@@ -12,7 +12,7 @@ from .MemoryCore import MemoryCore
 try:
     import chromadb
     HAS_CHROMA = True
-except ImportError:
+except Exception:
     HAS_CHROMA = False
 
 class MemoryEngine:

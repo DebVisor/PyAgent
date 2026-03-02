@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Unified Web Intelligence Agent for PyAgent.
-Consolidates Search, Web Navigation, Browsing, and Self-Search.
-"""
 
-from __future__ import annotations
 
 import logging
 import os
@@ -31,10 +27,10 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.base.logic.connectivity_manager import ConnectivityManager
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-from src.logic.agents.intelligence.arxiv_core import ArxivCore
-from src.logic.agents.intelligence.search_core import SearchCore
-from src.logic.agents.intelligence.web_core import WebCore
-from src.logic.agents.security.security_guard_agent import SecurityGuardAgent
+    from src.logic.agents.intelligence.arxiv_core import ArxivCore
+    from src.logic.agents.intelligence.search_core import SearchCore
+    from src.logic.agents.intelligence.web_core import WebCore
+    from src.logic.agents.security.security_guard_agent import SecurityGuardAgent
 
 __version__ = VERSION
 

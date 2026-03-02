@@ -1,3 +1,4 @@
+from __future__ import annotations
 
 """
 Documentation refresh and regeneration utility for PyAgent.
@@ -17,7 +18,6 @@ including API docs, architecture diagrams, and status reports.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import annotations
 
 import logging
 import os

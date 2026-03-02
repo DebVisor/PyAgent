@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Generic Connection Pool for database and HTTP connections.
 
 Phase 19: Beyond vLLM - Performance Patterns
 Connection pooling to reduce connection overhead.
 """
-from __future__ import annotations
 
 import threading
 import time

@@ -1,0 +1,32 @@
+name: module-class-session-planner
+version: 1.0.0
+description: Creates detailed lesson plans for teaching sessions including timing, talking points, and exercises. Use when preparing for live coding sessions or workshops for junior developers.
+inputs:
+  module_topic:
+    type: string
+    description: core topic (e.g., Git).
+    required: true
+  session_duration_minutes:
+    type: integer
+    default: 90
+outputs:
+  session_plan:
+    type: object
+    properties:
+      agenda:
+        type: array
+        items:
+          type: object
+capabilities:
+  - Pedagogical timing breakdown.
+  - Knowledge check generation.
+constraints:
+  - Assumes instructor-led format.
+security:
+  - No sensitive data involved.
+examples:
+  - input:
+      module_topic: "Git Branching"
+    output:
+      session_plan:
+        agenda: [{time_offset: 0, activity: "Intro"}]

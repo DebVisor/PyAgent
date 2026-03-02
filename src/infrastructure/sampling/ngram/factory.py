@@ -1,9 +1,9 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 N-gram Proposer Factory - Helper functions to instantiate proposers.
 """
 
-from __future__ import annotations
 
 from typing import Any
 

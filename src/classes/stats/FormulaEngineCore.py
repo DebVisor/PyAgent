@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
 FormulaEngineCore logic for PyAgent.
@@ -6,7 +7,6 @@ Pure logic for safe mathematical evaluation via AST.
 No I/O or side effects.
 """
 
-from __future__ import annotations
 import ast
 import operator
 import re

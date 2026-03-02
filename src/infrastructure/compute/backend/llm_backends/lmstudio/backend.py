@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
+
 """
 LM Studio LLM backend implementation with modular architecture.
 
@@ -141,7 +140,7 @@ class LMStudioBackend(LLMBackend):
                 models = client.llm.list_loaded_models()
             else:
                 import lmstudio
-                models = lmstudio.list_loaded_models()
+                    models = lmstudio.list_loaded_models()
 
             logger.debug(f"Listed {len(models)} models via LM Studio SDK")
             return [m.path for m in models]
@@ -168,7 +167,7 @@ class LMStudioBackend(LLMBackend):
                 models = client.llm.list_downloaded_models()
             else:
                 import lmstudio
-                models = lmstudio.list_downloaded_models()
+                    models = lmstudio.list_downloaded_models()
 
             logger.debug(f"Listed {len(models)} downloaded models via LM Studio SDK")
             return [m.path for m in models]
@@ -357,7 +356,7 @@ class LMStudioBackend(LLMBackend):
         if not self._check_sdk():
             return ""
 
-        import lmstudio
+            import lmstudio
 
         try:
             # Create a fresh AsyncClient for this request

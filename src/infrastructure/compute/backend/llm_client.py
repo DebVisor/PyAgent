@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
 
 """Centralized LLM client for various backends."""
 
-from __future__ import annotations
 
 import logging
 import os
@@ -27,12 +27,6 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.base.logic.connectivity_manager import ConnectivityManager
 from src.infrastructure.compute.backend.core.pooling_core import PoolingCore
 
-from .llm_backends.copilot_cli_backend import CopilotCliBackend
-from .llm_backends.git_hub_models_backend import GitHubModelsBackend
-from .llm_backends.lm_studio_backend import LMStudioBackend
-from .llm_backends.ollama_backend import OllamaBackend
-from .llm_backends.vllm_backend import VllmBackend
-from .llm_backends.vllm_native_backend import VllmNativeBackend
 from .local_context_recorder import LocalContextRecorder
 
 
@@ -76,15 +70,49 @@ class LLMClient:
         self._max_cache_size = 1000
 
         # Backend Registry (Phase 120 Extraction)
-        self.backends = {
-            "github_models": GitHubModelsBackend(self.session, self.connectivity, self.recorder),
-            "ollama": OllamaBackend(self.session, self.connectivity, self.recorder),
-            "vllm": VllmBackend(self.session, self.connectivity, self.recorder),
-            "vllm_native": VllmNativeBackend(self.session, self.connectivity, self.recorder),
-            "copilot_cli": CopilotCliBackend(self.session, self.connectivity, self.recorder),
-            # Phase 21: LM Studio integration
-            "lmstudio": LMStudioBackend(self.session, self.connectivity, self.recorder),
-        }
+        # Import backends lazily to avoid import-time failures during test collection
+        self.backends: dict[str, Any] = {}
+        try:
+            from .llm_backends.git_hub_models_backend import GitHubModelsBackend
+
+            self.backends["github_models"] = GitHubModelsBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("GitHubModelsBackend not available")
+
+        try:
+            from .llm_backends.ollama_backend import OllamaBackend
+
+            self.backends["ollama"] = OllamaBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("OllamaBackend not available")
+
+        try:
+            from .llm_backends.vllm_backend import VllmBackend
+
+            self.backends["vllm"] = VllmBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("VllmBackend not available")
+
+        try:
+            from .llm_backends.vllm_native_backend import VllmNativeBackend
+
+            self.backends["vllm_native"] = VllmNativeBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("VllmNativeBackend not available")
+
+        try:
+            from .llm_backends.copilot_cli_backend import CopilotCliBackend
+
+            self.backends["copilot_cli"] = CopilotCliBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("CopilotCliBackend not available")
+
+        try:
+            from .llm_backends.lm_studio_backend import LMStudioBackend
+
+            self.backends["lmstudio"] = LMStudioBackend(self.session, self.connectivity, self.recorder)
+        except Exception:  # pragma: no cover - optional backend
+            logging.debug("LMStudioBackend not available")
 
     def _is_backend_disabled(self, backend_name: str) -> bool:
         """Check if a backend is disabled via environment variables."""

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,12 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-"""
-Method.py module.
-"""
-
-from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from typing import Any
@@ -34,6 +29,10 @@ try:
 except ImportError:
     HAS_TORCH = False
 
+"""
+Method.py module.
+"""
+
 
 class FusedMoEMethodBase(ABC):
     """Base class for MoE computation methods."""
@@ -45,6 +44,7 @@ class FusedMoEMethodBase(ABC):
         parallel_config: FusedMoEParallelConfig,
         device: str = "cpu",
     ) -> dict[str, Any]:
+        """Create and initialize expert weights based on config and parallel setup."""
         pass
 
     @abstractmethod
@@ -56,6 +56,7 @@ class FusedMoEMethodBase(ABC):
         renormalize: bool,
         weights: dict[str, Any],
     ) -> Any:
+        """Apply the MoE computation to the input using the router logits and expert weights."""
         pass
 
 
@@ -68,6 +69,7 @@ class UnquantizedFusedMoEMethod(FusedMoEMethodBase):
         parallel_config: FusedMoEParallelConfig,
         device: str = "cpu",
     ) -> dict[str, Any]:
+        """Create and initialize expert weights based on config and parallel setup."""
         local_num_experts, _, _ = determine_expert_map(
             parallel_config.ep_size,
             parallel_config.ep_rank,
@@ -96,6 +98,7 @@ class UnquantizedFusedMoEMethod(FusedMoEMethodBase):
         renormalize: bool,
         weights: dict[str, Any],
     ) -> Any:
+        """Apply the MoE computation to the input using the router logits and expert weights."""
         if not HAS_TORCH:
             return self._apply_numpy(x, router_logits, top_k, renormalize, weights)
         return self._apply_torch(x, router_logits, top_k, renormalize, weights)
@@ -108,6 +111,7 @@ class UnquantizedFusedMoEMethod(FusedMoEMethodBase):
         renormalize: bool,
         weights: dict[str, np.ndarray],
     ) -> np.ndarray:
+        """Apply the MoE computation using NumPy. This is a simplified implementation for demonstration purposes."""
         routing_weights = np.exp(router_logits - router_logits.max(axis=-1, keepdims=True))
         routing_weights = routing_weights / routing_weights.sum(axis=-1, keepdims=True)
 
@@ -143,6 +147,7 @@ class UnquantizedFusedMoEMethod(FusedMoEMethodBase):
         renormalize: bool,
         weights: dict[str, "torch.Tensor"],
     ) -> "torch.Tensor":
+        """Apply the MoE computation using PyTorch. This is a simplified implementation for demonstration purposes."""
         batch_size, hidden_size = x.shape
         routing_weights = F.softmax(router_logits, dim=-1)
         top_k_weights, top_k_indices = torch.topk(routing_weights, top_k, dim=-1)

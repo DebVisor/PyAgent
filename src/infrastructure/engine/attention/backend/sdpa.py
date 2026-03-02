@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: Copyright 2025 PyAgent Contributors
-"""
-PyTorch Scaled Dot-Product Attention backend.
-"""
-
-from __future__ import annotations
-
 import logging
 from typing import Any
 
@@ -31,12 +24,14 @@ logger = logging.getLogger(__name__)
 # Try to import torch
 try:
     import torch  # pylint: disable=unused-import
-
     HAS_TORCH = True
 except ImportError:
     HAS_TORCH = False
     torch = None  # type: ignore
 
+"""
+PyTorch Scaled Dot-Product Attention backend.
+"""
 
 class TorchSDPABackend(AttentionBackend[None]):
     """
@@ -83,7 +78,7 @@ class TorchSDPABackend(AttentionBackend[None]):
         if not HAS_TORCH:
             raise RuntimeError("PyTorch required for TorchSDPABackend")
 
-        import torch.nn.functional as F
+            import torch.nn.functional as F
 
         _, num_heads, _ = query.shape
         _, num_kv_heads, _ = key.shape

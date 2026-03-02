@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@ Stream Management Mixin for BaseAgent.
 Provides Redis-backed streaming capabilities with resumability, adapted from Adorable patterns.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json
@@ -35,7 +35,7 @@ except ImportError:
     redis = None
     HAS_REDIS = False
 
-from src.core.base.common.models.communication_models import CascadeContext
+    from src.core.base.common.models.communication_models import CascadeContext
 
 
 @dataclass

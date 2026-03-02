@@ -1,10 +1,10 @@
+from __future__ import annotations
 """
 Azure AI Foundry cloud provider connector.
 
 Provides integration with Azure AI Foundry (formerly Azure ML) for inference requests.
 """
 
-from __future__ import annotations
 
 import os
 import time

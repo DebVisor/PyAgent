@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@
 FastAPI-based API gateway for the PyAgent fleet.
 """
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel

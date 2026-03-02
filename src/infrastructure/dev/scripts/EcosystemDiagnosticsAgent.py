@@ -62,7 +62,7 @@ class EcosystemDiagnosticsAgent:
         try:
             # Check disk space using shutil.disk_usage (cross-platform, safe)
             import shutil
-            usage = shutil.disk_usage(".")
+                usage = shutil.disk_usage(".")
             total_gb = usage.total / (1024**3)
             free_gb = usage.free / (1024**3)
             self.results['disk_space'] = f"Free: {free_gb:.1f} GB / {total_gb:.1f} GB"

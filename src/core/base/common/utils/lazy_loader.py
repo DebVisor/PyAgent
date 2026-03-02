@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ Only loads modules when they are actually accessed.
 Phase 17: vLLM Pattern Integration (P2)
 """
 
-from __future__ import annotations
 
 import importlib
 from typing import Any, Callable, TypeVar
@@ -136,7 +136,7 @@ class LazyImport:
 
         Example:
             # In __init__.py
-            from src.core.base.common.utils.lazy_loader import LazyImport
+        from src.core.base.common.utils.lazy_loader import LazyImport
 
             _LAZY_ATTRS = {
                 'HeavyClass': 'mypackage.heavy:HeavyClass',

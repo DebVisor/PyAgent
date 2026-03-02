@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CpuGpuBuffer - Efficient CPU-GPU tensor transfer utilities.
 
@@ -7,7 +8,6 @@ with non-blocking transfers and optional numpy views.
 Phase 23: Advanced Serialization & Validation
 """
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 

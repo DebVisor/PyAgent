@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 CudagraphDispatcher - Dispatch logic for CUDA graph execution.
 
@@ -13,7 +14,6 @@ Beyond vLLM:
 - Composite graph support
 """
 
-from __future__ import annotations
 
 import logging
 import threading
@@ -26,6 +26,8 @@ from typing import Any, Callable, Dict, Generic, List, Optional, Set, Tuple, Typ
 logger = logging.getLogger(__name__)
 
 T = TypeVar("T")
+
+import time
 
 
 class DispatchMode(Enum):
@@ -256,24 +258,22 @@ class CudagraphDispatcher:
     ) -> None:
         """
         Register a captured graph.
-        
+
         Args:
             key: Dispatch key
             graph: Captured graph
             input_ptrs: Input tensor addresses
         """
-        import time
-        
         with self._lock:
             # Evict if at capacity
             while len(self._graphs) >= self.max_cached:
                 oldest = next(iter(self._graphs))
                 del self._graphs[oldest]
-                
+
             self._graphs[key] = GraphEntry(
                 graph=graph,
                 input_ptrs=input_ptrs or [],
-                capture_time=time.time()
+                capture_time=time.time(),
             )
             
     def has_graph(self, key: DispatchKey) -> bool:
@@ -283,8 +283,6 @@ class CudagraphDispatcher:
             
     def get_graph(self, key: DispatchKey) -> Optional[GraphEntry]:
         """Get graph for key, updating LRU order."""
-        import time
-        
         with self._lock:
             if key not in self._graphs:
                 return None
@@ -313,8 +311,6 @@ class CudagraphDispatcher:
         Returns:
             Execution result
         """
-        import time
-        
         start = time.perf_counter()
         
         # Check for cached graph

@@ -49,7 +49,7 @@ class EmbeddingSimilarityService:
 
         # Simulation: Generate a deterministic pseudo-random embedding based on text
         # In real scenario, this would call a model.
-        import zlib
+            import zlib
         seed = zlib.adler32(text.encode()) & 0xFFFFFFFF
         np.random.seed(seed)
         embedding = np.random.randn(384).astype(np.float32)

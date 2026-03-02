@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ Manages the lifecycle of neural weights (LoRA/QLoRA adapters) across the fleet.
 Coordinates between the ModelForgeAgent and individual agents to hot-swap capabilities.
 """
 
-from __future__ import annotations
 
 import json
 import logging

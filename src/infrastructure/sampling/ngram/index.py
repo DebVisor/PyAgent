@@ -1,16 +1,16 @@
+from __future__ import annotations
 # SPDX-License-Identifier: Apache-2.0
 """
 N-gram Indexing - Suffix-based indices for fast n-gram lookup.
 """
 
-from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
 import numpy as np
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 
 class SuffixIndex:

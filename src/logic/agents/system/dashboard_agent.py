@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +18,6 @@
 Helps create Next.js or React interfaces for the fleet.
 """
 
-from __future__ import annotations
 
 import logging
 
@@ -42,7 +42,7 @@ class DashboardAgent(BaseAgent):
         logging.info(f"Generating UI component: {name}")
         # Simplified boilerplate generation
         component = f"""
-import React from 'react';
+        import React from 'react';
 __version__ = VERSION
 
 const {name} = () => {{

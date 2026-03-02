@@ -22,14 +22,22 @@ Unified pooling infrastructure (AI and Connections).
 from .connection_pool import (AsyncConnectionPool, ConnectionPool,  # noqa: F401
                               ConnectionState, MultiHostPool, PooledConnection,
                               PooledConnectionManager, PoolStats)
-from .engine import PoolingEngine, create_pooling_engine  # noqa: F401
+                              from .engine import PoolingEngine, create_pooling_engine  # noqa: F401
 # AI Pooling
 from .models import (EmbeddingOutput, PoolingConfig, PoolingResult,  # noqa: F401
                      PoolingStrategy, PoolingTask)
-from .strategies import (AttentionPooler, BasePooler, CLSPooler,  # noqa: F401
-                         LastTokenPooler, MatryoshkaPooler, MaxPooler,
-                         MeanPooler, MultiVectorPooler, StepPooler,
-                         WeightedMeanPooler)
+                     from .strategies import (
+    AttentionPooler,
+    BasePooler,
+    CLSPooler,  # noqa: F401
+    LastTokenPooler,
+    MatryoshkaPooler,
+    MaxPooler,
+    MeanPooler,
+    MultiVectorPooler,
+    StepPooler,
+    WeightedMeanPooler,
+)
 
 __all__ = [
     # AI

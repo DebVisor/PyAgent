@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -9,22 +10,9 @@
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# limitations under the License.
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# limitations under the License.
 
 """BaseAgent main class and core agent logic."""
 
-from __future__ import annotations
 from src.core.base.version import VERSION
 from src.core.base.utilities import as_tool
 from src.core.base.exceptions import CycleInterrupt
@@ -38,9 +26,14 @@ import time
 from datetime import datetime
 from pathlib import Path
 from types import TracebackType
-from typing import Any, Dict, List, Optional, cast
+from typing import Any, Dict, List, Optional, cast, TYPE_CHECKING
 from collections.abc import Callable
-from src.core.base.models import (
+
+if TYPE_CHECKING:
+    from src.logic.agents.cognitive.LongTermMemory import LongTermMemory
+    from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
+    from src.infrastructure.orchestration.ToolRegistry import ToolRegistry
+    from src.core.base.models import (
     AgentConfig,
     AgentState,
     CacheEntry,
@@ -57,12 +50,13 @@ from src.core.base.AgentCore import BaseCore
 from src.core.base.BaseAgentCore import BaseAgentCore
 from src.core.base.registry import AgentRegistry
 from src.core.base.ShardedKnowledgeCore import ShardedKnowledgeCore
-from src.core.base.state import AgentStateManager
+from src.core.base.state.agent_state_manager import AgentStateManager
 from src.core.base.verification import AgentVerifier
 from src.core.base.delegation import AgentDelegator
 from src.core.base.shell import ShellExecutor
 # from src.infrastructure.backend.LocalContextRecorder import LocalContextRecorder # Moved to __init__
 from src.core.base.managers.ResourceQuotaManager import ResourceQuotaManager, QuotaConfig
+from src.infrastructure.compute.backend.LocalContextRecorder import LocalContextRecorder
 
 try:
     import requests
@@ -83,13 +77,20 @@ except (ImportError, ValueError):
 
 __version__ = VERSION
 
+# Backwards-compatible default prompt templates
+try:
+    from src.core.base.common.base_defaults import DEFAULT_PROMPT_TEMPLATES  # type: ignore
+except Exception:
+    DEFAULT_PROMPT_TEMPLATES = []
+
+
 def fix_markdown_content(content: str) -> str:
     """Fix markdown formatting in content."""
     # Basic markdown fixes - can be extended
     return content
 
-# Advanced components (Lazy loaded or optional)
 
+# Advanced components (Lazy loaded or optional)
 class BaseAgent:
     """Base class for all AI-powered agents.
 
@@ -128,12 +129,37 @@ class BaseAgent:
         - Supports multiple AI backends via execution_engine (Phase 314)
         - Can be used as context manager for automatic cleanup
     """
-
     # Class-level attributes for shared state
     _prompt_templates: dict[str, PromptTemplate] = {}
     _response_cache: dict[str, CacheEntry] = {}
     _plugins: dict[str, Any] = {}
     _event_hooks: dict[EventType, list[Callable[[dict[str, Any]], None]]] = {}
+
+
+    def _register_capabilities(self) -> None:
+        """Emits a signal with agent capabilities for discovery."""
+        try:
+            import asyncio
+            from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
+            signals = SignalRegistry()
+            # Schedule the async emit to run in the background
+            try:
+                loop = asyncio.get_event_loop()
+                if loop.is_running():
+                    asyncio.create_task(signals.emit("agent_capability_registration", {
+                        "agent": self.__class__.__name__,
+                        "capabilities": self.get_capabilities()
+                    }))
+                else:
+                    loop.run_until_complete(signals.emit("agent_capability_registration", {
+                        "agent": self.__class__.__name__,
+                        "capabilities": self.get_capabilities()
+                    }))
+            except RuntimeError:
+                # No event loop available, skip signal emission
+                pass
+        except Exception:
+            pass
 
     def __init__(self, file_path: str) -> None:
         """Initialize the BaseAgent with file path.
@@ -191,7 +217,7 @@ class BaseAgent:
         )
         
         # Determine Workspace Root (Phase 108: Robust detection delegated to Core)
-        self._workspace_root = BaseCore.detect_workspace_root(self.file_path)
+        self._workspace_root = str(self.file_path.parent) if self.file_path.parent != self.file_path else str(Path.cwd())
         
         self._local_global_context = None
 
@@ -207,37 +233,11 @@ class BaseAgent:
         # Phase 143: Sharded Knowledge initialization
         self.sharded_knowledge = ShardedKnowledgeCore(base_path=Path("data/agents"))
 
-        self.registry: SignalRegistry | None = SignalRegistry() if SignalRegistry else None
-        self.tool_registry: ToolRegistry | None = ToolRegistry() if ToolRegistry else None
+        self.registry: SignalRegistry | None = SignalRegistry() if SignalRegistry else None  # type: ignore
+        self.tool_registry: ToolRegistry | None = ToolRegistry() if ToolRegistry else None  # type: ignore
 
         # Intelligence Harvesting (Phase 108)
-        from src.infrastructure.backend.LocalContextRecorder import LocalContextRecorder
         self.recorder = LocalContextRecorder(Path(self._workspace_root), f"{self.__class__.__name__}_Agent")
-
-    def _register_capabilities(self) -> None:
-        """Emits a signal with agent capabilities for discovery."""
-        try:
-            import asyncio
-            from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
-            signals = SignalRegistry()
-            # Schedule the async emit to run in the background
-            try:
-                loop = asyncio.get_event_loop()
-                if loop.is_running():
-                    asyncio.create_task(signals.emit("agent_capability_registration", {
-                        "agent": self.__class__.__name__,
-                        "capabilities": self.get_capabilities()
-                    }))
-                else:
-                    loop.run_until_complete(signals.emit("agent_capability_registration", {
-                        "agent": self.__class__.__name__,
-                        "capabilities": self.get_capabilities()
-                    }))
-            except RuntimeError:
-                # No event loop available, skip signal emission
-                pass
-        except Exception:
-            pass
 
     # PHASE 260: Preemption Logic
     def suspend(self) -> None:
@@ -254,7 +254,6 @@ class BaseAgent:
 
     async def _check_preemption(self) -> None:
         """Wait while the agent is suspended."""
-        import asyncio
         while self._suspended:
             await asyncio.sleep(0.5)
 
@@ -277,6 +276,7 @@ class BaseAgent:
 
     @strategy.setter
     def strategy(self, value: Any) -> None:
+        """Set the strategy for agent execution."""
         self._strategy = value
 
     def _run_command(self, cmd: list[str], timeout: int = 120, max_retries: int = 1) -> subprocess.CompletedProcess[str]:
@@ -301,7 +301,7 @@ class BaseAgent:
         # Fallback to local lazy loading
         if self._local_global_context is None:
              try:
-                from src.logic.agents.cognitive.context.engines.GlobalContextEngine import GlobalContextEngine
+                 from src.logic.agents.cognitive.context.engines.GlobalContextEngine import GlobalContextEngine
                 self._local_global_context = GlobalContextEngine(self._workspace_root)
              except (ImportError, ValueError):
                 pass
@@ -750,7 +750,7 @@ class BaseAgent:
         except ImportError:
             sys.path.append(str(Path(__file__).parent.parent.parent))
             from src.infrastructure.backend import execution_engine as ab
-        
+
         result: str | None = await asyncio.to_thread(ab.run_subagent, description, prompt, original_content)
 
         # Update quota usage (estimated tokens)
@@ -765,48 +765,48 @@ class BaseAgent:
             return original_content or self._get_fallback_response()
         return result
 
-    @staticmethod
-    def get_backend_status() -> dict[str, Any]:
-        """Return a diagnostic snapshot of backend availability and configuration.
+@staticmethod
+def get_backend_status() -> dict[str, Any]:
+    """Return a diagnostic snapshot of backend availability and configuration.
 
-        Returns:
-            dict: Status information for all available AI backends.
-                 Includes availability, version, and configuration details.
+    Returns:
+        dict: Status information for all available AI backends.
+             Includes availability, version, and configuration details.
 
-        Example:
-            status=BaseAgent.get_backend_status()
-            for backend, info in status.items():
-                print(f"{backend}: {info}")
-        """
-        logging.debug("Fetching backend status")
-        # Deferred import to avoid circular dependency
-        try:
-            from src.infrastructure.backend import execution_engine as ab
-        except ImportError:
-            sys.path.append(str(Path(__file__).parent.parent.parent))
-            from src.infrastructure.backend import execution_engine as ab
-        return ab.get_backend_status()
+    Example:
+        status=BaseAgent.get_backend_status()
+        for backend, info in status.items():
+            print(f"{backend}: {info}")
+    """
+    logging.debug("Fetching backend status")
+    # Deferred import to avoid circular dependency
+    try:
+        from src.infrastructure.backend import execution_engine as ab
+    except ImportError:
+        sys.path.append(str(Path(__file__).parent.parent.parent))
+        from src.infrastructure.backend import execution_engine as ab
+    return ab.get_backend_status()
 
-    @staticmethod
-    def describe_backends() -> str:
-        """Return human-readable backend diagnostics for debugging.
+@staticmethod
+def describe_backends() -> str:
+    """Return human-readable backend diagnostics for debugging.
 
-        Returns:
-            str: Formatted text describing available backends and their status.
-                 Useful for troubleshooting configuration issues.
+    Returns:
+        str: Formatted text describing available backends and their status.
+             Useful for troubleshooting configuration issues.
 
-        Example:
-            print(BaseAgent.describe_backends())
-            # Output: Available backends, versions, configuration details
-        """
-        logging.debug("Describing backend configuration")
-        # Deferred import to avoid circular dependency
-        try:
-            from src.infrastructure.backend import execution_engine as ab
-        except ImportError:
-            sys.path.append(str(Path(__file__).parent.parent.parent))
-            from src.infrastructure.backend import execution_engine as ab
-        return ab.describe_backends()
+    Example:
+        print(BaseAgent.describe_backends())
+        # Output: Available backends, versions, configuration details
+    """
+    logging.debug("Describing backend configuration")
+    # Deferred import to avoid circular dependency
+    try:
+        from src.infrastructure.backend import execution_engine as ab
+    except ImportError:
+        sys.path.append(str(Path(__file__).parent.parent.parent))
+        from src.infrastructure.backend import execution_engine as ab
+    return ab.describe_backends()
 
     def _get_fallback_response(self) -> str:
         """Return fallback response when Copilot CLI is unavailable.

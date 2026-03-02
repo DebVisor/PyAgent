@@ -1,8 +1,8 @@
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # ArchitecturalDesignAgent: Implementation of Multi-Stage Architectural GenAI Framework
 # Based on research: arXiv:2601.10696 and ScienceDirect S2090447925006203 (Jiang et al., 2026)
 
-from __future__ import annotations
 from src.core.base.Version import VERSION
 import logging
 import json
@@ -204,7 +204,7 @@ class ArchitecturalDesignAgent(BaseAgent):
         try:
             # Attempt to extract a float from the response
             import re
-            match = re.search(r"(\d\.\d+)", score_str)
+                match = re.search(r"(\d\.\d+)", score_str)
             self.metrics["constructability_score"] = float(match.group(1)) if match else 0.85
         except:
             self.metrics["constructability_score"] = 0.85

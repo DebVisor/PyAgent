@@ -8,7 +8,7 @@ Orchestrator cycle mixin.py module.
 import logging
 from typing import Any
 
-from src.core.base.lifecycle.version import is_gate_open
+from src.core.base.lifecycle.version import is_gate_open, STABILITY_SCORE
 
 
 class OrchestratorCycleMixin:
@@ -43,7 +43,6 @@ class OrchestratorCycleMixin:
 
     def _check_gate_stability(self) -> bool:
         """Verifies if the system is stable enough for autonomous changes."""
-        from src.core.base.lifecycle.version import STABILITY_SCORE
 
         if not is_gate_open(100) or STABILITY_SCORE < 0.8:
             logging.error(

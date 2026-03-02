@@ -41,6 +41,18 @@ files_to_fix = [
     'src/infrastructure/fleet/AgentStore.py',
 ]
 
-for f in files_to_fix:
-    if fix_file(f):
-        print(f"Fixed {f}")
+
+def main():
+    """Run fixes as a script. Tests should import this module without side-effects."""
+    for f in files_to_fix:
+        try:
+            if fix_file(f):
+                print(f"Fixed {f}")
+        except FileNotFoundError:
+            # When running under tests or in partial checkouts some files may be absent;
+            # avoid raising on import or during test collection.
+            continue
+
+
+if __name__ == "__main__":
+    main()

@@ -84,13 +84,13 @@ class OrchestrationMixin:
             sys.path.append(str(Path(__file__).parent.parent.parent.parent))
             from src.infrastructure.backend import ExecutionEngine as ab
 
-        import asyncio
+            import asyncio
         result: str | None = await asyncio.to_thread(
             ab.run_subagent, description, prompt, original_content
         )
 
         if hasattr(self, "quotas") and result:
-             self.quotas.update_usage(len(prompt) // 4, len(result) // 4)
+            self.quotas.update_usage(len(prompt) // 4, len(result) // 4)
 
         if result is None:
             if original_content:
@@ -181,7 +181,7 @@ class OrchestrationMixin:
         try:
             from src.infrastructure.fleet.AgentRegistry import AgentRegistry
             from src.core.base.AgentCore import BaseCore
-            
+
             ws_root = getattr(self, "_workspace_root", None) or Path(BaseCore.detect_workspace_root(Path.cwd()))
             
             # Use the registry to get the agent map

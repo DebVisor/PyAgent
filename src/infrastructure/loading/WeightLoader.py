@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Weight Loading Utilities for PyAgent
 
@@ -20,7 +21,6 @@ vLLM Patterns:
 - runai_safetensors_weights_iterator
 """
 
-from __future__ import annotations
 
 import concurrent.futures
 import hashlib
@@ -335,7 +335,7 @@ class MultiThreadWeightLoader(WeightLoader):
             return load_file(file_path, device=device)
         except ImportError:
             import torch
-            return torch.load(file_path, map_location=device, weights_only=True)
+                return torch.load(file_path, map_location=device, weights_only=True)
     
     def iterate_weights(
         self,
@@ -403,7 +403,7 @@ class FastSafetensorsLoader(WeightLoader):
             return
         
         import torch
-        
+
         if torch.distributed.is_initialized():
             pg = torch.distributed.group.WORLD
             rank = torch.distributed.get_rank()

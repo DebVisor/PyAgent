@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
 
 # pylint: disable=too-many-function-args
 
-from __future__ import annotations
 
 import io
 from pathlib import Path
@@ -104,7 +104,7 @@ class ImageLoader(MediaLoader):
                     return await resp.read()
         except ImportError:
             import urllib.request
-            with urllib.request.urlopen(url) as resp:
+                with urllib.request.urlopen(url) as resp:
                 return resp.read()
 
     def _detect_format(self, data: bytes) -> ImageFormat:
