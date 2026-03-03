@@ -23,7 +23,7 @@ from typing import TYPE_CHECKING
 from ..base import CommandContext, CommandResult
 
 if TYPE_CHECKING:
-from ..registry import CommandRegistry
+    from ..registry import CommandRegistry
 
 
 def register_utility_commands(registry: CommandRegistry) -> None:
