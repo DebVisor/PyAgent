@@ -30,10 +30,10 @@ from typing import Any, Dict, List, Optional, cast, TYPE_CHECKING
 from collections.abc import Callable
 
 if TYPE_CHECKING:
-    from src.logic.agents.cognitive.LongTermMemory import LongTermMemory
-    from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
-    from src.infrastructure.orchestration.ToolRegistry import ToolRegistry
-    from src.core.base.models import (
+from src.logic.agents.cognitive.LongTermMemory import LongTermMemory
+from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
+from src.infrastructure.orchestration.ToolRegistry import ToolRegistry
+from src.core.base.models import (
     AgentConfig,
     AgentState,
     CacheEntry,
