@@ -23,9 +23,9 @@ from typing import TYPE_CHECKING, Any, Callable, Iterator, Optional
 from .api import LMStudioAPIClient
 
 if TYPE_CHECKING:
-import lmstudio
+    import lmstudio
 
-logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
 
 
 class StreamingChatHandler:
