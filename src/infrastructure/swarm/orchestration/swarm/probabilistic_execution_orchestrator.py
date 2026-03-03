@@ -27,7 +27,7 @@ from src.core.base.lifecycle.version import VERSION
 __version__ = VERSION
 
 if TYPE_CHECKING:
-    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 
 
 class ProbabilisticExecutionOrchestrator:
@@ -46,7 +46,7 @@ class ProbabilisticExecutionOrchestrator:
         logging.info(f"ProbabilisticExecutionOrchestrator: Executing task '{task}' with {variations} variations.")
 
         results = []
-        import asyncio
+import asyncio
 
         loop = None
         try:
