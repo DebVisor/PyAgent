@@ -57,7 +57,7 @@ from src.infrastructure.cache.KVCacheManager import DeviceType
 if TYPE_CHECKING:
     from src.infrastructure.kv_transfer.KVTransferConnector import ForwardContext
 
-logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
 
 
 class MooncakeTransferStatus(Enum):
