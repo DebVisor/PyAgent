@@ -33,9 +33,9 @@ from .orchestrator_registry_core import OrchestratorRegistryCore
 from .resilient_stubs import ResilientStub
 
 if TYPE_CHECKING:
-from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 
-__version__ = VERSION
+    __version__ = VERSION
 
 
 class LazyOrchestratorMap:
