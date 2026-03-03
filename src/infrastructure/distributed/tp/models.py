@@ -11,9 +11,9 @@ from enum import Enum, auto
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-from .coordinator import GroupCoordinator
+    from .coordinator import GroupCoordinator
 
-logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
 
 
 class ParallelMode(Enum):
