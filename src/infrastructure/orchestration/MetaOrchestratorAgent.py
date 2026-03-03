@@ -19,8 +19,8 @@ from typing import Dict, List, Any, TYPE_CHECKING
 from src.core.base.BaseAgent import BaseAgent
 
 if TYPE_CHECKING:
-from src.infrastructure.fleet.FleetManager import FleetManager
-from src.core.knowledge.GlobalContext import GlobalContext
+    from src.infrastructure.fleet.FleetManager import FleetManager
+    from src.core.knowledge.GlobalContext import GlobalContext
 
 class MetaOrchestratorAgent(BaseAgent):
     """
