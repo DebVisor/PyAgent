@@ -27,7 +27,7 @@ class FleetDelegationMixin:
             # Execute via improve_content or similar primary entrypoint
             # We pass target_file explicitly to avoid mutating shared state (Phase 317)
             res = sub_agent.improve_content(prompt, target_file=target_file)
-            import asyncio
+import asyncio
 
             if asyncio.iscoroutine(res):
                 return await res
