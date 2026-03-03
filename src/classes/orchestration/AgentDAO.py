@@ -44,6 +44,6 @@ class AgentDAO(BaseAgent):
         return "The DAO maintains the equilibrium of agent resource consumption."
 
 if __name__ == "__main__":
-    from src.classes.base_agent.utilities import create_main_function
+from src.classes.base_agent.utilities import create_main_function
     main = create_main_function(AgentDAO, "AgentDAO", "Fleet Resource Governance")
     main()
