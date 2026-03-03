@@ -11,7 +11,7 @@ from .config import LoRAConfig
 from .weights import LoRALayerWeights
 
 if TYPE_CHECKING:
-from numpy.typing import NDArray
+    from numpy.typing import NDArray
 
 
 @dataclass
