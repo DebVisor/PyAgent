@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING
 from src.core.base.common.types.accessibility_report import AccessibilityReport
 
 if TYPE_CHECKING:
-from src.logic.agents.specialists.accessibility_agent import \
+    from src.logic.agents.specialists.accessibility_agent import \
         AccessibilityAgent
 
 
