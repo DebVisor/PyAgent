@@ -28,14 +28,14 @@ from src.core.base.logic.connectivity_manager import ConnectivityManager
 from src.infrastructure.storage.kv_transfer.arc.base import OffloadingManager
 from src.infrastructure.storage.kv_transfer.arc.types import (
     BlockHash, BlockState, BlockStatus, OffloadingEvent, PrepareStoreOutput)
-    from src.infrastructure.storage.kv_transfer.k_vzap import (KVzapConfig,
+from src.infrastructure.storage.kv_transfer.k_vzap import (KVzapConfig,
                                                            KVzapPruner)
 
 if TYPE_CHECKING:
-    import torch
+import torch
 
-    from src.infrastructure.storage.kv_transfer.arc.backend import Backend
-    from src.infrastructure.storage.kv_transfer.arc.types import LoadStoreSpec
+from src.infrastructure.storage.kv_transfer.arc.backend import Backend
+from src.infrastructure.storage.kv_transfer.arc.types import LoadStoreSpec
 
 
 class ARCOffloadManager(OffloadingManager):
