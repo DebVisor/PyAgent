@@ -26,7 +26,7 @@ class MistralTokenizer(BaseTokenizer):
             from mistral_common.tokens.tokenizers.mistral import MistralTokenizer as MT
             self._tokenizer = MT.from_model(self.config.model_name)
         except ImportError:
-            from transformers import AutoTokenizer
+from transformers import AutoTokenizer
                 self._tokenizer = AutoTokenizer.from_pretrained(
                 self.config.model_name,
                 trust_remote_code=True,
