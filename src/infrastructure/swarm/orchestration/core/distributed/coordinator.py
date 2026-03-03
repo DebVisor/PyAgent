@@ -28,7 +28,7 @@ import numpy as np
 
 from .config import (EngineIdentity, EngineState, LoadBalancingStrategy,
                      ParallelConfig)
-                     from .messages import MetricsMessage
+from .messages import MetricsMessage
 
 logger = logging.getLogger(__name__)
 
