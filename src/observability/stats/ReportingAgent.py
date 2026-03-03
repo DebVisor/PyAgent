@@ -49,7 +49,7 @@ from src.logic.agents.system.ConfigAgent import ConfigAgent
 from src.logic.agents.development.TestAgent import TestAgent
 from src.logic.agents.intelligence.BrowsingAgent import BrowsingAgent
 from src.logic.agents.system.MCPAgent import MCPAgent
-        from src.logic.agents.development.ToolEvolutionAgent import ToolEvolutionAgent
+from src.logic.agents.development.ToolEvolutionAgent import ToolEvolutionAgent
         from src.logic.agents.cognitive.VisualizerAgent import VisualizerAgent
         
         self.fleet.register_agent("Consolidator", MemoryConsolidationAgent, str(self.workspace_root / "src/logic/agents/cognitive/MemoryConsolidationAgent.py"))
