@@ -24,7 +24,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.interface.slash_commands.core import CommandRegistry
+from src.interface.slash_commands.core import CommandRegistry
 
 # Track loaded modules
 _loaded_modules: set[str] = set()
