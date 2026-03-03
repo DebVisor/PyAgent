@@ -28,7 +28,7 @@ from .config import SpecMethod, SpeculativeConfig
 from .proposals import DraftProposal, SpecDecodingMetrics, VerificationResult
 from .proposers import (EagleProposer, HybridDrafter, NgramProposer,
                         SuffixProposer)
-                        from .verifier import TokenVerifier
+from .verifier import TokenVerifier
 
 logger = logging.getLogger(__name__)
 
