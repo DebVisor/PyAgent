@@ -19,8 +19,8 @@ from __future__ import annotations
 
 from src.core.base.common.types.localization_language import \
     LocalizationLanguage
-    from src.core.base.common.types.localized_entry import LocalizedEntry
-    from src.core.base.lifecycle.version import VERSION
+from src.core.base.common.types.localized_entry import LocalizedEntry
+from src.core.base.lifecycle.version import VERSION
 
 __version__ = VERSION
 
