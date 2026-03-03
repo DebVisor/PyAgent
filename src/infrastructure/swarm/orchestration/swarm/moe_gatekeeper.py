@@ -25,9 +25,9 @@ import numpy as np
 
 from src.core.base.common.models.communication_models import (
     ExpertProfile, MoERoutingDecision)
-    from src.infrastructure.engine.models.similarity import \
+from src.infrastructure.engine.models.similarity import \
     EmbeddingSimilarityService
-    from src.infrastructure.swarm.orchestration.swarm.audit_logger import SwarmAuditLogger
+from src.infrastructure.swarm.orchestration.swarm.audit_logger import SwarmAuditLogger
 
 logger: logging.Logger = logging.getLogger(__name__)
 
