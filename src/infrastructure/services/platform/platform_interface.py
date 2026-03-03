@@ -29,10 +29,10 @@ from .cuda import CudaPlatform
 from .models import (AttentionBackend, CpuArchitecture, DeviceCapability,
                      DeviceFeature, DeviceInfo, MemoryInfo, PlatformConfig,
                      PlatformType, QuantizationType)
-                     from .registry import PlatformRegistry
-                     from .rocm import RocmPlatform
-                     from .tpu import TpuPlatform
-                     from .xpu import XpuPlatform
+from .registry import PlatformRegistry
+from .rocm import RocmPlatform
+from .tpu import TpuPlatform
+from .xpu import XpuPlatform
 
 __all__ = [
     "PlatformType",
