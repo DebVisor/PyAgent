@@ -10,7 +10,7 @@ from src.infrastructure.kv_transfer.connector.base import KVConnectorBase
 from src.infrastructure.kv_transfer.connector.types import KVConnectorMetadata
 
 if TYPE_CHECKING:
-from src.infrastructure.kv_transfer.connector.types import (
+    from src.infrastructure.kv_transfer.connector.types import (
         KVTransferConfig, ForwardContext, Request, KVCacheBlocks
     )
 
