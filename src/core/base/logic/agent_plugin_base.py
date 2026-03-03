@@ -24,7 +24,7 @@ from typing import Any
 
 from src.core.base.common.models import (AgentHealthCheck, AgentPriority,
                                          HealthStatus)
-                                         from src.core.base.lifecycle.version import VERSION
+from src.core.base.lifecycle.version import VERSION
 
 __version__: str = VERSION
 
