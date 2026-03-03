@@ -7,7 +7,7 @@ from .tensor import QuantizedTensor
 from .config import QuantConfig
 
 if TYPE_CHECKING:
-from numpy.typing import NDArray
+    from numpy.typing import NDArray
 
 class AWQQuantizer(Quantizer):
     """Activation-Aware Weight Quantization (AWQ)."""
