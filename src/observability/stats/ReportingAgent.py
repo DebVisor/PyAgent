@@ -22,7 +22,7 @@ from typing import TYPE_CHECKING
 from src.core.base.BaseAgent import BaseAgent
 
 if TYPE_CHECKING:
-    from src.infrastructure.fleet.FleetManager import FleetManager
+from src.infrastructure.fleet.FleetManager import FleetManager
 
 class ReportingAgent(BaseAgent):
     """
@@ -40,15 +40,15 @@ class ReportingAgent(BaseAgent):
         logging.info("ReportingAgent: Initiating dashboard generation workflow...")
         
         # Load required agents if not present
-        from src.logic.agents.cognitive.MemoryConsolidationAgent import MemoryConsolidationAgent
-        from src.observability.stats.TransparencyAgent import TransparencyAgent
-        from src.logic.agents.development.SpecToolAgent import SpecToolAgent
-        from src.logic.agents.system.KernelAgent import KernelAgent
-        from src.logic.agents.development.PullRequestAgent import PRAgent
-        from src.logic.agents.system.ConfigAgent import ConfigAgent
-        from src.logic.agents.development.TestAgent import TestAgent
-        from src.logic.agents.intelligence.BrowsingAgent import BrowsingAgent
-        from src.logic.agents.system.MCPAgent import MCPAgent
+from src.logic.agents.cognitive.MemoryConsolidationAgent import MemoryConsolidationAgent
+from src.observability.stats.TransparencyAgent import TransparencyAgent
+from src.logic.agents.development.SpecToolAgent import SpecToolAgent
+from src.logic.agents.system.KernelAgent import KernelAgent
+from src.logic.agents.development.PullRequestAgent import PRAgent
+from src.logic.agents.system.ConfigAgent import ConfigAgent
+from src.logic.agents.development.TestAgent import TestAgent
+from src.logic.agents.intelligence.BrowsingAgent import BrowsingAgent
+from src.logic.agents.system.MCPAgent import MCPAgent
         from src.logic.agents.development.ToolEvolutionAgent import ToolEvolutionAgent
         from src.logic.agents.cognitive.VisualizerAgent import VisualizerAgent
         
