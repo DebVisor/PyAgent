@@ -26,7 +26,7 @@ from typing import Any, Dict, List, Optional, Union
 from .models import HAS_LORA
 
 if HAS_LORA:
-    from vllm.lora.request import LoRARequest
+from vllm.lora.request import LoRARequest
 else:
     LoRARequest = None
 
