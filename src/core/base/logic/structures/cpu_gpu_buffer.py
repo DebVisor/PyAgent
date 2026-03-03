@@ -42,10 +42,10 @@ except ImportError:
     np = None
 
 if TYPE_CHECKING:
-import numpy as np
-import torch
+    import numpy as np
+    import torch
 
-__all__ = [
+    __all__ = [
     "CpuGpuBuffer",
     "is_pin_memory_available",
     "get_device",
