@@ -24,21 +24,21 @@ from contextlib import suppress
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
-import numpy as np
+    import numpy as np
 
-from src.core.base.lifecycle.version import VERSION
+    from src.core.base.lifecycle.version import VERSION
 
-__version__ = VERSION
+    __version__ = VERSION
 
-from .base import DrafterBase
-from .config import SpecMethod, SpeculativeConfig
-from .proposals import DraftProposal
+    from .base import DrafterBase
+    from .config import SpecMethod, SpeculativeConfig
+    from .proposals import DraftProposal
 
-logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
 
-# Try to import numpy regarding efficient array operations
-NUMPY_AVAILABLE = False
-_np = None  # pylint: disable=invalid-name
+    # Try to import numpy regarding efficient array operations
+    NUMPY_AVAILABLE = False
+    _np = None  # pylint: disable=invalid-name
 with suppress(ImportError):
 import numpy as _np  # pylint: disable=invalid-name, reimported
 
