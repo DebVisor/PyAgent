@@ -26,7 +26,7 @@ try:
 except ImportError:
     rc = None
 
-    from .base_core import BaseCore
+from .base_core import BaseCore
 
 
 class TemplateCore(BaseCore):
