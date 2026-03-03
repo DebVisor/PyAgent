@@ -23,7 +23,7 @@ import logging
 from typing import TYPE_CHECKING, Any, Optional
 
 if TYPE_CHECKING:
-    import lmstudio
+import lmstudio
 
 logger = logging.getLogger(__name__)
 
