@@ -7,7 +7,7 @@ import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
+    from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
 
 class ResearchAnalysisMixin:
     """Mixin for research report updates and lesson harvesting in SelfImprovementAnalysis."""
