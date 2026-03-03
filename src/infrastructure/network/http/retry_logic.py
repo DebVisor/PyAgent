@@ -5,9 +5,9 @@ import time
 from typing import Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
-from src.infrastructure.network.http.connection import HTTPConnection
+    from src.infrastructure.network.http.connection import HTTPConnection
 
-logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
 
 class RetryHTTPMixin:
     """Mixin providing retry logic for HTTP requests."""
