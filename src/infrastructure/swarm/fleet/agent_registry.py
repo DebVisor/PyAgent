@@ -33,7 +33,7 @@ from .bootstrap_configs import BOOTSTRAP_AGENTS
 from .resilient_stubs import ResilientStub
 
 if TYPE_CHECKING:
-    from .fleet_manager import FleetManager
+from .fleet_manager import FleetManager
 
 
 # Import local version for gatekeeping
@@ -42,7 +42,7 @@ __version__ = VERSION
 def get_mcp_agent(*args: Any, **kwargs: Any) -> Any:
     global MCPAgent
     if MCPAgent is None:
-        from src.logic.agents.system.mcp_agent import MCPAgent as _MCPAgent
+from src.logic.agents.system.mcp_agent import MCPAgent as _MCPAgent
         MCPAgent = _MCPAgent
     return MCPAgent(*args, **kwargs)
 
