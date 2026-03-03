@@ -7,7 +7,7 @@ import re
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
+    from src.infrastructure.orchestration.intel.SelfImprovementAnalysis import SelfImprovementAnalysis
 
 class StructuralAnalysisMixin:
     """Mixin for structural health and versioning checks in SelfImprovementAnalysis."""
