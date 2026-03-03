@@ -41,7 +41,7 @@ class OllamaBackend(LLMBackend):
         # Map 'tinyllama' to 'tinyllama:latest' to match Ollama's model tag
         if model == "tinyllama":
             model = "tinyllama:latest"
-        import time
+import time
         start_t = time.time()
         print(f"[OllamaBackend] Called with model: {model}\nPrompt: {prompt[:80]}{'...' if len(prompt) > 80 else ''}")
         try:
