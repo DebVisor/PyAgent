@@ -13,7 +13,7 @@ else:
     np = None
 
 if TYPE_CHECKING:
-import torch as torch_type
+    import torch as torch_type
 
 class GptJRotaryEmbedding(RotaryEmbeddingBase):
     """GPT-J style rotary position embedding.
