@@ -20,13 +20,13 @@ from .types import DPRole, WorkerHealth, LoadBalanceStrategy, DPConfig, WorkerSt
 from .balancer import P2CLoadBalancer
         return P2CLoadBalancer
     if name == "DPEngineCoreProc":
-        from .engine import DPEngineCoreProc
+from .engine import DPEngineCoreProc
         return DPEngineCoreProc
     if name == "HierarchicalDPCoordinator":
-        from .hierarchical import HierarchicalDPCoordinator
+from .hierarchical import HierarchicalDPCoordinator
         return HierarchicalDPCoordinator
     if name == "dp_collective_all_reduce":
-        from .collectives import dp_collective_all_reduce
+from .collectives import dp_collective_all_reduce
         return dp_collective_all_reduce
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
