@@ -32,7 +32,7 @@ from typing import Any, List, Optional
 
 from .engine_core import (EngineCore, EngineCoreOutputs, EngineCoreProc,
                           MockExecutor, Request, SimpleScheduler)
-                          from .output_processor import EngineCoreRequest
+from .output_processor import EngineCoreRequest
 
 logger = logging.getLogger(__name__)
 
