@@ -20,7 +20,7 @@ expensive modules in the infrastructure layer. These functions defer
 imports until first access, significantly improving startup time.
 
 Usage:
-    from src.infrastructure.lazy import get_eagle_proposer
+from src.infrastructure.lazy import get_eagle_proposer
 
     # EagleProposer is only imported when this function is called
     EagleProposer = get_eagle_proposer()
