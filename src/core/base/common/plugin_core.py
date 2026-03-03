@@ -32,7 +32,7 @@ try:
 except ImportError:
     VersionGate = None
 
-    from .base_core import BaseCore
+from .base_core import BaseCore
 
 try:
     import docker
