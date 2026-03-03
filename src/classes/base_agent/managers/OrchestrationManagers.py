@@ -25,7 +25,7 @@ from src.core.base.models import ModelConfig, ComposedAgent, _empty_list_float
 __version__ = VERSION
 
 if TYPE_CHECKING:
-    from ..agent import BaseAgent
+from ..agent import BaseAgent
 
 class AgentComposer:
     """Composer for multi-agent workflows."""
