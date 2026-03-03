@@ -32,7 +32,7 @@ from src.infrastructure.engine.engine_client.types import (ClientMode,
                                                            WorkerInfo)
 
 if TYPE_CHECKING:
-    from src.infrastructure.engine.engine_client.types import SchedulerOutput
+from src.infrastructure.engine.engine_client.types import SchedulerOutput
 
 logger = logging.getLogger(__name__)
 
