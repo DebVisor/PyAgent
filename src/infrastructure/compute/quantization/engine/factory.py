@@ -25,8 +25,8 @@ import numpy as np
 from .config import QuantConfig, QuantScheme, QuantStrategy
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
-    from .tensor import QuantizedTensor
+from numpy.typing import NDArray
+from .tensor import QuantizedTensor
 
 
 def quantize_tensor(
@@ -46,7 +46,7 @@ def quantize_tensor(
     )
 
     if scheme.lower() == "awq":
-        from .awq import AWQQuantizer
+from .awq import AWQQuantizer
         quantizer = AWQQuantizer(config)
     elif scheme.lower() == "gptq":
         from .gptq import GPTQQuantizer
