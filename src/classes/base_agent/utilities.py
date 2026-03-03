@@ -33,13 +33,13 @@ from typing import Any, Optional, Type, TYPE_CHECKING
 from collections.abc import Callable
 
 if TYPE_CHECKING:
-    from .agent import BaseAgent
+from .agent import BaseAgent
 
 try:
     from src.logic.strategies import plan_executor as agent_strategies
 except ImportError:
     sys.path.append(str(Path(__file__).parent.parent.parent))
-    from src.logic.strategies import plan_executor as agent_strategies
+from src.logic.strategies import plan_executor as agent_strategies
 __version__ = VERSION
 
 def setup_logging(verbosity_arg: int = 0) -> None:
