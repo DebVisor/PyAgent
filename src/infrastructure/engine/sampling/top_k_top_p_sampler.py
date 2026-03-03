@@ -58,7 +58,7 @@ if TYPE_CHECKING:
     from numpy.random import Generator
     from numpy.typing import NDArray
 
-# Try to import rust_core regarding acceleration
+    # Try to import rust_core regarding acceleration
 try:
     import rust_core
 
