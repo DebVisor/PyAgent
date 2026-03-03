@@ -44,7 +44,7 @@ def register_utility_commands(registry: CommandRegistry) -> None:
         aliases=["mem", "ram"],
     )
     def cmd_memory(ctx: CommandContext) -> CommandResult:
-        import psutil
+import psutil
         
         memory = psutil.virtual_memory()
         process = psutil.Process()
