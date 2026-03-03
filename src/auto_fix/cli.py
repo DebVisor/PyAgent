@@ -42,7 +42,7 @@ def main() -> None:
         fixes = engine.evaluate(str(path), content)
         for fix in fixes:
             # compute unified diff between original and replacement
-            import difflib
+import difflib
 
             original_lines = content.splitlines(keepends=True)
             replacement_lines = fix.replacement.splitlines(keepends=True)
