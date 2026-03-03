@@ -18,7 +18,7 @@ from __future__ import annotations
 from src.core.base.version import VERSION as VERSION
 try:
 	# Prefer canonical common types package when available
-from src.core.base.common.types import *  # noqa: F401,F403
+    from src.core.base.common.types import *  # noqa: F401,F403
 except Exception:
     # Fallback to local types if common package is not available  
 from .AccessibilityIssue import AccessibilityIssue as AccessibilityIssue
@@ -49,7 +49,7 @@ from .MigrationStatus import MigrationStatus as MigrationStatus
 from .ModernizationSuggestion import ModernizationSuggestion as ModernizationSuggestion
 from .MonorepoEntry import MonorepoEntry as MonorepoEntry
 from .OptimizationSuggestion import OptimizationSuggestion as OptimizationSuggestion
-    from .OptimizationType import OptimizationType as OptimizationType
+from .OptimizationType import OptimizationType as OptimizationType
     from .ProfilingCategory import ProfilingCategory as ProfilingCategory
     from .ProfilingSuggestion import ProfilingSuggestion as ProfilingSuggestion
     from .QualityScore import QualityScore as QualityScore
