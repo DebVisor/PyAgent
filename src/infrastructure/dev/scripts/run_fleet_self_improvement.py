@@ -27,16 +27,16 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-    from src.core.base.version import VERSION
-    import json
-    import time
-    import logging
-    import argparse
-    import subprocess
-    import re
-    from pathlib import Path
-    from typing import List, Dict, Any
-    from src.infrastructure.fleet.FleetManager import FleetManager
+from src.core.base.version import VERSION
+import json
+import time
+import logging
+import argparse
+import subprocess
+import re
+from pathlib import Path
+from typing import List, Dict, Any
+from src.infrastructure.fleet.FleetManager import FleetManager
 
 # Phase 120: Load environment variables if available
 try:
