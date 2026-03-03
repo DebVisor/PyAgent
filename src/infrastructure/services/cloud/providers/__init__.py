@@ -20,13 +20,13 @@ from .groq import GroqConnector
 
         return GroqConnector
     if name == "AzureAIConnector":
-        from .azure import AzureAIConnector
+from .azure import AzureAIConnector
 
         return AzureAIConnector
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 if TYPE_CHECKING:
-    from .bedrock import AWSBedrockConnector
-    from .gemini import GeminiConnector
-    from .groq import GroqConnector
+from .bedrock import AWSBedrockConnector
+from .gemini import GeminiConnector
+from .groq import GroqConnector
