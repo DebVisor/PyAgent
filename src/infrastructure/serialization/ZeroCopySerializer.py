@@ -34,9 +34,9 @@ except ImportError:
     np = None
 
 if TYPE_CHECKING:
-import torch
+    import torch
 
-__all__ = [
+    __all__ = [
     "ZeroCopyEncoder",
     "ZeroCopyDecoder",
     "encode_with_buffers",
