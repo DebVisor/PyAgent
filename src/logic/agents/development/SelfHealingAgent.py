@@ -35,7 +35,7 @@ class SelfHealingAgent(BaseAgent):
         self.telemetry = ObservabilityEngine(str(self.workspace_root))
         
         # Phase 317: Dynamic prompt loading and coordinator integration
-        from src.maintenance.SelfImprovementCoordinator import SelfImprovementCoordinator
+from src.maintenance.SelfImprovementCoordinator import SelfImprovementCoordinator
         self.coordinator = SelfImprovementCoordinator(str(self.workspace_root))
         self._load_dynamic_prompt()
 
