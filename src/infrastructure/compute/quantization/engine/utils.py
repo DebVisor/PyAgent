@@ -24,9 +24,9 @@ import numpy as np
 
 
 if TYPE_CHECKING:
-from numpy.typing import NDArray
+    from numpy.typing import NDArray
 
-from .tensor import QuantizedTensor
+    from .tensor import QuantizedTensor
 
 
 def pack_int4(data: NDArray[np.int8]) -> NDArray[np.int8]:
