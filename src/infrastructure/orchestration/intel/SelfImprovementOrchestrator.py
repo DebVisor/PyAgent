@@ -29,7 +29,7 @@ from .mixins.orchestrator_scan_mixin import OrchestratorScanMixin
 from .mixins.orchestrator_results_mixin import OrchestratorResultsMixin
 
 if TYPE_CHECKING:
-    from src.infrastructure.fleet.fleet_manager import FleetManager
+from src.infrastructure.fleet.fleet_manager import FleetManager
 
 __version__ = VERSION
 
