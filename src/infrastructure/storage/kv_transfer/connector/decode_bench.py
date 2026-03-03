@@ -26,7 +26,7 @@ from src.infrastructure.storage.kv_transfer.connector.base import KVConnectorBas
 from src.infrastructure.storage.kv_transfer.connector.types import KVConnectorMetadata
 
 if TYPE_CHECKING:
-    from src.infrastructure.storage.kv_transfer.connector.types import (
+from src.infrastructure.storage.kv_transfer.connector.types import (
         ForwardContext, KVCacheBlocks, KVTransferConfig, Request)
 
 logger = logging.getLogger(__name__)
