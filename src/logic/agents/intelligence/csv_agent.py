@@ -19,7 +19,7 @@ Csv agent.py module.
 try:
     from .data_intelligence_agent import DataIntelligenceAgent
 except Exception:
-    from src.logic.agents.intelligence.data_intelligence_agent import DataIntelligenceAgent
+from src.logic.agents.intelligence.data_intelligence_agent import DataIntelligenceAgent
 
 
 class CsvAgent(DataIntelligenceAgent):  # pylint: disable=too-many-ancestors
