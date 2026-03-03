@@ -10,7 +10,7 @@ from typing import TYPE_CHECKING
 from src.core.base.BaseUtilities import as_tool
 
 if TYPE_CHECKING:
-from src.logic.agents.system.TopologicalNavigator import TopologicalNavigator
+    from src.logic.agents.system.TopologicalNavigator import TopologicalNavigator
 
 class MapBuilderMixin:
     """Mixin for mapping and parsing code entities in TopologicalNavigator."""
