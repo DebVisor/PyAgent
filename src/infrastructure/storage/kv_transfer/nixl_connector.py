@@ -45,9 +45,9 @@ try:
 except ImportError:
     np = None
 
-    from src.core.lazy_loader import LazyLoader
-    from src.core.rust_bridge import RustBridge
-    from src.infrastructure.storage.kv_transfer.kv_transfer_connector import (
+from src.core.lazy_loader import LazyLoader
+from src.core.rust_bridge import RustBridge
+from src.infrastructure.storage.kv_transfer.kv_transfer_connector import (
     KVConnectorBase, KVTransferConfig)
 
 if TYPE_CHECKING:
