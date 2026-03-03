@@ -26,7 +26,7 @@ from typing import Any, Dict, List, Optional, Type, TYPE_CHECKING
 from src.core.base.version import VERSION, SDK_VERSION
 
 if TYPE_CHECKING:
-    from src.core.base.AgentPluginBase import AgentPluginBase
+from src.core.base.AgentPluginBase import AgentPluginBase
 
 # Optional import for VersionGate
 try:
