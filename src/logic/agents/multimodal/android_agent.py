@@ -29,7 +29,7 @@ from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-    from src.logic.agents.multimodal.core.android_core import AndroidCore
+from src.logic.agents.multimodal.core.android_core import AndroidCore
 
 __version__ = VERSION
 
