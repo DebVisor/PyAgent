@@ -26,7 +26,7 @@ from src.core.base.lifecycle.version import VERSION
 __version__ = VERSION
 
 if TYPE_CHECKING:
-from .subagent_runner import SubagentRunner
+    from .subagent_runner import SubagentRunner
 
 
 class SubagentStatus:
