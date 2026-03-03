@@ -34,11 +34,11 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.progress import (BarColumn, Progress, SpinnerColumn,
                            TaskProgressColumn, TextColumn)
-                           from rich.table import Table
+from rich.table import Table
 
-                           from src.core.base.lifecycle.version import VERSION
-                           from src.core.base.logic.connectivity_manager import ConnectivityManager
-                           from src.infrastructure.compute.backend.local_context_recorder import \
+from src.core.base.lifecycle.version import VERSION
+from src.core.base.logic.connectivity_manager import ConnectivityManager
+from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
 # from functools import lru_cache
