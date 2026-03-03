@@ -18,7 +18,7 @@ from src.core.base.common.types.color_contrast_result import \
 from src.core.base.common.types.wcag_level import WCAGLevel
 
 if TYPE_CHECKING:
-from src.logic.agents.specialists.accessibility_agent import \
+    from src.logic.agents.specialists.accessibility_agent import \
         AccessibilityAgent
 
 
