@@ -27,12 +27,12 @@ class FleetDelegationMixin:
         if agent_type in self.agents:
             sub_agent = self.agents[agent_type]
             if target_file:
-                from pathlib import Path
+from pathlib import Path
                 sub_agent.file_path = Path(target_file)
 
             # Execute via improve_content or similar primary entrypoint
             res = sub_agent.improve_content(prompt)
-            import asyncio
+import asyncio
             if asyncio.iscoroutine(res):
                 return await res
             return res
