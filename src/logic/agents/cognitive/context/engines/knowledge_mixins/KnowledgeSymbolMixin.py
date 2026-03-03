@@ -41,7 +41,7 @@ class KnowledgeSymbolMixin:
 
     def build_symbol_map(self, directory: Any, patterns: dict[str, str]) -> dict[str, list[str]]:
         """Scans a directory for symbols according to provided patterns."""
-        from pathlib import Path
+from pathlib import Path
         symbol_map = {}
         dir_path = Path(directory)
         for ext, pattern in patterns.items():
