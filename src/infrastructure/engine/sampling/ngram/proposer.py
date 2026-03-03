@@ -43,10 +43,10 @@ from src.infrastructure.engine.sampling.ngram.types import (MatchingStrategy,
 
 # Try to import rust_core if available via accelerators module context
 with contextlib.suppress(ImportError):
-    import rust_core
+import rust_core
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 logger = logging.getLogger(__name__)
 
