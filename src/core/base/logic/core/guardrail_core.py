@@ -41,7 +41,7 @@ class GuardrailCore:
     @staticmethod
     def moderate_content(text: str, forbidden_keywords: list[str]) -> Tuple[bool, str]:
         """Simple keyword-based moderation."""
-        import re
+import re
         pattern = r'\b(' + '|'.join(re.escape(k) for k in forbidden_keywords) + r')\b'
         if re.search(pattern, text, re.IGNORECASE):
             return False, "Content contains forbidden keywords."
