@@ -20,9 +20,9 @@ from .analyzer import LogprobsAnalyzer  # noqa: F401
 from .config import (LogprobEntry, LogprobFormat, LogprobsResult,  # noqa: F401
                      PromptLogprobs, SampleLogprobs, TopLogprob,
                      compute_perplexity)
-                     from .engine import LogprobsProcessor, StreamingLogprobs  # noqa: F401
-                     from .storage import FlatLogprobs  # noqa: F401
-                     from .utils import compute_entropy, normalize_logprobs  # noqa: F401
+from .engine import LogprobsProcessor, StreamingLogprobs  # noqa: F401
+from .storage import FlatLogprobs  # noqa: F401
+from .utils import compute_entropy, normalize_logprobs  # noqa: F401
 
 __all__ = [
     "LogprobFormat",
