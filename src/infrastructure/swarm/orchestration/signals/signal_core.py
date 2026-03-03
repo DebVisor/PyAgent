@@ -34,7 +34,7 @@ class SignalCore:
 
     def create_event(self, signal_name: str, data: Any, sender: str) -> dict[str, Any]:
         """Creates a standardized signal event object."""
-        import time
+import time
 
         return {
             "signal": signal_name,
