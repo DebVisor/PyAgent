@@ -24,7 +24,7 @@ from enum import Enum, auto
 from typing import TYPE_CHECKING, Optional
 
 if TYPE_CHECKING:
-from src.infrastructure.engine.decoding.grammar.base import \
+    from src.infrastructure.engine.decoding.grammar.base import \
         StructuredOutputGrammar
 
 
