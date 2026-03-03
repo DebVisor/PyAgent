@@ -38,7 +38,7 @@ def test_broken_community_plugin() -> None:
         print(f"Agent Type: {type(agent).__name__}")
         
         # This should fail gracefully or show it's a stub
-        from src.classes.fleet.ResilientStubs import ResilientStub
+from src.classes.fleet.ResilientStubs import ResilientStub
         if isinstance(agent, ResilientStub):
             print("Successfully caught broken plugin and returned ResilientStub!")
             # Use get_status() to see the real error since __getattr__ traps other field access
