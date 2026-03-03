@@ -20,7 +20,7 @@ from typing import Any, TypeVar, Generic, TYPE_CHECKING
 try:
     import msgspec
     MSGSPEC_AVAILABLE = True
-    from msgspec import msgpack
+from msgspec import msgpack
 except ImportError:
     MSGSPEC_AVAILABLE = False
     msgspec = None
@@ -34,7 +34,7 @@ except ImportError:
     np = None
 
 if TYPE_CHECKING:
-    import torch
+import torch
 
 __all__ = [
     "ZeroCopyEncoder",
