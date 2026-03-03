@@ -28,8 +28,8 @@ from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
-    from .queued_request import QueuedRequest
-    from .request_priority import RequestPriority
+from .queued_request import QueuedRequest
+from .request_priority import RequestPriority
 
 # Infrastructure
 __version__ = VERSION
