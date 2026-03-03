@@ -23,7 +23,7 @@ import time
 
 from src.core.base.common.scaling_core import \
     ScalingCore as StandardScalingCore
-    from src.core.base.lifecycle.version import VERSION
+from src.core.base.lifecycle.version import VERSION
 
 try:
     import rust_core as rc
