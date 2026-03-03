@@ -49,7 +49,7 @@ from src.core.base.mixins.orchestration_mixin import OrchestrationMixin
 from src.core.base.mixins.persistence_mixin import PersistenceMixin
 from src.core.base.mixins.reflection_mixin import ReflectionMixin
 from src.core.base.mixins.security_mixin import SecurityMixin
-    from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
+from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
     from src.core.base.mixins.stream_manager_mixin import StreamManagerMixin
     from src.core.base.mixins.task_manager_mixin import TaskManagerMixin
     from src.core.base.mixins.tool_framework_mixin import ToolFrameworkMixin
