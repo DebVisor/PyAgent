@@ -28,8 +28,8 @@ from .base import MCPToolServer as MCPToolServerBase
 from .local import LocalMCPServer
 from .models import (MCPServerConfig, MCPServerType, MCPSession, SessionState,
                      ToolCall, ToolResult, ToolSchema, ToolStatus)
-                     from .registry import MCPServerRegistry, SessionManager
-                     from .sse import SSEMCPServer
+from .registry import MCPServerRegistry, SessionManager
+from .sse import SSEMCPServer
 
 # For backward compatibility mapping
 MCPToolServer = MCPToolServerBase
