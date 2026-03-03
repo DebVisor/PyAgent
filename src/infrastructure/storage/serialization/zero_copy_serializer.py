@@ -52,7 +52,7 @@ except ImportError:
 if TYPE_CHECKING:
     import torch
 
-__all__ = [
+    __all__ = [
     "ZeroCopyEncoder",
     "ZeroCopyDecoder",
     "encode_with_buffers",
