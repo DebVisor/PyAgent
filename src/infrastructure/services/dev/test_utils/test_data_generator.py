@@ -44,7 +44,7 @@ class TestDataGenerator:
         """
         self.seed = seed
         if seed:
-            import random
+import random
 
             random.seed(seed)
 
