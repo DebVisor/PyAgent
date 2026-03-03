@@ -24,7 +24,7 @@ from typing import TYPE_CHECKING, Dict, List, Optional, Set
 import numpy as np
 
 if TYPE_CHECKING:
-from .adapter import LoRAAdapter
+    from .adapter import LoRAAdapter
 
 
 @dataclass
