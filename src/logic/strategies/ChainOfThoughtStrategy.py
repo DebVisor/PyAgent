@@ -9,10 +9,10 @@ from typing import Dict, List, Optional, TYPE_CHECKING
 import logging
 
 if TYPE_CHECKING:
-from collections.abc import Callable
+    from collections.abc import Callable
     BackendFunction = Callable[[str, str | None, list[dict[str, str]] | None], str]
 
-__version__ = VERSION
+    __version__ = VERSION
 
 class ChainOfThoughtStrategy(AgentStrategy):
     """Chain-of-Thought strategy: Prompt -> Reasoning -> Response."""
