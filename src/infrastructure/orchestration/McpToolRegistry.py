@@ -18,7 +18,7 @@ from typing import Any, Dict, List, TYPE_CHECKING
 from .ToolRegistry import ToolRegistry
 
 if TYPE_CHECKING:
-from ..fleet.FleetManager import FleetManager
+    from ..fleet.FleetManager import FleetManager
 
 class McpToolRegistry(ToolRegistry):
     """Registry specialized for Model Context Protocol (MCP) tools."""
