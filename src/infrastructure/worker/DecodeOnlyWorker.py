@@ -41,8 +41,8 @@ from src.infrastructure.kv_transfer.KVTransferConnector import (
 )
 
 if TYPE_CHECKING:
-    from src.infrastructure.kv_transfer.KVTransferConnector import KVConnectorBase
-    from src.infrastructure.cache.KVCacheManager import KVCacheManager
+from src.infrastructure.kv_transfer.KVTransferConnector import KVConnectorBase
+from src.infrastructure.cache.KVCacheManager import KVCacheManager
 
 logger = logging.getLogger(__name__)
 
