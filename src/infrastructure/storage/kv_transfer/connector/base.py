@@ -25,7 +25,7 @@ from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
-from src.infrastructure.storage.kv_transfer.connector.types import (
+    from src.infrastructure.storage.kv_transfer.connector.types import (
         ForwardContext, KVCacheBlocks, KVConnectorMetadata, KVTransferConfig,
         Request)
 
