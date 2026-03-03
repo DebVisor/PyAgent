@@ -32,23 +32,23 @@ except Exception:
         from .grafana_generator import GrafanaDashboardGenerator as GrafanaGenerator
     except Exception:  # pragma: no cover - optional component
         GrafanaGenerator = None
-        from .issue_category import IssueCategory
-        from .locale_code import LocaleCode
-        from .localized_string import LocalizedString
-        from .metrics_collector import MetricsCollector
-        from .permission_level import PermissionLevel
-        from .release_notes_generator import ReleaseNotesGenerator
+from .issue_category import IssueCategory
+from .locale_code import LocaleCode
+from .localized_string import LocalizedString
+from .metrics_collector import MetricsCollector
+from .permission_level import PermissionLevel
+from .release_notes_generator import ReleaseNotesGenerator
 try:
     from .reports_agent import ReportAgent
 except Exception:  # pragma: no cover - optional component or renamed module
     ReportAgent = None
-    from .report_aggregator import ReportAggregator
-    from .report_annotation import ReportAnnotation
-    from .report_api import ReportAPI
-    from .report_archiver import ReportArchiver
-    from .report_cache import ReportCache
-    from .report_cache_manager import ReportCacheManager
-    from .report_comparator import ReportComparator
+from .report_aggregator import ReportAggregator
+from .report_annotation import ReportAnnotation
+from .report_api import ReportAPI
+from .report_archiver import ReportArchiver
+from .report_cache import ReportCache
+from .report_cache_manager import ReportCacheManager
+from .report_comparator import ReportComparator
     from .report_comparison import ReportComparison
     from .report_exporter import ReportExporter
     from .report_filter import ReportFilter
