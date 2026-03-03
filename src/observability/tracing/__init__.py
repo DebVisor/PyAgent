@@ -9,7 +9,7 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.lazy_loader import ModuleLazyLoader
 
 if TYPE_CHECKING:
-from .open_telemetry_tracer import (
+    from .open_telemetry_tracer import (
         NullSpan, NullTracer, SpanAttributes, SpanTiming, TRACE_HEADERS,
         add_span_attributes, add_span_event, contains_trace_headers,
         create_span, extract_trace_context, extract_trace_headers,
