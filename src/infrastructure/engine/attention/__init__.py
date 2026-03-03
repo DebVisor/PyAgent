@@ -35,7 +35,7 @@ from .attention_backend_registry import (AttentionBackend,  # noqa: F401
                                          NaiveAttentionBackend,
                                          TorchSDPABackend,
                                          get_attention_registry)
-                                         from .batch_dcp_wrapper import (AllReduceStrategy, BatchDCPDecodeWrapper,  # noqa: F401
+from .batch_dcp_wrapper import (AllReduceStrategy, BatchDCPDecodeWrapper,  # noqa: F401
                                 BatchDCPPrefillWrapper, BatchMetadata,
                                 BatchPhase, BatchRequest, DCPPlanConfig,
                                 ExecutionPlan, UnifiedBatchWrapper,
