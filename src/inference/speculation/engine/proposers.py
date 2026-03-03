@@ -24,9 +24,9 @@ from contextlib import suppress
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
-    import numpy as np
+import numpy as np
 
-    from src.core.base.lifecycle.version import VERSION
+from src.core.base.lifecycle.version import VERSION
 
 __version__ = VERSION
 
@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 NUMPY_AVAILABLE = False
 _np = None  # pylint: disable=invalid-name
 with suppress(ImportError):
-    import numpy as _np  # pylint: disable=invalid-name, reimported
+import numpy as _np  # pylint: disable=invalid-name, reimported
 
     NUMPY_AVAILABLE = True
 
