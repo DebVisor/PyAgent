@@ -43,7 +43,7 @@ class RequestSigner:
         Args:
             secret_key: Secret key for signing. If None, uses environment variable.
         """
-        import hmac
+import hmac
 
         self._hmac = hmac
         self.secret_key = (secret_key or os.environ.get("DV_AGENT_SIGNING_KEY", "")).encode()
