@@ -38,6 +38,44 @@ def test_basic_fixes_wrap_main():
     assert "    main()" in replacement
 
 
+def test_indent_after_control_with_comments():
+    """Imports following a control-statement should be indented even if a
+    comment intervenes.
+    """
+    content = (
+        "try:\n"
+        "    pass\n"
+        "# comment\n"
+        "import os\n"
+    )
+    engine = RuleEngine.load_from_dir("src/auto_fix/rules")
+    fixes = engine.evaluate("foo.py", content)
+    assert len(fixes) == 1
+    assert "    import os" in fixes[0].replacement
+
+
+def test_indent_after_type_checking():
+    """Lines immediately after ``if TYPE_CHECKING:`` should be indented.
+
+    Both imports and simple assignments (aliases) are common in these blocks.
+    """
+    content = (
+        "if TYPE_CHECKING:\n"
+        "from typing import List\n"
+        "Alias = int\n"
+        "# comment\n"
+        "print('runtime')\n"
+    )
+    engine = RuleEngine.load_from_dir("src/auto_fix/rules")
+    fixes = engine.evaluate("typing_support.py", content)
+    assert len(fixes) == 1
+    replaced = fixes[0].replacement
+    assert "    from typing import List" in replaced
+    assert "    Alias = int" in replaced
+    # the runtime print should not be indented since it belongs outside
+    assert "print('runtime')" in replaced
+
+
 def test_no_unnecessary_changes():
     """Test that the basic_fixes rule does not produce any fixes if the content is already clean."""
     content = "print('nothing to fix')\n"

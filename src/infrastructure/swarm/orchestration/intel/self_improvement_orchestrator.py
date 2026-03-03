@@ -28,7 +28,7 @@ from src.infrastructure.swarm.orchestration.core.self_improvement_core import \
     SelfImprovementCore
 
 if TYPE_CHECKING:
-from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 
 from src.infrastructure.compute.backend.llm_client import LLMClient
 

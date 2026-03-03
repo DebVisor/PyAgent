@@ -22,7 +22,7 @@ import time
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from .FleetManager import FleetManager
+    from .FleetManager import FleetManager
 
 
 class FleetConsensusManager:

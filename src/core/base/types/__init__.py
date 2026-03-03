@@ -50,21 +50,21 @@ from .ModernizationSuggestion import ModernizationSuggestion as ModernizationSug
 from .MonorepoEntry import MonorepoEntry as MonorepoEntry
 from .OptimizationSuggestion import OptimizationSuggestion as OptimizationSuggestion
 from .OptimizationType import OptimizationType as OptimizationType
-    from .ProfilingCategory import ProfilingCategory as ProfilingCategory
-    from .ProfilingSuggestion import ProfilingSuggestion as ProfilingSuggestion
-    from .QualityScore import QualityScore as QualityScore
-    from .RefactoringPattern import RefactoringPattern as RefactoringPattern
-    from .ReleaseNote import ReleaseNote as ReleaseNote
-    from .ReviewCategory import ReviewCategory as ReviewCategory
-    from .ReviewFinding import ReviewFinding as ReviewFinding
-    from .SearchResult import SearchResult as SearchResult
-    from .SecurityIssueType import SecurityIssueType as SecurityIssueType
-    from .SecurityVulnerability import SecurityVulnerability as SecurityVulnerability
-    from .StyleRule import StyleRule as StyleRule
-    from .StyleRuleSeverity import StyleRuleSeverity as StyleRuleSeverity
-    from .TemplateManager import TemplateManager as TemplateManager
-    from .TestGap import TestGap as TestGap
-    from .VersioningStrategy import VersioningStrategy as VersioningStrategy
-    from .WCAGLevel import WCAGLevel as WCAGLevel
+from .ProfilingCategory import ProfilingCategory as ProfilingCategory
+from .ProfilingSuggestion import ProfilingSuggestion as ProfilingSuggestion
+from .QualityScore import QualityScore as QualityScore
+from .RefactoringPattern import RefactoringPattern as RefactoringPattern
+from .ReleaseNote import ReleaseNote as ReleaseNote
+from .ReviewCategory import ReviewCategory as ReviewCategory
+from .ReviewFinding import ReviewFinding as ReviewFinding
+from .SearchResult import SearchResult as SearchResult
+from .SecurityIssueType import SecurityIssueType as SecurityIssueType
+from .SecurityVulnerability import SecurityVulnerability as SecurityVulnerability
+from .StyleRule import StyleRule as StyleRule
+from .StyleRuleSeverity import StyleRuleSeverity as StyleRuleSeverity
+from .TemplateManager import TemplateManager as TemplateManager
+from .TestGap import TestGap as TestGap
+from .VersioningStrategy import VersioningStrategy as VersioningStrategy
+from .WCAGLevel import WCAGLevel as WCAGLevel
 
 __version__ = VERSION

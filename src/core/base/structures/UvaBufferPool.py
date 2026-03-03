@@ -614,7 +614,7 @@ class UvaBackedTensor:
         else:
             element_size = 4  # Assume float32
         
-        import math
+            import math
         self.size = math.prod(shape) * element_size
         
         # Get or create pool

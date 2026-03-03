@@ -16,7 +16,7 @@ from src.core.base.lifecycle.version import VERSION
 from .agent_strategy import AgentStrategy
 
 if TYPE_CHECKING:
-from collections.abc import Callable
+    from collections.abc import Callable
 
     BackendFunction = Callable[[str, str | None, list[dict[str, str]] | None], str]
 

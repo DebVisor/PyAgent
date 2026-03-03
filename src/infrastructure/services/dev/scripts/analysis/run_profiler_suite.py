@@ -38,7 +38,7 @@ try:
     sys.path.insert(0, str(project_root))
 
     # pylint: disable=wrong-import-position
-from src.observability.profiling.rust_profiler import RustProfiler, create_profiled_rust_core
+    from src.observability.profiling.rust_profiler import RustProfiler, create_profiled_rust_core
     print(f"DEBUG: rust_core dir count: {len(dir(rust_core))}")
 
     profiled_rc = create_profiled_rust_core()

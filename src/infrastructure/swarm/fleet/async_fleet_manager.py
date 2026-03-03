@@ -261,8 +261,8 @@ class AsyncFleetManager(FleetManager):  # pylint: disable=too-many-ancestors
 
 if __name__ == "__main__":
     # Test script
-from src.logic.agents.cognitive.knowledge_agent import KnowledgeAgent
-from src.logic.agents.security.security_guard_agent import SecurityGuardAgent
+    from src.logic.agents.cognitive.knowledge_agent import KnowledgeAgent
+    from src.logic.agents.security.security_guard_agent import SecurityGuardAgent
 
     ROOT_PATH = "."
     afleet = AsyncFleetManager(ROOT_PATH)

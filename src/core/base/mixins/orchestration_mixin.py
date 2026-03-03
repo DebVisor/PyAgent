@@ -100,7 +100,7 @@ class OrchestrationMixin:
             exceeded, reason = getattr(self, "quotas").check_quotas()
             if exceeded:
                 # pylint: disable=import-outside-toplevel
-            from src.core.base.common.base_exceptions import CycleInterrupt
+                from src.core.base.common.base_exceptions import CycleInterrupt
 
                 raise CycleInterrupt(reason)
 
@@ -174,7 +174,7 @@ class OrchestrationMixin:
         try:
             # pylint: disable=import-outside-toplevel
             from src.infrastructure import backend as ab
-                except ImportError:
+        except ImportError:
             return {}
         return ab.get_backend_status()
 
@@ -184,7 +184,7 @@ class OrchestrationMixin:
         try:
             # pylint: disable=import-outside-toplevel
             from src.infrastructure import backend as ab
-                except ImportError:
+        except ImportError:
             return "Backends unavailable"
         return ab.describe_backends()
 

@@ -56,9 +56,9 @@ from .incremental_detokenizer import (  # noqa: F401
 # Phase 30: Output Processor
 from .output_processor import (EngineCoreRequest, EventType, IterationStats,  # noqa: F401
                                LoRARequest, LoRARequestStates, OutputProcessor,
-                               OutputProcessorOutput, ParentRequest)
-                               from .output_processor import RequestEvent as OutputRequestEvent  # noqa: F401
-                               from .output_processor import (RequestOutput, RequestOutputCollector,  # noqa: F401
+                               OutputProcessorOutput, ParentRequest,
+                               RequestEvent as OutputRequestEvent,
+                               RequestOutput, RequestOutputCollector,  # noqa: F401
                                RequestState, SamplingParams)
 # Phase 30: Prefix Cache Manager
 from .prefix_cache_manager import (BlockHash, CacheBlock, HashAlgorithm,  # noqa: F401
@@ -68,7 +68,8 @@ from .prefix_cache_manager import (BlockHash, CacheBlock, HashAlgorithm,  # noqa
                                    compute_prefix_match_rust,
                                    get_hash_function, hash_block_tokens,
                                    hash_block_tokens_rust, init_none_hash)
-                                   from .request_lifecycle import (FinishReason, Request, RequestEvent,  # noqa: F401
+# Phase 30: Request Lifecycle
+from .request_lifecycle import (FinishReason, Request, RequestEvent,  # noqa: F401
                                 RequestEventType, RequestQueue, RequestStatus,
                                 RequestTracker)
 

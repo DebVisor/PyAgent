@@ -25,7 +25,7 @@ from typing import TYPE_CHECKING, Any
 from src.core.base.common.models import BatchRequest
 
 if TYPE_CHECKING:
-from src.core.base.common.batch_core import BatchCore
+    from src.core.base.common.batch_core import BatchCore
 
 __all__ = ["BatchRequest", "RequestBatcher"]
 
@@ -38,7 +38,7 @@ class RequestBatcher:
     """
 
     def __init__(self, batch_size: int = 10) -> None:
-from src.core.base.common.batch_core import BatchCore
+        from src.core.base.common.batch_core import BatchCore
         self._core: BatchCore = BatchCore(batch_size=batch_size)
 
     def add_request(self, request: Any) -> None:

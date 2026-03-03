@@ -11,10 +11,9 @@ import logging
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from src.infrastructure.compute.backend.local_context_recorder import \
-        LocalContextRecorder
-from src.infrastructure.compute.backend.sql_metadata_handler import SqlMetadataHandler
-from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
+    from src.infrastructure.compute.backend.local_context_recorder import LocalContextRecorder
+    from src.infrastructure.compute.backend.sql_metadata_handler import SqlMetadataHandler
+    from src.infrastructure.swarm.fleet.fleet_manager import FleetManager
 # Note: runtime imports avoided to prevent circular imports; type-only imports above
 from src.infrastructure.swarm.orchestration.healing.self_healing_orchestrator import SelfHealingOrchestrator
 from src.infrastructure.swarm.orchestration.intel.self_improvement_orchestrator import SelfImprovementOrchestrator

@@ -50,7 +50,7 @@ from .environment import EnvironmentProvisioner, DataFactory
 from .dependency_injection import DependencyInjector as DependencyInjector
 from .scheduling import CrossBrowserRunner, TestScheduler
 from .parallelization import ParallelizationStrategy as ParallelizationStrategy
-    from .test_management import (
+from .test_management import (
         BaselineComparisonResult, BaselineManager, DIContainer, TestPrioritizer,
         FlakinessDetector, QuarantineManager, ImpactAnalyzer, ContractValidator
     )

@@ -37,7 +37,7 @@ class FileLockManager:
     """
 
     def __init__(self, core: Optional[Any] = None) -> None:
-from src.core.base.common.lock_core import LockCore
+        from src.core.base.common.lock_core import LockCore
         self._core = core or LockCore()
         self.lock_timeout = 300.0
         self.locks: Dict[str, LockProxy] = {}

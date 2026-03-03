@@ -44,7 +44,7 @@ class MistralTokenizer(BaseTokenizer):
             self._tokenizer = MT.from_model(self.config.model_name)
         except ImportError:
             # pylint: disable=import-outside-toplevel
-from transformers import AutoTokenizer
+            from transformers import AutoTokenizer
 
             self._tokenizer = AutoTokenizer.from_pretrained(
                 self.config.model_name,

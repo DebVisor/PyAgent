@@ -30,33 +30,33 @@ from typing import Any, Dict, List, Optional, cast, TYPE_CHECKING
 from collections.abc import Callable
 
 if TYPE_CHECKING:
-from src.logic.agents.cognitive.LongTermMemory import LongTermMemory
-from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
-from src.infrastructure.orchestration.ToolRegistry import ToolRegistry
-from src.core.base.models import (
-    AgentConfig,
-    AgentState,
-    CacheEntry,
-    ConversationMessage,
-    EventHook,
-    EventType,
-    HealthCheckResult,
-    MessageRole,
-    PromptTemplate,
-    ResponseQuality,
-    AgentPriority,
-)
-from src.core.base.AgentCore import BaseCore
-from src.core.base.BaseAgentCore import BaseAgentCore
-from src.core.base.registry import AgentRegistry
-from src.core.base.ShardedKnowledgeCore import ShardedKnowledgeCore
-from src.core.base.state.agent_state_manager import AgentStateManager
-from src.core.base.verification import AgentVerifier
-from src.core.base.delegation import AgentDelegator
-from src.core.base.shell import ShellExecutor
-# from src.infrastructure.backend.LocalContextRecorder import LocalContextRecorder # Moved to __init__
-from src.core.base.managers.ResourceQuotaManager import ResourceQuotaManager, QuotaConfig
-from src.infrastructure.compute.backend.LocalContextRecorder import LocalContextRecorder
+    from src.logic.agents.cognitive.LongTermMemory import LongTermMemory
+    from src.infrastructure.orchestration.SignalRegistry import SignalRegistry
+    from src.infrastructure.orchestration.ToolRegistry import ToolRegistry
+    from src.core.base.models import (
+        AgentConfig,
+        AgentState,
+        CacheEntry,
+        ConversationMessage,
+        EventHook,
+        EventType,
+        HealthCheckResult,
+        MessageRole,
+        PromptTemplate,
+        ResponseQuality,
+        AgentPriority,
+    )
+    from src.core.base.AgentCore import BaseCore
+    from src.core.base.BaseAgentCore import BaseAgentCore
+    from src.core.base.registry import AgentRegistry
+    from src.core.base.ShardedKnowledgeCore import ShardedKnowledgeCore
+    from src.core.base.state.agent_state_manager import AgentStateManager
+    from src.core.base.verification import AgentVerifier
+    from src.core.base.delegation import AgentDelegator
+    from src.core.base.shell import ShellExecutor
+    # from src.infrastructure.backend.LocalContextRecorder import LocalContextRecorder # Moved to __init__
+    from src.core.base.managers.ResourceQuotaManager import ResourceQuotaManager, QuotaConfig
+    from src.infrastructure.compute.backend.LocalContextRecorder import LocalContextRecorder
 
 try:
     import requests
@@ -300,10 +300,10 @@ class BaseAgent:
             
         # Fallback to local lazy loading
         if self._local_global_context is None:
-             try:
-                 from src.logic.agents.cognitive.context.engines.GlobalContextEngine import GlobalContextEngine
+            try:
+                from src.logic.agents.cognitive.context.engines.GlobalContextEngine import GlobalContextEngine
                 self._local_global_context = GlobalContextEngine(self._workspace_root)
-             except (ImportError, ValueError):
+            except (ImportError, ValueError):
                 pass
         return self._local_global_context
 

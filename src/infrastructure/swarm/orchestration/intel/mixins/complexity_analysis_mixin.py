@@ -12,8 +12,7 @@ import os
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from src.infrastructure.swarm.orchestration.intel.self_improvement_analysis import \
-        SelfImprovementAnalysis
+    from src.infrastructure.swarm.orchestration.intel.self_improvement_analysis import SelfImprovementAnalysis
 
 
 class ComplexityAnalysisMixin:

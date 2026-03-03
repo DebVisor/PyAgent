@@ -179,14 +179,16 @@ def indent_imports_after_control(lines: list[str]) -> list[str]:
     """Indent imports that immediately follow control-flow headers (try/except/else/finally).
 
     This generalizes `indent_imports_after_try` to handle other control-flow headers
-    which may have lost their indented blocks during prior transformations.
+    which may have lost their indented blocks during prior transformations.  We
+    also treat ``if TYPE_CHECKING:`` as a control header so that dedented
+    imports can be pushed back inside the block.
     """
     out: list[str] = list(lines)
     i = 0
     control_kw = ("try", "except", "else", "finally")
     while i < len(out) - 1:
         line = out[i]
-        m = re.match(r"^(\s*)(try|except|else|finally)\s*:\s*$", line)
+        m = re.match(r"^(\s*)(?:try|except|else|finally|if\s+TYPE_CHECKING)\s*:\s*$", line)
         if m:
             base = m.group(1)
             block_indent = base + "    "

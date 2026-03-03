@@ -46,8 +46,8 @@ class RewardModelAgent(BaseAgent):
         try:
             res = self.improve_content(ranking_prompt)
             # Try to parse JSON from response
-import json
-import re
+            import json
+            import re
             match = re.search(r"(\{.*\})", res.replace("\n", " "), re.DOTALL)
             if match:
                 data = json.loads(match.group(1))
