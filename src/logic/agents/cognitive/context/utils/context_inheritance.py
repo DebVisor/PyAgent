@@ -33,7 +33,7 @@ class ContextInheritance:
     """Manages context inheritance from parent files.
 
     Provides functionality for child contexts to inherit
-    from parent contexts.
+from parent contexts.
 
     Example:
         >>> inheritance = ContextInheritance()
