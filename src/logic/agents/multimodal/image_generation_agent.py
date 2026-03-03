@@ -35,8 +35,8 @@ except ImportError:
     FluxPipeline = None
     HAS_DIFFUSERS = False
 
-    from src.core.base.lifecycle.base_agent import BaseAgent
-    from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
+from src.core.base.lifecycle.base_agent import BaseAgent
+from src.core.base.mixins.task_queue_mixin import TaskQueueMixin
 
 
 class ImageGenerationAgent(BaseAgent, TaskQueueMixin):
