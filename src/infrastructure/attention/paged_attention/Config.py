@@ -7,7 +7,7 @@ import numpy as np
 from .Enums import KVCacheDtype
 
 if TYPE_CHECKING:
-from numpy.typing import NDArray
+    from numpy.typing import NDArray
 
 @dataclass
 class AttentionConfig:
