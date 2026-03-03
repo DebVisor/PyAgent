@@ -25,7 +25,7 @@ import numpy as np
 try:
     from numpy.typing import NDArray
 except ImportError:
-    from typing import Any
+from typing import Any
 
     NDArray = Any
 
