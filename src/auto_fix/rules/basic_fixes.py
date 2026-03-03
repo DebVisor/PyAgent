@@ -217,6 +217,44 @@ def indent_after_type_checking(lines: List[str]) -> List[str]:
         i += 1
     return out
 
+
+def indent_after_header(lines: List[str]) -> List[str]:
+    """Indent the first real statement following any block header.
+
+    This catch-all rule helps repair files where a control or definition
+    header (``def``, ``class``, ``if``, ``for``, etc.) is immediately
+    followed by a non-indented line.  Pytest and the compiler often
+    complain with ``IndentationError: expected an indented block`` in
+    these situations.  We only adjust the *next non-blank, non-comment*
+    line and leave existing indentation alone if it already exceeds the
+    header level.  This keeps us conservative while fixing the common
+    pattern discovered during the syntax audit.
+    """
+    out = list(lines)
+    header_re = re.compile(r"^\s*(?:if|for|while|with|def|class|elif|else|try|except|finally)\b.*:\s*$")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if header_re.match(line):
+            base_indent = len(line) - len(line.lstrip())
+            # find next non-blank, non-comment line
+            j = i + 1
+            while j < len(lines) and not lines[j].strip():
+                j += 1
+            if j < len(lines):
+                nxt = lines[j]
+                stripped = nxt.strip()
+                if not stripped.startswith("#"):
+                    nxt_indent = len(nxt) - len(nxt.lstrip())
+                    # if it's dedented or at same level, indent it
+                    if nxt_indent <= base_indent:
+                        desired = base_indent + 4
+                        out[j] = " " * desired + stripped + ("\n" if nxt.endswith("\n") else "")
+            i = j
+        else:
+            i += 1
+    return out
+
 # ---------------------------------------------------------------------------
 
 def check(content: str) -> list[dict]:
@@ -249,6 +287,7 @@ def check(content: str) -> list[dict]:
     lines = dedent_imports(lines)
     lines = indent_imports_after_control(lines)
     lines = indent_after_type_checking(lines)
+    lines = indent_after_header(lines)
     lines = safe_wrap_main(lines)
 
     new_text = "".join(lines)

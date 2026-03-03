@@ -41,7 +41,6 @@ from src.core.base.mixins.governance_mixin import GovernanceMixin
 from src.core.base.mixins.config_mixin import ConfigMixin
 from src.core.base.mixins.environment_mixin import EnvironmentMixin
 from src.core.base.mixins.expertise_mixin import ExpertiseMixin
-from src.core.base.mixins.governance_mixin import GovernanceMixin
 from src.core.base.mixins.identity_mixin import IdentityMixin
 from src.core.base.mixins.knowledge_mixin import KnowledgeMixin
 from src.core.base.mixins.multimodal_mixin import MultimodalMixin

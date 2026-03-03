@@ -76,6 +76,32 @@ def test_indent_after_type_checking():
     assert "print('runtime')" in replaced
 
 
+def test_indent_after_header():
+    """Statements immediately following a header must be indented.
+
+    This covers ``def``/``class`` and control structures.  The fix only
+    touches the first real line after the header and ignores blank lines or
+    comments.
+    """
+    content = (
+        "def foo():\n"
+        "import hashlib\n"
+        "# comment\n"
+        "return 5\n"
+        "\n"
+        "if bar:\n"
+        "print('oops')\n"
+    )
+    engine = RuleEngine.load_from_dir("src/auto_fix/rules")
+    fixes = engine.evaluate("header.py", content)
+    assert len(fixes) == 1
+    replaced = fixes[0].replacement
+    assert "    import hashlib" in replaced
+    assert "    print('oops')" in replaced
+    # the comment following foo() should stay at top indentation
+    assert "# comment" in replaced
+
+
 def test_no_unnecessary_changes():
     """Test that the basic_fixes rule does not produce any fixes if the content is already clean."""
     content = "print('nothing to fix')\n"
