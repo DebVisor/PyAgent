@@ -25,10 +25,10 @@ from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
-    from src.logic.agents.specialists.mixins.handy_core_mixin import HandyCoreMixin
-    from src.logic.agents.specialists.mixins.handy_file_system_mixin import \
+from src.logic.agents.specialists.mixins.handy_core_mixin import HandyCoreMixin
+from src.logic.agents.specialists.mixins.handy_file_system_mixin import \
     HandyFileSystemMixin
-    from src.logic.agents.specialists.mixins.handy_terminal_mixin import \
+from src.logic.agents.specialists.mixins.handy_terminal_mixin import \
     HandyTerminalMixin
 
 __version__ = VERSION
