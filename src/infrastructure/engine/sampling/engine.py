@@ -33,7 +33,7 @@ import numpy as np
 from .base import Sampler, _sample_from_probs, _softmax
 from .kernels import (GumbelSampler, PenaltySampler, RepetitionPenaltySampler,
                       TemperatureSampler, TopKTopPSampler)
-                      from .params import SamplingParams, SamplingState
+from .params import SamplingParams, SamplingState
 
 
 class SamplingPipeline:
