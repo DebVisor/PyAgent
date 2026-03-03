@@ -29,7 +29,7 @@ from typing import TYPE_CHECKING
 from .config import SpecDecodeConfig, VerificationStrategy
 
 if TYPE_CHECKING:
-from .metadata import SpecDecodeMetadataV2, TreeVerificationMetadata
+    from .metadata import SpecDecodeMetadataV2, TreeVerificationMetadata
 
 try:
     import rust_core
