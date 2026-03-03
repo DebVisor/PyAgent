@@ -20,7 +20,7 @@ from collections.abc import Callable
 from .ToolCore import ToolCore
 
 if TYPE_CHECKING:
-    from ..fleet.FleetManager import FleetManager
+from ..fleet.FleetManager import FleetManager
 
 class ToolRegistry:
     """Central registry for managing and invoking PyAgent tools across all specialists."""
