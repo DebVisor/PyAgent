@@ -19,7 +19,7 @@ class SystemHealthMonitor(StandardHealthCore):
         window_size: int = 100,
     ) -> None:
         super().__init__()
-        from src.observability.stats.core.stability_core import StabilityCore
+from src.observability.stats.core.stability_core import StabilityCore
 
         self.health_threshold = health_threshold
         self.window_size = window_size
