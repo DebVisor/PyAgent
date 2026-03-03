@@ -39,7 +39,7 @@ class RequestCompressor:
         Args:
             compression_level: Compression level (1 - 9, default 6).
         """
-        import zlib
+import zlib
 
         self._zlib = zlib
         self.compression_level = compression_level
