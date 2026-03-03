@@ -36,13 +36,13 @@ class ActionSpace:
 
     def get_available_actions(self, current_time: float = None) -> List[str]:
         """Returns actions not on cooldown."""
-        import time
+import time
         now = current_time or time.time()
         return [a for a in self.actions if self._cooldowns.get(a, 0) <= now]
 
     def record_action(self, action: str, timestamp: float = None) -> None:
         """Records an action and applies cooldown."""
-        import time
+import time
         now = timestamp or time.time()
         self._action_history.append((action, now))
         if action in self.metadata:
