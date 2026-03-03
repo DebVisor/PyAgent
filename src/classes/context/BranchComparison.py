@@ -6,16 +6,16 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING
 if TYPE_CHECKING:
-from src.classes.base_agent import BaseAgent
-from dataclasses import dataclass, field
-from datetime import datetime
-from enum import Enum
-from pathlib import Path
-import hashlib
-import json
-import logging
-import re
-import zlib
+    from src.classes.base_agent import BaseAgent
+    from dataclasses import dataclass, field
+    from datetime import datetime
+    from enum import Enum
+    from pathlib import Path
+    import hashlib
+    import json
+    import logging
+    import re
+    import zlib
 
 @dataclass
 class BranchComparison:
