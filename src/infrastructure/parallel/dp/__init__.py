@@ -6,11 +6,11 @@ DataParallelCoordinator Package.
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-from .types import DPRole, WorkerHealth, LoadBalanceStrategy, DPConfig, WorkerState, StepState, WaveState
-from .balancer import P2CLoadBalancer
-from .engine import DPEngineCoreProc
-from .hierarchical import HierarchicalDPCoordinator
-from .collectives import dp_collective_all_reduce
+    from .types import DPRole, WorkerHealth, LoadBalanceStrategy, DPConfig, WorkerState, StepState, WaveState
+    from .balancer import P2CLoadBalancer
+    from .engine import DPEngineCoreProc
+    from .hierarchical import HierarchicalDPCoordinator
+    from .collectives import dp_collective_all_reduce
 
 def __getattr__(name: str) -> Any:
     if name in ("DPRole", "WorkerHealth", "LoadBalanceStrategy", "DPConfig", "WorkerState", "StepState", "WaveState"):
