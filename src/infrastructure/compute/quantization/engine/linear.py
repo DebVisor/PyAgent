@@ -22,7 +22,7 @@ from .config import QuantStrategy
 from .tensor import QuantizedTensor
 
 if TYPE_CHECKING:
-    from numpy.typing import NDArray
+from numpy.typing import NDArray
 
 """
 Linear.py module.
@@ -37,7 +37,7 @@ class LinearQuantizer(Quantizer):
         weight: NDArray[np.float32],
     ) -> QuantizedTensor:
         """Quantizes a float matrix into the configured bit-depth."""
-        from .utils import pack_int4
+from .utils import pack_int4
 
         original_shape = weight.shape
 
