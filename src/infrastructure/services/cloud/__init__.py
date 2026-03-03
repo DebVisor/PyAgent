@@ -26,12 +26,12 @@ __all__: list[str] = []
 
 def __getattr__(name: str) -> Any:
     if name in ("CloudProviderBase", "InferenceRequest", "InferenceResponse"):
-        from .base import CloudProviderBase, InferenceRequest, InferenceResponse
+from .base import CloudProviderBase, InferenceRequest, InferenceResponse
 
         return {"CloudProviderBase": CloudProviderBase, "InferenceRequest": InferenceRequest, "InferenceResponse": InferenceResponse}[name]
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 if TYPE_CHECKING:
-    from .base import CloudProviderBase, InferenceRequest, InferenceResponse
+from .base import CloudProviderBase, InferenceRequest, InferenceResponse
 
