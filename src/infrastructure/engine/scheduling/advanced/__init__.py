@@ -18,9 +18,9 @@
 
 from .config import (PreemptionReason, RequestPriority, RequestState,  # noqa: F401
                      SchedulerConfig)
-                     from .queue import PriorityRequestQueue  # noqa: F401
-                     from .request import RequestMetrics, ScheduledRequest  # noqa: F401
-                     from .scheduler import (AdvancedRequestScheduler, create_scheduler,  # noqa: F401
+from .queue import PriorityRequestQueue  # noqa: F401
+from .request import RequestMetrics, ScheduledRequest  # noqa: F401
+from .scheduler import (AdvancedRequestScheduler, create_scheduler,  # noqa: F401
                         priority_from_string)
 
 __all__ = [
