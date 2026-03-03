@@ -18,8 +18,8 @@ except ImportError:
     torch = None  # type: ignore
     F = None  # type: ignore
 
-    from src.infrastructure.ssm.mamba.config import MambaConfig, MambaState, MambaOutput
-    from src.infrastructure.ssm.mamba.ops import CausalConv1d, SelectiveScan
+from src.infrastructure.ssm.mamba.config import MambaConfig, MambaState, MambaOutput
+from src.infrastructure.ssm.mamba.ops import CausalConv1d, SelectiveScan
 
 
 class MambaMixer:
