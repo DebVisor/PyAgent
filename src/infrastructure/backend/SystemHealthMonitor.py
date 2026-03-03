@@ -37,7 +37,7 @@ class SystemHealthMonitor:
         health_threshold: float = 0.8,
         window_size: int = 100,
     ) -> None:
-        from src.observability.stats.core.StabilityCore import StabilityCore
+from src.observability.stats.core.StabilityCore import StabilityCore
         self.health_threshold = health_threshold
         self.window_size = window_size
         self.core = StabilityCore()
