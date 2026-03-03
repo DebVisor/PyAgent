@@ -9,7 +9,7 @@ from src.core.base.lifecycle.version import VERSION
 from src.core.lazy_loader import ModuleLazyLoader
 
 if TYPE_CHECKING:
-from .auto_fix_suggester import AutoFixSuggester
+    from .auto_fix_suggester import AutoFixSuggester
 try:
     from .blame_info import BlameInfo
 except Exception:  # pragma: no cover - optional component may be absent
