@@ -23,7 +23,7 @@ from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.services.plugins.core.import_healer_core import \
     ImportHealerCore
-    from src.observability.structured_logger import StructuredLogger
+from src.observability.structured_logger import StructuredLogger
 
 __version__ = VERSION
 
