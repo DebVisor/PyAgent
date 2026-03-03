@@ -25,8 +25,8 @@ import numpy as np
 from .config import QuantConfig, QuantScheme, QuantStrategy
 
 if TYPE_CHECKING:
-from numpy.typing import NDArray
-from .tensor import QuantizedTensor
+    from numpy.typing import NDArray
+    from .tensor import QuantizedTensor
 
 
 def quantize_tensor(
