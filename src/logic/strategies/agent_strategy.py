@@ -27,7 +27,7 @@ if TYPE_CHECKING:
 
     BackendFunction = Callable[[str, str | None, list[dict[str, str]] | None], str]
 
-__version__ = VERSION
+    __version__ = VERSION
 
 
 class AgentStrategy(ABC):
