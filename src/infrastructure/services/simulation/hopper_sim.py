@@ -26,7 +26,7 @@ from enum import Enum, auto
 from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.services.simulation.core.simulation_core import \
     SimulationCore
-    from src.observability.structured_logger import StructuredLogger
+from src.observability.structured_logger import StructuredLogger
 
 __version__ = VERSION
 
