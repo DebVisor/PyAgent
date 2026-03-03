@@ -30,7 +30,7 @@ class AgentComposer:
     """
 
     def __init__(self) -> None:
-        from src.core.base.common.orchestration_core import OrchestrationCore
+from src.core.base.common.orchestration_core import OrchestrationCore
         self._core = OrchestrationCore()
 
     def add_agent(self, agent: Any) -> None:
@@ -44,7 +44,7 @@ class ModelSelector:
     """
 
     def __init__(self) -> None:
-        from src.core.base.common.model_selector_core import ModelSelectorCore
+from src.core.base.common.model_selector_core import ModelSelectorCore
         self._core = ModelSelectorCore()
 
     def select(self, agent_type: str) -> str:
