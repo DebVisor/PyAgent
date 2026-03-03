@@ -38,7 +38,7 @@ class VllmNativeBackend(LLMBackend):
         system_prompt: str = "You are a helpful assistant.",
         **kwargs,
     ) -> str:
-        import time
+import time
 
         start_t = time.time()
         try:
