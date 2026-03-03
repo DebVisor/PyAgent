@@ -42,7 +42,7 @@ class KnowledgeGraphAssistant:
 
     def generate_mermaid(self, index: dict[str, list[str]]) -> str:
         """Exports the current knowledge graph as a Mermaid string."""
-        from pathlib import Path
+from pathlib import Path
         lines = ["graph TD"]
         # Track edge combinations to prevent duplicates
         edges = set()
