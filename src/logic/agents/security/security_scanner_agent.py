@@ -22,8 +22,8 @@ import re
 from src.core.base.common.types.security_issue_type import SecurityIssueType
 from src.core.base.common.types.security_vulnerability import \
     SecurityVulnerability
-    from src.core.base.lifecycle.base_agent import BaseAgent
-    from src.core.base.lifecycle.version import VERSION
+from src.core.base.lifecycle.base_agent import BaseAgent
+from src.core.base.lifecycle.version import VERSION
 
 __version__ = VERSION
 
