@@ -27,9 +27,9 @@ import itertools
 from collections import defaultdict
 from collections.abc import (Callable, Generator, Hashable, Iterable, Iterator,
                              Mapping)
-                             from typing import Any, Generic, Literal, TypeVar
+from typing import Any, Generic, Literal, TypeVar
 
-                             from typing_extensions import TypeIs
+from typing_extensions import TypeIs
 
 T = TypeVar("T")
 K = TypeVar("K", bound=Hashable)
