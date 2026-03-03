@@ -27,7 +27,7 @@ from src.core.base.common.models import BatchRequest
 if TYPE_CHECKING:
     from src.core.base.common.batch_core import BatchCore
 
-__all__ = ["BatchRequest", "RequestBatcher"]
+    __all__ = ["BatchRequest", "RequestBatcher"]
 
 
 @dataclass
