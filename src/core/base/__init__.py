@@ -20,7 +20,7 @@ import sys
 try:
     # Ensure imports using the uppercase module name succeed on case-insensitive
     # filesystems by aliasing the lowercase-loaded module into sys.modules.
-import src.core.base.version as _version_mod
+    import src.core.base.version as _version_mod
     sys.modules.setdefault("src.core.base.Version", sys.modules.get("src.core.base.version", _version_mod))
 except Exception:
     # Best-effort shim; if version can't be imported yet, don't fail package import
