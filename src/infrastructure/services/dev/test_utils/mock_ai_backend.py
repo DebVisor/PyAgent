@@ -27,8 +27,8 @@ from src.core.base.lifecycle.version import VERSION
 from src.infrastructure.compute.backend.local_context_recorder import \
     LocalContextRecorder
 
-    from .mock_response import MockResponse
-    from .mock_response_type import MockResponseType
+from .mock_response import MockResponse
+from .mock_response_type import MockResponseType
 
 # Infrastructure
 __version__ = VERSION
