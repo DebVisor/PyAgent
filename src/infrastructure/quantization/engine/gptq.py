@@ -27,7 +27,7 @@ class GPTQQuantizer(Quantizer):
         weight: NDArray[np.float32],
         hessian: NDArray[np.float32] | None = None,
     ) -> QuantizedTensor:
-        from .utils import pack_int4
+from .utils import pack_int4
         out_features, in_features = weight.shape
         
         if hessian is None:
