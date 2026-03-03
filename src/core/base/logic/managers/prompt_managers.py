@@ -30,7 +30,7 @@ class PromptTemplateManager:
     """
 
     def __init__(self) -> None:
-        from src.core.base.common.prompt_core import PromptCore
+from src.core.base.common.prompt_core import PromptCore
         self._core = PromptCore()
 
     def register_template(self, template: PromptTemplate) -> None:
