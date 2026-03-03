@@ -35,7 +35,7 @@ from typing import (
 from functools import wraps
 
 if TYPE_CHECKING:
-    from typing import ClassVar
+from typing import ClassVar
 
 logger = logging.getLogger(__name__)
 
