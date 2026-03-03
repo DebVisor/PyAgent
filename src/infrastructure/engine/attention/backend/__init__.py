@@ -23,10 +23,10 @@ from .flash import FlashAttentionBackend  # noqa: F401
 from .flashinfer import FlashInferBackend  # noqa: F401
 from .models import (AttentionBackendEnum, AttentionCapabilities,  # noqa: F401
                      AttentionMetadata, AttentionType)
-                     from .naive import NaiveAttentionBackend  # noqa: F401
-                     from .packkv import PackKVAttentionBackend  # noqa: F401
-                     from .registry import AttentionBackendRegistry, get_attention_registry  # noqa: F401
-                     from .sdpa import TorchSDPABackend  # noqa: F401
+from .naive import NaiveAttentionBackend  # noqa: F401
+from .packkv import PackKVAttentionBackend  # noqa: F401
+from .registry import AttentionBackendRegistry, get_attention_registry  # noqa: F401
+from .sdpa import TorchSDPABackend  # noqa: F401
 
 __all__ = [
     "AttentionBackend",
