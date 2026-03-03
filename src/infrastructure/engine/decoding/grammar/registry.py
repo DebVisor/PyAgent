@@ -29,9 +29,9 @@ import numpy as np
 
 from .base import (StructuredOutputGrammar, StructuredOutputOptions,
                    StructuredOutputsParams)
-                   from .ebnf_grammar import EBNFGrammar
-                   from .json_constraint import JSONSchemaGrammar
-                   from .regex_constraint import ChoiceGrammar, RegexGrammar
+from .ebnf_grammar import EBNFGrammar
+from .json_constraint import JSONSchemaGrammar
+from .regex_constraint import ChoiceGrammar, RegexGrammar
 
 logger = logging.getLogger(__name__)
 
