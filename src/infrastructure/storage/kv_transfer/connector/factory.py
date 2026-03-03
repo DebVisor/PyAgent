@@ -26,8 +26,8 @@ from src.infrastructure.storage.kv_transfer.connector.decode_bench import \
     DecodeBenchConnector
 
 if TYPE_CHECKING:
-    from src.infrastructure.storage.kv_transfer.connector.base import KVConnectorBase
-    from src.infrastructure.storage.kv_transfer.connector.types import KVTransferConfig
+from src.infrastructure.storage.kv_transfer.connector.base import KVConnectorBase
+from src.infrastructure.storage.kv_transfer.connector.types import KVTransferConfig
 
 logger = logging.getLogger(__name__)
 
