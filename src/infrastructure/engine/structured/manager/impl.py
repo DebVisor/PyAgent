@@ -42,7 +42,7 @@ class SimpleRegexGrammar(StructuredOutputGrammar):
     ) -> None:
         super().__init__(grammar_spec, vocab_size, request_id)
 
-        import re
+import re
 
         self._pattern = re.compile(grammar_spec.spec)
         self._generated_text = ""
