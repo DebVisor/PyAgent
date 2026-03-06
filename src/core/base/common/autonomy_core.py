@@ -16,7 +16,8 @@
 
 from typing import List, Optional
 
-from .base_core import BaseCore
+# Use absolute import to avoid issues when module is executed in isolation
+from src.core.base.common.base_core import BaseCore
 
 try:
     import rust_core as rc

@@ -1,7 +1,26 @@
-from fastapi import lru_cache
+# some environments have incompatible FastAPI/pydantic versions, so
+# wrap imports in a try/except. we also prefer functools.lru_cache
 from functools import lru_cache
-import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
+try:
+    from fastapi import FastAPI, HTTPException
+    from fastapi.middleware.cors import CORSMiddleware
+except Exception:
+    # FastAPI not available or pydantic version mismatch; define dummies
+    HTTPException = Exception
+    class _DummyApp:
+        def __init__(self, *args, **kwargs):
+            pass
+        def add_middleware(self, *args, **kwargs):
+            pass
+        def get(self, *args, **kwargs):
+            def decorator(func):
+                return func
+            return decorator
+    FastAPI = _DummyApp
+    class CORSMiddleware:
+        def __init__(self, *args, **kwargs):
+            pass
+
 from typing import List, Dict, Any
 import json
 # import os

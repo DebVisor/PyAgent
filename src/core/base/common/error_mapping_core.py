@@ -20,7 +20,7 @@
 
 from typing import Dict, Optional
 
-from .base_core import BaseCore
+from src.core.base.common.base_core import BaseCore
 
 
 class ErrorMappingCore(BaseCore):

@@ -24,6 +24,14 @@ import time
 from typing import Union, Callable, Any
 from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.common.file_system_core import FileSystemCore
+
+# Regex for matching ANSI escape sequences (CSI codes)
+_ansi_re = re.compile(r"\x1B\[[0-?]*[ -/]*[@-~]")
+
+def strip_ansi_codes(text: str) -> str:
+    """Remove ANSI escape sequences from a string."""
+    return _ansi_re.sub("", text)
+
 _fs = FileSystemCore()
 
 def _bulk_replace_python_fallback(file_paths: list[Union[str, Path]], old_pattern: str, new_string: str, use_regex: bool) -> dict[str, bool]:

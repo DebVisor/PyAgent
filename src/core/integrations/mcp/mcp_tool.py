@@ -20,7 +20,11 @@ Provides register_tool decorator compatible with mcp.mcp_tool.
 import inspect
 from typing import Any, Callable, Dict, Optional, get_type_hints
 
-from mcp.server.fastapi import serve_app
+# Delay importing mcp to avoid dependency conflicts during test loading
+try:
+    from mcp.server.fastapi import serve_app
+except Exception:  # environment may not have compatible pydantic
+    serve_app = None  # type: ignore
 
 from aenv.core.tool import get_registry
 

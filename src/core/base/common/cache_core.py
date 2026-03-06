@@ -25,7 +25,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from .base_core import BaseCore
+from src.core.base.common.base_core import BaseCore
 
 try:
     import rust_core as rc

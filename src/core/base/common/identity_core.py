@@ -22,8 +22,9 @@ import uuid
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
-from ..lifecycle.version import SDK_VERSION
-from .base_core import BaseCore
+# using absolute path because some tests load this module directly
+from src.core.base.lifecycle.version import SDK_VERSION
+from src.core.base.common.base_core import BaseCore
 
 try:
     import rust_core as rc

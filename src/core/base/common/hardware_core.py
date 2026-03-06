@@ -21,7 +21,7 @@ Core logic for Hardware Acceleration and NPU interaction.
 import logging
 from typing import Optional
 
-from .base_core import BaseCore
+from src.core.base.common.base_core import BaseCore
 
 try:
     import rust_core as rc

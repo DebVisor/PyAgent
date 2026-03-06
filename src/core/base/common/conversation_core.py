@@ -20,8 +20,8 @@ Core logic for conversation history and message management.
 
 from typing import List
 
-from .base_core import BaseCore
-from .models import ConversationMessage, MessageRole
+from src.core.base.common.base_core import BaseCore
+from src.classes.base_agent.models import ConversationMessage, MessageRole
 
 
 class ConversationCore(BaseCore):

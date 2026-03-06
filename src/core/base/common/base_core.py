@@ -18,10 +18,10 @@ import logging
 from pathlib import Path
 from typing import Any, Dict, Optional, Union
 
-from ..lifecycle.version import VERSION
-from .base_interfaces import Component, Loadable, Saveable
-from .storage_core import StorageCore
-from .workspace_core import WorkspaceCore
+from src.core.base.lifecycle.version import VERSION
+from src.core.base.common.base_interfaces import Component, Loadable, Saveable
+from src.core.base.common.storage_core import StorageCore
+from src.core.base.common.workspace_core import WorkspaceCore
 
 logger = logging.getLogger("pyagent.core")
 
