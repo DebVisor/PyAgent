@@ -24,8 +24,8 @@ import difflib
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from .base_core import BaseCore
-from .models import DiffOutputFormat, DiffResult
+from src.core.base.common.base_core import BaseCore
+from src.core.base.models import DiffOutputFormat, DiffResult
 
 try:
     import rust_core as rc

@@ -27,7 +27,7 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable, List
 
-from .base_core import BaseCore
+from src.core.base.common.base_core import BaseCore
 
 try:
     import rust_core as rc

@@ -28,7 +28,8 @@ from dataclasses import dataclass
 from typing import Dict, Optional
 
 from src.core.base.common.base_core import BaseCore
-from src.core.base.models.communication_models import AuthConfig, AuthMethod
+from src.core.base.models.base_models import AuthConfig
+from src.core.base.models.enums import AuthMethod
 
 try:
     import rust_core as rc

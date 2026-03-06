@@ -22,8 +22,8 @@ Core logic for batch request processing and queuing.
 from pathlib import Path
 from typing import Any, Callable, List, Optional
 
-from .base_core import BaseCore
-from .models import BatchResult, FilePriority
+from src.core.base.common.base_core import BaseCore
+from src.classes.base_agent.models import BatchResult, FilePriority
 
 
 class BatchRequest:

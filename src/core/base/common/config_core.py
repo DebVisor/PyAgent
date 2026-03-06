@@ -25,8 +25,8 @@ import logging
 from pathlib import Path
 from typing import Any, Dict
 
-from .base_core import BaseCore
-from .models import ConfigFormat
+from src.core.base.common.base_core import BaseCore
+from src.core.base.common.models.core_enums import ConfigFormat
 
 try:
     import rust_core as rc

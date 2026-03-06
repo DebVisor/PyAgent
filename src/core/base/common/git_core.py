@@ -27,8 +27,8 @@ Standardizes branch management, commits, and status retrieval.
 from pathlib import Path
 from typing import List, Optional
 
-from .base_core import BaseCore
-from .shell_core import ShellCore
+from src.core.base.common.base_core import BaseCore
+from src.core.base.common.shell_core import ShellCore
 
 try:
     import rust_core as rc
