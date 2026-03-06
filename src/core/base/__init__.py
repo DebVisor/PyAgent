@@ -32,12 +32,7 @@ except Exception:
     pass
 
 from src.core.base.common.base_interfaces import AgentInterface, OrchestratorInterface
-from src.core.base.common.models import (
-    AgentConfig,
-    AgentState,
-    PromptTemplate,
-    ResponseQuality,
-)
+from src.core.base.common.models import AgentConfig, AgentState, PromptTemplate, ResponseQuality
 from src.core.base.common.models.core_enums import HealthStatus
 from src.core.base.lifecycle.base_agent import BaseAgent
 from src.core.base.lifecycle.version import VERSION
