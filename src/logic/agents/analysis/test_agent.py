@@ -128,8 +128,8 @@ class TestAgent(BaseAgent):  # pylint: disable=too-many-ancestors
 
             return "\n".join(report)
         except (subprocess.SubprocessError, RuntimeError, OSError) as e:
-        import traceback
-                tb = traceback.format_exc()
+            import traceback
+            tb = traceback.format_exc()
 
             # Phase 275: Log failure to context lineage if available
             if hasattr(self, "context") and self.context:
