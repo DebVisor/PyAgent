@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Factory for creating KV cache coordinators."""
-
-# SPDX-License-Identifier: Apache-2.0
 from typing import Any
 
 from .advanced import (
@@ -24,6 +21,8 @@ from .advanced import (
 )
 from .coordinator import KVCacheCoordinator
 from .data_classes import CacheConfig
+
+"""Factory for creating KV cache coordinators."""
 
 
 def create_kv_cache_coordinator(

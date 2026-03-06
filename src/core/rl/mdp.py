@@ -1,7 +1,4 @@
-"""
-Mdp.py module.
-"""
-
+#!/usr/bin/env python3
 # Copyright 2026 PyAgent Authors
 # Markov Decision Process (MDP) Implementation - Phase 319 Enhanced
 
@@ -14,6 +11,10 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Tuple
 
 logger = logging.getLogger(__name__)
+
+"""
+Mdp.py module.
+"""
 
 
 @dataclass
@@ -70,6 +71,7 @@ class MDP:
     """
 
     def __init__(self, gamma: float = 0.99) -> None:
+        """Initializes the MDP with optional discount factor."""
         self.transitions: List[Transition] = []
         self.states: List[Any] = []
         self.actions: List[Any] = []
