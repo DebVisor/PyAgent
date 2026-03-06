@@ -11,10 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 """Structural components for KV cache management: queues, caches, and pools."""
 
-# SPDX-License-Identifier: Apache-2.0
 import time
 from typing import Any, Dict, List, Optional
 
@@ -29,6 +27,7 @@ class FreeBlockQueue:
     """
 
     def __init__(self, blocks: List[KVCacheBlock]) -> None:
+        """Initializes the free block queue with a list of blocks."""
         self.num_free_blocks = len(blocks)
         for i, block in enumerate(blocks):
             if i > 0:
@@ -53,13 +52,15 @@ class FreeBlockQueue:
         if self.num_free_blocks == 0:
             return None
         block = self._head.next_free_block
-        self._remove(block)
+        if block is not None:
+            self._remove(block)
         return block
 
     def append(self, block: KVCacheBlock) -> None:
         """Add a block to the end of the queue."""
         prev = self._tail.prev_free_block
-        prev.next_free_block = block
+        if prev is not None:
+            prev.next_free_block = block
         block.prev_free_block = prev
         block.next_free_block = self._tail
         self._tail.prev_free_block = block
@@ -82,9 +83,11 @@ class FreeBlockQueue:
         self.num_free_blocks -= 1
 
     def __len__(self) -> int:
+        """Returns the number of free blocks currently in the queue."""
         return self.num_free_blocks
 
     def __bool__(self) -> bool:
+        """Returns True if there are free blocks available."""
         return self.num_free_blocks > 0
 
 
@@ -92,6 +95,7 @@ class BlockHashCache:
     """Cache mapping block hashes to blocks for prefix caching."""
 
     def __init__(self) -> None:
+        """Initializes the block hash cache."""
         self._cache: Dict[
             BlockHashWithGroupId, KVCacheBlock | Dict[int, KVCacheBlock]
         ] = {}
@@ -133,6 +137,7 @@ class BlockHashCache:
         return block
 
     def __len__(self) -> int:
+        """Returns the number of entries currently in the hash cache."""
         return len(self._cache)
 
 
@@ -145,6 +150,7 @@ class BlockPool:
         enable_caching: bool = True,
         eviction_policy: EvictionPolicy = EvictionPolicy.LRU,
     ) -> None:
+        """Initializes the block pool with a specified number of blocks and caching options."""
         self.num_blocks = num_blocks
         self.enable_caching = enable_caching
         self.eviction_policy = eviction_policy
@@ -171,7 +177,7 @@ class BlockPool:
 
     def allocate(self, num_blocks: int) -> List[KVCacheBlock]:
         """Allocate a list of blocks from the pool."""
-        allocated = []
+        allocated: List[KVCacheBlock] = []
         for _ in range(num_blocks):
             block = self._allocate_one()
             if block is None:

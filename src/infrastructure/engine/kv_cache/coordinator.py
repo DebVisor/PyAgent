@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Coordinator for multi-group KV cache management."""
-
-# SPDX-License-Identifier: Apache-2.0
 from typing import Any, Dict, List, Tuple
 
 from .data_classes import (
@@ -35,11 +32,14 @@ from .managers import (
 from .pack_kv import PackKVManager
 from .structural import BlockPool
 
+"""Coordinator for multi-group KV cache management."""
+
 
 class KVCacheCoordinator:
     """Coordinates multiple KV cache groups for complex attention patterns."""
 
     def __init__(self, config: CacheConfig, max_model_len: int) -> None:
+        """Initializes the coordinator with specified cache configuration and model length."""
         self.config = config
         self.max_model_len = max_model_len
         self.block_pool = BlockPool(

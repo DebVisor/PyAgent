@@ -117,7 +117,7 @@ class CodeImprovementEnvironment(RLEnvironment):
     Reward: Delta in code quality metrics.
     """
 
-    def __init__(self, initial_metrics: Dict[str, float] = None) -> None:
+    def __init__(self, initial_metrics: Optional[Dict[str, float]] = None) -> None:
         super().__init__(max_steps=50)
         self.action_space = DiscreteActionSpace(
             5, ["refactor", "add_tests", "optimize", "document", "skip"]
@@ -131,11 +131,13 @@ class CodeImprovementEnvironment(RLEnvironment):
         self.state = self._get_state()
 
     def _get_state(self) -> Dict[str, float]:
+        """Returns the current state representation."""
         return dict(self.metrics)
 
     def reset(
         self, seed: Optional[int] = None, options: Optional[Dict] = None
     ) -> Tuple[Dict, Dict]:
+        """Resets the environment to the initial state."""
         if seed:
             self.seed(seed)
         self.metrics = dict(self.initial_metrics)
@@ -148,6 +150,7 @@ class CodeImprovementEnvironment(RLEnvironment):
         return self.state, {"episode": self._episode_count}
 
     def step(self, action: int) -> Tuple[Dict, float, bool, bool, Dict]:
+        """Executes the given action and updates the state and reward."""
         self._current_step += 1
         old_metrics = dict(self.metrics)
 
@@ -199,6 +202,7 @@ class CodeImprovementEnvironment(RLEnvironment):
         return self.state, reward, self._terminated, self._truncated, info
 
     def render(self, mode: str = "human") -> Optional[str]:
+        """Renders the current state of the environment."""
         metrics = self.metrics
         status = (
             f"Step {self._current_step}: Complexity={metrics['complexity']:.1f}, "

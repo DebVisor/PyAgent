@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Slash command parser and executor.
-"""
-
 from __future__ import annotations
 
+import os
+import sys
+import importlib.util
 import logging
 import re
 import time
@@ -26,12 +25,19 @@ from typing import Any, ClassVar
 # Imports can fail when the package is referenced via the
 # `src.` prefix in sys.path.  We attempt a normal relative import first
 # then fall back to dynamically loading the module files by path.
-import importlib.util, os, sys
 
 _pkg_dir = os.path.dirname(__file__)
 
+"""
+Slash command parser and executor.
+"""
+
 
 def _load_local(name: str):
+    """Dynamically load a local module by file path
+    to avoid import issues when the package is named
+    with a prefix (e.g. `src.interface.commands`).
+    """
     # name may contain path separators to refer to subpackages
     relpath = name.replace(os.sep, "/")
     path = os.path.join(_pkg_dir, *relpath.split("/")) + ".py"
@@ -181,9 +187,7 @@ class CommandParser:
 
         try:
             return defn.handler(ctx)
-        except (
-            Exception
-        ) as e:  # pylint: disable=broad-exception-caught, unused-variable
+        except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
             logger.exception("Failed to execute command /%s", command)
             return CommandResult.fail(str(e))
 
@@ -214,9 +218,7 @@ class CommandParser:
             if defn:
                 try:
                     result = defn.handler(ctx)
-                except (
-                    Exception
-                ) as e:  # pylint: disable=broad-exception-caught, unused-variable
+                except Exception as e:  # pylint: disable=broad-exception-caught, unused-variable
                     logger.exception("Error in command handler for /%s", cmd.command)
                     result = CommandResult.fail(str(e))
             else:
