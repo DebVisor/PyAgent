@@ -292,7 +292,10 @@ class StarImportManager:
             pass
 
     def _make_shim_dir(self, tg: dict[str, object]) -> Callable[[object | None], list[str]]:
-        """Creates a shim for the `dir` function that returns the keys of the target globals when called with None, and otherwise behaves like the normal `dir` function."""
+        """Creates a shim for the `dir` function 
+        that returns the keys of the target globals when called with None, 
+        and otherwise behaves like the normal `dir` function.
+        """
         def _shim_dir(obj: object = None) -> list[str]:
             if obj is None:
                 return sorted(list(tg.keys()))
@@ -331,7 +334,9 @@ class SessionManager:
         self.star_imports.inject_globals(item)
 
     def session_finish(self, session: object, exitstatus: int) -> None:
-        """Runs at the end of the pytest session, checking for any file writes that occurred during testing and logging them."""
+        """Runs at the end of the pytest session, 
+        checking for any file writes that occurred during testing and logging them.
+        """
         try:
             result = subprocess.run(
                 ["git", "status", "--porcelain"],
@@ -363,4 +368,3 @@ def pytest_runtest_setup(item):
 def pytest_sessionfinish(session, exitstatus):
     """Pytest hook that runs at the end of the session, delegating to the SessionManager."""
     _mgr.session_finish(session, exitstatus)
-

@@ -46,7 +46,14 @@ try:
     import torch
 
     HAS_TORCH = True
-    HAS_CUDA = torch.cuda.is_available()
+    # some environments install a headless torch that lacks a ``cuda``
+    # attribute; guard against AttributeError to keep imports safe.
+    HAS_CUDA = False
+    if hasattr(torch, "cuda"):
+        try:
+            HAS_CUDA = torch.cuda.is_available()
+        except Exception:
+            HAS_CUDA = False
 except ImportError:
     HAS_TORCH = False
     HAS_CUDA = False
