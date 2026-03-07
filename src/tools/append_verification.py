@@ -30,7 +30,7 @@ def append_to_verification() -> None:
     Safe to call multiple times; no duplicates will be written.  Importing
     this module no longer mutates the repository, so test imports are safe.
     """
-    p = Path("c:/DEV/PyAgent/src/core/base/verification.py")
+    p = Path(__file__).resolve().parent.parent / "src" / "core" / "base" / "verification.py"
     if not p.exists():
         return
     text = p.read_text(encoding="utf-8")
