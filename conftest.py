@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 """Pytest configuration for the repository.
 
 This module defines a small object-oriented framework for our custom
@@ -355,16 +357,17 @@ class SessionManager:
 # instantiate manager and expose hooks
 _mgr = SessionManager(Path(__file__).resolve().parent)
 
-def pytest_sessionstart(session):
+
+def pytest_sessionstart(session: "pytest.Session") -> None:
     """Pytest hook that runs at the start of the session, delegating to the SessionManager."""
     _mgr.session_start(session)
 
 
-def pytest_runtest_setup(item):
+def pytest_runtest_setup(item: "pytest.Item") -> None:
     """Pytest hook that runs before each test, delegating to the SessionManager."""
     _mgr.runtest_setup(item)
 
 
-def pytest_sessionfinish(session, exitstatus):
+def pytest_sessionfinish(session: "pytest.Session", exitstatus: int) -> None:
     """Pytest hook that runs at the end of the session, delegating to the SessionManager."""
     _mgr.session_finish(session, exitstatus)

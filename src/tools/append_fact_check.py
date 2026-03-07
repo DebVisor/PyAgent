@@ -1,5 +1,5 @@
+from __future__ import annotations
 from pathlib import Path
-
 content = """
     @staticmethod
     def fact_check(code_snippet: str, agent_id: str) -> Dict[str, Any]:
@@ -18,7 +18,7 @@ def append_to_verification() -> None:
     tests can safely `import tools.append_fact_check` without mutating the
     workspace.
     """
-    p = Path("c:/DEV/PyAgent/src/core/base/verification.py")
+    p = Path(__file__).resolve().parent.parent / "src" / "core" / "base" / "verification.py"
     if not p.exists():
         return
     text = p.read_text(encoding="utf-8")

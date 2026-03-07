@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+"""Lazy-loading entry point for observability.tracing."""
 from __future__ import annotations
 
-
-from typing import Any, TYPE_CHECKING
+from typing import Any
 from src.core.base.lifecycle.version import VERSION
 from src.core.lazy_loader import ModuleLazyLoader
 
@@ -31,9 +31,6 @@ from .open_telemetry_tracer import (
         timed_span,
         traced,
     )
-
-"""Lazy-loading entry point for observability.tracing."""
-
 
 _LAZY_REGISTRY = {
     "NullSpan": ("src.observability.tracing.open_telemetry_tracer", "NullSpan"),
@@ -113,4 +110,29 @@ def __getattr__(name: str) -> Any:
     return _loader.load(name)
 
 
-__all__ = ["VERSION"] + list(_LAZY_REGISTRY.keys())
+__all__ = [
+    "VERSION",
+    "NullSpan",
+    "NullTracer",
+    "SpanAttributes",
+    "SpanTiming",
+    "TRACE_HEADERS",
+    "add_span_attributes",
+    "add_span_event",
+    "contains_trace_headers",
+    "create_span",
+    "extract_trace_context",
+    "extract_trace_headers",
+    "get_current_span_safe",
+    "get_null_tracer",
+    "get_span_exporter",
+    "get_tracer",
+    "init_tracer",
+    "inject_trace_context",
+    "is_otel_available",
+    "log_tracing_disabled_warning",
+    "otel_import_error_traceback",
+    "record_exception",
+    "timed_span",
+    "traced",
+]
