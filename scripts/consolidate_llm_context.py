@@ -76,11 +76,6 @@ def _build_llms_root_text(repo_root: Path) -> str:
         "## Tiered context files",
         "- llms-architecture.txt",
         "- llms-improvements.txt",
-        "",
-        "## Notes",
-        "Use llms-architecture.txt for architecture and layout rules.",
-        "Use llms-improvements.txt for consolidated improvements and lessons.",
-        "",
     ]
     pointers_text = "\n".join(pointers_lines).rstrip() + "\n"
 

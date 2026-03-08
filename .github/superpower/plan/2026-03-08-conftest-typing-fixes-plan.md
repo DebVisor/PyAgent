@@ -193,4 +193,6 @@
 
 ## 6) Handoff
 
-Implementation should proceed in execution mode with strict TDD sequencing (test -> fail/confirm -> minimal code change -> test -> pass) and no unrelated refactors.
+Implementation should proceed in execution mode with strict TDD sequencing 
+(test -> fail/confirm -> minimal code change -> test -> pass) 
+and no unrelated refactors.
