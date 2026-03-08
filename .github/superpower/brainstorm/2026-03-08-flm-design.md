@@ -1,82 +1,92 @@
-# FLM (Foundation Language Model) Architecture Design
+# FLM (Fastflow Language Model) Architecture Design
 
 ## Overview
-A Foundation Language Model (FLM) that serves as the core language processing engine for the PyAgent platform. The FLM provides a unified interface for natural language understanding, generation, and reasoning tasks across all applications.
+In this repository, **FLM means Fastflow Language Model**: a local, OpenAI-compatible model server optimized for **NPU-backed inference**, similar in usage pattern to Ollama.
+
+The current integration pattern (see `flm-test-llama.py`) uses:
+- OpenAI client SDK
+- `base_url="http://127.0.0.1:52625/v1/"`
+- local API key placeholder (`"dummy"`)
+- chat-completions contract
+- optional tool-calls loop
+
+This design treats FLM as an infrastructure/runtime provider and PyAgent as the orchestration layer.
+
+## Scope and Non-Goals
+
+### In Scope
+- FLM endpoint integration for chat completions
+- model selection and request settings (example model: `llama3.2:1b`)
+- tool-call handshake compatibility
+- health and availability checks for local runtime
+- NPU-oriented operational assumptions (low latency local serving)
+
+### Out of Scope
+- training or fine-tuning model weights
+- custom tokenizer/model architecture design
+- replacing OpenAI client SDK contract in application code
 
 ## Core Components
 
-### 1. Language Understanding Module
-The component responsible for parsing and interpreting natural language input. It converts unstructured text into structured representations that can be processed by downstream components.
+### 1. FLM Runtime (External Process)
+Local Fastflow server responsible for hosting and serving models with NPU optimization. Exposes OpenAI-compatible HTTP API surface.
 
-### 2. Context Management System
-A system that maintains and manages the conversation context across multiple interactions. It ensures continuity of dialogue, tracks entity mentions, and maintains state information for complex conversations.
+### 2. OpenAI-Compatible Client Adapter
+PyAgent-side integration that uses `openai.OpenAI(...)` pointed to FLM base URL.
 
-### 3. Reasoning Engine
-The component that performs logical inference and decision-making based on the input and context. It enables the model to understand relationships between entities, make deductions, and provide justifications for its responses.
+### 3. Conversation State Manager
+Maintains `messages` list in OpenAI schema (`system`, `user`, `assistant`, `tool` roles), preserving turn history and tool-call continuity.
 
-### 4. Language Generation Module
-The component responsible for producing natural language output that is coherent, contextually appropriate, and grammatically correct. It combines the understanding and reasoning components to generate meaningful responses.
+### 4. Tool-Call Bridge
+Processes tool-calls returned by FLM, appends assistant/tool messages, and re-invokes completion until final assistant answer is produced.
 
-### 5. Security Layer
-An authentication and authorization layer that ensures only authorized users and services can access the FLM operations. It provides the necessary security controls to protect sensitive language processing data and operations.
+### 5. Runtime Safety and Diagnostics
+Handles endpoint unavailability, malformed payloads, model-not-found cases, and logs request/response metadata for troubleshooting.
 
-## Communication Flow
+## Request/Response Contract (Observed)
 
-1. **Input Reception** - Natural language input is received by the FLM interface.
+1. Client sends chat completion request with:
+	- `model` (example: `llama3.2:1b`)
+	- `messages`
+	- `max_tokens`
+2. If response contains `tool_calls`:
+	- append assistant message including tool call payload
+	- append tool result message(s)
+	- repeat completion call
+3. If no `tool_calls`:
+	- treat assistant content as terminal answer
+	- end loop
 
-2. **Parsing** - The Language Understanding Module parses the input text into structured components.
+## Design Principles
 
-3. **Context Enrichment** - The Context Management System enriches the input with relevant conversation history and state information.
+- **OpenAI API compatibility first**: avoid custom protocol lock-in.
+- **Local-first reliability**: FLM integration must work without cloud dependencies.
+- **NPU-aware performance**: prefer low-overhead local serving and short request path.
+- **Deterministic tool-call loop**: explicit, testable turn transitions.
+- **Operational clarity**: clear endpoint, model, timeout, and failure logging.
 
-4. **Reasoning** - The Reasoning Engine performs logical inference and decision-making based on the enriched context.
+## Failure Handling Strategy
 
-5. **Generation** - The Language Generation Module produces a natural language response based on the reasoning output.
+- **Connection errors**: surface actionable message (endpoint + model + timeout).
+- **Model missing**: return clear error with selected model name.
+- **Invalid tool-call payload**: skip/guard malformed calls and log structured diagnostics.
+- **Infinite loop prevention**: enforce max tool-call iterations per request.
 
-6. **Output Delivery** - The final response is delivered to the requesting client or application.
+## Security Considerations
 
-## Key Design Principles
+- FLM is local-network by default; avoid exposing runtime without access controls.
+- Keep API key handling compatible with OpenAI client; allow dummy/local key where runtime permits.
+- Never persist sensitive prompt/response content without explicit retention policy.
 
-- **Consistency** - The FLM maintains consistent behavior and responses across all interactions.
-- **Reliability** - The system ensures stable and predictable performance under various conditions.
-- **Security** - All language processing operations are protected with strong authentication and authorization mechanisms.
-- **Scalability** - The architecture is designed to handle increasing volumes of language processing requests efficiently.
-- **Auditability** - All language processing operations are logged for auditing and compliance purposes.
+## Integration Notes for PyAgent
 
-## Failure Handling
-
-- **Input Validation** - The system validates input for grammatical correctness and semantic plausibility.
-- **Fallback Mechanisms** - In case of processing failures, the system implements fallback strategies to maintain service continuity.
-- **Error Logging** - All errors are logged with detailed context for troubleshooting.
-- **Alerting** - Critical failures trigger alerts to notify administrators.
-
-## Integration Points
-
-- **User Interface** - The FLM integrates with various user interfaces for natural language interaction.
-- **Application Services** - The FLM connects with application services to provide language processing capabilities.
-- **Authentication Service** - For user and service authentication.
-- **Notification Service** - For sending status updates and alerts.
-
-## Performance Optimization
-
-- **Efficient Parsing** - The system uses optimized parsing algorithms to process input text quickly.
-- **Caching** - Frequently accessed language patterns and responses are cached to reduce processing time.
-- **Load Balancing** - The FLM can be distributed across multiple instances to handle high request volumes.
-- **Connection Pooling** - The system implements connection pooling to optimize communication with dependent services.
-
-## Security Measures
-
-- **Authentication** - Implement strong authentication mechanisms for all FLM operations.
-- **Authorization** - Establish role-based access controls to ensure proper permissions.
-- **Data Encryption** - Encrypt sensitive language processing data at rest and in transit.
-- **Secure Communication** - Use secure protocols (TLS) for all communication channels.
+- Treat FLM as another provider peer to Ollama-like local runtimes.
+- Keep provider config centralized (base URL, model defaults, timeout, retries).
+- Reuse existing transaction/logging patterns for auditability.
 
 ## Future Enhancements
 
-- **Real-time Analytics** - Integration with real-time analytics for language pattern analysis.
-- **Machine Learning** - Implementation of ML models for sentiment analysis, entity recognition, and language translation.
-- **Multi-language Support** - Expansion to support multiple languages and dialects.
-- **Blockchain Integration** - Potential integration with blockchain technology for immutable language records.
-- **Voice Processing** - Addition of voice recognition and synthesis capabilities.
-- **Contextual Awareness** - Enhanced contextual awareness to better understand user intent and preferences.
-
-This architecture provides a comprehensive, scalable, and secure foundation for the Foundation Language Model (FLM) that serves as the core language processing engine for the PyAgent platform.
+- Dynamic model capability probe (`/models`) and auto-selection.
+- Streaming support path for long outputs.
+- Health-check gate before first inference.
+- Provider fallback chain (FLM → Ollama → cloud provider) when configured.
