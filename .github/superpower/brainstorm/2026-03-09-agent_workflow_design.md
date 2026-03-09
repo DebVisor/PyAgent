@@ -170,6 +170,107 @@ This document details the proposed workflow design for agents within the PyAgent
 - Role-based access control with defined privilege levels
 - Permission delegation with explicit access grants
 
+
+## Context size and tooling infrastructure
+
+Long-running agent workflows depend on maintaining and manipulating very
+large chains of context.  As conversations grow past model token limits we
+must plan for **context windowing, multipart rewriting, and skill discovery**.
+
+**Motivation:**
+Agents performing multi‑step workflows will accumulate interaction history that
+cannot fit into a single prompt.  Without a strategy for fragmenting,
+rewriting, and caching that history, downstream LLM calls either fail or lose
+important state.  Additionally, tools and skills live under `.agents/skills`
+and should be hot‑reloaded so agents can access new capabilities without
+restart.
+
+**Approaches:**
+
+1. Adopt a shared `ContextManager` component (see roadmap design) that
+   splits text into fixed‑size windows, tracks token counts, and supports
+   rewriting earlier segments when new facts arrive.  Agents call the
+   manager during the "Context Analysis" phase to obtain a compact
+   summary.
+2. Represent workflow state as a sequence of discrete context documents or
+   "thoughts" stored separately; a coordinator composes the current working
+   prompt from the most relevant documents plus the latest task input.  This
+   facilitates partial recombination and pruning.
+3. Create a lightweight service (possibly implemented in Rust for performance)
+   that exposes an API for context operations and a watcher for the
+   `.agents/skills` directory.  Agents make RPCs to obtain rewritten contexts
+   and a list of available tools/skills.
+
+**Success criteria:**
+
+- Agents can handle conversations exceeding 1 million tokens without losing
+  required information.
+- New skill files added to `.agents/skills/` are discoverable by agents
+  within 30 seconds of creation and usable in the next task.
+- Unit tests simulate window boundary conditions and rewrite behaviour with
+  100 % coverage.
+
+**Dependencies:**
+
+- Vector database or in‑memory index for context segments
+- Conventions for skill metadata (YAML/JSON schema)
+- Coordination between Python and Rust if a service is chosen
+
+**Risks & Questions:**
+
+- Rewriting must not discard still‑relevant facts; careful pinning or
+  tagging of critical segments is necessary.
+- Skill version mismatches could cause runtime errors; the registry may need
+  checksums or migration support.
+
+
+### Recursive Chain of Thought (CORT)
+
+**Motivation:**
+Agents often need to break complex problems into subproblems and reason
+recursively.  The CORT pattern allows an agent to spawn child reasoning
+paths, each maintaining its own context window.  This ties closely to the
+workflow phases, especially "Context Analysis and Planning".
+
+**Approaches:**
+
+1. Implement a `ChainOfThought` object (see `src-old/classes/agent/*` for
+   legacy inspiration) that records each reasoning step, forks when a
+decision branches, and merges results once sub‑thoughts complete.  The
+   object must be able to serialize to the context manager and rewind when
+   backing out of a branch.
+2. Use the existing task/strategy formulation phase to automatically insert
+   CORT markers into the context so the LLM itself knows when to recurse.
+3. Maintain separate context windows for each recursive depth and rely on a
+   supervisor agent to orchestrate pushing/popping windows as the recursion
+   unfolds.
+
+**Success criteria:**
+
+* Agents can recursively solve a multi‑step puzzle (e.g. planning a route,
+  solving a math problem) with a depth of at least 5 without blowing token
+  limits.
+* The `ChainOfThought` data structure is covered by unit tests and used by
+  two different agents (e.g. planner and verifier).
+* Recursion tracing is visible in logs/debug UI to aid analysis.
+
+**Dependencies:**
+
+- Integration with the `ContextManager` to allocate windows per depth.
+- Standards for serializing CORT nodes (likely JSON) under
+  `.agents/skills` or a similar registry so tools can hook into them.
+- Reference implementation or utilities from `src-old/classes/agent` such as
+  `IncrementalProcessor` or `ParallelProcessor` which already handled
+  subtask splitting.
+
+**Risks & Questions:**
+
+* Deep recursion could still exhaust resources; a depth limit and pruning
+  policy are required.
+* How should CORT results be cached or indexed for later reuse?
+
+
+
 ### 2. Communication Security
 
 - End-to-end encryption for all inter-agent communication

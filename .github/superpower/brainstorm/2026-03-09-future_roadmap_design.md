@@ -192,6 +192,58 @@ implementation plan when the team commits to building it.
 While roadmap items drive what gets implemented in `src/`, the planning documents themselves are kept in `project/` or `.github/roadmap`.
 Specific roadmap-related code (e.g. performance benchmarks, scalability tests) will appear under `src/benchmarks/` or `src/perf/` when executed.
 
+## Managing agent context & tooling
+
+A cross‑cutting requirement for almost every roadmap item is the
+infrastructure that supports the agents themselves.  as models grow, we
+must cope with **context size**, **multipart context rewrite/windowing**,
+and the dynamic **tool/skill registry** (`.agents/skills`).
+
+**Motivation:**
+The swarm and research packages depend on agents remaining coherent with
+very large histories of interaction.  Without explicit support for splitting,
+rewriting and caching context, models will hit token limits and degrade.
+Furthermore, tools and skills evolve independently, and agents should be
+able to discover and load them at runtime.
+
+**Approaches:**
+
+1. Implement a `ContextManager` library that fragments long chats into
+   4‑kB windows (chunking & vector indexing) and rewrites earlier segments
+   when new information supersedes them.  The manager would expose a simple
+   interface (`push(), rewrite(), snapshot()`) used by all agents.
+2. Use a modular agent architecture where each “thought” or subtask is a
+   separate context document; a supervisor stitches these along with the
+   current prompt, allowing partial recombination and pruning.  This
+   mirrors architectures used by LangGraph and LangChain.
+3. Build a centralized service (Rust in `rust_core/`) that handles context
+   windowing and provides a gRPC API.  Agents then call out rather than
+   carrying the logic themselves.
+
+**Success criteria:**
+
+* Agents are able to handle conversations exceeding 1 million tokens by
+  pruning and rewriting without loss of relevant information.
+* New tools placed under `.agents/skills/` are automatically registered and
+  available within 30 seconds of being added; no restart required.
+* Unit tests simulate context window boundary conditions and all pass.
+
+**Dependencies:**
+
+- Vector database or in‑memory index for context segments.
+- Conventions for skill metadata (YAML or JSON in `.agents/skills/*`).
+- Coordination between Python and Rust (ffi or grpc) if service approach
+  is chosen.
+
+**Risks & Questions:**
+
+* Context rewriting might inadvertently remove facts still needed later.
+  Thorough testing and explicit pinning of critical segments is necessary.
+* Tools/skills versioning could cause incompatibilities; consider a
+  migration mechanism or checksum validation.
+
+---
+
 ## Notes
 
 These tasks are guiding artifacts, meant to be revisited periodically.  Implementation of features and performance improvements will be tracked separately once the roadmap is formalized.
