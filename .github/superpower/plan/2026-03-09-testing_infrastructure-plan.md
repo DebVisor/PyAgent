@@ -71,6 +71,30 @@ Python 3.11+, `pytest`, GitHub Actions (ci.yml already present).
 - Command: `pytest tests/structure/test_config_files.py -q`
 - Expected: both pass (files already exist and import works).
 
+### Task 5: Verify context manager, skills registry, and CORT packages integrate with test framework
+
+- File: `tests/integration/test_context_and_skills.py`
+- Code:
+  ```python
+  from context_manager import ContextManager
+  from skills_registry import SkillsRegistry
+  from cort import ChainOfThought
+
+  def test_context_and_skills(tmp_path):
+      cm = ContextManager(max_tokens=5)
+      assert hasattr(cm, "push")
+      registry = SkillsRegistry(tmp_path / "skills")
+      assert isinstance(registry.list_skills(), list)
+      cort = ChainOfThought(cm)
+      root = cort.new_node("start")
+      child = root.fork("x")
+      child.add("y")
+      assert "y" in cm.snapshot()
+  ```
+- Command: `pytest tests/integration/test_context_and_skills.py -q`
+- Expected: failure initially until packages exist; after implementing
+  packages the test will pass.
+
 ### Task 5: Add placeholder data generation script and test
 
 - File: `scripts/generate_test_data.py`
