@@ -3,16 +3,21 @@
 from context_manager import ContextManager
 from skills_registry import SkillsRegistry
 from cort import ChainOfThought
+from pathlib import Path
+
+import pytest
 
 
-def test_context_and_skills(tmp_path) -> None:
+@pytest.mark.asyncio
+async def test_context_and_skills(tmp_path: Path) -> None:
     """Test the integration of ContextManager, SkillsRegistry, and ChainOfThought."""
     cm = ContextManager(max_tokens=5)
     assert hasattr(cm, "push")
     registry = SkillsRegistry(tmp_path / "skills")
-    assert isinstance(registry.list_skills(), list)
+    skills = await registry.list_skills()
+    assert isinstance(skills, list)
     cort = ChainOfThought(cm)
-    root = cort.new_node("start")
-    child = root.fork("x")
-    child.add("y")
+    root = await cort.new_node("start")
+    child = await root.fork("x")
+    await child.add("y")
     assert "y" in cm.snapshot()

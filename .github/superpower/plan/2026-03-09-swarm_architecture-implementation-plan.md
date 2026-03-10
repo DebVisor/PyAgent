@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # PyAgent Implementation Plan
 
 **Goal:** Bootstrap the swarm architecture by implementing core services (agent registry, task scheduler, communication protocol, memory stores) with test-driven development, enabling later feature expansion.

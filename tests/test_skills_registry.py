@@ -7,5 +7,6 @@ def test_skills_registry_scans(tmp_path):
 
     from skills_registry import SkillsRegistry
 
+    import asyncio
     registry = SkillsRegistry(skills_dir)
-    assert registry.list_skills() == ["foo"]
+    assert asyncio.run(registry.list_skills()) == ["foo"]

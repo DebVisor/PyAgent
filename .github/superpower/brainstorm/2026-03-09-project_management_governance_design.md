@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Project Management & Governance Design
 
 This file captures high‑level management items; implementation details generally live outside `src` but are referenced by project metadata.

@@ -118,6 +118,7 @@ def test_run_until_terminal_returns_final_content() -> None:
     adapter = FlmChatAdapter(config=config, client_factory=lambda **_: fake_client)
     messages: list[dict[str, Any]] = [{"role": "user", "content": "are you listening?"}]
 
-    answer = adapter.run_until_terminal(messages=messages)
+    import asyncio
+    answer = asyncio.run(adapter.run_until_terminal(messages=messages))
 
     assert answer == "terminal answer"

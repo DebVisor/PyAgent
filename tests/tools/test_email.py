@@ -6,5 +6,6 @@ from tools.pm import email
 
 def test_render_status_email():
     tpl = "Hello {{name}}"
-    out = email.render(tpl, {"name": "Alice"})
+    import asyncio
+    out = asyncio.run(email.render(tpl, {"name": "Alice"}))
     assert "Alice" in out

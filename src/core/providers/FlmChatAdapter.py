@@ -119,7 +119,7 @@ class FlmChatAdapter:
                 f"timeout={self.config.timeout}): {exc}"
             ) from exc
 
-    def run_until_terminal(
+    async def run_until_terminal(
         self,
         *,
         messages: list[dict[str, Any]],

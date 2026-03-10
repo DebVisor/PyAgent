@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # LLM Context Consolidation Implementation Plan
 
 **Goal:** Implement `scripts/consolidate_llm_context.py` to consolidate scattered markdown context into a tiered `llms*.txt` structure, optionally migrate component markdown into Python module docstrings, and generate a deterministic consolidation report.

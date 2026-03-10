@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Development Tools Self‑Improvement & Autonomy
 
 Because the PyAgent system is agentic, its toolbox needs to support **continuous learning and self‑improvement**.  That means:

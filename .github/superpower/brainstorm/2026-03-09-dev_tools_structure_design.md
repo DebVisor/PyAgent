@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Development Tools Structure Design
 
 All checklist items open; this document defines where tools live and classification.
