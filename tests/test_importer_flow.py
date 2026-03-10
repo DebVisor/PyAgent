@@ -8,7 +8,8 @@ def test_importer_flow(tmp_path):
     manifest = tmp_path / "github.md"
     manifest.write_text("a/b\n")
 
-    repos = parse_manifest(manifest)
+    import asyncio
+    repos = asyncio.run(parse_manifest(manifest))
     assert repos == [("a", "b")]
 
     target = tmp_path / "a" / "b"
@@ -18,6 +19,7 @@ def test_importer_flow(tmp_path):
     assert info["size"] == 0
 
     out = tmp_path / "architecture.md"
-    compile_architecture([info], out)
+    import asyncio
+    asyncio.run(compile_architecture([info], out))
     assert out.exists()
     assert "README.md" in out.read_text()

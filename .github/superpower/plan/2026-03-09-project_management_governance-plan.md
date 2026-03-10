@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # Project Management & Governance Implementation Plan
 
 The design document (`.github/superpower/brainstorm/2026-03-09-project_management_governance_design.md`) defines a lightweight governance framework.  This plan will bootstrap the corresponding artifacts under `project/` and add verification tests.

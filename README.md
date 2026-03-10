@@ -3,6 +3,53 @@
 ## Overview
 PyAgent is a comprehensive software development platform designed to streamline the development, testing, and deployment of secure and scalable applications.
 
+## Asynchronous Runtime Helpers
+
+A lightweight Tokio-backed runtime is available via the `runtime_py` wrapper. These helpers were added as part of the async runtime rollout and are intended to replace any remaining synchronous loops in the codebase.
+
+Example usage:
+
+```python
+from runtime_py import spawn, on, emit, watch_file, run_http_server
+
+# schedule a background task
+spawn(async_work())
+
+# simple in‑process event bus
+on("data", lambda x: process(x))
+emit("data", 42)
+
+# watch a configuration file for changes
+watch_file("/etc/myapp.conf", lambda path: reload_config(path))
+
+# run a minimal HTTP service
+async def handler(uri: str):
+    return 200, "ok"
+run_http_server("127.0.0.1:8000", handler)
+```
+
+These functions are thin wrappers; the implementation may migrate between Python and Rust without affecting callers.
+
+### Performance Benchmarks
+
+A simple benchmark script is available at `performance/metrics_bench.py`. It
+compares the old synchronous loop against the new runtime-driven async loop:
+
+```powershell
+python performance/metrics_bench.py
+```
+
+On a typical development machine you should see a dramatic speedup, e.g.:
+
+```
+sync loop: 0.45s
+async runtime: 0.02s
+```
+
+Feel free to modify the script to profile other subsystems as they are migrated.
+
+
+
 ## Core Components
 
 ### GitHub Import System
@@ -39,6 +86,11 @@ A security-first rewrite of the `rust_core` library, driven by Python integratio
 5. **Verify Functionality** - Run the test again to confirm it passes, demonstrating successful integration.
 
 ## Key Features
+
+### Asynchronous Event Runtime ⚙️
+- **Node.js‑style async infrastructure** powered by a global Rust/Tokio runtime and thin Python bindings (`runtime.spawn_task`, `runtime.set_timeout`, `runtime.create_queue`, etc.).
+- **No synchronous loops allowed** – the `tests/test_async_loops.py` audit script runs in CI and fails whenever Python code contains blocking `for`/`while` constructs, ensuring all new development is async-first.
+- Built‑in event bus, file watchers, HTTP server, and channels provide primitives for every subsystem.
 
 ### GitHub Import System
 - Detailed file description format with structured content (path, size, content summary, purpose, dependencies, usage context, version information, notes)

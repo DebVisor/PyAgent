@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Testing Infrastructure Design
 
 All items remain unchecked.  This design document outlines the structure and where tests live relative to source code.

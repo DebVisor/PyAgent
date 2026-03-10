@@ -4,7 +4,7 @@ import importlib.util
 import os
 
 
-def test_pm_package_missing(tmp_path) -> None:
-    """Test that the PM package does not exist in the tools directory."""
-    assert not os.path.isdir("src/tools/pm")
-    assert importlib.util.find_spec("tools.pm") is None
+def test_pm_package_present(tmp_path) -> None:
+    """Test that the PM package exists and is importable."""
+    assert os.path.isdir("src/tools/pm")
+    assert importlib.util.find_spec("tools.pm") is not None

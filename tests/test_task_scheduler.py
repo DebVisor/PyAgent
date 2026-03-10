@@ -3,12 +3,13 @@ from swarm.task_scheduler import TaskScheduler
 
 def test_enqueue_dequeue_priority():
     """Tasks should be dequeued in order of priority (lower number = higher priority)."""
+    import asyncio
     sched = TaskScheduler()
     t1 = sched.enqueue({"name": "a"}, priority=2)
     t2 = sched.enqueue({"name": "b"}, priority=1)
-    first = sched.dequeue()
+    first = asyncio.run(sched.dequeue())
     assert first["payload"]["name"] == "b"
-    second = sched.dequeue()
+    second = asyncio.run(sched.dequeue())
     assert second["payload"]["name"] == "a"
 
 

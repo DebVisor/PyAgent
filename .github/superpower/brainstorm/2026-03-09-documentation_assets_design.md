@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Documentation & Assets Design
 
 Tasks are all pending; this design file groups them and explains their relationship to source code.

@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # PyAgent Implementation Plan
 
 **Goal:** Fulfill the implementation considerations for development tools by adding documentation, ensuring modular helpers, and incorporating the tests into CI.

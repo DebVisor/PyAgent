@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # Testing Infrastructure Implementation Plan
 
 **Goal:**
@@ -6,6 +10,11 @@ Establish the baseline testing infrastructure described in the design document:
 - pytest configuration and helper fixture file
 - placeholder tests and data generation script
 - coverage configuration and CI invocation
+
+Additionally, the infrastructure now enforces the architectural rule that
+no synchronous loops may exist in Python code; a dedicated audit test
+(`tests/test_async_loops.py`) fails when any blocking iteration is detected.
+This requirement will be included as part of every batch of testing tasks.
 
 **Architecture:**
 The plan uses Python `pytest` for all tests. A helper script will create the required

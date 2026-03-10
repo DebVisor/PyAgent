@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Future Roadmap Design
 
 This file consolidates long‑term planning tasks.  They are conceptual and do not directly modify `src` today.
