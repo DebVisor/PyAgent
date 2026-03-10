@@ -1,3 +1,6 @@
+# Async Runtime Update
+> **2026-03-10:** Project migrated to Node.js-like asynchronous runtime; synchronous loops are prohibited by automated tests.
+
 # Development Tools Implementation Considerations
 
 * **Testing:** Each utility should include a corresponding test module under `tests/tools/` verifying its behavior with mocked inputs.  CI pipelines will run these tests automatically; code coverage targets apply.

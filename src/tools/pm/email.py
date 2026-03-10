@@ -16,7 +16,7 @@
 from typing import Dict
 
 
-def render(template: str, context: Dict[str, str]) -> str:
+async def render(template: str, context: Dict[str, str]) -> str:
     """Render a simple template by substituting {{key}} with values.
 
     This is intentionally unsophisticated; templating libraries will be

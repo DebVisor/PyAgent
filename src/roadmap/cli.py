@@ -15,12 +15,15 @@
 from pathlib import Path
 
 from . import vision, milestones
+import asyncio
 
 
-def generate(outdir):
+def generate(outdir: Path | str) -> Path:
     outdir = Path(outdir)
     outfile = outdir / "roadmap.md"
     text = vision.get_template()
     text += "\n" + "# Milestones\n"
-    milestones.create(outfile, ["TBD"])
+    # milestones.create is asynchronous; run it in its own event loop so
+    # callers can remain synchronous.
+    asyncio.run(milestones.create(outfile, ["TBD"]))
     return outfile

@@ -14,7 +14,7 @@
 # limitations under the License.
 
 
-def create(path, items) -> None:
+async def create(path, items) -> None:
     """Create a markdown file at *path* with a list of *items* as milestones."""
     with open(path, "w", encoding="utf-8") as f:
         f.write("# Technology Roadmap\n\n")

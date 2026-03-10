@@ -27,7 +27,7 @@ class SkillsRegistry:
         """Initialize the SkillsRegistry with a directory containing skill YAML files."""
         self.skills_dir = Path(skills_dir)
 
-    def list_skills(self) -> List[str]:
+    async def list_skills(self) -> List[str]:
         """List the names of all skills available in the registry."""
         names: List[str] = []
         for path in self.skills_dir.glob("*.yaml"):

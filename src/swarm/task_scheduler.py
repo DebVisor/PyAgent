@@ -24,7 +24,7 @@ class TaskScheduler:
         heapq.heappush(self._queues[priority], (time.time(), tid))
         return tid
 
-    def dequeue(self) -> dict:
+    async def dequeue(self) -> dict:
         """Remove and return the highest priority task from the scheduler,
         or raise IndexError if no tasks are available.
         """

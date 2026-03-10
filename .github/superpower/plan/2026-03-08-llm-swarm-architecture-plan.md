@@ -1,3 +1,7 @@
+# Async Runtime Rollout
+> **2026-03-10:** All synchronous loops have been eliminated; Node.js-like async infrastructure in place.
+> See 2026-03-10-async-runtime-plan.md for details.
+
 # PyAgent Implementation Plan — LLM Context Consolidation, Plugins, P2P CRDT, and Security
 
 **Goal:** Implement the approved design (LLM context consolidation 

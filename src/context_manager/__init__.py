@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Context manager module for PyAgent."""
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +19,15 @@ from typing import List
 
 
 class ContextManager:
+    """A simple context manager that maintains a list of text segments and prunes old ones based on a token limit."""
+
     def __init__(self, max_tokens: int):
+        """Initialize the ContextManager with a maximum token limit."""
         self._data: List[str] = []
         self.max_tokens = max_tokens
 
-    def push(self, text: str) -> None:
+    async def push(self, text: str) -> None:
+        """Add a new text segment to the context and prune old segments if the total token count exceeds the limit."""
         # simple token count based on whitespace-separated words
         self._data.append(text)
         # prune oldest segments if token count exceeds limit
@@ -35,4 +40,5 @@ class ContextManager:
             tokens = all_text.split()
 
     def snapshot(self) -> str:
+        """Get the current context as a single string."""
         return "".join(self._data)

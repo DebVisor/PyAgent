@@ -10,6 +10,9 @@ PyAgent is a high-performance, multi-agent swarm system optimized for autonomous
 ### ⚡ Rust-Native Acceleration
 Computationally intensive tasks are delegated to a high-throughput **Rust FFI bridge** (`rust_core`).
 - **41% Performance Gain**: Offloads metrics calculation, complexity analysis, and regex FSM decoding to native code.
+
+### ⚡ Asynchronous Event Runtime
+PyAgent now runs on a global Tokio event loop hosted in Rust with Python coroutines scheduled via FFI.  Synchronous loops are prohibited by a repository-wide audit test, enforcing an event-driven, Node.js-like architecture across the codebase.
 - **DFA-Based Constraints**: LLM structured output decoding is accelerated via Rust-managed state machines and vectorized bitmasking.
 - **Fast Diffs & Patching**: Native Myers diff engine for high-speed code modification and transactional integrity.
 

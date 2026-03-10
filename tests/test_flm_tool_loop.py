@@ -92,7 +92,8 @@ def _make_config() -> FlmProviderConfig:
     )
 
 
-def test_tool_loop_executes_and_returns_terminal_answer() -> None:
+@pytest.mark.asyncio
+async def test_tool_loop_executes_and_returns_terminal_answer() -> None:
     """Adapter should process a tool call then return terminal model response."""
     tool_response = _FakeResponse(
         choices=[
@@ -118,7 +119,7 @@ def test_tool_loop_executes_and_returns_terminal_answer() -> None:
     adapter = FlmChatAdapter(config=_make_config(), client_factory=lambda **_: fake_client)
     messages: list[dict[str, Any]] = [{"role": "user", "content": "hello"}]
 
-    answer = adapter.run_until_terminal(
+    answer = await adapter.run_until_terminal(
         messages=messages,
         tool_executor=lambda _tool_call: "Tool call processed",
     )
@@ -131,7 +132,8 @@ def test_tool_loop_executes_and_returns_terminal_answer() -> None:
     assert any(message.get("role") == "tool" for message in second_call_messages)
 
 
-def test_tool_loop_raises_when_iterations_exceeded() -> None:
+@pytest.mark.asyncio
+async def test_tool_loop_raises_when_iterations_exceeded() -> None:
     """Adapter should stop and fail when max_tool_iterations is exceeded."""
     looping_response = _FakeResponse(
         choices=[
@@ -154,7 +156,7 @@ def test_tool_loop_raises_when_iterations_exceeded() -> None:
     adapter = FlmChatAdapter(config=_make_config(), client_factory=lambda **_: fake_client)
 
     with pytest.raises(FlmRuntimeError, match="Exceeded max tool iterations"):
-        adapter.run_until_terminal(
+        await adapter.run_until_terminal(
             messages=[{"role": "user", "content": "hello"}],
             max_tool_iterations=0,
             tool_executor=lambda _tool_call: "Tool call processed",
