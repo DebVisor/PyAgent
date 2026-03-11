@@ -65,7 +65,14 @@ collection_log.txt
 scratch/foreach_shards/
 
 # Rust
-rust_core/target/
+# Ignore all Cargo target directories. Some target artifacts were accidentally committed (large binaries); keep targets untracked.
+target/
+**/target/
+
+# Ensure rust target directories are git-ignored (already present but keep explicit)
+/target/
+
+
 
 #__pycache__
 __pycache__
@@ -83,3 +90,7 @@ chroma.sqlite3
 *.db
 data/
 fixes/
+
+# Generated key files from tests / runtime artifacts
+# Ignore key pairs created during testing in rust_core
+rust_core/*-keys.*
