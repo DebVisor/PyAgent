@@ -29,8 +29,8 @@ class AgentRegistry:
 
     def is_healthy(self, agent_id: str) -> bool:
         """Check if the agent is healthy based on its last heartbeat."""
-        # this should return a bool in
-        last = self._agents[agent_id]["last_seen"]
+        # guarantee we treat the stored timestamp as a float for mypy
+        last: float = self._agents[agent_id]["last_seen"]  # type: ignore[assignment]
         return (time.time() - last) < self.heartbeat_interval
 
     # metrics implementation stub, to be used later

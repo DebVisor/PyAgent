@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from roadmap import innovation
+from src.roadmap import innovation
 
 
 def test_record_experiment(tmp_path: Path) -> None:

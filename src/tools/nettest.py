@@ -21,6 +21,7 @@ from typing import List
 
 
 def main(args: List[str] | None = None) -> int:
+    """Main entry point for network testing utilities."""
     if args is None:
         args = sys.argv[1:]
     print("nettest placeholder", args)

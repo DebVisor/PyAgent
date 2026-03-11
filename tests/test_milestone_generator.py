@@ -4,7 +4,7 @@
 import asyncio
 from pathlib import Path
 
-from roadmap import milestones
+from src.roadmap import milestones
 
 
 def test_generate_milestones(tmp_path: Path) -> None:

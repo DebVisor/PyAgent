@@ -15,7 +15,7 @@ class TaskScheduler:
         self._queues: Dict[int, list[tuple[float, str]]] = {1: [], 2: [], 3: [], 4: []}
         self._tasks: Dict[str, Dict[str, Any]] = {}
 
-    def enqueue(self, payload: dict, priority: int = 3) -> str:
+    def enqueue(self, payload: dict[str, Any], priority: int = 3) -> str:
         """Add a task to the scheduler with the given payload and priority,
         returning its unique ID.
         """
@@ -24,7 +24,7 @@ class TaskScheduler:
         heapq.heappush(self._queues[priority], (time.time(), tid))
         return tid
 
-    async def dequeue(self) -> dict:
+    async def dequeue(self) -> dict[str, Any]:
         """Remove and return the highest priority task from the scheduler,
         or raise IndexError if no tasks are available.
         """
