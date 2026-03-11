@@ -93,4 +93,11 @@ The memory domain structure is designed to provide a comprehensive, high-perform
 - The Graph index will be used for complex relationship queries and pattern matching
 - Memory pressure detection will monitor usage and trigger swapping when necessary
 
+- `https://github.com/UndiFineD/PyAgent/security/dependabot/31`
+  DiskCache (python-diskcache) through 5.6.3 uses Python pickle for serialization by default.
+  An attacker with write access to the cache directory can achieve arbitrary code execution 
+  when a victim application reads from the cache.
+  For this reason disk caches and storage must be encrypted 
+  with the owners public key, either local or remote users.
+
 *Content reused from `src-old/classes/agent/LongTermMemory.py`.*
