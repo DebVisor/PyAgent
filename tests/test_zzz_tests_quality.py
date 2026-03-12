@@ -24,8 +24,10 @@ def _has_pytest_raises(tree: ast.AST) -> bool:
     return False
 
 
-def test_all_test_files_meet_quality() -> None:
+def test_all_test_files_meet_quality(pytestconfig: pytest.Config) -> None:
     """Meta-test that checks every test_*.py file for basic quality:
+    Verbosity is controlled by pytest's -v/--verbose flag; when set the
+    test prints each filename and the checks being executed.
     - contains at least one assert or pytest.raises
     - passes ruff lint
     - passes mypy type check
@@ -34,11 +36,16 @@ def test_all_test_files_meet_quality() -> None:
     repo_root = Path(__file__).resolve().parent.parent
     test_files = sorted(repo_root.glob("tests/test_*.py"))
     assert test_files, "no test files found"
+    verbose = pytestconfig.getoption("verbose")
+    if verbose:
+        print(f"quality: found {len(test_files)} test files to inspect")
 
     for f in test_files:
         # skip this meta-test itself to avoid recursion
         if f.name == Path(__file__).name:
             continue
+        if verbose:
+            print(f"quality: checking {f}")
         text = f.read_text(encoding="utf-8")
         try:
             tree = ast.parse(text)
@@ -48,11 +55,15 @@ def test_all_test_files_meet_quality() -> None:
 
         has_assert = any(isinstance(n, ast.Assert) for n in ast.walk(tree))
         has_raises = _has_pytest_raises(tree)
+        if verbose:
+            print(f"  has_assert={has_assert} has_raises={has_raises}")
         if not (has_assert or has_raises):
             failures.append(f"{f}: no assert or pytest.raises found")
 
         # run ruff on this file (use explicit 'check' subcommand)
         ruff_cmd = [sys.executable, "-m", "ruff", "check", str(f)]
+        if verbose:
+            print(f"  running ruff: {' '.join(ruff_cmd)}")
         try:
             ruff = subprocess.run(ruff_cmd, capture_output=True, text=True, check=False)
         except FileNotFoundError:
@@ -74,6 +85,8 @@ def test_all_test_files_meet_quality() -> None:
             "--ignore-missing-imports",
             str(f),
         ]
+        if verbose:
+            print(f"  running mypy: {' '.join(mypy_cmd)}")
         try:
             mypy = subprocess.run(mypy_cmd, capture_output=True, text=True, check=False)
         except FileNotFoundError:

@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from roadmap import cli
+from src.roadmap import cli
 
 
 def test_roadmap_cli(tmp_path: Path) -> None:

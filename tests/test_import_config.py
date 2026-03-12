@@ -3,7 +3,7 @@
 import asyncio
 from pathlib import Path
 
-from importer import config
+from src.importer import config
 
 
 def test_parse_manifest(tmp_path: Path) -> None:

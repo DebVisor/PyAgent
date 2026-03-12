@@ -2,10 +2,10 @@
 """Shared helper functions used by development utilities."""
 import json
 import logging
-from typing import Any, Dict
+from typing import Any
 
 
-def load_config(path: str) -> Dict[str, Any]:
+def load_config(path: str) -> Any:
     """Load JSON or TOML configuration file from disk."""
     # placeholder uses json only for now
     with open(path, "r", encoding="utf-8") as f:

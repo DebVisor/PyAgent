@@ -14,9 +14,15 @@
 # limitations under the License.
 
 
-async def create(path, items) -> None:
+from pathlib import Path
+from typing import List, Union
+
+
+async def create(path: Union[str, Path], items: List[str]) -> None:
     """Create a markdown file at *path* with a list of *items* as milestones."""
-    with open(path, "w", encoding="utf-8") as f:
+    p = Path(path)
+    with open(p, "w", encoding="utf-8") as f:
         f.write("# Technology Roadmap\n\n")
         for item in items:
             f.write(f"- {item}\n")
+    return

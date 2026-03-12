@@ -22,7 +22,11 @@ registry = AgentRegistry()
 def register_agent(info: dict[str, object]) -> dict[str, object]:
     """In a real implementation, you'd want to validate the input and handle errors appropriately."""
     # AgentRegistry.register expects agent_type parameter name
-    aid = registry.register(agent_type=info["type"], capabilities=info.get("capabilities", []))
+    # cast values pulled from untyped dict before passing to registry
+    aid = registry.register(
+        agent_type=cast(str, info["type"]),
+        capabilities=cast(list[str], info.get("capabilities", [])),
+    )
     return {"agent_id": aid}
 
 

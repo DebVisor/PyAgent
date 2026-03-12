@@ -21,6 +21,7 @@ from typing import List
 
 
 def main(args: List[str] | None = None) -> int:
+    """Main entry point for port knocking client utility."""
     if args is None:
         args = sys.argv[1:]
     print("knock placeholder", args)

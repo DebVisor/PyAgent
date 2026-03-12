@@ -2,7 +2,7 @@
 """Test the task scheduler."""
 import pytest
 
-from swarm.task_scheduler import TaskScheduler
+from src.swarm.task_scheduler import TaskScheduler
 
 
 @pytest.mark.asyncio

@@ -21,6 +21,7 @@ from typing import List
 
 
 def main(args: List[str] | None = None) -> int:
+    """Main entry point for port forwarding utilities."""
     if args is None:
         args = sys.argv[1:]
     print("port_forward placeholder", args)

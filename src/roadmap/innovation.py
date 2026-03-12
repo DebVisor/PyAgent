@@ -13,12 +13,22 @@
 # limitations under the License.
 
 import json
-import pathlib
+from pathlib import Path
+from typing import Any, List
 
 
-def record_experiment(name, db_path="experiments.json"):
-    db = []
-    p = pathlib.Path(db_path)
+def record_experiment(name: str, db_path: str = "experiments.json") -> Path:
+    """Record an experiment name in a JSON file, creating it if it doesn't exist.
+
+    Args:
+        name: The name of the experiment to record.
+        db_path: The path to the experiments JSON file to create or update.
+
+    Returns:
+        Path: The path to the updated experiments JSON file.
+    """
+    db: List[Any] = []
+    p: Path = Path(db_path)
     if p.exists():
         db = json.loads(p.read_text())
     db.append({"name": name})
