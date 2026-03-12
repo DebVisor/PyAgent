@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from importer import describe
+from src.importer import describe
 
 
 def test_describe_file(tmp_path: Path) -> None:

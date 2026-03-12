@@ -7,10 +7,10 @@ from pathlib import Path
 def test_importer_flow(tmp_path: Path) -> None:
     """Test the end-to-end importer flow using stubs."""
     # end-to-end smoke using stubs
-    from importer.compile import compile_architecture
-    from importer.config import parse_manifest
-    from importer.describe import describe_file
-    from importer.downloader import download_repo
+    from src.importer.compile import compile_architecture
+    from src.importer.config import parse_manifest
+    from src.importer.describe import describe_file
+    from src.importer.downloader import download_repo
 
     manifest = tmp_path / "github.md"
     manifest.write_text("a/b\n")

@@ -37,23 +37,36 @@ def print_section(title: str) -> None:
 
 
 def _extract_functions_from_file(filepath: str, fn_pattern: Pattern[str]) -> List[Dict[str, Any]]:
-    """Extract function definitions from a single Rust file."""
-    functions = []
-    try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read()
+    """Extract function definitions from a single Rust file.
 
-        matches = fn_pattern.findall(content)
-        for name, params in matches:
-            if not any(skip in name for skip in ['test_', 'main', '__']):
-                arg_count = len([p for p in params.split(',') if p.strip() and not p.strip().startswith('&')])
-                functions.append({
-                    'name': name,
-                    'params': params,
-                    'arg_count': arg_count
-                })
+    Args:
+        filepath: path to a ``.rs`` file to scan.
+        fn_pattern: compiled regex capturing the function name and parameter
+            list in two groups.
+
+    Returns:
+        A list of dictionaries with keys ``name``, ``params`` and
+        ``arg_count`` (the number of non-reference parameters).
+    """
+    functions: List[Dict[str, Any]] = []
+    try:
+        # use Path.read_text for simplicity and explicit encoding
+        content = Path(filepath).read_text(encoding="utf-8", errors="ignore")
     except (OSError, AttributeError, ValueError):
-        pass
+        # unreadable file; return empty result
+        return functions
+
+    matches = fn_pattern.findall(content)
+    for name, params in matches:
+        if any(skip in name for skip in ("test_", "main", "__")):
+            continue
+        # count actual arguments (ignore references)
+        arg_count = sum(
+            1
+            for p in params.split(",")
+            if p.strip() and not p.strip().startswith("&")
+        )
+        functions.append({"name": name, "params": params, "arg_count": arg_count})
     return functions
 
 
@@ -263,67 +276,71 @@ else:
 # ============================================================================
 print_section("STEP 4: DYNAMIC FUNCTION TESTING")
 
+# results dictionary carries counters and detailed info
 test_results: Dict[str, Any] = {
     'pass': 0,
     'fail': 0,
     'skip': 0,
     'errors': [],
-    'timings': []
+    'timings': [],
 }
 
-# Select functions to test
-test_functions = sorted(function_exports)
+# Select subset of functions based on configuration
+test_functions: List[str] = sorted(function_exports)
 if TEST_ALL_FUNCTIONS and len(test_functions) > MAX_FUNCTIONS_TO_TEST:
     test_functions = test_functions[:MAX_FUNCTIONS_TO_TEST]
 
-print(f"Testing {len(test_functions)} functions from {len(function_exports)} total:\n")
+total_to_test = len(test_functions)
+print(f"Testing {total_to_test} functions from {len(function_exports)} total:\n")
 
 for i, func_name in enumerate(test_functions, 1):
-    try:
-        if hasattr(rust_core, func_name):
-            func = getattr(rust_core, func_name)
-
-            # Generate test arguments
-            test_args_list = generate_test_args(func_name, 1)
-
-            FUNC_SUCCESS = False
-            FUNC_MESSAGE = ""
-            for test_args in test_args_list:
-                FUNC_SUCCESS, FUNC_MESSAGE, result = safe_call_function(func, test_args)
-
-                if FUNC_SUCCESS:
-                    test_results['pass'] += 1
-                    test_results['timings'].append(
-                        (func_name, FUNC_MESSAGE.split('took ')[1].split('ms')[0] if 'took' in FUNC_MESSAGE else '0')
-                    )
-                    break
-
-            if not FUNC_SUCCESS:
-                test_results['fail'] += 1
-                if not any(func_name in prev_error for prev_error, _ in test_results['errors']):
-                    test_results['errors'].append((func_name, FUNC_MESSAGE))
-                # Try with no args as fallback
-                FUNC_SUCCESS, FUNC_MESSAGE, result = safe_call_function(func, ())
-                if FUNC_SUCCESS:
-                    test_results['pass'] += 1
-                    test_results['fail'] -= 1
-
-            # Print progress every 10 functions
-            if i % 10 == 0 or i == len(test_functions):
-                PCT = (
-                    100 *
-                    (test_results['pass'] + test_results['fail']) /
-                    (test_results['pass'] + test_results['fail'] + 0.001)  # noqa: N806
-                )
-                pass_rate = (
-                    100 *
-                    test_results['pass'] /
-                    max(1, test_results['pass'] + test_results['fail'])
-                )
-                print(f"  Progress: {i}/{len(test_functions)} ({PCT:.0f}%) | Pass Rate: {pass_rate:.1f}%")
-    except (AttributeError, TypeError):
+    if not hasattr(rust_core, func_name):
         test_results['skip'] += 1
+        continue
 
+    try:
+        func = getattr(rust_core, func_name)
+    except AttributeError as exc:
+        # Attribute unexpectedly missing despite hasattr check; treat as skip but surface details when verbose.
+        test_results['skip'] += 1
+        if VERBOSE:
+            print(f"  skipped {func_name} due to attribute error: {exc}")
+        continue
+
+    # Generate arguments for this function
+    test_args_list = generate_test_args(func_name, 1)
+    if VERBOSE:
+        print(f"  -> {func_name} args candidates: {test_args_list}")
+
+    FUNC_SUCCESS: bool = False
+    FUNC_MESSAGE: str = ""
+
+    for test_args in test_args_list:
+        FUNC_SUCCESS, FUNC_MESSAGE, _ = safe_call_function(func, test_args)
+        if FUNC_SUCCESS:
+            test_results['pass'] += 1
+            test_results['timings'].append((
+                func_name, FUNC_MESSAGE.split('took ')[1].split('ms')[0]
+                if 'took' in FUNC_MESSAGE else '0'
+            ))
+            break
+
+    if not FUNC_SUCCESS:
+        test_results['fail'] += 1
+        if not any(func_name in prev for prev, _ in test_results['errors']):
+            test_results['errors'].append((func_name, FUNC_MESSAGE))
+        # attempt call without arguments as fallback
+        FUNC_SUCCESS, FUNC_MESSAGE, _ = safe_call_function(func, ())
+        if FUNC_SUCCESS:
+            test_results['pass'] += 1
+            test_results['fail'] -= 1
+
+    # progress logging every tenth function or at end
+    if i % 10 == 0 or i == total_to_test:
+        tested = test_results['pass'] + test_results['fail']
+        PCT = 100 * tested / max(1, tested)
+        pass_rate = 100 * test_results['pass'] / max(1, tested)
+        print(f"  Progress: {i}/{total_to_test} ({PCT:.0f}%) | Pass Rate: {pass_rate:.1f}%")
 print("\n" + "─" * 100)
 
 # ============================================================================

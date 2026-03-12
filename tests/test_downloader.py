@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from importer import downloader
+from src.importer import downloader
 
 
 def test_download_repo(tmp_path: Path) -> None:
