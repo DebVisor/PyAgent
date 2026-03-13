@@ -152,12 +152,21 @@ class SaaSGateway:
         self.rate_limits[key] = []
         return key
 
+    def _mask_api_key(self, api_key: str) -> str:
+        """Mask an API key for safe logging.
+
+        The result should never include the full key. Short or empty keys are hidden
+        entirely so we never accidentally expose a secret.
+        """
+        if not api_key or len(api_key) < 8:
+            return "<hidden>"
+
+        return f"{api_key[:8]}..."
+
     def validate_request(self, api_key: str, cost: int = 1) -> bool:
         """Checks if a request is authorized and within quota/rate limits."""
         if api_key not in self.api_keys:
-            # Avoid logging API keys directly (sensitive information).
-            masked_key = api_key[:8] + "..." if api_key else "<empty>"
-            logging.warning(f"SAAS: Unauthorized access attempt with key {masked_key}")
+            logging.warning("SAAS: Unauthorized access attempt")
             return False
 
         # Rate Limiting (Simple Token Bucket: max 5 requests per second)
@@ -166,7 +175,7 @@ class SaaSGateway:
             t for t in self.rate_limits[api_key] if now - t < 1.0
         ]
         if len(self.rate_limits[api_key]) >= 5:
-            logging.warning(f"SAAS: Rate limit exceeded for key {api_key}")
+            logging.warning("SAAS: Rate limit exceeded")
             return False
 
         tenant_info = self.api_keys[api_key]

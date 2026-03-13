@@ -99,18 +99,6 @@ from dataclasses import dataclass, field
 
 from src.core.base.models import AuthConfig, AuthMethod, _empty_dict_str_str
 
-# Copyright 2026 PyAgent Authors
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 from src.core.base.version import VERSION
 
 __version__ = VERSION
@@ -120,6 +108,7 @@ class AuthenticationManager:
     """Manager for authentication methods."""
 
     def __init__(self, config: AuthConfig | None = None) -> None:
+        """Initialize the AuthenticationManager with an optional AuthConfig."""
         self.config = config or AuthConfig()
         self.token_cache: dict[str, str] = {}
         logging.debug(
@@ -127,6 +116,7 @@ class AuthenticationManager:
         )
 
     def get_headers(self) -> dict[str, str]:
+        """Generate authentication headers based on the configured method."""
         headers: dict[str, str] = {}
         if self.config.method == AuthMethod.API_KEY:
             headers["X-API-Key"] = self.config.api_key
@@ -145,23 +135,27 @@ class AuthenticationManager:
         return headers
 
     def _get_oauth_token(self) -> str:
+        """Retrieve OAuth token, using cache if available."""
         cache_key = f"oauth_{self.config.oauth_client_id}"
         if cache_key in self.token_cache:
             return self.token_cache[cache_key]
         token = self.config.token
         if not token:
-            logging.error(f"OAuth token missing for {cache_key}")
+            logging.error("OAuth token missing")
             return ""
         self.token_cache[cache_key] = token
         return token
 
     def refresh_token(self) -> None:
+        """Clear the token cache to force retrieval of a new token on next request."""
         self.token_cache.clear()
 
     def set_custom_header(self, key: str, value: str) -> None:
+        """Add or update a custom header in the authentication configuration."""
         self.config.custom_headers[key] = value
 
     def validate(self) -> bool:
+        """Validate that the current authentication configuration is sufficient for use."""
         if self.config.method == AuthMethod.NONE:
             return True
         if self.config.method == AuthMethod.API_KEY:
@@ -184,13 +178,16 @@ class AuthManager:
     custom_headers: dict[str, str] = field(default_factory=_empty_dict_str_str)
 
     def set_method(self, method: str, **kwargs: str) -> None:
+        """Set the authentication method and associated credentials."""
         self.method = method
         self.credentials = kwargs
 
     def add_custom_header(self, header: str, value: str) -> None:
+        """Add a custom header to be included in authentication requests."""
         self.custom_headers[header] = value
 
     def get_headers(self) -> dict[str, str]:
+        """Generate headers based on the current authentication method and credentials."""
         headers = dict(self.custom_headers)
         method = self.method
         if isinstance(method, AuthMethod):
