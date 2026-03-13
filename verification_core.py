@@ -7,8 +7,7 @@ class VerificationCore:
 
     @staticmethod
     def fact_check(code_snippet: str, agent_id: str) -> dict[str, Any]:
-        """Cross-references generated code snippets against the sharded knowledge base (Phase 257).
-        """
+        """Cross-reference generated code snippets against the sharded knowledge base (Phase 257)."""
         return {"valid": True, "hallucinations": []}
 
     @staticmethod
