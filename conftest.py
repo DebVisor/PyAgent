@@ -80,8 +80,7 @@ class ImportlibPatcher:
         self._orig_module = util.module_from_spec
 
     def patch(self) -> None:
-        """Applies the monkey‑patches to `importlib.util` functions.
-        """
+        """Apply monkey‑patches to importlib.util functions."""
         util.spec_from_file_location = self._patched_spec
         util.module_from_spec = self._patched_module
 
@@ -377,8 +376,7 @@ class StarImportManager:
 # ---------------------------------------------------------------------------
 
 class SessionManager:
-    """Manages pytest session hooks for setup and teardown, including file write tracking and star import support.
-    """
+    """Manage pytest session hooks for setup/teardown and star import support."""
 
     def __init__(self, root: Path):
         """Initializes the SessionManager with the root directory and creates a StarImportManager."""

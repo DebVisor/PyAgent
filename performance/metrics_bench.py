@@ -19,7 +19,7 @@ def async_bench(duration: float = 1.0) -> int:
 
     metrics_engine.start_async_loop()
 
-    async def waiter():
+    async def waiter() -> None:
         await asyncio.sleep(duration)
     asyncio.run(waiter())
     return metrics_engine.counter

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run this model in Python
+"""Run this model in Python.
 
 > pip install openai
 """

@@ -80,7 +80,7 @@ cache-keys = [{ file = "requirements.txt" }]
 
 line-length = 120
 target-version = "py312"
-exclude = ["src-old/**"]
+exclude = ["src-old/**", "scripts-old/**", ".agents/**", ".cleanup_archive/**"]
 select = [
     "E",  # pycodestyle errors
     "W",  # pycodestyle warnings
