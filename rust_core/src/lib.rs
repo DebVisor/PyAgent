@@ -11,15 +11,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#![allow(
-    clippy::type_complexity,
-    clippy::needless_range_loop,
-    clippy::collapsible_if,
-    clippy::useless_conversion,
-    clippy::manual_is_multiple_of,
-    clippy::let_and_return,
-    clippy::get_first
-)]
+/// Core Rust module for PyAgent, providing high-performance implementations of critical components.
+/// This module is designed to be imported from Python and serves as the backbone 
+/// for performance-sensitive operations across the PyAgent ecosystem.  
+/// It includes optimized algorithms, hardware acceleration bindings,
+/// and efficient data structures to support the demanding workloads of large-scale agent fleets.
+/// The module is organized into sub-modules for different functional areas, 
+/// such as security, hardware, config parsing, etc.
+// Clippy lints are enforced by default; any exceptional cases are annotated
+// at the site where they occur rather than globally suppressing them.
 
 use pyo3::prelude::*;
 
