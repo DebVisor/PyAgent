@@ -54,22 +54,60 @@ def ensure_balanced_triple_quotes(text: str) -> tuple[str, int]:
 
     # Convert module-level docstrings that contain backslash escape sequences into raw
     # docstrings to prevent unicodeescape and invalid escape errors.
+    def _find_module_docstring_open(txt: str) -> tuple[int, str] | None:
+        """Return the index of the module docstring opening delimiter and the delimiter itself.
+
+        The search is restricted to a true module docstring at the top of the file:
+        after an optional shebang and any leading blank/comment-only lines. Only
+        triple-quoted strings that start at the beginning of a line (after
+        indentation) and are not already raw (no immediate `r`/`R` prefix) are
+        considered.
+        """
+        # Compute the position just after any shebang and leading comments/blank lines.
+        search_start = 0
+        lines_with_endings = txt.splitlines(keepends=True)
+        for idx, line in enumerate(lines_with_endings):
+            if idx == 0 and line.startswith("#!"):
+                # Skip the shebang line entirely.
+                search_start += len(line)
+                continue
+            stripped = line.lstrip(" \t")
+            if stripped.startswith("#") or stripped.strip() == "":
+                # Skip leading comment-only or blank lines.
+                search_start += len(line)
+                continue
+            # First non-comment, non-blank line reached.
+            break
+        # Look for a non-raw triple-quoted string starting at a line boundary.
+        m = re.search(r'(?m)^[ \t]*(?<![rR])("""|\'\'\')', txt[search_start:])
+        if not m:
+            return None
+        delim = m.group(1)
+        open_idx = search_start + m.start(1)
+        return open_idx, delim
+
     def rawify_if_escapes(txt: str) -> tuple[str, int]:
-        changes = 0
-        for delim in ('"""', "'''"):
-            # Find the first occurrence of an unraw docstring opening delimiter.
-            m = re.search(rf'(?m)(?<![rR]){re.escape(delim)}', txt)
-            if not m:
-                continue
-            start = m.end()
-            end = txt.find(delim, start)
-            if end == -1:
-                continue
-            inner = txt[start:end]
-            if '\\' in inner:
-                txt = txt[:m.start()] + 'r' + txt[m.start():]
-                changes += 1
-        return txt, changes
+        """Rawify the module-level docstring if it contains backslash escapes.
+
+        Only the module docstring (after shebang/comments) is considered, to avoid
+        changing non-docstring triple-quoted literals elsewhere in the file.
+        """
+        found = _find_module_docstring_open(txt)
+        if not found:
+            return txt, 0
+        open_idx, delim = found
+        # Find the corresponding closing delimiter, if any.
+        start = open_idx + len(delim)
+        end = txt.find(delim, start)
+        if end == -1:
+            # Unterminated docstring; balancing logic will handle closing it.
+            return txt, 0
+        inner = txt[start:end]
+        if "\\" not in inner:
+            return txt, 0
+        # Insert an 'r' immediately before the opening delimiter.
+        txt = txt[:open_idx] + "r" + txt[open_idx:]
+        return txt, 1
 
     new_text, rawify_changes = rawify_if_escapes(text)
     if rawify_changes:
@@ -86,15 +124,19 @@ def ensure_balanced_triple_quotes(text: str) -> tuple[str, int]:
         lines.pop()
         fixed += 1
 
-    # Add closing delimiter when counts are odd.
-    for delim in ('"""', "'''"):
-        count = '\n'.join(lines).count(delim)
-        if count % 2 != 0:
-            # Append at end using the indentation of the last non-empty line
-            indent = ''
+    # Add a closing delimiter for the module docstring when its delimiter count is odd.
+    body = "\n".join(lines)
+    found = _find_module_docstring_open(body)
+    if found:
+        open_idx, delim = found
+        # Only consider occurrences of the delimiter from the module docstring onward.
+        delim_count = body[open_idx:].count(delim)
+        if delim_count % 2 != 0:
+            # Append at end using the indentation of the last non-empty line.
+            indent = ""
             if lines:
                 last = lines[-1]
-                indent = last[: len(last) - len(last.lstrip(' \t'))]
+                indent = last[: len(last) - len(last.lstrip(" \t"))]
             lines.append(f"{indent}{delim}")
             fixed += 1
 
