@@ -42,19 +42,17 @@ jobs:
         if: runner.os != 'Windows'
         working-directory: rust_core
         run: |
-          python -m venv .venv
-          ./.venv/bin/pip install --upgrade pip
-          ./.venv/bin/pip install maturin
-          ./.venv/bin/maturin develop --release
+          pip install --upgrade pip
+          pip install maturin
+          maturin develop --release
 
       - name: Install maturin & build runtime extension (Windows)
         if: runner.os == 'Windows'
         working-directory: rust_core
         run: |
-          python -m venv .venv
-          .\.venv\Scripts\pip.exe install --upgrade pip
-          .\.venv\Scripts\pip.exe install maturin
-          .\.venv\Scripts\maturin.exe develop --release
+          python -m pip install --upgrade pip
+          python -m pip install maturin
+          python -m maturin develop --release
 
       - name: Run Python tests
         run: pytest -q
