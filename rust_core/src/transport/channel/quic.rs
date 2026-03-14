@@ -21,6 +21,7 @@ pub fn transport_quic_supported() -> PyResult<bool> {
     Ok(true)
 }
 
+/// Register the module's functions with Python.
 pub fn register(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(transport_quic_supported, m)?)?;
     Ok(())
