@@ -108,5 +108,71 @@ LLM_CONTEXT_END
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import logging
+from pathlib import Path
 
-r"""Auto-extracted class from agent_coder.py"""
+from mixins.agent.AgentLanguageMixin import AgentLanguageMixin
+from mixins.agent.AgentMetricsMixin import AgentMetricsMixin
+from mixins.agent.AgentRefactorMixin import AgentRefactorMixin
+from mixins.agent.AgentStyleMixin import AgentStyleMixin
+from src.core.base.BaseAgent import BaseAgent
+
+
+logger = logging.getLogger(__name__)
+
+
+class CoderAgent(BaseAgent, AgentLanguageMixin, AgentStyleMixin, AgentMetricsMixin, AgentRefactorMixin):
+    r"""Auto-extracted class from agent_coder.py
+
+    Minimal compatibility shim for the legacy CoderAgent.
+
+    This implementation is intentionally lightweight. It preserves the
+    public surface area that existing code may rely on without attempting
+    to reintroduce the full historical behavior.
+    """
+
+    def __init__(self, file_path: Path | str) -> None:
+        """Initialize the CoderAgent with a target file path.
+
+        The path is stored as a pathlib.Path instance to satisfy the
+        documented invariant that ``self.file_path`` points to a valid path.
+        """
+        # Do not assume anything about BaseAgent.__init__ signature; avoid
+        # calling super().__init__() to keep this shim maximally compatible.
+        self.file_path = Path(file_path)
+
+    def _detect_language(self):
+        """Internal hook for language detection.
+
+        This shim provides only a debug log and returns ``None``. Concrete
+        language-aware behavior should be implemented in newer agents.
+        """
+        logger.debug("CoderAgent._detect_language called; no-op shim implementation.")
+        return None
+
+    def detect_language(self):
+        """Public entrypoint for language detection.
+
+        Delegates to :meth:`_detect_language`. Kept for API compatibility.
+        """
+        return self._detect_language()
+
+    def generate_documentation(self, content: str) -> str:
+        """Generate documentation for the given content.
+
+        The legacy implementation is no longer available. This shim logs
+        the call and returns the content unchanged to avoid breaking
+        existing call sites that expect a string result.
+        """
+        logger.debug("CoderAgent.generate_documentation called; returning content unchanged.")
+        return content
+
+    def _get_default_content(self) -> str:
+        """Return a default content string used when no input is provided."""
+        logger.debug("CoderAgent._get_default_content called; returning empty string.")
+        return ""
+
+    def _get_fallback_response(self) -> str:
+        """Return a safe fallback response when generation fails."""
+        logger.debug("CoderAgent._get_fallback_response called; returning empty string.")
+        return ""
