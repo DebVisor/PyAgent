@@ -2,7 +2,7 @@
 
 **Goal:** Implement Phase T-1 of the hybrid transport layer 
     — Ed25519 NodeIdentity, 
-        Noise_XX handshake-based P2P session, 
+        Noise_XX handshake-based P2P session,   
         LoopbackChannel for unit tests, 
         QUIC-first transport scaffolding, and
         foundational UTM transport hooks (ports/policy) — all wired into `rust_core` via PyO3.
