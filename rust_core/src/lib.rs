@@ -53,6 +53,7 @@ mod transport;
 mod utils;
 mod validation;
 mod workspace;
+mod transport;
 mod infrastructure {
     pub mod services {
         pub mod dev {

@@ -84,19 +84,4 @@ BaseAgent module: Core classes and utilities for AI-powered agents.
 LLM_CONTEXT_END
 """
 
-from __future__ import annotations
-
-try:
-    # Preferred import path for the modern BaseAgent implementation.
-    from src.core.base.base_agent import BaseAgent  # type: ignore[import]
-except ImportError:
-    try:
-        # Fallback to the legacy local agent module if the new path is unavailable.
-        from .agent import BaseAgent  # type: ignore[import]
-    except ImportError as exc:
-        raise ImportError(
-            "BaseAgent is no longer available in 'src-old.classes.base_agent'. "
-            "Update imports to 'src.core.base.base_agent.BaseAgent'."
-        ) from exc
-
-__all__ = ["BaseAgent"]
+r"""BaseAgent module: Core classes and utilities for AI-powered agents."""
