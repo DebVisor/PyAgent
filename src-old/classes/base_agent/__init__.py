@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-# Copyright (c) 2025 PyAgent contributors
+# Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
+#
 #     http://www.apache.org/licenses/LICENSE-2.0
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -82,4 +84,19 @@ BaseAgent module: Core classes and utilities for AI-powered agents.
 LLM_CONTEXT_END
 """
 
-r"""BaseAgent module: Core classes and utilities for AI-powered agents."""
+from __future__ import annotations
+
+try:
+    # Preferred import path for the modern BaseAgent implementation.
+    from src.core.base.base_agent import BaseAgent  # type: ignore[import]
+except ImportError:
+    try:
+        # Fallback to the legacy local agent module if the new path is unavailable.
+        from .agent import BaseAgent  # type: ignore[import]
+    except ImportError as exc:
+        raise ImportError(
+            "BaseAgent is no longer available in 'src-old.classes.base_agent'. "
+            "Update imports to 'src.core.base.base_agent.BaseAgent'."
+        ) from exc
+
+__all__ = ["BaseAgent"]
