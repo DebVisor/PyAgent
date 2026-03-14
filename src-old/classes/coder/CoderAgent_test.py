@@ -31,5 +31,5 @@ except ImportError as e:
 
 
 def test_coderagent_exists():
-    """
-    """
+    """Ensure that the CoderAgent symbol is exposed by the imported module."""
+    assert "CoderAgent" in globals(), "CoderAgent should be defined in src.coder.CoderAgent"
