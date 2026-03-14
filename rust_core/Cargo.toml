@@ -38,10 +38,10 @@ uuid         = { version = "1", features = ["v4"] }
 subtle       = "2"
 snow             = "0.9"
 ed25519-dalek    = { version = "2", features = ["rand_core"] }
-tokio            = { version = "1", features = ["full"] }
+tokio            = { version = "1", features = ["full"], optional = true }
 ciborium         = "0.2"
-quinn            = "0.11"
-tokio-tungstenite = "0.24"
+quinn            = { version = "0.11", optional = true }
+tokio-tungstenite = { version = "0.24", optional = true }
 
 [dev-dependencies]
 tempfile     = "3.5"
@@ -49,3 +49,4 @@ tempfile     = "3.5"
 [features]
 amd_npu = []
 default = []
+async-transport = ["tokio", "quinn", "tokio-tungstenite"]
