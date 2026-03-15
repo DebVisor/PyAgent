@@ -3,8 +3,8 @@
 -r requirements.txt
 
 # Lint / typecheck
-ruff>=0.1.0
-flake8>=6.0.0
+ruff==0.15.6
+flake8==7.3.0
 mypy==1.19.1
 
 # Testing
