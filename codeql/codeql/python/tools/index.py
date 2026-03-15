@@ -4,7 +4,7 @@
 # Which is probably 3.6 and upwards. Handling 3.6 specifically will be by throwing an error, though.
 # We will require at least 3.7 to proceed.
 
-'''Run index.py in buildtools'''
+"""Run index.py in buildtools"""
 
 import os
 import sys
@@ -25,4 +25,5 @@ zippath = os.path.join(tools, getzipfilename())
 sys.path = [ zippath ] + sys.path
 
 import buildtools.index
+
 buildtools.index.main()

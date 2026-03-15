@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""
-Script to get currently installed kotlinc version. If a list of available versions is provided as input,
+"""Script to get currently installed kotlinc version. If a list of available versions is provided as input,
 the last version of those lower or equal to the kotlinc version is printed.
 """
 
-import subprocess
+import argparse
 import re
 import shutil
-import argparse
+import subprocess
 import sys
 
 

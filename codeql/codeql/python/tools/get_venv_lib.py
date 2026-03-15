@@ -28,7 +28,7 @@ def first_site_packages():
 def get_venv_lib():
     try:
         return pip_installed_folder()
-    except:
+    except Exception:
         return first_site_packages()
 
 if __name__=='__main__':

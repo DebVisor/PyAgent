@@ -3,11 +3,13 @@
 #This file needs to be able to handle all versions of Python we are likely to encounter
 #Which is probably 2.6 and upwards
 
-'''This module sets up sys.path from the environment
-and runs the populator when called from semmle tools such as buildSnapshot.'''
+"""This module sets up sys.path from the environment
+and runs the populator when called from semmle tools such as buildSnapshot.
+"""
 
-import sys
 import os
+import sys
+
 
 # The constant is put here instead of make_zips.py, since make_zips.py is not present in
 # the distributed extractor-python code
