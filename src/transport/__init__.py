@@ -37,7 +37,6 @@ def _locate_local_rust_core() -> Path | None:
 
     This is where `cargo build` writes the Python extension (`rust_core.pyd`).
     """
-
     repo_root = Path(__file__).resolve().parents[2]
     candidate = repo_root / "rust_core" / "target" / "debug"
     return candidate if candidate.exists() else None
@@ -49,7 +48,6 @@ def _apply_local_rust_core_path() -> None:
     This ensures the repo's local `rust_core/target/debug` build is imported
     over any installed `rust_core` package.
     """
-
     local_dir = _locate_local_rust_core()
     if local_dir is None:
         return

@@ -77,10 +77,9 @@ cache-keys = [{ file = "requirements.txt" }]
 # ruff configuration lives here; older versions (including 0.15.x) expect
 # all lint-related keys directly in this table. hyphenated names are
 # required for compatibility.
-
 line-length = 120
 target-version = "py312"
-exclude = ["src-old/**", "scripts-old/**", ".agents/**", ".cleanup_archive/**"]
+exclude = ["src-old/**", "scripts-old/**", ".agents/**", ".cleanup_archive/**", "codeql/**"]
 select = [
     "E",  # pycodestyle errors
     "W",  # pycodestyle warnings

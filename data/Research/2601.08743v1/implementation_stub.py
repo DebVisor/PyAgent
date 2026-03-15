@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import torch
 from typing import List, Optional
 
 
@@ -20,7 +21,7 @@ class TableTrieNode:
         self.children = {}
         self.kv_cache_pointer = None # Reference to paged attention block indices
 
-
+        
 class TableTrie:
     """
     Trie structure for canonical table-set lookup (arXiv:2601.08743).
@@ -46,7 +47,7 @@ class TableTrie:
         return node.kv_cache_pointer
 
 
-class TableCacheManager:
+      class TableCacheManager:
     """
     Manages precomputed table KV caches with 'Hot-Swapping' logic.
     """
