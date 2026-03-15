@@ -26,7 +26,8 @@ export const AiPanel: React.FC<AiPanelProps> = ({ onActionRequest }) => {
     }
   }, [onActionRequest]);
 
-  const { send, connected } = useWebSocket('ws://localhost:5173/ws', { onMessage: handleMessage });
+  const wsUrl = `${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.host}/ws`;
+  const { send, connected } = useWebSocket(wsUrl, { onMessage: handleMessage });
 
   const submitPrompt = useCallback((text: string) => {
     if (!text.trim()) return;
