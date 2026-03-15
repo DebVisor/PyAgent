@@ -13,9 +13,13 @@
 # limitations under the License.
 """Tests for WebSocket message schema models."""
 import pytest
+
 from backend.models import (
-    InitMessage, RunTaskMessage, TaskDeltaMessage,
-    ActionRequestMessage, SignalMessage,
+    ActionRequestMessage,
+    InitMessage,
+    RunTaskMessage,
+    SignalMessage,
+    TaskDeltaMessage,
 )
 
 
