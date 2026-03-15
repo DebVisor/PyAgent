@@ -1,12 +1,9 @@
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  // Configure plugins, resolve options, and other settings here as needed.
-  // Avoid inlining secrets such as API keys into the client bundle.
-});
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, process.cwd(), '');
