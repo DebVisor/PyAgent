@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Python wrapper package for the Rust-based `rust_core` extension.
 
 This package exists purely to avoid the namespace collision between the Rust
@@ -11,13 +12,14 @@ public API into `rust_core` to match the imports used by the tests.
 import importlib
 import sys
 from pathlib import Path
+from types import ModuleType
 
 # If we are running from the repo source tree, the `rust_core` package directory
 # here shadows the installed package in site-packages. In that case, try to
 # import the compiled extension from the installed package by temporarily
 # removing the source directory from sys.path.
 
-def _import_installed_extension(name: str):
+def _import_installed_extension(name: str) -> ModuleType:
     # Running from the repo root can cause the source package to shadow the
     # installed package in site-packages. We temporarily remove both the repo
     # root (and the implicit empty-string entry) from sys.path, and clear any
