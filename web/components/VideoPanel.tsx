@@ -32,7 +32,10 @@ export const VideoPanel: React.FC<VideoPanelProps> = ({ onSignal, incomingSignal
 
       pc.onicecandidate = (event) => {
         if (event.candidate) {
-          onSignal({ signal_type: 'ice', payload: { candidate: event.candidate.toJSON() } });
+          onSignal({
+            signal_type: 'ice',
+            payload: { candidate: event.candidate.toJSON(), peerId },
+          });
         }
       };
 
@@ -46,26 +49,76 @@ export const VideoPanel: React.FC<VideoPanelProps> = ({ onSignal, incomingSignal
       // Create and send offer
       const offer = await pc.createOffer();
       await pc.setLocalDescription(offer);
-      onSignal({ signal_type: 'offer', payload: { sdp: offer.sdp, type: offer.type } });
+      onSignal({
+        signal_type: 'offer',
+        payload: { sdp: offer.sdp, type: offer.type, peerId },
+      });
       setStatus('calling');
     } catch (err) {
       console.error('Camera error:', err);
     }
-  }, [onSignal]);
+  }, [onSignal, peerId]);
 
   // Handle incoming signals
   useEffect(() => {
-    const pc = pcRef.current;
-    if (!pc || !incomingSignal) return;
+    if (!incomingSignal) return;
+
     (async () => {
+      let pc = pcRef.current;
       const { signal_type, payload } = incomingSignal;
-      if (signal_type === 'answer') {
-        await pc.setRemoteDescription(new RTCSessionDescription(payload as unknown as RTCSessionDescriptionInit));
+
+      if (signal_type === 'offer') {
+        // Create peer connection if we don't have one yet (callee path)
+        if (!pc) {
+          pc = new RTCPeerConnection({
+            iceServers: [{ urls: 'stun:stun.l.google.com:19302' }],
+          });
+          pcRef.current = pc;
+
+          const localStream = localVideoRef.current?.srcObject as MediaStream | null;
+          if (localStream) {
+            localStream.getTracks().forEach((track) => pc!.addTrack(track, localStream));
+          }
+
+          pc.onicecandidate = (event) => {
+            if (event.candidate) {
+              onSignal({
+                signal_type: 'ice',
+                payload: { candidate: event.candidate.toJSON(), peerId },
+              });
+            }
+          };
+
+          pc.ontrack = (event) => {
+            if (remoteVideoRef.current) {
+              remoteVideoRef.current.srcObject = event.streams[0];
+              setStatus('connected');
+            }
+          };
+        }
+
+        await pc.setRemoteDescription(
+          new RTCSessionDescription(payload as unknown as RTCSessionDescriptionInit),
+        );
+        const answer = await pc.createAnswer();
+        await pc.setLocalDescription(answer);
+        onSignal({
+          signal_type: 'answer',
+          payload: { sdp: answer.sdp, type: answer.type, peerId },
+        });
+      } else if (signal_type === 'answer') {
+        pc = pcRef.current;
+        if (!pc) return;
+        await pc.setRemoteDescription(
+          new RTCSessionDescription(payload as unknown as RTCSessionDescriptionInit),
+        );
       } else if (signal_type === 'ice') {
+        pc = pcRef.current;
+        if (!pc) return;
         await pc.addIceCandidate(new RTCIceCandidate(payload['candidate'] as RTCIceCandidateInit));
       }
     })();
-  }, [incomingSignal]);
+  }, [incomingSignal, onSignal, peerId]);
 
   const hangUp = useCallback(() => {
     pcRef.current?.close();
