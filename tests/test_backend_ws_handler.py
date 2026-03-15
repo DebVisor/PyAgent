@@ -13,8 +13,10 @@
 # limitations under the License.
 """Tests for WebSocket message handler dispatch."""
 import json
-import pytest
 from unittest.mock import AsyncMock
+
+import pytest
+
 from backend.session_manager import SessionManager
 from backend.ws_handler import handle_message
 
