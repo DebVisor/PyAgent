@@ -3,11 +3,12 @@
 #This file needs to be able to handle all versions of Python we are likely to encounter
 #Which is probably 3.0 and upwards
 
-'''Run buildtools/install.py'''
+"""Run buildtools/install.py"""
 
-import sys
 import os
 import subprocess
+import sys
+
 from python_tracer import getzipfilename
 
 if 'SEMMLE_DIST' in os.environ:
@@ -21,8 +22,9 @@ zippath = os.path.join(tools, getzipfilename())
 sys.path = [ zippath ] + sys.path
 
 # these are imported from the zip
-from buildtools.discover import discover
 import buildtools.install
+from buildtools.discover import discover
+
 
 def main():
     version, root, requirement_files = discover()

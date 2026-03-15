@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
 import os.path
-import imp
+import re
 import sys
 import traceback
-import re
+from typing import Any, Dict, Iterable, List, Optional, Sequence
+
+import imp
 
 SETUP_TAG = "LGTM_PYTHON_SETUP_SETUP_PY"
 
@@ -14,15 +16,32 @@ requirements_file_path = "<default value>"
 if sys.version_info >= (3,):
     basestring = str
 
-def setup_interceptor(**args):
+
+def setup_interceptor(**args: Any) -> None:
     requirements = make_requirements(**args)
     write_requirements_file(requirements)
 
-def make_requirements(requires=(), install_requires=(), extras_require={}, dependency_links=[], **other_args):
+
+def make_requirements(
+    requires: Optional[Sequence[str]] = None,
+    install_requires: Optional[Sequence[str]] = None,
+    extras_require: Optional[Dict[str, Any]] = None,
+    dependency_links: Optional[Sequence[str]] = None,
+    **other_args: Any,
+) -> List[str]:
+    if requires is None:
+        requires = ()
+    if install_requires is None:
+        install_requires = ()
+    if extras_require is None:
+        extras_require = {}
+    if dependency_links is None:
+        dependency_links = []
+
     # Install main requirements.
     requirements = list(requires) + list(install_requires)
     # Install requirements for all features.
-    for feature, feature_requirements in extras_require.items():
+    for _feature, feature_requirements in extras_require.items():
         if isinstance(feature_requirements, basestring):
             requirements += [feature_requirements]
         else:
@@ -90,9 +109,9 @@ def convert_setup_to_requirements(root):
         return 0
     # Override the setuptools and distutils.core implementation of setup with our own.
     import setuptools
-    setattr(setuptools, "setup", setup_interceptor)
+    setuptools.setup = setup_interceptor
     import distutils.core
-    setattr(distutils.core, "setup", setup_interceptor)
+    distutils.core.setup = setup_interceptor
 
     # WHY are we inserting at index 1?
     # >>> l = [1,2,3]; l.insert(1, 'x'); print(l)
@@ -107,12 +126,15 @@ def convert_setup_to_requirements(root):
     # Run the setup.py file.
     try:
         imp.load_source("__main__", setup_file_path)
-    except BaseException as ex:
+    except BaseException:
         # We don't really care about errors so long as a requirements.txt exists in the next build step.
         print("Running %s failed." % setup_file_path)
         traceback.print_exc(file=sys.stdout)
         if not os.path.exists(requirements_file_path):
-            print("%s failed, and a %s file does not exist. Exiting with error." % (setup_file_path, requirements_file_path))
+            print(
+                "%s failed, and a %s file does not exist. Exiting with error."
+                % (setup_file_path, requirements_file_path)
+            )
             return 1
     return 0
 

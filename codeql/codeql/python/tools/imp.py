@@ -1,5 +1,6 @@
-"""This module provides the components needed to build your own __import__
-function.  Undocumented functions are obsolete.
+"""Provides components needed to build your own __import__ function.
+
+Undocumented functions are obsolete.
 
 In most cases it is preferred you consider using the importlib module's
 functionality over this module.
@@ -7,17 +8,25 @@ functionality over this module.
 This file was copied from `Lib/imp.py`, copyright PSF, with minor modifications made afterward.
 """
 # (Probably) need to stay in _imp
-from _imp import (lock_held, acquire_lock, release_lock,
-                  get_frozen_object, is_frozen_package,
-                  init_frozen, is_builtin, is_frozen,
-                  _fix_co_filename)
+from _imp import (
+    _fix_co_filename,
+    acquire_lock,
+    get_frozen_object,
+    init_frozen,
+    is_builtin,
+    is_frozen,
+    is_frozen_package,
+    lock_held,
+    release_lock
+)
+
 try:
     from _imp import create_dynamic
 except ImportError:
     # Platform doesn't support dynamic loading.
     create_dynamic = None
 
-from importlib._bootstrap import _exec, _load, _builtin_from_name
+from importlib._bootstrap import _builtin_from_name, _exec, _load
 from importlib._bootstrap_external import SourcelessFileLoader
 
 # In Python 3.14, `_ERR_MSG` was removed in favor of `_ERR_MSG_PREFIX`.
@@ -27,16 +36,13 @@ except ImportError:
     from importlib._bootstrap import _ERR_MSG_PREFIX
     _ERR_MSG = _ERR_MSG_PREFIX + '{!r}'
 
-from importlib import machinery
-from importlib import util
 import importlib
 import os
 import sys
 import tokenize
 import types
 import warnings
-
-
+from importlib import machinery, util
 
 # DEPRECATED
 SEARCH_ERROR = 0
@@ -52,12 +58,10 @@ IMP_HOOK = 9
 
 
 def new_module(name):
-    """**DEPRECATED**
-
+    """**DEPRECATED**.
     Create a new module.
 
     The module is not entered into sys.modules.
-
     """
     return types.ModuleType(name)
 
@@ -118,7 +122,6 @@ def get_suffixes():
 
 
 class NullImporter:
-
     """**DEPRECATED**
 
     Null import object.
@@ -137,9 +140,9 @@ class NullImporter:
 
 
 class _HackedGetData:
-
     """Compatibility support for 'file' arguments of various load_*()
-    functions."""
+    functions.
+    """
 
     def __init__(self, fullname, path, file=None):
         super().__init__(fullname, path)
@@ -164,7 +167,6 @@ class _HackedGetData:
 
 
 class _LoadSourceCompatibility(_HackedGetData, machinery.SourceFileLoader):
-
     """Compatibility support for implementing load_source()."""
 
 
@@ -183,7 +185,6 @@ def load_source(name, pathname, file=None):
 
 
 class _LoadCompiledCompatibility(_HackedGetData, SourcelessFileLoader):
-
     """Compatibility support for implementing load_compiled()."""
 
 
