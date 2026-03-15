@@ -59,4 +59,4 @@ jobs:
         run: |
           cargo fmt --manifest-path rust_core/Cargo.toml --all -- --check
           cargo clippy --manifest-path rust_core/Cargo.toml --all-targets --all-features
-          cargo test --manifest-path rust_core/Cargo.toml --release
+          cargo test --manifest-path rust_core/Cargo.toml --release -- --test-threads=1
