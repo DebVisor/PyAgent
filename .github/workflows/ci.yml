@@ -24,6 +24,8 @@ jobs:
       - name: Install dependencies
         run: pip install --prefer-binary -r requirements-ci.txt
 
+      - name: Build Rust extension
+        run: maturin develop
+
       - name: Run tests
         run: pytest -q
-
