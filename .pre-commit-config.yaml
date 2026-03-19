@@ -16,10 +16,10 @@ repos:
         name: Enforce branch naming convention
         entry: python scripts/enforce_branch.py
         language: python
-        stages: [commit]
+        stages: [pre-commit]
       - id: run-precommit-checks
         name: Run pre-commit shared checks
         entry: python scripts/ci/run_checks.py --profile precommit
         language: python
-        stages: [commit]
+        stages: [pre-commit]
         pass_filenames: false
