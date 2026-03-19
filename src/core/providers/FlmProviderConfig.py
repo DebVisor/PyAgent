@@ -19,6 +19,8 @@ FLM stands for Fastflow Language Model.
 
 from __future__ import annotations
 
+import os
+
 from dataclasses import dataclass
 from typing import Any, Mapping
 
@@ -94,6 +96,39 @@ class FlmProviderConfig:
     # provide a thin wrapper that simply exercises the existing parsing
     # logic.  having it here keeps the class self‑contained and makes the
     # unit test trivial again.
+    @classmethod
+    def from_env(cls, prefix: str = "DV_FLM") -> "FlmProviderConfig":
+        """Load FLM provider config from environment variables.
+
+        The following environment variables are supported (with defaults):
+
+        - `{prefix}_BASE_URL`: required
+        - `{prefix}_DEFAULT_MODEL`: default `llama3.2:1b`
+        - `{prefix}_TIMEOUT`: default `120`
+        - `{prefix}_MAX_RETRIES`: default `3`
+        - `{prefix}_HEALTH_PATH`: default `/v1/health`
+        - `{prefix}_CHAT_PATH`: default `/v1/chat/completions`
+        """
+        def _int_env(name: str, default: int) -> int:
+            raw = os.getenv(name)
+            if raw is None:
+                return default
+            try:
+                return int(raw)
+            except ValueError as exc:
+                raise ValueError(f"FLM provider config '{name}' must be an integer") from exc
+
+        values = {
+            "base_url": os.getenv(f"{prefix}_BASE_URL"),
+            "default_model": os.getenv(f"{prefix}_DEFAULT_MODEL", "llama3.2:1b"),
+            "timeout": _int_env(f"{prefix}_TIMEOUT", 120),
+            "max_retries": _int_env(f"{prefix}_MAX_RETRIES", 3),
+            "health_path": os.getenv(f"{prefix}_HEALTH_PATH", "/v1/health"),
+            "chat_path": os.getenv(f"{prefix}_CHAT_PATH", "/v1/chat/completions"),
+        }
+
+        return cls.from_mapping(values)
+
     @classmethod
     def validate(cls) -> None:
         """Sanity-check the configuration helpers.

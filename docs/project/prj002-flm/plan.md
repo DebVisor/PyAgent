@@ -25,6 +25,7 @@ matching the real usage contract in `flm-test-llama.py` and the design in `brain
 - **REQ-004**: Endpoint and model failures must return actionable diagnostics.
 - **CON-001**: Keep local-first runtime behavior; no cloud dependency required for default flow.
 - **CON-002**: Preserve current project testing conventions (`pytest`).
+- **CON-003**: Allow FLM endpoint to be configured via environment variables (`DV_FLM_BASE_URL`).
 
 ## Implementation Phases
 
