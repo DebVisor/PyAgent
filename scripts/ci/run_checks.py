@@ -74,24 +74,37 @@ PRECOMMIT_TEST_FILES = [
     "tests/test_conftest.py",
     "tests/test_compile.py",
     "tests/test_benchmarks.py",
+    # Quality/metadata tests (previously run in ci-python-quality.yml).
+    "tests/test_quality_yaml.py"
+    # no need to duplicate these test
+    # "tests/test_precommit.py"
+    # "tests/test_coverage_meta.py"
+    # no need to duplicate these test
+    # "tests/test_zza_lint_config.py",
+    # "tests/test_zzb_mypy_config.py",
+    # "tests/ztest_zzz_tests_quality.py",
 ]
 
 
 def run_command(cmd: list[str], env: dict[str, str] | None = None) -> None:
+    """Run a command with optional environment variables, printing it first."""
     print(f"\n>>> Running: {' '.join(cmd)}\n")
     subprocess.run(cmd, check=True, env=env)
 
 
 def run_ruff() -> None:
+    """Run ruff checks and formatting checks."""
     run_command(["ruff", "check", "src", "tests"])
     run_command(["ruff", "format", "--check", "src", "tests"])
 
 
 def run_mypy() -> None:
+    """Run mypy type checks."""
     run_command(["mypy", "--ignore-missing-imports", "src/core/base/"])
 
 
 def run_pytest(files: list[str], extra_args: list[str] | None = None) -> None:
+    """Run pytest on the given list of test files with optional extra arguments."""
     cmd = ["python", "-m", "pytest", "-q", "--no-cov"] + files
     if extra_args:
         cmd += extra_args
@@ -119,6 +132,7 @@ def profile_ci() -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Main entry point for the checks script."""
     parser = argparse.ArgumentParser(description="Run shared sanity checks.")
     parser.add_argument(
         "--profile",
