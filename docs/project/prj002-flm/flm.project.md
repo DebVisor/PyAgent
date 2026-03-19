@@ -9,11 +9,16 @@
 
 ## Tasks
 
-_No checkbox tasks found in the plan file._
+- [x] Define goal, success criteria, and implementation plan.
+- [x] Implement FLM provider configuration and validation.
+- [x] Implement OpenAI-compatible chat adapter for Fastflow.
+- [x] Implement deterministic tool-call loop with loop guard.
+- [x] Add tests for configuration, adapter, tool loop, and error handling.
+- [x] Ensure CI validates FLM behavior via pre-commit and `ci.yml`.
 
 ## Status
 
-0 of 0 tasks completed
+6 of 6 tasks completed
 
 ## Code detection
 
