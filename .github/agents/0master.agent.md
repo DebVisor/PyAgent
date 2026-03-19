@@ -59,6 +59,7 @@ These are the primary memory artifacts the master agent reads/updates:
 - **Runtime style**: `conftest.py` includes key sys.path & legacy import protections.
 - **Rust acceleration**: `rust_core/` contains high-throughput file tools and complexity analysis.
 - **Frontend**: `web/` is Vite/React; uses `index.tsx` + `App.tsx` as the UI entry points.
+- **shell**: we use powershell, so no bash commands, we have `rg` installed for regex, commandline python code can be executed as `& c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -c @"<code>"@; `
 
 ---
 

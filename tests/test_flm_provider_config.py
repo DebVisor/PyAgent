@@ -92,3 +92,14 @@ def test_flm_provider_config_rejects_invalid_path() -> None:
                 "chat_path": "v1/chat/completions",
             }
         )
+
+
+def test_flm_provider_config_from_env(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Configuration can be loaded from environment variables."""
+    monkeypatch.setenv("DV_FLM_BASE_URL", "http://192.168.1.128:52625/v1")
+    monkeypatch.setenv("DV_FLM_DEFAULT_MODEL", "llama3.2:1b")
+
+    cfg = FlmProviderConfig.from_env()
+
+    assert cfg.base_url == "http://192.168.1.128:52625/v1"
+    assert cfg.default_model == "llama3.2:1b"
