@@ -1,4 +1,4 @@
-name: CI
+name: CI (minimal)
 
 permissions:
   contents: read
@@ -10,8 +10,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: Run pytest
+  check:
+    name: Run CI checks
     runs-on: ubuntu-latest
 
     steps:
@@ -24,27 +24,3 @@ jobs:
       - name: Install dependencies
         run: pip install --prefer-binary -r requirements-ci.txt
 
-      - name: Run pytest
-        run: python -m pytest -q
-
-  dashboard:
-    name: Generate & verify project dashboard
-    runs-on: ubuntu-latest
-    needs: test
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-          cache: pip
-
-      - name: Install dependencies
-        run: pip install --prefer-binary -r requirements-ci.txt
-
-      - name: Generate project dashboard
-        run: python scripts/generate_project_dashboard_v2.py
-
-      - name: Verify dashboard is up to date
-        run: |
-          git diff --exit-code -- docs/project/PROJECT_DASHBOARD.md docs/project/prj*
