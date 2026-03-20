@@ -26,6 +26,21 @@ Invoke it via **agent/runSubagent** to start security and static analysis checks
 
 ---
 
+## prj008 - agent_workflow
+
+| Field | Value |
+|---|---|
+| **task_id** | prj008-agent_workflow |
+| **owner_agent** | @7exec |
+| **source** | @6code |
+| **updated_at** | 2026-03-20 |
+| **status** | DONE |
+| **summary** | core workflow imports OK. 9 workflow tests passed. src.cort bare import quirk pre-existing, not a blocker. |
+| **handoff_target** | @8ql |
+| **artifact_paths** | docs/project/prj008-agent_workflow/agent_workflow.exec.md |
+
+---
+
 ## prj007 - advanced_research
 
 | Field | Value |

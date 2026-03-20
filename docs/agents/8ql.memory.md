@@ -26,6 +26,21 @@ Invoke it via `agent/runSubagent` to continue the process.
 
 ---
 
+## prj008 - agent_workflow
+
+| Field | Value |
+|---|---|
+| **task_id** | prj008-agent_workflow |
+| **owner_agent** | @8ql |
+| **source** | @7exec |
+| **updated_at** | 2026-03-20 |
+| **status** | DONE |
+| **summary** | 2 LOW findings (S101 assert in validate()). Both false positives — internal contract guards only. 0 CRITICAL/HIGH. CLEAR for @9git. |
+| **handoff_target** | @9git |
+| **artifact_paths** | docs/project/prj008-agent_workflow/agent_workflow.ql.md |
+
+---
+
 ## prj007 - advanced_research
 
 | Field | Value |
