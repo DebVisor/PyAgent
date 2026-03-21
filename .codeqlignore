@@ -1,0 +1,20 @@
+# Exclude the bundled CodeQL CLI language packs from test discovery.
+# The codeql-custom-queries-* packs inside codeql/ are intentionally NOT excluded.
+/codeql/actions/
+/codeql/cpp/
+/codeql/csharp/
+/codeql/csv/
+/codeql/go/
+/codeql/html/
+/codeql/java/
+/codeql/javascript/
+/codeql/legacy-upgrades/
+/codeql/Open-Source-Notices/
+/codeql/properties/
+/codeql/python/
+/codeql/ruby/
+/codeql/rust/
+/codeql/swift/
+/codeql/tools/
+/codeql/xml/
+/codeql/yaml/

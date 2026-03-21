@@ -1,0 +1,81 @@
+Running queries.
+Not caching stages during query-loading, since max heap size is only 1800 MB.
+[1/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-020\RegexInjection.qlx.
+[2/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-022\TaintedPath.qlx.
+[3/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-079\XSS.qlx.
+[4/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-089\SqlInjection.qlx.
+[5/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-295\DisabledCertificateCheck.qlx.
+[6/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-311\CleartextTransmission.qlx.
+[7/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-312\CleartextLogging.qlx.
+[8/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-312\CleartextStorageDatabase.qlx.
+[9/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-319\UseOfHttp.qlx.
+[10/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-327\BrokenCryptoAlgorithm.qlx.
+[11/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-327\WeakSensitiveDataHashing.qlx.
+[12/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-614\InsecureCookie.qlx.
+[13/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-696\BadCtorInitialization.qlx.
+[14/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-770\UncontrolledAllocationSize.qlx.
+[15/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-798\HardcodedCryptographicValue.qlx.
+[16/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-825\AccessInvalidPointer.qlx.
+[17/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-918\RequestForgery.qlx.
+[18/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\unusedentities\UnusedVariable.qlx.
+[19/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-117\LogInjection.qlx.
+[20/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\security\CWE-825\AccessAfterLifetime.qlx.
+[21/40] No need to rerun C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\AstConsistencyCounts.ql.
+[22/40] No need to rerun C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\CfgConsistencyCounts.ql.
+[23/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\DataFlowConsistencyCounts.qlx.
+[24/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\ExtractedFiles.qlx.
+[25/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\ExtractionErrors.qlx.
+[26/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\ExtractionWarnings.qlx.
+[27/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\SsaConsistencyCounts.qlx.
+[28/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\TypeInferenceConsistencyCounts.qlx.
+[29/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\UnextractedElements.qlx.
+[30/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\diagnostics\UnresolvedMacroCalls.qlx.
+[31/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\telemetry\DatabaseQualityDiagnostics.qlx.
+[32/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\LinesOfCode.qlx.
+[33/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\LinesOfUserCode.qlx.
+[34/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\NodesWithTypeAtLengthLimit.qlx.
+[35/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\NumberOfFilesExtractedWithErrors.qlx.
+[36/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\NumberOfSuccessfullyExtractedFiles.qlx.
+[37/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\QuerySinkCounts.qlx.
+[38/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\SummaryStats.qlx.
+[39/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\summary\SummaryStatsReduced.qlx.
+[40/40] Loaded C:\Users\Keimpe\.codeql\packages\codeql\rust-queries\0.1.29\queries\telemetry\ExtractorInformation.qlx.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\DataFlowConsistencyCounts.ql.
+[1/38 eval 7m49s] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\DataFlowConsistencyCounts.bqrs.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\ExtractedFiles.ql.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\ExtractionErrors.ql.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\ExtractionWarnings.ql.
+[2/38 eval 12ms] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\ExtractedFiles.bqrs.
+[3/38 eval 13ms] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\ExtractionErrors.bqrs.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\SsaConsistencyCounts.ql.
+[4/38 eval 2.4s] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\ExtractionWarnings.bqrs.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\TypeInferenceConsistencyCounts.ql.
+[5/38 eval 1.6s] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\SsaConsistencyCounts.bqrs.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\UnextractedElements.ql.
+Starting evaluation of codeql\rust-queries\queries\diagnostics\UnresolvedMacroCalls.ql.
+[6/38 eval 2.2s] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\TypeInferenceConsistencyCounts.bqrs.
+[7/38 eval 17ms] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\UnextractedElements.bqrs.
+[8/38 eval 15ms] Evaluation done; writing results to codeql\rust-queries\queries\diagnostics\UnresolvedMacroCalls.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-020\RegexInjection.ql.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-022\TaintedPath.ql.
+[9/38 eval 1.9s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-020\RegexInjection.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-079\XSS.ql.
+[10/38 eval 1.4s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-022\TaintedPath.bqrs.
+[11/38 eval 622ms] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-079\XSS.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-089\SqlInjection.ql.
+[12/38 eval 801ms] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-089\SqlInjection.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-117\LogInjection.ql.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-295\DisabledCertificateCheck.ql.
+[13/38 eval 13ms] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-117\LogInjection.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-311\CleartextTransmission.ql.
+[14/38 eval 1.9s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-295\DisabledCertificateCheck.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-312\CleartextLogging.ql.
+[15/38 eval 6.9s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-311\CleartextTransmission.bqrs.
+[16/38 eval 4ms] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-312\CleartextLogging.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-312\CleartextStorageDatabase.ql.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-319\UseOfHttp.ql.
+[17/38 eval 6ms] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-312\CleartextStorageDatabase.bqrs.
+[18/38 eval 1.1s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-319\UseOfHttp.bqrs.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-327\BrokenCryptoAlgorithm.ql.
+Starting evaluation of codeql\rust-queries\queries\security\CWE-327\WeakSensitiveDataHashing.ql.
+[19/38 eval 1s] Evaluation done; writing results to codeql\rust-queries\queries\security\CWE-327\BrokenCryptoAlgorithm.bqrs.
