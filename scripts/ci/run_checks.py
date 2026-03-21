@@ -83,6 +83,21 @@ PRECOMMIT_TEST_FILES = [
     # "tests/test_zza_lint_config.py",
     # "tests/test_zzb_mypy_config.py",
     # "tests/ztest_zzz_tests_quality.py",
+    # CodeQL SARIF gate (also in CODEQL_TEST_FILES, included here for full CI)
+    "tests/test_zzd_codeql_python.py",
+    "tests/test_zze_codeql_javascript.py",
+    "tests/test_zzf_codeql_rust.py",
+    "tests/test_zzg_codeql_sarif_gate.py",
+]
+
+# CodeQL SARIF gate tests — fast (read-only JSON checks, no rebuild).
+# The per-language rebuild tests (zzd/e/f) are listed here but skip automatically
+# when SARIF is fresh; they only rebuild when SARIF is missing or >24h old.
+CODEQL_TEST_FILES = [
+    "tests/test_zzd_codeql_python.py",
+    "tests/test_zze_codeql_javascript.py",
+    "tests/test_zzf_codeql_rust.py",
+    "tests/test_zzg_codeql_sarif_gate.py",
 ]
 
 
@@ -117,6 +132,9 @@ def profile_precommit() -> None:
     run_mypy()
     # Run a safe subset of core tests that do not depend on the rust extension.
     run_pytest(PRECOMMIT_TEST_FILES, extra_args=["-q"])
+    # CodeQL security gate: SARIF must be fresh and contain no hard-fail findings.
+    # Individual DB rebuilds are skipped automatically when SARIF is < 24h old.
+    run_pytest(CODEQL_TEST_FILES, extra_args=["-q"])
 
 
 def profile_ci() -> None:

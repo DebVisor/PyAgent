@@ -103,4 +103,33 @@ node_modules/
 *.actual
 # Per-project CodeQL analysis databases (large binaries, not source)
 databases/
+
+# CodeQL CLI installation (large binaries — download via scripts/install_codeql.ps1)
+codeql/*.exe
+codeql/*.cmd
+codeql/codeql
+codeql/actions/
+codeql/cpp/
+codeql/csharp/
+codeql/csv/
+codeql/go/
+codeql/html/
+codeql/java/
+codeql/javascript/
+codeql/legacy-upgrades/
+codeql/LICENSE.md
+codeql/Open-Source-Notices/
+codeql/properties/
+codeql/python/
+codeql/ruby/
+codeql/rust/
+codeql/swift/
+codeql/tools/
+codeql/xml/
+codeql/yaml/
+codeql/.codeqlmanifest.json
+
+# CodeQL run logs (temporary)
+codeql_*.log
+
 /src-old/
