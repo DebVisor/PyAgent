@@ -9,15 +9,15 @@
 
 ## Tasks
 
-- [ ] Create `scripts/consolidate_llm_context.py` with dry-run and apply modes.
-- [ ] Implement deterministic consolidation into `llms.txt`, `llms-architecture.txt`, and `llms-improvements.txt`.
-- [ ] Add support for migrating component markdown into Python module docstrings.
-- [ ] Generate `consolidation_report.txt` summarizing merged/skipped/deleted files.
-- [ ] Add a suite of unit/integration tests ensuring idempotent, non-destructive behavior.
+- [x] Create `scripts/consolidate_llm_context.py` with dry-run and apply modes.
+- [x] Implement deterministic consolidation into `llms.txt`, `llms-architecture.txt`, and `llms-improvements.txt`.
+- [x] Add support for migrating component markdown into Python module docstrings.
+- [x] Generate `consolidation_report.txt` summarizing merged/skipped/deleted files.
+- [x] Add a suite of unit/integration tests ensuring idempotent, non-destructive behavior.
 
 ## Status
 
-0 of 5 tasks completed
+5 of 5 tasks completed
 
 ## Code detection
 
