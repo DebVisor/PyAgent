@@ -1,4 +1,5 @@
 name: PM Tools CI
+# pytest.ini addopts no longer requires pytest-cov; re-trigger to confirm passing
 
 on:
   push:
