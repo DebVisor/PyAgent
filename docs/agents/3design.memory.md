@@ -49,3 +49,23 @@ the design intent.
 | **shim_strategy** | 3 new src/core/ shims + 1 replacement src/MemoryTransactionManager.py shim |
 | **handoff_target** | @4plan |
 | **artifact_paths** | docs/project/prj0000045/transaction-managers-full.design.md |
+
+---
+
+## prj0000047 - conky-real-metrics
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000047-conky-real-metrics |
+| **owner_agent** | @3design |
+| **source** | @2think |
+| **created_at** | 2026-03-23 |
+| **updated_at** | 2026-03-23 |
+| **status** | DONE |
+| **branch_gate** | PASS — `prj0000047-conky-real-metrics` |
+| **selected_option** | Option A — REST Polling `GET /api/metrics/system` (psutil, module-level delta state) |
+| **key_decisions** | 2s poll interval; `useSystemMetrics(2000)` custom hook; stay-on-last-values error strategy + OFFLINE badge; no Vite dev plugin needed (existing /api proxy sufficient); memory surfaces used_mb/total_mb/percent; disk I/O row added to UI; interface filter by name prefix (lo, docker, veth, br-, virbr, tun, tap, loopback, isatap, teredo) |
+| **interface_contracts** | `SystemMetrics` TS interface; `SystemMetricsResponse` Pydantic model; `useSystemMetrics` hook; `_is_physical_iface()` helper; module-level `_prev_net` + `_prev_disk` delta state |
+| **vite_config_change** | None required |
+| **handoff_target** | @4plan |
+| **artifact_paths** | docs/project/prj0000047/conky-real-metrics.design.md |

@@ -26,7 +26,7 @@ _Git: @9git | Updated: 2026-03-23_
 | `docs/agents/*.memory.md` | EXCLUDED | out of scope — not staged |
 
 ## Commit Hash
-`52c54fdd3eb7e3a90e8963472666b90ae7f0947e`
+`17db59ec022ab494436b284d68e06441358cbe3e`
 
 ## Files Changed
 | File | Change |

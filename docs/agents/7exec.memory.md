@@ -3,6 +3,19 @@
 This file records runtime validation results, 
 integration checks, and smoke test outcomes.
 
+---
+
+## Last run — 2026-03-23
+- Task: prj0000047 conky-real-metrics
+- Tests run: 30 | Passed: 30 | Failed: 0
+- Import check: PASS (backend importable, confirmed by test_backend_worker.py)
+- Smoke test: PASS (HTTP 200, real metrics returned from /api/metrics/system)
+- rust_core: SKIPPED (rust_core not modified by @6code)
+- Placeholder scan: PASS (no NotImplementedError / TODO / FIXME stubs)
+- Flake8: FAIL — backend/app.py lines 49–50, E221 (alignment spaces before `=`)
+- Outcome: FAILED → @6code (flake8 blocker)
+- Notes: All 4 other checks are green; only flake8 E221 × 2 blocks @8ql handoff
+
 ## Auto-handoff
 
 Once runtime validation and execution checks are complete, 
