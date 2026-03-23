@@ -11,61 +11,81 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-"""Tests for SwarmNode ping/pong connectivity."""
-
-from __future__ import annotations
-
-import asyncio
-
+"""Tests for SwarmMemory and SwarmNode (prj0000022)."""
 import pytest
-
+from swarm.memory_store import SwarmMemory
 from swarm.swarm_node import SwarmNode
 
 
 @pytest.mark.asyncio
-async def test_ping_pong_exchange() -> None:
-    """Two SwarmNode instances connect and successfully exchange a ping/pong."""
-    node1 = SwarmNode(node_id="node-1")
-    node2 = SwarmNode(node_id="node-2")
-
-    await node1.start()
-    await node2.start()
-
-    host, port = node1.address
-    _, writer = await node2.connect(host, port)
-
-    await node2.ping(writer)
-
-    # node1 should receive the ping, auto-reply with pong;
-    # node2's _read_loop queues the pong into node2.received
-    pong = await asyncio.wait_for(node2.received.get(), timeout=2.0)
-    assert pong["type"] == "pong"
-    assert pong["from"] == "node-1"
-    assert pong["to"] == "node-2"
-
-    writer.close()
-    await node1.stop()
-    await node2.stop()
+async def test_shared_set_get():
+    mem = SwarmMemory()
+    await mem.shared_set("key", "value")
+    assert await mem.shared_get("key") == "value"
 
 
 @pytest.mark.asyncio
-async def test_node_receives_ping_on_server_side() -> None:
-    """The server node queues the incoming ping in its received queue."""
-    server = SwarmNode(node_id="server")
-    client = SwarmNode(node_id="client")
+async def test_shared_get_default():
+    mem = SwarmMemory()
+    assert await mem.shared_get("missing", "default") == "default"
 
-    await server.start()
-    host, port = server.address
-    _, writer = await client.connect(host, port)
 
-    await client.ping(writer)
+@pytest.mark.asyncio
+async def test_local_set_get():
+    mem = SwarmMemory()
+    await mem.local_set("node1", "x", 42)
+    assert await mem.local_get("node1", "x") == 42
 
-    # Give a moment for the server coroutine to process the message
-    ping_msg = await asyncio.wait_for(server.received.get(), timeout=2.0)
-    assert ping_msg["type"] == "ping"
-    assert ping_msg["from"] == "client"
 
-    writer.close()
-    await server.stop()
-    await client.stop()
+@pytest.mark.asyncio
+async def test_local_isolated_per_node():
+    mem = SwarmMemory()
+    await mem.local_set("node1", "x", 1)
+    await mem.local_set("node2", "x", 2)
+    assert await mem.local_get("node1", "x") == 1
+    assert await mem.local_get("node2", "x") == 2
+
+
+@pytest.mark.asyncio
+async def test_shared_keys():
+    mem = SwarmMemory()
+    await mem.shared_set("a", 1)
+    await mem.shared_set("b", 2)
+    keys = await mem.shared_keys()
+    assert set(keys) == {"a", "b"}
+
+
+def test_memory_metrics():
+    mem = SwarmMemory()
+    m = mem.metrics()
+    assert "swarm_memory_shared_keys" in m
+
+
+@pytest.mark.asyncio
+async def test_swarm_node_ping():
+    node = SwarmNode("node-A")
+    msg = await node.ping("node-B")
+    assert msg["type"] == "ping"
+    assert msg["source"] == "node-A"
+    assert msg["destination"] == "node-B"
+
+
+@pytest.mark.asyncio
+async def test_swarm_node_pong_on_ping():
+    node = SwarmNode("node-B")
+    ping = (await SwarmNode("node-A").ping("node-B"))
+    reply = await node.receive(ping)
+    assert reply is not None
+    assert reply["type"] == "pong"
+    assert reply["destination"] == "node-A"
+
+
+@pytest.mark.asyncio
+async def test_swarm_node_process_one():
+    sender = SwarmNode("sender")
+    receiver = SwarmNode("receiver")
+    ping = await sender.ping("receiver")
+    await receiver.enqueue(ping)
+    reply = await receiver.process_one()
+    assert reply is not None
+    assert reply["type"] == "pong"
