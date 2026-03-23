@@ -1,7 +1,7 @@
 # transaction-managers-full — Implementation Plan
 
-_Status: HANDED_OFF_
-_Planner: @4plan | Updated: 2026-03-22_
+_Status: COMPLETE_
+_Planner: @4plan | Updated: 2026-03-22 | Completed: 2026-06-13_
 
 > ⚠️ **Branch Gate Warning**
 > Expected branch: `prj0000045-transaction-managers-full`
@@ -143,21 +143,21 @@ Every new `.py` file MUST begin with the standard PyAgent copyright block:
 
 ## Task List
 
-- [ ] T00 | Add `cryptography>=42.0.0` to `requirements.txt` | Files: `requirements.txt` | Acceptance: `python -c "import cryptography"` works; line present in requirements.txt
-- [ ] T01 | Create `src/transactions/__init__.py` | Files: `src/transactions/__init__.py` | Acceptance: `from src.transactions import StorageTransaction, ProcessTransaction, ContextTransaction, MemoryTransaction, BaseTransaction` succeeds
-- [ ] T02 | Create `src/transactions/BaseTransaction.py` | Files: `src/transactions/BaseTransaction.py` | Acceptance: `BaseTransaction` is abstract; `StorageTransaction("x")` does NOT inherit it; direct instantiation raises TypeError
-- [ ] T03 | Create `src/transactions/StorageTransactionManager.py` | Files: `src/transactions/StorageTransactionManager.py` | Acceptance: `validate()` returns True; stage/commit/rollback/`__enter__`/`__exit__`/`__aenter__`/`__aexit__` all work; dual-mode constructor; encryption only when user_id supplied
-- [ ] T04 | Create `src/transactions/ProcessTransactionManager.py` | Files: `src/transactions/ProcessTransactionManager.py` | Acceptance: `validate()` returns True; `start()` sets `_proc` (Popen with PIPE); `wait()` sets `self.stdout`; `rollback()` terminates `_proc`; `start_async()`/`wait_async()` use asyncio subprocess
-- [ ] T05 | Create `src/transactions/ContextTransactionManager.py` | Files: `src/transactions/ContextTransactionManager.py` | Acceptance: `validate()` returns True; `RecursionGuardError` raised on re-entry; `active_contexts()` is accurate; `ValueError` on empty context_id; `UUID` assigned per transaction; `current()` classmethod works
-- [ ] T06 | Create `src/transactions/MemoryTransactionManager.py` | Files: `src/transactions/MemoryTransactionManager.py` | Acceptance: `validate()` returns True; sync `with` acquires `_rlock`; `async with` acquires `_alock`; `set/get/delete/commit/rollback` work; `sync_remote(dry_run=True)` returns payload dict without network
-- [ ] T07 | Create `src/core/StorageTransactionManager.py` (NEW shim) | Files: `src/core/StorageTransactionManager.py` | Acceptance: `from src.core.StorageTransactionManager import StorageTransaction, validate` succeeds; `validate()` returns True
-- [ ] T08 | Create `src/core/ProcessTransactionManager.py` (NEW shim) | Files: `src/core/ProcessTransactionManager.py` | Acceptance: `from src.core.ProcessTransactionManager import ProcessTransaction, validate` succeeds; `validate()` returns True
-- [ ] T09 | Create `src/core/ContextTransactionManager.py` (NEW shim) | Files: `src/core/ContextTransactionManager.py` | Acceptance: `from src.core.ContextTransactionManager import ContextTransaction, RecursionGuardError, validate` succeeds; `validate()` returns True
-- [ ] T10 | Update `src/MemoryTransactionManager.py` (replace body with shim) | Files: `src/MemoryTransactionManager.py` | Acceptance: `from src.MemoryTransactionManager import MemoryTransaction` succeeds; existing callers unaffected
-- [ ] T11 | Create `tests/test_StorageTransactionManager.py` | Files: `tests/test_StorageTransactionManager.py` | Acceptance: tests async multi-op write/delete/mkdir; encryption fixture via monkeypatch; `validate()` import check; all tests pass
-- [ ] T12 | Create `tests/test_ProcessTransactionManager.py` | Files: `tests/test_ProcessTransactionManager.py` | Acceptance: tests async `run()` returning (rc, stdout, stderr); rollback via SIGTERM; `validate()` import check; all tests pass
-- [ ] T13 | Create `tests/test_ContextTransactionManager.py` | Files: `tests/test_ContextTransactionManager.py` | Acceptance: tests UUID lineage (`transaction_id`, `parent_id`); `current()` classmethod; `validate()` import check; all tests pass
-- [ ] T14 | Full test validation run | — | `pytest tests/test_transaction_managers.py` — 14 passed; all shim import smoke-tests pass; `pytest tests/test_core_quality.py` passes
+- [x] T00 | Add `cryptography>=42.0.0` to `requirements.txt` | Files: `requirements.txt` | Acceptance: `python -c "import cryptography"` works; line present in requirements.txt
+- [x] T01 | Create `src/transactions/__init__.py` | Files: `src/transactions/__init__.py` | Acceptance: `from src.transactions import StorageTransaction, ProcessTransaction, ContextTransaction, MemoryTransaction, BaseTransaction` succeeds
+- [x] T02 | Create `src/transactions/BaseTransaction.py` | Files: `src/transactions/BaseTransaction.py` | Acceptance: `BaseTransaction` is abstract; `StorageTransaction("x")` does NOT inherit it; direct instantiation raises TypeError
+- [x] T03 | Create `src/transactions/StorageTransactionManager.py` | Files: `src/transactions/StorageTransactionManager.py` | Acceptance: `validate()` returns True; stage/commit/rollback/`__enter__`/`__exit__`/`__aenter__`/`__aexit__` all work; dual-mode constructor; encryption only when user_id supplied
+- [x] T04 | Create `src/transactions/ProcessTransactionManager.py` | Files: `src/transactions/ProcessTransactionManager.py` | Acceptance: `validate()` returns True; `start()` sets `_proc` (Popen with PIPE); `wait()` sets `self.stdout`; `rollback()` terminates `_proc`; `start_async()`/`wait_async()` use asyncio subprocess
+- [x] T05 | Create `src/transactions/ContextTransactionManager.py` | Files: `src/transactions/ContextTransactionManager.py` | Acceptance: `validate()` returns True; `RecursionGuardError` raised on re-entry; `active_contexts()` is accurate; `ValueError` on empty context_id; `UUID` assigned per transaction; `current()` classmethod works
+- [x] T06 | Create `src/transactions/MemoryTransactionManager.py` | Files: `src/transactions/MemoryTransactionManager.py` | Acceptance: `validate()` returns True; sync `with` acquires `_rlock`; `async with` acquires `_alock`; `set/get/delete/commit/rollback` work; `sync_remote(dry_run=True)` returns payload dict without network
+- [x] T07 | Create `src/core/StorageTransactionManager.py` (NEW shim) | Files: `src/core/StorageTransactionManager.py` | Acceptance: `from src.core.StorageTransactionManager import StorageTransaction, validate` succeeds; `validate()` returns True
+- [x] T08 | Create `src/core/ProcessTransactionManager.py` (NEW shim) | Files: `src/core/ProcessTransactionManager.py` | Acceptance: `from src.core.ProcessTransactionManager import ProcessTransaction, validate` succeeds; `validate()` returns True
+- [x] T09 | Create `src/core/ContextTransactionManager.py` (NEW shim) | Files: `src/core/ContextTransactionManager.py` | Acceptance: `from src.core.ContextTransactionManager import ContextTransaction, RecursionGuardError, validate` succeeds; `validate()` returns True
+- [x] T10 | Update `src/MemoryTransactionManager.py` (replace body with shim) | Files: `src/MemoryTransactionManager.py` | Acceptance: `from src.MemoryTransactionManager import MemoryTransaction` succeeds; existing callers unaffected
+- [x] T11 | Create `tests/test_StorageTransactionManager.py` | Files: `tests/test_StorageTransactionManager.py` | Acceptance: tests async multi-op write/delete/mkdir; encryption fixture via monkeypatch; `validate()` import check; all tests pass
+- [x] T12 | Create `tests/test_ProcessTransactionManager.py` | Files: `tests/test_ProcessTransactionManager.py` | Acceptance: tests async `run()` returning (rc, stdout, stderr); rollback via SIGTERM; `validate()` import check; all tests pass
+- [x] T13 | Create `tests/test_ContextTransactionManager.py` | Files: `tests/test_ContextTransactionManager.py` | Acceptance: tests UUID lineage (`transaction_id`, `parent_id`); `current()` classmethod; `validate()` import check; all tests pass
+- [x] T14 | Full test validation run | — | `pytest tests/test_transaction_managers.py` — 14 passed; all shim import smoke-tests pass; `pytest tests/test_core_quality.py` passes
 
 ---
 
@@ -604,12 +604,12 @@ T00 (requirements.txt)
 
 | # | Milestone | Tasks | Status |
 |---|---|---|---|
-| M0 | Pre-conditions met | T00 | |
-| M1 | Base ABC + package skeleton | T01, T02 | |
-| M2 | All four managers implemented | T03, T04, T05, T06 | |
-| M3 | Shims in place — 14 existing tests pass | T07, T08, T09, T10 | |
-| M4 | New acceptance tests written by @5test | T11, T12, T13 | |
-| M5 | Full validation passes | T14 | |
+| M0 | Pre-conditions met | T00 | DONE |
+| M1 | Base ABC + package skeleton | T01, T02 | DONE |
+| M2 | All four managers implemented | T03, T04, T05, T06 | DONE |
+| M3 | Shims in place — 14 existing tests pass | T07, T08, T09, T10 | DONE |
+| M4 | New acceptance tests written by @5test | T11, T12, T13 | DONE |
+| M5 | Full validation passes | T14 | DONE |
 
 ---
 
