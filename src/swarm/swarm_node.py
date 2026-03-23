@@ -11,133 +11,63 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-"""Minimal swarm peer node with asyncio TCP transport and ping/pong protocol.
-
-Each :class:`SwarmNode` can listen for inbound connections and also
-initiate outbound connections to other nodes.  Once connected, peers
-exchange JSON-framed messages delimited by newlines.  The built-in
-ping/pong exchange lets callers verify connectivity without any
-application-layer business logic.
-"""
-
+"""SwarmNode — minimal peer with ping/pong message exchange (prj0000022)."""
 from __future__ import annotations
 
 import asyncio
-import json
 import uuid
 from typing import Any
 
+from .message_model import Message, validate_message
+
 
 class SwarmNode:
-    """Minimal asyncio TCP peer node.
+    """Minimal swarm peer.
 
-    Parameters
-    ----------
-    node_id:
-        Unique identifier for this node.  Defaults to a random UUID string.
+    Each node has an ID, can send ping messages, and processes incoming
+    messages dispatched by the swarm coordinator.  No actual network I/O
+    in T-0; messages are exchanged in-process via asyncio queues.
     """
 
     def __init__(self, node_id: str | None = None) -> None:
         self.node_id: str = node_id or str(uuid.uuid4())
-        self._server: asyncio.AbstractServer | None = None
-        self._host: str = "127.0.0.1"
-        self._port: int = 0
-        # queue of received messages for inspection in tests / callers
-        self.received: asyncio.Queue[dict[str, Any]] = asyncio.Queue()
+        self._inbox: asyncio.Queue[dict[str, Any]] = asyncio.Queue()
+        self._running = False
 
     # ------------------------------------------------------------------
-    # Server lifecycle
+    # Messaging helpers
     # ------------------------------------------------------------------
 
-    async def start(self, host: str = "127.0.0.1", port: int = 0) -> None:
-        """Start the TCP server.  Port 0 lets the OS pick a free port."""
-        self._host = host
-        self._server = await asyncio.start_server(
-            self._handle_inbound, host, port
-        )
-        # Retrieve the actual bound address (useful when port=0)
-        addrs = self._server.sockets
-        if addrs:
-            self._port = addrs[0].getsockname()[1]
+    def _make_message(self, msg_type: str, destination: str, payload: dict[str, Any]) -> dict[str, Any]:
+        import time
+        return {
+            "id": str(uuid.uuid4()),
+            "timestamp": str(time.time()),
+            "type": msg_type,
+            "priority": "normal",
+            "source": self.node_id,
+            "destination": destination,
+            "payload": payload,
+            "checksum": "0",
+        }
 
-    async def stop(self) -> None:
-        """Stop the TCP server and close all connections."""
-        if self._server is not None:
-            self._server.close()
-            await self._server.wait_closed()
-            self._server = None
+    async def ping(self, destination: str) -> dict[str, Any]:
+        """Build and return a ping message (does not send over the network)."""
+        return self._make_message("ping", destination, {"seq": 0})
 
-    @property
-    def address(self) -> tuple[str, int]:
-        """Return the (host, port) tuple this node is listening on."""
-        return self._host, self._port
+    async def receive(self, raw: dict[str, Any]) -> dict[str, Any] | None:
+        """Process an incoming message and return an optional reply."""
+        validate_message(raw)
+        msg = Message(**raw)
+        if msg.type == "ping":
+            return self._make_message("pong", msg.source, {"seq": msg.payload.get("seq", 0)})
+        return None
 
-    # ------------------------------------------------------------------
-    # Outbound connections
-    # ------------------------------------------------------------------
+    async def enqueue(self, raw: dict[str, Any]) -> None:
+        """Put a raw message dict into the node's inbox."""
+        await self._inbox.put(raw)
 
-    async def connect(self, host: str, port: int) -> tuple[asyncio.StreamReader, asyncio.StreamWriter]:
-        """Open a persistent outbound connection to another node."""
-        reader, writer = await asyncio.open_connection(host, port)
-        asyncio.ensure_future(self._read_loop(reader))
-        return reader, writer
-
-    async def send(self, writer: asyncio.StreamWriter, message: dict[str, Any]) -> None:
-        """Serialise *message* as JSON and write it to *writer*."""
-        raw = (json.dumps(message) + "\n").encode()
-        writer.write(raw)
-        await writer.drain()
-
-    # ------------------------------------------------------------------
-    # Ping / pong helpers
-    # ------------------------------------------------------------------
-
-    async def ping(self, writer: asyncio.StreamWriter) -> None:
-        """Send a ping message to the remote peer."""
-        await self.send(writer, {"type": "ping", "from": self.node_id})
-
-    # ------------------------------------------------------------------
-    # Internal helpers
-    # ------------------------------------------------------------------
-
-    async def _handle_inbound(
-        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
-    ) -> None:
-        """Called by asyncio when a new inbound connection arrives."""
-        try:
-            async for msg in self._iter_messages(reader):
-                await self._dispatch(msg, writer)
-        finally:
-            writer.close()
-
-    async def _read_loop(self, reader: asyncio.StreamReader) -> None:
-        """Background task that reads messages from an outbound connection."""
-        async for msg in self._iter_messages(reader):
-            await self.received.put(msg)
-
-    @staticmethod
-    async def _iter_messages(reader: asyncio.StreamReader):
-        """Yield parsed JSON messages from *reader*, one per newline."""
-        while True:
-            try:
-                line = await reader.readline()
-            except (asyncio.IncompleteReadError, ConnectionResetError):
-                break
-            if not line:
-                break
-            try:
-                yield json.loads(line.decode().strip())
-            except json.JSONDecodeError:
-                continue
-
-    async def _dispatch(
-        self, message: dict[str, Any], writer: asyncio.StreamWriter
-    ) -> None:
-        """Handle an incoming message and optionally reply."""
-        await self.received.put(message)
-        if message.get("type") == "ping":
-            await self.send(
-                writer,
-                {"type": "pong", "from": self.node_id, "to": message.get("from")},
-            )
+    async def process_one(self) -> dict[str, Any] | None:
+        """Take one message from the inbox and process it."""
+        raw = await self._inbox.get()
+        return await self.receive(raw)
