@@ -3,6 +3,30 @@
 This file captures option exploration outputs, 
 tradeoff analysis, and recommended directions.
 
+---
+
+## prj0000047 — conky-real-metrics
+_Date: 2026-03-23 | Status: DONE | Branch: prj0000047-conky-real-metrics_
+
+**task_id:** prj0000047
+**Recommendation:** Option A — REST Polling via `GET /api/metrics/system` in FastAPI.
+**Artifact:** `docs/project/prj0000047/conky-real-metrics.think.md`
+**Handoff target:** @3design
+
+Options explored:
+- A: REST polling (FastAPI + psutil module-level diff state) — RECOMMENDED
+- B: WebSocket push via existing `/ws` — over-engineered, couples chat+metrics
+- C: Vite dev-only middleware (Node→Python subprocess) — dev-only, fragile
+- D: SSE StreamingResponse — no benefit over polling at 1–2 s on localhost
+
+Key constraints for @3design:
+- Network KB/s needs module-level counter state (first call returns zeroes)
+- Network interface filtering (loopback/docker) decision needed
+- Poll interval: component = 1 s, acceptance criteria default = 2 s (confirm)
+- Memory display: % bar vs absolute MB decision needed
+
+---
+
 # @1think Design Brief — Phase 1: Foundation & Infrastructure
 _Date: 2026-03-16_
 _Analyst: @1think | Feeds: @2plan_

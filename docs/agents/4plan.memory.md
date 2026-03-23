@@ -73,3 +73,39 @@ where test cases are written and validated against the plan.
 - `ProcessTransaction.wait()` uses `.communicate()` not `.wait()` — captures `self.stdout`
 - All `src/core/` shims are NEW files (none existed before this project)
 - `cryptography>=42.0.0` added to requirements.txt; httpx already present at 0.28.1
+
+---
+
+## prj0000047 — conky-real-metrics
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000047-conky-real-metrics |
+| **owner_agent** | @4plan |
+| **source** | @3design |
+| **created_at** | 2026-03-23 |
+| **updated_at** | 2026-03-23 |
+| **status** | HANDED_OFF |
+| **handoff_target** | @5test |
+| **artifact_paths** | docs/project/prj0000047/conky-real-metrics.plan.md |
+| **branch** | prj0000047-conky-real-metrics (validated ✅) |
+
+### Chunk 1 (all tasks — single chunk)
+
+| Task | File(s) | Type | Acceptance |
+|---|---|---|---|
+| T1 | backend/requirements.txt | EDIT | `psutil>=5.9` present |
+| T2 | backend/app.py | EDIT | 4 Pydantic models importable |
+| T3 | backend/app.py | EDIT | endpoint returns HTTP 200; first-call KB/s == 0.0 |
+| T4 | tests/test_backend_system_metrics.py | NEW TEST | 6 unit tests green |
+| T5 | web/apps/Conky.tsx | EDIT | TS interfaces + hook added; `npx tsc --noEmit` passes |
+| T6 | web/apps/Conky.tsx | EDIT | no Math.random(); OFFLINE badge; disk row; real data |
+| T7 | — | VALIDATE | full pytest suite + tsc clean |
+
+### Key design decisions carried forward
+- `useSystemMetrics` inline in `Conky.tsx` (not extracted to a separate hook file)
+- First-call `cpu_percent: 0.0` accepted (no startup prime call)
+- `_prev_net / _prev_disk` module-level state (safe for single-worker Uvicorn)
+- No `vite.config.ts` changes required
+- OFFLINE badge: `text-red-500/50 text-[9px]`; stays on last values when offline
+

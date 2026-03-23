@@ -11,6 +11,28 @@ Invoke it via `agent/runSubagent` to continue the process.
 
 ---
 
+## prj0000047 — conky-real-metrics
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000047-conky-real-metrics |
+| **owner_agent** | @8ql |
+| **source** | @7exec |
+| **updated_at** | 2026-03-23 |
+| **status** | DONE |
+| **branch** | prj0000047-conky-real-metrics ✓ |
+| **files_scanned** | `backend/app.py`, `web/apps/Conky.tsx`, `tests/test_backend_system_metrics.py` |
+| **codeql** | SKIPPED (CLI not invoked) |
+| **ruff_S** | PASS (0 findings) |
+| **pip_audit** | PASS — psutil 7.2.1, vulns:[] |
+| **rust_unsafe** | SKIPPED (rust_core not changed) |
+| **block_items** | 0 |
+| **warn_items** | 3 × LOW/MEDIUM (info-disclosure, no rate-limit, no auth) |
+| **overall** | CLEAN → @9git |
+| **artifact_paths** | docs/project/prj0000047/conky-real-metrics.ql.md |
+
+---
+
 ## prj030 - agent-doc-frequency
 
 | Field | Value |
