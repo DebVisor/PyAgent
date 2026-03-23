@@ -1,7 +1,7 @@
 # QL/Security Review: prj0000049 — Dependabot Security Fixes
 
 ## Status
-Clean — All 6 CVEs resolved. Minor advisory noted (yamux transitive dep 0.12.1). READY for @9git.
+Clean with accepted risk — All 6 CVEs resolved. yamux 0.12.1 persists as an intentional transitive dep of libp2p-yamux 0.47.0 (see Post-Merge Finding below). Cannot be removed without a libp2p 0.57+ upgrade. Documented as accepted risk.
 
 ## Files Reviewed
 
@@ -82,11 +82,25 @@ Versions confirmed from `Cargo.lock` (branch: `prj0000049-dependabot-security-fi
 
 None required. All files were correct on first review.
 
+## Post-Merge Finding: yamux 0.12.1 (Dependabot alert #49 still open)
+
+**Root cause:** `libp2p-yamux 0.47.0` (the latest version available with libp2p 0.56) explicitly depends on **both** `yamux 0.12.1` and `yamux 0.13.10`. This is an intentional design — libp2p-yamux 0.47 is a compatibility shim supporting both protocol versions during the yamux protocol transition. The Cargo.lock entry reads:
+
+```toml
+name = "libp2p-yamux"
+version = "0.47.0"
+dependencies = ["yamux 0.12.1", "yamux 0.13.10"]
+```
+
+**Why it cannot be fixed now:** yamux 0.12.x and 0.13.x are semver-incompatible. A `[patch.crates-io]` redirect of yamux 0.12 → 0.13.10 would break the libp2p-yamux 0.12 API usage and fail to compile. Removing 0.12.1 requires either forking libp2p-yamux or upgrading to a libp2p ≥ 0.57 release that drops 0.12 support (not yet available as of 2026-03-23).
+
+**Risk assessment:** LOW. The `rust_core/p2p/` crate is a non-production prototype. It is not deployed, does not handle untrusted peer traffic, and is not reachable from any production endpoint. CVE-2026-32314 (yamux memory exhaustion) would require an adversarial yamux peer to trigger — not applicable in this context.
+
+**Resolution:** Accepted risk. Track in master memory. Reassess when libp2p 0.57+ is released.
+
 ## Summary
 
-All 6 CVEs from Dependabot alert prj0000049 are resolved in `Cargo.lock`. The `libp2p` upgrade from `0.49` to `0.56` in `Cargo.toml` transitively pulls in all safe dependency versions. Code quality in `main.rs` is clean (no unsafe, no secrets, correct async patterns). Tests are logically correct and use portable repo-relative paths. Changes are fully scoped to `rust_core/p2p/`, `tests/security/`, and `docs/project/prj0000049/`.
-
-One minor advisory: a transitive `yamux 0.12.1` appears alongside the required `0.13.10`. Not a blocker — the vulnerable `0.10.2` is absent and the libp2p code path uses `0.13.10`.
+All 6 CVEs from Dependabot alerts are resolved in `Cargo.lock`. The libp2p upgrade from 0.49 to 0.56 transitively pulls in all safe versions. One post-merge finding: yamux 0.12.1 persists as an intentional transitive dep of libp2p-yamux 0.47.0 and cannot be removed without a future libp2p upgrade. Documented as accepted risk above.
 
 ## Sign-off
 
