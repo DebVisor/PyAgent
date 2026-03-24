@@ -44,7 +44,6 @@ Projects proposed but not yet formally scoped.
 | ID | Name | Summary | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|
 | prj0000053 | hmac-webhook-verification | Secure GitHub webhook payloads with HMAC-SHA256 signature validation in src/github_app.py | P4 | unknown | security, github | 2026-03-24 |
-| prj0000054 | backend-authentication | Add API-key or JWT authentication to all REST and WebSocket endpoints | P4 | unknown | security, backend | 2026-03-24 |
 | prj0000055 | websocket-e2e-encryption | Wire the documented E2E encryption architecture into production WebSocket transport using Noise_XX | P4 | unknown | security, websocket, rust | 2026-03-24 |
 | prj0000056 | rust-async-transport-activation | Enable async-transport feature in rust_core to activate QUIC-over-Tokio for faster inter-agent messaging | P4 | unknown | rust, transport, async | 2026-03-24 |
 | prj0000057 | agent-orchestration-graph | Visual DAG panel in NebulaOS showing live task flow and agent status across all 10 pipeline stages | P4 | unknown | ui, nebula, agents | 2026-03-24 |
@@ -80,6 +79,7 @@ Active implementation — @4plan through @6code are working.
 
 | ID | Name | Summary | Branch | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000054 | backend-authentication | API-key + JWT auth for all REST and WebSocket endpoints | prj0000054-backend-authentication | P2 | M | 2026-03-24 |
 
 ---
 
