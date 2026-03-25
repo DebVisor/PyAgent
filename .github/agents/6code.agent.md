@@ -106,7 +106,7 @@ implemented change affects system architecture.
 2. Confirm `## Branch Plan` includes an expected branch and scope boundary.
 3. Read the observed branch with `git branch --show-current`.
 4. If observed branch != expected branch, stop work immediately.
-5. On mismatch, record BLOCKED status in `<project>.code.md` and `.github/agents/6code.memory.md`,
+5. On mismatch, record BLOCKED status in `<project>.code.md` and `.github/agents/data/6code.memory.md`,
    then hand the task back to `@0master`.
 6. Do not edit code, run implementation tests, or hand off to `@7exec` while branch validation fails.
 
@@ -141,7 +141,7 @@ python -m mypy src/
 
 ## Memory lifecycle
 
-- Read and update `.github/agents/6code.memory.md` for each delegated task.
+- Read and update `.github/agents/data/6code.memory.md` for each delegated task.
 - Keep lifecycle state aligned with master policy: `OPEN` -> `IN_PROGRESS` -> `DONE` (or `BLOCKED`).
 - Include `task_id`, changed modules/files, implementation summary, and unresolved risks.
 - On handoff, record target agent `@7exec` and verification commands executed.

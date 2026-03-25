@@ -135,8 +135,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Analyse agent doc update frequency.")
     parser.add_argument(
         "--docs-dir",
-        default=".github/agents",
-        help="Path to the agent docs directory (default: .github/agents).",
+        default=".github/agents/data",
+        help="Path to the agent docs directory (default: .github/agents/data).",
     )
     parser.add_argument(
         "--days-stale",

@@ -83,7 +83,7 @@ def test_my_feature() -> None:
 2. Confirm `## Branch Plan` includes an expected branch and scope boundary.
 3. Read the observed branch with `git branch --show-current`.
 4. If observed branch != expected branch, stop work immediately.
-5. On mismatch, record BLOCKED status in `<project>.test.md` and `.github/agents/5test.memory.md`,
+5. On mismatch, record BLOCKED status in `<project>.test.md` and `.github/agents/data/5test.memory.md`,
    then hand the task back to `@0master`.
 6. Do not write/overwrite test artifacts or hand off to `@6code` while branch validation fails.
 
@@ -109,7 +109,7 @@ def test_my_feature() -> None:
 
 ## Memory lifecycle
 
-- Read and update `.github/agents/5test.memory.md` for each delegated task.
+- Read and update `.github/agents/data/5test.memory.md` for each delegated task.
 - Keep lifecycle state aligned with master policy: `OPEN` -> `IN_PROGRESS` -> `DONE` (or `BLOCKED`).
 - Include `task_id`, failing-test evidence, pass/fail summaries, and handoff notes.
 - On handoff, record target agent `@6code` (or return to `@4plan` when blocked).

@@ -85,7 +85,7 @@ If these criteria are not met, @2think must continue research rather than handin
 2. Confirm `## Branch Plan` includes an expected branch and scope boundary.
 3. Read the observed branch with `git branch --show-current`.
 4. If observed branch != expected branch, stop work immediately.
-5. On mismatch, record BLOCKED status in `<project>.think.md` and `.github/agents/2think.memory.md`,
+5. On mismatch, record BLOCKED status in `<project>.think.md` and `.github/agents/data/2think.memory.md`,
    then hand the task back to `@0master`.
 6. Do not write/overwrite think artifacts or hand off to `@3design` while branch validation fails.
 
@@ -129,7 +129,7 @@ Outputs: `*.think.md` artifacts and a recommended option for `@3design`.
 
 ## Memory lifecycle
 
-- Read and update `.github/agents/2think.memory.md` for each delegated task.
+- Read and update `.github/agents/data/2think.memory.md` for each delegated task.
 - Keep lifecycle state aligned with master policy: `OPEN` -> `IN_PROGRESS` -> `DONE` (or `BLOCKED`).
 - Include `task_id`, recommendation summary, and links to canonical/chunked think artifacts.
 - On handoff, record target agent `@3design` and decision rationale.
