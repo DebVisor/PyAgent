@@ -95,6 +95,9 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000058 | mobile-responsive-nebula-os | prj0000058-mobile-responsive-nebula-os | [#196](https://github.com/UndiFineD/PyAgent/pull/196) | P4 | S | 2026-03-25 |
+| prj0000057 | agent-orchestration-graph | prj0000057-agent-orchestration-graph | [#195](https://github.com/UndiFineD/PyAgent/pull/195) | P2 | M | 2026-03-25 |
+| prj0000056 | rust-async-transport-activation | prj0000056-rust-async-transport-activation | [#194](https://github.com/UndiFineD/PyAgent/pull/194) | P4 | M | 2026-03-25 |
 | prj0000055 | websocket-e2e-encryption | prj0000055-websocket-e2e-encryption | [#193](https://github.com/UndiFineD/PyAgent/pull/193) | P2 | M | 2026-03-25 |
 | prj0000054 | backend-authentication | prj0000054-backend-authentication | [#192](https://github.com/UndiFineD/PyAgent/pull/192) | P2 | M | 2026-03-24 |
 | prj0000059 | plugin-marketplace-browser | prj0000059-plugin-marketplace-browser | [#197](https://github.com/UndiFineD/PyAgent/pull/197) | P4 | S | 2026-03-25 |
