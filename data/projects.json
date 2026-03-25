@@ -1216,8 +1216,8 @@
   {
     "id": "prj0000075",
     "name": "ci-simplification",
-    "lane": "Discovery",
-    "summary": "Audit all GitHub workflow YAML files; consolidate or remove in favour of comprehensive pre-commit hooks for local-first testing",
+    "lane": "In Sprint",
+    "summary": "Delete 4 redundant workflows (core-quality, pm, quality, testing-infra); keep ci.yml unchanged; add security.yml for CodeQL scanning of Python and JavaScript",
     "branch": "prj0000075-ci-simplification",
     "pr": null,
     "priority": "P2",
