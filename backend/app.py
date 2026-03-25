@@ -25,6 +25,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from .auth import require_auth, websocket_auth
+from .memory_store import memory_store
 from .session_manager import SessionManager
 from .ws_crypto import decrypt_message, derive_shared_secret, encrypt_message, generate_keypair
 from .ws_handler import handle_message
@@ -351,6 +352,54 @@ async def create_project(body: ProjectCreate) -> ProjectModel:
     _PROJECTS.append(body.model_dump())
     _save_projects()
     return body
+
+
+# ── Agent memory endpoints ────────────────────────────────────────────────────
+
+class MemoryEntryRequest(BaseModel):
+    """Request body for the agent-memory append endpoint."""
+
+    role: str  # "user" | "assistant" | "system"
+    content: str
+    session_id: _Opt[str] = None
+
+
+@_auth_router.get("/api/agent-memory/{agent_id}")
+async def read_agent_memory(
+    agent_id: str,
+    limit: _Opt[int] = None,
+) -> list[dict]:
+    """Return stored memory entries for *agent_id*, newest-first."""
+    try:
+        entries = await memory_store.read(agent_id, limit=limit)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return entries
+
+
+@_auth_router.post("/api/agent-memory/{agent_id}", status_code=201)
+async def append_agent_memory(
+    agent_id: str,
+    body: MemoryEntryRequest,
+) -> dict:
+    """Append a memory entry for *agent_id* and return the stored entry."""
+    try:
+        stored = await memory_store.append(
+            agent_id,
+            {"role": body.role, "content": body.content, "session_id": body.session_id},
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return stored
+
+
+@_auth_router.delete("/api/agent-memory/{agent_id}", status_code=204)
+async def clear_agent_memory(agent_id: str) -> None:
+    """Clear all memory entries for *agent_id*."""
+    try:
+        await memory_store.clear(agent_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 app.include_router(_auth_router)
