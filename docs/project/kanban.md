@@ -103,6 +103,7 @@ PR open, awaiting merge.
 | prj0000054 | backend-authentication | prj0000054-backend-authentication | [#192](https://github.com/UndiFineD/PyAgent/pull/192) | P2 | M | 2026-03-24 |
 | prj0000053 | hmac-webhook-verification | prj0000053-hmac-webhook-verification | [#191](https://github.com/UndiFineD/PyAgent/pull/191) | P2 | S | 2026-03-24 |
 | prj0000052 | project-management | prj0000052-project-management | [#190](https://github.com/UndiFineD/PyAgent/pull/190) | P2 | L | 2026-03-24 |
+| prj0000067 | rust-file-watcher | prj0000067-rust-file-watcher | [#205](https://github.com/UndiFineD/PyAgent/pull/205) | P4 | M | 2026-03-25 |
 | prj0000043 | p2p-security-deps | prj0000043-p2p-security-deps | open | P2 | M | 2026-03-24 |
 | prj0000044 | transaction-managers-stubs | prj0000044-transaction-managers-stubs | #136 | P2 | S | 2026-03-24 |
 
