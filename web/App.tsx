@@ -7,7 +7,7 @@ import { Paint } from './apps/Paint';
 import { Conky } from './apps/Conky';
 import { CodeBuilder } from './apps/CodeBuilder';
 import { ProjectManager } from './apps/ProjectManager';
-import { PluginMarketplace } from './apps/PluginMarketplace';
+import { OrchestrationGraph } from './apps/OrchestrationGraph';
 import { WindowState, AppId, Theme, OsConfig, DEFAULT_OS_CONFIG } from './types';
 import { generateId, cn } from './utils';
 import {
@@ -162,11 +162,11 @@ export default function App() {
         width = 1100;
         height = 650;
         break;
-      case 'plugins':
-        component = <PluginMarketplace />;
-        title = 'Plugin Marketplace';
-        width = 900;
-        height = 580;
+      case 'orchestration':
+        component = <OrchestrationGraph />;
+        title = 'Orchestration';
+        width = 1000;
+        height = 360;
         break;
     }
 
@@ -223,7 +223,7 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen w-screen bg-os-bg text-os-text overflow-hidden relative transition-colors duration-300">
+    <div className="nebula-desktop h-screen w-screen bg-os-bg text-os-text overflow-hidden relative transition-colors duration-300">
       
       {/* Trigger Zone for Taskbar */}
       <div 
@@ -234,7 +234,7 @@ export default function App() {
       {/* Top Bar (Taskbar) */}
       <div 
         className={cn(
-          "fixed top-0 left-0 right-0 h-12 bg-os-header/90 backdrop-blur-md border-b border-os-border flex items-center justify-between px-4 z-[1000] shadow-sm transition-transform duration-500 ease-in-out",
+          "nebula-taskbar fixed top-0 left-0 right-0 h-12 bg-os-header/90 backdrop-blur-md border-b border-os-border flex items-center justify-between px-4 z-[1000] shadow-sm transition-transform duration-500 ease-in-out",
           !isTaskbarVisible && !menuOpen ? "-translate-y-full" : "translate-y-0"
         )}
         onMouseEnter={showTaskbar}
@@ -253,7 +253,7 @@ export default function App() {
                   focusWindow(w.id);
                 }}
                 className={cn(
-                  "px-3 py-1 rounded text-xs max-w-[120px] truncate transition-all",
+                  "nebula-taskbar-btn px-3 py-1 rounded text-xs max-w-[120px] truncate transition-all",
                   activeWindowId === w.id && !w.isMinimized
                     ? "bg-os-accent text-white shadow-sm"
                     : "bg-os-window hover:bg-os-border text-os-text/80"
@@ -307,8 +307,8 @@ export default function App() {
                     <button onClick={() => openApp('projectmanager')} className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-os-bg text-left text-sm transition-colors">
                       <Monitor size={16} className="text-indigo-400" /> Project Manager
                     </button>
-                    <button onClick={() => openApp('plugins')} className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-os-bg text-left text-sm transition-colors">
-                      <span className="text-base leading-none">🧩</span> Plugin Marketplace
+                    <button onClick={() => openApp('orchestration')} className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-os-bg text-left text-sm transition-colors">
+                      <span className="text-base leading-none">🕸️</span> Orchestration
                     </button>
 
                     <div className="h-px bg-os-border my-2" />
