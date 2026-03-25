@@ -114,3 +114,17 @@ def test_security_yml_has_schedule_trigger() -> None:
         assert triggers is not None and "schedule" in triggers, (
             "security.yml must have a 'schedule' trigger"
         )
+
+
+# ---------------------------------------------------------------------------
+# T1-f: security.yml wires in custom Python query pack
+# ---------------------------------------------------------------------------
+
+def test_security_yml_references_custom_python_queries() -> None:
+    """security.yml config must reference the local codeql-custom-queries-python pack."""
+    content = _SECURITY_YML.read_text(encoding="utf-8")
+    assert "codeql-custom-queries-python" in content, (
+        "security.yml must reference the custom Python query pack "
+        "('./codeql/codeql-custom-queries-python') so that local eval/shell-injection "
+        "queries run during CodeQL analysis."
+    )

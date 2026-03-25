@@ -37,11 +37,14 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
-          # Wire in the custom query packs that live in the repository root.
-          # Python queries: codeql-custom-queries-python/
-          # JavaScript queries: codeql-custom-queries-javascript/
+          # +security-and-quality adds all standard CodeQL security and quality
+          # queries on top of the default set.
           queries: +security-and-quality
           config: |
+            queries:
+              # Custom Python security queries (eval, subprocess shell injection).
+              # CodeQL skips this pack automatically for non-Python language runs.
+              - uses: ./codeql/codeql-custom-queries-python
             paths:
               - src
               - scripts
