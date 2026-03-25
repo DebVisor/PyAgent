@@ -4,6 +4,21 @@ _Last updated: 2026-03-25_
 
 ---
 
+## 2026-03-25 — prj0000075 CI Simplification
+
+**Branch:** `prj0000075-ci-simplification`
+**PR:** TBD
+**Status:** IN PROGRESS — @1project setup complete, delegated to @2think
+
+**Project boundary:**
+- Scope: `.github/workflows/*.yml` audit + `.pre-commit-config.yaml` expansion + `docs/` CI guidance update
+- Out of scope: Python/Rust/TS source code, test files
+- Expected branch: `prj0000075-ci-simplification`
+- Handoff rule: @9git must verify all CI checks pass (or are intentionally removed) before PR merge
+- Next available prj: prj0000077
+
+---
+
 ## 2026-03-25 — prj0000074 Workspace Meta Improvements
 
 **Branch:** `prj0000074-workspace-meta-improvements`
