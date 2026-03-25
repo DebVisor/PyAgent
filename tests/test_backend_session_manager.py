@@ -27,7 +27,8 @@ async def test_connect_returns_session_id():
     session_id = await manager.connect(ws)
     assert isinstance(session_id, str)
     assert len(session_id) > 0
-    ws.accept.assert_awaited_once()
+    # SessionManager.connect() no longer calls accept() — app.py accepts first.
+    ws.accept.assert_not_awaited()
 
 
 @pytest.mark.asyncio

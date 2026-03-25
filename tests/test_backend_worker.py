@@ -17,6 +17,7 @@ prj0000029 — LLM UI Backend Worker.
 """
 from __future__ import annotations
 
+import base64
 import importlib
 import json
 
@@ -36,6 +37,12 @@ from backend.models import (
     TaskStartedMessage,
 )
 from backend.session_manager import SessionManager
+from backend.ws_crypto import (
+    decrypt_message,
+    derive_shared_secret,
+    encrypt_message,
+    generate_keypair,
+)
 
 
 def test_backend_package_importable():
@@ -135,23 +142,46 @@ def test_health_endpoint():
     assert response.json() == {"status": "ok"}
 
 
+# ─── WebSocket E2E helpers ────────────────────────────────────────────────
+
+def _ws_handshake(ws):  # type: ignore[no-untyped-def]
+    """Perform X25519 ECDH key exchange and return the session_key."""
+    server_pub = base64.b64decode(ws.receive_text())
+    client_priv, client_pub = generate_keypair()
+    ws.send_text(base64.b64encode(client_pub).decode())
+    return derive_shared_secret(client_priv, server_pub)
+
+
+def _ws_send(ws, session_key: bytes, obj: dict) -> None:  # type: ignore[no-untyped-def]
+    """Encrypt and send a JSON dict over the WebSocket."""
+    plaintext = json.dumps(obj).encode("utf-8")
+    ws.send_text(base64.b64encode(encrypt_message(session_key, plaintext)).decode())
+
+
+def _ws_recv(ws, session_key: bytes) -> dict:  # type: ignore[no-untyped-def]
+    """Receive an encrypted WebSocket frame and return the decoded JSON dict."""
+    raw = decrypt_message(session_key, base64.b64decode(ws.receive_text()))
+    return json.loads(raw)
+
+
 # ─── WebSocket tests ──────────────────────────────────────────────────────
 
 def test_ws_init_ack():
     with client.websocket_connect("/ws") as ws:
-        ws.send_text(json.dumps({"type": "init", "session_id": "test"}))
-        data = json.loads(ws.receive_text())
+        session_key = _ws_handshake(ws)
+        _ws_send(ws, session_key, {"type": "init", "session_id": "test"})
+        data = _ws_recv(ws, session_key)
         assert data["type"] == "initAck"
         assert data["server_version"] == "0.1.0"
 
 
 def test_ws_run_task_streams_tokens():
     with client.websocket_connect("/ws") as ws:
-        ws.send_text(json.dumps({"type": "runTask", "task_id": "t1", "task": "gen"}))
+        session_key = _ws_handshake(ws)
+        _ws_send(ws, session_key, {"type": "runTask", "task_id": "t1", "task": "gen"})
         messages = []
         for _ in range(10):
-            raw = ws.receive_text()
-            msg = json.loads(raw)
+            msg = _ws_recv(ws, session_key)
             messages.append(msg)
             if msg["type"] == "taskComplete":
                 break
@@ -163,22 +193,27 @@ def test_ws_run_task_streams_tokens():
 
 def test_ws_control_ack():
     with client.websocket_connect("/ws") as ws:
-        ws.send_text(json.dumps({"type": "control", "task_id": "t1", "action": "cancel"}))
-        data = json.loads(ws.receive_text())
+        session_key = _ws_handshake(ws)
+        _ws_send(ws, session_key, {"type": "control", "task_id": "t1", "action": "cancel"})
+        data = _ws_recv(ws, session_key)
         assert data["type"] == "controlAck"
         assert data["action"] == "cancel"
 
 
 def test_ws_unknown_type_returns_error():
     with client.websocket_connect("/ws") as ws:
-        ws.send_text(json.dumps({"type": "bogus"}))
-        data = json.loads(ws.receive_text())
+        session_key = _ws_handshake(ws)
+        _ws_send(ws, session_key, {"type": "bogus"})
+        data = _ws_recv(ws, session_key)
         assert data["type"] == "error"
 
 
 def test_ws_invalid_json_returns_error():
     with client.websocket_connect("/ws") as ws:
-        ws.send_text("not json!!")
-        data = json.loads(ws.receive_text())
+        session_key = _ws_handshake(ws)
+        # Send a valid encrypted frame that decrypts to non-JSON bytes
+        plaintext = b"not json!!"
+        ws.send_text(base64.b64encode(encrypt_message(session_key, plaintext)).decode())
+        data = _ws_recv(ws, session_key)
         assert data["type"] == "error"
         assert "Invalid JSON" in data["error"]
