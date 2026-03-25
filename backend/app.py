@@ -16,16 +16,14 @@ from __future__ import annotations
 
 import json
 import logging
-import random
 import time
-import uuid
-from datetime import datetime
 from pathlib import Path
 
 import psutil
 from fastapi import APIRouter, Depends, FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from .auth import require_auth, websocket_auth
 from .memory_store import memory_store
@@ -173,6 +171,29 @@ app.add_middleware(
 )
 app.add_middleware(RateLimitMiddleware)
 
+
+class VersionHeaderMiddleware(BaseHTTPMiddleware):
+    """Inject API version headers.
+
+    * ``X-API-Version: 1``   — added on all ``/api/v1/`` responses.
+    * ``Deprecation: true``  — added on bare ``/api/`` responses that have a v1 counterpart.
+    """
+
+    async def dispatch(self, request, call_next):  # type: ignore[override]
+        response = await call_next(request)
+        path = request.url.path
+        if path.startswith("/api/v1/"):
+            response.headers["X-API-Version"] = "1"
+        elif path.startswith("/api/") and not path.startswith("/api/v1/"):
+            response.headers["Deprecation"] = "true"
+            response.headers["Link"] = (
+                f'<{path.replace("/api/", "/api/v1/", 1)}>; rel="successor-version"'
+            )
+        return response
+
+
+app.add_middleware(VersionHeaderMiddleware)
+
 sessions = SessionManager()
 
 # Protected router — all routes registered here require authentication.
@@ -185,30 +206,6 @@ async def health() -> dict[str, str]:
     """Health check endpoint."""
     get_logger().info("Health check", extra={"correlation_id": "health", "endpoint": "/health"})
     return {"status": "ok"}
-
-
-@app.get("/api/metrics/flm")
-async def flm_metrics() -> dict:
-    """Return simulated FLM token throughput metrics."""
-    now = time.time()
-    # Simulate 10 data points (last 10 seconds)
-    samples = [
-        {
-            "timestamp": now - (9 - i),
-            "tokens_per_second": round(random.uniform(50, 500), 1),
-            "model": "llama3-8b",
-            "queue_depth": random.randint(0, 10),
-        }
-        for i in range(10)
-    ]
-    return {
-        "samples": samples,
-        "avg_tokens_per_second": round(
-            sum(s["tokens_per_second"] for s in samples) / len(samples), 1
-        ),
-        "peak_tokens_per_second": max(s["tokens_per_second"] for s in samples),
-        "model": "llama3-8b",
-    }
 
 
 # ── System-metrics models ────────────────────────────────────────────────────
@@ -246,7 +243,7 @@ class SystemMetricsResponse(BaseModel):
     sampled_at: float
 
 
-@_auth_router.get("/api/metrics/system", response_model=SystemMetricsResponse)
+@_auth_router.get("/metrics/system", response_model=SystemMetricsResponse)
 async def get_system_metrics() -> SystemMetricsResponse:
     """Return real-time CPU, memory, network IO, and disk IO metrics."""
     global _prev_net, _prev_net_ts, _prev_disk, _prev_disk_ts
@@ -306,7 +303,7 @@ class AgentLogBody(BaseModel):
     content: str
 
 
-@_auth_router.get("/api/agent-log/{agent_id}")
+@_auth_router.get("/agent-log/{agent_id}")
 async def read_agent_log(agent_id: str) -> dict[str, str]:
     """Return the current contents of docs/agents/<agent_id>.log.md."""
     path = _log_path(agent_id)
@@ -315,7 +312,7 @@ async def read_agent_log(agent_id: str) -> dict[str, str]:
     return {"content": path.read_text(encoding="utf-8")}
 
 
-@_auth_router.put("/api/agent-log/{agent_id}")
+@_auth_router.put("/agent-log/{agent_id}")
 async def write_agent_log(agent_id: str, body: AgentLogBody) -> dict[str, str]:
     """Overwrite docs/agents/<agent_id>.log.md with the supplied content."""
     path = _log_path(agent_id)
@@ -333,7 +330,7 @@ class AgentDocBody(BaseModel):
     content: str
 
 
-@_auth_router.get("/api/agent-doc/{agent_id}")
+@_auth_router.get("/agent-doc/{agent_id}")
 async def read_agent_doc(agent_id: str) -> dict[str, str]:
     """Return the contents of .github/agents/<agent_id>.agent.md."""
     if agent_id not in _VALID_AGENT_IDS:
@@ -344,7 +341,7 @@ async def read_agent_doc(agent_id: str) -> dict[str, str]:
     return {"content": path.read_text(encoding="utf-8")}
 
 
-@_auth_router.put("/api/agent-doc/{agent_id}")
+@_auth_router.put("/agent-doc/{agent_id}")
 async def write_agent_doc(agent_id: str, body: AgentDocBody) -> dict[str, str]:
     """Overwrite .github/agents/<agent_id>.agent.md with the supplied content."""
     if agent_id not in _VALID_AGENT_IDS:
@@ -404,7 +401,7 @@ def _save_projects() -> None:
     tmp.replace(_PROJECTS_FILE)
 
 
-@_auth_router.get("/api/projects", response_model=list[ProjectModel])
+@_auth_router.get("/projects", response_model=list[ProjectModel])
 async def get_projects(lane: _Opt[str] = None) -> list[ProjectModel]:
     """Return all projects from data/projects.json, optionally filtered by lane."""
     if not _PROJECTS and not _PROJECTS_FILE.exists():
@@ -429,7 +426,7 @@ class ProjectPatch(BaseModel):
     updated: _Opt[str] = None
 
 
-@_auth_router.patch("/api/projects/{project_id}", response_model=ProjectModel)
+@_auth_router.patch("/projects/{project_id}", response_model=ProjectModel)
 async def patch_project(project_id: str, patch: ProjectPatch) -> ProjectModel:
     """Update one or more fields on an existing project and persist to disk."""
     if not _PROJECT_ID_RE.match(project_id):
@@ -447,7 +444,7 @@ class ProjectCreate(ProjectModel):
     """Full project payload required to create a new entry."""
 
 
-@_auth_router.post("/api/projects", response_model=ProjectModel, status_code=201)
+@_auth_router.post("/projects", response_model=ProjectModel, status_code=201)
 async def create_project(body: ProjectCreate) -> ProjectModel:
     """Append a new project entry and persist to disk."""
     if not _PROJECT_ID_RE.match(body.id):
@@ -459,6 +456,8 @@ async def create_project(body: ProjectCreate) -> ProjectModel:
     return body
 
 
+app.include_router(_auth_router, prefix="/api")
+app.include_router(_auth_router, prefix="/api/v1")
 # ── Agent memory endpoints ────────────────────────────────────────────────────
 
 class MemoryEntryRequest(BaseModel):
