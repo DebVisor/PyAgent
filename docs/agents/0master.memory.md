@@ -4,6 +4,22 @@ _Last updated: 2026-03-25_
 
 ---
 
+## 2026-03-25 — Four new projects allocated (prj0000073–076)
+
+All four are in Discovery lane, branches created and pushed, @1project setup complete for each.
+
+| ID | Name | Branch | Goal |
+|---|---|---|---|
+| prj0000073 | api-documentation | `prj0000073-api-documentation` | Proper API reference docs for all backend endpoints, WebSocket protocol, auth |
+| prj0000074 | workspace-meta-improvements | `prj0000074-workspace-meta-improvements` | Agent file co-location, docstrings policy, architecture restructure, SWOT+risk in kanban, deeper @2think |
+| prj0000075 | ci-simplification | `prj0000075-ci-simplification` | Audit/remove 5 GitHub workflow files; replace with pre-commit hooks |
+| prj0000076 | future-ideas-kanban | `prj0000076-future-ideas-kanban` | Workspace audit → ≥20 future ideas table in kanban.md |
+
+**Next step for each:** @2think begins on each branch.
+**Next available prj:** prj0000077
+
+---
+
 ## 2026-03-25 — prj0000072 WebSocket Reconnect Logic
 
 **Branch:** `prj0000072-websocket-reconnect-logic`
