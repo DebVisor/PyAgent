@@ -1,6 +1,23 @@
 # PyAgent — Master Agent Memory
 
-_Last updated: 2026-03-24_
+_Last updated: 2026-03-25_
+
+---
+
+## 2026-03-25 — prj0000072 WebSocket Reconnect Logic
+
+**Branch:** `prj0000072-websocket-reconnect-logic`
+**PR:** [#209](https://github.com/UndiFineD/PyAgent/pull/209) — open, awaiting merge
+**Status:** COMPLETE — all 9 workflow artifacts created, Python 835 tests pass, 0 warnings
+
+**Changes:**
+- `web/hooks/useWebSocket.ts` — exponential backoff + full-jitter; `baseDelay`, `maxDelay`, `maxRetries`, `reconnectAttempts`; `reconnectDelay` deprecated as alias
+- `web/hooks/useWebSocket.test.ts` — 9 Vitest tests (exports, formula, backwards-compat)
+- `docs/project/prj0000072/` — 9 workflow artifacts: project, think, design, plan, test, code, exec, ql, git
+
+**Lessons:** Full agent workflow (all 9 artifacts) must be completed on the project branch before git handoff, even for single-file changes. Branch gate (`git branch --show-current` → switch to project branch) must be the first action. Skipping artifacts from the prior session required retroactive creation on the correct branch.
+
+**Next available prj:** prj0000073
 
 ---
 

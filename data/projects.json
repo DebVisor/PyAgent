@@ -1164,10 +1164,10 @@
   {
     "id": "prj0000072",
     "name": "websocket-reconnect-logic",
-    "lane": "Ideas",
+    "lane": "Review",
     "summary": "Auto-reconnect with exponential backoff and jitter for frontend WebSocket drops, with connection state indicator in NebulaOS",
-    "branch": null,
-    "pr": null,
+    "branch": "prj0000072-websocket-reconnect-logic",
+    "pr": 209,
     "priority": "P3",
     "budget_tier": "S",
     "tags": [
@@ -1176,6 +1176,6 @@
       "reliability"
     ],
     "created": "2026-03-24",
-    "updated": "2026-03-24"
+    "updated": "2026-03-25"
   }
 ]

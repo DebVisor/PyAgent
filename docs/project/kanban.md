@@ -44,7 +44,6 @@ Projects proposed but not yet formally scoped.
 | ID | Name | Summary | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|
 | prj0000071 | dark-mode-accessibility | WCAG 2.1 AA accessibility audit and remediation for the NebulaOS dark theme | P4 | S | ui, accessibility | 2026-03-24 |
-| prj0000072 | websocket-reconnect-logic | Auto-reconnect with exponential backoff and jitter for frontend WebSocket drops | P3 | S | ui, websocket | 2026-03-24 |
 
 ---
 
@@ -81,6 +80,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000072 | websocket-reconnect-logic | prj0000072-websocket-reconnect-logic | [#209](https://github.com/UndiFineD/PyAgent/pull/209) | P3 | S | 2026-03-25 |
 | prj0000043 | p2p-security-deps | prj0000043-p2p-security-deps | open | P2 | M | 2026-03-24 |
 | prj0000044 | transaction-managers-stubs | prj0000044-transaction-managers-stubs | #136 | P2 | S | 2026-03-24 |
 
@@ -176,11 +176,11 @@ Stalled, cancelled, or superseded projects.
 
 | Lane | Count |
 |---|---|
-| Ideas | 2 |
+| Ideas | 1 |
 | Discovery | 0 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 2 |
+| Review | 3 |
 | Released | 67 |
 | Archived | 1 |
 | **Total** | **72** |
