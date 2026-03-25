@@ -94,6 +94,8 @@ fixes/
 # Generated key files from tests / runtime artifacts
 # Ignore key pairs created during testing in rust_core
 rust_core/*-keys.*
+# Debug symbols (large binary — never commit)
+*.pdb
 .cleanup_archive/
 
 # Node.js
