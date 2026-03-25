@@ -86,7 +86,6 @@ Active implementation — @4plan through @6code are working.
 
 | ID | Name | Summary | Branch | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
-| prj0000063 | structured-logging | JSON structured logging with correlation IDs across all backend requests | prj0000063-structured-logging | P4 | S | 2026-03-25 |
 
 ---
 
@@ -96,6 +95,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000063 | structured-logging | prj0000063-structured-logging | [#201](https://github.com/UndiFineD/PyAgent/pull/201) | P4 | S | 2026-03-25 |
 | prj0000062 | live-agent-execution-in-codebuilder | prj0000062-live-agent-execution-in-codebuilder | [#200](https://github.com/UndiFineD/PyAgent/pull/200) | P2 | M | 2026-03-25 |
 | prj0000061 | theme-system | prj0000061-theme-system | [#199](https://github.com/UndiFineD/PyAgent/pull/199) | P4 | S | 2026-03-25 |
 | prj0000060 | flm-token-throughput-dashboard | prj0000060-flm-token-throughput-dashboard | [#198](https://github.com/UndiFineD/PyAgent/pull/198) | P4 | S | 2026-03-25 |
