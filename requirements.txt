@@ -13,6 +13,12 @@ httpx==0.28.1
 # openai: OpenAI SDK used by src/core/providers/FlmChatAdapter.py
 openai==2.14.0
 
+# opentelemetry-api: OTel API for distributed tracing
+opentelemetry-api>=1.20
+
+# opentelemetry-sdk: OTel SDK used by backend/tracing.py
+opentelemetry-sdk>=1.20
+
 # prometheus-client: metrics instrumentation used by src/chat/api.py
 prometheus-client==0.23.1
 
