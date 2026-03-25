@@ -26,9 +26,15 @@ from pydantic import BaseModel
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from .auth import require_auth, websocket_auth
+from .memory_store import memory_store
+from .rate_limiter import RateLimitMiddleware
+from .logging_config import get_logger, setup_logging
 from .session_manager import SessionManager
 from .ws_crypto import decrypt_message, derive_shared_secret, encrypt_message, generate_keypair
 from .ws_handler import handle_message
+
+import uuid as _uuid_mod
+from starlette.middleware.base import BaseHTTPMiddleware
 
 logger = logging.getLogger(__name__)
 
@@ -85,6 +91,77 @@ def _log_path(agent_id: str) -> Path:
 
 app = FastAPI(title="PyAgent Backend Worker", version="0.1.0")
 
+_logger = setup_logging()
+_logger.info("PyAgent backend starting", extra={"correlation_id": "", "endpoint": ""})
+
+
+class CorrelationIdMiddleware(BaseHTTPMiddleware):
+    """Inject X-Correlation-ID into every response."""
+
+    async def dispatch(self, request, call_next):
+        correlation_id = request.headers.get("X-Correlation-ID", str(_uuid_mod.uuid4()))
+        response = await call_next(request)
+        response.headers["X-Correlation-ID"] = correlation_id
+        return response
+
+
+app.add_middleware(CorrelationIdMiddleware)
+# ── Plugin registry ───────────────────────────────────────────────────────────
+
+PLUGIN_REGISTRY = [
+    {
+        "id": "coder-enhanced",
+        "name": "CoderAgent Enhanced",
+        "description": "Multi-pass code improvement with diff preview",
+        "author": "PyAgent Core",
+        "version": "1.0.0",
+        "tags": ["coding"],
+        "installed": False,
+    },
+    {
+        "id": "sec-scanner",
+        "name": "Security Scanner",
+        "description": "OWASP Top 10 static analysis on staged files",
+        "author": "PyAgent Security",
+        "version": "0.9.0",
+        "tags": ["security"],
+        "installed": False,
+    },
+    {
+        "id": "doc-gen",
+        "name": "DocGen",
+        "description": "Auto-generates docstrings and README updates",
+        "author": "PyAgent Docs",
+        "version": "1.1.0",
+        "tags": ["docs"],
+        "installed": True,
+    },
+    {
+        "id": "rust-bench",
+        "name": "Rust Benchmarker",
+        "description": "Run criterion benchmarks and report regressions",
+        "author": "PyAgent Rust",
+        "version": "0.5.0",
+        "tags": ["rust", "performance"],
+        "installed": False,
+    },
+    {
+        "id": "ci-monitor",
+        "name": "CI Monitor",
+        "description": "Watch GitHub Actions workflow runs and alert on failures",
+        "author": "PyAgent CI",
+        "version": "2.0.0",
+        "tags": ["ci"],
+        "installed": False,
+    },
+]
+
+
+@app.get("/api/plugins")
+async def list_plugins() -> dict:
+    """Return the static plugin registry. No authentication required."""
+    return {"plugins": PLUGIN_REGISTRY}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://localhost:3000"],
@@ -92,6 +169,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.add_middleware(RateLimitMiddleware)
 
 
 class VersionHeaderMiddleware(BaseHTTPMiddleware):
@@ -126,6 +204,7 @@ _auth_router = APIRouter(dependencies=[Depends(require_auth)])
 @app.get("/health")
 async def health() -> dict[str, str]:
     """Health check endpoint."""
+    get_logger().info("Health check", extra={"correlation_id": "health", "endpoint": "/health"})
     return {"status": "ok"}
 
 
@@ -379,6 +458,95 @@ async def create_project(body: ProjectCreate) -> ProjectModel:
 
 app.include_router(_auth_router, prefix="/api")
 app.include_router(_auth_router, prefix="/api/v1")
+# ── Agent memory endpoints ────────────────────────────────────────────────────
+
+class MemoryEntryRequest(BaseModel):
+    """Request body for the agent-memory append endpoint."""
+
+    role: str  # "user" | "assistant" | "system"
+    content: str
+    session_id: _Opt[str] = None
+
+
+@_auth_router.get("/api/agent-memory/{agent_id}")
+async def read_agent_memory(
+    agent_id: str,
+    limit: _Opt[int] = None,
+) -> list[dict]:
+    """Return stored memory entries for *agent_id*, newest-first."""
+    try:
+        entries = await memory_store.read(agent_id, limit=limit)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return entries
+
+
+@_auth_router.post("/api/agent-memory/{agent_id}", status_code=201)
+async def append_agent_memory(
+    agent_id: str,
+    body: MemoryEntryRequest,
+) -> dict:
+    """Append a memory entry for *agent_id* and return the stored entry."""
+    try:
+        stored = await memory_store.append(
+            agent_id,
+            {"role": body.role, "content": body.content, "session_id": body.session_id},
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return stored
+
+
+@_auth_router.delete("/api/agent-memory/{agent_id}", status_code=204)
+async def clear_agent_memory(agent_id: str) -> None:
+    """Clear all memory entries for *agent_id*."""
+    try:
+        await memory_store.clear(agent_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+# ── Pipeline execution endpoints ─────────────────────────────────────────────
+
+_pipelines: dict = {}
+
+_PIPELINE_STAGES = [
+    "0master", "1project", "2think", "3design", "4plan",
+    "5test", "6code", "7exec", "8ql", "9git",
+]
+
+
+class PipelineRunRequest(BaseModel):
+    """Request body for POST /api/pipeline/run."""
+
+    task: str = ""
+
+
+@_auth_router.post("/api/pipeline/run")
+async def run_pipeline(body: PipelineRunRequest) -> dict:
+    """Create a new pipeline run and return its ID."""
+    pipeline_id = str(uuid.uuid4())
+    _pipelines[pipeline_id] = {
+        "id": pipeline_id,
+        "task": body.task,
+        "status": "running",
+        "created_at": datetime.utcnow().isoformat(),
+        "stages": {
+            stage: {"status": "pending", "log": ""}
+            for stage in _PIPELINE_STAGES
+        },
+    }
+    return {"pipeline_id": pipeline_id, "status": "running"}
+
+
+@_auth_router.get("/api/pipeline/status/{pipeline_id}")
+async def pipeline_status(pipeline_id: str) -> dict:
+    """Return the current status of a pipeline run."""
+    pipeline = _pipelines.get(pipeline_id)
+    if not pipeline:
+        raise HTTPException(status_code=404, detail="Pipeline not found")
+    return pipeline
+
+
+app.include_router(_auth_router)
 
 
 @app.websocket("/ws")
