@@ -56,7 +56,6 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
-| prj0000073 | api-documentation | Hand-crafted API reference covering all backend REST endpoints, WebSocket protocol, authentication, and error codes | prj0000073-api-documentation | P2 | M | docs, api, backend | 2026-03-25 |
 
 ---
 
@@ -75,6 +74,7 @@ Active implementation — @4plan through @6code are working.
 
 | ID | Name | Summary | Branch | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000073 | api-documentation | Hand-crafted API reference covering all backend REST endpoints, WebSocket protocol, authentication, and error codes | prj0000073-api-documentation | P2 | M | 2026-03-25 |
 
 ---
 
