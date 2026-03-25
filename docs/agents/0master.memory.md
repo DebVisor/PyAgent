@@ -159,9 +159,18 @@ All 42 projects have been surveyed and governance PRs created:
 - `.github/agents/1project.agent.md` — added lifecycle board conventions + step 1a
 - **Tests:** 685 pass (20/20 kanban structural tests green)
 
-**Next `prjNNNNNNN` to allocate:** `prj0000053`
+**Next `prjNNNNNNN` to allocate:** `prj0000073`
 
-## Branch Registry (all 45 projects)
+## 2026-03-25 — Kanban Cleanup & Test Warning Fixes
+
+**Status:** COMPLETE — committed to main as `cb46038ad` (warnings) + kanban cleanup
+
+**Work done:**
+- Fixed pytest warnings: removed duplicate pytest config from pyproject.toml, closed unclosed file handles in 3 test files, replaced short JWT test keys (10–11 bytes) with 32+ byte keys, added filterwarnings for internal ResourceWarnings. Result: 835 passed, 9 skipped, **0 warnings**.
+- Cleaned up kanban.md and data/projects.json: all 19 projects (prj0000052–0070) confirmed merged (PRs #190–#208) and moved to Released. Removed 4 duplicate entries (prj0000067–0070 duplication). Updated test count assertions.
+- Kanban now: Ideas=2 (prj0000071, 0072), In Sprint=0, Review=2 (prj0000043, 0044), Released=67, Archived=1, Total=72.
+
+## Branch Registry (all 72 projects)
 
 | Dir | Expected Branch | Status |
 |---|---|---|

@@ -132,15 +132,13 @@ def test_projects_json_valid() -> None:
 
 @_SKIP_PROJECTS
 def test_projects_json_entry_count() -> None:
-    """data/projects.json must contain exactly 76 entries.
+    """data/projects.json must contain exactly 72 entries.
 
-    Breakdown: prj0000001–prj0000052 (52 entries) +
-               prj0000053–prj0000062 (10 entries) +
-               prj0000063–prj0000076 (14 new entries) = 76 total.
+    Breakdown: prj0000001–prj0000072 (72 unique entries; duplicates removed).
     """
     assert _projects_data is not None
-    assert len(_projects_data) == 76, (
-        f"Expected 76 project entries, got {len(_projects_data)}"
+    assert len(_projects_data) == 72, (
+        f"Expected 72 project entries, got {len(_projects_data)}"
     )
 
 
@@ -262,14 +260,14 @@ def test_kanban_required_h2s(heading: str) -> None:
 
 @_SKIP_KANBAN
 def test_kanban_total_rows() -> None:
-    r"""kanban.md must contain exactly 77 project data rows.
+    r"""kanban.md must contain exactly 72 project data rows.
 
     A data row is any line matching r'^\|\s*prj\d{7}'.
     """
     pattern = re.compile(r"^\|\s*prj\d{7}")
     data_rows = [line for line in _kanban_lines if pattern.match(line)]
-    assert len(data_rows) == 77, (
-        f"Expected 77 project rows in kanban.md, found {len(data_rows)}"
+    assert len(data_rows) == 72, (
+        f"Expected 72 project rows in kanban.md, found {len(data_rows)}"
     )
 
 
