@@ -54,28 +54,28 @@ def test_verify_api_key_empty_expected() -> None:
 
 
 def test_verify_jwt_valid(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
-    token = jwt.encode({"sub": "user1"}, "testsecret", algorithm="HS256")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
+    token = jwt.encode({"sub": "user1"}, "test-secret-key-minimum-32-bytes-long!!", algorithm="HS256")
     result = auth_mod.verify_jwt(token)
     assert result is not None
     assert result["sub"] == "user1"
 
 
 def test_verify_jwt_wrong_secret(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
-    token = jwt.encode({"sub": "user1"}, "othersecret", algorithm="HS256")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
+    token = jwt.encode({"sub": "user1"}, "other-secret-key-minimum-32-bytes-long!", algorithm="HS256")
     assert auth_mod.verify_jwt(token) is None
 
 
 def test_verify_jwt_expired(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
     # exp=1 is in the distant past
-    token = jwt.encode({"sub": "user1", "exp": 1}, "testsecret", algorithm="HS256")
+    token = jwt.encode({"sub": "user1", "exp": 1}, "test-secret-key-minimum-32-bytes-long!!", algorithm="HS256")
     assert auth_mod.verify_jwt(token) is None
 
 
 def test_verify_jwt_garbage(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
     assert auth_mod.verify_jwt("notavalidtoken") is None
 
 
@@ -130,8 +130,8 @@ def test_rest_valid_jwt_returns_200(monkeypatch: pytest.MonkeyPatch) -> None:
     """A valid Bearer token grants access to protected endpoints."""
     monkeypatch.setattr(auth_mod, "DEV_MODE", False)
     monkeypatch.setattr(auth_mod, "API_KEY", "")
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
-    token = jwt.encode({"sub": "user1"}, "testsecret", algorithm="HS256")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
+    token = jwt.encode({"sub": "user1"}, "test-secret-key-minimum-32-bytes-long!!", algorithm="HS256")
     client = TestClient(app_mod.app, raise_server_exceptions=False)
     resp = client.get("/api/projects", headers={"Authorization": f"Bearer {token}"})
     assert resp.status_code == 200
@@ -141,8 +141,8 @@ def test_rest_invalid_jwt_returns_401(monkeypatch: pytest.MonkeyPatch) -> None:
     """A token signed with the wrong secret must be rejected."""
     monkeypatch.setattr(auth_mod, "DEV_MODE", False)
     monkeypatch.setattr(auth_mod, "API_KEY", "")
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
-    token = jwt.encode({"sub": "user1"}, "wrongsecret", algorithm="HS256")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
+    token = jwt.encode({"sub": "user1"}, "wrong-secret-key-minimum-32-bytes-long!", algorithm="HS256")
     client = TestClient(app_mod.app, raise_server_exceptions=False)
     resp = client.get("/api/projects", headers={"Authorization": f"Bearer {token}"})
     assert resp.status_code == 401
@@ -159,8 +159,8 @@ def test_both_api_key_and_jwt_accepted(monkeypatch: pytest.MonkeyPatch) -> None:
     """Either credential type is accepted when both are configured."""
     monkeypatch.setattr(auth_mod, "DEV_MODE", False)
     monkeypatch.setattr(auth_mod, "API_KEY", "testkey")
-    monkeypatch.setattr(auth_mod, "JWT_SECRET", "testsecret")
-    token = jwt.encode({"sub": "user1"}, "testsecret", algorithm="HS256")
+    monkeypatch.setattr(auth_mod, "JWT_SECRET", "test-secret-key-minimum-32-bytes-long!!")
+    token = jwt.encode({"sub": "user1"}, "test-secret-key-minimum-32-bytes-long!!", algorithm="HS256")
     client = TestClient(app_mod.app, raise_server_exceptions=False)
     # API key path
     assert client.get("/api/projects", headers={"X-API-Key": "testkey"}).status_code == 200

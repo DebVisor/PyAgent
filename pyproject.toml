@@ -164,10 +164,3 @@ exclude_lines = [
     "if __name__ == .__main__.:",
 ]
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q --asyncio-mode=strict"
-testpaths = ["tests"]
-python_files = ["test_*.py", "*_test.py"]
-python_classes = ["Test*"]
-python_functions = ["test_*"]

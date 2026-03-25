@@ -14,6 +14,7 @@ def test_ci_workflow_exists() -> None:
 
 def test_ci_workflow_sanity() -> None:
     """The CI workflow file should contain expected keys and structure."""
-    data = yaml.safe_load(open(".github/workflows/ci.yml", encoding="utf-8"))
+    with open(".github/workflows/ci.yml", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
     assert "jobs" in data
     assert "test" in data["jobs"]
