@@ -30,6 +30,7 @@ No out-of-scope files modified. ✅
 ## PR Details
 
 **PR title:** feat: FLM token throughput dashboard in NebulaOS (prj0000060)
+**PR number:** [#198](https://github.com/UndiFineD/PyAgent/pull/198)
 **Base:** main
 **Head:** prj0000060-flm-token-throughput-dashboard
 
