@@ -54,6 +54,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
+| prj0000075 | ci-simplification | Audit all 5 GitHub workflow files; consolidate or remove in favour of pre-commit hooks | prj0000075-ci-simplification | P2 | S | ci, devops | 2026-03-25 |
 
 ---
 
@@ -181,7 +182,7 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 4 |
-| Discovery | 0 |
+| Discovery | 1 |
 | Design | 0 |
 | In Sprint | 1 |
 | Review | 3 |
