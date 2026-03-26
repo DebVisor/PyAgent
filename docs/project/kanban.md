@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-26 | Total projects: 88 | prj0000082 → Review_
+_Last updated: 2026-03-26 | Total projects: 88 | prj0000083 → Discovery_
 
 ## How to use this board
 
@@ -43,7 +43,7 @@ Projects proposed but not yet formally scoped.
 
 | ID | Name | Summary | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|
-| prj0000083 | llm-circuit-breaker | Per-provider LLM request circuit breaker with configurable failure thresholds, exponential backoff, and fallback model routing | P3 | S | resilience, llm, infrastructure | 2026-03-26 |
+
 | prj0000084 | immutable-audit-trail | Append-only hashchain audit log for all BFT-approved and security-critical operations; tamper-evident with cryptographic chaining | P2 | M | security, audit, compliance | 2026-03-26 |
 | prj0000085 | shadow-mode-replay | Shadow execution mode (side-effect-free parallel agent runs) + deterministic session replay from structured logs for debug | P3 | M | testing, debug, observability | 2026-03-26 |
 | prj0000086 | universal-agent-shell | UniversalAgent shell: dynamically load CoderCore/SecurityCore/etc. by intent; consolidate 50+ specialized agent classes | P2 | XL | architecture, agents, refactor | 2026-03-26 |
@@ -58,6 +58,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
+| prj0000083 | llm-circuit-breaker | Per-provider LLM request circuit breaker with configurable failure thresholds, exponential backoff, and fallback model routing | prj0000083-llm-circuit-breaker | P3 | S | resilience, llm, infrastructure | 2026-03-26 |
 
 
 
@@ -87,7 +88,6 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
-| prj0000082 | agent-execution-sandbox | prj0000082-agent-execution-sandbox | [#224](https://github.com/UndiFineD/PyAgent/pull/224) | P2 | S | 2026-03-26 |
 
 
 ---
@@ -98,6 +98,7 @@ All projects merged to main branch.
 
 | ID | Name | Summary | Branch | PR | Priority | Budget | Released |
 |---|---|---|---|---|---|---|---|
+| prj0000082 | agent-execution-sandbox | SandboxMixin + SandboxedStorageTransaction: path/network allowlist enforcement for agents; 32 tests 100% cov | merged | [#224](https://github.com/UndiFineD/PyAgent/pull/224) | P2 | S | 2026-03-26 |
 | prj0000081 | mcp-server-ecosystem | MCP server hot-load registry with security sandboxing; McpClient JSON-RPC stdio, McpRegistry lifecycle, McpSandbox hardened spawn, McpToolAdapter; 33/33 tests 89.4% cov | merged | [#223](https://github.com/UndiFineD/PyAgent/pull/223) | P3 | L | 2026-03-26 |
 | prj0000080 | cort-reasoning-pipeline | Chain-of-Recursive-Thoughts: N-round recursive self-critique with M temperature-variant alternatives; pure-heuristic EvaluationEngine; 33/33 tests 97.4% cov | merged | [#221](https://github.com/UndiFineD/PyAgent/pull/221) | P2 | M | 2026-03-26 |
 | prj0000079 | automem-hybrid-search | AutoMem 9-component hybrid memory search (Vector+Graph+Temporal+Lexical+HNSW+AGE+LTREE+BRIN+Hash) on PostgreSQL; NebulaOS benchmark dashboard; app auto-discovery registry | merged | [#220](https://github.com/UndiFineD/PyAgent/pull/220) | P2 | L | 2026-03-26 |
@@ -195,12 +196,12 @@ Stalled, cancelled, or superseded projects.
 
 | Lane | Count |
 |---|---|
-| Ideas | 6 |
+| Ideas | 5 |
 | Discovery | 1 |
 | Design | 0 |
 | In Sprint | 0 |
 | Review | 0 |
-| Released | 79 |
+| Released | 81 |
 | Archived | 1 |
 | **Total** | **88** |
 
