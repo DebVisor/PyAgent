@@ -27,6 +27,7 @@ from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+
 from src.mcp.exceptions import McpPathForbidden, McpPinMismatch, McpSandboxError, McpSecretNotFound
 from src.mcp.McpSandbox import McpSandbox
 from src.mcp.McpServerConfig import McpServerConfig
