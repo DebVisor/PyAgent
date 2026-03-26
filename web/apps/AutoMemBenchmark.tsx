@@ -4,6 +4,9 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   ReferenceLine, Cell,
 } from 'recharts';
+import type { AppMeta } from '../types';
+
+export const appMeta: AppMeta = { id: 'autobenchmark', title: 'AutoMem Benchmark', category: 'AI Agents' };
 
 // ---------------------------------------------------------------------------
 // Types (mirrors BenchmarkRunner.py dataclasses)
