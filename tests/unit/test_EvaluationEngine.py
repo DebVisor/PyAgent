@@ -21,6 +21,7 @@ All tests in this module are RED-phase: they fail at collection time because
 from __future__ import annotations
 
 import pytest
+
 from src.core.reasoning import EvaluationEngine
 from src.core.reasoning.CortCore import ReasoningChain
 from src.core.reasoning.EvaluationEngine import RubricScore
