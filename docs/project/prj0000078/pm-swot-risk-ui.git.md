@@ -1,6 +1,6 @@
 # pm-swot-risk-ui — Git Summary
 
-_Status: NOT_STARTED_
+_Status: IN_PROGRESS_
 _Git: @9git | Updated: 2026-03-26_
 
 ## Branch
