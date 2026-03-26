@@ -6,6 +6,18 @@ _Last updated: 2026-03-26_
 
 ---
 
+## 2026-03-26 — prj0000081 mcp-server-ecosystem — DISCOVERY 🔍
+
+**Branch:** `prj0000081-mcp-server-ecosystem`
+**Status:** DISCOVERY — lane transition committed; delegated to @1project for folder + overview
+**Priority:** P3 | **Budget:** L | **Tags:** tools, mcp, ecosystem
+
+**Goal:** MCP server hot-load registry with security sandboxing; enables agents to dynamically connect to 500+ community MCP servers.
+
+**Scope boundary:** `src/tools/mcp/` or new `src/mcp/` package; `@1project` must confirm folder choice in project overview.
+
+---
+
 ## 2026-03-26 — prj0000080 cort-reasoning-pipeline — RELEASED ✅ PR #221
 
 **Branch:** `prj0000080-cort-reasoning-pipeline`
