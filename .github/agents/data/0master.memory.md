@@ -6,11 +6,11 @@ _Last updated: 2026-03-26_
 
 ---
 
-## 2026-03-26 — prj0000080 cort-reasoning-pipeline — REVIEW 🔎 PR #221
+## 2026-03-26 — prj0000080 cort-reasoning-pipeline — RELEASED ✅ PR #221
 
 **Branch:** `prj0000080-cort-reasoning-pipeline`
-**PR:** [#221](https://github.com/UndiFineD/PyAgent/pull/221) — open, awaiting review
-**Status:** REVIEW — full pipeline complete (@1project→@2think→@3design→@4plan→@5test→@6code→@7exec→@8ql→@9git)
+**PR:** [#221](https://github.com/UndiFineD/PyAgent/pull/221) — **merged 2026-03-26**
+**Status:** RELEASED — full pipeline complete (@1project→@2think→@3design→@4plan→@5test→@6code→@7exec→@8ql→@9git)
 **Priority:** P2 | **Budget:** M
 
 **Deliverable:** Chain-of-Recursive-Thoughts reasoning pipeline: N-round recursive self-critique with M alternative chains per round (temperature-variant via `asyncio.gather`), pure-heuristic `EvaluationEngine` (Correctness 0.5 / Completeness 0.3 / Reasoning-depth 0.2), usable as `CortMixin` or standalone `CortAgent`. 33/33 tests, 97.4% coverage, ruff clean, OWASP clear.
