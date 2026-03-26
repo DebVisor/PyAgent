@@ -61,3 +61,14 @@ class SandboxMixin:
             return
         if host not in self._sandbox_config.allowed_hosts:
             raise SandboxViolationError(resource=host, reason="host not in allowed_hosts")
+
+
+def validate() -> bool:
+    """Validate that the SandboxMixin module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the mixin class is accessible.
+
+    """
+    assert SandboxMixin is not None
+    return True

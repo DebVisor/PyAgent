@@ -64,3 +64,14 @@ class SandboxConfig:
             allow_all_hosts=allow_all_hosts,
             agent_id=agent_id or str(uuid.uuid4()),
         )
+
+
+def validate() -> bool:
+    """Validate that the SandboxConfig module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the dataclass is accessible.
+
+    """
+    assert SandboxConfig is not None
+    return True

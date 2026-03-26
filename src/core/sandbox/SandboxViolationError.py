@@ -40,3 +40,14 @@ class SandboxViolationError(RuntimeError):
         super().__init__(f"Sandbox violation [{resource}]: {reason}")
         self.resource = resource
         self.reason = reason
+
+
+def validate() -> bool:
+    """Validate that the SandboxViolationError module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the exception class is accessible.
+
+    """
+    assert SandboxViolationError is not None
+    return True

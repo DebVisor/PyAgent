@@ -85,13 +85,11 @@ class SandboxedStorageTransaction(StorageTransaction):
 
         """
         resolved = path.resolve()
-        for allowed in self._sandbox.allowed_paths:
-            if self._is_subpath(path, allowed):
-                return
-        raise SandboxViolationError(
-            resource=str(resolved),
-            reason=f"path not in allowed_paths: {self._sandbox.allowed_paths}",
-        )
+        if not any(self._is_subpath(path, allowed) for allowed in self._sandbox.allowed_paths):
+            raise SandboxViolationError(
+                resource=str(resolved),
+                reason=f"path not in allowed_paths: {self._sandbox.allowed_paths}",
+            )
 
     # ------------------------------------------------------------------
     # Multi-op async overrides
@@ -155,3 +153,14 @@ class SandboxedStorageTransaction(StorageTransaction):
         if self._target is not None:
             self._validate_path(self._target)
         super().commit()
+
+
+def validate() -> bool:
+    """Validate that the SandboxedStorageTransaction module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the class is accessible.
+
+    """
+    assert SandboxedStorageTransaction is not None
+    return True

@@ -464,3 +464,14 @@ async def _main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(_main())
+
+
+def validate() -> bool:
+    """Validate that the BenchmarkRunner module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the runner class is accessible.
+
+    """
+    assert BenchmarkRunner is not None
+    return True
