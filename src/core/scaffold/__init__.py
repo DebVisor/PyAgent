@@ -24,7 +24,8 @@ from typing import Protocol
 class CoreAPI(Protocol):
     """Protocol describing a simple Core API contract."""
 
-    def validate(self) -> None: ...
+    def validate(self) -> None:
+        ...
 
 
 @dataclass

@@ -26,8 +26,6 @@ _EXTENSION: object | None = None
 
 # Background loop used when no running asyncio loop is available.
 _background_loop: asyncio.AbstractEventLoop | None = None
-_background_thread: threading.Thread | None = None
-_background_loop_started: threading.Event | None = None
 
 
 class _PythonRuntimeExtension:
@@ -67,7 +65,7 @@ def _get_extension() -> object:
         _EXTENSION = importlib.import_module("runtime.runtime")
         return _EXTENSION
     except ModuleNotFoundError:
-        pass
+        pass  # Extension not installed under `runtime.runtime`; try compatibility path.
 
     # Compatibility path: some environments expose the module directly as
     # ``runtime``.
@@ -77,7 +75,7 @@ def _get_extension() -> object:
             _EXTENSION = candidate
             return _EXTENSION
     except ModuleNotFoundError:
-        pass
+        pass  # Module not available under bare `runtime` name; fall back to Python stub.
 
     # Last-resort test fallback.
     _EXTENSION = _PythonRuntimeExtension()
@@ -86,7 +84,7 @@ def _get_extension() -> object:
 
 def _ensure_background_loop() -> asyncio.AbstractEventLoop:
     """Ensure an asyncio event loop is running in a dedicated background thread."""
-    global _background_loop, _background_thread, _background_loop_started
+    global _background_loop  # noqa: PLW0603
     if _background_loop and _background_loop.is_running():
         return _background_loop
 
@@ -106,8 +104,6 @@ def _ensure_background_loop() -> asyncio.AbstractEventLoop:
     started.wait(timeout=1.0)
 
     _background_loop = loop
-    _background_thread = thread
-    _background_loop_started = started
     return loop
 
 
@@ -180,9 +176,8 @@ def spawn(coro: Any) -> None:
         except Exception:  # noqa: E722
             try:
                 logger = _get_extension().logger  # type: ignore
-            except Exception:
-                import logging
-
+            except Exception:  # noqa: S110
+                # Extension logger unavailable; fall back to the module-level logger.
                 logger = logging.getLogger("runtime_py")
             logger.exception("runtime task failed")
 
@@ -196,7 +191,7 @@ def spawn(coro: Any) -> None:
         try:
             wrapped.close()  # type: ignore[attr-defined]
         except Exception:  # noqa: S110
-            pass
+            pass  # close() may not exist on all coroutine types; cleanup is best-effort.
         return
 
     # If the future is already done/cancelled, ensure we close the wrapper.
@@ -204,7 +199,7 @@ def spawn(coro: Any) -> None:
         try:
             wrapped.close()  # type: ignore[attr-defined]
         except Exception:  # noqa: S110
-            pass
+            pass  # close() may not exist on all coroutine types; cleanup is best-effort.
 
 
 def on(event: str, handler: object) -> None:

@@ -17,11 +17,6 @@ import sys
 import tempfile
 from typing import Iterable, List
 
-try:
-    from src.tools.git_utils import main as _git_utils_main  # noqa: F401
-except ImportError:  # pragma: no cover
-    from tools.git_utils import main as _git_utils_main  # noqa: F401
-
 from .tool_registry import register_tool
 
 

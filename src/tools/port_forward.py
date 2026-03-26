@@ -45,7 +45,7 @@ async def _handle_client(
                 dst.write(data)
                 await dst.drain()
         except Exception:  # noqa: S110
-            pass
+            pass  # Pipe errors (e.g. connection reset) are expected; let finally close the stream.
         finally:
             dst.close()
 

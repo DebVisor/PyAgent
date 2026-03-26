@@ -63,7 +63,7 @@ def _apply_local_rust_core_path() -> None:
             try:
                 os.remove(pyd)
             except FileNotFoundError:
-                pass
+                pass  # File already absent; no cleanup needed.
             os.rename(dll, pyd)
 
 
