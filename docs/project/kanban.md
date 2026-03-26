@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-26 | Total projects: 88_
+_Last updated: 2026-03-26 | Total projects: 88 | prj0000081 → Review_
 
 ## How to use this board
 
@@ -59,7 +59,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
-| prj0000081 | mcp-server-ecosystem | MCP server hot-load registry with security sandboxing; enables agents to dynamically connect to 500+ community MCP servers | prj0000081-mcp-server-ecosystem | P3 | L | tools, mcp, ecosystem | 2026-03-26 |
+
 
 
 ---
@@ -88,6 +88,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000081 | mcp-server-ecosystem | prj0000081-mcp-server-ecosystem | [#223](https://github.com/UndiFineD/PyAgent/pull/223) | P3 | L | 2026-03-26 |
 
 
 ---
