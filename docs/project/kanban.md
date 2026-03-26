@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-26 | Total projects: 88 | prj0000081 → Review_
+_Last updated: 2026-03-26 | Total projects: 88 | prj0000081 → Released_
 
 ## How to use this board
 
@@ -88,7 +88,6 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
-| prj0000081 | mcp-server-ecosystem | prj0000081-mcp-server-ecosystem | [#223](https://github.com/UndiFineD/PyAgent/pull/223) | P3 | L | 2026-03-26 |
 
 
 ---
@@ -99,6 +98,7 @@ All projects merged to main branch.
 
 | ID | Name | Summary | Branch | PR | Priority | Budget | Released |
 |---|---|---|---|---|---|---|---|
+| prj0000081 | mcp-server-ecosystem | MCP server hot-load registry with security sandboxing; McpClient JSON-RPC stdio, McpRegistry lifecycle, McpSandbox hardened spawn, McpToolAdapter; 33/33 tests 89.4% cov | merged | [#223](https://github.com/UndiFineD/PyAgent/pull/223) | P3 | L | 2026-03-26 |
 | prj0000080 | cort-reasoning-pipeline | Chain-of-Recursive-Thoughts: N-round recursive self-critique with M temperature-variant alternatives; pure-heuristic EvaluationEngine; 33/33 tests 97.4% cov | merged | [#221](https://github.com/UndiFineD/PyAgent/pull/221) | P2 | M | 2026-03-26 |
 | prj0000079 | automem-hybrid-search | AutoMem 9-component hybrid memory search (Vector+Graph+Temporal+Lexical+HNSW+AGE+LTREE+BRIN+Hash) on PostgreSQL; NebulaOS benchmark dashboard; app auto-discovery registry | merged | [#220](https://github.com/UndiFineD/PyAgent/pull/220) | P2 | L | 2026-03-26 |
 | prj0000072 | websocket-reconnect-logic | Auto-reconnect with exponential backoff and jitter for frontend WebSocket drops; connection state indicator in NebulaOS | merged | [#209](https://github.com/UndiFineD/PyAgent/pull/209) | P3 | S | 2026-03-25 |
