@@ -1,7 +1,7 @@
 # cort-reasoning-pipeline — Project Overview
 
-_Status: HANDED_OFF_
-_Owner: @1project | Updated: 2026-03-26_
+_Status: IN_PROGRESS_
+_Owner: @2think → @3design | Updated: 2026-03-26_
 
 ## Project Identity
 **Project ID:** prj0000080
@@ -108,7 +108,7 @@ chain from the final round becomes the agent's response.
 | # | Milestone | Agent | Status |
 |---|---|---|---|
 | M1 | Project setup | @1project | DONE |
-| M2 | Options explored | @2think | |
+| M2 | Options explored | @2think | DONE |
 | M3 | Design confirmed | @3design | |
 | M4 | Plan finalized | @4plan | |
 | M5 | Tests written | @5test | |
@@ -130,5 +130,6 @@ chain from the final round becomes the agent's response.
 
 ## Status
 _Last updated: 2026-03-26_
-Project folder created; all stubs initialised. Branch `prj0000080-cort-reasoning-pipeline`
-is active. Ready for handoff to `@2think` for options exploration.
+Options exploration complete (`prj0000080.think.md`). Recommendation: Option A (Fixed
+N rounds, Fixed M alternatives) + E2 heuristic EvaluationEngine with E3 interface
+contract. Ready for handoff to `@3design` for architecture design.
