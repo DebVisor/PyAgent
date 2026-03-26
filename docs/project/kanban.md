@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-26 | Total projects: 77_
+_Last updated: 2026-03-26 | Total projects: 78_
 
 ## How to use this board
 
@@ -43,7 +43,6 @@ Projects proposed but not yet formally scoped.
 
 | ID | Name | Summary | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|
-| prj0000078 | pm-swot-risk-ui | Add SWOT Analysis and Risk Register navigation buttons to the Project Manager toolbar, opening kanban.md in the Editor app at the relevant sections | P3 | S | ui, swot, risk, project-manager | 2026-03-26 |
 
 ---
 
@@ -53,6 +52,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
+| prj0000078 | pm-swot-risk-ui | Add SWOT Analysis and Risk Register navigation buttons to the Project Manager toolbar, opening kanban.md in the Editor app at the relevant sections | prj0000078-pm-swot-risk-ui | P3 | S | ui, swot, risk, project-manager | 2026-03-26 |
 
 ---
 
