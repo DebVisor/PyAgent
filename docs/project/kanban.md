@@ -88,10 +88,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
-| prj0000079 | automem-hybrid-search | prj0000079-automem-hybrid-search | [#220](https://github.com/UndiFineD/PyAgent/pull/220) | P2 | L | 2026-03-26 |
-| prj0000072 | websocket-reconnect-logic | prj0000072-websocket-reconnect-logic | [#209](https://github.com/UndiFineD/PyAgent/pull/209) | P3 | S | 2026-03-25 |
-| prj0000043 | p2p-security-deps | prj0000043-p2p-security-deps | open | P2 | M | 2026-03-24 |
-| prj0000044 | transaction-managers-stubs | prj0000044-transaction-managers-stubs | #136 | P2 | S | 2026-03-24 |
+
 
 ---
 
@@ -102,6 +99,10 @@ All projects merged to main branch.
 | ID | Name | Summary | Branch | PR | Priority | Budget | Released |
 |---|---|---|---|---|---|---|---|
 | prj0000080 | cort-reasoning-pipeline | Chain-of-Recursive-Thoughts: N-round recursive self-critique with M temperature-variant alternatives; pure-heuristic EvaluationEngine; 33/33 tests 97.4% cov | merged | [#221](https://github.com/UndiFineD/PyAgent/pull/221) | P2 | M | 2026-03-26 |
+| prj0000079 | automem-hybrid-search | AutoMem 9-component hybrid memory search (Vector+Graph+Temporal+Lexical+HNSW+AGE+LTREE+BRIN+Hash) on PostgreSQL; NebulaOS benchmark dashboard; app auto-discovery registry | merged | [#220](https://github.com/UndiFineD/PyAgent/pull/220) | P2 | L | 2026-03-26 |
+| prj0000072 | websocket-reconnect-logic | Auto-reconnect with exponential backoff and jitter for frontend WebSocket drops; connection state indicator in NebulaOS | merged | [#209](https://github.com/UndiFineD/PyAgent/pull/209) | P3 | S | 2026-03-25 |
+| prj0000044 | transaction-managers-stubs | CI stubs for StorageTransactionManager, ProcessTransactionManager, ContextTransactionManager — unblock test suite collection | merged | [#136](https://github.com/UndiFineD/PyAgent/pull/136) | P2 | S | 2026-03-22 |
+| prj0000043 | p2p-security-deps | Upgrade libp2p 0.49→0.56 to remediate 6 Dependabot CVEs in P2P Rust stack | merged | — | P2 | M | 2026-03-23 |
 | prj0000078 | pm-swot-risk-ui | Add SWOT Analysis and Risk Register toolbar buttons to Project Manager; `?raw` Vite import; modal overlay | merged | [#219](https://github.com/UndiFineD/PyAgent/pull/219) | P3 | S | 2026-03-26 |
 | prj0000076 | future-ideas-kanban | Full workspace audit: 38 SWOT-prioritised future ideas added to kanban.md across 9 areas | merged | [#218](https://github.com/UndiFineD/PyAgent/pull/218) | P3 | M | 2026-03-26 |
 | prj0000077 | ci-backend-deps | Add psutil, PyJWT, python-json-logger to requirements.txt; fix CodeQL QL query; fix kanban test counts | merged | [#216](https://github.com/UndiFineD/PyAgent/pull/216) [#217](https://github.com/UndiFineD/PyAgent/pull/217) | P1 | XS | 2026-03-26 |
@@ -193,14 +194,14 @@ Stalled, cancelled, or superseded projects.
 
 | Lane | Count |
 |---|---|
-| Ideas | 0 |
+| Ideas | 8 |
 | Discovery | 0 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 5 |
-| Released | 74 |
+| Review | 0 |
+| Released | 79 |
 | Archived | 1 |
-| **Total** | **78** |
+| **Total** | **88** |
 
 ---
 
