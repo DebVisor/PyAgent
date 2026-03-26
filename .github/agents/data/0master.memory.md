@@ -4,6 +4,34 @@ _Last updated: 2026-03-26_
 
 ---
 
+## 2026-03-26 — prj0000076 future-ideas-kanban — REVIEW ⏳ PR #218
+
+**Branch:** `prj0000076-future-ideas-kanban`
+**PR:** [#218](https://github.com/UndiFineD/PyAgent/pull/218) — open, awaiting merge
+**Status:** REVIEW — @1project→@2think→@4plan→@9git complete; @3design/@5test/@6code/@7exec/@8ql SKIPPED (doc-only)
+**Priority:** P3 | **Budget:** M
+
+**Deliverable:** 38 improvement ideas written to `## Future Ideas` section in `docs/project/kanban.md`.
+
+### ⚠️ P1 security findings from audit — need follow-up projects
+
+| # | idea-ID | Finding | Recommended action |
+|---|---|---|---|
+| 1 | idea-001 | `rust_core/2026-03-11-keys.priv` private key committed to repo | New project: git-filter-branch secret removal + rotate key |
+| 2 | idea-002 | `deploy/compose.yaml` references non-existent Dockerfile | New project: fix compose dep chain |
+| 3 | idea-003 | `mypy.ini` `ignore_errors = True` disables type checking | New project: enable mypy + fix type errors |
+
+### Idea count by priority
+P1: 3 | P2: 11 | P3: 21 | P4: 3 — Total: 38
+
+### Pre-commit blocker flagged by @9git
+109 ruff errors in `src/` + `tests/` make the shared ruff pre-commit gate fail.  
+→ Recommended as future project (prj0000078 candidate).
+
+**Next available prj:** prj0000078
+
+---
+
 ## 2026-03-26 — prj0000076 future-ideas-kanban — IN DISCOVERY
 
 **Branch:** `prj0000076-future-ideas-kanban`
