@@ -13,7 +13,7 @@ _Last updated: 2026-03-26_
 
 **Deliverable:** Two toolbar buttons ("SWOT" + "Risk") added to `FilterBar` in `web/apps/ProjectManager.tsx`. Clicking each opens a modal showing the corresponding section from `kanban.md` (Vite `?raw` build-time import). No backend changes.
 
-**Next available prj:** prj0000079
+**Next available prj:** prj0000079 — also written to `.github/agents/data/nextproject.md` (read by Project Manager UI)
 
 ---
 

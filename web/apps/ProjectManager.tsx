@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { cn } from '../utils';
 import kanbanRaw from '../../docs/project/kanban.md?raw';
+import nextProjectRaw from '../../../.github/agents/data/nextproject.md?raw';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -96,17 +97,18 @@ interface EditModalProps {
   onClose: () => void;
 }
 
+const NEXT_PROJECT_ID = nextProjectRaw.trim();
+
 function blankProject(): Project {
-  // next ID is derived client-side as a placeholder; server validates uniqueness
   return {
-    id: '',
+    id: NEXT_PROJECT_ID,
     name: '',
     lane: 'Ideas',
     summary: '',
     branch: null,
     pr: null,
-    priority: 'P3',
-    budget_tier: 'M',
+    priority: 'P4',
+    budget_tier: 'unknown',
     tags: [],
     created: TODAY,
     updated: TODAY,
@@ -163,7 +165,7 @@ const EditModal: React.FC<EditModalProps> = ({ project, onSave, onClose }) => {
           {isNew && (
             <div className="col-span-2">
               <div className={labelCls}>ID (prjNNNNNNN)</div>
-              <input className={inputCls} value={form.id} onChange={e => set('id', e.target.value)} placeholder="prj0000063" />
+              <input className={inputCls} value={form.id} onChange={e => set('id', e.target.value)} placeholder="prjNNNNNNN" />
             </div>
           )}
 
