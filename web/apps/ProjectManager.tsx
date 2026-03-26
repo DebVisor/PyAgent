@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import { cn } from '../utils';
 import kanbanRaw from '../../docs/project/kanban.md?raw';
-import nextProjectRaw from '../../../.github/agents/data/nextproject.md?raw';
+import nextProjectRaw from '../../data/nextproject.md?raw';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 

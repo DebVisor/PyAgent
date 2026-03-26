@@ -2,6 +2,8 @@
 
 _Last updated: 2026-03-26_
 
+**Next available prj:** see `data/nextproject.md`
+
 ---
 
 ## 2026-03-26 — prj0000078 pm-swot-risk-ui — RELEASED ✅ PR #219
@@ -13,7 +15,7 @@ _Last updated: 2026-03-26_
 
 **Deliverable:** Two toolbar buttons ("SWOT" + "Risk") added to `FilterBar` in `web/apps/ProjectManager.tsx`. Clicking each opens a modal showing the corresponding section from `kanban.md` (Vite `?raw` build-time import). No backend changes.
 
-**Next available prj:** prj0000079 — also written to `.github/agents/data/nextproject.md` (read by Project Manager UI)
+**Next available prj:** prj0000079 — also written to `data/nextproject.md` (read by Project Manager UI)
 
 ---
 
@@ -41,7 +43,7 @@ P1: 3 | P2: 11 | P3: 21 | P4: 3 — Total: 38
 109 ruff errors in `src/` + `tests/` make the shared ruff pre-commit gate fail.  
 → Recommended as future project (prj0000078 candidate).
 
-**Next available prj:** prj0000078
+**Next available prj:** see `data/nextproject.md`
 
 ---
 
