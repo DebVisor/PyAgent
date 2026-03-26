@@ -1,7 +1,8 @@
 # cort-reasoning-pipeline — Project Overview
 
 _Status: IN_PROGRESS_
-_Owner: @2think → @3design | Updated: 2026-03-26_
+_Owner: @5test → @6code | Updated: 2026-03-26_
+_Test Status: RED-PHASE (3 test files written, failing at collection — awaiting @6code)_
 
 ## Project Identity
 **Project ID:** prj0000080
