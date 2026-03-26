@@ -2,7 +2,7 @@
 
 _Last updated: 2026-03-26_
 
-**Next available prj:** prj0000089
+**Next available prj:** see `data/nextproject.md`
 
 ---
 
