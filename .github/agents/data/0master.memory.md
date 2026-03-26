@@ -2,7 +2,22 @@
 
 _Last updated: 2026-03-26_
 
-**Next available prj:** prj0000089
+**Next available prj:** see `data/nextproject.md`
+
+---
+
+## 2026-03-26 — prj0000082 agent-execution-sandbox — DISCOVERY 🔍
+
+**Branch:** `prj0000082-agent-execution-sandbox`
+**Status:** DISCOVERY — @1project complete; project folder + 9 stubs created; 129 structure tests pass
+**Priority:** P2 | **Budget:** S | **Tags:** security, sandbox, core
+**Commits (so far):** `27e67365c` (kanban/projects.json), `1b0441373` (project.md), `1067b8395` (8 stubs)
+
+**Deliverable scope:** `SandboxMixin` — per-agent allowlist for filesystem paths and network hosts; `SandboxViolationError` on unauthorized access; integrated with `StateTransaction`/`StorageTransaction` hooks in `src/core/base/mixins/`.
+
+**@1project scope notes:** No existing sandbox code in `src/` — net-new module. Integration point: `src/core/base/mixins/`. Hook surface: `src/core/base/agent_state_manager.py`.
+
+**Next:** Handoff to @2think for options exploration.
 
 ---
 
@@ -10,14 +25,10 @@ _Last updated: 2026-03-26_
 
 **Branch:** `prj0000081-mcp-server-ecosystem`
 **PR:** [#223](https://github.com/UndiFineD/PyAgent/pull/223) — **merged 2026-03-26**
-**Status:** RELEASED — full pipeline complete (@1project→@2think→@3design→@4plan→@5test→@6code→@7exec→@8ql→@9git)
+**Status:** RELEASED — full pipeline complete; PR #223 merged to main
 **Priority:** P3 | **Budget:** L | **Tags:** tools, mcp, ecosystem
 
 **Deliverable:** MCP server ecosystem: `McpClient` (JSON-RPC stdio), `McpRegistry` (hot-load lifecycle), `McpSandbox` (hardened subprocess — allowlist env, list-args, SHA-256 pin), `McpToolAdapter` (LLM tool bridge). 33/33 tests, 89.4% coverage, ruff clean, @8ql gate passed.
-
-**Pre-existing regression:** `test_no_sync_loops` → `EvaluationEngine.py:268` (prj0000080 regression, not introduced by this PR).
-
-**Next:** prj0000082 — agent-execution-sandbox (Ideas). @0master to authorise Discovery transition.
 
 ---
 

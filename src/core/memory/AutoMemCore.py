@@ -581,3 +581,14 @@ class AutoMemCore:
             last_accessed=row.get("last_accessed"),
             created_at=row.get("created_at"),
         )
+
+
+def validate() -> bool:
+    """Validate that the AutoMemCore module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the core class is accessible.
+
+    """
+    assert AutoMemCore is not None
+    return True

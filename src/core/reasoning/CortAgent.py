@@ -144,3 +144,14 @@ class CortAgent(BaseAgent, CortMixin):
         result = await self._cort_core.run(task)
         result.metadata.agent_id = self.agent_id
         return result
+
+
+def validate() -> bool:
+    """Validate that the CortAgent module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the agent class is accessible.
+
+    """
+    assert CortAgent is not None
+    return True

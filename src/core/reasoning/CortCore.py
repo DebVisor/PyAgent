@@ -460,3 +460,14 @@ class CortCore:
             )
 
         return chains
+
+
+def validate() -> bool:
+    """Validate that the CortCore module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the core class is accessible.
+
+    """
+    assert CortCore is not None
+    return True

@@ -48,6 +48,34 @@ Invoke it via `agent/runSubagent` to continue the process.
 - Overall: CLEAN → @9git
 - Overall: CLEAN → @9git
 
+## Last scan — 2026-03-26 (prj0000082)
+- Task: agent-execution-sandbox
+- Files scanned: `src/core/sandbox/` (5 files) + 5 test files
+- Security — ruff S rules: PASS (4× S101 in validate() helpers — INFO, intentional codebase pattern)
+- Security — mypy --strict: PASS (0 errors)
+- Security — pip-audit new findings: 0 (baseline clean; cachecontrol module missing so live audit skipped; baseline read from committed json)
+- Security — Rust unsafe check: SKIPPED (rust_core/ not changed)
+- Security — Workflow injection: N/A (no .github/workflows/ changes)
+- Security — Path traversal (A05): PASS — resolve() before comparison, validate-before-I/O enforced on all 4 operations, empty allowlist = deny-all
+- Security — SSRF / host injection (A03/A10): PASS — exact-match allowlist, no bypass via crafted strings
+- Quality — Plan vs delivery: PASS — all 5 source files + 5 test files present; test count exceeded (32 vs 19 planned)
+- Quality — AC vs test coverage: PASS — 19/19 ACs covered; 100% module coverage
+- Quality — Docs vs implementation: PASS — minor _is_subpath design drift (module-level func vs @staticmethod) is functionally equivalent
+- Quality — Agent file consistency: PASS
+- Findings: 0 CRITICAL, 0 HIGH, 0 MEDIUM
+- Findings: 1 LOW — allowlist paths exposed in SandboxViolationError.reason field (informational, no bypass possible)
+- Findings: 4 INFO — S101 assert in validate() helpers (intended pattern)
+- Lessons written: 1 (allowlist exposure in error reason field — new, recurrence 1)
+- Rules promoted: 0 (recurrence count 1; threshold 2 not yet reached)
+- Overall: CLEAN → @9git
+
+## Lesson — 2026-03-26 (prj0000082)
+**Pattern:** `SandboxViolationError.reason` exposes allowlist contents
+**Root cause:** `_validate_path()` includes `self._sandbox.allowed_paths` in the reason string for debugging convenience. In a multi-agent environment this gives an untrusted agent knowledge of all allowed directories upon triggering a violation.
+**Prevention:** Error reason should be static: `"path not in allowed_paths"` — omit the list. The rejected path (`resource`) already tells the caller what was attempted without revealing the full allowlist.
+**First seen:** prj0000082
+**Recurrence count:** 1
+
 ## Promotions
 _(none yet)_
 

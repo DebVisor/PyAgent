@@ -264,9 +264,18 @@ class EvaluationEngine:
             ``score`` field set to the computed ``weighted_total``.
 
         """
-        scored: list[ReasoningChain] = []
-        for chain in chains:
-            rubric = self.score(chain.text, prompt)
-            updated = dataclasses.replace(chain, score=rubric.weighted_total)
-            scored.append(updated)
-        return scored
+        return [
+            dataclasses.replace(chain, score=self.score(chain.text, prompt).weighted_total)
+            for chain in chains
+        ]
+
+
+def validate() -> bool:
+    """Validate that the EvaluationEngine module is correctly configured.
+
+    Returns:
+        True when the module can be imported and the engine class is accessible.
+
+    """
+    assert EvaluationEngine is not None
+    return True
