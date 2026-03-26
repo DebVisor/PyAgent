@@ -14,10 +14,9 @@ where
   (c.getFunc().(Name).getId() = "eval" and msg = "use of eval() should be avoided")
   or
   // flag subprocess.run(..., shell=True)
-  exists(Keyword kw |
+  (
     c.getFunc().(Attribute).getName() = "run" and
-    kw = c.getKeyword(_) and
-    kw.getKey() = "shell" and
+    exists(int i | c.getKeyword(i).getKey() = "shell") and
     msg = "subprocess.run with shell argument should be reviewed"
   )
 select c, msg
