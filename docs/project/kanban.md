@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-27 | Total projects: 88 | prj0000088 → Discovery_
+_Last updated: 2026-03-27 | Total projects: 88 | prj0000088 → Review (auth-blocked)_
 
 ## How to use this board
 
@@ -56,7 +56,6 @@ Active options exploration — @2think is working or has completed .think.md.
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
 | prj0000084 | immutable-audit-trail | Append-only hashchain audit log for all BFT-approved and security-critical operations; tamper-evident with cryptographic chaining | prj0000084-immutable-audit-trail | P2 | M | security, audit, compliance | 2026-03-27 |
-| prj0000088 | ai-fuzzing-security | Brainstorm AI fuzzing engine: learning-based path discovery, multi-cycle security testing, local Ollama model integration | prj0000088-ai-fuzzing-security | P3 | M | security, testing, ai | 2026-03-27 |
 
 
 
@@ -88,6 +87,7 @@ PR open, awaiting merge.
 |---|---|---|---|---|---|---|
 | prj0000083 | llm-circuit-breaker | prj0000083-llm-circuit-breaker | [#225](https://github.com/UndiFineD/PyAgent/pull/225) | P3 | S | 2026-03-27 |
 | prj0000086 | universal-agent-shell | prj0000086-universal-agent-shell | auth blocked (use compare URL) | P2 | XL | 2026-03-27 |
+| prj0000088 | ai-fuzzing-security | prj0000088-ai-fuzzing-security | auth blocked (use compare URL) | P3 | M | 2026-03-27 |
 
 
 ---
@@ -197,10 +197,10 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 2 |
-| Discovery | 2 |
+| Discovery | 1 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 2 |
+| Review | 3 |
 | Released | 81 |
 | Archived | 1 |
 | **Total** | **88** |
