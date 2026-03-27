@@ -5,6 +5,40 @@ integration checks, and smoke test outcomes.
 
 ---
 
+## Last run — 2026-03-27 ✅ PASSED → @8ql
+- Task: prj0000086 universal-agent-shell facade (rerun after fix commit cb60a7dce)
+- Status: IN_PROGRESS -> DONE
+- Tests run: 12 + 18 + 129 + 12 | Passed: 171 | Failed: 0
+- Import check: PASS (all `src/core/universal` modules import OK)
+- Coverage: PASS (96.26% on `src/core/universal`, threshold 90%)
+- Ruff: PASS (All checks passed)
+- mypy: PASS (Success: no issues found in 5 source files)
+- Smoke test: SKIPPED (no CLI/API entrypoint touched in this scope)
+- rust_core: SKIPPED (not modified)
+- Outcome: PASSED -> @8ql
+- task_id: prj0000086-universal-agent-shell
+- handoff_target: @8ql
+- Notes: `pip check` still reports optional tooling dependency conflicts; logged only per @7exec policy.
+
+---
+
+## Last run — 2026-03-27 ❌ BLOCKED → @6code
+- Task: prj0000086 universal-agent-shell facade
+- Status: IN_PROGRESS -> BLOCKED
+- Tests run: 3 + 18 + 129 + 3 | Passed: 153 | Failed: 0
+- Import check: PASS (all `src/core/universal` modules import OK)
+- Coverage: FAIL (38.79% on `src/core/universal`, threshold 90%)
+- Ruff: PASS (All checks passed)
+- mypy: PASS (Success: no issues found in 5 source files)
+- Smoke test: SKIPPED (no CLI/API entrypoint touched in this scope)
+- rust_core: SKIPPED (not modified)
+- Outcome: BLOCKED -> @6code
+- task_id: prj0000086-universal-agent-shell
+- handoff_target: @6code
+- Notes: `pip check` reported dependency conflicts (missing optional tooling packages); logged only per @7exec policy.
+
+---
+
 ## Last run — 2026-03-26 (re-run 3) ✅ PASSED → @8ql
 - Task: prj0000082 agent-execution-sandbox
 - Tests run: 32 (sandbox — all 5 files) + 129 (structure) + full suite | Passed: 967 | Failed: 4
