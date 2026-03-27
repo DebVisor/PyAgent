@@ -166,6 +166,40 @@ Ready for @9git handoff.
 
 ---
 
+## prj0000088 — ai-fuzzing-security
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000088-ai-fuzzing-security |
+| **owner_agent** | @4plan |
+| **source** | @3design |
+| **created_at** | 2026-03-27 |
+| **updated_at** | 2026-03-27 |
+| **status** | DONE |
+| **handoff_target** | @5test |
+| **artifact_paths** | docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.plan.md |
+| **branch** | prj0000088-ai-fuzzing-security (validated) |
+
+### Chunk 001 Summary
+
+| Item | Value |
+|---|---|
+| Code files planned | 8 |
+| Test files planned | 7 |
+| Tests mapped | 18 |
+| AC count | 10 |
+
+### Dependency Order
+1. T1 -> T2 -> T3 -> T4 -> T5 -> T6 -> T7 -> T8
+2. T8 remains blocked until tests for T1-T7 exist and fail first (TDD gate).
+
+### Notes
+- Canonical plan updated to `_Status: DONE_`.
+- AC matrix completed and mapped to TEST-01 through TEST-18.
+- Validation commands include targeted pytest, mypy, and ruff checks.
+
+---
+
 ## prj0000086 — universal-agent-shell
 
 | Field | Value |
