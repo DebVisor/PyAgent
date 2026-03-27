@@ -1,8 +1,19 @@
 # PyAgent — Master Agent Memory
 
-_Last updated: 2026-03-26_
+_Last updated: 2026-03-27_
 
 **Next available prj:** see `data/nextproject.md`
+
+---
+
+## 2026-03-27 — prj0000089 agent-learning-loop — RELEASED ✅ PR #231
+
+**Branch:** `prj0000089-agent-learning-loop`
+**PR:** [#231](https://github.com/UndiFineD/PyAgent/pull/231) — **merged 2026-03-27**
+**Status:** RELEASED — project docs and registry moved to Released after merge
+**Priority:** P2 | **Budget:** M | **Tags:** agents, quality, process
+
+**Deliverable:** Learning-loop governance rules added across all 10 role files, plus follow-up test/quality remediations that stabilized `pytest -v --maxfail=1` (1181 passed, 35 skipped). Kanban and projects registry updated to Released.
 
 ---
 

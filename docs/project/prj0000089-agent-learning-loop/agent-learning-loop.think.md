@@ -1,32 +1,30 @@
 # agent-learning-loop - Options
 
-_Status: NOT_STARTED_
+_Status: DONE_
 _Analyst: @2think | Updated: 2026-03-27_
 
 ## Root Cause Analysis
-Pending @2think discovery.
+Recurring coordination regressions were caused by missing role-specific hard gates, inconsistent lesson capture, and weak recurrence-to-policy promotion.
 
 ## Options
 ### Option A - Tighten agent instruction contracts
-Pending analysis.
+Improves consistency but misses recurring issue analytics and promotion lifecycle.
 
 ### Option B - Add verification checkpoints and memory hygiene rules
-Pending analysis.
+Improves process quality but leaves policy enforcement fragmented across agent roles.
 
 ### Option C - Hybrid policy and workflow update
-Pending analysis.
+Combines shared learning schema, recurrence thresholds, review cadence, and role-specific hard rules.
 
 ## Decision Matrix
 | Criterion | Opt A | Opt B | Opt C |
 |---|---|---|---|
-| Risk reduction | TBD | TBD | TBD |
-| Delivery effort | TBD | TBD | TBD |
-| Maintainability | TBD | TBD | TBD |
+| Risk reduction | Medium | High | Highest |
+| Delivery effort | Low | Medium | Medium |
+| Maintainability | Medium | Medium | High |
 
 ## Recommendation
-Pending @2think recommendation.
+Adopt Option C and roll out the learning-loop policy to all role files in one project-scoped change set.
 
 ## Open Questions
-- Which recurring mistake patterns have the highest frequency?
-- Which agent files should be changed first for maximum impact?
-- What verification protocol should be mandatory before handoff?
+None. Questions were resolved during implementation and validation.

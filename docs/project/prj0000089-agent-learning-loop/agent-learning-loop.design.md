@@ -1,24 +1,27 @@
 # agent-learning-loop - Design
 
-_Status: NOT_STARTED_
+_Status: DONE_
 _Designer: @3design | Updated: 2026-03-27_
 
 ## Selected Option
-Pending @3design after options review.
+Option C (hybrid policy + workflow update) selected.
 
 ## Architecture
-Pending design output.
+Introduce a consistent learning-loop section in each role file with:
+- Standard lesson schema fields
+- Recurrence threshold for rule promotion (>=2)
+- Review cadence every 5 completed projects
+- Role-specific hard gating rule
 
 ## Interfaces & Contracts
-Pending design output for:
-- Agent instruction schema changes
-- Memory file update conventions
-- Cross-agent handoff checkpoints
+Implemented contracts:
+- Agent instruction schema changes via Learning loop rules blocks in all 10 role files
+- Memory/process conventions reflected in project tracking artifacts
+- Cross-agent handoff checkpoints encoded as hard rules per role
 
 ## Non-Functional Requirements
 - Performance: Documentation/process updates must not add blocking overhead to normal coding flow.
 - Security: Changes must preserve branch/scope gate enforcement and avoid widening write scope.
 
 ## Open Questions
-- What minimum policy set is enforceable without false positives?
-- How should compliance be measured per handoff step?
+None. Enforcement set and compliance signals were implemented and validated in project outputs.
