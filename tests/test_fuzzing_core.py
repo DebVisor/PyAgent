@@ -320,3 +320,191 @@ def test_test_18_engine_replay_stable_ordering_and_case_ids() -> None:
     right = engine_b.schedule_cases(target="http://127.0.0.1:8080", operator="bit_flip", requested_cases=3)
 
     assert [item.case_id for item in left] == [item.case_id for item in right]
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "expected_message"),
+    [
+        ({"case_id": ""}, "case_id must be non-empty"),
+        ({"target": ""}, "target must be non-empty"),
+        ({"payload": "not-bytes"}, "payload must be bytes"),
+        ({"operator": ""}, "operator must be non-empty"),
+        ({"corpus_index": -1}, "corpus_index must be >= 0"),
+    ],
+)
+def test_test_19_fuzz_case_validation_rejects_invalid_fields(
+    kwargs: dict[str, object],
+    expected_message: str,
+) -> None:
+    """TEST-19: FuzzCase rejects invalid constructor field values deterministically."""
+    config_error = _require_symbol("exceptions", "FuzzConfigurationError")
+    base: dict[str, object] = {
+        "case_id": "case-019",
+        "target": "http://127.0.0.1:8080",
+        "payload": b"AA",
+        "operator": "bit_flip",
+        "seed": 1,
+        "corpus_index": 0,
+    }
+    base.update(kwargs)
+
+    fuzz_case_cls = _require_symbol("FuzzCase", "FuzzCase")
+    with pytest.raises(config_error, match=expected_message):
+        fuzz_case_cls(**base)
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "expected_message"),
+    [
+        ({"allowed_hosts": set()}, "allowed_hosts must not be empty"),
+        ({"allowed_operators": set()}, "allowed_operators must not be empty"),
+        ({"max_cases": 0}, "max_cases must be > 0"),
+        ({"max_payload_bytes": 0}, "max_payload_bytes must be > 0"),
+        ({"max_total_bytes": 0}, "max_total_bytes must be > 0"),
+        ({"max_duration_seconds": 0}, "max_duration_seconds must be > 0"),
+    ],
+)
+def test_test_20_safety_policy_validate_rejects_invalid_config(
+    kwargs: dict[str, object],
+    expected_message: str,
+) -> None:
+    """TEST-20: Safety policy validate() rejects all invalid configuration branches."""
+    policy_cls = _require_symbol("FuzzSafetyPolicy", "FuzzSafetyPolicy")
+    config_error = _require_symbol("exceptions", "FuzzConfigurationError")
+    base: dict[str, object] = {
+        "allowed_hosts": {"127.0.0.1", "localhost"},
+        "allowed_operators": {"bit_flip", "byte_insert"},
+        "max_cases": 4,
+        "max_payload_bytes": 64,
+        "max_total_bytes": 256,
+        "max_duration_seconds": 5,
+    }
+    base.update(kwargs)
+
+    with pytest.raises(config_error, match=expected_message):
+        policy_cls(**base)
+
+
+def test_test_21_safety_policy_payload_and_budget_guards() -> None:
+    """TEST-21: Safety policy rejects invalid payload types/sizes and budget dimensions."""
+    policy_cls = _require_symbol("FuzzSafetyPolicy", "FuzzSafetyPolicy")
+    policy_error = _require_symbol("exceptions", "FuzzPolicyViolation")
+    policy = policy_cls(
+        allowed_hosts={"127.0.0.1", "localhost"},
+        allowed_operators={"bit_flip", "byte_insert"},
+        max_cases=8,
+        max_payload_bytes=4,
+        max_total_bytes=16,
+        max_duration_seconds=3,
+    )
+
+    with pytest.raises(policy_error, match="payload must be bytes"):
+        policy.validate_payload("nope")
+    with pytest.raises(policy_error, match="payload exceeds max_payload_bytes"):
+        policy.validate_payload(b"12345")
+    with pytest.raises(policy_error, match="planned total bytes exceeds policy max_total_bytes"):
+        policy.enforce_budget(planned_cases=2, planned_total_bytes=17, planned_duration_seconds=1)
+    with pytest.raises(policy_error, match="planned duration exceeds policy max_duration_seconds"):
+        policy.enforce_budget(planned_cases=2, planned_total_bytes=8, planned_duration_seconds=4)
+
+
+def test_test_22_mutator_validation_and_unknown_operator_paths() -> None:
+    """TEST-22: Mutator validates seed type and rejects unknown operator."""
+    unknown_operator_error = _require_symbol("exceptions", "UnknownMutationOperatorError")
+    mutator_cls = _require_symbol("FuzzMutator", "FuzzMutator")
+
+    invalid = mutator_cls(seed="bad-seed")
+    with pytest.raises(TypeError, match="seed must be an int"):
+        invalid.validate()
+
+    with pytest.raises(unknown_operator_error, match="Unknown mutation operator"):
+        mutator_cls(seed=1).mutate(payload=b"abc", operator="not-real", corpus_index=0)
+
+
+def test_test_23_mutator_empty_payload_branch_is_deterministic() -> None:
+    """TEST-23: Empty payload path mutates deterministically from synthetic zero byte."""
+    mutator_cls = _require_symbol("FuzzMutator", "FuzzMutator")
+    left = mutator_cls(seed=55).mutate(payload=b"", operator="bit_flip", corpus_index=3)
+    right = mutator_cls(seed=55).mutate(payload=b"", operator="bit_flip", corpus_index=3)
+
+    assert left == right
+    assert isinstance(left, bytes)
+    assert len(left) == 1
+
+
+def test_test_24_corpus_validate_and_type_guards() -> None:
+    """TEST-24: Corpus validate() and normalize type checks hit negative branches."""
+    corpus_cls = _require_symbol("FuzzCorpus", "FuzzCorpus")
+    config_error = _require_symbol("exceptions", "FuzzConfigurationError")
+
+    empty_corpus = corpus_cls(entries=[])
+    with pytest.raises(config_error, match="corpus must contain at least one entry"):
+        empty_corpus.validate()
+    with pytest.raises(config_error, match="corpus entries must be str or bytes"):
+        corpus_cls(entries=[123])
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "expected_message"),
+    [
+        ({"status": ""}, "status must be non-empty"),
+        ({"duration_ms": -1}, "duration_ms must be >= 0"),
+        ({"bytes_sent": -1}, "bytes_sent must be >= 0"),
+    ],
+)
+def test_test_25_case_result_validation_branches(
+    kwargs: dict[str, object],
+    expected_message: str,
+) -> None:
+    """TEST-25: FuzzCaseResult validation rejects invalid status/duration/bytes."""
+    case_result_cls = _require_symbol("FuzzResult", "FuzzCaseResult")
+    config_error = _require_symbol("exceptions", "FuzzConfigurationError")
+    base: dict[str, object] = {
+        "case": _build_case(case_id="case-025"),
+        "status": "success",
+        "duration_ms": 1,
+        "bytes_sent": 1,
+        "error": None,
+    }
+    base.update(kwargs)
+
+    with pytest.raises(config_error, match=expected_message):
+        case_result_cls(**base)
+
+
+def test_test_26_campaign_result_validate_mismatch_branch() -> None:
+    """TEST-26: Campaign result validate() rejects summary mismatch."""
+    campaign_cls = _require_symbol("FuzzResult", "FuzzCampaignResult")
+    case_result_cls = _require_symbol("FuzzResult", "FuzzCaseResult")
+    config_error = _require_symbol("exceptions", "FuzzConfigurationError")
+    item = case_result_cls(
+        case=_build_case(case_id="case-026"),
+        status="success",
+        duration_ms=1,
+        bytes_sent=1,
+        error=None,
+    )
+    bad_campaign = campaign_cls(case_results=(item,), summary_counts={"crash": 1})
+
+    with pytest.raises(config_error, match="summary_counts must match aggregate case statuses"):
+        bad_campaign.validate()
+
+
+def test_test_27_engine_schedule_zero_requested_returns_empty() -> None:
+    """TEST-27: Engine returns empty schedule for non-positive requested case count."""
+    policy_cls = _require_symbol("FuzzSafetyPolicy", "FuzzSafetyPolicy")
+    corpus_cls = _require_symbol("FuzzCorpus", "FuzzCorpus")
+    mutator_cls = _require_symbol("FuzzMutator", "FuzzMutator")
+    engine_cls = _require_symbol("FuzzEngineCore", "FuzzEngineCore")
+
+    policy = policy_cls(
+        allowed_hosts={"127.0.0.1", "localhost"},
+        allowed_operators={"bit_flip"},
+        max_cases=3,
+        max_payload_bytes=128,
+        max_total_bytes=1024,
+        max_duration_seconds=30,
+    )
+    engine = engine_cls(policy=policy, corpus=corpus_cls(entries=[b"a"]), mutator=mutator_cls(seed=3), seed=3)
+
+    assert engine.schedule_cases(target="http://127.0.0.1:8080", operator="bit_flip", requested_cases=0) == ()

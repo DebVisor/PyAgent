@@ -11,6 +11,10 @@ deterministic corpus normalization/deduplication, deterministic mutator operator
 
 Included explicit `validate()` helpers in core modules where contract checks are required by design and future runtime use.
 
+Coverage blocker follow-up: expanded deterministic branch tests in `tests/test_fuzzing_core.py`
+to close uncovered negative-path branches in policy, case/result validation, corpus normalization,
+mutator validation, and zero-case engine scheduling.
+
 ## Modules Changed
 | Module | Change | Lines |
 |---|---|---|
@@ -23,23 +27,24 @@ Included explicit `validate()` helpers in core modules where contract checks are
 | src/core/fuzzing/FuzzEngineCore.py | Added deterministic bounded campaign scheduler | +123/-0 |
 | src/core/fuzzing/__init__.py | Added package export surface | +45/-0 |
 | docs/architecture/0overview.md | Documented new fuzzing core architecture path | +1/-0 |
-| docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.code.md | Updated implementation artifact to DONE | +26/-8 |
+| tests/test_fuzzing_core.py | Added deterministic branch-coverage tests (TEST-19..TEST-27) | +188/-0 |
+| docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.code.md | Recorded coverage blocker fix and verification results | +19/-4 |
 
 
 ## Test Run Results
 ```
-python -m pytest -q tests/test_fuzzing_core.py tests/test_FuzzCase.py tests/test_FuzzMutator.py tests/test_FuzzCorpus.py tests/test_FuzzEngineCore.py tests/test_FuzzSafetyPolicy.py tests/test_FuzzResult.py
-24 passed in 1.69s
+pytest tests/test_fuzzing_core.py -q --tb=short
+38 passed in 1.22s
 
-python -m mypy --strict src/core/fuzzing
+pytest tests/test_fuzzing_core.py --cov=src/core/fuzzing --cov-report=term-missing --cov-fail-under=90 -q
+Required test coverage of 90% reached. Total coverage: 99.06%
+38 passed in 1.28s
+
+python -m mypy src/core/fuzzing --strict
 Success: no issues found in 8 source files
 
-.venv\Scripts\ruff.exe check src/core/fuzzing tests/test_fuzzing_core.py tests/test_FuzzCase.py tests/test_FuzzMutator.py tests/test_FuzzCorpus.py tests/test_FuzzEngineCore.py tests/test_FuzzSafetyPolicy.py tests/test_FuzzResult.py
+python -m ruff check src/core/fuzzing tests/test_fuzzing_core.py tests/test_FuzzCase.py tests/test_FuzzMutator.py tests/test_FuzzCorpus.py tests/test_FuzzEngineCore.py tests/test_FuzzSafetyPolicy.py tests/test_FuzzResult.py
 All checks passed!
-
-rg --type py "raise NotImplementedError|raise NotImplemented\b|#\s*(TODO|FIXME|HACK|STUB|PLACEHOLDER)" src/core/fuzzing tests/
-rg --type py "^\s*\.\.\.\s*$" src/core/fuzzing
-Command produced no output
 ```
 
 ## Deferred Items

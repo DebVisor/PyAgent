@@ -27,6 +27,24 @@ This should be done via `agent/runSubagent`.
 | **handoff_target** | @7exec |
 | **artifact_paths** | src/core/fuzzing/exceptions.py, src/core/fuzzing/FuzzCase.py, src/core/fuzzing/FuzzResult.py, src/core/fuzzing/FuzzSafetyPolicy.py, src/core/fuzzing/FuzzCorpus.py, src/core/fuzzing/FuzzMutator.py, src/core/fuzzing/FuzzEngineCore.py, src/core/fuzzing/__init__.py, docs/architecture/0overview.md, docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.code.md, .github/agents/data/6code.memory.md |
 
+## prj0000088 - ai-fuzzing-security (coverage blocker follow-up)
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000088-ai-fuzzing-security |
+| **owner_agent** | @6code |
+| **source** | User coverage blocker request |
+| **created_at** | 2026-03-27 |
+| **updated_at** | 2026-03-27 |
+| **status** | DONE |
+| **summary** | Raised `tests/test_fuzzing_core.py` command-scoped coverage for `src/core/fuzzing` from 76.18% to 99.06% by adding deterministic branch-focused tests for negative/validation paths and zero-case scheduling. |
+| **changed_modules** | tests/test_fuzzing_core.py; docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.code.md; .github/agents/data/6code.memory.md |
+| **verification_commands** | pytest tests/test_fuzzing_core.py -q --tb=short; pytest tests/test_fuzzing_core.py --cov=src/core/fuzzing --cov-report=term-missing --cov-fail-under=90 -q; python -m mypy src/core/fuzzing --strict; python -m ruff check src/core/fuzzing tests/test_fuzzing_core.py tests/test_FuzzCase.py tests/test_FuzzMutator.py tests/test_FuzzCorpus.py tests/test_FuzzEngineCore.py tests/test_FuzzSafetyPolicy.py tests/test_FuzzResult.py |
+| **verification_result** | PASS — 38/38 tests in `tests/test_fuzzing_core.py`; coverage 99.06% (gate >=90); mypy strict clean on `src/core/fuzzing`; ruff clean for requested file set. |
+| **unresolved_risks** | None identified in current scope. |
+| **handoff_target** | @7exec |
+| **artifact_paths** | tests/test_fuzzing_core.py, docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.code.md, .github/agents/data/6code.memory.md |
+
 ## prj0000086 - universal-agent-shell
 
 | Field | Value |
