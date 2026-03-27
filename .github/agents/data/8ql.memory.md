@@ -32,24 +32,25 @@ Invoke it via `agent/runSubagent` to continue the process.
 
 ---
 
-## Last scan - 2026-03-27 (prj0000085 shadow-mode-replay)
-- Task: shadow-mode-replay (post-@7exec rerun)
-- Files scanned: replay scope under `src/core/replay/`, replay tests, project artifacts under `docs/project/prj0000085-shadow-mode-replay/`
-- Security - CodeQL: SKIPPED (CLI not invoked in this gate run)
-- Security - ruff S rules: PASS for project scope; 9 repository-level `S101` INFO findings outside project scope
-- Security - mypy strict: PASS (`python -m mypy --strict src/core/replay`)
-- Security - ruff full checks: PASS (`ruff check` on replay modules and replay tests)
-- Security - Workflow injection: N/A (no `.github/workflows` changes in branch diff)
-- Security - pip-audit new findings: 0 (committed `pip_audit_results.json` baseline has 0 deps with vulns)
+## Last scan - 2026-03-27 (prj0000086)
+- Task: universal-agent-shell
+- task_id: prj0000086-universal-agent-shell
+- Status: IN_PROGRESS -> DONE
+- Files scanned: `src/core/universal/` (5 files), `tests/test_universal_shell.py`, `tests/test_UniversalIntentRouter.py`, `tests/test_UniversalCoreRegistry.py`, `tests/test_UniversalAgentShell.py`, project docs under `docs/project/prj0000086-universal-agent-shell/`
+- Security - CodeQL: SKIPPED (CLI not invoked in this gate; scoped static checks executed)
+- Security - ruff S rules: PASS (64x S101 in pytest files only; informational)
+- Security - mypy strict: PASS (0 issues)
+- Security - ruff full checks: PASS
+- Security - Workflow injection: N/A (no `.github/workflows` changes in `origin/main...HEAD` diff)
+- Security - pip-audit new findings: 0 in committed baseline (`pip_audit_results.json`)
 - Security - Rust unsafe check: SKIPPED (no `rust_core/` changes)
 - Quality - Plan vs delivery: PASS
-- Quality - AC vs test coverage: PASS (replay coverage 98.34% on `src/core/replay`, threshold 90%)
-- Quality - Docs vs implementation: PASS (project/design/plan/test/code/exec/ql artifacts present)
+- Quality - AC vs test coverage: PASS (`AC_TEST_NAMES_MISSING=0`; coverage gate 96.26% on `src/core/universal`)
+- Quality - Docs vs implementation: PASS (project artifact set complete; scoped docs references consistent)
 - Quality - Agent file consistency: PASS
 - Lessons written: 0
 - Rules promoted: 0
 - Overall: CLEAN -> @9git
-
 
 ## Last scan — 2026-03-27 (prj0000083 rerun)
 - Task: llm-circuit-breaker (post-fix rerun after 6793030b and 47e589d)
