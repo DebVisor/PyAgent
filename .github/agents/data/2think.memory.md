@@ -35,6 +35,21 @@ Rationale summary:
 
 ---
 
+## prj0000087 - n8n-workflow-bridge
+_Date: 2026-03-27 | Status: DONE | Branch: prj0000087-n8n-workflow-bridge_
+
+**task_id:** prj0000087
+**Recommendation:** Option B - stdlib-only HTTP integration layer + event adapter with optional API-key auth.
+**Artifact:** `docs/project/prj0000087-n8n-workflow-bridge/n8n-workflow-bridge.think.md`
+**Handoff target:** @3design
+
+Decision rationale summary:
+- Meets the bi-directional n8n goal while staying inside a minimal safe v1 scope.
+- Reuses existing backend auth/rate-limit/logging patterns instead of introducing new trust paths.
+- Preserves low dependency risk (stdlib-only integration layer) and keeps upgrade path open for durable retries later.
+
+---
+
 ## prj0000075 ci-simplification — 2026-03-25
 Option selected: Keep `ci.yml` only; delete `core-quality.yml`, `pm.yml`, `quality.yml`, `testing-infra.yml` — pre-commit already covers ruff/mypy; ci.yml is the sole non-redundant workflow (Rust build gate + sharded tests)
 Artifact: docs/project/prj0000075/prj0000075.think.md

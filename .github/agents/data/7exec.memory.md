@@ -5,20 +5,25 @@ integration checks, and smoke test outcomes.
 
 ---
 
-## Last run — 2026-03-27 ✅ PASSED → @8ql
-- Task: prj0000086 universal-agent-shell facade (rerun after fix commit cb60a7dce)
-- Status: IN_PROGRESS -> DONE
-- Tests run: 12 + 18 + 129 + 12 | Passed: 171 | Failed: 0
-- Import check: PASS (all `src/core/universal` modules import OK)
-- Coverage: PASS (96.26% on `src/core/universal`, threshold 90%)
-- Ruff: PASS (All checks passed)
-- mypy: PASS (Success: no issues found in 5 source files)
-- Smoke test: SKIPPED (no CLI/API entrypoint touched in this scope)
+## Last run — 2026-03-27 ❌ BLOCKED -> @6code
+- Task: prj0000087 n8n-workflow-bridge
+- Status: BLOCKED
+- Lifecycle: IN_PROGRESS -> BLOCKED
+- Tests run: 20 + 10 + 129 + 20 | Passed: 178 | Failed: 1 (structure) + 1 (coverage gate)
+- Import check: PASS (covered by successful n8n bridge test collection/execution)
+- Coverage: 85.78% on src/core/n8nbridge ❌ (threshold: 90%)
+- Ruff: PASS (requested n8n bridge scope)
+- mypy: PASS (strict on src/core/n8nbridge)
+- Smoke test: SKIPPED (not requested)
 - rust_core: SKIPPED (not modified)
-- Outcome: PASSED -> @8ql
-- task_id: prj0000086-universal-agent-shell
-- handoff_target: @8ql
-- Notes: `pip check` still reports optional tooling dependency conflicts; logged only per @7exec policy.
+- Pre-commit: SKIPPED (blocked before @8ql handoff)
+- Placeholder scan: SKIPPED (blocked before @8ql handoff)
+- Outcome: BLOCKED -> @6code
+- task_id: prj0000087-n8n-workflow-bridge
+- handoff_target: @6code
+- Notes:
+  - Coverage gate command failed: `pytest tests/test_n8n_bridge.py --cov=src/core/n8nbridge --cov-report=term-missing --cov-fail-under=90 -q`
+  - Structure gate failed: `tests/structure/test_kanban.py::test_kanban_total_rows` expected 88 rows, found 91
 
 ---
 

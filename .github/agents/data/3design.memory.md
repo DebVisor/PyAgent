@@ -105,4 +105,22 @@ the design intent.
 | **interface_contracts** | `TaskEnvelope`, `RoutingDecision`, `DispatchResult`, async `CoreHandler.execute(envelope)`, one-shot fallback policy |
 | **assumptions** | Allowlist-gated core routing, single fallback attempt, deterministic normalization, constructor-injected dependencies |
 | **handoff_target** | @4plan |
-| **artifact_paths** | docs/project/prj0000086-universal-agent-shell/universal-agent-shell.design.md |
+| **artifact_paths** | docs/project/prj0000085-shadow-mode-replay/prj0000085-shadow-mode-replay.design.md |
+
+---
+
+## prj0000087 - n8n-workflow-bridge
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000087-n8n-workflow-bridge |
+| **owner_agent** | @3design |
+| **source** | @2think |
+| **created_at** | 2026-03-27 |
+| **updated_at** | 2026-03-27 |
+| **status** | DONE |
+| **branch_gate** | PASS - `prj0000087-n8n-workflow-bridge` |
+| **selected_option** | Option B - Stdlib-only HTTP integration layer + event adapter |
+| **summary** | Drafted full design with module layout under `src/core/n8nbridge/`, canonical event contracts, bridge APIs, error taxonomy, and 18-test target scope. |
+| **handoff_target** | @4plan |
+| **artifact_paths** | docs/project/prj0000087-n8n-workflow-bridge/n8n-workflow-bridge.design.md |

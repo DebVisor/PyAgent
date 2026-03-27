@@ -9,6 +9,27 @@ Once security scans and CodeQL analysis are complete,
 the next agent in the workflow is **@9git**. 
 Invoke it via `agent/runSubagent` to continue the process.
 
+## Last scan — 2026-03-27 (prj0000087 n8n-workflow-bridge rerun pass)
+- Task: prj0000087-n8n-workflow-bridge
+- status: DONE
+- task_id: prj0000087-n8n-workflow-bridge
+- Files scanned: `src/core/n8nbridge/` (7 files), `tests/test_n8n_bridge.py`, `tests/test_N8nBridge*.py` (5 files), project docs in `docs/project/prj0000087-n8n-workflow-bridge/`
+- Security — CodeQL: SKIPPED (`codeql` CLI not available in environment)
+- Security — ruff S rules: PASS with 1 mitigated INFO (`S310` on `urllib.request.urlopen`, mitigated by strict `http(s)` base URL validation in config)
+- Security — mypy strict: PASS (`python -m mypy --strict src/core/n8nbridge`)
+- Security — ruff target scope: PASS (`ruff check` on n8nbridge source + tests)
+- Security — pip-audit new findings: 0 (`pip_audit_results.json` baseline reports `Deps with vulns: 0`)
+- Security — Rust unsafe check: SKIPPED (`rust_core/` not modified)
+- Security — Workflow injection: PASS (no `.github/workflows/*.yml` changes in `origin/main...HEAD` diff)
+- Quality — Plan vs delivery: PASS (all planned source/test files exist)
+- Quality — AC vs test coverage: PASS (coverage gate 99.11% >= 90%)
+- Quality — Docs vs implementation: PASS (all 7 project artifacts present and aligned; README drift noted out-of-scope/non-blocking)
+- Quality — Agent file consistency: PASS
+- Lessons written: 0
+- Rules promoted: 0
+- Overall: CLEAN -> @9git
+- handoff_target: @9git
+
 ## Last scan — 2026-03-27 (prj0000084 rerun after fix/rerun commits)
 - Task: prj0000084-immutable-audit-trail
 - status: DONE

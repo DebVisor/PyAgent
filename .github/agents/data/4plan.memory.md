@@ -166,7 +166,49 @@ Ready for @9git handoff.
 
 ---
 
-## prj0000086 — universal-agent-shell
+## prj0000087 - n8n-workflow-bridge
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000087-n8n-workflow-bridge |
+| **owner_agent** | @4plan |
+| **source** | @3design |
+| **created_at** | 2026-03-27 |
+| **updated_at** | 2026-03-27 |
+| **status** | DONE |
+| **handoff_target** | @5test |
+| **artifact_paths** | docs/project/prj0000087-n8n-workflow-bridge/n8n-workflow-bridge.plan.md |
+| **branch** | prj0000087-n8n-workflow-bridge (validated ✅) |
+
+### Chunk C1
+
+| Task | Files | Acceptance |
+|---|---|---|
+| T1 | src/core/n8nbridge/exceptions.py, src/core/n8nbridge/__init__.py | AC-01 |
+| T2 | src/core/n8nbridge/N8nBridgeConfig.py | AC-01 |
+| T3 | tests/core/n8nbridge/test_N8nBridgeConfig.py | AC-01 |
+| T4 | tests/core/n8nbridge/test_N8nEventAdapter.py | AC-02 |
+| T5 | src/core/n8nbridge/N8nEventAdapter.py | AC-02 |
+| T6 | tests/core/n8nbridge/test_N8nHttpClient.py | AC-03 |
+| T7 | src/core/n8nbridge/N8nHttpClient.py | AC-03 |
+| T8 | tests/core/n8nbridge/test_N8nBridgeCore.py | AC-04 |
+| T9 | src/core/n8nbridge/N8nBridgeCore.py | AC-04 |
+| T10 | tests/core/n8nbridge/test_N8nBridgeMixin.py, tests/core/n8nbridge/test_n8n_bridge_contract.py | AC-05, AC-06 |
+| T11 | src/core/n8nbridge/N8nBridgeMixin.py, src/core/n8nbridge/__init__.py | AC-05 |
+| T12 | docs/project/prj0000087-n8n-workflow-bridge/n8n-workflow-bridge.plan.md | AC-06 |
+
+### AC and test mapping summary
+
+- AC-01: RT-01..RT-03
+- AC-02: RT-04..RT-07
+- AC-03: RT-08..RT-11
+- AC-04: RT-12..RT-15
+- AC-05: RT-16..RT-17
+- AC-06: RT-18 plus validation command gate
+
+---
+
+## prj0000085 — shadow-mode-replay
 
 | Field | Value |
 |---|---|
