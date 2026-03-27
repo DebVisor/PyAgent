@@ -5,6 +5,36 @@ tradeoff analysis, and recommended directions.
 
 ---
 
+## prj0000086 - universal-agent-shell
+_Date: 2026-03-27 | Branch: prj0000086-universal-agent-shell_
+
+task_id: prj0000086
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000086-universal-agent-shell/universal-agent-shell.think.md
+Recommendation: Option B - Universal Shell Facade with controlled legacy fallback (minimal safe v1)
+Handoff target: @3design
+Rationale summary:
+- Delivers dynamic core resolution by intent in v1 without replacing all specialized agents.
+- Uses allowlisted intent migration with immediate fallback to specialized routing.
+- Preserves delivery safety while creating a clear contract for design and phased rollout.
+
+---
+
+## prj0000085 — shadow-mode-replay
+_Date: 2026-03-27 | Branch: prj0000085-shadow-mode-replay_
+
+task_id: prj0000085
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000085-shadow-mode-replay/prj0000085-shadow-mode-replay.think.md
+Recommendation: Option B — ReplayEnvelope event model + thin orchestrator (medium scope, low runtime regression risk)
+Handoff target: @3design
+Rationale summary:
+- Separates replay contract from live execution hot path.
+- Reuses ContextTransaction/StorageTransaction/ProcessTransaction/MemoryTransaction primitives.
+- Aligns with structured logging prior art while adding deterministic schema/version controls.
+
+---
+
 ## prj0000075 ci-simplification — 2026-03-25
 Option selected: Keep `ci.yml` only; delete `core-quality.yml`, `pm.yml`, `quality.yml`, `testing-infra.yml` — pre-commit already covers ruff/mypy; ci.yml is the sole non-redundant workflow (Rust build gate + sharded tests)
 Artifact: docs/project/prj0000075/prj0000075.think.md
