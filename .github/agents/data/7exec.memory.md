@@ -28,36 +28,21 @@ integration checks, and smoke test outcomes.
 ---
 
 ## Last run — 2026-03-27 ❌ BLOCKED → @6code
-- Task: prj0000085 shadow-mode-replay
-- Status: BLOCKED
-- Lifecycle: IN_PROGRESS -> BLOCKED
-- Tests run: 18 + 5 + 129 + 18 | Passed: 170 | Failed: 0 (test execution)
-- Import check: PASS (ReplayEnvelope, ReplayStore, ShadowExecutionCore, ReplayOrchestrator, ReplayMixin, exceptions)
-- Coverage: 87.81% on src/core/replay ❌ (threshold: 90%)
-- Ruff: PASS (requested replay scope)
-- mypy: PASS (strict on src/core/replay)
-- Smoke test: SKIPPED (no replay-scope CLI/API entrypoint changes)
+- Task: prj0000086 universal-agent-shell facade
+- Status: IN_PROGRESS -> BLOCKED
+- Tests run: 3 + 18 + 129 + 3 | Passed: 153 | Failed: 0
+- Import check: PASS (all `src/core/universal` modules import OK)
+- Coverage: FAIL (38.79% on `src/core/universal`, threshold 90%)
+- Ruff: PASS (All checks passed)
+- mypy: PASS (Success: no issues found in 5 source files)
+- Smoke test: SKIPPED (no CLI/API entrypoint touched in this scope)
 - rust_core: SKIPPED (not modified)
-- Pre-commit: FAIL (repo-level `ruff check src tests` reported 130 existing violations)
-- Placeholder scan: FAIL (existing placeholders in src/: MemoryTransactionManager, multimodal/processor, core/scaffold, tools/tool_registry, tools/FileWatcher)
 - Outcome: BLOCKED -> @6code
-- task_id: prj0000085-shadow-mode-replay
+- task_id: prj0000086-universal-agent-shell
 - handoff_target: @6code
+- Notes: `pip check` reported dependency conflicts (missing optional tooling packages); logged only per @7exec policy.
 
-## Last run — 2026-03-27 ✅ PASSED (rerun after fix SHA 516a8399)
-- Task: prj0000085 shadow-mode-replay
-- Status: DONE
-- Lifecycle: IN_PROGRESS -> DONE
-- Tests run: 29 + 5 + 129 + 29 | Passed: 192 | Failed: 0
-- Import check: PASS (ReplayEnvelope, ReplayStore, ShadowExecutionCore, ReplayOrchestrator, ReplayMixin, exceptions)
-- Coverage: 98.34% on src/core/replay ✅ (threshold: 90%)
-- Ruff: PASS (requested replay scope)
-- mypy: PASS (strict on src/core/replay)
-- Smoke test: SKIPPED (no replay-scope CLI/API entrypoint changes)
-- rust_core: SKIPPED (not modified)
-- Outcome: PASSED
-- task_id: prj0000085-shadow-mode-replay
-- handoff_target: @8ql
+---
 
 ## Last run — 2026-03-26 (re-run 3) ✅ PASSED → @8ql
 - Task: prj0000082 agent-execution-sandbox

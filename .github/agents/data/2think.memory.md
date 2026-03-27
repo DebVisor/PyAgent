@@ -5,18 +5,33 @@ tradeoff analysis, and recommended directions.
 
 ---
 
-## prj0000084 - immutable-audit-trail
-_Date: 2026-03-27 | Status: DONE | Branch: prj0000084-immutable-audit-trail_
+## prj0000086 - universal-agent-shell
+_Date: 2026-03-27 | Branch: prj0000086-universal-agent-shell_
 
-**task_id:** prj0000084
-**Recommendation:** Option A - Minimal hash-chain file audit in `src/core/audit/` using stdlib-only components.
-**Artifact:** `docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.think.md`
-**Handoff target:** @3design
+task_id: prj0000086
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000086-universal-agent-shell/universal-agent-shell.think.md
+Recommendation: Option B - Universal Shell Facade with controlled legacy fallback (minimal safe v1)
+Handoff target: @3design
+Rationale summary:
+- Delivers dynamic core resolution by intent in v1 without replacing all specialized agents.
+- Uses allowlisted intent migration with immediate fallback to specialized routing.
+- Preserves delivery safety while creating a clear contract for design and phased rollout.
 
-Decision rationale summary:
-- Smallest testable increment with lowest regression risk.
-- Meets scope preference (`src/core/audit/`) and dependency constraint (stdlib only).
-- Enables immediate tamper-evidence verification while deferring heavier architecture changes.
+---
+
+## prj0000085 — shadow-mode-replay
+_Date: 2026-03-27 | Branch: prj0000085-shadow-mode-replay_
+
+task_id: prj0000085
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000085-shadow-mode-replay/prj0000085-shadow-mode-replay.think.md
+Recommendation: Option B — ReplayEnvelope event model + thin orchestrator (medium scope, low runtime regression risk)
+Handoff target: @3design
+Rationale summary:
+- Separates replay contract from live execution hot path.
+- Reuses ContextTransaction/StorageTransaction/ProcessTransaction/MemoryTransaction primitives.
+- Aligns with structured logging prior art while adding deterministic schema/version controls.
 
 ---
 

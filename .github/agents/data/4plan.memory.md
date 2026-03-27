@@ -212,36 +212,29 @@ Ready for @9git handoff.
 
 | Field | Value |
 |---|---|
-| **task_id** | prj0000085-shadow-mode-replay |
+| **task_id** | prj0000086-universal-agent-shell |
 | **owner_agent** | @4plan |
 | **source** | @3design |
 | **created_at** | 2026-03-27 |
 | **updated_at** | 2026-03-27 |
 | **status** | DONE |
 | **handoff_target** | @5test |
-| **artifact_paths** | docs/project/prj0000085-shadow-mode-replay/prj0000085-shadow-mode-replay.plan.md |
-| **branch** | prj0000085-shadow-mode-replay (validated ✅) |
+| **artifact_paths** | docs/project/prj0000086-universal-agent-shell/universal-agent-shell.plan.md |
+| **branch** | prj0000086-universal-agent-shell (validated ✅) |
 
-### Chunk C1
+### Chunk 001 Summary
 
-| Task | Files | Acceptance |
-|---|---|---|
-| T1 | src/core/replay/exceptions.py, src/core/replay/ReplayTypes.py, src/core/replay/__init__.py | Replay error taxonomy + result types importable |
-| T2 | src/core/replay/ReplayEnvelope.py, src/core/replay/__init__.py | Deterministic envelope validation/checksum logic |
-| T3 | src/core/replay/ReplayStore.py, src/core/replay/__init__.py | Ordered append/load, range, dedup, corruption handling |
-| T4 | src/core/replay/ShadowExecutionCore.py, src/core/replay/ReplayTypes.py | No-side-effect execution and rollback behavior |
-| T5 | src/core/replay/ReplayOrchestrator.py, src/core/replay/ReplayTypes.py | Sequence checks and divergence handling modes |
-| T6 | src/core/replay/ReplayMixin.py, src/core/base/base_agent.py, src/core/base/agent_state_manager.py | Mixin emission/delegation plus agent boot wiring |
-| T7 | docs/project/prj0000085-shadow-mode-replay/prj0000085-shadow-mode-replay.plan.md | Full validation command set and AC traceability closure |
+| Item | Value |
+|---|---|
+| Code files planned | 5 |
+| Test files planned | 3 |
+| Tests mapped | 18 |
+| AC count | 10 |
 
-### AC and test mapping summary
-
-- AC-01: RT-01..RT-04
-- AC-02: RT-05..RT-09
-- AC-03: RT-10..RT-12
-- AC-04: RT-13..RT-15
-- AC-05: RT-16..RT-17
-- AC-06: RT-18 plus validation command gate
+### Notes
+- Canonical plan updated to `_Status: DONE_` with deterministic TDD implementation order.
+- AC matrix completed and mapped to `TEST-01` through `TEST-18`.
+- Validation command set includes targeted `pytest`, `mypy`, and `ruff` checks for universal facade scope.
 
 ---
 
