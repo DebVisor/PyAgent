@@ -57,6 +57,8 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
+| prj0000083 | llm-circuit-breaker | Per-provider LLM request circuit breaker with configurable failure thresholds, exponential backoff, and fallback model routing | prj0000083-llm-circuit-breaker | P3 | S | resilience, llm, infrastructure | 2026-03-26 |
+| prj0000084 | immutable-audit-trail | Append-only hashchain audit log for all BFT-approved and security-critical operations; tamper-evident with cryptographic chaining | prj0000084-immutable-audit-trail | P2 | M | security, audit, compliance | 2026-03-27 |
 
 
 
