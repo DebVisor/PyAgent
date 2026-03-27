@@ -49,10 +49,14 @@ integration checks, and smoke test outcomes.
 - mypy: PASS (Success: no issues found in 5 source files)
 - Smoke test: SKIPPED (no CLI/API entrypoint touched in this scope)
 - rust_core: SKIPPED (not modified)
-- Outcome: PASSED -> @8ql
-- task_id: prj0000086-universal-agent-shell
-- handoff_target: @8ql
-- Notes: `pip check` still reports optional tooling dependency conflicts; logged only per @7exec policy.
+- Pre-commit: SKIPPED (blocked before @8ql handoff)
+- Placeholder scan: SKIPPED (blocked before @8ql handoff)
+- Outcome: BLOCKED -> @6code
+- task_id: prj0000087-n8n-workflow-bridge
+- handoff_target: @6code
+- Notes:
+  - Coverage gate command failed: `pytest tests/test_n8n_bridge.py --cov=src/core/n8nbridge --cov-report=term-missing --cov-fail-under=90 -q`
+  - Structure gate failed: `tests/structure/test_kanban.py::test_kanban_total_rows` expected 88 rows, found 91
 
 ---
 
