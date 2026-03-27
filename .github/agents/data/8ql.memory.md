@@ -11,6 +11,26 @@ Invoke it via `agent/runSubagent` to continue the process.
 
 ---
 
+## Last scan — 2026-03-27 (prj0000083 rerun)
+- Task: llm-circuit-breaker (post-fix rerun after 6793030b and 47e589d)
+- Files scanned: `src/core/resilience/` (7 files), `tests/test_circuit_breaker.py`, `tests/test_CircuitBreaker*.py`, project docs under `docs/project/prj0000083-llm-circuit-breaker/`
+- Security — CodeQL: SKIPPED (CLI not invoked in this rerun)
+- Security — ruff S rules: PASS (0 findings)
+- Security — mypy strict: PASS (0 issues)
+- Security — ruff full checks: PASS
+- Security — Workflow injection: N/A (no `.github/workflows` changes in branch diff)
+- Security — pip-audit new findings: 0 in committed baseline (`pip_audit_results.json`); live `pip-audit` run failed in venv due missing `cachecontrol` module
+- Security — Rust unsafe check: SKIPPED (no `rust_core/` changes)
+- Quality — Plan vs delivery: PASS
+- Quality — AC vs test coverage: PASS (coverage gate 96.35% on `src/core/resilience`)
+- Quality — Docs vs implementation: PASS
+- Quality — Agent file consistency: PASS
+- Lessons written: 0
+- Rules promoted: 0
+- Overall: CLEAN -> @9git
+
+---
+
 ## Last scan — 2026-03-26 (prj0000080)
 - Task: cort-reasoning-pipeline
 - Files scanned: `src/core/reasoning/` (4 files) + `tests/unit/test_Cort*.py` + `test_EvaluationEngine.py` (3 files)
