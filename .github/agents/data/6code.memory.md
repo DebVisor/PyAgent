@@ -21,13 +21,13 @@ This should be done via `agent/runSubagent`.
 | **created_at** | 2026-03-27 |
 | **updated_at** | 2026-03-27 |
 | **status** | DONE |
-| **summary** | Implemented full stdlib-only `src/core/audit` package (event/hasher/core/mixin/result/exceptions + package exports) for immutable JSONL hash-chain append and verification workflows. |
-| **changed_modules** | src/core/audit/__init__.py; src/core/audit/AuditEvent.py; src/core/audit/AuditHasher.py; src/core/audit/AuditTrailCore.py; src/core/audit/AuditTrailMixin.py; src/core/audit/AuditVerificationResult.py; src/core/audit/exceptions.py; docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.code.md |
-| **verification_commands** | pytest tests/test_audit_trail.py -q --tb=short; pytest tests/test_AuditEvent.py tests/test_AuditHasher.py tests/test_AuditTrailCore.py tests/test_AuditTrailMixin.py tests/test_AuditVerificationResult.py -q --tb=short; python -m pytest tests/structure -q --tb=short; python -m mypy src/core/audit --strict; python -m ruff check src/core/audit tests/test_audit_trail.py tests/test_AuditEvent.py tests/test_AuditHasher.py tests/test_AuditTrailCore.py tests/test_AuditTrailMixin.py tests/test_AuditVerificationResult.py |
-| **verification_result** | PASS — audit integration (18), module suite (10), structure (129), mypy strict, and ruff checks are all green. |
+| **summary** | Resolved @8ql blocker set: increased `src/core/audit` coverage from 82.11% to 99.36% via targeted branch tests in `tests/test_audit_trail.py`, added `tests/test_AuditExceptions.py`, and aligned `plan/test/code/exec` docs with threshold policy wording. |
+| **changed_modules** | tests/test_audit_trail.py; tests/test_AuditExceptions.py; docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.test.md; docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.exec.md; docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.code.md; .github/agents/data/6code.memory.md |
+| **verification_commands** | pytest tests/test_audit_trail.py -q --tb=short; pytest tests/test_AuditEvent.py tests/test_AuditHasher.py tests/test_AuditTrailCore.py tests/test_AuditTrailMixin.py tests/test_AuditVerificationResult.py tests/test_AuditExceptions.py -q --tb=short; pytest tests/test_audit_trail.py --cov=src/core/audit --cov-report=term-missing --cov-fail-under=90 -q; python -m pytest tests/structure -q --tb=short; python -m mypy src/core/audit --strict; python -m ruff check src/core/audit tests/test_audit_trail.py tests/test_AuditEvent.py tests/test_AuditHasher.py tests/test_AuditTrailCore.py tests/test_AuditTrailMixin.py tests/test_AuditVerificationResult.py tests/test_AuditExceptions.py |
+| **verification_result** | PASS — audit integration (41), module suite (12), coverage gate (99.36% >= 90%), structure (129), mypy strict, and ruff checks all green. |
 | **unresolved_risks** | None identified for the implemented module scope. |
 | **handoff_target** | @7exec |
-| **artifact_paths** | src/core/audit/__init__.py, src/core/audit/AuditEvent.py, src/core/audit/AuditHasher.py, src/core/audit/AuditTrailCore.py, src/core/audit/AuditTrailMixin.py, src/core/audit/AuditVerificationResult.py, src/core/audit/exceptions.py, docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.code.md |
+| **artifact_paths** | tests/test_audit_trail.py, tests/test_AuditExceptions.py, docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.test.md, docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.exec.md, docs/project/prj0000084-immutable-audit-trail/prj0000084-immutable-audit-trail.code.md, .github/agents/data/6code.memory.md |
 
 ---
 

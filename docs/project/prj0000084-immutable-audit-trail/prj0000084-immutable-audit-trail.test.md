@@ -12,6 +12,7 @@ Completed red-phase test authoring per plan:
 	- `tests/test_AuditTrailCore.py`
 	- `tests/test_AuditTrailMixin.py`
 	- `tests/test_AuditVerificationResult.py`
+	- `tests/test_AuditExceptions.py`
 - Ensured red-phase failures are assertion-based (`pytest.fail`) instead of import/collection errors.
 
 ## Test Cases
@@ -22,6 +23,7 @@ Authored:
 - `tests/test_AuditTrailCore.py`
 - `tests/test_AuditTrailMixin.py`
 - `tests/test_AuditVerificationResult.py`
+- `tests/test_AuditExceptions.py`
 
 ## Validation Results
 | Command | Result | Notes |

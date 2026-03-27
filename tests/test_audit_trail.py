@@ -440,3 +440,325 @@ def test_fail_closed_true_raises_auditpersistenceerror_on_unwritable_path(tmp_pa
 
     with pytest.raises(audit_persistence_error):
         core.append_event(_make_event({"x": 1}))
+
+
+def test_event_canonical_handles_nested_lists_and_dicts() -> None:
+    """Cover canonicalization of nested list payload values."""
+    event = _make_event({"items": [{"b": 2, "a": 1}, {"z": [3, {"k": "v"}]}]})
+    canonical = event.to_canonical_dict()
+    assert canonical["payload"] == {
+        "items": [{"a": 1, "b": 2}, {"z": [3, {"k": "v"}]}],
+    }
+
+
+def test_event_to_canonical_rejects_unsupported_schema_version() -> None:
+    """Unsupported schema versions raise AuditSerializationError."""
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    event = _make_event()
+    rebuilt = type(event)(
+        event_id=event.event_id,
+        event_type=event.event_type,
+        occurred_at_utc=event.occurred_at_utc,
+        actor_id=event.actor_id,
+        action=event.action,
+        target=event.target,
+        tx_id=event.tx_id,
+        context_id=event.context_id,
+        correlation_id=event.correlation_id,
+        payload=event.payload,
+        schema_version=999,
+    )
+    with pytest.raises(audit_serialization_error):
+        rebuilt.to_canonical_dict()
+
+
+def test_event_from_json_dict_rejects_missing_key() -> None:
+    """Missing required persisted fields raise AuditSerializationError."""
+    audit_event_cls = _load_audit_symbol("AuditEvent", "AuditEvent")
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    with pytest.raises(audit_serialization_error):
+        audit_event_cls.from_json_dict(
+            {
+                "event_type": "x",
+                "occurred_at_utc": "2026-03-27T12:00:00Z",
+                "action": "act",
+                "payload": {},
+                "schema_version": 1,
+            }
+        )
+
+
+def test_event_from_json_dict_rejects_invalid_payload_type() -> None:
+    """Non-dictionary payload values are rejected."""
+    audit_event_cls = _load_audit_symbol("AuditEvent", "AuditEvent")
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    with pytest.raises(audit_serialization_error):
+        audit_event_cls.from_json_dict(
+            {
+                "event_id": "evt-1",
+                "event_type": "x",
+                "occurred_at_utc": "2026-03-27T12:00:00Z",
+                "action": "act",
+                "payload": [1, 2, 3],
+                "schema_version": 1,
+            }
+        )
+
+
+def test_event_from_json_dict_rejects_non_integer_schema_version() -> None:
+    """Schema version must be persisted as an integer."""
+    audit_event_cls = _load_audit_symbol("AuditEvent", "AuditEvent")
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    with pytest.raises(audit_serialization_error):
+        audit_event_cls.from_json_dict(
+            {
+                "event_id": "evt-1",
+                "event_type": "x",
+                "occurred_at_utc": "2026-03-27T12:00:00Z",
+                "action": "act",
+                "payload": {},
+                "schema_version": "1",
+            }
+        )
+
+
+def test_append_event_returns_empty_string_when_fail_open_on_persistence_error(tmp_path: Path) -> None:
+    """Fail-open mode returns empty hash when persistence fails."""
+    audit_trail_core_cls = _load_audit_symbol("AuditTrailCore", "AuditTrailCore")
+    core = audit_trail_core_cls(str(tmp_path), fail_closed=False)
+    assert core.append_event(_make_event({"x": 1})) == ""
+
+
+def test_append_event_returns_empty_string_when_hasher_raises_oserror(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Fail-open mode handles raw OSError from hashing path."""
+    audit_hasher = _load_audit_symbol("AuditHasher", "AuditHasher")
+    core = _make_core(tmp_path, fail_closed=False)
+
+    def _raise_oserror(_: Any) -> bytes:
+        raise OSError("boom")
+
+    monkeypatch.setattr(audit_hasher, "canonical_event_bytes", _raise_oserror)
+    assert core.append_event(_make_event()) == ""
+
+
+def test_iter_records_skips_blank_lines(tmp_path: Path) -> None:
+    """iter_records ignores empty/whitespace lines in JSONL files."""
+    core = _make_core(tmp_path)
+    path = _audit_file_for(core)
+    path.write_text("\n{\"event_hash\":\"a\"}\n\n", encoding="utf-8")
+    records = core.iter_records()
+    assert len(records) == 1
+
+
+def test_iter_records_rejects_non_object_json_line(tmp_path: Path) -> None:
+    """iter_records raises AuditSerializationError for non-object JSON entries."""
+    core = _make_core(tmp_path)
+    path = _audit_file_for(core)
+    path.write_text("[]\n", encoding="utf-8")
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    with pytest.raises(audit_serialization_error):
+        core.iter_records()
+
+
+def test_iter_records_rejects_malformed_json_line(tmp_path: Path) -> None:
+    """iter_records raises AuditSerializationError for malformed JSON."""
+    core = _make_core(tmp_path)
+    path = _audit_file_for(core)
+    path.write_text("{bad json}\n", encoding="utf-8")
+    audit_serialization_error = _load_audit_symbol("exceptions", "AuditSerializationError")
+    with pytest.raises(audit_serialization_error):
+        core.iter_records()
+
+
+def test_verify_file_skips_blank_lines_between_records(tmp_path: Path) -> None:
+    """verify_file ignores blank lines while validating sequence."""
+    core = _make_core(tmp_path)
+    _append_three(core)
+    path = _audit_file_for(core)
+    lines = path.read_text(encoding="utf-8").splitlines()
+    path.write_text(f"\n{lines[0]}\n\n{lines[1]}\n{lines[2]}\n", encoding="utf-8")
+    result = core.verify_file()
+    assert result.is_valid is True
+    assert result.validated_events == 3
+
+
+def test_verify_file_detects_malformed_non_object_record(tmp_path: Path) -> None:
+    """verify_file reports MALFORMED_RECORD for JSON values that are not objects."""
+    core = _make_core(tmp_path)
+    path = _audit_file_for(core)
+    path.write_text("[]\n", encoding="utf-8")
+    result = core.verify_file()
+    assert result.is_valid is False
+    assert result.error_code == "MALFORMED_RECORD"
+
+
+def test_verify_file_detects_missing_hash_fields(tmp_path: Path) -> None:
+    """verify_file reports HASH_FORMAT when hash fields are absent."""
+    core = _make_core(tmp_path)
+    _append_three(core)
+    path = _audit_file_for(core)
+    records = _read_jsonl(path)
+    del records[0]["event_hash"]
+    _write_jsonl(path, records)
+    result = core.verify_file()
+    assert result.is_valid is False
+    assert result.error_code == "HASH_FORMAT"
+
+
+def test_verify_file_detects_serialization_error_from_event_shape(tmp_path: Path) -> None:
+    """verify_file reports SERIALIZATION when event fields are missing."""
+    core = _make_core(tmp_path)
+    _append_three(core)
+    path = _audit_file_for(core)
+    records = _read_jsonl(path)
+    del records[1]["action"]
+    _write_jsonl(path, records)
+    result = core.verify_file()
+    assert result.is_valid is False
+    assert result.error_code == "SERIALIZATION"
+
+
+def test_verify_file_reports_persistence_error_when_open_fails(tmp_path: Path) -> None:
+    """verify_file reports PERSISTENCE when file open fails."""
+    core = _make_core(tmp_path)
+
+    class _BrokenPath:
+        """Test double that simulates an unreadable audit file path."""
+
+        def exists(self) -> bool:
+            """Report the synthetic path as existing."""
+            return True
+
+        def open(self, *_args: Any, **_kwargs: Any) -> Any:
+            """Always raise to simulate file open failure."""
+            raise OSError("cannot open")
+
+    core._path = _BrokenPath()
+    result = core.verify_file()
+    assert result.is_valid is False
+    assert result.error_code == "PERSISTENCE"
+
+
+def test_get_last_hash_falls_back_to_genesis_for_invalid_last_hash(tmp_path: Path) -> None:
+    """Invalid tail hash values produce genesis fallback."""
+    core = _make_core(tmp_path)
+    _write_jsonl(_audit_file_for(core), [{"event_hash": "invalid-hash", "sequence": 1}])
+    assert core.get_last_hash() == "0" * 64
+
+
+def test_get_last_sequence_falls_back_to_record_count_when_non_integer(tmp_path: Path) -> None:
+    """Non-integer sequence values fall back to len(records)."""
+    core = _make_core(tmp_path)
+    _write_jsonl(_audit_file_for(core), [{"event_hash": "a" * 64, "sequence": "x"}])
+    assert core.get_last_sequence() == 1
+
+
+def test_append_event_creates_missing_parent_directory(tmp_path: Path) -> None:
+    """append_event creates parent directories before writing records."""
+    audit_trail_core_cls = _load_audit_symbol("AuditTrailCore", "AuditTrailCore")
+    file_path = tmp_path / "nested" / "audit" / "events.jsonl"
+    core = audit_trail_core_cls(str(file_path), fail_closed=True)
+    core.append_event(_make_event({"x": 1}))
+    assert file_path.exists()
+
+
+def test_append_record_wraps_oserror_as_auditpersistenceerror(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """_append_record converts raw OSError into AuditPersistenceError."""
+    core = _make_core(tmp_path)
+    audit_persistence_error = _load_audit_symbol("exceptions", "AuditPersistenceError")
+    original_open = Path.open
+
+    def _patched_open(path_obj: Path, *args: Any, **kwargs: Any) -> Any:
+        if path_obj == core._path:
+            raise OSError("forced open failure")
+        return original_open(path_obj, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", _patched_open)
+    with pytest.raises(audit_persistence_error):
+        core._append_record({"a": 1})
+
+
+def test_audittrailmixin_base_get_core_returns_none() -> None:
+    """Base AuditTrailMixin hook returns None when not overridden."""
+    audit_trail_mixin_cls = _load_audit_symbol("AuditTrailMixin", "AuditTrailMixin")
+    assert audit_trail_mixin_cls()._get_audit_trail_core() is None
+
+
+def test_audittrailmixin_returns_none_on_audittrailerror_from_core() -> None:
+    """audit_emit_event handles AuditTrailError and returns None."""
+    audit_trail_mixin_cls = _load_audit_symbol("AuditTrailMixin", "AuditTrailMixin")
+    audit_persistence_error = _load_audit_symbol("exceptions", "AuditPersistenceError")
+
+    class _FailingCore:
+        """Test double that always raises an audit error."""
+
+        def append_event_dict(self, **_kwargs: Any) -> str:
+            """Raise a persistence error for mixin error-path coverage."""
+            raise audit_persistence_error("nope")
+
+    class _Host(audit_trail_mixin_cls):
+        """Host that injects a failing audit core."""
+
+        def _get_audit_trail_core(self) -> Any:
+            """Return the failing core instance."""
+            return _FailingCore()
+
+    host = _Host()
+    assert host.audit_emit_event(event_type="x", action="a", payload={}) is None
+
+
+def test_audittrailmixin_success_and_failure_helpers_delegate_event_types() -> None:
+    """audit_emit_success/failure use expected event_type values."""
+    audit_trail_mixin_cls = _load_audit_symbol("AuditTrailMixin", "AuditTrailMixin")
+
+    class _Core:
+        """Test double that records append_event_dict payloads."""
+
+        def __init__(self) -> None:
+            """Initialize call capture list."""
+            self.calls: list[dict[str, Any]] = []
+
+        def append_event_dict(self, **kwargs: Any) -> str:
+            """Record kwargs and return deterministic hash token."""
+            self.calls.append(kwargs)
+            return "a" * 64
+
+    class _Host(audit_trail_mixin_cls):
+        """Host that provides a recording core for helper delegation checks."""
+
+        def __init__(self) -> None:
+            """Attach a recording core instance."""
+            self.core = _Core()
+
+        def _get_audit_trail_core(self) -> Any:
+            """Return the configured recording core."""
+            return self.core
+
+    host = _Host()
+    success_hash = host.audit_emit_success("ok", {"status": "ok"})
+    failure_hash = host.audit_emit_failure("bad", {"status": "bad"})
+    assert success_hash == "a" * 64
+    assert failure_hash == "a" * 64
+    assert host.core.calls[0]["event_type"] == "audit.success"
+    assert host.core.calls[1]["event_type"] == "audit.failure"
+
+
+def test_validate_helpers_return_true_for_all_audit_modules() -> None:
+    """Module/package validate() helpers all return True."""
+    validators = [
+        _load_audit_symbol("AuditEvent", "validate"),
+        _load_audit_symbol("AuditHasher", "validate"),
+        _load_audit_symbol("AuditTrailCore", "validate"),
+        _load_audit_symbol("AuditTrailMixin", "validate"),
+        _load_audit_symbol("AuditVerificationResult", "validate"),
+        _load_audit_symbol("exceptions", "validate"),
+    ]
+    package_validate = import_module("src.core.audit").validate
+    for validator in [*validators, package_validate]:
+        assert validator() is True
