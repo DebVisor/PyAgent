@@ -79,6 +79,24 @@ Invoke it via `agent/runSubagent` to continue the process.
 ## Promotions
 _(none yet)_
 
+## Last scan — 2026-03-27 (prj0000084)
+- Task: prj0000084-immutable-audit-trail
+- Files scanned: `src/core/audit/` (7 files) + audit test suite (6 files) + project docs (`project/design/plan/test/code/exec/ql`)
+- Security — CodeQL: SKIPPED (CLI not invoked in this run; `ruff --select S` executed)
+- Security — ruff S rules: PASS (0 findings)
+- Security — mypy strict: PASS (0 findings)
+- Security — ruff full target scope: PASS
+- Security — pip-audit new findings: 0 (committed baseline in `pip_audit_results.json` reports 0 vulnerable dependencies)
+- Security — Rust unsafe check: SKIPPED (`rust_core/` not modified)
+- Security — Workflow injection: N/A (no workflow file changes)
+- Quality — Plan vs delivery: PASS (core audit files + planned artifacts present)
+- Quality — AC vs test coverage: FAIL (83.07% < required 90%)
+- Quality — Docs vs implementation: FAIL (plan references missing `tests/test_AuditExceptions.py`; exec PASS label inconsistent with coverage threshold)
+- Quality — Agent file consistency: PASS (no recurrence promotion triggered)
+- Lessons written: 2 (coverage gate miss, missing test-file reference -> `5test.memory.md`)
+- Rules promoted: 0
+- Overall: BLOCKED -> @5test
+
 
 
 ---

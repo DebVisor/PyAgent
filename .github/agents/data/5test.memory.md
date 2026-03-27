@@ -108,4 +108,20 @@ Invoke it via `agent/runSubagent` to continue the implementation workflow.
 - handoff:
 	- target_agent: @7exec
 	- required scope: continue repository-level execution tracking with residual unrelated baseline failures
+
+## Lessons
+
+### Lesson — 2026-03-27 (prj0000084)
+**Pattern:** Coverage gate for a new module failed target (`src/core/audit` at 83.07% vs required >=90%).
+**Root cause:** Test suite emphasized contract path coverage but left multiple negative/error and no-core branches untested in `AuditTrailCore`, `AuditEvent`, and `AuditTrailMixin`.
+**Prevention:** Before handing off, run the exact project target command with `--cov-fail-under` from the plan and add branch-focused tests until threshold is met.
+**First seen:** prj0000084
+**Recurrence count:** 1
+
+### Lesson — 2026-03-27 (prj0000084)
+**Pattern:** Plan validation commands referenced a non-existent test file (`tests/test_AuditExceptions.py`).
+**Root cause:** Test artifact and plan command set diverged during implementation, but command list was not reconciled.
+**Prevention:** During final test artifact update, verify every test file in plan commands exists on disk and matches the delivered test inventory.
+**First seen:** prj0000084
+**Recurrence count:** 1
 	- do_not_touch: prj006-related fixes are complete and validated
