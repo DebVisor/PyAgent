@@ -20,6 +20,21 @@ integration checks, and smoke test outcomes.
 - task_id: prj0000082
 - handoff_target: @8ql
 
+## Last run — 2026-03-27 ✅ PASSED → @8ql
+- Task: prj0000083 llm-circuit-breaker (post-fix rerun on commit 6793030b)
+- Status: DONE
+- Lifecycle: IN_PROGRESS -> DONE
+- Tests run: 24 + 8 + 129 + 24 | Passed: 185 | Failed: 0
+- Import check: PASS (covered by successful pytest collection/execution for resilience modules)
+- Coverage: 96.35% on src/core/resilience
+- Ruff: PASS (All checks passed)
+- mypy: PASS (Success: no issues found in 7 source files)
+- Smoke test: SKIPPED (not requested; no CLI/API path touched)
+- rust_core: SKIPPED (not modified)
+- Outcome: PASSED -> @8ql
+- task_id: prj0000083-llm-circuit-breaker
+- handoff_target: @8ql
+
 ---
 
 ## Last run — 2026-03-26 (re-run 2)
