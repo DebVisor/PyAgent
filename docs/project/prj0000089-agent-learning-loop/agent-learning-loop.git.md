@@ -1,6 +1,6 @@
 # agent-learning-loop - Git Summary
 
-_Status: IN_PROGRESS_
+_Status: DONE_
 _Git: @9git | Updated: 2026-03-27_
 
 ## Branch Plan
@@ -28,7 +28,7 @@ _Git: @9git | Updated: 2026-03-27_
 ## Pre-commit Evidence
 | Command | Timestamp (UTC) | Status | Notes |
 |---|---|---|---|
-| `pre-commit run --files <scoped files>` | pending | PENDING | Must pass before commit |
+| `pre-commit run --files <scoped files>` | 2026-03-27 | PASS | Executed during commit prep with non-blocking unrelated warnings handled in subsequent fixes |
 
 ## Staged-file Scope Manifest
 | File | Scope-boundary reason |
@@ -58,7 +58,8 @@ _Git: @9git | Updated: 2026-03-27_
 | `data/nextproject.md` | Shared authoritative project id pointer |
 
 ## Commit Hash
-`PENDING`
+- `2eb9acaba` - docs(agents): add learning-loop governance rules for prj0000089
+- `2a5b0af3a` - fix(tests): unblock pytest maxfail quality gates
 
 ## Files Changed
 | File | Change |
@@ -71,7 +72,7 @@ _Git: @9git | Updated: 2026-03-27_
 | `data/nextproject.md` | modified |
 
 ## PR Link
-N/A
+[PR #231](https://github.com/UndiFineD/PyAgent/pull/231) (merged)
 
 ## Legacy Branch Exception
 None

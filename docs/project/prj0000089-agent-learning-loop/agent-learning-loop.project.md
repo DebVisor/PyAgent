@@ -1,7 +1,7 @@
 # agent-learning-loop - Project Overview
 
-_Status: HANDED_OFF_
-_Owner: @1project | Updated: 2026-03-27_
+_Status: RELEASED_
+_Owner: @0master | Updated: 2026-03-27_
 
 ## Project Identity
 **Project ID:** prj0000089
@@ -33,14 +33,14 @@ Initialize a constrained project boundary to improve agent quality by applying r
 ## Milestones
 | # | Milestone | Agent | Status |
 |---|---|---|---|
-| M1 | Options explored | @2think | NOT_STARTED |
-| M2 | Design confirmed | @3design | NOT_STARTED |
-| M3 | Plan finalized | @4plan | NOT_STARTED |
-| M4 | Tests written | @5test | NOT_STARTED |
-| M5 | Code implemented | @6code | NOT_STARTED |
-| M6 | Integration validated | @7exec | NOT_STARTED |
-| M7 | Security clean | @8ql | NOT_STARTED |
-| M8 | Committed | @9git | NOT_STARTED |
+| M1 | Options explored | @2think | DONE |
+| M2 | Design confirmed | @3design | DONE |
+| M3 | Plan finalized | @4plan | DONE |
+| M4 | Tests written | @5test | DONE |
+| M5 | Code implemented | @6code | DONE |
+| M6 | Integration validated | @7exec | DONE |
+| M7 | Security clean | @8ql | DONE |
+| M8 | Committed and merged | @9git | DONE |
 
 ## Artifacts
 - Canonical options: docs/project/prj0000089-agent-learning-loop/agent-learning-loop.think.md
@@ -54,4 +54,4 @@ Initialize a constrained project boundary to improve agent quality by applying r
 
 ## Status
 _Last updated: 2026-03-27_
-Project initialized on expected branch prj0000089-agent-learning-loop. Required folder and canonical/stub artifacts created, board and registry updated to Discovery, next project ID advanced to prj0000090. Ready for @2think handoff.
+Project completed and merged to main via PR #231. Board/registry are updated to Released and the implementation+quality remediation work is fully recorded in this project folder.

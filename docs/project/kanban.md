@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-27 | Total projects: 89 | prj0000089 → Discovery_
+_Last updated: 2026-03-27 | Total projects: 89 | prj0000089 → Released_
 
 ## How to use this board
 
@@ -53,7 +53,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
-| prj0000089 | agent-learning-loop | Implement agent-improvement recommendations across .github/agents/*.agent.md and supporting project docs to reduce recurring mistakes | prj0000089-agent-learning-loop | P2 | M | agents, quality, process | 2026-03-27 |
+
 
 
 
@@ -93,6 +93,7 @@ All projects merged to main branch.
 
 | ID | Name | Summary | Branch | PR | Priority | Budget | Released |
 |---|---|---|---|---|---|---|---|
+| prj0000089 | agent-learning-loop | Agent learning-loop governance rollout across all role definitions plus quality-gate test remediations; pytest maxfail run stabilized | merged | [#231](https://github.com/UndiFineD/PyAgent/pull/231) | P2 | M | 2026-03-27 |
 | prj0000088 | ai-fuzzing-security | Deterministic local fuzzing core with guarded mutation strategies, corpus scheduling, and safety policy; 99.06% cov | merged | [#230](https://github.com/UndiFineD/PyAgent/pull/230) | P3 | M | 2026-03-27 |
 | prj0000087 | n8n-workflow-bridge | Bi-directional n8n bridge core with config, event adaptation, HTTP client, and mixin orchestration; 99.11% cov | merged | [#229](https://github.com/UndiFineD/PyAgent/pull/229) | P3 | M | 2026-03-27 |
 | prj0000086 | universal-agent-shell | Universal shell facade v1 for intent routing, core registry, and shell orchestration; 96.26% cov | merged | [#228](https://github.com/UndiFineD/PyAgent/pull/228) | P2 | XL | 2026-03-27 |
@@ -198,11 +199,11 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 0 |
-| Discovery | 1 |
+| Discovery | 0 |
 | Design | 0 |
 | In Sprint | 0 |
 | Review | 0 |
-| Released | 87 |
+| Released | 88 |
 | Archived | 1 |
 | **Total** | **89** |
 
