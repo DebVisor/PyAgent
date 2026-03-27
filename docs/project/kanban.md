@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-27 | Total projects: 88 | prj0000087 → Discovery_
+_Last updated: 2026-03-27 | Total projects: 88 | prj0000087 → Review (auth-blocked)_
 
 ## How to use this board
 
@@ -56,7 +56,6 @@ Active options exploration — @2think is working or has completed .think.md.
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
 | prj0000084 | immutable-audit-trail | Append-only hashchain audit log for all BFT-approved and security-critical operations; tamper-evident with cryptographic chaining | prj0000084-immutable-audit-trail | P2 | M | security, audit, compliance | 2026-03-27 |
-| prj0000087 | n8n-workflow-bridge | Bi-directional n8n integration: agents trigger automation chains via n8n API and act as intelligent decision nodes in workflows | prj0000087-n8n-workflow-bridge | P3 | M | automation, integration, n8n | 2026-03-27 |
 
 
 
@@ -88,6 +87,7 @@ PR open, awaiting merge.
 |---|---|---|---|---|---|---|
 | prj0000083 | llm-circuit-breaker | prj0000083-llm-circuit-breaker | [#225](https://github.com/UndiFineD/PyAgent/pull/225) | P3 | S | 2026-03-27 |
 | prj0000085 | shadow-mode-replay | prj0000085-shadow-mode-replay | auth blocked (use compare URL) | P3 | M | 2026-03-27 |
+| prj0000087 | n8n-workflow-bridge | prj0000087-n8n-workflow-bridge | auth blocked (use compare URL) | P3 | M | 2026-03-27 |
 
 
 ---
@@ -197,10 +197,10 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 2 |
-| Discovery | 2 |
+| Discovery | 1 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 2 |
+| Review | 3 |
 | Released | 81 |
 | Archived | 1 |
 | **Total** | **88** |
