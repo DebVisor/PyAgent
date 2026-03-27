@@ -88,6 +88,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000083 | llm-circuit-breaker | prj0000083-llm-circuit-breaker | [#225](https://github.com/UndiFineD/PyAgent/pull/225) | P3 | S | 2026-03-27 |
 
 
 ---
@@ -200,7 +201,7 @@ Stalled, cancelled, or superseded projects.
 | Discovery | 2 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 0 |
+| Review | 1 |
 | Released | 81 |
 | Archived | 1 |
 | **Total** | **88** |
