@@ -9,6 +9,24 @@ Once code implementation is complete and tests are passing,
 the next agent to invoke is **@7exec**. 
 This should be done via `agent/runSubagent`.
 
+## prj0000086 - universal-agent-shell
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000086-universal-agent-shell |
+| **owner_agent** | @6code |
+| **source** | @5test |
+| **created_at** | 2026-03-27 |
+| **updated_at** | 2026-03-27 |
+| **status** | DONE |
+| **summary** | Implemented `src/core/universal` facade v1 (`UniversalIntentRouter`, `UniversalCoreRegistry`, `UniversalAgentShell`, `exceptions`, package `__init__`) with deterministic routing, strict registry contracts, single fallback to legacy, stable exports, and `validate()` helpers. |
+| **changed_modules** | src/core/universal/UniversalIntentRouter.py; src/core/universal/UniversalCoreRegistry.py; src/core/universal/UniversalAgentShell.py; src/core/universal/exceptions.py; src/core/universal/__init__.py; docs/project/prj0000086-universal-agent-shell/universal-agent-shell.code.md; .github/agents/data/6code.memory.md |
+| **verification_commands** | python -m pytest -q tests/test_universal_shell.py tests/test_UniversalIntentRouter.py tests/test_UniversalCoreRegistry.py tests/test_UniversalAgentShell.py; python -m pytest -q tests/structure; python -m mypy --strict src/core/universal; python -m ruff check src/core/universal tests/test_universal_shell.py tests/test_UniversalIntentRouter.py tests/test_UniversalCoreRegistry.py tests/test_UniversalAgentShell.py |
+| **verification_result** | PASS — universal tests 21/21, structure tests 129/129, mypy strict clean on universal scope, ruff clean on universal scope. |
+| **unresolved_risks** | No unresolved risks in universal scope; integration with live core/legacy orchestrators remains for @7exec runtime validation. |
+| **handoff_target** | @7exec |
+| **artifact_paths** | src/core/universal/UniversalIntentRouter.py, src/core/universal/UniversalCoreRegistry.py, src/core/universal/UniversalAgentShell.py, src/core/universal/exceptions.py, src/core/universal/__init__.py, docs/project/prj0000086-universal-agent-shell/universal-agent-shell.code.md, .github/agents/data/6code.memory.md |
+
 ---
 
 ## prj030 - agent-doc-frequency
