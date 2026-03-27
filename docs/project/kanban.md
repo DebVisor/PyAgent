@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-27 | Total projects: 88 | prj0000086 → Discovery_
+_Last updated: 2026-03-27 | Total projects: 88 | prj0000086 → Review (auth-blocked)_
 
 ## How to use this board
 
@@ -57,7 +57,6 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
-| prj0000086 | universal-agent-shell | UniversalAgent shell: dynamically load CoderCore/SecurityCore/etc. by intent; consolidate 50+ specialized agent classes | prj0000086-universal-agent-shell | P2 | XL | architecture, agents, refactor | 2026-03-27 |
 
 
 
@@ -88,6 +87,7 @@ PR open, awaiting merge.
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
 | prj0000083 | llm-circuit-breaker | prj0000083-llm-circuit-breaker | [#225](https://github.com/UndiFineD/PyAgent/pull/225) | P3 | S | 2026-03-27 |
+| prj0000086 | universal-agent-shell | prj0000086-universal-agent-shell | auth blocked (use compare URL) | P2 | XL | 2026-03-27 |
 
 
 ---
@@ -197,10 +197,10 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 4 |
-| Discovery | 1 |
+| Discovery | 0 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 1 |
+| Review | 2 |
 | Released | 81 |
 | Archived | 1 |
 | **Total** | **88** |
