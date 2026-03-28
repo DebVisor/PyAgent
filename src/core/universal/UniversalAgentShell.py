@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import asyncio
 from dataclasses import dataclass
-from typing import Any, Awaitable, Callable, Protocol
+from typing import Any, Awaitable, Callable, Literal, Protocol
 
 from src.core.universal.exceptions import (
     CoreExecutionError,
@@ -178,15 +178,17 @@ class UniversalAgentShell:
         """
         try:
             normalized_intent = str(decision.normalized_intent)
-            preferred_route = str(decision.preferred_route)
+            preferred_route_value = str(decision.preferred_route)
             reason = str(decision.reason)
         except AttributeError as error:
             raise RoutingContractError("Router decision must expose intent, route, and reason") from error
 
         if normalized_intent == "":
             raise RoutingContractError("Router decision normalized_intent cannot be empty")
-        if preferred_route not in {"core", "legacy"}:
+        if preferred_route_value not in {"core", "legacy"}:
             raise RoutingContractError("Router decision preferred_route must be 'core' or 'legacy'")
+
+        preferred_route: Literal["core", "legacy"] = "core" if preferred_route_value == "core" else "legacy"
 
         return RoutingDecision(
             normalized_intent=normalized_intent,

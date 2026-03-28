@@ -181,3 +181,31 @@ the design intent.
 | **Seen in** | prj0000091-missing-compose-dockerfile |
 | **Recurrence count** | 1 |
 | **Promotion status** | Candidate |
+
+---
+
+## prj0000092 - mypy-strict-enforcement
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000092-mypy-strict-enforcement |
+| **owner_agent** | @3design |
+| **source** | @2think |
+| **created_at** | 2026-03-28 |
+| **updated_at** | 2026-03-28 |
+| **status** | DONE |
+| **lifecycle** | OPEN -> IN_PROGRESS -> DONE |
+| **branch_gate** | PASS - `prj0000092-mypy-strict-enforcement` |
+| **selected_option** | Option B - progressive strict lane in stable `src/core` slices |
+| **design_path** | Locked phase-1 allowlist with dedicated strict-lane config + blocking CI + structure/smoke guards |
+| **interface_contracts** | IFC-01 Strict Lane Config, IFC-02 CI Blocking Contract, IFC-03 Structure Guard Contract, IFC-04 Strict Failure Smoke Contract |
+| **assumptions** | Keep global permissive mypy behavior in phase-1; strict enforcement applies only to explicit allowlist; CI lane runs once per workflow |
+| **handoff_target** | @4plan |
+| **artifact_paths** | docs/project/prj0000092-mypy-strict-enforcement/prj0000092-mypy-strict-enforcement.design.md |
+| **Pattern** | Introduce strict typing via a narrow, deterministic allowlist lane before broadening scope |
+| **Root cause** | Existing global mypy config suppresses actionable enforcement and CI lacked a blocking type gate |
+| **Prevention** | Lock allowlist in config + structure tests and enforce blocking CI command invariants |
+| **First seen** | 2026-03-28 |
+| **Seen in** | prj0000092-mypy-strict-enforcement |
+| **Recurrence count** | 1 |
+| **Promotion status** | Candidate |

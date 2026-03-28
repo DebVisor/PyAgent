@@ -143,6 +143,59 @@ where test cases are written and validated against the plan.
 
 ---
 
+## prj0000092 - mypy-strict-enforcement
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000092-mypy-strict-enforcement |
+| **owner_agent** | @4plan |
+| **source** | @3design |
+| **created_at** | 2026-03-28 |
+| **updated_at** | 2026-03-28 |
+| **status** | DONE |
+| **handoff_target** | @5test |
+| **artifact_paths** | docs/project/prj0000092-mypy-strict-enforcement/prj0000092-mypy-strict-enforcement.plan.md, docs/project/prj0000092-mypy-strict-enforcement/prj0000092-mypy-strict-enforcement.project.md |
+| **branch** | prj0000092-mypy-strict-enforcement (validated PASS before artifact write) |
+
+### Chunk 001 Summary
+
+| Item | Value |
+|---|---|
+| Code/config files planned | 3 |
+| Test files planned | 4 |
+| Task IDs | T1-T7 |
+| Scope | phase-1 strict lane config, CI strict command wiring, structure + smoke guardrails |
+
+### Acceptance Coverage
+| Task | Acceptance IDs |
+|---|---|
+| T1 | AC-001, AC-002, AC-004 |
+| T2 | AC-003, AC-004 |
+| T3 | AC-005 |
+| T4 | AC-001, AC-002 |
+| T5 | AC-003 |
+| T6 | AC-006 |
+| T7 | AC-001, AC-002, AC-003, AC-004, AC-005, AC-006 |
+
+### Dependency Order
+1. T1 -> T2 -> T3
+2. TDD gate to @6code: T4/T5/T6 begin only after @5test establishes failing tests for T1/T2/T3.
+3. T7 runs after implementation is green and records scope/evidence for @7exec.
+
+### Lesson Entry
+
+| Field | Value |
+|---|---|
+| Pattern | Strict-lane rollout planning is most stable when config, CI contract, and fixture-backed smoke checks are planned as one dependency chain. |
+| Root cause | Previous type-policy efforts drifted because one of the three guardrail layers (config, CI, or tests) was under-specified. |
+| Prevention | Require every strictness plan to include exact allowlist lock tests, blocking CI assertion tests, and a deterministic failing fixture smoke test. |
+| First seen | 2026-03-28 |
+| Seen in | prj0000092-mypy-strict-enforcement |
+| Recurrence count | 1 |
+| Promotion status | CANDIDATE |
+
+---
+
 ## prj0000076 — future-ideas-kanban
 
 | Field | Value |
@@ -163,8 +216,6 @@ Documentation-only project. No source code, tests, or CI changes. @4plan wrote t
 `## Future Ideas` section directly into `docs/project/kanban.md` (38 ideas, 9 areas,
 P1–P4 priorities, SWOT classification for P1/P2). All agents M2/M4/M5/M6/M7 SKIPPED.
 Ready for @9git handoff.
-
----
 
 ## prj0000090 - private-key-remediation
 
