@@ -9,6 +9,42 @@ Once code implementation is complete and tests are passing,
 the next agent to invoke is **@7exec**. 
 This should be done via `agent/runSubagent`.
 
+## prj0000095 - source-stub-remediation (AutoMem dual-backend benchmark fix)
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000095-source-stub-remediation |
+| **owner_agent** | @6code |
+| **source** | User direct benchmark remediation request |
+| **created_at** | 2026-03-28 |
+| **updated_at** | 2026-03-28 |
+| **status** | DONE |
+| **summary** | Implemented end-to-end AutoMem benchmark remediation: default dual-backend execution (`postgres` + `memory`), backend-tagged operation results, stable method keys with explicit fallback/unavailable metadata, merged persistence payload, and frontend backend+method chart grouping with backend-labeled legends/notes. |
+| **changed_modules** | src/core/memory/BenchmarkRunner.py; backend/automem_benchmark_store.py; backend/app.py; web/apps/AutoMemBenchmark.tsx; docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.code.md; docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.think.md; .github/agents/data/6code.memory.md |
+| **verification_commands** | Push-Location rust_core; cargo build; Pop-Location; python -m py_compile src/core/memory/BenchmarkRunner.py backend/automem_benchmark_store.py backend/app.py; Push-Location web; npm run build; Pop-Location; python -c "from fastapi.testclient import TestClient; from backend.app import app; c=TestClient(app); resp=c.post('/api/automem/benchmark/run', json={'row_counts':[50], 'backends':['postgres','memory']}); print(resp.status_code); data=resp.json(); print(sorted({r.get('backend') for r in data.get('results', []) if isinstance(r, dict)})); print(sorted({r.get('method') for r in data.get('results', []) if isinstance(r, dict) and r.get('operation') == 'search'})[:6]); print(data.get('errors', [])[:4])"; rg --type py "raise NotImplementedError|raise NotImplemented\b|#\s*(TODO|FIXME|HACK|STUB|PLACEHOLDER)" src/core/memory/BenchmarkRunner.py backend/automem_benchmark_store.py backend/app.py; rg --type py "^\s*\.\.\.\s*$" src/core/memory/BenchmarkRunner.py backend/automem_benchmark_store.py backend/app.py |
+| **verification_result** | PASS — rust_core build succeeded; changed Python files compile; web build succeeded; local API benchmark run returned both backends in one payload with stable search method keys and explicit fallback notes; placeholder scan clean in changed Python files. |
+| **unresolved_risks** | No dedicated frontend runtime snapshot test was added in this pass; behavior validated via build and live API payload inspection. |
+| **handoff_target** | @7exec |
+| **artifact_paths** | src/core/memory/BenchmarkRunner.py, backend/automem_benchmark_store.py, backend/app.py, web/apps/AutoMemBenchmark.tsx, docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.code.md, docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.think.md, .github/agents/data/6code.memory.md |
+
+## prj0000095 - source-stub-remediation
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000095-source-stub-remediation |
+| **owner_agent** | @6code |
+| **source** | User direct remediation request |
+| **created_at** | 2026-03-28 |
+| **updated_at** | 2026-03-28 |
+| **status** | DONE |
+| **summary** | Executed focused pass for user request: hardened `rust_core/src/multimodal/audio.rs` from lightweight per-bin DFT to concrete FFT-backed mel extraction via `rustfft`; re-verified there are no remaining package-level `placeholder()` compatibility exports in `src/**/__init__.py`; updated project evidence artifacts. |
+| **changed_modules** | rust_core/Cargo.toml; rust_core/src/multimodal/audio.rs; docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.code.md; docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.think.md; .github/agents/data/6code.memory.md |
+| **verification_commands** | Push-Location rust_core; cargo build; Pop-Location; python -m py_compile src/memory/__init__.py src/multimodal/__init__.py src/transport/__init__.py src/rl/__init__.py src/speculation/__init__.py src/runtime/__init__.py; rg -n "placeholder\\s*\\(" src -g "**/__init__.py"; rg -n -i "placeholder|provisional|lightweight fallback" rust_core/src/multimodal/audio.rs src/memory/__init__.py src/multimodal/__init__.py src/transport/__init__.py src/rl/__init__.py src/speculation/__init__.py src/runtime/__init__.py |
+| **verification_result** | PASS — rust_core build succeeded after adding `rustfft`; scoped py_compile succeeded; placeholder/provisional marker scans for touched files and package init surfaces returned no matches. |
+| **unresolved_risks** | Stale tests asserting removed `placeholder()` APIs remain and require a dedicated test-scope follow-up update. |
+| **handoff_target** | @7exec |
+| **artifact_paths** | backend/ws_handler.py, src/importer/downloader.py, src/core/agent_state_manager.py, src/core/providers/FlmChatAdapter.py, docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.code.md, .github/agents/data/6code.memory.md |
+
 ## prj0000094 - idea-003-mypy-strict-enforcement (Wave 1 green)
 
 | Field | Value |
