@@ -131,6 +131,8 @@ This agent primarily uses free Copilot models such as GPT-5 Mini, Grok Code Fast
 	- If `pre-commit` fails, stop the git workflow, record the failing hook/check in the project git artifact and `.github/agents/data/9git.memory.md`, and hand the task back to `@0master`.
 	- Summarize the exact staged files in the git artifact.
 	- Only commit, push, or create/update a PR when branch validation, scope validation, and the post-staging `pre-commit` run all pass and the task constraints allow those operations.
+	- **Automatic handoff default:** when all gates pass and no blocking instruction is present, perform the full git handoff automatically in the same run: commit -> push branch -> create or update PR targeting `main`.
+	- If a PR already exists for the branch, update the existing PR instead of opening a duplicate.
 
 4. **Failure Disposition And Lessons Learned**
 	- When validation fails, mark the git artifact with the blocked outcome, the observed branch, the offending scope, and the next owner.

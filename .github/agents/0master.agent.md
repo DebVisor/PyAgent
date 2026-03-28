@@ -174,7 +174,7 @@ Supports PyAgent’s standard handoff pattern:
 6. **@6code** implements the minimum required changes and hands off to `@7exec` for runtime validation.
 7. **@7exec** runs the required commands and integration checks, then hands off to `@8ql`.
 8. **@8ql** performs security and CodeQL review, then hands off to `@9git`.
-9. **@9git** handles branch validation, narrow staging, PRs, reviews, and merging, then reports completion or blockers back to `@0master`.
+9. **@9git** handles branch validation, narrow staging, commit, push, and PR creation/update automatically when gates pass, then reports completion or blockers back to `@0master`.
 
 ### Workflow direction
 - **Design-first work:** `@0master` -> `@1project` -> `@2think` -> `@3design` -> `@4plan` -> `@5test` -> `@6code` -> `@7exec` -> `@8ql` -> `@9git`
