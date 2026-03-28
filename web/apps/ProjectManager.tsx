@@ -88,11 +88,28 @@ const PRIORITY_COLORS: Record<Priority, string> = {
 const GITHUB_PR_BASE = 'https://github.com/UndiFineD/PyAgent/pull';
 const GITHUB_DIR_BASE = 'https://github.com/UndiFineD/PyAgent/tree/main/docs/project';
 const TODAY = new Date().toISOString().slice(0, 10);
+const API_FALLBACK_BASE = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/$/, '') ?? 'http://127.0.0.1:444';
+
+function toFallbackUrl(path: string): string {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${API_FALLBACK_BASE}${normalized}`;
+}
+
+async function fetchApi(path: string, init?: RequestInit): Promise<Response> {
+  const primary = await fetch(path, init).catch(() => null);
+  if (primary?.ok) return primary;
+
+  // In some local setups (e.g., static serving without Vite proxy), /api routes can 404.
+  const shouldTryFallback = primary === null || primary.status === 404;
+  if (!shouldTryFallback) return primary;
+
+  return fetch(toFallbackUrl(path), init);
+}
 
 // ── API helpers ───────────────────────────────────────────────────────────────
 
 async function apiPatch(id: string, patch: Partial<Project>): Promise<Project> {
-  const r = await fetch(`/api/projects/${id}`, {
+  const r = await fetchApi(`/api/projects/${id}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...patch, updated: TODAY }),
@@ -102,7 +119,7 @@ async function apiPatch(id: string, patch: Partial<Project>): Promise<Project> {
 }
 
 async function apiCreate(project: Project): Promise<Project> {
-  const r = await fetch('/api/projects', {
+  const r = await fetchApi('/api/projects', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(project),
@@ -115,7 +132,7 @@ async function apiPatchIdea(
   ideaId: string,
   patch: { title?: string; summary?: string; mapped_project_ids?: string[]; ensure_swot_risk_data?: boolean },
 ): Promise<Idea> {
-  const r = await fetch(`/api/ideas/${ideaId}`, {
+  const r = await fetchApi(`/api/ideas/${ideaId}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(patch),
@@ -125,7 +142,7 @@ async function apiPatchIdea(
 }
 
 async function apiRunPipeline(task: string): Promise<{ pipeline_id: string; status: string }> {
-  const r = await fetch('/api/pipeline/run', {
+  const r = await fetchApi('/api/pipeline/run', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ task }),
@@ -135,10 +152,10 @@ async function apiRunPipeline(task: string): Promise<{ pipeline_id: string; stat
 }
 
 async function appendAgentLog(agentId: string, linesToAppend: string[]): Promise<void> {
-  const readResp = await fetch(`/api/agent-log/${agentId}`);
+  const readResp = await fetchApi(`/api/agent-log/${agentId}`);
   const previous = readResp.ok ? ((await readResp.json()) as { content?: string }).content ?? '' : '';
   const next = [previous.trimEnd(), ...linesToAppend].filter(Boolean).join('\n');
-  await fetch(`/api/agent-log/${agentId}`, {
+  await fetchApi(`/api/agent-log/${agentId}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ content: `${next}\n` }),
@@ -1172,7 +1189,7 @@ export const ProjectManager: React.FC = () => {
 
   const reload = () => {
     setLoading(true);
-    fetch('/api/projects')
+    fetchApi('/api/projects')
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then((data: Project[]) => { setProjects(data); setLoading(false); })
       .catch(err => { setError(String(err.message)); setLoading(false); });
@@ -1187,7 +1204,7 @@ export const ProjectManager: React.FC = () => {
       sort: 'rank',
       order: 'asc',
     });
-    fetch(`/api/ideas?${ideasParams.toString()}`)
+    fetchApi(`/api/ideas?${ideasParams.toString()}`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then((data: Idea[]) => {
         setIdeas(data);
