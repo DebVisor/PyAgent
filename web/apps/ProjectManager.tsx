@@ -14,7 +14,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   GitBranch, ExternalLink, Search, Loader2, AlertTriangle,
-  ChevronDown, ChevronUp, Tag, Pencil, FolderOpen, Plus, X, Check, BarChart2,
+  ChevronDown, ChevronUp, Tag, Pencil, FolderOpen, Plus, X, Check, BarChart2, Copy,
 } from 'lucide-react';
 import { cn } from '../utils';
 import kanbanRaw from '../../docs/project/kanban.md?raw';
@@ -595,6 +595,274 @@ function extractSection(raw: string, heading: string): string {
   return after === -1 ? raw.slice(start) : raw.slice(start, after);
 }
 
+function parseMarkdownTable(section: string): { headers: string[]; rows: string[][] } {
+  const lines = section
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line.startsWith('|'));
+
+  if (lines.length < 2) return { headers: [], rows: [] };
+
+  const splitRow = (line: string) => line
+    .split('|')
+    .map(cell => cell.trim())
+    .filter((_, i, arr) => i > 0 && i < arr.length - 1);
+
+  const headers = splitRow(lines[0]);
+  const rows = lines
+    .slice(2)
+    .map(splitRow)
+    .filter(row => row.length > 0);
+
+  return { headers, rows };
+}
+
+interface RiskEntry {
+  id: string;
+  risk: string;
+  likelihood: string;
+  impact: string;
+  status: string;
+  mitigation: string;
+}
+
+function parseRiskRegister(raw: string): RiskEntry[] {
+  const section = extractSection(raw, 'Risk Register');
+  const { rows } = parseMarkdownTable(section);
+  return rows
+    .filter(row => row.length >= 6)
+    .map(row => ({
+      id: row[0],
+      risk: row[1],
+      likelihood: row[2],
+      impact: row[3],
+      status: row[4],
+      mitigation: row[5],
+    }));
+}
+
+interface SwotData {
+  strengths: string[];
+  weaknesses: string[];
+  opportunities: string[];
+  threats: string[];
+}
+
+function parseSwot(raw: string): SwotData {
+  const section = extractSection(raw, 'SWOT Analysis');
+  const { rows } = parseMarkdownTable(section);
+  const result: SwotData = { strengths: [], weaknesses: [], opportunities: [], threats: [] };
+
+  let helpfulBucket: 'strengths' | 'opportunities' = 'strengths';
+  let harmfulBucket: 'weaknesses' | 'threats' = 'weaknesses';
+
+  for (const row of rows) {
+    const helpful = row[1] ?? '';
+    const harmful = row[2] ?? '';
+
+    if (helpful.includes('**Strengths**')) helpfulBucket = 'strengths';
+    if (helpful.includes('**Opportunities**')) helpfulBucket = 'opportunities';
+    if (harmful.includes('**Weaknesses**')) harmfulBucket = 'weaknesses';
+    if (harmful.includes('**Threats**')) harmfulBucket = 'threats';
+
+    const cleanedHelpful = helpful.replace(/\*\*/g, '').trim();
+    const cleanedHarmful = harmful.replace(/\*\*/g, '').trim();
+
+    if (cleanedHelpful && !['Strengths', 'Opportunities'].includes(cleanedHelpful)) {
+      result[helpfulBucket].push(cleanedHelpful);
+    }
+    if (cleanedHarmful && !['Weaknesses', 'Threats'].includes(cleanedHarmful)) {
+      result[harmfulBucket].push(cleanedHarmful);
+    }
+  }
+
+  return result;
+}
+
+async function copyTextToClipboard(text: string): Promise<void> {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const textArea = document.createElement('textarea');
+  textArea.value = text;
+  textArea.style.position = 'fixed';
+  textArea.style.opacity = '0';
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textArea);
+}
+
+interface InsightsModalProps {
+  mode: 'swot' | 'risk';
+  ideas: Idea[];
+  onClose: () => void;
+}
+
+const InsightsModal: React.FC<InsightsModalProps> = ({ mode, ideas, onClose }) => {
+  const risks = parseRiskRegister(kanbanRaw);
+  const swot = parseSwot(kanbanRaw);
+  const [selectedIdeaId, setSelectedIdeaId] = useState<string>(ideas[0]?.idea_id ?? '');
+  const [copyNotice, setCopyNotice] = useState<string | null>(null);
+
+  const selectedIdea = ideas.find(i => i.idea_id === selectedIdeaId) ?? null;
+
+  const setNotice = (message: string) => {
+    setCopyNotice(message);
+    window.setTimeout(() => setCopyNotice(null), 2200);
+  };
+
+  const copyWithNotice = async (text: string, message: string) => {
+    await copyTextToClipboard(text);
+    setNotice(message);
+  };
+
+  const likelihoodStyle = (value: string) => {
+    if (value === 'H') return 'bg-red-500/20 text-red-200 border-red-400/50';
+    if (value === 'M') return 'bg-amber-500/20 text-amber-200 border-amber-400/50';
+    return 'bg-emerald-500/20 text-emerald-200 border-emerald-400/50';
+  };
+
+  const statusStyle = (value: string) => {
+    if (value.toLowerCase() === 'open') return 'bg-red-500/20 text-red-200 border-red-400/50';
+    return 'bg-emerald-500/20 text-emerald-200 border-emerald-400/50';
+  };
+
+  const swotQuadrants = [
+    { key: 'strengths', title: 'Strengths', color: '#22c55e', items: swot.strengths },
+    { key: 'weaknesses', title: 'Weaknesses', color: '#ef4444', items: swot.weaknesses },
+    { key: 'opportunities', title: 'Opportunities', color: '#3b82f6', items: swot.opportunities },
+    { key: 'threats', title: 'Threats', color: '#f59e0b', items: swot.threats },
+  ] as const;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/65" onClick={onClose}>
+      <div
+        className="bg-gray-950 border border-gray-700 rounded-xl shadow-2xl max-w-6xl w-[96vw] max-h-[86vh] flex flex-col"
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-700">
+          <div>
+            <h2 className="text-sm font-semibold text-white">
+              {mode === 'swot' ? 'SWOT Workspace' : 'Risk Workspace'}
+            </h2>
+            <p className="text-[11px] text-gray-400">Visual view with quick copy templates from active ideas.</p>
+          </div>
+          <button onClick={onClose} className="text-gray-400 hover:text-white text-xs">Close</button>
+        </div>
+
+        <div className="px-4 py-3 border-b border-gray-800 grid grid-cols-1 md:grid-cols-4 gap-2">
+          <div className="md:col-span-2">
+            <label className="text-[10px] uppercase tracking-wide text-gray-400">Idea quick pick</label>
+            <select
+              className="mt-1 w-full bg-gray-900 border border-gray-700 rounded px-2 py-1.5 text-xs text-gray-100"
+              value={selectedIdeaId}
+              onChange={e => setSelectedIdeaId(e.target.value)}
+            >
+              <option value="">Select active idea...</option>
+              {ideas.map(idea => (
+                <option key={idea.idea_id} value={idea.idea_id}>{idea.idea_id} - {idea.title}</option>
+              ))}
+            </select>
+          </div>
+          <div className="md:col-span-2 flex items-end gap-2 flex-wrap">
+            <button
+              disabled={!selectedIdea}
+              onClick={() => selectedIdea && copyWithNotice(
+                `| | ${selectedIdea.title} (${selectedIdea.idea_id}) | |`,
+                'Copied SWOT helpful-side row',
+              )}
+              className="text-[11px] px-2.5 py-1.5 rounded border border-blue-400/60 text-blue-200 hover:bg-blue-500/15 disabled:opacity-40 flex items-center gap-1"
+            >
+              <Copy size={12} /> Copy SWOT (Helpful)
+            </button>
+            <button
+              disabled={!selectedIdea}
+              onClick={() => selectedIdea && copyWithNotice(
+                `| | | ${selectedIdea.title} (${selectedIdea.idea_id}) |`,
+                'Copied SWOT harmful-side row',
+              )}
+              className="text-[11px] px-2.5 py-1.5 rounded border border-amber-400/60 text-amber-200 hover:bg-amber-500/15 disabled:opacity-40 flex items-center gap-1"
+            >
+              <Copy size={12} /> Copy SWOT (Harmful)
+            </button>
+            <button
+              disabled={!selectedIdea}
+              onClick={() => selectedIdea && copyWithNotice(
+                `| RSK-NEW | ${selectedIdea.title} (${selectedIdea.idea_id}) | M | M | Open | Define mitigation and owner |`,
+                'Copied risk row template',
+              )}
+              className="text-[11px] px-2.5 py-1.5 rounded border border-red-400/60 text-red-200 hover:bg-red-500/15 disabled:opacity-40 flex items-center gap-1"
+            >
+              <Copy size={12} /> Copy Risk Row
+            </button>
+          </div>
+        </div>
+
+        {copyNotice && (
+          <div className="mx-4 mt-2 text-[11px] rounded border border-emerald-400/50 bg-emerald-500/10 text-emerald-200 px-2 py-1">
+            {copyNotice}
+          </div>
+        )}
+
+        <div className="flex-1 overflow-auto p-4">
+          {mode === 'swot' ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {swotQuadrants.map(quadrant => (
+                <div key={quadrant.key} className="border border-gray-700 rounded-lg bg-gray-900/60">
+                  <div className="px-3 py-2 border-b border-gray-700 flex items-center justify-between">
+                    <span className="text-xs font-semibold" style={{ color: quadrant.color }}>{quadrant.title}</span>
+                    <span className="text-[10px] font-mono text-gray-400">{quadrant.items.length}</span>
+                  </div>
+                  <div className="p-3 space-y-2">
+                    {quadrant.items.length === 0 && <div className="text-[11px] text-gray-500 italic">No entries</div>}
+                    {quadrant.items.map((item, idx) => (
+                      <div key={`${quadrant.key}-${idx}`} className="text-xs text-gray-200 border border-gray-700 rounded px-2 py-1.5 bg-gray-950/70">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-3">
+              {risks.map(risk => (
+                <div key={risk.id} className="border border-gray-700 rounded-lg bg-gray-900/60 p-3">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-xs font-mono text-gray-300">{risk.id}</span>
+                    <span className={cn('text-[10px] px-2 py-0.5 rounded border', statusStyle(risk.status))}>{risk.status}</span>
+                  </div>
+                  <div className="text-xs text-gray-100 mb-2 leading-relaxed">{risk.risk}</div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className={cn('text-[10px] px-2 py-0.5 rounded border', likelihoodStyle(risk.likelihood))}>
+                      Likelihood {risk.likelihood}
+                    </span>
+                    <span className={cn('text-[10px] px-2 py-0.5 rounded border', likelihoodStyle(risk.impact))}>
+                      Impact {risk.impact}
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-gray-300 mb-2">{risk.mitigation}</div>
+                  <button
+                    onClick={() => copyWithNotice(
+                      `| ${risk.id} | ${risk.risk} | ${risk.likelihood} | ${risk.impact} | ${risk.status} | ${risk.mitigation} |`,
+                      `Copied ${risk.id}`,
+                    )}
+                    className="text-[11px] px-2 py-1 rounded border border-gray-600 text-gray-200 hover:bg-gray-800 inline-flex items-center gap-1"
+                  >
+                    <Copy size={11} /> Copy row
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // ── FilterBar ────────────────────────────────────────────────────────────────
 
 interface FilterBarProps {
@@ -838,32 +1106,11 @@ export const ProjectManager: React.FC = () => {
       )}
 
       {sectionModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-          onClick={() => setSectionModal(null)}
-        >
-          <div
-            className="bg-gray-900 border border-gray-700 rounded-lg shadow-xl max-w-3xl w-full max-h-[80vh] flex flex-col"
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-700">
-              <h2 className="text-sm font-semibold text-white">
-                {sectionModal === 'swot' ? 'SWOT Analysis' : 'Risk Register'}
-              </h2>
-              <button
-                onClick={() => setSectionModal(null)}
-                className="text-gray-400 hover:text-white text-xs"
-              >
-                ✕ Close
-              </button>
-            </div>
-            <pre className="flex-1 overflow-auto p-4 text-xs text-gray-300 whitespace-pre-wrap font-mono">
-              {sectionModal === 'swot'
-                ? extractSection(kanbanRaw, 'SWOT Analysis')
-                : extractSection(kanbanRaw, 'Risk Register')}
-            </pre>
-          </div>
-        </div>
+        <InsightsModal
+          mode={sectionModal}
+          ideas={ideas}
+          onClose={() => setSectionModal(null)}
+        />
       )}
     </div>
   );
