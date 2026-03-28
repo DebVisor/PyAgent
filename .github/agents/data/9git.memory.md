@@ -25,6 +25,7 @@ and pull request coordination notes.
 - 2026-03-27 — prj0000088: scope validation passed (`docs/project/kanban.md` + `docs/project/prj0000088-ai-fuzzing-security/prj0000088-ai-fuzzing-security.git.md`) and unrelated untracked CodeQL examples were excluded; handoff still blocked because `run-precommit-checks` failed on existing repo-wide Ruff docstring issues in `src/core/memory/AutoMemCore.py`, so no commit/push/PR was performed and task was returned to @0master.
 - 2026-03-28 — prj0000091: branch and scope validation passed; staging was narrowed to approved project files while `docs/project/PROJECT_DASHBOARD.md` remained intentionally unstaged as out-of-scope. Mandatory post-staging `pre-commit` failed on existing repository-wide Ruff violations in `tests/` outside staged files, so commit/push/PR actions were blocked and disposition was recorded in project git artifact.
 - 2026-03-28 — prj0000092: branch and scope validation passed on `prj0000092-mypy-strict-enforcement`; narrow staging included project artifacts, strict-lane config/CI/tests, src/core compatibility fix, registry/kanban/nextproject updates, and agent-memory files, while `pip_audit_results.json` and `docs/project/PROJECT_DASHBOARD.md` were explicitly excluded as out-of-scope.
+- 2026-03-28 — prj0000092 follow-up: local commit and push succeeded, but `gh` PR creation was blocked by `HTTP 401: Bad credentials`; preserve pushed-branch PR URL in project git artifact and hand off for authenticated PR creation.
 
 ## Auto-handoff
 
