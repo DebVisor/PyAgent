@@ -47,8 +47,17 @@ interface Idea {
   idea_id: string;
   rank: number | null;
   title: string;
+  summary: string;
   source_path: string;
   mapped_project_ids: string[];
+}
+
+type InsightMode = 'swot' | 'risk';
+
+interface AgentFlowInboxItem {
+  agentId: '0master';
+  text: string;
+  createdAt: string;
 }
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -101,6 +110,146 @@ async function apiCreate(project: Project): Promise<Project> {
   if (!r.ok) throw new Error(`POST: HTTP ${r.status}`);
   return r.json();
 }
+
+async function apiPatchIdea(
+  ideaId: string,
+  patch: { title?: string; summary?: string; mapped_project_ids?: string[] },
+): Promise<Idea> {
+  const r = await fetch(`/api/ideas/${ideaId}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(patch),
+  });
+  if (!r.ok) throw new Error(`PATCH idea ${ideaId}: HTTP ${r.status}`);
+  return r.json();
+}
+
+async function apiRunPipeline(task: string): Promise<{ pipeline_id: string; status: string }> {
+  const r = await fetch('/api/pipeline/run', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ task }),
+  });
+  if (!r.ok) throw new Error(`POST pipeline/run: HTTP ${r.status}`);
+  return r.json();
+}
+
+async function appendAgentLog(agentId: string, linesToAppend: string[]): Promise<void> {
+  const readResp = await fetch(`/api/agent-log/${agentId}`);
+  const previous = readResp.ok ? ((await readResp.json()) as { content?: string }).content ?? '' : '';
+  const next = [previous.trimEnd(), ...linesToAppend].filter(Boolean).join('\n');
+  await fetch(`/api/agent-log/${agentId}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ content: `${next}\n` }),
+  });
+}
+
+function enqueueAgentflowInbox(item: AgentFlowInboxItem): void {
+  const key = 'pyagent.agentflow.inbox';
+  const raw = localStorage.getItem(key);
+  let queue: AgentFlowInboxItem[] = [];
+  if (raw) {
+    try {
+      queue = JSON.parse(raw) as AgentFlowInboxItem[];
+    } catch {
+      queue = [];
+    }
+  }
+  queue.push(item);
+  localStorage.setItem(key, JSON.stringify(queue));
+}
+
+interface IdeaEditModalProps {
+  idea: Idea;
+  onSave: (idea: Idea) => void;
+  onClose: () => void;
+}
+
+const IdeaEditModal: React.FC<IdeaEditModalProps> = ({ idea, onSave, onClose }) => {
+  const [title, setTitle] = useState(idea.title);
+  const [summary, setSummary] = useState(idea.summary);
+  const [mappedProjects, setMappedProjects] = useState(idea.mapped_project_ids.join(', '));
+  const [saving, setSaving] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+
+  const save = async () => {
+    setSaving(true);
+    setErr(null);
+    try {
+      const mapped = mappedProjects
+        .split(',')
+        .map(token => token.trim().toLowerCase())
+        .filter(Boolean);
+      const updated = await apiPatchIdea(idea.idea_id, {
+        title: title.trim(),
+        summary: summary.trim(),
+        mapped_project_ids: mapped,
+      });
+      onSave(updated);
+    } catch (e) {
+      setErr(String((e as Error).message));
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+      <div className="bg-os-window border border-os-border rounded-xl shadow-2xl w-[560px] max-h-[90vh] overflow-y-auto p-5">
+        <div className="flex items-center justify-between mb-4">
+          <span className="font-semibold text-sm text-os-text">Edit {idea.idea_id}</span>
+          <button onClick={onClose} className="text-os-text/40 hover:text-os-text"><X size={14} /></button>
+        </div>
+
+        <div className="space-y-3">
+          <div>
+            <div className="text-[10px] text-os-text/50 mb-0.5">Title</div>
+            <input
+              className="w-full bg-os-bg border border-os-border rounded px-2 py-1 text-xs text-os-text outline-none focus:border-os-accent"
+              value={title}
+              onChange={e => setTitle(e.target.value)}
+            />
+          </div>
+
+          <div>
+            <div className="text-[10px] text-os-text/50 mb-0.5">Summary</div>
+            <textarea
+              className="w-full h-20 bg-os-bg border border-os-border rounded px-2 py-1 text-xs text-os-text outline-none focus:border-os-accent resize-none"
+              value={summary}
+              onChange={e => setSummary(e.target.value)}
+            />
+          </div>
+
+          <div>
+            <div className="text-[10px] text-os-text/50 mb-0.5">Mapped projects (comma-separated)</div>
+            <input
+              className="w-full bg-os-bg border border-os-border rounded px-2 py-1 text-xs text-os-text outline-none focus:border-os-accent font-mono"
+              value={mappedProjects}
+              onChange={e => setMappedProjects(e.target.value)}
+              placeholder="prj0000001, prj0000002"
+            />
+          </div>
+        </div>
+
+        {err && <div className="mt-3 text-[10px] text-red-400 font-mono">{err}</div>}
+
+        <div className="flex justify-end gap-2 mt-4">
+          <button onClick={onClose} className="text-xs px-3 py-1.5 border border-os-border rounded text-os-text/60 hover:text-os-text">
+            Cancel
+          </button>
+          <button
+            onClick={save}
+            disabled={saving}
+            className="text-xs px-3 py-1.5 bg-os-accent text-black rounded font-semibold hover:opacity-90 disabled:opacity-50 flex items-center gap-1"
+          >
+            {saving ? <Loader2 size={11} className="animate-spin" /> : <Check size={11} />}
+            Save Idea
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 // ── EditModal ─────────────────────────────────────────────────────────────────
 
@@ -523,9 +672,21 @@ interface IdeasColumnProps {
   ideas: Idea[];
   ideasLoading: boolean;
   ideasError: string | null;
+  promotingIdeaId: string | null;
+  onEditIdea: (idea: Idea) => void;
+  onOpenInsightForIdea: (mode: InsightMode, ideaId: string) => void;
+  onPromoteIdea: (idea: Idea) => void;
 }
 
-const IdeasColumn: React.FC<IdeasColumnProps> = ({ ideas, ideasLoading, ideasError }) => (
+const IdeasColumn: React.FC<IdeasColumnProps> = ({
+  ideas,
+  ideasLoading,
+  ideasError,
+  promotingIdeaId,
+  onEditIdea,
+  onOpenInsightForIdea,
+  onPromoteIdea,
+}) => (
   <div className="min-w-[240px] w-64 flex flex-col shrink-0 rounded-lg transition-colors">
     <div
       className="flex items-center justify-between px-3 py-2 rounded-t-lg mb-2 text-black"
@@ -565,6 +726,7 @@ const IdeasColumn: React.FC<IdeasColumnProps> = ({ ideas, ideasLoading, ideasErr
             </span>
           </div>
           <div className="text-[10px] font-mono text-os-text/45 mb-1.5">{idea.idea_id}</div>
+          <div className="text-[10px] text-os-text/60 mb-1.5 line-clamp-2">{idea.summary}</div>
           <div className="text-[10px] text-os-text/50 font-mono truncate" title={idea.source_path}>
             {idea.source_path}
           </div>
@@ -580,6 +742,33 @@ const IdeasColumn: React.FC<IdeasColumnProps> = ({ ideas, ideasLoading, ideasErr
               ))}
             </div>
           )}
+          <div className="mt-2.5 grid grid-cols-2 gap-1.5">
+            <button
+              onClick={() => onEditIdea(idea)}
+              className="text-[10px] px-1.5 py-1 rounded border border-os-border text-os-text/70 hover:text-os-text hover:border-os-accent"
+            >
+              Edit
+            </button>
+            <button
+              onClick={() => onOpenInsightForIdea('swot', idea.idea_id)}
+              className="text-[10px] px-1.5 py-1 rounded border border-blue-400/60 text-blue-200 hover:bg-blue-500/15"
+            >
+              SWOT
+            </button>
+            <button
+              onClick={() => onOpenInsightForIdea('risk', idea.idea_id)}
+              className="text-[10px] px-1.5 py-1 rounded border border-yellow-400/60 text-yellow-200 hover:bg-yellow-500/15"
+            >
+              Risk
+            </button>
+            <button
+              onClick={() => onPromoteIdea(idea)}
+              disabled={promotingIdeaId === idea.idea_id}
+              className="text-[10px] px-1.5 py-1 rounded border border-purple-400/70 text-purple-200 hover:bg-purple-500/15 disabled:opacity-50"
+            >
+              {promotingIdeaId === idea.idea_id ? 'Starting…' : 'To Discovery'}
+            </button>
+          </div>
         </div>
       ))}
     </div>
@@ -697,14 +886,19 @@ async function copyTextToClipboard(text: string): Promise<void> {
 interface InsightsModalProps {
   mode: 'swot' | 'risk';
   ideas: Idea[];
+  initialIdeaId?: string | null;
   onClose: () => void;
 }
 
-const InsightsModal: React.FC<InsightsModalProps> = ({ mode, ideas, onClose }) => {
+const InsightsModal: React.FC<InsightsModalProps> = ({ mode, ideas, initialIdeaId, onClose }) => {
   const risks = parseRiskRegister(kanbanRaw);
   const swot = parseSwot(kanbanRaw);
-  const [selectedIdeaId, setSelectedIdeaId] = useState<string>(ideas[0]?.idea_id ?? '');
+  const [selectedIdeaId, setSelectedIdeaId] = useState<string>(initialIdeaId ?? ideas[0]?.idea_id ?? '');
   const [copyNotice, setCopyNotice] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (initialIdeaId) setSelectedIdeaId(initialIdeaId);
+  }, [initialIdeaId]);
 
   const selectedIdea = ideas.find(i => i.idea_id === selectedIdeaId) ?? null;
 
@@ -948,11 +1142,19 @@ export const ProjectManager: React.FC = () => {
   const [selectedLane, setSelectedLane] = useState<Lane | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [editTarget, setEditTarget] = useState<Project | 'new' | null>(null);
+  const [editIdeaTarget, setEditIdeaTarget] = useState<Idea | null>(null);
   const [sectionModal, setSectionModal] = useState<null | 'swot' | 'risk'>(null);
+  const [insightIdeaId, setInsightIdeaId] = useState<string | null>(null);
+  const [promotingIdeaId, setPromotingIdeaId] = useState<string | null>(null);
   const dragId = useRef<string | null>(null);
 
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setSectionModal(null); };
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSectionModal(null);
+        setEditIdeaTarget(null);
+      }
+    };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, []);
@@ -1009,6 +1211,80 @@ export const ProjectManager: React.FC = () => {
     });
     reloadIdeas();
     setEditTarget(null);
+  };
+
+  const applyIdeaUpdate = (saved: Idea) => {
+    setIdeas(prev => prev.map(idea => (idea.idea_id === saved.idea_id ? saved : idea)));
+    setEditIdeaTarget(null);
+  };
+
+  const openInsightFromIdea = (mode: InsightMode, ideaId: string) => {
+    setInsightIdeaId(ideaId);
+    setSectionModal(mode);
+  };
+
+  const triggerAgentflowForIdea = async (idea: Idea, projectId: string): Promise<void> => {
+    const prompt = [
+      `Start project workflow for ${projectId} from idea ${idea.idea_id}.`,
+      `Idea title: ${idea.title}`,
+      `Idea summary: ${idea.summary}`,
+      `Idea source: ${idea.source_path}`,
+      `Required flow: @0master -> @1project -> @2think -> @3design -> @4plan -> @5test -> @6code -> @7exec -> @8ql -> @9git.`,
+    ].join('\n');
+
+    enqueueAgentflowInbox({
+      agentId: '0master',
+      text: prompt,
+      createdAt: new Date().toISOString(),
+    });
+
+    const pipeline = await apiRunPipeline(prompt);
+    await appendAgentLog('0master', [
+      `[${new Date().toLocaleTimeString()}] User: ${prompt}`,
+      `[${new Date().toLocaleTimeString()}] Agentflow run started: ${pipeline.pipeline_id}`,
+      `[${new Date().toLocaleTimeString()}] @0master (via FLM (default)): Received — processing your request…`,
+    ]);
+  };
+
+  const promoteIdeaToDiscovery = async (idea: Idea) => {
+    setPromotingIdeaId(idea.idea_id);
+    try {
+      let targetProjectId = idea.mapped_project_ids[0] ?? null;
+
+      if (targetProjectId) {
+        await apiPatch(targetProjectId, { lane: 'Discovery' });
+      } else {
+        const createdProject = await apiCreate({
+          id: NEXT_PROJECT_ID,
+          name: idea.title,
+          lane: 'Discovery',
+          summary: idea.summary,
+          branch: null,
+          pr: null,
+          priority: 'P3',
+          budget_tier: 'S',
+          tags: ['idea', idea.idea_id],
+          created: TODAY,
+          updated: TODAY,
+        });
+        targetProjectId = createdProject.id;
+        const updatedIdea = await apiPatchIdea(idea.idea_id, {
+          mapped_project_ids: [createdProject.id],
+        });
+        setIdeas(prev => prev.map(current => (current.idea_id === updatedIdea.idea_id ? updatedIdea : current)));
+      }
+
+      if (targetProjectId) {
+        await triggerAgentflowForIdea(idea, targetProjectId);
+      }
+      reload();
+      reloadIdeas();
+    } catch (e) {
+      const message = String((e as Error).message);
+      setIdeasError(message);
+    } finally {
+      setPromotingIdeaId(null);
+    }
   };
 
   // Drag-and-drop: drop onto a lane column
@@ -1076,7 +1352,15 @@ export const ProjectManager: React.FC = () => {
       <div className="flex-1 p-3 min-h-0">
         <div className="flex-1 overflow-x-auto overflow-y-hidden">
           <div className="flex gap-3 h-full">
-            <IdeasColumn ideas={ideas} ideasLoading={ideasLoading} ideasError={ideasError} />
+            <IdeasColumn
+              ideas={ideas}
+              ideasLoading={ideasLoading}
+              ideasError={ideasError}
+              promotingIdeaId={promotingIdeaId}
+              onEditIdea={setEditIdeaTarget}
+              onOpenInsightForIdea={openInsightFromIdea}
+              onPromoteIdea={promoteIdeaToDiscovery}
+            />
             <FlowColumn
               projectsByLane={byLane}
               onEdit={p => setEditTarget(p)}
@@ -1105,11 +1389,23 @@ export const ProjectManager: React.FC = () => {
         />
       )}
 
+      {editIdeaTarget !== null && (
+        <IdeaEditModal
+          idea={editIdeaTarget}
+          onSave={applyIdeaUpdate}
+          onClose={() => setEditIdeaTarget(null)}
+        />
+      )}
+
       {sectionModal && (
         <InsightsModal
           mode={sectionModal}
           ideas={ideas}
-          onClose={() => setSectionModal(null)}
+          initialIdeaId={insightIdeaId}
+          onClose={() => {
+            setSectionModal(null);
+            setInsightIdeaId(null);
+          }}
         />
       )}
     </div>
