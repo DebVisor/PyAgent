@@ -44,25 +44,30 @@ except ImportError:
 # Result models
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class OperationResult:
     """Single benchmark measurement."""
+
     operation:  str          # 'write' | 'read' | 'sort' | 'search'
     method:     str          # 'btree' | 'hash' | 'hnsw' | 'gin_tsv' | …
     rows:       int          # table size at time of measurement
     latency_ms: float
     rows_returned: int = 0
 
+
 @dataclass
 class BenchmarkReport:
     """Full report returned to the frontend."""
+
     run_id:       str = field(default_factory=lambda: str(uuid.uuid4())[:8])
     total_rows:   int = 0
     results:      list[OperationResult] = field(default_factory=list)
-    errors:       list[str]             = field(default_factory=list)
-    completed_at: Optional[str]         = None
+    errors:       list[str] = field(default_factory=list)
+    completed_at: Optional[str] = None
 
     def to_json(self, indent: int = 2) -> str:
+        """Serialize the benchmark report to JSON."""
         return json.dumps(asdict(self), indent=indent, default=str)
 
 
@@ -76,11 +81,14 @@ WORD_POOL = [
     "chunk", "score", "weight", "decay", "keyword", "cluster",
 ]
 
+
 def _random_content(length: int = 120) -> str:
+    """Generate random content text for memory entries."""
     words = random.choices(WORD_POOL, k=length // 6)  # noqa: S311
     return " ".join(words) + " " + "".join(
         random.choices(string.ascii_lowercase, k=10)  # noqa: S311
     )
+
 
 def _random_embedding(dim: int = 1536) -> list[float]:
     """Unit-normalised random embedding."""
@@ -88,10 +96,14 @@ def _random_embedding(dim: int = 1536) -> list[float]:
     mag = math.sqrt(sum(x * x for x in v)) or 1.0
     return [x / mag for x in v]
 
+
 def _random_keywords(n: int = 4) -> list[str]:
+    """Generate a random set of keywords for GIN array testing."""
     return random.sample(WORD_POOL, min(n, len(WORD_POOL)))
 
+
 def _random_importance() -> float:
+    """Generate a random importance value between 0 and 1."""
     return round(random.random(), 4)  # noqa: S311
 
 
@@ -117,17 +129,19 @@ class BenchmarkRunner:
     ) -> None:
         if not _HAS_ASYNCPG:
             raise ImportError("asyncpg required — pip install asyncpg pgvector")
-        self._dsn        = dsn
+        self._dsn = dsn
         self._row_counts = row_counts or [100, 500, 1_000, 5_000]
-        self._dim        = embed_dim
-        self._pool: Any  = None
-        self._report     = BenchmarkReport()
+        self._dim = embed_dim
+        self._pool: Any = None
+        self._report = BenchmarkReport()
 
     async def __aenter__(self) -> "BenchmarkRunner":
+        """Enter the async context manager."""
         self._pool = await asyncpg.create_pool(self._dsn, min_size=2, max_size=8)
         return self
 
     async def __aexit__(self, *_: Any) -> None:
+        """Exit the async context manager."""
         if self._pool:
             await self._pool.close()
 
@@ -136,6 +150,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_writes(self, n: int) -> list[uuid.UUID]:
+        """Benchmark bulk writes with random data."""
         inserted_ids: list[uuid.UUID] = []
         async with self._pool.acquire() as conn:
             # Ensure bench agent
@@ -178,6 +193,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_read_btree(self, sample_ids: list[uuid.UUID]) -> None:
+        """Benchmark single-row reads by primary key (B-tree UUID pk)."""
         k = min(50, len(sample_ids))
         ids = random.sample(sample_ids, k)
         async with self._pool.acquire() as conn:
@@ -198,6 +214,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_read_hash(self) -> None:
+        """Benchmark hash index equality queries."""
         async with self._pool.acquire() as conn:
             t0 = time.perf_counter()
             for _ in range(50):
@@ -219,6 +236,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_sort(self) -> None:
+        """Benchmark B-tree ORDER BY queries."""
         queries = {
             "btree_importance_desc": (
                 "SELECT id,importance FROM memories "
@@ -251,6 +269,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_hnsw(self) -> None:
+        """Benchmark HNSW vector similarity search."""
         qv = _random_embedding(self._dim)
         qv_str = f"[{','.join(str(x) for x in qv)}]"
         async with self._pool.acquire() as conn:
@@ -278,6 +297,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_gin_tsv(self) -> None:
+        """Benchmark full-text search using GIN index on tsvector."""
         term = random.choice(WORD_POOL)  # noqa: S311
         async with self._pool.acquire() as conn:
             t0 = time.perf_counter()
@@ -286,7 +306,7 @@ class BenchmarkRunner:
                 SELECT id, ts_rank_cd(tsv, plainto_tsquery('english',$1)) AS r
                 FROM memories
                 WHERE agent_id='bench'
-                  AND tsv @@ plainto_tsquery('english',$1)
+                    AND tsv @@ plainto_tsquery('english',$1)
                 ORDER BY r DESC LIMIT 10
                 """,
                 term,
@@ -305,6 +325,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_gin_keywords(self) -> None:
+        """Benchmark keyword search using GIN index on array."""
         kw = random.choice(WORD_POOL)  # noqa: S311
         async with self._pool.acquire() as conn:
             t0 = time.perf_counter()
@@ -312,7 +333,7 @@ class BenchmarkRunner:
                 """
                 SELECT id FROM memories
                 WHERE agent_id='bench'
-                  AND keywords @> ARRAY[$1]
+                    AND keywords @> ARRAY[$1]
                 LIMIT 10
                 """,
                 kw,
@@ -331,13 +352,14 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_brin(self) -> None:
+        """Benchmark range queries using BRIN index on timestamp."""
         async with self._pool.acquire() as conn:
             t0 = time.perf_counter()
             rows = await conn.fetch(
                 """
                 SELECT id FROM memories
                 WHERE agent_id='bench'
-                  AND created_at > NOW() - INTERVAL '7 days'
+                    AND created_at > NOW() - INTERVAL '7 days'
                 LIMIT 20
                 """,
             )
@@ -355,6 +377,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_seqscan(self) -> None:
+        """Benchmark full sequential scan (baseline comparison)."""
         term = random.choice(WORD_POOL)  # noqa: S311
         async with self._pool.acquire() as conn:
             await conn.execute("SET enable_seqscan = on; SET enable_indexscan = off;")
@@ -378,6 +401,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _bench_search_ltree(self) -> None:
+        """Benchmark LTREE subtree queries for hierarchy / parent-child relationships."""
         async with self._pool.acquire() as conn:
             root = await conn.fetchrow(
                 "SELECT path FROM memories WHERE agent_id='bench' AND path IS NOT NULL LIMIT 1"
@@ -407,6 +431,7 @@ class BenchmarkRunner:
     # ------------------------------------------------------------------
 
     async def _cleanup(self) -> None:
+        """Cleanup benchmark data from the database."""
         async with self._pool.acquire() as conn:
             await conn.execute("DELETE FROM memories WHERE agent_id='bench'")
 
@@ -421,7 +446,7 @@ class BenchmarkRunner:
         for target_rows in self._row_counts:
             # Insert enough new rows to reach the tier
             current = len(all_ids)
-            needed  = target_rows - current
+            needed = target_rows - current
             if needed > 0:
                 new_ids = await self._bench_writes(needed)
                 all_ids.extend(new_ids)

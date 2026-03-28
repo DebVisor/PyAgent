@@ -25,11 +25,8 @@ from __future__ import annotations
 
 import asyncio
 import time
-from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Protocol, runtime_checkable
-
-if TYPE_CHECKING:
-    from src.core.reasoning.EvaluationEngine import EvaluationEngine
+from dataclasses import dataclass
+from typing import Protocol, runtime_checkable
 
 # ---------------------------------------------------------------------------
 # Sentinel for cap enforcement
@@ -81,6 +78,22 @@ class LlmCallable(Protocol):
             The LLM response text.
 
         """
+        ...  # pragma: no cover
+
+
+class EvaluatorLike(Protocol):
+    """Protocol for the evaluator used by CortCore."""
+
+    def select_best(self, chains: list["ReasoningChain"]) -> "ReasoningChain":
+        """Select the best chain from already scored alternatives."""
+        ...  # pragma: no cover
+
+    def score_and_assign(
+        self,
+        chains: list["ReasoningChain"],
+        prompt: str,
+    ) -> list["ReasoningChain"]:
+        """Assign scores to a chain list and return scored chains."""
         ...  # pragma: no cover
 
 
@@ -276,7 +289,7 @@ class CortCore:
     def __init__(
         self,
         llm: LlmCallable,
-        evaluator: EvaluationEngine,
+        evaluator: EvaluatorLike,
         config: CortConfig,
     ) -> None:
         """Initialise a CortCore instance.
@@ -309,9 +322,7 @@ class CortCore:
 
         """
         if self._active:
-            raise CortRecursionError(
-                "CortCore.run called re-entrantly; potential infinite loop detected."
-            )
+            raise CortRecursionError("CortCore.run called re-entrantly; potential infinite loop detected.")
 
         self._active = True
         start_time = time.monotonic()
@@ -405,10 +416,7 @@ class CortCore:
                 attempt raise exceptions.
 
         """
-        temperatures = [
-            self.config.base_temp + i * self.config.temp_step
-            for i in range(self.config.m_alternatives)
-        ]
+        temperatures = [self.config.base_temp + i * self.config.temp_step for i in range(self.config.m_alternatives)]
 
         if seed_chain:
             llm_prompt = (
@@ -423,10 +431,7 @@ class CortCore:
 
             Args:
                 idx: Zero-based alternative index.
-                temp: Sampling temperature for this call.
-
-            Returns:
-                A :class:`ReasoningChain` with the LLM's response as text.
+                temp: Temperature used for this alternative call.
 
             """
             text = await self._llm(
@@ -455,8 +460,7 @@ class CortCore:
 
         if not chains:
             raise AlternativesGenerationError(
-                f"All {self.config.m_alternatives} LLM calls failed in round {round_n}. "
-                f"Errors: {errors}"
+                f"All {self.config.m_alternatives} LLM calls failed in round {round_n}. Errors: {errors}"
             )
 
         return chains

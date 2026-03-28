@@ -30,10 +30,7 @@ from __future__ import annotations
 import dataclasses
 import re
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING
-
-if TYPE_CHECKING:
-    from src.core.reasoning.CortCore import LlmCallable, ReasoningChain
+from typing import Any
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -96,11 +93,7 @@ class RubricScore:
 
         Uses ``object.__setattr__`` because the dataclass is frozen.
         """
-        total = (
-            0.5 * self.correctness
-            + 0.3 * self.completeness
-            + 0.2 * self.reasoning_depth
-        )
+        total = 0.5 * self.correctness + 0.3 * self.completeness + 0.2 * self.reasoning_depth
         object.__setattr__(self, "weighted_total", total)
 
 
@@ -122,7 +115,7 @@ class EvaluationEngine:
     def __init__(
         self,
         use_llm_judge: bool = False,
-        llm: LlmCallable | None = None,
+        llm: Any | None = None,
     ) -> None:
         """Initialise the EvaluationEngine.
 
@@ -171,9 +164,7 @@ class EvaluationEngine:
 
         """
         text_lower = chain.lower()
-        penalty = sum(
-            1 for marker in _CONTRADICTION_MARKERS if marker in text_lower
-        )
+        penalty = sum(1 for marker in _CONTRADICTION_MARKERS if marker in text_lower)
         return max(0.0, 1.0 - 0.2 * penalty)
 
     def _score_completeness(self, chain: str, prompt: str) -> float:
@@ -216,21 +207,17 @@ class EvaluationEngine:
 
         """
         text_lower = chain.lower()
-        connective_count = sum(
-            1 for connective in _LOGICAL_CONNECTIVES if connective in text_lower
-        )
+        connective_count = sum(1 for connective in _LOGICAL_CONNECTIVES if connective in text_lower)
 
         base_score = min(1.0, connective_count / _CONNECTIVES_FOR_FULL_SCORE)
 
-        has_structure = bool(
-            _NUMBERED_LIST_RE.search(chain) or _CODE_BLOCK_RE.search(chain)
-        )
+        has_structure = bool(_NUMBERED_LIST_RE.search(chain) or _CODE_BLOCK_RE.search(chain))
         if has_structure:
             base_score = min(1.0, base_score + _STRUCTURE_BONUS)
 
         return base_score
 
-    def select_best(self, chains: list[ReasoningChain]) -> ReasoningChain:
+    def select_best(self, chains: list[Any]) -> Any:
         """Return the highest-scoring chain; tie-break by lowest alternative_idx.
 
         Args:
@@ -250,9 +237,9 @@ class EvaluationEngine:
 
     def score_and_assign(
         self,
-        chains: list[ReasoningChain],
+        chains: list[Any],
         prompt: str,
-    ) -> list[ReasoningChain]:
+    ) -> list[Any]:
         """Score each chain and return new instances with scores assigned.
 
         Args:
@@ -264,10 +251,7 @@ class EvaluationEngine:
             ``score`` field set to the computed ``weighted_total``.
 
         """
-        return [
-            dataclasses.replace(chain, score=self.score(chain.text, prompt).weighted_total)
-            for chain in chains
-        ]
+        return [dataclasses.replace(chain, score=self.score(chain.text, prompt).weighted_total) for chain in chains]
 
 
 def validate() -> bool:
