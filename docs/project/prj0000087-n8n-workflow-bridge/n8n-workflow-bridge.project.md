@@ -1,39 +1,40 @@
-# n8n-workflow-bridge - Project Overview
+# n8n-workflow-bridge
 
-_Status: DONE_
-_Owner: @1project | Updated: 2026-03-27_
+**Project ID:** `prj0000087-n8n-workflow-bridge`
 
-## Project Identity
-**Project ID:** prj0000087
-**Short name:** n8n-workflow-bridge
-**Project folder:** `docs/project/prj0000087-n8n-workflow-bridge/`
+## Links
 
-## Project Overview
-Establish the project workspace and lifecycle artifacts for the n8n workflow bridge initiative so downstream agents can perform discovery, design, and implementation with a consistent project contract.
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-## Goal & Scope
-**Goal:** Initialize project documentation artifacts for prj0000087 on the assigned branch and prepare the project for downstream workflow handoff.
-**In scope:** Create the project overview, create canonical think/design/plan documents, and pre-create test/code/exec/ql/git lifecycle stubs.
-**Out of scope:** Technical design decisions, implementation code changes, production deployment, and execution of downstream agent work.
+## Tasks
 
-## Branch Plan
-**Expected branch:** prj0000087-n8n-workflow-bridge
-**Scope boundary:** docs/project/prj0000087-n8n-workflow-bridge/, docs/project/kanban.md, data/projects.json, .github/agents/data/1project.memory.md
-**Handoff rule:** `@9git` must refuse staging, commit, push, or PR work unless the active branch matches this project and changed files stay inside the scope boundary.
-**Failure rule:** If the project ID or branch plan is missing, inherited, conflicting, or ambiguous, return the task to `@0master` before downstream handoff.
-
-## Milestones
-| # | Milestone | Agent | Status |
-|---|---|---|---|
-| M1 | Options explored | @2think | NOT_STARTED |
-| M2 | Design confirmed | @3design | NOT_STARTED |
-| M3 | Plan finalized | @4plan | NOT_STARTED |
-| M4 | Tests written | @5test | NOT_STARTED |
-| M5 | Code implemented | @6code | NOT_STARTED |
-| M6 | Integration validated | @7exec | NOT_STARTED |
-| M7 | Security clean | @8ql | NOT_STARTED |
-| M8 | Committed | @9git | NOT_STARTED |
+_No checkbox tasks found in the plan file._
 
 ## Status
-_Last updated: 2026-03-27_
-Project folder initialized on branch `prj0000087-n8n-workflow-bridge` with overview and 8 lifecycle stubs. Ready for handoff to @2think.
+
+0 of 0 tasks completed
+
+## Code detection
+
+- Code detected in:
+  - `src\core\crdt_bridge.py`
+  - `src\core\n8nbridge\N8nBridgeConfig.py`
+  - `src\core\n8nbridge\N8nBridgeCore.py`
+  - `src\core\n8nbridge\N8nBridgeMixin.py`
+  - `src\core\n8nbridge\N8nEventAdapter.py`
+  - `src\core\n8nbridge\N8nHttpClient.py`
+  - `src\core\security_bridge.py`
+  - `tests\ci\test_ci_workflow.py`
+  - `tests\ci\test_workflow_count.py`
+  - `tests\docs\test_agent_workflow_policy_docs.py`
+  - `tests\test_core_workflow_engine.py`
+  - `tests\test_crdt_bridge.py`
+  - `tests\test_n8n_bridge.py`
+  - `tests\test_N8nBridgeConfig.py`
+  - `tests\test_N8nBridgeCore.py`
+  - `tests\test_N8nBridgeMixin.py`
+  - `tests\test_N8nEventAdapter.py`
+  - `tests\test_N8nHttpClient.py`
+  - `tests\test_security_bridge.py`
+  - `tests\test_workflow_engine.py`

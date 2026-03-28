@@ -1,6 +1,6 @@
 # llm-context-consolidation
 
-**Project ID:** `prj004-llm-context-consolidation`
+**Project ID:** `prj0000004`
 
 ## Links
 
@@ -25,6 +25,8 @@
 - Code detected in:
   - `scripts\consolidate_llm_context.py`
   - `scripts\generate_llms_architecture.py`
+  - `src\core\ContextTransactionManager.py`
+  - `src\transactions\ContextTransactionManager.py`
   - `tests\integration\test_context_and_skills.py`
   - `tests\test_consolidate_llm_context_cleanup_report.py`
   - `tests\test_consolidate_llm_context_cli.py`
@@ -33,3 +35,5 @@
   - `tests\test_consolidate_llm_context_outputs.py`
   - `tests\test_context_components.py`
   - `tests\test_context_manager.py`
+  - `tests\test_context_window.py`
+  - `tests\test_ContextTransactionManager.py`

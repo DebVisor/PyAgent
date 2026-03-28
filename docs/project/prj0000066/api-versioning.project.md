@@ -1,32 +1,27 @@
-# api-versioning — Project Overview
+# api-versioning
 
-_Owner: @1project | Status: In Sprint_
+**Project ID:** `prj0000066`
 
-**Goal:** Add versioned API routing (`/api/v1/`) so that future breaking changes can be introduced without disrupting existing clients.
+## Links
 
-**In scope:**
-- `backend/app.py` — wrap existing `_auth_router` routes under `/api/v1/` prefix; keep bare `/api/` as deprecated aliases returning `Deprecation` response header
-- `tests/test_api_versioning.py` — tests
-- `docs/project/prj0000066/` — 9 artifacts
-- `data/projects.json` + `docs/project/kanban.md` — lane transitions
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-**Out of scope:** Actual schema changes, content negotiation, OpenAPI multi-version docs.
+## Tasks
 
-## Branch Plan
+_No checkbox tasks found in the plan file._
 
-**Expected branch:** `prj0000066-api-versioning`
+## Status
 
-**Scope boundary:** Only `backend/app.py`, `tests/test_api_versioning.py`, and the 9 artifacts may be modified on this branch.
+0 of 0 tasks completed
 
-**Handoff rule:** `@9git` must confirm `OBSERVED_BRANCH == prj0000066-api-versioning` before staging.
+## Code detection
 
-**Failure rule:** If tests fail or branch mismatch is detected, stop and notify `@0master`.
-
-
-## Legacy Project Overview Exception
-
-This project overview predates the modern Project Identity / Goal and Scope / Branch Plan
-template. It was authored with an earlier workflow format and has not been migrated.
-The project was completed successfully; the deviation is a documentation formatting issue only.
-
-Migration to the modern template is on record with @0master.
+- Code detected in:
+  - `src\chat\api.py`
+  - `tests\docs\test_api_docs_exist.py`
+  - `tests\test_api_ideas.py`
+  - `tests\test_api_projects_lane_sync.py`
+  - `tests\test_api_versioning.py`
+  - `tests\test_chat_api.py`
+  - `tests\test_registry_api.py`

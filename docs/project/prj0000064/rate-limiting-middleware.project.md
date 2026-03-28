@@ -1,34 +1,26 @@
-# rate-limiting-middleware — Project Overview
+# rate-limiting-middleware
 
-_Owner: @1project | Status: In Sprint_
+**Project ID:** `prj0000064`
 
-**Goal:** Add token-bucket rate limiting middleware to all FastAPI REST endpoints with configurable per-route limits, returning `429 Too Many Requests` on breach.
+## Links
 
-**In scope:**
-- `backend/rate_limiter.py` — token-bucket implementation + FastAPI middleware
-- `backend/app.py` — add `RateLimitMiddleware` to the app
-- `backend/requirements.txt` — no new deps (stdlib only)
-- `tests/test_rate_limiting.py` — tests
-- `docs/project/prj0000064/` — 9 artifacts
-- `data/projects.json` + `docs/project/kanban.md` — lane transitions
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-**Out of scope:** Redis-backed distributed rate limiting, per-user quotas, auth-aware limits.
+## Tasks
 
-## Branch Plan
+_No checkbox tasks found in the plan file._
 
-**Expected branch:** `prj0000064-rate-limiting-middleware`
+## Status
 
-**Scope boundary:** Only the files listed above may be modified on this branch.
+0 of 0 tasks completed
 
-**Handoff rule:** `@9git` must confirm `OBSERVED_BRANCH == prj0000064-rate-limiting-middleware` before staging, committing, or creating a PR.
+## Code detection
 
-**Failure rule:** If tests fail or branch mismatch is detected, stop and notify `@0master`.
-
-
-## Legacy Project Overview Exception
-
-This project overview predates the modern Project Identity / Goal and Scope / Branch Plan
-template. It was authored with an earlier workflow format and has not been migrated.
-The project was completed successfully; the deviation is a documentation formatting issue only.
-
-Migration to the modern template is on record with @0master.
+- Code detected in:
+  - `rust_core\src\inference\sampling\strategies.rs`
+  - `scripts\generate_llms_architecture.py`
+  - `scripts\generate_project_dashboard.py`
+  - `scripts\generate_test_data.py`
+  - `scripts\GeneratePmTemplates.py`
+  - `tests\test_rate_limiting.py`

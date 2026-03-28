@@ -1,36 +1,42 @@
-# agent-timeout-watchdog — Project Overview
+# agent-timeout-watchdog
 
-**ID:** prj0000068  
-**Name:** agent-timeout-watchdog  
-**Branch:** prj0000068-agent-timeout-watchdog  
-**Priority:** P3  
-**Budget:** M  
-**Tags:** agents, reliability, watchdog
+**Project ID:** `prj0000068`
 
-## Goal
-Provide a configurable per-agent execution timeout with graceful shutdown, a retry budget, and a dead-letter queue (DLQ) for tasks that exhaust their retry budget.
+## Links
 
-## Scope boundary
-- **New file:** `backend/watchdog.py` — `AgentWatchdog` class
-- **Modified:** `backend/app.py` — expose `GET /api/watchdog/status` endpoint
-- **New file:** `tests/test_watchdog.py` — 6 tests
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-Out of scope: persistent DLQ storage, frontend UI, Rust acceleration.
+## Tasks
 
-## Branch Plan
-`prj0000068-agent-timeout-watchdog`
+_No checkbox tasks found in the plan file._
 
-## Handoff rule
-Merge only after all 6 tests pass and PR is approved.
+## Status
 
-## Failure rule
-If tests fail, return to @6code before creating PR.
+0 of 0 tasks completed
 
+## Code detection
 
-## Legacy Project Overview Exception
-
-This project overview predates the modern Project Identity / Goal and Scope / Branch Plan
-template. It was authored with an earlier workflow format and has not been migrated.
-The project was completed successfully; the deviation is a documentation formatting issue only.
-
-Migration to the modern template is on record with @0master.
+- Code detected in:
+  - `rust_core\src\agents.rs`
+  - `scripts\AgentDocFrequency.py`
+  - `src\agents\BaseAgent.py`
+  - `src\core\agent_registry.py`
+  - `src\core\agent_state_manager.py`
+  - `src\core\reasoning\CortAgent.py`
+  - `src\core\universal\UniversalAgentShell.py`
+  - `src\swarm\agent_registry.py`
+  - `src\tools\agent_plugins.py`
+  - `tests\agents\test_agents.py`
+  - `tests\agents\test_base_agent.py`
+  - `tests\docs\test_agent_workflow_policy_docs.py`
+  - `tests\runtime\test_timeout.py`
+  - `tests\test_agent_doc_frequency.py`
+  - `tests\test_agent_memory.py`
+  - `tests\test_agent_registry.py`
+  - `tests\test_core_agent_registry.py`
+  - `tests\test_core_agent_state_manager.py`
+  - `tests\test_swarm_agent_registry.py`
+  - `tests\test_UniversalAgentShell.py`
+  - `tests\test_watchdog.py`
+  - `tests\unit\test_CortAgent.py`

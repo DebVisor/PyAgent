@@ -1,33 +1,53 @@
-# agent-memory-persistence — Project Overview
+# agent-memory-persistence
 
-_Owner: @1project | Status: In Sprint_
+**Project ID:** `prj0000065`
 
-**Goal:** Persist agent conversation context and task history across sessions using a JSON file-backed MemoryStore, accessible via backend REST endpoints.
+## Links
 
-**In scope:**
-- `backend/memory_store.py` — JSON-backed MemoryStore (read/write/append/clear per agent)
-- `backend/app.py` — `GET /api/agent-memory/{agent_id}`, `POST /api/agent-memory/{agent_id}`, `DELETE /api/agent-memory/{agent_id}`
-- `tests/test_agent_memory.py` — tests
-- `docs/project/prj0000065/` — 9 artifacts
-- `data/projects.json` + `docs/project/kanban.md` — lane transitions
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-**Out of scope:** Vector embeddings, semantic search, multi-node shared memory, encryption at rest.
+## Tasks
 
-## Branch Plan
+_No checkbox tasks found in the plan file._
 
-**Expected branch:** `prj0000065-agent-memory-persistence`
+## Status
 
-**Scope boundary:** Only the files listed above may be modified on this branch.
+0 of 0 tasks completed
 
-**Handoff rule:** `@9git` must confirm `OBSERVED_BRANCH == prj0000065-agent-memory-persistence` before staging, committing, or creating a PR.
+## Code detection
 
-**Failure rule:** If tests fail or branch mismatch is detected, stop and notify `@0master`.
-
-
-## Legacy Project Overview Exception
-
-This project overview predates the modern Project Identity / Goal and Scope / Branch Plan
-template. It was authored with an earlier workflow format and has not been migrated.
-The project was completed successfully; the deviation is a documentation formatting issue only.
-
-Migration to the modern template is on record with @0master.
+- Code detected in:
+  - `rust_core\src\agents\memory.rs`
+  - `rust_core\src\agents.rs`
+  - `rust_core\src\inference\memory.rs`
+  - `rust_core\src\memory.rs`
+  - `scripts\AgentDocFrequency.py`
+  - `src\agents\BaseAgent.py`
+  - `src\core\agent_registry.py`
+  - `src\core\agent_state_manager.py`
+  - `src\core\memory.py`
+  - `src\core\reasoning\CortAgent.py`
+  - `src\core\universal\UniversalAgentShell.py`
+  - `src\MemoryTransactionManager.py`
+  - `src\swarm\agent_registry.py`
+  - `src\swarm\memory_store.py`
+  - `src\tools\agent_plugins.py`
+  - `src\transactions\MemoryTransactionManager.py`
+  - `tests\agents\test_agents.py`
+  - `tests\agents\test_base_agent.py`
+  - `tests\docs\test_agent_workflow_policy_docs.py`
+  - `tests\test_agent_doc_frequency.py`
+  - `tests\test_agent_memory.py`
+  - `tests\test_agent_registry.py`
+  - `tests\test_core_agent_registry.py`
+  - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_memory.py`
+  - `tests\test_encrypted_memory.py`
+  - `tests\test_memory.py`
+  - `tests\test_memory_package.py`
+  - `tests\test_MemoryTransactionManager.py`
+  - `tests\test_shared_memory_python.py`
+  - `tests\test_swarm_agent_registry.py`
+  - `tests\test_UniversalAgentShell.py`
+  - `tests\unit\test_CortAgent.py`

@@ -10,6 +10,7 @@ matching multiple token variants, while avoiding duplicated code detection logic
 
 from __future__ import annotations
 
+import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,6 +22,8 @@ RE_PLAN = re.compile(
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_ROOT = ROOT / "docs" / "project"
+PROJECTS_REGISTRY = ROOT / "data" / "projects.json"
+RE_PROJECT_DIR = re.compile(r"^prj\d{7}(?:-.+)?$")
 
 # The generator now uses the agent-based project tracking system rooted in docs/project.
 # Each project folder (prjNNNNNNN) should contain a `plan.md` and optionally `brainstorm.md`.
@@ -34,6 +37,60 @@ def _normalize_topic_key(topic: str) -> str:
     key = re.sub(r"\s+", "-", topic.strip())
     key = re.sub(r"[^a-zA-Z0-9_-]", "", key)
     return key
+
+
+def _load_registry_topics() -> dict[str, str]:
+    """Load optional project topics from data/projects.json keyed by project id."""
+
+    if not PROJECTS_REGISTRY.exists():
+        return {}
+
+    try:
+        raw = json.loads(PROJECTS_REGISTRY.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+    topics: dict[str, str] = {}
+    if not isinstance(raw, list):
+        return topics
+
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        project_id = str(item.get("id", "")).strip()
+        topic = str(item.get("name", "")).strip()
+        if project_id and topic:
+            topics[project_id] = topic
+
+    return topics
+
+
+def _extract_task_progress(plan_path: Path, project_dir: Path) -> tuple[int, int, List[str]]:
+    """Extract done/total checkbox progress from plan.md or fallback project markdown."""
+
+    if plan_path.exists():
+        text = plan_path.read_text(encoding="utf-8")
+        lines = [l.rstrip() for l in text.splitlines() if re.match(r"^[\s\-*]+\[[ xX]\]", l)]
+        total = len(lines)
+        done = len([l for l in lines if re.match(r"^[\s\-*]+\[\s*[xX]\s*\]", l)])
+        return done, total, lines
+
+    # Legacy folders may have no plan.md. Re-use existing *.project.md progress if available.
+    for project_doc in sorted(project_dir.glob("*.project.md")):
+        text = project_doc.read_text(encoding="utf-8")
+        lines = [l.rstrip() for l in text.splitlines() if re.match(r"^[\s\-*]+\[[ xX]\]", l)]
+        if lines:
+            total = len(lines)
+            done = len([l for l in lines if re.match(r"^[\s\-*]+\[\s*[xX]\s*\]", l)])
+            return done, total, lines
+
+        match = re.search(r"(?P<done>\d+)\s+of\s+(?P<total>\d+)\s+tasks\s+completed", text, re.IGNORECASE)
+        if match:
+            done = int(match.group("done"))
+            total = int(match.group("total"))
+            return done, total, []
+
+    return 0, 0, []
 
 
 def _code_search_candidates(topic_key: str) -> Set[str]:
@@ -91,31 +148,29 @@ def _find_code_files(topic_key: str) -> List[Path]:
 
 
 projects = []
+registry_topics = _load_registry_topics()
 
 # Each project lives under docs/project/prjNNNNNNN and contains plan.md + optional brainstorm.md
 project_dirs = sorted(
     d
     for d in OUT_ROOT.iterdir()
-    if d.is_dir() and d.name.startswith("prj")
+    if d.is_dir() and RE_PROJECT_DIR.match(d.name)
 )
 
 for prj_dir in project_dirs:
     prj_id = prj_dir.name
-    topic_key = prj_id.split("-", 1)[1] if "-" in prj_id else prj_id
+    if "-" in prj_id:
+        topic_key = prj_id.split("-", 1)[1]
+    else:
+        topic_key = registry_topics.get(prj_id, prj_id)
+
+    topic_key = _normalize_topic_key(topic_key)
 
     plan = prj_dir / "plan.md"
     brainstorm = prj_dir / "brainstorm.md"
+    design_exists = brainstorm.exists() or any(prj_dir.glob("*.design.md"))
 
-    # Skip projects without a plan; they are not ready for the dashboard.
-    if not plan.exists():
-        continue
-
-    design_exists = brainstorm.exists()
-
-    text = plan.read_text(encoding="utf-8")
-    lines = [l.rstrip() for l in text.splitlines() if re.match(r"^[\s\-*]+\[[ xX]\]", l)]
-    total = len(lines)
-    done = len([l for l in lines if re.match(r"^[\s\-*]+\[\s*[xX]\s*\]", l)])
+    done, total, lines = _extract_task_progress(plan, prj_dir)
 
     match_paths = _find_code_files(topic_key)
     code_found = bool(match_paths)

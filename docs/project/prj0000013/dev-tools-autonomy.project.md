@@ -1,46 +1,28 @@
-# dev-tools-autonomy — Project Overview
+# dev-tools-autonomy
 
-_Status: COMPLETE_
-_Owner: @1project | Updated: 2026-03-22_
-
-## Project Identity
 **Project ID:** `prj0000013`
-**Short name:** `dev-tools-autonomy`
-**Project folder:** `docs/project/prj0000013`
 
-## Project Overview
-Builds the self-improving development tools scaffolding: dependency auditor,
-code-metrics collector, plugin framework, and self-healing helper. Establishes
-TDD tests and extends the setup helper to ensure necessary files and directories
-exist on fresh checkouts.
+## Links
 
-## Goal & Scope
-**Goal:** Implement `src/tools/dependency_audit.py`, `src/tools/metrics.py`,
-`src/tools/self_heal.py`, and a plugin loader; each with pytest coverage.
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-**In scope:**
-- `src/tools/dependency_audit.py` — dependency audit API.
-- `src/tools/metrics.py` — code metrics collector.
-- `src/tools/self_heal.py` — self-healing utility helper.
-- `src/tools/plugin_loader.py` — plugin discovery and loading.
-- `tests/tools/` — TDD tests for each module.
-- Extension of `scripts/setup_structure.py` for new directories.
+## Tasks
 
-**Out of scope:** Full autonomous self-healing runtime, AI-driven code rewriting,
-production telemetry pipelines.
-
-## Branch Plan
-**Expected branch:** `prj0000013-dev-tools-autonomy`
-**Scope boundary:** `docs/project/prj0000013/`. Implementation files exist in
-`src/tools/` and `tests/tools/` on `main`.
-**Handoff rule:** `@9git` stages `docs/project/prj0000013/` only.
-**Failure rule:** If CI fails, fix before merging; do not skip tests.
-
-
-## Milestones
-Legacy milestone details are not specified in this historical document.
-
+_No checkbox tasks found in the plan file._
 
 ## Status
-Legacy status details are not specified in this historical document.
 
+0 of 0 tasks completed
+
+## Code detection
+
+- Code detected in:
+  - `rust_core\src\base\autonomy.rs`
+  - `rust_core\src\inference\tools.rs`
+  - `src\chat\mcp_tools.py`
+  - `tests\structure\test_dev_tools_dirs.py`
+  - `tests\test_tools_sanity.py`
+  - `tests\tools\test_tools_cli.py`
+  - `tests\tools\test_tools_docs.py`
+  - `tests\tools\test_tools_registry.py`

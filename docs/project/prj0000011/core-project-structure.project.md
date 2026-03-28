@@ -1,59 +1,59 @@
-# core-project-structure — Project Overview
+# core-project-structure
 
-_Status: COMPLETE_
-_Owner: @1project | Updated: 2026-03-22_
+**Project ID:** `prj0000011`
 
-## Project Identity
-**Project ID:** prj0000011
-**Short name:** core-project-structure
-**Project folder:** `docs/project/prj0000011/`
+## Links
 
-## Project Overview
-Establish the canonical directory hierarchy and starter files for the PyAgent
-repository. The repository root is `C:\Dev\PyAgent`; the `docs/project/` area
-holds metadata and documentation. Application source lives under `src/`. This
-project defines the structure, verifies it via pytest, and provides a setup
-script that recreates the layout in a fresh workspace.
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-## Goal & Scope
-**Goal:** Create and verify the core project directory structure — `src/`,
-`tests/structure/`, `scripts/`, `docs/` — with automated tests and a helper
-script that builds the layout on demand.
+## Tasks
 
-**In scope:**
-- `scripts/setup_structure.py` — creates core directory layout
-- `scripts/validate_project_implementation.py` — validates layout in CI
-- `tests/structure/test_base_dirs.py` — verifies root project dir exists
-- `tests/structure/test_config_files.py` — verifies key config files
-- `tests/core/test_core.py` — core module smoke tests
-- `tests/test_core_agent_registry.py` — agent registry unit tests
-- `tests/test_core_agent_state_manager.py` — state manager unit tests
-- `tests/test_core_helpers.py` — shared helper unit tests
-- `tests/test_core_quality.py` — code quality helper tests
-- `docs/project/prj0000011/` — project docs
-
-**Out of scope:** Agent business logic, runtime, frontend, Rust core.
-
-## Branch Plan
-**Expected branch:** `prj0000011-core-project-structure`
-**Scope boundary:** `scripts/setup_structure.py`, `scripts/validate_project_implementation.py`,
-  `tests/structure/`, `tests/core/`, `tests/test_core_*.py`, `docs/project/prj0000011/`
-**Handoff rule:** Merge to `main` via PR once all structure tests pass. No downstream agent
-  handoff required — this is a structural bootstrapping project.
-**Failure rule:** If branch does not match expected, stop immediately and escalate to
-  `@0master`. Record blocked status in this file.
-
-## Acceptance Criteria
-- `scripts/setup_structure.py` creates `src/`, `tests/`, `docs/`, `scripts/` when run
-- `tests/structure/test_base_dirs.py::test_root_project_dir_exists` passes
-- `tests/test_core_agent_registry.py` passes
-- `tests/test_core_agent_state_manager.py` passes
-- All structure tests pass under `pytest tests/structure/ -q`
+_No checkbox tasks found in the plan file._
 
 ## Status
-COMPLETE — all acceptance criteria met. Code already present in repo.
 
+0 of 0 tasks completed
 
-## Milestones
-Legacy milestone details are not specified in this historical document.
+## Code detection
 
+- Code detected in:
+  - `scripts\generate_project_dashboard.py`
+  - `scripts\setup_structure.py`
+  - `scripts\validate_project_implementation.py`
+  - `src\core\audit\AuditTrailCore.py`
+  - `src\core\fuzzing\FuzzEngineCore.py`
+  - `src\core\memory\AutoMemCore.py`
+  - `src\core\n8nbridge\N8nBridgeCore.py`
+  - `src\core\reasoning\CortCore.py`
+  - `src\core\replay\ShadowExecutionCore.py`
+  - `src\core\resilience\CircuitBreakerCore.py`
+  - `src\core\universal\UniversalCoreRegistry.py`
+  - `tests\core\test_core.py`
+  - `tests\test_api_projects_lane_sync.py`
+  - `tests\test_AuditTrailCore.py`
+  - `tests\test_AutoMemCore.py`
+  - `tests\test_CircuitBreakerCore.py`
+  - `tests\test_core_agent_registry.py`
+  - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_config.py`
+  - `tests\test_core_helpers.py`
+  - `tests\test_core_memory.py`
+  - `tests\test_core_observability.py`
+  - `tests\test_core_providers_FlmChatAdapter.py`
+  - `tests\test_core_providers_FlmModelProbe.py`
+  - `tests\test_core_providers_FlmProviderConfig.py`
+  - `tests\test_core_quality.py`
+  - `tests\test_core_runtime.py`
+  - `tests\test_core_task_queue.py`
+  - `tests\test_core_workflow_engine.py`
+  - `tests\test_FuzzEngineCore.py`
+  - `tests\test_fuzzing_core.py`
+  - `tests\test_N8nBridgeCore.py`
+  - `tests\test_rust_core.py`
+  - `tests\test_ShadowExecutionCore.py`
+  - `tests\test_structured_logging.py`
+  - `tests\test_UniversalCoreRegistry.py`
+  - `tests\tools\test_pm_structure.py`
+  - `tests\tools\test_structure_layout.py`
+  - `tests\unit\test_CortCore.py`

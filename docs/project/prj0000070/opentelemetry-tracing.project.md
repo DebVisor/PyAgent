@@ -1,37 +1,22 @@
-# opentelemetry-tracing — Project Overview
+# opentelemetry-tracing
 
-**ID:** prj0000070  
-**Name:** opentelemetry-tracing  
-**Branch:** prj0000070-opentelemetry-tracing  
-**Priority:** P4  
-**Budget:** M  
-**Tags:** observability, tracing, backend, rust
+**Project ID:** `prj0000070`
 
-## Goal
-Add OpenTelemetry span instrumentation to the FastAPI backend for distributed tracing. Provides automatic HTTP request tracing and a Python API for creating custom spans.
+## Links
 
-## Scope boundary
-- **New file:** `backend/tracing.py` — OTel setup, `get_tracer()`, `create_span()` helpers
-- **Modified:** `backend/app.py` — initialize OTel on startup
-- **Modified:** `requirements.txt` — add opentelemetry packages
-- **New file:** `tests/test_tracing.py` — 5 tests
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-Out of scope: OTLP exporter config (uses in-memory exporter for tests), Rust FFI spans (future work), frontend trace propagation.
+## Tasks
 
-## Branch Plan
-`prj0000070-opentelemetry-tracing`
+_No checkbox tasks found in the plan file._
 
-## Handoff rule
-Merge only after all 5 tests pass.
+## Status
 
-## Failure rule
-If tests fail or imports are broken, return to @6code.
+0 of 0 tasks completed
 
+## Code detection
 
-## Legacy Project Overview Exception
-
-This project overview predates the modern Project Identity / Goal and Scope / Branch Plan
-template. It was authored with an earlier workflow format and has not been migrated.
-The project was completed successfully; the deviation is a documentation formatting issue only.
-
-Migration to the modern template is on record with @0master.
+- Code detected in:
+  - `rust_core\src\stats\tracing.rs`
+  - `tests\test_tracing.py`

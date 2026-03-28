@@ -1,36 +1,31 @@
-# dev-tools-structure — Project Overview
+# dev-tools-structure
 
-## Project Identity
-**Project ID:** prj0000016
-**Short name:** dev-tools-structure
-**Project folder:** `docs/project/prj0000016/`
+**Project ID:** `prj0000016`
 
-## Project Overview
-Hardens the `src/tools/` package layout and verifies its structural invariants via expanded tests. Adds copyright header to `src/tools/__init__.py`, improves import failure logging, and extends `tests/structure/test_dev_tools_dirs.py` to assert specific modules and subpackages.
+## Links
 
-## Goal & Scope
-**Goal:** Ensure the tools package structure is self-documenting, auditable, and verified by tests.
+- Plan: `plan.md`
+- Design: `brainstorm.md`
 
-**In scope:**
-- `src/tools/__init__.py` — copyright header, logging, skip-list improvement
-- `tests/structure/test_dev_tools_dirs.py` — 3 new structure assertion tests
-- `docs/project/prj0000016/` — 9 doc artifacts
+## Tasks
 
-**Out of scope:**
-- Changes to individual tool modules
-- Changes to `src/tools/pm/`
-
-## Branch Plan
-**Expected branch:** `prj0000016-dev-tools-structure`
-**Scope boundary:** `src/tools/__init__.py`, `tests/structure/test_dev_tools_dirs.py`, `docs/project/prj0000016/`
-**Handoff rule:** merge only after 4 structure tests pass
-**Failure rule:** if branch mismatch, STOP
-
-
-## Milestones
-Legacy milestone details are not specified in this historical document.
-
+_No checkbox tasks found in the plan file._
 
 ## Status
-Legacy status details are not specified in this historical document.
 
+0 of 0 tasks completed
+
+## Code detection
+
+- Code detected in:
+  - `rust_core\src\inference\tools.rs`
+  - `scripts\setup_structure.py`
+  - `src\chat\mcp_tools.py`
+  - `tests\structure\test_dev_tools_dirs.py`
+  - `tests\test_structured_logging.py`
+  - `tests\test_tools_sanity.py`
+  - `tests\tools\test_pm_structure.py`
+  - `tests\tools\test_structure_layout.py`
+  - `tests\tools\test_tools_cli.py`
+  - `tests\tools\test_tools_docs.py`
+  - `tests\tools\test_tools_registry.py`
