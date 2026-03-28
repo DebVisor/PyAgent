@@ -30,6 +30,8 @@ jobs:
           echo "VIRTUAL_ENV=${{ github.workspace }}/.venv" >> $GITHUB_ENV
       - name: Install dependencies
         run: pip install --prefer-binary -r requirements-ci.txt
+      - name: Run mypy strict lane
+        run: python -m mypy --config-file mypy-strict-lane.ini
       - name: Build Rust extension
         run: maturin develop --manifest-path rust_core/Cargo.toml
       - name: Run tests (shard ${{ matrix.shard }})

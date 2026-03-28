@@ -175,6 +175,36 @@ Key constraints for @3design:
 
 ---
 
+## prj0000092 - mypy-strict-enforcement
+_Date: 2026-03-28 | Branch: prj0000092-mypy-strict-enforcement_
+
+task_id: prj0000092
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000092-mypy-strict-enforcement/prj0000092-mypy-strict-enforcement.think.md
+Recommendation: Option B - Progressive strict lane in stable src/core slices (blocking, scoped)
+Handoff target: @3design
+Rationale summary:
+- Balances enforcement strength with sprint-safe delivery risk by keeping scope to explicit `src/core` slices.
+- Reuses deterministic guardrail patterns from existing CI/structure meta-tests.
+- Avoids large refactors while still creating a blocking non-regression contract.
+
+Prior-art references used:
+- docs/project/prj0000076/prj0000076.think.md
+- docs/project/prj0000075/prj0000075.think.md
+- tests/test_zzb_mypy_config.py
+- tests/structure/test_ci_yaml.py
+
+Lesson schema:
+- Pattern: Use scoped blocking strict lanes before broad mypy strict rollout.
+- Root cause: Global permissive mypy config turned type checks into non-enforcing signals.
+- Prevention: Enforce deterministic CI + structure guards for explicit strict-lane allowlists.
+- First seen: 2026-03-28.
+- Seen in: prj0000092-mypy-strict-enforcement.
+- Recurrence count: 1.
+- Promotion status: monitor (promote to hard rule at recurrence >= 2).
+
+---
+
 # @1think Design Brief — Phase 1: Foundation & Infrastructure
 _Date: 2026-03-16_
 _Analyst: @1think | Feeds: @2plan_

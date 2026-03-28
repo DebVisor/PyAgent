@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-28 | Total projects: 91 | prj0000091 -> In Sprint (@5test queued)_
+_Last updated: 2026-03-28 | Total projects: 92 | prj0000092 -> Discovery (@2think queued)_
 
 ## How to use this board
 
@@ -56,6 +56,7 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
+| prj0000092 | mypy-strict-enforcement | Progressive mypy strictness enforcement starting in src/core with deterministic guardrails and phased rollout governance | prj0000092-mypy-strict-enforcement | P1 | M | typing,mypy,quality-gate | 2026-03-28 |
 
 
 
@@ -203,13 +204,13 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 0 |
-| Discovery | 0 |
+| Discovery | 1 |
 | Design | 0 |
 | In Sprint | 2 |
 | Review | 0 |
 | Released | 88 |
 | Archived | 1 |
-| **Total** | **91** |
+| **Total** | **92** |
 
 ---
 
