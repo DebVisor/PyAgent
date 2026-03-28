@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from runtime_py import sleep, spawn  # type: ignore[import-not-found]  # noqa: E402
+
 # Copyright 2026 PyAgent Authors
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,11 +35,6 @@ illustrates the simple transformation:
 The accompanying test verifies the counter increments when the async loop
 runs, proving that the runtime integration works.
 """
-
-# ``Any`` was previously planned for future use but isn't needed yet
-# from typing import Any
-
-from runtime_py import sleep, spawn  # type: ignore[import-not-found]  # noqa: E402
 
 # shared state used solely for the unit test
 counter: int = 0

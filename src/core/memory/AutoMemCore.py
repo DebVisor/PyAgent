@@ -66,6 +66,7 @@ DECAY_K: float = 0.01
 @dataclass
 class Memory:
     """A single memory row — mirrors the `memories` table."""
+
     id:            uuid.UUID
     agent_id:      str
     content:       str
@@ -87,6 +88,7 @@ class Memory:
 @dataclass
 class MemoryResult:
     """A scored memory returned from hybrid_search."""
+
     memory:          Memory
     vector_score:    float = 0.0
     graph_score:     float = 0.0
@@ -138,11 +140,13 @@ def _keyword_score(query_keywords: list[str], memory_keywords: list[str]) -> flo
 
 def _cosine_distance_to_score(distance: float) -> float:
     """pgvector cosine distance ∈ [0, 2]; convert to score ∈ [0, 1]."""
+
     return max(0.0, 1.0 - distance / 2.0)
 
 
 def _graph_hops_to_score(hops: int) -> float:
     """Fewer graph hops → higher score.  0 hops = 1.0, 1 hop = 0.75, …"""
+
     if hops < 0:
         return 0.0
     return 1.0 / (1.0 + hops)
@@ -170,8 +174,8 @@ class AutoMemCore:
     def __init__(self, dsn: str, embedding_dim: int = 1536) -> None:
         """
         Args:
-            dsn:           asyncpg DSN, e.g.
-                           'postgresql://user:pass@localhost/automem'
+            dsn: asyncpg DSN, e.g.
+                'postgresql://user:pass@localhost/automem'
             embedding_dim: dimension of the embedding vectors (must match schema)
         """
         self._dsn = dsn
@@ -306,7 +310,7 @@ class AutoMemCore:
                         """
                         SELECT * FROM cypher('memory_graph', $$
                             MATCH (child:Memory  {id: $child_id}),
-                                  (parent:Memory {id: $parent_id})
+                                (parent:Memory {id: $parent_id})
                             CREATE (child)-[:DERIVED_FROM {weight: 1.0}]->(parent)
                         $$, $1) AS (e agtype)
                         """,
@@ -330,10 +334,10 @@ class AutoMemCore:
             row = await conn.fetchrow(
                 """
                 SELECT id, agent_id, session_id, parent_id, path,
-                       content, keywords, tags, metadata,
-                       importance, confidence, decay_score,
-                       access_count, last_accessed, created_at,
-                       embedding
+                    content, keywords, tags, metadata,
+                    importance, confidence, decay_score,
+                    access_count, last_accessed, created_at,
+                    embedding
                 FROM memories WHERE id = $1
                 """,
                 memory_id,
@@ -372,8 +376,8 @@ class AutoMemCore:
             rows = await conn.fetch(
                 """
                 SELECT id, content, importance, confidence, decay_score,
-                       access_count, last_accessed, created_at,
-                       vec_dist, tsv_rank, kw_hits, keywords, metadata, path
+                    access_count, last_accessed, created_at,
+                    vec_dist, tsv_rank, kw_hits, keywords, metadata, path
                 FROM automem_hybrid_candidates($1, $2, $3, $4, $5)
                 """,
                 agent_id,
@@ -504,12 +508,12 @@ class AutoMemCore:
             rows = await conn.fetch(
                 """
                 SELECT id, agent_id, session_id, parent_id, path,
-                       content, keywords, tags, metadata,
-                       importance, confidence, decay_score,
-                       access_count, last_accessed, created_at
+                    content, keywords, tags, metadata,
+                    importance, confidence, decay_score,
+                    access_count, last_accessed, created_at
                 FROM memories
                 WHERE path <@ $1::ltree
-                  AND nlevel(path) <= nlevel($1::ltree) + $2
+                    AND nlevel(path) <= nlevel($1::ltree) + $2
                 ORDER BY nlevel(path), created_at
                 """,
                 root_path,
@@ -531,10 +535,10 @@ class AutoMemCore:
             rows = await conn.fetch(
                 """
                 SELECT id, agent_id, session_id, parent_id, path,
-                       content, keywords, tags, metadata,
-                       importance, confidence, decay_score,
-                       access_count, last_accessed, created_at,
-                       LN(1 + access_count) * decay_score AS frecency
+                    content, keywords, tags, metadata,
+                    importance, confidence, decay_score,
+                    access_count, last_accessed, created_at,
+                    LN(1 + access_count) * decay_score AS frecency
                 FROM memories
                 WHERE agent_id = $1
                 ORDER BY frecency DESC
