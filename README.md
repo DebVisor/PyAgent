@@ -23,7 +23,7 @@ synchronous approach; and the user-facing shell is **NebulaOS**, a Vite + React 
 desktop-style UI with apps such as CodeBuilder, AgentChat, and Conky. Behind the UI sits a
 FastAPI/WebSocket backend that provides the REST API and real-time agent streaming. Everything is
 tested: the repository now carries 666 collected tests across unit, structural, security, and CI
-categories, covering the 51 projects that have been delivered since the platform was conceived. The
+categories, covering the 88 projects that have been delivered since the platform was conceived. The
 317 tests added for the four transaction managers alone demonstrate the depth of coverage the swarm
 demands of its own output. PyAgent's mission is simple: write code, test it, review it, and merge
 it — autonomously, repeatably, and safely.
@@ -212,7 +212,7 @@ throughput, it can be rewritten in-place without touching any Python call-site.
 
 ## Project History
 
-PyAgent has been built iteratively through 51 focused projects, each following the
+PyAgent has been built iteratively through 89 focused projects, each following the
 full 10-agent pipeline from @0master through @9git.
 
 ### Group 1 — Foundation

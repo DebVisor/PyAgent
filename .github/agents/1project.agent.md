@@ -40,6 +40,12 @@ The canonical files are required for every project folder. Chunked files are req
    - Canonical artifacts (`.project.md`, `.think.md`, `.design.md`, `.plan.md`, `.test.md`, `.code.md`, `.exec.md`, `.ql.md`, `.git.md`) must exist and include all required section headers from templates.
    - Any artifact missing required sections is BLOCKED and cannot be handed off.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ---
 
 ## Operating procedure

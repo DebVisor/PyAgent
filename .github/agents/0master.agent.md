@@ -119,6 +119,12 @@ These are the primary memory artifacts the master agent reads/updates:
   - Acceptance-criteria readiness: 0-3
   - Pass threshold: total >= 10 and no category < 2. If the threshold fails, delegation is blocked.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ## Useful repo quick references (for planning)
 - **Code**: we prefer to use rust, then python, then javascript
 - **CI health**: `.github/workflows/` + `tests/ci/` ensure CI workflows are correct.

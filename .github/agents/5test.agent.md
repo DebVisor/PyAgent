@@ -21,6 +21,12 @@ This agent does **not** implement production code.
   - Detect and reject weak tests that pass on placeholders/stubs or only assert existence/import.
   - Missing matrix or unresolved weak-test findings blocks handoff to @6code.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ---
 
 ## HARD RULE — Tests must verify real behavior

@@ -21,6 +21,12 @@ This agent does **not** write tests, make design decisions, or modify test files
     - Minimum evidence fields per AC: AC ID, changed module/file, validating test(s), status.
     - Missing evidence mapping blocks handoff to @7exec.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 > **Important:** All terminal commands use **PowerShell**. Never use bash syntax or Linux commands.
 >
 > Always activate the venv first:

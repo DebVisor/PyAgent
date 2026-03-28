@@ -26,6 +26,12 @@ It **does** update `.github/agents/data/` memory files and `.github/agents/*.age
   - Keep a ledger section for unresolved quality debt with owner, originating project, and exit criteria.
   - Missing lifecycle state or ledger entry for open debt blocks handoff to @9git.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 > **Important:** All terminal commands use **PowerShell**. Never use bash syntax or Linux commands.
 >
 > Always activate the venv first:

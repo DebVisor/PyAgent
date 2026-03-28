@@ -77,6 +77,12 @@ If these criteria are not met, @2think must continue research rather than handin
    - Each listed risk must map to a proposed testability strategy (test type or validation signal).
    - Missing references or mappings blocks handoff to @3design.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ---
 
 **Checkpoint rule (MANDATORY — applies to all project work):**

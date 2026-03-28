@@ -64,6 +64,12 @@ This agent primarily uses free Copilot models such as GPT-5 Mini, Grok Code Fast
 	- Scope manifest must list every staged file and the matching scope-boundary reason.
 	- Missing evidence block or scope manifest blocks commit/push/PR actions.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ---
 
 ## Operating procedure
@@ -106,6 +112,17 @@ This agent primarily uses free Copilot models such as GPT-5 Mini, Grok Code Fast
 	- Append the finding to `.github/agents/data/9git.memory.md`.
 	- Hand the task back to `@6code` with the full list of placeholder hits.
 	Only proceed when the scan returns zero matches in the files being staged.
+
+2b. **Project Dashboard Refresh Gate (MANDATORY — before staging/commit)**
+	Before any `git add` action for project documentation or project-tracking changes,
+	run the dashboard generator:
+	```powershell
+	python scripts/generate_project_dashboard.py
+	```
+	Then re-run scope validation on the generated files and stage only approved files.
+	If dashboard generation fails, stop the git workflow, record the failure in
+	`<project>.git.md` and `.github/agents/data/9git.memory.md`, and hand the task
+	back to `@0master`.
 
 3. **Execute Narrow Git Operations**
 	- Stage only the validated files for the current project.

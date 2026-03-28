@@ -21,6 +21,12 @@ This agent does **not** write tests or production code.
   - Required task minimum: objective, target files, acceptance criteria, validation command.
   - Vague tasks (for example: "refactor module" without file list or command) are BLOCKED.
 
+## Policy references (mandatory)
+
+- All agent work must comply with `docs/project/code_of_conduct.md`.
+- All naming decisions must comply with `docs/project/naming_standards.md`.
+- Treat violations of either policy as BLOCKED and resolve before handoff.
+
 ---
 
 ## HARD RULE — Plans must specify real deliverables
