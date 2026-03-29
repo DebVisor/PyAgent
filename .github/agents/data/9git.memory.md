@@ -43,6 +43,22 @@ and pull request coordination notes.
 	Seen in: `prj0000095-source-stub-remediation`.
 	Recurrence count: 1.
 	Promotion status: Candidate (not promoted; threshold is >=2).
+- 2026-03-29 — prj0000099: branch/scope validation passed and narrow staging was prepared for project closure, but mandatory post-staging `pre-commit` failed in `run-precommit-checks` due repository-wide Ruff findings in `tests/` outside staged scope; commit/push/PR were blocked and handoff returned to `@0master`.
+	Pattern: Project-scoped handoff blocked by repository-wide hook baseline debt.
+	Root cause: `run-precommit-checks` executes `ruff check src tests` without staged-file scoping.
+	Prevention: Reduce baseline Ruff debt or split hook policy so project-scoped docs handoffs are not blocked by unrelated violations.
+	First seen: 2026-03-28.
+	Seen in: `prj0000093-projectmanager-ideas-autosync`, `prj0000099-stub-module-elimination`.
+	Recurrence count: 2.
+	Promotion status: Promoted to hard rule (run/verify repo-wide hook health before starting @9git handoff for docs-only closures).
+- 2026-03-29 — prj0000099 completion: branch validation, scoped staging, post-staging pre-commit, commit, push, and PR creation all completed successfully.
+	Pattern: GitHub CLI authentication can fail when an invalid `GITHUB_TOKEN` environment override is present even with a valid keyring login.
+	Root cause: `gh` preferred the invalid environment token and returned `HTTP 401` until the override was cleared.
+	Prevention: Run `gh auth status`, clear invalid `GITHUB_TOKEN` for the session, then retry `gh pr view/create` on the active account.
+	First seen: 2026-03-29.
+	Seen in: `prj0000099-stub-module-elimination`.
+	Recurrence count: 1.
+	Promotion status: Candidate (not promoted; threshold is >=2).
 
 ## Auto-handoff
 
