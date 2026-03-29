@@ -11,6 +11,50 @@ Invoke it via `agent/runSubagent` to continue the implementation workflow.
 
 ## Task Log
 
+### task_id: prj0000097-stub-module-elimination-20260329
+- lifecycle: OPEN -> IN_PROGRESS -> DONE
+- project: prj0000097-stub-module-elimination
+- branch_expected: prj0000097-stub-module-elimination
+- branch_observed: prj0000097-stub-module-elimination ✓
+- scope:
+	- create Slice 1 red-phase tests in:
+		- `tests/rl/test_discounted_return.py`
+		- `tests/speculation/test_select_candidate.py`
+		- `tests/rl/test_rl_deprecation.py`
+		- `tests/speculation/test_speculation_deprecation.py`
+		- `tests/guards/test_rl_speculation_import_scope.py`
+	- keep tests deterministic and aligned to AC-001..AC-008 mapping
+	- run targeted pytest commands and capture red evidence
+	- update project test artifact with AC matrix and weak-test gate
+- lint_validation:
+	- `.venv\Scripts\ruff.exe check --fix tests/rl/test_discounted_return.py tests/speculation/test_select_candidate.py tests/rl/test_rl_deprecation.py tests/speculation/test_speculation_deprecation.py tests/guards/test_rl_speculation_import_scope.py`: PASS (11 fixed)
+	- `.venv\Scripts\ruff.exe check tests/rl/test_discounted_return.py tests/speculation/test_select_candidate.py tests/rl/test_rl_deprecation.py tests/speculation/test_speculation_deprecation.py tests/guards/test_rl_speculation_import_scope.py`: PASS
+	- `.venv\Scripts\ruff.exe check --select D tests/rl/test_discounted_return.py tests/speculation/test_select_candidate.py tests/rl/test_rl_deprecation.py tests/speculation/test_speculation_deprecation.py tests/guards/test_rl_speculation_import_scope.py`: PASS
+- red_phase_results:
+	- `python -m pytest -q tests/rl/test_discounted_return.py --tb=short`
+		- result: 7 failed in 1.76s (expected red)
+		- failure mode: assertion-level missing behavior contract (`rl.discounted_return` callable absent)
+	- `python -m pytest -q tests/speculation/test_select_candidate.py --tb=short`
+		- result: 7 failed in 1.55s (expected red)
+		- failure mode: assertion-level missing behavior contract (`speculation.select_candidate` callable absent)
+	- `python -m pytest -q tests/rl/test_rl_deprecation.py tests/speculation/test_speculation_deprecation.py --tb=short`
+		- result: 2 failed in 0.82s (expected red)
+		- failure mode: assertion-level warning contract gap (`DID NOT WARN`)
+	- `python -m pytest -q tests/guards/test_rl_speculation_import_scope.py --tb=short`
+		- result: 1 failed, 1 passed in 1.40s (expected red)
+		- failure mode: assertion-level import-scope violation with concrete file:line evidence
+	- collection quality: no ImportError/AttributeError blockers in targeted runs
+- quality_gate:
+	- AC-to-test matrix present in project test artifact: PASS
+	- weak-test detection gate executed and documented: PASS
+- handoff:
+	- target_agent: @6code
+	- required_scope:
+		- implement `rl.discounted_return()` contract + input validation
+		- implement `speculation.select_candidate()` contract + deterministic tie-break + validation
+		- emit required deprecation warnings from both `validate()` shims while preserving call compatibility
+		- replace/remove legacy import-smoke tests to satisfy import-scope guard and AC-007
+
 ### task_id: prj0000096-coverage-minimum-enforcement-20260328
 - lifecycle: OPEN -> IN_PROGRESS -> DONE
 - project: prj0000096-coverage-minimum-enforcement

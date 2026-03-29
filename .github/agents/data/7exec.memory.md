@@ -5,6 +5,35 @@ integration checks, and smoke test outcomes.
 
 ---
 
+## Last run - 2026-03-29 PASSED -> @8ql
+- Task: prj0000097 stub-module-elimination (execution validation)
+- Status: OPEN -> IN_PROGRESS -> DONE
+- task_id: prj0000097-stub-module-elimination
+- handoff_target: @8ql
+- Branch gate: PASS (expected = observed = prj0000097-stub-module-elimination)
+- Tests run:
+  - Full fail-fast: `python -m pytest -v --maxfail=1` -> PASSED (`1272 passed, 10 skipped, 3 warnings`)
+  - Targeted slice: `python -m pytest -v --maxfail=1 tests/rl tests/speculation tests/guards/test_rl_speculation_import_scope.py` -> PASSED (`18 passed`)
+- Import check: SKIPPED (not required by requested validation set)
+- Smoke test: SKIPPED (not required by requested validation set)
+- rust_core: SKIPPED (not modified in this scope)
+- Dependency warnings: NONE (classified NON_BLOCKING)
+- Outcome: READY_FOR_8QL
+- Notes:
+  - Required branch gate and both required pytest command sets are green.
+  - No execution blockers identified in requested scope.
+
+### Lesson - 2026-03-29 (prj0000097 deterministic slice rerun)
+- Pattern: Running a targeted deterministic slice immediately after full-suite validation provides fast confidence on the intended change surface.
+- Root cause: Full-suite pass alone can hide uncertainty about whether the explicitly requested scope was exercised in isolation.
+- Prevention: Keep a required two-tier execution gate: one full fail-fast pass plus one explicit scoped rerun for project-critical tests.
+- First seen: 2026-03-29
+- Seen in: prj0000097-stub-module-elimination
+- Recurrence count: 1
+- Promotion status: CANDIDATE
+
+---
+
 ## Last run - 2026-03-28 BLOCKED -> @6code
 - Task: prj0000096 coverage-minimum-enforcement (post-git.md-policy-fix revalidation)
 - Status: IN_PROGRESS -> BLOCKED

@@ -17,6 +17,63 @@ where test cases are written and validated against the plan.
 
 ---
 
+## prj0000097 - stub-module-elimination
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000097-stub-module-elimination |
+| **owner_agent** | @4plan |
+| **source** | @3design |
+| **created_at** | 2026-03-29 |
+| **updated_at** | 2026-03-29 |
+| **status** | DONE |
+| **lifecycle** | OPEN -> IN_PROGRESS -> DONE |
+| **handoff_target** | @5test |
+| **artifact_paths** | docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.plan.md |
+| **branch** | prj0000097-stub-module-elimination (validated PASS before artifact writes) |
+
+### Slice 1 Summary
+
+| Item | Value |
+|---|---|
+| Scope | `rl` + `speculation` implementation/test guardrails only |
+| Out of scope guard | No edits to `runtime*`, `memory*`, `cort*` implementation files |
+| Task IDs | T1-T8 |
+| Test-first sequence | T1-T5 (@5test) before T6-T8 (@6code) |
+
+### Acceptance Coverage
+
+| Task | Acceptance IDs |
+|---|---|
+| T1 | AC-001 |
+| T2 | AC-002 |
+| T3 | AC-003, AC-004 |
+| T4 | AC-005 |
+| T5 | AC-006 |
+| T6 | AC-001, AC-002, AC-005 |
+| T7 | AC-003, AC-004, AC-005 |
+| T8 | AC-006, AC-007, AC-008 |
+
+### Dependency Order
+1. T1 -> T2 -> T3 -> T4 -> T5
+2. T6 depends on T1-T2 (RL path)
+3. T7 depends on T3-T4 (speculation path)
+4. T8 depends on T5-T7 (inventory and scope closure)
+
+### Lesson Entry
+
+| Field | Value |
+|---|---|
+| Pattern | Plans are execution-safe when each task has objective, files, AC IDs, and a validation command. |
+| Root cause | Generic tasks without file scope and command checks caused handoff ambiguity. |
+| Prevention | Enforce hard-task schema and targeted-then-broader validation gates before handoff. |
+| First seen | 2026-03-28 |
+| Seen in | prj0000093-projectmanager-ideas-autosync; prj0000097-stub-module-elimination |
+| Recurrence count | 2 |
+| Promotion status | PROMOTED_TO_HARD_RULE |
+
+---
+
 ## prj0000093 - projectmanager-ideas-autosync
 
 | Field | Value |

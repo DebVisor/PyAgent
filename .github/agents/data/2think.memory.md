@@ -5,6 +5,35 @@ tradeoff analysis, and recommended directions.
 
 ---
 
+## prj0000097 - stub-module-elimination
+_Date: 2026-03-29 | Branch: prj0000097-stub-module-elimination_
+
+task_id: prj0000097
+Lifecycle: OPEN -> IN_PROGRESS -> DONE
+Artifact: docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.think.md
+Recommendation: Option C - Targeted Stub Elimination (remove placeholder-grade packages first; retain active compatibility modules)
+Handoff target: @3design
+Rationale summary:
+- Discovery showed idea assumption was stale: all six target packages are implemented, but maturity differs.
+- `rl` and `speculation` are placeholder-grade and best suited for first elimination slice.
+- `cort`, `runtime_py`, `runtime`, and `memory` are active compatibility/runtime surfaces and should be stabilized before any broad consolidation.
+
+Prior-art references used:
+- docs/project/prj0000007/plan.md
+- docs/project/prj0000095-source-stub-remediation/prj0000095-source-stub-remediation.plan.md
+- docs/architecture/archive/agents.md
+
+Lesson schema:
+- Pattern: Re-validate idea assumptions against current source state before planning deprecation/removal work.
+- Root cause: Historical placeholder packages evolved unevenly, leaving mixed maturity under a single "stub" label.
+- Prevention: Add package maturity classification (placeholder vs active compatibility) as a mandatory pre-plan checkpoint.
+- First seen: 2026-03-29.
+- Seen in: prj0000097-stub-module-elimination.
+- Recurrence count: 1.
+- Promotion status: monitor (promote to hard rule at recurrence >= 2).
+
+---
+
 ## prj0000088 - ai-fuzzing-security
 _Date: 2026-03-27 | Branch: prj0000088-ai-fuzzing-security_
 
