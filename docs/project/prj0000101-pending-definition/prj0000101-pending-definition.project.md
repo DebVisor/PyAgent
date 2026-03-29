@@ -61,10 +61,10 @@ If branch mismatch or scope drift is detected:
 | M2 | Design confirmed | @3design | DONE |
 | M3 | Plan finalized | @4plan | DONE |
 | M4 | Tests written | @5test | DONE |
-| M5 | Code implemented | @6code | NOT_STARTED |
-| M6 | Integration validated | @7exec | NOT_STARTED |
-| M7 | Security clean | @8ql | NOT_STARTED |
-| M8 | Committed | @9git | NOT_STARTED |
+| M5 | Code implemented | @6code | DONE |
+| M6 | Integration validated | @7exec | DONE |
+| M7 | Security clean | @8ql | DONE |
+| M8 | Committed | @9git | IN_PROGRESS |
 
 ### M1 Handoff Exit Criteria
 - @2think `prj0000101-pending-definition.think.md` includes multiple options tied to idea000013-backend-health-check-endpoint.
@@ -84,4 +84,4 @@ If branch mismatch or scope drift is detected:
 
 ## Status
 _Last updated: 2026-03-29_
-Discovery, design, implementation planning, and artifact-level test documentation are complete for this project. Project remains on branch prj0000101-pending-definition and is ready for handoff to @6code, with branch/scope/failure governance checks retained.
+Implementation, execution validation, and quality/security gate closure are complete for this project. Final git handoff via @9git is now in progress.
