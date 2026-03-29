@@ -2,10 +2,10 @@
   {
     "id": "prj0000097",
     "name": "stub-module-elimination",
-    "lane": "Review",
-    "summary": "Initialize idea000011 to remove stub modules via staged remediation",
-    "branch": "prj0000097-stub-module-elimination",
-    "pr": null,
+    "lane": "Released",
+    "summary": "Plan and execute elimination of stub modules and placeholders",
+    "branch": "merged",
+    "pr": "#243",
     "priority": "P2",
     "budget_tier": "M",
     "tags": [
@@ -30,10 +30,10 @@
       "ci",
       "tests",
       "quality-gate"
-        "lane": "Released",
+    ],
     "created": "2026-03-28",
-        "branch": "merged",
-        "pr": "#243",
+    "updated": "2026-03-29"
+  },
   {
     "id": "prj0000095",
     "name": "source-stub-remediation",
