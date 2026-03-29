@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-29 | Total projects: 100 | prj0000100 initialized in Discovery (Discovery: 4, Review: 1, Released: 94)_
+_Last updated: 2026-03-29 | Total projects: 100 | prj0000100 moved to Review with open PR #247 (Discovery: 3, Review: 2, Released: 94)_
 
 ## How to use this board
 
@@ -56,7 +56,6 @@ Active options exploration — @2think is working or has completed .think.md.
 
 | ID | Name | Summary | Branch | Priority | Budget | Tags | Updated |
 |---|---|---|---|---|---|---|---|
-| prj0000100 | repo-cleanup-docs-code | Review and cleanup non-dot files, refresh documentation, perform code cleanup, and add code-structure index plus allowed-websites search policy governance | prj0000100-repo-cleanup-docs-code | P2 | L | cleanup, docs, code-index, search-policy | 2026-03-29 |
 | prj0000098 | backend-health-check-endpoint | Initialize project from idea000013 to design and deliver backend health-check endpoint governance and implementation planning | prj0000098-backend-health-check-endpoint | P2 | M | backend, health, readiness, liveness | 2026-03-29 |
 | prj0000094 | idea-003 - mypy-strict-enforcement | This idea focuses on mypy strict enforcement in area 1 – Python agents. The current signal indicates priority P1, impact H, and urgency H. The SWOT tag is W (Weakness in current implementation). | — | P3 | S | idea, idea000003 | 2026-03-28 |
 | prj0000093 | projectmanager-ideas-autosync | Project Manager auto-ingests docs/project/ideas and excludes implemented ideas | prj0000093-projectmanager-ideas-autosync | P2 | M | project-manager, ideas, autosync | 2026-03-28 |
@@ -89,6 +88,7 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
+| prj0000100 | repo-cleanup-docs-code | prj0000100-repo-cleanup-docs-code | [#247](https://github.com/UndiFineD/PyAgent/pull/247) | P2 | L | 2026-03-29 |
 | prj0000095 | source-stub-remediation | prj0000095-source-stub-remediation | pending | P2 | M | 2026-03-28 |
 
 
@@ -212,10 +212,10 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 0 |
-| Discovery | 4 |
+| Discovery | 3 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 1 |
+| Review | 2 |
 | Released | 94 |
 | Archived | 1 |
 | **Total** | **100** |
