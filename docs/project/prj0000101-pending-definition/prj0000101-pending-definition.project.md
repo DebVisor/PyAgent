@@ -9,20 +9,23 @@ _Owner: @1project | Updated: 2026-03-29_
 **Project folder:** docs/project/prj0000101-pending-definition/
 
 ## Project Overview
-Initialize the project workspace and governed lifecycle artifact set for pending-definition,
-ensuring registry and kanban tracking are aligned before downstream discovery work begins.
+Define and refresh prj0000101 from idea000013-backend-health-check-endpoint,
+ensuring governed lifecycle artifacts are aligned for Discovery under agent workflow gates before implementation.
 
 ## Goal & Scope
-**Goal:** Establish a compliant Discovery-ready project skeleton for prj0000101.
-**In scope:** Create canonical project artifacts, update project registry metadata, and sync kanban/next-project pointers.
-**Out of scope:** Product design, implementation code, and runtime behavior changes.
+**Goal:** Establish a compliant Discovery-ready project definition for prj0000101 sourced from idea000013.
+**In scope:** Refresh canonical project artifacts to anchor source linkage, align registry metadata, and preserve branch-gated handoff to @2think.
+**Out of scope:** Product design decisions, implementation code, and runtime behavior changes.
 
 ## Acceptance Criteria
-- Project folder and canonical artifacts exist under docs/project/prj0000101-pending-definition/.
-- data/projects.json entry for prj0000101 reflects lane Discovery and expected branch.
-- docs/project/kanban.md contains one Discovery row for prj0000101 with consistent summary metrics.
-- data/nextproject.md advances to prj0000102.
+- Canonical project overview explicitly links prj0000101 to idea000013-backend-health-check-endpoint.
+- Discovery status remains active with @2think in progress and expected branch unchanged.
+- data/projects.json entry for prj0000101 reflects Discovery lane, unchanged branch, and idea000013 linkage metadata.
+- docs/project/kanban.md contains one Discovery row for prj0000101 with summary text anchored to idea000013.
 - Project governance and policy validation commands pass.
+
+## Source References
+- docs/project/ideas/idea000013-backend-health-check-endpoint.md
 
 ## Branch Plan
 **Expected branch:** prj0000101-pending-definition

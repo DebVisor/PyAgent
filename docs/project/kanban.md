@@ -58,7 +58,7 @@ Active options exploration — @2think is working or has completed .think.md.
 |---|---|---|---|---|---|---|---|
 
 
-| prj0000101 | pending-definition | Initialize project workspace and governance artifacts for pending-definition discovery handoff. | prj0000101-pending-definition | P3 | S | governance, init | 2026-03-29 |
+| prj0000101 | pending-definition | Define and refresh prj0000101 from idea000013-backend-health-check-endpoint under Discovery workflow gates before implementation. | prj0000101-pending-definition | P3 | S | governance, init, idea000013 | 2026-03-29 |
 ---
 
 ## Design
