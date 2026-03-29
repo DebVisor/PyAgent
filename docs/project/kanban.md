@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-29 | Total projects: 96 | prj0000096 moved to Review (Discovery: 2, Review: 2)_
+_Last updated: 2026-03-29 | Total projects: 96 | prj0000096 moved to Released (Discovery: 2, Review: 1, Released: 92)_
 
 ## How to use this board
 
@@ -87,7 +87,6 @@ PR open, awaiting merge.
 
 | ID | Name | Branch | PR | Priority | Budget | Updated |
 |---|---|---|---|---|---|---|
-| prj0000096 | coverage-minimum-enforcement | prj0000096-coverage-minimum-enforcement | pending | P2 | M | 2026-03-29 |
 | prj0000095 | source-stub-remediation | prj0000095-source-stub-remediation | pending | P2 | M | 2026-03-28 |
 
 
@@ -99,6 +98,7 @@ All projects merged to main branch.
 
 | ID | Name | Summary | Branch | PR | Priority | Budget | Released |
 |---|---|---|---|---|---|---|---|
+| prj0000096 | coverage-minimum-enforcement | Enforce meaningful baseline coverage threshold in CI and prevent regression from effectively disabled coverage gate | merged | [#242](https://github.com/UndiFineD/PyAgent/pull/242) | P2 | M | 2026-03-29 |
 | prj0000092 | mypy-strict-enforcement | Progressive mypy strictness enforcement starting in src/core with deterministic guardrails and phased rollout governance | merged | [#237](https://github.com/UndiFineD/PyAgent/pull/237) | P1 | M | 2026-03-28 |
 | prj0000091 | missing-compose-dockerfile | Fix deploy compose reference to non-existent Dockerfile and restore clean-checkout compose viability | merged | [#235](https://github.com/UndiFineD/PyAgent/pull/235) [#236](https://github.com/UndiFineD/PyAgent/pull/236) | P1 | S | 2026-03-28 |
 | prj0000090 | private-key-remediation | Remediate committed private key exposure, rotate compromised credentials, and add secret-scan guardrails in commit/CI workflows | merged | [#233](https://github.com/UndiFineD/PyAgent/pull/233) [#234](https://github.com/UndiFineD/PyAgent/pull/234) | P1 | M | 2026-03-28 |
@@ -208,11 +208,11 @@ Stalled, cancelled, or superseded projects.
 | Lane | Count |
 |---|---|
 | Ideas | 0 |
-| Discovery | 3 |
+| Discovery | 2 |
 | Design | 0 |
 | In Sprint | 0 |
 | Review | 1 |
-| Released | 91 |
+| Released | 92 |
 | Archived | 1 |
 | **Total** | **96** |
 

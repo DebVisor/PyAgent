@@ -1,6 +1,6 @@
 # coverage-minimum-enforcement - Project Overview
 
-_Status: READY_FOR_9GIT_
+_Status: RELEASED_
 _Owner: @1project | Updated: 2026-03-29_
 
 ## Project Identity
@@ -42,7 +42,7 @@ Initialize Idea 8 as a governed project workstream to replace effectively disabl
 | M5 | Code implemented | @6code | DONE |
 | M6 | Integration validated | @7exec | DONE |
 | M7 | Security clean | @8ql | DONE |
-| M8 | Committed | @9git | READY_FOR_9GIT |
+| M8 | Committed | @9git | DONE (merged via #242) |
 
 ## Artifacts
 - Canonical options: docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.think.md
@@ -61,7 +61,7 @@ Initialize Idea 8 as a governed project workstream to replace effectively disabl
 
 ## Status
 _Last updated: 2026-03-29_
-Validation and quality gates are now green for project-scoped readiness:
+Validation and quality gates are complete and the project is released:
 1. Full fail-fast regression run passed: `python -m pytest -v --maxfail=1` => `1254 passed, 10 skipped`.
 2. Targeted Idea 8 enforcement checks passed: `tests/test_coverage_config.py`, `tests/structure/test_ci_yaml.py`, `tests/ci/test_workflow_count.py`.
-3. Coverage enforcement slice implemented and documented in CI + tests; project is ready for @9git commit/push/PR handoff.
+3. PR #242 has merged to `main`; lifecycle status transitioned from Review to Released.
