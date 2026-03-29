@@ -34,3 +34,15 @@
 - Validation:
 	- `pytest tests/docs/test_agent_workflow_policy_docs.py tests/docs/test_architecture_adr_governance.py` -> `15 passed`.
 
+## 2026-03-29 — CI shard-1 coverage gate remediation
+
+- Trigger: GitHub Actions run 23716956870 failed at job `Run tests (shard 1/10)`, step `Coverage gate (stage 1)`.
+- Root cause: gate executed only governance tests while measuring `--cov=tests`, which produced synthetic low total coverage.
+- Direction accepted: switch gate to `--cov=src` and run tests that actually execute `src`.
+- Change delegated to @6code:
+	- `.github/workflows/ci.yml` coverage gate command updated to:
+	  - `pytest tests/ --cov=src --cov-report=term-missing --cov-fail-under=40 -q`
+- Validation evidence:
+	- `pytest tests/structure/test_ci_yaml.py tests/ci/test_workflow_count.py -q` -> `13 passed`.
+	- New gate command run locally -> `Required test coverage of 40% reached. Total coverage: 94.48%`.
+
