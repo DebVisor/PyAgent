@@ -114,9 +114,7 @@ class AuditTrailCore:
             Computed event hash for the appended record.
 
         """
-        resolved_occurred_at_utc = occurred_at_utc or datetime.now(timezone.utc).isoformat().replace(
-            "+00:00", "Z"
-        )
+        resolved_occurred_at_utc = occurred_at_utc or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         resolved_event_id = event_id or str(uuid4())
 
         event = AuditEvent(

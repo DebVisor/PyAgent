@@ -19,6 +19,7 @@ planned for the Rust/Tokio acceleration layer in prj0000024.
 The Python implementation is used directly until the Rust PyO3 module
 (rust_core/src/async_runtime.rs) is compiled and wired in.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -52,6 +53,7 @@ async def set_timeout(
 
     Returns the Task handle in case the caller wants to cancel it.
     """
+
     async def _delayed() -> Any:
         await asyncio.sleep(delay)
         return await coro()
@@ -71,6 +73,7 @@ def create_queue(maxsize: int = 0) -> asyncio.Queue[Any]:
 # ---------------------------------------------------------------------------
 # Runtime class — singleton-safe lifecycle management
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class Runtime:

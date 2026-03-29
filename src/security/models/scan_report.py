@@ -58,8 +58,7 @@ class ScanReport:
 
         if self.blocking is None:
             has_high_findings = any(
-                str(item.get("severity", "")).upper() in _BLOCKING_SEVERITIES
-                for item in self.findings
+                str(item.get("severity", "")).upper() in _BLOCKING_SEVERITIES for item in self.findings
             )
             derived_blocking = self.status == "ERROR" or has_high_findings
             object.__setattr__(self, "blocking", derived_blocking)

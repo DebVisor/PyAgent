@@ -141,6 +141,36 @@ This agent primarily uses free Copilot models such as GPT-5 Mini, Grok Code Fast
 	- **Automatic handoff default:** when all gates pass and no blocking instruction is present, perform the full git handoff automatically in the same run: commit -> push branch -> create or update PR targeting `main`.
 	- If a PR already exists for the branch, update the existing PR instead of opening a duplicate.
 
+3a. **GitHub CLI auth and PR command playbook (MANDATORY)**
+	Use this exact sequence for reliable PR operations:
+	1) Capture branch:
+	```powershell
+	$branch = git branch --show-current
+	```
+	2) Validate GitHub CLI auth before PR calls:
+	```powershell
+	gh auth status
+	```
+	3) If `gh` returns `HTTP 401` and `GITHUB_TOKEN` is set, clear the override for the current session and re-check:
+	```powershell
+	if (Test-Path Env:GITHUB_TOKEN) { Remove-Item Env:GITHUB_TOKEN }
+	gh auth status
+	```
+	4) Check for existing PR for the current head branch:
+	```powershell
+	$prUrl = gh pr view --head $branch --json url --jq .url
+	```
+	5) If no PR exists, create one explicitly against `main`:
+	```powershell
+	gh pr create --base main --head $branch --title "<title>" --body-file "<body-file>"
+	```
+	6) If PR exists, update instead of creating duplicate:
+	```powershell
+	gh pr edit --title "<title>" --body-file "<body-file>"
+	```
+	7) Record final PR URL in `<project>.git.md` and `.github/agents/data/9git.memory.md`.
+	8) If auth is still failing after step 3, mark `BLOCKED` with command evidence and hand back to `@0master`.
+
 4. **Failure Disposition And Lessons Learned**
 	- When validation fails, mark the git artifact with the blocked outcome, the observed branch, the offending scope, and the next owner.
 	- Append a concise retrospective note to `.github/agents/data/9git.memory.md` so future agents can detect repeated branch-hygiene failures.

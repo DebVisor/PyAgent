@@ -17,11 +17,11 @@
 Tracks active context IDs and a per-task stack using :mod:`contextvars`
 so that concurrent asyncio tasks each get their own isolated state.
 """
+
 from __future__ import annotations
 
 import uuid
-from contextvars import ContextVar
-from contextvars import Token
+from contextvars import ContextVar, Token
 from types import TracebackType
 from typing import Any, List, Optional, Set
 
@@ -88,9 +88,7 @@ class ContextTransaction:
         """
         active = self._get_active()
         if self.context_id in active:
-            raise RecursionGuardError(
-                f"Context {self.context_id!r} is already active (recursion guard)."
-            )
+            raise RecursionGuardError(f"Context {self.context_id!r} is already active (recursion guard).")
         stack = self._get_stack()
         # Inherit parent_id from the current stack head
         if stack:
@@ -165,8 +163,7 @@ class ContextTransaction:
     async def hand_to_llm(self, context_window: Any) -> None:
         """Push a lineage summary into *context_window* for LLM consumption."""
         summary = (
-            f"[ContextTransaction] id={self.transaction_id} "
-            f"context_id={self.context_id!r} parent_id={self.parent_id}"
+            f"[ContextTransaction] id={self.transaction_id} context_id={self.context_id!r} parent_id={self.parent_id}"
         )
         if hasattr(context_window, "push"):
             context_window.push("system", summary)

@@ -105,8 +105,7 @@ class McpServerConfig:
             )
         if self.transport not in _VALID_TRANSPORTS:
             raise McpConfigError(
-                f"McpServerConfig[{self.name!r}].transport={self.transport!r} "
-                f"is not one of {sorted(_VALID_TRANSPORTS)}"
+                f"McpServerConfig[{self.name!r}].transport={self.transport!r} is not one of {sorted(_VALID_TRANSPORTS)}"
             )
         if self.startup_mode not in _VALID_STARTUP_MODES:
             raise McpConfigError(
@@ -137,9 +136,7 @@ class McpServerConfig:
         if "name" not in data:
             raise McpConfigError("McpServerConfig.from_dict: 'name' is required")
         if "command" not in data:
-            raise McpConfigError(
-                f"McpServerConfig.from_dict[{data.get('name')!r}]: 'command' is required"
-            )
+            raise McpConfigError(f"McpServerConfig.from_dict[{data.get('name')!r}]: 'command' is required")
         known_keys = {f.name for f in cls.__dataclass_fields__.values()}  # type: ignore[attr-defined]
         filtered = {k: v for k, v in data.items() if k in known_keys}
         return cls(**filtered)

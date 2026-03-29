@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """SwarmNode — minimal peer with ping/pong message exchange (prj0000022)."""
+
 from __future__ import annotations
 
 import asyncio
@@ -40,6 +41,7 @@ class SwarmNode:
 
     def _make_message(self, msg_type: str, destination: str, payload: dict[str, Any]) -> dict[str, Any]:
         import time
+
         return {
             "id": str(uuid.uuid4()),
             "timestamp": str(time.time()),

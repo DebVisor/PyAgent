@@ -105,15 +105,10 @@ def load_plugin(name: str, allowed: list[str], plugin_dir: str | None = None) ->
     if not name or os.sep in name or "/" in name or "\\" in name or name.startswith("."):
         raise ValueError(f"Invalid plugin name: {name!r}. Must be a plain identifier.")
     if "." in name:
-        raise ValueError(
-            f"Plugin name {name!r} contains dots. Use a simple module name, not a package path."
-        )
+        raise ValueError(f"Plugin name {name!r} contains dots. Use a simple module name, not a package path.")
 
     if name not in allowed:
-        raise ValueError(
-            f"Plugin {name!r} is not in the allowed list. "
-            f"Allowed plugins: {sorted(allowed)}"
-        )
+        raise ValueError(f"Plugin {name!r} is not in the allowed list. Allowed plugins: {sorted(allowed)}")
 
     if plugin_dir is not None:
         plugin_path = os.path.join(plugin_dir, f"{name}.py")

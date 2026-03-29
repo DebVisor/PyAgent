@@ -14,6 +14,9 @@ and pull request coordination notes.
 - Do not bypass the post-staging `pre-commit` run with `--no-verify` or skipped hooks for normal project work.
 - Do not use blanket staging for project work (`git add .`, `git add -A`, or equivalent).
 - On validation failure, stop git work, update the project git artifact, record a short retrospective note here, and hand the task back to `@0master`.
+- Before any `gh pr view/create/edit`, run `gh auth status` and record the result in git handoff evidence.
+- If `gh` returns 401 and `GITHUB_TOKEN` is present, clear the session override (`Remove-Item Env:GITHUB_TOKEN`) and retry `gh auth status` before declaring BLOCKED.
+- Prefer branch-scoped PR commands: `gh pr view --head <branch>` then `gh pr create --base main --head <branch>` when missing, otherwise `gh pr edit`.
 
 ## Retrospective Notes
 
@@ -59,6 +62,14 @@ and pull request coordination notes.
 	Seen in: `prj0000099-stub-module-elimination`.
 	Recurrence count: 1.
 	Promotion status: Candidate (not promoted; threshold is >=2).
+- 2026-03-29 — PR command hardening: standardized @9git PR flow to `gh auth status` -> branch-scoped `gh pr view --head <branch>` -> `gh pr create --base main --head <branch>` or `gh pr edit`.
+	Pattern: Ad-hoc PR command variants increase failure rate and duplicate/failed PR attempts under partial auth states.
+	Root cause: Missing deterministic command order and missing preflight auth gate in prior runs.
+	Prevention: Enforce the command playbook in @9git operating procedure and record auth evidence in git artifacts.
+	First seen: 2026-03-29.
+	Seen in: `prj0000092-mypy-strict-enforcement`, `prj0000098-backend-health-check-endpoint`, `prj0000099-stub-module-elimination`.
+	Recurrence count: 3.
+	Promotion status: Promoted to hard rule.
 
 ## Auto-handoff
 

@@ -149,6 +149,7 @@ async def probe_models(
 # Internal helpers
 # ---------------------------------------------------------------------------
 
+
 async def _http_get(url: str) -> str:
     """Minimal async HTTP GET returning the response body as a string.
 
@@ -166,13 +167,7 @@ async def _http_get(url: str) -> str:
 
     reader, writer = await asyncio.open_connection(host, port)
     try:
-        request = (
-            f"GET {path} HTTP/1.0\r\n"
-            f"Host: {host}:{port}\r\n"
-            "Accept: application/json\r\n"
-            "Connection: close\r\n"
-            "\r\n"
-        )
+        request = f"GET {path} HTTP/1.0\r\nHost: {host}:{port}\r\nAccept: application/json\r\nConnection: close\r\n\r\n"
         writer.write(request.encode())
         await writer.drain()
 

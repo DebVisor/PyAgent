@@ -21,6 +21,7 @@ from typing import Optional
 
 try:
     import rust_core as _rust_core
+
     _HAS_RUST = hasattr(_rust_core, "scan_changed_files")
 except ImportError:
     _rust_core = None  # type: ignore[assignment]

@@ -1626,17 +1626,17 @@
   {
     "id": "prj0000099",
     "name": "stub-module-elimination",
-    "lane": "Review",
-    "summary": "This idea focuses on stub module elimination in area 1 – Python agents. The current signal indicates priority P2, impact H, and urgency M. The SWOT tag is W (Weakness in current implementation). Lifecycle M1-M7 DONE; READY_FOR_GIT pending @9git commit/PR handoff.",
-    "branch": "prj0000099-stub-module-elimination",
-    "pr": null,
+    "lane": "Released",
+    "summary": "Validation-first closure for stub-module-elimination with lifecycle artifacts completed and baseline pre-commit remediation integrated into @8ql/@9git handoff policy.",
+    "branch": "merged",
+    "pr": "#245",
     "priority": "P2",
     "budget_tier": "M",
     "tags": [
       "stubs",
       "module-elimination",
       "idea000011",
-      "ready-for-git"
+      "policy-hardening"
     ],
     "created": "2026-03-29",
     "updated": "2026-03-29"

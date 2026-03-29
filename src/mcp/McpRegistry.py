@@ -146,9 +146,7 @@ class McpRegistry:
         """
         client = self._clients.get(name)
         if client is None:
-            raise McpServerNotEnabled(
-                f"Server '{name}' is not running; call enable() first"
-            )
+            raise McpServerNotEnabled(f"Server '{name}' is not running; call enable() first")
         return client
 
     # ------------------------------------------------------------------

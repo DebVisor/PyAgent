@@ -181,9 +181,7 @@ class McpClient:
             McpServerCrashed: If the server process exits during the call.
 
         """
-        response = await self._rpc_call(
-            "tools/call", {"name": tool_name, "arguments": arguments}
-        )
+        response = await self._rpc_call("tools/call", {"name": tool_name, "arguments": arguments})
         content = response.get("content", [])
         is_error = bool(response.get("isError", False))
         return McpToolResult(content=content, is_error=is_error)
@@ -244,9 +242,7 @@ class McpClient:
         fut: asyncio.Future[Any] = asyncio.get_running_loop().create_future()
         self._pending[request_id] = fut
 
-        payload = json.dumps(
-            {"jsonrpc": "2.0", "id": request_id, "method": method, "params": params}
-        ) + "\n"
+        payload = json.dumps({"jsonrpc": "2.0", "id": request_id, "method": method, "params": params}) + "\n"
         assert self._process.stdin is not None  # noqa: S101
         write_result = self._process.stdin.write(payload.encode())
         if asyncio.iscoroutine(write_result) or asyncio.isfuture(write_result):

@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 from __future__ import annotations
 
 _SCORE: dict[str, int] = {"low": 1, "medium": 3, "high": 5}

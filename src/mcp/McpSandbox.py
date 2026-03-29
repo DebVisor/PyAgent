@@ -60,9 +60,7 @@ class McpSandbox:
     # Environment construction
     # ------------------------------------------------------------------
 
-    def build_env(
-        self, config: McpServerConfig
-    ) -> tuple[dict[str, str], dict[str, str]]:
+    def build_env(self, config: McpServerConfig) -> tuple[dict[str, str], dict[str, str]]:
         """Build a sanitised subprocess environment from *config*.
 
         Starts from an **empty** base (never copies ``os.environ``) and adds:
@@ -101,8 +99,7 @@ class McpSandbox:
         )
         if missing is not None:
             raise McpSecretNotFound(
-                f"Secret '{missing}' required by server '{config.name}' "
-                "is not set in the environment"
+                f"Secret '{missing}' required by server '{config.name}' is not set in the environment"
             )
         env.update({ref: os.environ[ref] for ref in config.secret_refs})
         masked_env.update({ref: "[REDACTED]" for ref in config.secret_refs})
@@ -142,14 +139,11 @@ class McpSandbox:
             try:
                 binary_bytes = binary.read_bytes()
             except OSError as exc:
-                raise McpPinMismatch(
-                    f"Cannot read binary '{binary}' to verify SHA-256 pin"
-                ) from exc
+                raise McpPinMismatch(f"Cannot read binary '{binary}' to verify SHA-256 pin") from exc
             computed = hashlib.sha256(binary_bytes).hexdigest()
             if computed != config.sha256_pin:
                 raise McpPinMismatch(
-                    f"SHA-256 pin mismatch for '{binary}': "
-                    f"expected {config.sha256_pin!r}, got {computed!r}"
+                    f"SHA-256 pin mismatch for '{binary}': expected {config.sha256_pin!r}, got {computed!r}"
                 )
 
         try:
@@ -161,9 +155,7 @@ class McpSandbox:
                 env=env,
             )
         except (OSError, FileNotFoundError) as exc:
-            raise McpSandboxError(
-                f"Failed to spawn '{config.command[0]}': {exc}"
-            ) from exc
+            raise McpSandboxError(f"Failed to spawn '{config.command[0]}': {exc}") from exc
 
         return process
 
@@ -210,8 +202,5 @@ class McpSandbox:
         """
         resolved = Path(path).resolve()
         if not any(_is_subpath(resolved, Path(a).resolve()) for a in config.allowed_paths):
-            raise McpPathForbidden(
-                f"Path '{resolved}' is not under any allowed prefix: "
-                f"{config.allowed_paths!r}"
-            )
+            raise McpPathForbidden(f"Path '{resolved}' is not under any allowed prefix: {config.allowed_paths!r}")
         return resolved

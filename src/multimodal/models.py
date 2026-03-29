@@ -84,9 +84,7 @@ class MultiModalData:
         try:
             return self.content.decode("utf-8")
         except UnicodeDecodeError as exc:
-            raise ValueError(
-                f"Cannot decode binary {self.mime_type!r} content as UTF-8"
-            ) from exc
+            raise ValueError(f"Cannot decode binary {self.mime_type!r} content as UTF-8") from exc
 
 
 @dataclass

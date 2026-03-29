@@ -124,9 +124,7 @@ class CircuitBreakerMixin:
 
         """
         if not hasattr(self, "_circuit_breaker_registry"):
-            raise AttributeError(
-                f"Circuit breaker registry is not configured for provider '{provider_key}'."
-            )
+            raise AttributeError(f"Circuit breaker registry is not configured for provider '{provider_key}'.")
 
 
 def validate() -> bool:
