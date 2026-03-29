@@ -13,6 +13,7 @@
 # limitations under the License.
 
 """Subprocess transaction manager with sync and async protocol support."""
+
 from __future__ import annotations
 
 import subprocess
@@ -92,6 +93,7 @@ class ProcessTransaction:
             self._async_proc.terminate()
             try:
                 import asyncio
+
                 await asyncio.wait_for(self._async_proc.wait(), timeout=3.0)
             except Exception:
                 try:
@@ -154,6 +156,7 @@ class ProcessTransaction:
                 self._async_proc.terminate()
                 try:
                     import asyncio
+
                     await asyncio.wait_for(self._async_proc.wait(), timeout=3.0)
                 except Exception:
                     try:
@@ -176,9 +179,8 @@ class ProcessTransaction:
         """
         import asyncio
         import sys
-        effective_cmd = self._cmd if self._cmd else [
-            sys.executable, "-c", "import time; time.sleep(3600)"
-        ]
+
+        effective_cmd = self._cmd if self._cmd else [sys.executable, "-c", "import time; time.sleep(3600)"]
         self._async_proc = await asyncio.create_subprocess_exec(
             *effective_cmd,
             stdout=asyncio.subprocess.PIPE,
@@ -188,20 +190,18 @@ class ProcessTransaction:
     async def wait_async(self, timeout: float = 30.0) -> int:
         """Wait for the asyncio subprocess; capture output; return returncode."""
         import asyncio
+
         assert self._async_proc is not None, "start_async() must be called before wait_async()"  # noqa: S101
-        self.stdout, self.stderr = await asyncio.wait_for(
-            self._async_proc.communicate(), timeout=timeout
-        )
+        self.stdout, self.stderr = await asyncio.wait_for(self._async_proc.communicate(), timeout=timeout)
         returncode = self._async_proc.returncode
         if returncode is None:
             raise RuntimeError("Async process did not produce a returncode after communicate().")
         return returncode
 
-    async def run(
-        self, cmd: List[str], *, cwd: Any = None, timeout: float = 30.0
-    ) -> Tuple[int, str, str]:
+    async def run(self, cmd: List[str], *, cwd: Any = None, timeout: float = 30.0) -> Tuple[int, str, str]:
         """Convenience: start an async subprocess, wait, return (rc, stdout, stderr)."""
         import asyncio
+
         proc = await asyncio.create_subprocess_exec(
             *cmd,
             cwd=cwd,

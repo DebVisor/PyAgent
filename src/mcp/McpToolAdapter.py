@@ -99,9 +99,7 @@ class McpToolAdapter:
         for defn in tool_defs:
             namespaced_name = f"mcp::{server_name}::{defn.name}"
             if namespaced_name in self._registry:
-                raise McpToolNameCollision(
-                    f"Tool '{namespaced_name}' is already registered in the registry"
-                )
+                raise McpToolNameCollision(f"Tool '{namespaced_name}' is already registered in the registry")
 
             tool = self._build_tool(server_name, defn, client, config)
             self._registry[namespaced_name] = tool

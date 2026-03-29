@@ -13,14 +13,15 @@
 # limitations under the License.
 
 """In-memory key-value transaction manager with optional remote sync."""
+
 from __future__ import annotations
 
 import asyncio
 import base64
 import json
 import os
-from pathlib import Path
 import threading
+from pathlib import Path
 from types import TracebackType
 from typing import Any, Optional
 from urllib.parse import urlparse
@@ -84,9 +85,7 @@ class MemoryTransaction:
         try:
             return json.dumps(payload)
         except TypeError as exc:
-            raise TypeError(
-                "MemoryTransaction encryption supports JSON-serializable values and bytes."
-            ) from exc
+            raise TypeError("MemoryTransaction encryption supports JSON-serializable values and bytes.") from exc
 
     @staticmethod
     def _unpack_value(payload_text: str) -> Any:
@@ -213,8 +212,7 @@ class MemoryTransaction:
         parsed = urlparse(endpoint)
         if parsed.scheme not in ("https", "http"):
             raise ValueError(
-                f"sync_remote: unsupported URL scheme {parsed.scheme!r}. "
-                "Only 'https' and 'http' are accepted."
+                f"sync_remote: unsupported URL scheme {parsed.scheme!r}. Only 'https' and 'http' are accepted."
             )
         payload = dict(self._store)
         if dry_run:
@@ -224,6 +222,7 @@ class MemoryTransaction:
             import httpx
         except ImportError:
             import logging
+
             logging.warning("httpx not available — skipping remote sync")
             return None
         headers: dict[str, str] = {}

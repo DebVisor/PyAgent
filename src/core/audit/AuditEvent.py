@@ -166,9 +166,7 @@ class AuditEvent:
             "target": None if data.get("target") is None else str(data.get("target")),
             "tx_id": None if data.get("tx_id") is None else str(data.get("tx_id")),
             "context_id": None if data.get("context_id") is None else str(data.get("context_id")),
-            "correlation_id": None
-            if data.get("correlation_id") is None
-            else str(data.get("correlation_id")),
+            "correlation_id": None if data.get("correlation_id") is None else str(data.get("correlation_id")),
             "payload": {str(key): value for key, value in payload.items()},
             "schema_version": schema_version,
         }

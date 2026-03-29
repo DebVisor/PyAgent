@@ -155,9 +155,7 @@ class ReplayEnvelope:
             context_id=str(payload["context_id"]),
             transaction_id=str(payload["transaction_id"]),
             parent_transaction_id=(
-                str(payload["parent_transaction_id"])
-                if payload.get("parent_transaction_id") is not None
-                else None
+                str(payload["parent_transaction_id"]) if payload.get("parent_transaction_id") is not None else None
             ),
             agent_name=str(payload["agent_name"]),
             tool_name=str(payload["tool_name"]),

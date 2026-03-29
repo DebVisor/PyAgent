@@ -38,6 +38,7 @@ except ImportError:  # pragma: no cover
 # Internal helpers
 # ---------------------------------------------------------------------------
 
+
 def _run_git(
     args: Iterable[str], capture_output: bool = False, cwd: str | None = None
 ) -> subprocess.CompletedProcess[str]:
@@ -68,6 +69,7 @@ def _current_branch() -> str:
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
 
 def create_feature_branch(name: str, base: str = "main") -> bool:
     """Create and checkout a new feature branch from *base*.
@@ -129,6 +131,7 @@ def update_changelog(entry: str, changelog_path: str = "CHANGELOG.md") -> None:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def main(args: list[str] | None = None) -> int:
     """CLI entrypoint for git helper utilities."""

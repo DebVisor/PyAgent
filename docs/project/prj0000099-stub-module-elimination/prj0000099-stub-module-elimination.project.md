@@ -1,6 +1,6 @@
 # prj0000099-stub-module-elimination - Project Overview
 
-_Status: READY_FOR_GIT_
+_Status: DONE_
 _Owner: @1project | Updated: 2026-03-29_
 
 ## Project Identity
@@ -38,7 +38,7 @@ return task to @0master before downstream handoff.
 | M5 | Code implemented | @6code | DONE |
 | M6 | Integration validated | @7exec | DONE |
 | M7 | Security clean | @8ql | DONE |
-| M8 | Committed | @9git | READY_FOR_GIT |
+| M8 | Committed | @9git | DONE |
 
 ## Canonical Artifacts
 - docs/project/prj0000099-stub-module-elimination/prj0000099-stub-module-elimination.project.md
@@ -59,6 +59,5 @@ return task to @0master before downstream handoff.
 
 ## Status
 _Last updated: 2026-03-29_
-Branch gate validated on prj0000099-stub-module-elimination. Lifecycle artifacts through
-@8ql are complete (M1-M7 DONE), and the project is synchronized for @9git handoff with
-M8 marked READY_FOR_GIT.
+Project completed and merged via PR #245. Lifecycle milestones M1-M8 are DONE,
+including @9git handoff with pre-commit remediation and GitHub CLI auth hardening.

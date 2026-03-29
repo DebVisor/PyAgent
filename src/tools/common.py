@@ -95,14 +95,8 @@ def format_table(rows: list[list[Any]], headers: list[str]) -> str:
         bob    25
     """
     col_count = len(headers)
-    str_rows: list[list[str]] = [
-        [str(row[i]) if i < len(row) else "" for i in range(col_count)]
-        for row in rows
-    ]
-    widths = [
-        max([len(headers[i])] + [len(r[i]) for r in str_rows])
-        for i in range(col_count)
-    ]
+    str_rows: list[list[str]] = [[str(row[i]) if i < len(row) else "" for i in range(col_count)] for row in rows]
+    widths = [max([len(headers[i])] + [len(r[i]) for r in str_rows]) for i in range(col_count)]
 
     def _render_row(cells: list[str]) -> str:
         """Render a single row of cells, padded to column widths."""

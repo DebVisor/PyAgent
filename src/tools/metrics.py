@@ -163,6 +163,7 @@ def main(args: list[str] | None = None) -> int:
 
     if parsed.json:
         import json
+
         print(json.dumps(data, indent=2))
     else:
         print("\n".join(f"{k}: {v}" for k, v in data.items()))
@@ -175,4 +176,5 @@ register_tool("metrics", main, "Compute code metrics (lines, functions, complexi
 
 if __name__ == "__main__":
     import sys
+
     sys.exit(main())

@@ -67,9 +67,7 @@ class UniversalIntentRouter:
 
         """
         source_allowlist = core_allowlist or set()
-        self._core_allowlist: frozenset[str] = frozenset(
-            self.normalize_intent(intent) for intent in source_allowlist
-        )
+        self._core_allowlist: frozenset[str] = frozenset(self.normalize_intent(intent) for intent in source_allowlist)
 
     def normalize_intent(self, intent: str | None) -> str:
         """Normalize an intent value to a deterministic canonical key.

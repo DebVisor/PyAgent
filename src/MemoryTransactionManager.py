@@ -16,6 +16,7 @@
 
 Previous in-process implementation moved to src/transactions/MemoryTransactionManager.py.
 """
+
 from src.transactions.MemoryTransactionManager import MemoryTransaction, validate  # noqa: F401
 
 __all__ = ["MemoryTransaction", "validate"]

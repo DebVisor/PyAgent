@@ -66,9 +66,7 @@ def check_expiry(host: str, port: int = 443, timeout: float = 5.0) -> dict[str, 
             cert = ssl_sock.getpeercert()
 
     not_after_str: str = cert.get("notAfter", "")  # type: ignore[assignment]
-    not_after = datetime.datetime.strptime(not_after_str, "%b %d %H:%M:%S %Y %Z").replace(
-        tzinfo=datetime.timezone.utc
-    )
+    not_after = datetime.datetime.strptime(not_after_str, "%b %d %H:%M:%S %Y %Z").replace(tzinfo=datetime.timezone.utc)
     not_before_str: str = cert.get("notBefore", "")  # type: ignore[assignment]
     not_before = datetime.datetime.strptime(not_before_str, "%b %d %H:%M:%S %Y %Z").replace(
         tzinfo=datetime.timezone.utc

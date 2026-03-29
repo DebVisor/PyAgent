@@ -111,9 +111,7 @@ class ReplayStore:
         sequence_set: set[int] = set()
         for envelope in items:
             if envelope.sequence_no in sequence_set:
-                raise ReplaySequenceError(
-                    f"Duplicate sequence_no {envelope.sequence_no} in session '{session_id}'"
-                )
+                raise ReplaySequenceError(f"Duplicate sequence_no {envelope.sequence_no} in session '{session_id}'")
             sequence_set.add(envelope.sequence_no)
         return items
 
@@ -133,11 +131,7 @@ class ReplayStore:
             return []
 
         loaded = await self.load_session(session_id)
-        return [
-            envelope
-            for envelope in loaded
-            if start_sequence <= envelope.sequence_no <= end_sequence
-        ]
+        return [envelope for envelope in loaded if start_sequence <= envelope.sequence_no <= end_sequence]
 
     async def delete_session(self, session_id: str) -> None:
         """Delete persisted envelope stream for a session.

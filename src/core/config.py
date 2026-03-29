@@ -138,9 +138,7 @@ class SwarmConfig:
         if self.heartbeat_interval <= 0:
             raise ValueError(f"heartbeat_interval must be positive, got {self.heartbeat_interval}")
         if self.log_level.upper() not in self._VALID_LOG_LEVELS:
-            raise ValueError(
-                f"log_level must be one of {sorted(self._VALID_LOG_LEVELS)}, got {self.log_level!r}"
-            )
+            raise ValueError(f"log_level must be one of {sorted(self._VALID_LOG_LEVELS)}, got {self.log_level!r}")
         self.log_level = self.log_level.upper()
 
     def add_agent(self, config: AgentConfig) -> None:

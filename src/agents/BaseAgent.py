@@ -132,9 +132,7 @@ class BaseAgent(ABC):
 
         """
         if self._state is not AgentLifecycle.IDLE:
-            raise RuntimeError(
-                f"Cannot start agent in state {self._state.name}; expected IDLE"
-            )
+            raise RuntimeError(f"Cannot start agent in state {self._state.name}; expected IDLE")
         self._state = AgentLifecycle.RUNNING
         logger.debug("Agent %s started (id=%s)", self._manifest.name, self.agent_id)
 
@@ -196,9 +194,7 @@ class BaseAgent(ABC):
 
         """
         if self._state is not AgentLifecycle.RUNNING:
-            raise RuntimeError(
-                f"Agent is not running (state={self._state.name}); call start() first"
-            )
+            raise RuntimeError(f"Agent is not running (state={self._state.name}); call start() first")
         async with self._semaphore:
             return await self.run(task)
 
@@ -212,7 +208,4 @@ class BaseAgent(ABC):
         return True
 
     def __repr__(self) -> str:
-        return (
-            f"<{type(self).__name__} name={self._manifest.name!r}"
-            f" id={self.agent_id!r} state={self._state.name}>"
-        )
+        return f"<{type(self).__name__} name={self._manifest.name!r} id={self.agent_id!r} state={self._state.name}>"

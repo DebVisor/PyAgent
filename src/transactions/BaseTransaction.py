@@ -13,6 +13,7 @@
 # limitations under the License.
 
 """Abstract base for all transaction managers."""
+
 from __future__ import annotations
 
 import abc
