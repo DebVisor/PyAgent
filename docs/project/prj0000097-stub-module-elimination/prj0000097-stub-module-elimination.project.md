@@ -1,6 +1,6 @@
 # prj0000097-stub-module-elimination - Project Overview
 
-_Status: READY_FOR_9GIT_
+_Status: RELEASED_
 _Owner: @1project | Updated: 2026-03-29_
 
 ## Project Identity
@@ -60,16 +60,17 @@ ambiguous, return task to `@0master` before downstream handoff.
 | M5 | Code implemented | @6code | DONE |
 | M6 | Integration validated | @7exec | DONE |
 | M7 | Security clean | @8ql | DONE |
-| M8 | Committed | @9git | READY_FOR_9GIT |
+| M8 | Committed | @9git | DONE (merged via #243) |
 
 ## Status
 _Last updated: 2026-03-29_
-Project lifecycle synchronized to pre-git-ready state after downstream completion.
+Project lifecycle completed and released after downstream completion.
 
 Evidence references:
 - Tests complete: `prj0000097-stub-module-elimination.test.md` documents Slice 1 AC coverage and contract/deprecation/guard suites for rl/speculation.
 - Code complete: `prj0000097-stub-module-elimination.code.md` records implementation in `src/rl/__init__.py` and `src/speculation/__init__.py` plus targeted and full-suite green runs (`1272 passed, 10 skipped`).
 - Execution complete: `prj0000097-stub-module-elimination.exec.md` confirms branch gate PASS and validation commands PASS (`pytest -v --maxfail=1` and targeted rl/speculation/guard slice).
 - Quality/security complete: `prj0000097-stub-module-elimination.ql.md` reports overall `CLEAR -> @9git` with one non-blocking governance-drift note resolved here by scope-boundary alignment.
+- Release complete: PR #243 merged to `main`; lifecycle transitioned from Review to Released.
 
 One-project-one-branch policy remains enforced via the unchanged Branch Plan handoff rule and expected branch `prj0000097-stub-module-elimination`.
