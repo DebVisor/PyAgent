@@ -910,7 +910,7 @@ function getIdeaSwotContext(idea: Idea, swot: SwotData): SwotData {
   const pickBucket = (items: string[]): string[] => {
     const matched = items.filter(item => matchesIdeaContext(item, idea));
     if (matched.length > 0) return matched.slice(0, 2);
-    return items.slice(0, 2);
+    return [];
   };
 
   return {
@@ -923,12 +923,31 @@ function getIdeaSwotContext(idea: Idea, swot: SwotData): SwotData {
 
 function getIdeaRiskContext(idea: Idea, risks: RiskEntry[]): RiskEntry[] {
   const direct = risks.filter(entry => matchesIdeaContext(entry.risk, idea));
-  if (direct.length > 0) return direct.slice(0, 2);
+  return direct.slice(0, 2);
+}
 
-  const openRisks = risks.filter(entry => entry.status.toLowerCase() === 'open');
-  if (openRisks.length > 0) return openRisks.slice(0, 2);
+async function getLatestKanbanRegistersSource(): Promise<string> {
+  const candidatePaths = [
+    '/docs/project/kanban.md',
+    '/api/docs/project/kanban.md',
+  ];
 
-  return risks.slice(0, 2);
+  for (const path of candidatePaths) {
+    try {
+      const response = await fetchApi(path, {
+        headers: { Accept: 'text/plain; charset=utf-8' },
+      });
+      if (!response.ok) continue;
+      const content = await response.text();
+      if (content.includes('## SWOT Analysis') || content.includes('## Risk Register')) {
+        return content;
+      }
+    } catch {
+      // Ignore and continue trying additional sources.
+    }
+  }
+
+  return kanbanRaw;
 }
 
 function formatSwotContextMarkdown(swot: SwotData): string {
@@ -1330,8 +1349,9 @@ export const ProjectManager: React.FC = () => {
   };
 
   const triggerAgentflowForIdea = async (idea: Idea, projectId: string): Promise<void> => {
-    const swot = parseSwot(kanbanRaw);
-    const risks = parseRiskRegister(kanbanRaw);
+    const registerSource = await getLatestKanbanRegistersSource();
+    const swot = parseSwot(registerSource);
+    const risks = parseRiskRegister(registerSource);
     const ideaSwot = getIdeaSwotContext(idea, swot);
     const ideaRisks = getIdeaRiskContext(idea, risks);
 
