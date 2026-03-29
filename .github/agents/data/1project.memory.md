@@ -258,3 +258,19 @@ prj0000075 ci-simplification branch prj0000075-ci-simplification — project set
 | **handoff_target** | @9git |
 | **artifact_paths** | docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.project.md, docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.exec.md, docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.ql.md, docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.git.md, docs/project/kanban.md |
 
+---
+
+## prj0000097 - stub-module-elimination
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000097-stub-module-elimination |
+| **owner_agent** | @1project |
+| **source** | @0master |
+| **created_at** | 2026-03-29 |
+| **updated_at** | 2026-03-29 |
+| **status** | DONE |
+| **summary** | Wrap-up synchronization complete for prj0000097 on branch prj0000097-stub-module-elimination: project overview moved to READY_FOR_9GIT, milestones M1-M7 marked DONE with M8 READY_FOR_9GIT, status evidence refreshed from test/code/exec/ql artifacts, and scope boundary text aligned to implemented rl/speculation + tests + project docs slice to resolve governance drift noted by @8ql while preserving one-project-one-branch handoff policy. |
+| **handoff_target** | @9git |
+| **artifact_paths** | docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.project.md, docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.test.md, docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.code.md, docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.exec.md, docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.ql.md, .github/agents/data/1project.memory.md |
+

@@ -9,6 +9,44 @@ Once security scans and CodeQL analysis are complete,
 the next agent in the workflow is **@9git**. 
 Invoke it via `agent/runSubagent` to continue the process.
 
+## Last scan - 2026-03-29 (prj0000097)
+- Task: prj0000097-stub-module-elimination
+- Lifecycle: OPEN -> IN_PROGRESS -> DONE
+- status: DONE
+- task_id: prj0000097-stub-module-elimination
+- Branch gate: PASS (expected = observed = `prj0000097-stub-module-elimination`)
+- Files scanned: `src/rl/__init__.py`, `src/speculation/__init__.py`, `tests/rl/*`, `tests/speculation/*`, `tests/guards/test_rl_speculation_import_scope.py`, `tests/test_rl_package.py`, `tests/test_speculation_package.py`, and project artifacts under `docs/project/prj0000097-stub-module-elimination/`
+- Security - CodeQL: SKIPPED (no project-scoped CodeQL CLI/database run in this gate; ruff S + workflow + dependency checks executed)
+- Security - ruff S rules: PASS WITH INFO (project-scope S101 findings in pytest asserts only; non-blocking)
+- Security - pip-audit new findings: 0 (baseline delta `NEW_IDS=0`)
+- Security - Rust unsafe check: SKIPPED (`rust_core/` not modified in this scope)
+- Security - Workflow injection: PASS (no changed `.github/workflows/*.yml` files in project diff)
+- Quality - Plan vs delivery: PASS
+- Quality - AC vs test coverage: PASS (`python -m pytest -v --maxfail=1 tests/rl tests/speculation tests/guards/test_rl_speculation_import_scope.py` -> `18 passed`)
+- Quality - Docs vs implementation: PASS (all required project artifacts present) with non-blocking policy-drift note on stale scope boundary text in project.md
+- Quality - Agent file consistency: PASS
+- Lessons written: 1 (`8ql.memory.md`)
+- Rules promoted: 0
+- Outcome: CLEAN -> @9git
+- handoff_target: @9git
+
+### Lesson - 2026-03-29 (prj0000097)
+- Pattern: Project initialization scope boundary text can drift from downstream implementation scope, creating governance ambiguity at handoff.
+- Root cause: `project.md` retained @1project-only scope boundary while later phases correctly modified production and test files for planned slice delivery.
+- Prevention: Update project artifact scope boundary once @3design/@4plan confirm final implementation/test surface, before @9git handoff checks.
+- First seen: prj0000097
+- Seen in: prj0000097-stub-module-elimination
+- Recurrence count: 1
+- Promotion status: CANDIDATE
+
+## Unresolved Quality-Debt Ledger
+- Debt ID: QD-prj0000097-001
+- Status: OPEN
+- Owner: @1project (or @6code if delegated)
+- Originating project: prj0000097-stub-module-elimination
+- Description: Project artifact scope boundary text is stale relative to approved and delivered slice implementation/test paths.
+- Exit criteria: Update `prj0000097-stub-module-elimination.project.md` scope boundary/handoff wording to match final scoped delivery, then confirm @9git staging rules remain deterministic.
+
 ## Last scan - 2026-03-29 (prj0000096)
 - Task: prj0000096-coverage-minimum-enforcement
 - Lifecycle: OPEN -> IN_PROGRESS -> BLOCKED

@@ -258,10 +258,38 @@ the design intent.
 | **assumptions** | First slice stage is 40; no new workflow files; ratchet promotions require explicit evidence in project test artifact |
 | **handoff_target** | @4plan |
 | **artifact_paths** | docs/project/prj0000096-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md |
-| **Pattern** | Enforce quality gates by ratcheting from a low-risk baseline using a single authoritative threshold key |
+| **Pattern** | Enforce quality gates by ratcheting from a low-risk baseline using one authoritative threshold key |
 | **Root cause** | Coverage threshold existed in config but was not wired into blocking CI path |
-| **Prevention** | Keep threshold in one config location and guard CI contract with structure tests against soft-fail drift |
+| **Prevention** | Keep threshold in one config location and guard CI contract with structure tests |
 | **First seen** | 2026-03-28 |
 | **Seen in** | prj0000096-coverage-minimum-enforcement |
+| **Recurrence count** | 1 |
+| **Promotion status** | Candidate |
+
+---
+
+## prj0000097 - stub-module-elimination
+
+| Field | Value |
+|---|---|
+| **task_id** | prj0000097-stub-module-elimination |
+| **owner_agent** | @3design |
+| **source** | @2think |
+| **created_at** | 2026-03-29 |
+| **updated_at** | 2026-03-29 |
+| **status** | DONE |
+| **lifecycle** | OPEN -> IN_PROGRESS -> DONE |
+| **branch_gate** | PASS - `prj0000097-stub-module-elimination` |
+| **selected_option** | Option C - targeted stub elimination, Slice 1 (`rl` + `speculation`) |
+| **design_path** | Keep module paths stable; replace placeholder behavior; deprecate `validate()` shims |
+| **interface_contracts** | IFC-RL-001/002, IFC-SPC-001/002, and import-scan guard contract |
+| **assumptions** | No runtime/memory/cort refactor; one-release deprecation window before shim removal |
+| **handoff_target** | @4plan |
+| **artifact_paths** | docs/project/prj0000097-stub-module-elimination/prj0000097-stub-module-elimination.design.md |
+| **Pattern** | Replace placeholder modules with one deterministic behavior contract before shim removal |
+| **Root cause** | `rl` and `speculation` exposed only import-level `validate()` placeholders |
+| **Prevention** | Require behavior-first ACs, deprecation tests, and import-scope guards |
+| **First seen** | 2026-03-29 |
+| **Seen in** | prj0000097-stub-module-elimination |
 | **Recurrence count** | 1 |
 | **Promotion status** | Candidate |
