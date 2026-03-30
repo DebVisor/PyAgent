@@ -32,6 +32,7 @@ _No checkbox tasks found in the plan file._
   - `src\core\resilience\CircuitBreakerCore.py`
   - `src\core\universal\UniversalCoreRegistry.py`
   - `tests\core\test_core.py`
+  - `tests\deps\test_pyproject_parse_failure.py`
   - `tests\docs\test_codestructure_governance.py`
   - `tests\test_api_projects_lane_sync.py`
   - `tests\test_AuditTrailCore.py`
@@ -39,6 +40,12 @@ _No checkbox tasks found in the plan file._
   - `tests\test_CircuitBreakerCore.py`
   - `tests\test_core_agent_registry.py`
   - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_base_mixins_audit_mixin.py`
+  - `tests\test_core_base_mixins_base_behavior_mixin.py`
+  - `tests\test_core_base_mixins_migration_observability.py`
+  - `tests\test_core_base_mixins_replay_mixin.py`
+  - `tests\test_core_base_mixins_sandbox_mixin.py`
+  - `tests\test_core_base_mixins_shim_registry.py`
   - `tests\test_core_config.py`
   - `tests\test_core_helpers.py`
   - `tests\test_core_memory.py`
