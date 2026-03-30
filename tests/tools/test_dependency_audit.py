@@ -30,25 +30,10 @@ def _write_pyproject(path: Path, dependencies: list[str], optional: list[str] | 
     """
     optional_entries = optional or []
     optional_block = "\n".join(f'    "{dep}",' for dep in optional_entries)
-    optional_section = (
-        "\n[project.optional-dependencies]\n"
-        "dev = [\n"
-        f"{optional_block}\n"
-        "]\n"
-        if optional_entries
-        else ""
-    )
+    optional_section = f"\n[project.optional-dependencies]\ndev = [\n{optional_block}\n]\n" if optional_entries else ""
 
     dep_block = "\n".join(f'    "{dep}",' for dep in dependencies)
-    content = (
-        "[project]\n"
-        "name = \"tmp\"\n"
-        "version = \"0.1.0\"\n"
-        "dependencies = [\n"
-        f"{dep_block}\n"
-        "]\n"
-        f"{optional_section}"
-    )
+    content = f'[project]\nname = "tmp"\nversion = "0.1.0"\ndependencies = [\n{dep_block}\n]\n{optional_section}'
     path.write_text(content, encoding="utf-8")
 
 
