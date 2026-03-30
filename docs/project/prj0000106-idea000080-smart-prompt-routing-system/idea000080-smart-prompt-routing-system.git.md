@@ -1,6 +1,6 @@
 # idea000080-smart-prompt-routing-system - Git Summary
 
-_Status: IN_PROGRESS_
+_Status: DONE_
 _Git: @9git | Updated: 2026-03-30_
 
 ## Branch Plan
@@ -27,11 +27,11 @@ _Git: @9git | Updated: 2026-03-30_
 | src/core/routing/* and tests/test_core_routing_* | PASS | Project implementation and tests for idea000080 scope |
 
 ## Commit Hash
-`<sha>`
+`58cfd2e5c27bc551cf7f1a8266beedc9a98e71d7`
 
 ## Pre-Commit Evidence
 - Command: pre-commit run --files <staged-manifest>
-- Timestamp: 2026-03-30T22:15:06.3469675+01:00
+- Timestamp: 2026-03-30T22:16:09.5240398+01:00
 - Result: PASS
 - Hook results:
 	- ruff (legacy alias): Skipped (no matching files)
@@ -87,9 +87,49 @@ _Git: @9git | Updated: 2026-03-30_
 ## Files Changed
 | File | Change |
 |---|---|
+| .github/agents/8ql.agent.md | modified |
+| .github/agents/data/2026-03-30.6code.log.md | modified |
+| .github/agents/data/2026-03-30.7exec.log.md | modified |
+| .github/agents/data/2026-03-30.8ql.log.md | modified |
+| .github/agents/data/current.6code.memory.md | modified |
+| .github/agents/data/current.7exec.memory.md | modified |
+| .github/agents/data/current.8ql.memory.md | modified |
+| docs/project/kanban.json | modified |
+| docs/project/kanban.md | modified |
+| docs/project/prj0000106-idea000080-smart-prompt-routing-system/idea000080-smart-prompt-routing-system.code.md | modified |
+| docs/project/prj0000106-idea000080-smart-prompt-routing-system/idea000080-smart-prompt-routing-system.exec.md | modified |
+| docs/project/prj0000106-idea000080-smart-prompt-routing-system/idea000080-smart-prompt-routing-system.git.md | modified |
+| docs/project/prj0000106-idea000080-smart-prompt-routing-system/idea000080-smart-prompt-routing-system.project.md | modified |
+| docs/project/prj0000106-idea000080-smart-prompt-routing-system/idea000080-smart-prompt-routing-system.ql.md | modified |
+| src/core/routing/classifier_schema.py | modified |
+| src/core/routing/confidence_calibration.py | modified |
+| src/core/routing/fallback_reason_taxonomy.py | modified |
+| src/core/routing/guardrail_policy_engine.py | modified |
+| src/core/routing/policy_versioning.py | modified |
+| src/core/routing/prompt_routing_facade.py | modified |
+| src/core/routing/prompt_semantic_classifier.py | modified |
+| src/core/routing/request_normalizer.py | modified |
+| src/core/routing/routing_fallback_policy.py | modified |
+| src/core/routing/routing_models.py | modified |
+| src/core/routing/routing_policy_loader.py | modified |
+| src/core/routing/routing_telemetry_emitter.py | modified |
+| src/core/routing/shadow_mode_router.py | modified |
+| src/core/routing/tie_break_resolver.py | modified |
+| tests/test_conftest.py | modified |
+| tests/test_core_routing_classifier_schema.py | added |
+| tests/test_core_routing_confidence_calibration.py | added |
+| tests/test_core_routing_fallback_reason_taxonomy.py | added |
+| tests/test_core_routing_guardrail_policy_engine.py | added |
+| tests/test_core_routing_policy_versioning.py | added |
+| tests/test_core_routing_prompt_semantic_classifier.py | added |
+| tests/test_core_routing_request_normalizer.py | added |
+| tests/test_core_routing_routing_fallback_policy.py | added |
+| tests/test_core_routing_routing_models.py | added |
+| tests/test_core_routing_routing_policy_loader.py | added |
+| tests/test_core_routing_shadow_mode_router.py | added |
 
 ## PR Link
-N/A
+https://github.com/UndiFineD/PyAgent/pull/259
 
 ## Legacy Branch Exception
 None
@@ -98,4 +138,4 @@ None
 None
 
 ## Lessons Learned
-None
+- Dashboard generation still introduces broad out-of-scope modifications and requires strict allowlist staging isolation.
