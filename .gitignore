@@ -64,6 +64,8 @@ collection_log.txt
 !requirements-ci.txt
 !prompt.txt
 !project/llms-architecture.txt
+!tests/deps/fixtures/requirements_drifted.txt
+!tests/deps/fixtures/requirements_expected.txt
 
 # Scratch runtime artifacts (do not commit runtime manifests or shards)
 scratch/foreach_shards/

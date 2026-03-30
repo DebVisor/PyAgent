@@ -58,6 +58,11 @@ _No checkbox tasks found in the plan file._
   - `src\core\audit\__init__.py`
   - `src\core\audit\AuditTrailMixin.py`
   - `src\core\base\__init__.py`
+  - `src\core\base\mixins\__init__.py`
+  - `src\core\base\mixins\audit_mixin.py`
+  - `src\core\base\mixins\base_behavior_mixin.py`
+  - `src\core\base\mixins\replay_mixin.py`
+  - `src\core\base\mixins\sandbox_mixin.py`
   - `src\core\fuzzing\__init__.py`
   - `src\core\fuzzing\FuzzEngineCore.py`
   - `src\core\memory\__init__.py`
@@ -112,6 +117,10 @@ _No checkbox tasks found in the plan file._
   - `tests\agents\test_agents.py`
   - `tests\agents\test_base_agent.py`
   - `tests\core\__init__.py`
+  - `tests\core\base\mixins\test_host_validation_in_mixins.py`
+  - `tests\core\base\mixins\test_mixin_behavior_parity.py`
+  - `tests\deps\test_generate_requirements_deterministic.py`
+  - `tests\deps\test_install_compatibility_contract.py`
   - `tests\docs\test_agent_workflow_policy_docs.py`
   - `tests\docs\test_copilot_instructions_governance.py`
   - `tests\fixtures\__init__.py`
@@ -135,6 +144,12 @@ _No checkbox tasks found in the plan file._
   - `tests\test_context_window.py`
   - `tests\test_core_agent_registry.py`
   - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_base_mixins_audit_mixin.py`
+  - `tests\test_core_base_mixins_base_behavior_mixin.py`
+  - `tests\test_core_base_mixins_migration_observability.py`
+  - `tests\test_core_base_mixins_replay_mixin.py`
+  - `tests\test_core_base_mixins_sandbox_mixin.py`
+  - `tests\test_core_base_mixins_shim_registry.py`
   - `tests\test_core_workflow_engine.py`
   - `tests\test_FuzzEngineCore.py`
   - `tests\test_fuzzing_core.py`

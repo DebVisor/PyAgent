@@ -39,8 +39,23 @@ _No checkbox tasks found in the plan file._
   - `tests\ci\test_ci_parallelization.py`
   - `tests\ci\test_ci_workflow.py`
   - `tests\ci\test_workflow_count.py`
+  - `tests\core\base\mixins\conftest.py`
+  - `tests\core\base\mixins\test_export_contract.py`
+  - `tests\core\base\mixins\test_host_contract.py`
+  - `tests\core\base\mixins\test_host_validation_in_mixins.py`
+  - `tests\core\base\mixins\test_import_smoke.py`
+  - `tests\core\base\mixins\test_legacy_shim_imports.py`
+  - `tests\core\base\mixins\test_migration_events.py`
+  - `tests\core\base\mixins\test_mixin_behavior_parity.py`
+  - `tests\core\base\mixins\test_shim_deprecation_policy.py`
+  - `tests\core\base\mixins\test_shim_expiry_gate.py`
   - `tests\core\test_core.py`
   - `tests\deploy\test_compose_dockerfile_paths.py`
+  - `tests\deps\test_dependency_parity_gate.py`
+  - `tests\deps\test_generate_requirements_deterministic.py`
+  - `tests\deps\test_install_compatibility_contract.py`
+  - `tests\deps\test_manual_requirements_edit_detected.py`
+  - `tests\deps\test_pyproject_parse_failure.py`
   - `tests\docs\test_agent_workflow_policy_docs.py`
   - `tests\docs\test_allowed_websites_governance.py`
   - `tests\docs\test_api_docs_exist.py`
@@ -145,6 +160,12 @@ _No checkbox tasks found in the plan file._
   - `tests\test_ContextTransactionManager.py`
   - `tests\test_core_agent_registry.py`
   - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_base_mixins_audit_mixin.py`
+  - `tests\test_core_base_mixins_base_behavior_mixin.py`
+  - `tests\test_core_base_mixins_migration_observability.py`
+  - `tests\test_core_base_mixins_replay_mixin.py`
+  - `tests\test_core_base_mixins_sandbox_mixin.py`
+  - `tests\test_core_base_mixins_shim_registry.py`
   - `tests\test_core_config.py`
   - `tests\test_core_helpers.py`
   - `tests\test_core_memory.py`

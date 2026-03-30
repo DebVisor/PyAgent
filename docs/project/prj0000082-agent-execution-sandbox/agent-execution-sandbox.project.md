@@ -28,6 +28,7 @@
   - `src\agents\BaseAgent.py`
   - `src\core\agent_registry.py`
   - `src\core\agent_state_manager.py`
+  - `src\core\base\mixins\sandbox_mixin.py`
   - `src\core\reasoning\CortAgent.py`
   - `src\core\replay\ShadowExecutionCore.py`
   - `src\core\sandbox\SandboxConfig.py`
@@ -46,6 +47,7 @@
   - `tests\test_agent_registry.py`
   - `tests\test_core_agent_registry.py`
   - `tests\test_core_agent_state_manager.py`
+  - `tests\test_core_base_mixins_sandbox_mixin.py`
   - `tests\test_pipeline_execution.py`
   - `tests\test_sandbox.py`
   - `tests\test_SandboxConfig.py`

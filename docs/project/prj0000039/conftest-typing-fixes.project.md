@@ -23,6 +23,7 @@
 
 - Code detected in:
   - `conftest.py`
+  - `tests\core\base\mixins\conftest.py`
   - `tests\fakeconftest.py`
   - `tests\fixtures\conftest_fixtures.py`
   - `tests\test_conftest.py`

@@ -19,5 +19,8 @@ _No checkbox tasks found in the plan file._
 
 - Code detected in:
   - `rust_core\src\multimodal\image\composite.rs`
+  - `src\core\base\mixins\host_contract.py`
+  - `tests\core\base\mixins\test_host_contract.py`
+  - `tests\core\base\mixins\test_host_validation_in_mixins.py`
   - `tests\deploy\test_compose_dockerfile_paths.py`
   - `tests\test_responsive_nebula.py`

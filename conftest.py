@@ -408,7 +408,12 @@ class SessionManager:
         self._baseline_git_status: set[str] = set()
         # Some meta-tests intentionally exercise write-capable code paths.
         # Ignore these known volatile artifacts in git-dirty session checks.
-        self._volatile_workspace_paths: set[str] = {"experiments.json", "test", "CHANGELOG.md"}
+        self._volatile_workspace_paths: set[str] = {
+            "experiments.json",
+            "test",
+            "CHANGELOG.md",
+            "docs/project/kanban.json",
+        }
 
     def _filter_volatile_git_status(self, lines: set[str]) -> set[str]:
         filtered: set[str] = set()

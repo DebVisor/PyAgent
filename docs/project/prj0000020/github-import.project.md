@@ -19,6 +19,8 @@ _No checkbox tasks found in the plan file._
 
 - Code detected in:
   - `src\github_app.py`
+  - `tests\core\base\mixins\test_import_smoke.py`
+  - `tests\core\base\mixins\test_legacy_shim_imports.py`
   - `tests\guards\test_rl_speculation_import_scope.py`
   - `tests\runtime\test_runtime_import.py`
   - `tests\test_github_app.py`
