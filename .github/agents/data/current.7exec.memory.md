@@ -8,6 +8,35 @@
 
 ## Entries
 
+## Last run - 2026-03-31
+- task_id: prj0000107-idea000015-specialized-agent-library
+- Task: Runtime validation for specialized-agent-library after @6code implementation
+- Branch gate: PASS (expected=prj0000107-idea000015-specialized-agent-library, observed=prj0000107-idea000015-specialized-agent-library)
+- Dependency gate: PASS (`python -m pip check` -> no broken requirements), classification: NON_BLOCKING
+- Project selector gate: PASS (`python -m pytest -q tests/agents/specialization/test_specialization_registry.py tests/agents/specialization/test_contract_versioning.py tests/agents/specialization/test_specialized_agent_adapter.py tests/agents/specialization/test_manifest_request_parity.py tests/agents/specialization/test_capability_policy_enforcer.py tests/agents/specialization/test_specialized_core_binding.py tests/agents/specialization/test_fault_injection_fallback.py tests/agents/specialization/test_telemetry_redaction.py tests/agents/specialization/test_specialization_telemetry_bridge.py tests/core/universal/test_universal_agent_shell_specialization_flag.py` -> 20 passed)
+- Integration discovery: PASS (`rg --files tests/integration | rg specialization` -> no specialization-specific integration files present)
+- Full runtime fail-fast gate: FAIL (`python -m pytest src/ tests/ -x --tb=short -q` -> failed at `tests/test_async_loops.py::test_no_sync_loops`)
+- Exact failing selector rerun first: FAIL (`python -m pytest -q tests/test_async_loops.py::test_no_sync_loops` -> same failure signature)
+- Conclusive follow-up gates:
+	- PASS collect-only (`python -m pytest src/ tests/ --tb=short -q --co -q` -> collected 1415)
+	- FAIL full non-fail-fast (`python -m pytest src/ tests/ --tb=short` -> same async-loop failure)
+- Import check: PASS (15/15 changed modules imported)
+- Placeholder scan (project-changed scope): PASS (no NotImplemented/TODO/FIXME/HACK/STUB/PLACEHOLDER/ellipsis matches)
+- Docs policy gate: PASS (`python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> 12 passed)
+- Pre-commit gate: FAIL (`pre-commit run --files docs/project/prj0000107-idea000015-specialized-agent-library/idea000015-specialized-agent-library.exec.md .github/agents/data/current.7exec.memory.md .github/agents/data/2026-03-31.7exec.log.md` -> shared run-precommit-checks failed on async-loop selector)
+- Outcome: BLOCKED -> @6code
+- Next handoff target: @6code
+- Notes: All required gates were executed to conclusive outcomes; @8ql handoff remains blocked pending async-loop remediation.
+
+### Lesson
+- Pattern: Full-suite async-loop governance gate can block specialized feature handoff even when project selectors are fully green.
+- Root cause: `src/agents/specialization/specialization_telemetry_bridge.py` uses a synchronous loop at line 72, violating `tests/test_async_loops.py` policy.
+- Prevention: For any specialization/runtime changes under `src/`, run `python -m pytest -q tests/test_async_loops.py::test_no_sync_loops` in @6code before requesting @7exec rerun.
+- First seen: 2026-03-30
+- Seen in: prj0000106-idea000080-smart-prompt-routing-system; prj0000107-idea000015-specialized-agent-library
+- Recurrence count: 2
+- Promotion status: Promoted to hard rule
+
 ## Last run - 2026-03-30
 - task_id: prj0000106-idea000080-smart-prompt-routing-system
 - Task: Final @7exec rerun after @6code remediation including conftest selector
