@@ -69,7 +69,7 @@ class AuditMixin(BaseBehaviorMixin):
             return None
 
         try:
-            return append_event_dict(
+            event_hash: object = append_event_dict(
                 event_type=event_type,
                 action=action,
                 payload=payload,
@@ -79,6 +79,9 @@ class AuditMixin(BaseBehaviorMixin):
                 context_id=context_id,
                 correlation_id=correlation_id,
             )
+            if isinstance(event_hash, str):
+                return event_hash
+            return None
         except Exception:
             return None
 

@@ -16,15 +16,28 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING, Protocol, cast
+
 from src.core.base.mixins.base_behavior_mixin import BaseBehaviorMixin
+
+if TYPE_CHECKING:
+    from src.core.sandbox.SandboxConfig import SandboxConfig
+    from src.core.sandbox.SandboxedStorageTransaction import SandboxedStorageTransaction
+
+
+class _SandboxConfigLike(Protocol):
+    """Structural sandbox config contract used to avoid import cycles."""
+
+    allow_all_hosts: bool
+    allowed_hosts: list[str]
 
 
 class SandboxMixin(BaseBehaviorMixin):
     """Provide sandbox-enforced I/O helpers and host allow-list checks."""
 
-    _sandbox_config: object
+    _sandbox_config: _SandboxConfigLike
 
-    def sandbox_tx(self) -> object:
+    def sandbox_tx(self) -> SandboxedStorageTransaction:
         """Return a new storage transaction bound to this host sandbox config.
 
         Returns:
@@ -33,7 +46,7 @@ class SandboxMixin(BaseBehaviorMixin):
         """
         from src.core.sandbox.SandboxedStorageTransaction import SandboxedStorageTransaction
 
-        return SandboxedStorageTransaction(sandbox=self._sandbox_config)
+        return SandboxedStorageTransaction(sandbox=cast("SandboxConfig", self._sandbox_config))
 
     def _validate_host(self, host: str) -> None:
         """Reject a host that is not in the configured allowed-hosts list.
