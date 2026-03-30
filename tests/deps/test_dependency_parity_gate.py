@@ -18,12 +18,13 @@ from __future__ import annotations
 
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PYTHON_EXE = REPO_ROOT / ".venv" / "Scripts" / "python.exe"
+PYTHON_EXE = sys.executable
 PARITY_SCRIPT = REPO_ROOT / "scripts" / "deps" / "check_dependency_parity.py"
 FIXTURES_DIR = Path(__file__).resolve().parent / "fixtures"
 

@@ -37,9 +37,7 @@ def test_session_finish_sets_exitstatus_when_git_dirty(tmp_path: Path, monkeypat
     mock_dirty.stdout = " M conftest.py\n"
 
     with patch("subprocess.run", side_effect=[mock_baseline, mock_dirty]):
-        from conftest import SessionManager
-
-        mgr = SessionManager(tmp_path)
+        mgr = repo_conftest.SessionManager(tmp_path)
         # simulate pytest_sessionstart hook to establish baseline
         mgr.session_start(Mock())
         mock_session = Mock()
@@ -57,10 +55,8 @@ def test_session_finish_does_not_raise_with_minimal_session() -> None:
     mock_result.stdout = ""
 
     with patch("subprocess.run", return_value=mock_result):
-        from conftest import _mgr
-
         try:
-            _mgr.session_finish(mock_session, 0)
+            repo_conftest._mgr.session_finish(mock_session, 0)
         except AttributeError as e:
             pytest.fail(f"session_finish raised AttributeError with minimal session: {e}")
 
@@ -78,9 +74,7 @@ def test_resolve_import_fixer_prefers_scripts_then_scripts_old(tmp_path: Path, m
     scripts_fixer = scripts_dir / "fix_leading_imports.py"
     scripts_old_fixer = scripts_old_dir / "fix_leading_imports.py"
 
-    from conftest import SessionManager
-
-    mgr = SessionManager(tmp_path)
+    mgr = repo_conftest.SessionManager(tmp_path)
     resolver = mgr._resolve_import_fixer
 
     scripts_old_fixer.touch()
