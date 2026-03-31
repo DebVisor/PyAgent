@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-03-31 | Total projects: 107 | Auto-synced by project_registry_governance.py (Discovery: 0, Review: 7, Released: 98)_
+_Last updated: 2026-03-31 | Total projects: 107 | Auto-synced by project_registry_governance.py (Discovery: 0, Review: 6, Released: 99)_
 
 ## How to use this board
 
@@ -94,7 +94,6 @@ PR open, awaiting merge.
 | prj0000093 | projectmanager-ideas-autosync | prj0000093-projectmanager-ideas-autosync | pending | P2 | M | 2026-03-29 |
 | prj0000101 | idea-013 - backend-health-check-endpoint | — | pending | P3 | S | 2026-03-30 |
 | prj0000104 | idea000014-processing | prj0000104-idea000014-processing | pending | P2 | S | 2026-03-30 |
-| prj0000107 | idea000015-specialized-agent-library | prj0000107-idea000015-specialized-agent-library | pending | P2 | M | 2026-03-31 |
 ---
 
 ## Released
@@ -202,6 +201,7 @@ All projects merged to main branch.
 | prj0000102 | idea-014 - pyproject-requirements-sync | This idea focuses on pyproject requirements sync in area 9 – Dependencies. The current signal indicates priority P2, impact M, and urgency M. The SWOT tag is W (Weakness in current implementation). | merged | [#251](https://github.com/UndiFineD/PyAgent/pull/251) [#252](https://github.com/UndiFineD/PyAgent/pull/252) | P3 | S | 2026-03-30 |
 | prj0000105 | idea-016 - mixin-architecture-base | This idea focuses on mixin architecture base in area 1 – Python agents. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is W (Weakness in current implementation). | merged | [#258](https://github.com/UndiFineD/PyAgent/pull/258) | P3 | S | 2026-03-30 |
 | prj0000106 | idea000080-smart-prompt-routing-system | Initialize workflow artifacts for idea000080 smart prompt routing system and hand off to @2think discovery. | merged | [#259](https://github.com/UndiFineD/PyAgent/pull/259) | P2 | M | 2026-03-30 |
+| prj0000107 | idea000015-specialized-agent-library | Initialize workflow artifacts for idea000015 specialized agent library and hand off to @2think discovery. | merged | [#260](https://github.com/UndiFineD/PyAgent/pull/260) | P2 | M | 2026-03-31 |
 ---
 
 ## Archived
@@ -222,8 +222,8 @@ Stalled, cancelled, or superseded projects.
 | Discovery | 0 |
 | Design | 0 |
 | In Sprint | 0 |
-| Review | 7 |
-| Released | 98 |
+| Review | 6 |
+| Released | 99 |
 | Archived | 1 |
 | **Total** | **107** |
 

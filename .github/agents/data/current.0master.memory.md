@@ -160,3 +160,16 @@
 - Outcome:
 	- Project prj0000106 is formally closed in Released lane and repository state is aligned on `main`.
 
+## 2026-03-31 — prj0000107 post-merge release registry synchronization
+
+- Trigger: user confirmed PR #260 merged and requested wrap-up on main.
+- Actions completed:
+	- Transitioned `prj0000107` from `Review` to `Released` via governance tooling.
+	- Corrected released metadata to canonical merged values (`branch: merged`, `pr: #260`) in kanban artifacts.
+	- Revalidated registry and board consistency.
+- Validation evidence:
+	- `python scripts/project_registry_governance.py set-lane --id prj0000107 --lane Released` -> updated.
+	- `python scripts/project_registry_governance.py validate` -> `VALIDATION_OK` (`projects=107`, `kanban_rows=107`).
+- Outcome:
+	- Project prj0000107 is formally closed in Released lane and main is ready for next project allocation (`prj0000108`).
+
