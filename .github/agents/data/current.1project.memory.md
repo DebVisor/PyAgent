@@ -12,5 +12,5 @@
 	owner_agent: @1project
 	updated_at: 2026-03-31
 	state: DONE
-	summary: Initialized docs/project/prj0000109-idea000002-missing-compose-dockerfile canonical artifacts with branch/scope/failure sections, synced Discovery state in kanban.json/kanban.md/data/projects.json, advanced data/nextproject.md to prj0000110, and passed project registry + docs policy validations on branch prj0000109-idea000002-missing-compose-dockerfile.
+	summary: Resolved @8ql-reported registry mismatch for prj0000109 by synchronizing lane to Review across docs/project/kanban.json, docs/project/kanban.md, and data/projects.json; reran project registry and docs policy validations; and prepared commit evidence on branch prj0000109-idea000002-missing-compose-dockerfile.
 
