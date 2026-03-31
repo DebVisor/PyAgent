@@ -108,7 +108,7 @@
 
 ## 2026-03-31 - prj0000108-idea000019-crdt-python-ffi-bindings
 - task_id: prj0000108-idea000019-crdt-python-ffi-bindings
-- status: IN_PROGRESS
+- status: DONE
 - branch_expected: prj0000108-idea000019-crdt-python-ffi-bindings
 - branch_observed: prj0000108-idea000019-crdt-python-ffi-bindings
 - branch_validation: PASS
@@ -119,6 +119,8 @@
 	- Docs policy gate passed: `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> `12 passed`.
 	- GH auth 401 override resolved via playbook by removing invalid `GITHUB_TOKEN` env override; `gh auth status` now active/pass.
 	- Dashboard-generated out-of-scope docs changes detected and held unstaged for strict narrow-scope closure staging.
+	- @9git closure evidence commit created and pushed: `121792c1bdfe4a5b96935d3a36b0b4498f8d7f4d`.
+	- PR opened to `main`: https://github.com/UndiFineD/PyAgent/pull/261 (state: OPEN).
 
 ### Lesson
 - Pattern: Invalid session-level `GITHUB_TOKEN` can silently flip gh auth active account state and block PR automation.
