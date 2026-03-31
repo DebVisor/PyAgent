@@ -145,6 +145,8 @@
 	- Existing branch commits pushed to origin.
 	- PR created targeting `main`: https://github.com/UndiFineD/PyAgent/pull/262.
 	- Staged-file pre-commit gate passed for handoff artifacts (PRECOMMIT_RC=0).
+	- @9git closure commit created and pushed: `7251daa69629e3100985f70301dfbfad008b6cbb`.
+	- Post-push `gh` query hit `HTTP 401` due invalid `GITHUB_TOKEN`; resolved by clearing env override and re-running `gh auth status`.
 
 ### Lesson
 - Pattern: Dashboard refresh consistently introduces broad out-of-scope churn during narrow project closure handoffs.
