@@ -30,4 +30,4 @@ repos:
         additional_dependencies:
           - packaging
         stages: [pre-commit]
-        pass_filenames: true
+        pass_filenames: false
