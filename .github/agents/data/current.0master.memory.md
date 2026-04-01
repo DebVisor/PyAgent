@@ -235,6 +235,20 @@
 - Outcome:
 	- New project `prj0000110` is initialized in Discovery and ready for `@2think` handoff.
 
+## 2026-04-01 — prj0000110 CI workload reduction implementation
+
+- Trigger: user approved implementing CI reductions using pre-commit-aligned governance.
+- Actions completed:
+	- Updated `.github/workflows/ci.yml` to add a single-run `governance` job (`Governance Gate`) that runs pre-commit quality hooks and strict mypy once per workflow.
+	- Reduced shard duplication in `test` job by removing repeated strict mypy execution across all 10 shards.
+	- Added conditional Rust build skip for lightweight shards 1-3 to reduce unnecessary setup cost.
+	- Expanded `tests/ci/test_ci_workflow.py` with assertions that lock the new governance/test-shard responsibilities.
+- Validation evidence:
+	- `python -m pytest -q tests/ci/test_ci_workflow.py` -> `6 passed`.
+	- `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`.
+- Outcome:
+	- CI now performs governance checks once and keeps shard jobs focused on tests, reducing duplicated work while preserving deterministic policy gates.
+
 ## 2026-03-31 — prj0000109 post-merge release registry synchronization
 
 - Trigger: user confirmed PR #262 merged.
