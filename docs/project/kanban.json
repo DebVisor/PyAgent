@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-03-30",
+  "updated": "2026-04-01",
   "source_of_truth": "docs/project/kanban.json",
   "lanes": [
     "Ideas",
@@ -154,6 +154,24 @@
     }
   ],
   "projects": [
+    {
+      "id": "prj0000111",
+      "name": "ci-detached-head-governance-gate",
+      "lane": "Released",
+      "summary": "Stabilize branch-governance and precommit checks for detached HEAD CI runs and shared runner interpreter consistency.",
+      "branch": "merged",
+      "pr": "#264",
+      "priority": "P1",
+      "budget_tier": "S",
+      "tags": [
+        "ci",
+        "governance",
+        "branch-policy",
+        "precommit"
+      ],
+      "created": "2026-04-01",
+      "updated": "2026-04-01"
+    },
     {
       "id": "prj0000110",
       "name": "idea000004-quality-workflow-branch-trigger",

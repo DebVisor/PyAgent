@@ -3,7 +3,7 @@
 ## Metadata
 - agent: @0master
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-03-29
+- updated_at: 2026-04-01
 - rollover: At new project start, append this file's entries to history.0master.memory.md in chronological order, then clear Entries.
 
 ## Entries
@@ -218,6 +218,22 @@
 	- `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`.
 - Outcome:
 	- Lessons-learned fixes are now enforced as repository-wide automation and policy tests for all projects.
+
+## 2026-04-01 — prj0000111 post-merge release registry synchronization
+
+- Trigger: user requested continuation after PR #264 check-fix cycle and merge.
+- Actions completed:
+	- Verified PR #264 merged (`headRefName=prj0000111-ci-detached-head-governance-gate`, merged at `2026-04-01T07:29:54Z`).
+	- Registered missing `prj0000111` in canonical governance artifacts:
+		- `docs/project/kanban.json`
+		- `docs/project/kanban.md`
+		- `data/projects.json`
+		- `data/nextproject.md` advanced to `prj0000112`.
+	- Updated lane metrics in kanban markdown header/summary to keep board counters consistent.
+- Validation evidence:
+	- `python scripts/project_registry_governance.py validate` -> `VALIDATION_OK` (`projects=111`, `kanban_rows=111`).
+- Outcome:
+	- Project `prj0000111` is formally closed in `Released` lane and next ID allocation baseline is restored.
 
 ## 2026-04-01 — prj0000110 allocation and initialization for next idea
 
