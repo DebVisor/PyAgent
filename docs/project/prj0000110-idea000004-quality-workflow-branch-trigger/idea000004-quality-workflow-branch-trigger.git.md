@@ -1,6 +1,6 @@
 # idea000004-quality-workflow-branch-trigger - Git Summary
 
-_Status: NOT_STARTED_
+_Status: IN_PROGRESS_
 _Git: @9git | Updated: 2026-04-01_
 
 ## Branch Plan
@@ -19,8 +19,9 @@ _Git: @9git | Updated: 2026-04-01_
 | File or scope | Result | Notes |
 |---|---|---|
 | docs/project/prj0000110-idea000004-quality-workflow-branch-trigger/ | PASS | Canonical project folder for this project. |
-| docs/project/kanban.json, docs/project/kanban.md, data/projects.json, data/nextproject.md | PASS | Required registry synchronization scope. |
-| .github/agents/data/pip_audit_current_8ql.json | EXCLUDED | Unrelated pre-existing modified file must remain untouched and unstaged. |
+| docs/project/kanban.json, docs/project/kanban.md, data/projects.json, data/nextproject.md | PASS | Required registry synchronization scope when registry artifacts are part of the closure set. |
+| .github/agents/data/current.9git.memory.md, .github/agents/data/2026-04-01.9git.log.md | PASS | @9git memory and interaction log updates required by role contract for this handoff. |
+| scripts/project_registry_governance.py | EXCLUDED | Unrelated pre-existing modified file must remain untouched and unstaged. |
 
 ## Commit Hash
 `<sha>`
@@ -28,6 +29,7 @@ _Git: @9git | Updated: 2026-04-01_
 ## Files Changed
 | File | Change |
 |---|---|
+| docs/project/prj0000110-idea000004-quality-workflow-branch-trigger/idea000004-quality-workflow-branch-trigger.git.md | modified |
 
 ## PR Link
 N/A
@@ -39,4 +41,4 @@ None
 None
 
 ## Lessons Learned
-None
+Strict allowlist staging is required when unrelated pre-existing modifications are present in the working tree.

@@ -157,3 +157,15 @@
 - Recurrence count: 5
 - Promotion status: HARD
 
+## 2026-04-01 - prj0000110-idea000004-quality-workflow-branch-trigger
+- task_id: prj0000110-idea000004-quality-workflow-branch-trigger
+- status: IN_PROGRESS
+- branch_expected: prj0000110-idea000004-quality-workflow-branch-trigger
+- branch_observed: prj0000110-idea000004-quality-workflow-branch-trigger
+- branch_validation: PASS
+- scope_validation: PASS_WITH_EXCLUSION
+- notes:
+	- Active working tree contains unrelated pre-existing modification in `scripts/project_registry_governance.py`; excluded from @9git scope and must remain unstaged.
+	- Project git artifact switched to `IN_PROGRESS` with branch/scope evidence recorded.
+	- Pending: dashboard refresh gate, narrow staging, pre-commit evidence, push, and PR create/update to `main`.
+
