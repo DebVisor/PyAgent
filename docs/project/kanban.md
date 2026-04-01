@@ -1,6 +1,6 @@
 # PyAgent Project Kanban Board
 
-_Last updated: 2026-04-01 | Total projects: 110 | Auto-synced by project_registry_governance.py (Discovery: 1, Review: 6, Released: 101)_
+_Last updated: 2026-04-01 | Total projects: 111 | Auto-synced by project_registry_governance.py (Discovery: 1, Review: 6, Released: 102)_
 
 ## How to use this board
 
@@ -204,6 +204,7 @@ All projects merged to main branch.
 | prj0000107 | idea000015-specialized-agent-library | Initialize workflow artifacts for idea000015 specialized agent library and hand off to @2think discovery. | merged | [#260](https://github.com/UndiFineD/PyAgent/pull/260) | P2 | M | 2026-03-31 |
 | prj0000108 | idea000019-crdt-python-ffi-bindings | Initialize workflow artifacts for idea000019 crdt-python-ffi-bindings and hand off to @2think discovery. | merged | [#261](https://github.com/UndiFineD/PyAgent/pull/261) | P3 | S | 2026-03-31 |
 | prj0000109 | idea000002-missing-compose-dockerfile | Initialize workflow artifacts for idea000002 missing-compose-dockerfile and hand off to @2think discovery. | merged | [#262](https://github.com/UndiFineD/PyAgent/pull/262) | P1 | S | 2026-03-31 |
+| prj0000111 | ci-detached-head-governance-gate | Stabilize branch-governance and precommit checks for detached HEAD CI runs and shared runner interpreter consistency. | merged | [#264](https://github.com/UndiFineD/PyAgent/pull/264) | P1 | S | 2026-04-01 |
 ---
 
 ## Archived
@@ -225,9 +226,9 @@ Stalled, cancelled, or superseded projects.
 | Design | 0 |
 | In Sprint | 0 |
 | Review | 6 |
-| Released | 101 |
+| Released | 102 |
 | Archived | 1 |
-| **Total** | **110** |
+| **Total** | **111** |
 
 ---
 
