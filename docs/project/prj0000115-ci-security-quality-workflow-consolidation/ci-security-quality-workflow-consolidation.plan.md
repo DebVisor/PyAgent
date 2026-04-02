@@ -19,13 +19,14 @@ Implement Option C from design using a TDD-first sequence: define failing workfl
 
 ## Task List
 - [ ] T-SEC-001 - Create failing workflow-structure tests for scheduled security workflow (TDD red phase)
+	- [x] T-SEC-001 - Create failing workflow-structure tests for scheduled security workflow (TDD red phase)
 	- Objective: Add deterministic assertions for workflow existence, triggers, permissions, and job contracts before implementation.
 	- Classification: `parallel-safe`
 	- Target files: `tests/ci/test_security_workflow.py`
 	- Acceptance criteria: AC-SEC-001, AC-SEC-002, AC-SEC-003
 	- Validation command: `python -m pytest -q tests/ci/test_security_workflow.py`
 
-- [ ] T-SEC-002 - Implement scheduled security workflow to make T-SEC-001 green (TDD green phase)
+- [x] T-SEC-002 - Implement scheduled security workflow to make T-SEC-001 green (TDD green phase)
 	- Objective: Create `.github/workflows/security-scheduled.yml` with daily schedule + `workflow_dispatch`, minimal permissions, dependency audit job, and Python-only CodeQL job referencing custom query pack.
 	- Classification: `sequential-only` (depends on T-SEC-001 red tests)
 	- Target files: `.github/workflows/security-scheduled.yml`
@@ -33,6 +34,7 @@ Implement Option C from design using a TDD-first sequence: define failing workfl
 	- Validation command: `python -m pytest -q tests/ci/test_security_workflow.py`
 
 - [ ] T-SEC-003 - Add pre-commit parity assertions in CI workflow tests
+	- [x] T-SEC-003 - Add pre-commit parity assertions in CI workflow tests
 	- Objective: Ensure lightweight CI retains `pre-commit run --all-files` command-level parity.
 	- Classification: `parallel-safe`
 	- Target files: `tests/ci/test_ci_workflow.py`
@@ -85,6 +87,7 @@ Implement Option C from design using a TDD-first sequence: define failing workfl
 | # | Milestone | Tasks | Status |
 |---|---|---|---|
 | M1 | Test contracts authored (red) | T-SEC-001, T-SEC-003 | PLANNED |
+| M1 | Test contracts authored (red) | T-SEC-001, T-SEC-003 | DONE |
 | M2 | Workflow implementation (green) | T-SEC-002 | PLANNED |
 | M3 | Regression and closure evidence | T-SEC-004, T-SEC-005 | DONE |
 
