@@ -8,6 +8,34 @@
 
 ## Entries
 
+## 2026-04-02 — prj0000114 escalated to artifact-driven pipeline refactor
+
+- Trigger: user requested a fuller refactor for IdeaTracker because 200k ideas is only the beginning and incremental outputs/artifacts are needed for future scale.
+- Planning delivered by @4plan:
+	- Refactor plan written to `docs/project/prj0000114-ideatracker-batching-verbosity/ideatracker-batching-verbosity.plan.md`.
+	- Direction: keep `scripts/IdeaTracker.py` as CLI entrypoint, move heavy work behind helper modules, and persist deterministic batch artifacts under `docs/project/`.
+- Implementation delivered by @6code:
+	- Added helper modules:
+		- `scripts/idea_tracker_artifacts.py`
+		- `scripts/idea_tracker_pipeline.py`
+		- `scripts/idea_tracker_similarity.py`
+	- Refactored `scripts/IdeaTracker.py` into an artifact-driven pipeline.
+	- Added/maintained batch-persisted artifacts in `docs/project/` for:
+		- progress
+		- mapping
+		- references
+		- section names
+		- tokens
+		- similarities
+	- Preserved final outputs:
+		- `docs/project/ideatracker.json`
+		- split `docs/project/ideatracker-NNNNNN.json` files
+	- Added rewrite-safe incremental behavior so rerunning the same batch window replaces stable rows rather than duplicating them.
+- Direct validation by @0master:
+	- `runTests tests/test_idea_tracker.py` -> `26 passed, 0 failed`
+	- editor diagnostics: no errors in pipeline modules or tracker tests.
+- Current branch: `prj0000114-ideatracker-batching-verbosity`
+
 ## 2026-04-02 — prj0000114 IdeaTracker batching and verbosity project initialized and implemented
 
 - Trigger: user requested `scripts/IdeaTracker.py` become more verbose and scale better for 100,000+ ideas with batch processing around 1000.
