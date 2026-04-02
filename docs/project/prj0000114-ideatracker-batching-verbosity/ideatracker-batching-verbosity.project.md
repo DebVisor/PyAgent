@@ -55,14 +55,14 @@ None.
 ## Milestones
 | # | Milestone | Agent | Status |
 |---|---|---|---|
-| M1 | Options explored | @2think | NOT_STARTED |
-| M2 | Design confirmed | @3design | NOT_STARTED |
-| M3 | Plan finalized | @4plan | NOT_STARTED |
-| M4 | Tests written | @5test | NOT_STARTED |
-| M5 | Code implemented | @6code | NOT_STARTED |
-| M6 | Integration validated | @7exec | NOT_STARTED |
-| M7 | Security clean | @8ql | NOT_STARTED |
-| M8 | Committed | @9git | NOT_STARTED |
+| M1 | Options explored | @2think | DONE |
+| M2 | Design confirmed | @3design | DONE |
+| M3 | Plan finalized | @4plan | DONE |
+| M4 | Tests written | @5test | DONE |
+| M5 | Code implemented | @6code | DONE |
+| M6 | Integration validated | @7exec | DONE |
+| M7 | Security clean | @8ql | DONE |
+| M8 | Committed | @9git | IN_PROGRESS |
 
 ## Status
 _Last updated: 2026-04-02_
