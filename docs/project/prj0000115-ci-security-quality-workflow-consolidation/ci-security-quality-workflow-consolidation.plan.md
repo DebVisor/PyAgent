@@ -1,3 +1,4 @@
+- [x] T-SEC-002 - Implement scheduled security workflow to make T-SEC-001 green (TDD green phase)
 # ci-security-quality-workflow-consolidation - Implementation Plan
 
 _Status: DONE_
@@ -42,6 +43,7 @@ Implement Option C from design using a TDD-first sequence: define failing workfl
 	- Validation command: `python -m pytest -q tests/ci/test_ci_workflow.py`
 
 - [ ] T-SEC-004 - Regression guard validation for unchanged lightweight CI workflow behavior
+	- [x] T-SEC-004 - Regression guard validation for unchanged lightweight CI workflow behavior
 	- Objective: Validate `ci.yml` remains pre-commit-first and is not modified beyond parity-coverage intent.
 	- Classification: `sequential-only` (convergence check after T-SEC-002 and T-SEC-003)
 	- Target files: `.github/workflows/ci.yml` (read-only), `tests/ci/test_ci_workflow.py`
@@ -89,6 +91,7 @@ Implement Option C from design using a TDD-first sequence: define failing workfl
 | M1 | Test contracts authored (red) | T-SEC-001, T-SEC-003 | PLANNED |
 | M1 | Test contracts authored (red) | T-SEC-001, T-SEC-003 | DONE |
 | M2 | Workflow implementation (green) | T-SEC-002 | PLANNED |
+| M2 | Workflow implementation (green) | T-SEC-002 | DONE |
 | M3 | Regression and closure evidence | T-SEC-004, T-SEC-005 | DONE |
 
 ## Validation Commands
