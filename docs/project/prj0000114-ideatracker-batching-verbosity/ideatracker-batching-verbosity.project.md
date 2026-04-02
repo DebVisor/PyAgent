@@ -62,7 +62,7 @@ None.
 | M5 | Code implemented | @6code | DONE |
 | M6 | Integration validated | @7exec | DONE |
 | M7 | Security clean | @8ql | DONE |
-| M8 | Committed | @9git | IN_PROGRESS |
+| M8 | Committed | @9git | DONE |
 
 ## Status
 _Last updated: 2026-04-02_
