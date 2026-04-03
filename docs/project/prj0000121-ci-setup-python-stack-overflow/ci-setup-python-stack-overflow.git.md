@@ -1,6 +1,6 @@
 # ci-setup-python-stack-overflow - Git Summary
 
-_Status: IN_PROGRESS_
+_Status: DONE_
 _Git: @9git | Updated: 2026-04-03_
 
 ## Branch Plan
@@ -25,6 +25,7 @@ _Git: @9git | Updated: 2026-04-03_
 
 ## Commit Hash
 8546a063f8
+b2476d0fd2
 
 ## Files Changed
 | File | Change |
@@ -45,6 +46,7 @@ _Git: @9git | Updated: 2026-04-03_
 | Command | Result | Notes |
 |---|---|---|
 | `pre-commit run --files (git diff --cached --name-only)` | PASS | `Run pre-commit shared checks` passed for staged allowlist. |
+| `pre-commit run --files <prj0000121 allowlist + 9git evidence files>` | PASS | Timestamp: 2026-04-03T22:30:33.5134334+01:00; no failing hooks. |
 
 ## Staged-File Scope Manifest
 | Staged file | Scope-boundary reason |
@@ -62,7 +64,7 @@ _Git: @9git | Updated: 2026-04-03_
 | docs/project/prj0000121-ci-setup-python-stack-overflow/ci-setup-python-stack-overflow.ql.md | Project lane quality artifact update. |
 
 ## PR Link
-N/A (pending push + PR create/update)
+https://github.com/UndiFineD/PyAgent/pull/281
 
 ## Legacy Branch Exception
 None
