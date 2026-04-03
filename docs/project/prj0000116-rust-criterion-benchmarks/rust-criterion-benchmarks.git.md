@@ -1,6 +1,6 @@
 # rust-criterion-benchmarks - Git Summary
 
-_Status: IN_PROGRESS_
+_Status: DONE_
 _Git: @9git | Updated: 2026-04-03_
 
 ## Branch Plan
@@ -71,7 +71,7 @@ _Git: @9git | Updated: 2026-04-03_
 - [x] Memory and log artifacts updated
 
 ## Commit Hash
-_(populated after final commit)_
+`217f136e38`
 
 ## Files Changed
 | File | Change |
@@ -85,7 +85,7 @@ _(populated after final commit)_
 | `tests/rust/test_rust_criterion_baseline.py` | modified (ruff format fix; all 11 tests still pass) |
 
 ## PR Link
-_(populated after PR creation)_
+https://github.com/UndiFineD/PyAgent/pull/273
 
 ## Legacy Branch Exception
 None

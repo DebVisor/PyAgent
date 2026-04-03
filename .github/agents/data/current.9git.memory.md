@@ -23,8 +23,9 @@
 	- `rust_core/Cargo.lock` was modified (unstaged companion to committed Cargo.toml bench dep); staged in @9git final commit.
 	- Dashboard gate executed; broad side-effect files excluded from staging.
 	- Staged manifest: git.md, project.md (dashboard), current.9git.memory.md, 2026-04-03.9git.log.md, rust_core/Cargo.lock.
-	- Commit `docs(prj0000116): finalize git handoff and PR readiness` pushed.
-	- PR: TBD (populated after creation).
+	- Commit `217f136e38` (`docs(prj0000116): finalize git handoff and PR readiness`) pushed.
+	- PR: https://github.com/UndiFineD/PyAgent/pull/273.
+- status: DONE
 
 ### Lesson
 - Pattern: `rust_core/Cargo.lock` updated silently when `cargo bench` or `cargo clippy --bench` runs; must check `git diff --name-only` before finalizing scope manifest and always include Cargo.lock alongside Cargo.toml changes.
