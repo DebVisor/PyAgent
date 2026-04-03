@@ -1,7 +1,7 @@
 # Current Memory - 0master
 
 ## Metadata
-- updated_at: 2026-04-02
+- updated_at: 2026-04-03
 - rollover: At new project start, append this file's entries to history.0master.memory.md in chronological order, then clear Entries.
 
 ## Entries
@@ -39,4 +39,16 @@
 	- Commit: 1cd2c8041fa89e529dadbc89248250583a48134c pushed to origin
 - Memory rollover committed: 04c9a8991f
 - Next step: @2think discovery for pre-commit-first CI consolidation options.
+
+## 2026-04-03 — prj0000116 post-merge release closure and next-project selection
+
+- Trigger: user confirmed PR #273 merged and requested wrap-up + move to next project.
+- Branch gate: active branch verified as `prj0000116-rust-criterion-benchmarks`.
+- Closure actions completed:
+	- `python scripts/project_registry_governance.py set-lane --id prj0000116 --lane Released`
+	- Archived `docs/project/ideas/idea000017-rust-criterion-benchmarks.md` to `docs/project/ideas/archive/`.
+	- `python scripts/project_registry_governance.py validate` -> `VALIDATION_OK`, `projects=115`.
+- Next project selected deterministically from unmapped ideas:
+	- `idea000018-rust-sub-crate-unification.md`.
+	- Next project id from registry: `prj0000117`.
 
