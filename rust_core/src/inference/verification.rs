@@ -11,10 +11,7 @@ fn softmax_probability(logits: &[f64], token_idx: usize, temperature: f64) -> Op
     };
 
     let scaled: Vec<f64> = logits.iter().map(|v| v / t).collect();
-    let max_val = scaled
-        .iter()
-        .copied()
-        .fold(f64::NEG_INFINITY, f64::max);
+    let max_val = scaled.iter().copied().fold(f64::NEG_INFINITY, f64::max);
 
     let exps: Vec<f64> = scaled.iter().map(|v| (v - max_val).exp()).collect();
     let denom: f64 = exps.iter().sum();
@@ -70,7 +67,11 @@ pub fn verify_draft_probabilistic_rust(
     {
         // Standard speculative decoding acceptance criterion
         let accept_prob = if d_prob <= 0.0 {
-            if t_prob > 0.0 { 1.0 } else { 0.0 }
+            if t_prob > 0.0 {
+                1.0
+            } else {
+                0.0
+            }
         } else {
             (t_prob / d_prob).min(1.0)
         };

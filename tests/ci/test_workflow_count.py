@@ -78,7 +78,9 @@ def test_security_yml_has_security_events_write_permission() -> None:
     data = _load_security_yml()
     perms = data.get("permissions", {})
     assert perms.get("contents") == "read", "security-scheduled.yml must keep 'permissions.contents: read'"
-    assert perms.get("security-events") == "write", "security-scheduled.yml must have 'permissions.security-events: write'"
+    assert perms.get("security-events") == "write", (
+        "security-scheduled.yml must have 'permissions.security-events: write'"
+    )
 
 
 # ---------------------------------------------------------------------------

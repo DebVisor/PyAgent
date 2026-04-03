@@ -60,6 +60,6 @@ def test_ci_uses_parallel_flag():
     """Validate lightweight workflow configuration for current design."""
     with open(".github/workflows/ci.yml", encoding="utf-8") as f:
         raw = f.read()
-    
+
     # lightweight CI uses quick job; full parallelization is future enhancement
     assert "quick:" in raw, "ci.yml must have a quick job for lightweight checks"

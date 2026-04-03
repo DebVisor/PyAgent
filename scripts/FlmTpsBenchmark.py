@@ -52,6 +52,7 @@ _ENV_FILE = Path(__file__).resolve().parents[1] / ".env"
 if _ENV_FILE.exists():
     try:
         from dotenv import load_dotenv
+
         load_dotenv(_ENV_FILE, override=False)  # don't override already-set shell vars
     except ImportError:
         # dotenv not installed — parse manually (key=value, skip comments)
@@ -98,11 +99,13 @@ _YELLOW = "\033[33m"
 # Data classes
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class _RequestResult:
     """Represents the result of a single completion request,
     including token counts and elapsed time.
     """
+
     completion_tokens: int
     prompt_tokens: int
     elapsed: float  # seconds
@@ -110,7 +113,8 @@ class _RequestResult:
     @property
     def tps(self) -> float:
         """Tokens per second for this request,
-        based on completion tokens and elapsed time."""
+        based on completion tokens and elapsed time.
+        """
         if self.elapsed <= 0:
             return 0.0
         return self.completion_tokens / self.elapsed
@@ -119,6 +123,7 @@ class _RequestResult:
 @dataclass
 class _Stats:
     """Accumulates results and computes aggregate statistics for the benchmark run."""
+
     results: list[_RequestResult] = field(default_factory=list)
     errors: int = 0
 
@@ -185,9 +190,11 @@ class _Stats:
 # CLI
 # ---------------------------------------------------------------------------
 
+
 def _build_parser() -> argparse.ArgumentParser:
     """Builds the argument parser for the benchmark CLI,
-    with options for FLM base URL, model, duration, max tokens, prompt, and cooldown."""
+    with options for FLM base URL, model, duration, max tokens, prompt, and cooldown.
+    """
     p = argparse.ArgumentParser(
         description="FLM Provider Tokens-Per-Second Benchmark",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -250,6 +257,7 @@ def _build_parser() -> argparse.ArgumentParser:
 # Formatting helpers
 # ---------------------------------------------------------------------------
 
+
 def _fmt_tps(v: float) -> str:
     """Format tokens-per-second value with color and fixed width."""
     return f"{v:7.2f}"
@@ -269,7 +277,8 @@ def _bar(fraction: float, width: int = 30) -> str:
 
 def _print_live(stats: _Stats, elapsed_wall: float, duration: float) -> None:
     """Print a live-updating status line with progress bar,
-    elapsed time, request counts, and token rates."""
+    elapsed time, request counts, and token rates.
+    """
     fraction = min(elapsed_wall / duration, 1.0)
     remaining = max(duration - elapsed_wall, 0.0)
     progress = _bar(fraction)
@@ -287,7 +296,8 @@ def _print_live(stats: _Stats, elapsed_wall: float, duration: float) -> None:
 
 def _print_summary(stats: _Stats, wall_time: float, args: argparse.Namespace) -> None:
     """Print a summary report at the end of the benchmark,
-    including total requests, errors, token counts, and token rates."""
+    including total requests, errors, token counts, and token rates.
+    """
     print()
     print()
     print(f"{_BOLD}{'═' * 64}{_RESET}")
@@ -320,9 +330,11 @@ def _print_summary(stats: _Stats, wall_time: float, args: argparse.Namespace) ->
 # Core benchmark loop
 # ---------------------------------------------------------------------------
 
+
 def _run_benchmark(client: Any, args: argparse.Namespace) -> _Stats:
     """Run the benchmark loop, sending repeated chat completion requests
-    to the FLM backend, and recording statistics."""
+    to the FLM backend, and recording statistics.
+    """
     stats = _Stats()
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
@@ -358,11 +370,13 @@ def _run_benchmark(client: Any, args: argparse.Namespace) -> _Stats:
                 content = response.choices[0].message.content or ""
                 completion_tokens = len(content.split())
 
-            stats.record(_RequestResult(
-                completion_tokens=int(completion_tokens),
-                prompt_tokens=int(prompt_tokens),
-                elapsed=elapsed,
-            ))
+            stats.record(
+                _RequestResult(
+                    completion_tokens=int(completion_tokens),
+                    prompt_tokens=int(prompt_tokens),
+                    elapsed=elapsed,
+                )
+            )
 
         except KeyboardInterrupt:
             print("\n\n  Interrupted by user.", flush=True)
@@ -383,11 +397,12 @@ def _run_benchmark(client: Any, args: argparse.Namespace) -> _Stats:
 # Entry point
 # ---------------------------------------------------------------------------
 
+
 def main(argv: list[str] | None = None) -> int:
     """Main entry point for the benchmark CLI.
     Parses arguments, checks backend reachability,
-    and runs the benchmark loop."""
-
+    and runs the benchmark loop.
+    """
     args = _build_parser().parse_args(argv)
 
     client = OpenAI(

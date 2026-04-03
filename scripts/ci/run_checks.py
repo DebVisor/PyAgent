@@ -172,7 +172,7 @@ def run_ruff(paths: list[str] | None = None) -> None:
 
 def run_mypy() -> None:
     """Run mypy type checks."""
-    run_command(["mypy", "--ignore-missing-imports", "src/core/base/"])
+    run_command([sys.executable, "-m", "mypy", "--ignore-missing-imports", "src/core/base/"])
 
 
 def run_dependency_sync_gate() -> None:

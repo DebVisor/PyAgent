@@ -149,18 +149,16 @@ def process_file(path: pathlib.Path, dry_run: bool) -> int:
 
     Returns the number of edits applied.
     """
-    text = path.read_text(encoding='utf-8', errors='ignore')
+    text = path.read_text(encoding="utf-8", errors="ignore")
     fixed_text, fixes = ensure_balanced_triple_quotes(text)
     if fixes and not dry_run:
-        path.write_text(fixed_text, encoding='utf-8')
+        path.write_text(fixed_text, encoding="utf-8")
     return fixes
 
 
 def main(argv: list[str] | None = None) -> int:
     """Main entry point for the script."""
-    parser = argparse.ArgumentParser(
-        description="Fix unterminated triple-quoted strings in Python source files."
-    )
+    parser = argparse.ArgumentParser(description="Fix unterminated triple-quoted strings in Python source files.")
     parser.add_argument(
         "--root",
         default="src-old",
@@ -196,7 +194,7 @@ def main(argv: list[str] | None = None) -> int:
         for path, fixes in updated_files[:50]:
             print(f"  {path} (fixes: {fixes})")
         if len(updated_files) > 50:
-            print(f"  ...and {len(updated_files)-50} more")
+            print(f"  ...and {len(updated_files) - 50} more")
 
     return 0
 

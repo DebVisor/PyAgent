@@ -20,6 +20,7 @@ placeholder test file.
 Usage:
     python scripts/SetupTests.py [--src src] [--tests tests] [--dry-run]
 """
+
 from __future__ import annotations
 
 import argparse
@@ -53,9 +54,7 @@ def create_test_structure(src_root: str, tests_root: str, dry_run: bool = False)
             continue
         mirror.mkdir(parents=True, exist_ok=True)
         (mirror / "__init__.py").touch()
-        (mirror / f"test_{entry.name}.py").write_text(
-            _placeholder_test(entry.name), encoding="utf-8"
-        )
+        (mirror / f"test_{entry.name}.py").write_text(_placeholder_test(entry.name), encoding="utf-8")
         created.append(str(mirror))
 
     return created

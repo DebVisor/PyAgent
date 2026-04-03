@@ -29,7 +29,6 @@ import os
 import re
 import subprocess
 
-
 # Matches both legacy 3-digit (prj001) and current 7-digit (prj0000006) identifiers.
 _PRJ_BRANCH = re.compile(r"^(prj\d{3,7})-[a-z0-9-]+$")
 # Extracts the project ID from a docs/project path component.

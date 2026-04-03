@@ -277,10 +277,7 @@ impl NeuralTransformer {
 
         let response = format!(
             "Internal Neural Response [{} layers/{} heads]: tokens={} {}",
-            self.config.n_layers,
-            self.config.n_heads,
-            input_len,
-            summary,
+            self.config.n_layers, self.config.n_heads, input_len, summary,
         );
 
         let tokens = response.split_whitespace().count().max(1);

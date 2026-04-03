@@ -168,12 +168,10 @@ pub fn kv_connector_score_rust(
 
             let backend = b.to_ascii_lowercase();
 
-            let supports_local = backend.contains("shm")
-                || backend.contains("ipc")
-                || backend.contains("p2p");
-            let supports_rdma = backend.contains("rdma")
-                || backend.contains("verbs")
-                || backend.contains("p2p");
+            let supports_local =
+                backend.contains("shm") || backend.contains("ipc") || backend.contains("p2p");
+            let supports_rdma =
+                backend.contains("rdma") || backend.contains("verbs") || backend.contains("p2p");
 
             if is_local {
                 if supports_local {

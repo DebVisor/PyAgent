@@ -120,9 +120,7 @@ LLMS_IMPROVEMENTS_FILENAME = "llms-improvements.txt"
 
 def parse_args(argv: Optional[list[str]] = None) -> ConsolidationConfig:
     """Parse command-line arguments and return a ConsolidationConfig."""
-    parser = argparse.ArgumentParser(
-        description="Consolidate LLM context files into deterministic llms*.txt outputs."
-    )
+    parser = argparse.ArgumentParser(description="Consolidate LLM context files into deterministic llms*.txt outputs.")
     parser.add_argument(
         "--repo-root",
         default=".",
@@ -212,16 +210,10 @@ def _find_sources(repo_root: Path) -> dict[str, list[Path]]:
 
     for glob_pattern in ("**/*.description.md", "**/*.improvements.md"):
         sources["improvements"].extend(
-            [
-                p
-                for p in repo_root.rglob(glob_pattern)
-                if p.is_file() and not _is_ignored_path(p)
-            ]
+            [p for p in repo_root.rglob(glob_pattern) if p.is_file() and not _is_ignored_path(p)]
         )
 
-    sources["improvements"] = sorted(
-        sources["improvements"], key=lambda p: _normalize_path(p, repo_root)
-    )
+    sources["improvements"] = sorted(sources["improvements"], key=lambda p: _normalize_path(p, repo_root))
 
     return sources
 
@@ -328,7 +320,7 @@ def _apply_docstring_migration(py_path: Path, markdown: str, apply: bool, verbos
             lines[insert_at].startswith("#!") or lines[insert_at].startswith("#") or lines[insert_at].strip() == ""
         ):
             insert_at += 1
-        docstring = '"""\n' + block + "\n\"\"\"\n\n"
+        docstring = '"""\n' + block + '\n"""\n\n'
         lines.insert(insert_at, docstring)
         new_text = "".join(lines)
     else:
@@ -348,7 +340,7 @@ def _apply_docstring_migration(py_path: Path, markdown: str, apply: bool, verbos
         # Insert block just before closing quotes
         if doc_text.strip().endswith('"""'):
             doc_text = doc_text.rstrip()
-            doc_text = doc_text[: -3].rstrip() + "\n" + block + "\n\"\"\"\n"
+            doc_text = doc_text[:-3].rstrip() + "\n" + block + '\n"""\n'
         else:
             # Fallback: append at end
             doc_text = doc_text + "\n" + block + "\n"

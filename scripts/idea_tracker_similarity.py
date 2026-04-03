@@ -96,9 +96,7 @@ def build_similarity_candidates(
     """
     mapping_index = {row.get("idea_id", ""): row for row in mapping_rows if row.get("idea_id")}
     active_token_rows = [
-        row
-        for row in token_rows
-        if mapping_index.get(row.get("idea_id", ""), {}).get("status") == "active"
+        row for row in token_rows if mapping_index.get(row.get("idea_id", ""), {}).get("status") == "active"
     ]
     if not active_token_rows:
         return []

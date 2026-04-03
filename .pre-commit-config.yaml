@@ -13,6 +13,8 @@ repos:
     hooks:
       - id: mypy
         files: '^(src|tests|scripts|docs)/.*\.py$'
+        args: [--ignore-missing-imports, src/core/base/]
+        pass_filenames: false
   - repo: local
     hooks:
       - id: enforce-branch

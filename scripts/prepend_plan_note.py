@@ -6,8 +6,8 @@ prefix = (
     "> See 2026-03-10-async-runtime-plan.md for details.\n\n"
 )
 
-for path in glob.glob('docs/project/**/plan.md', recursive=True):
-    with open(path, 'r', encoding='utf-8') as f:
+for path in glob.glob("docs/project/**/plan.md", recursive=True):
+    with open(path, "r", encoding="utf-8") as f:
         text = f.read()
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(prefix + text)

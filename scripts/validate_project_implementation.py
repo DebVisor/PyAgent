@@ -46,11 +46,7 @@ def _check_plan(path: Path) -> Tuple[int, int, List[str]]:
 
 
 def main() -> None:
-    project_dirs = sorted(
-        d
-        for d in PROJECTS_ROOT.iterdir()
-        if d.is_dir() and d.name.startswith("prj")
-    )
+    project_dirs = sorted(d for d in PROJECTS_ROOT.iterdir() if d.is_dir() and d.name.startswith("prj"))
 
     overall_ok = True
 
