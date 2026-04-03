@@ -8,6 +8,38 @@
 
 ## Entries
 
+## Last scan - 2026-04-03 (prj0000121 hotfix gate)
+- task_id: prj0000121-ci-setup-python-stack-overflow
+- lifecycle: OPEN -> IN_PROGRESS -> DONE
+- branch: prj0000121-ci-setup-python-stack-overflow (validated)
+- files scanned: .github/workflows/ci.yml; docs/project/prj0000121-ci-setup-python-stack-overflow/ci-setup-python-stack-overflow.code.md; docs/project/prj0000121-ci-setup-python-stack-overflow/ci-setup-python-stack-overflow.exec.md
+- security/quality checks run:
+	- git branch --show-current
+	- git diff --name-only HEAD
+	- rg --type py "^\s*\.\.\.\s*$" src/
+	- .venv\Scripts\ruff.exe check src/ --select S --output-format concise
+	- python -c <pip_audit_results baseline parser>
+	- python scripts/project_registry_governance.py validate
+	- pre-commit run --all-files
+- findings:
+	- PASS: branch gate matched expected project branch.
+	- PASS: workflow injection review on `.github/workflows/ci.yml` found no `pull_request_target`, no untrusted context interpolation in `run:` steps, and explicit least-privilege permissions.
+	- PASS: `pre-commit run --all-files` succeeded; no active project-scope blocker remains.
+	- BASELINE NON-BLOCKING: exact rerun of prior failing selector still finds 3 bare ellipsis placeholders in `src/` outside hotfix scope.
+	- BASELINE NON-BLOCKING: repository-wide Ruff S includes existing findings outside scope (no new HIGH/CRITICAL in hotfix files).
+	- PASS: dependency baseline parser reports 0 dependencies with vulnerabilities in `pip_audit_results.json`.
+- handoff target: @9git
+- overall: CLEAN (no HIGH/CRITICAL security blockers in scope)
+
+### Lesson
+- Pattern: Hotfix workflow rollbacks can be safely released even when unrelated baseline placeholder debt persists, provided exact blocker rerun is documented and full pre-commit is green.
+- Root cause: Prior @7exec blocker depended on repository-wide placeholder policy findings outside project boundary.
+- Prevention: Classify out-of-scope placeholder findings as baseline quality debt with owner and explicit exit criteria, while preserving strict in-scope security gating.
+- First seen: prj0000121-ci-setup-python-stack-overflow
+- Seen in: prj0000121-ci-setup-python-stack-overflow
+- Recurrence count: 1
+- Promotion status: CANDIDATE
+
 ## Last scan - 2026-04-03 (prj0000120 final gate)
 - task_id: prj0000120-openapi-spec-generation
 - lifecycle: OPEN -> IN_PROGRESS -> DONE
@@ -42,6 +74,14 @@
 - Promotion status: CANDIDATE
 
 ## Unresolved quality debt ledger
+- id: QD-8QL-0017
+- status: OPEN
+- severity: MEDIUM
+- owner: @0master / @6code
+- originating project: prj0000121-ci-setup-python-stack-overflow
+- description: Repository-wide bare ellipsis placeholders remain in `src/multimodal/processor.py`, `src/tools/tool_registry.py`, and `src/tools/FileWatcher.py`; they triggered prior @7exec placeholder policy blocker but are outside this hotfix scope.
+- exit criteria: Replace or remove bare ellipsis placeholders (or record an explicit policy exception approved by coordinator) and capture green rerun of `rg --type py "^\s*\.\.\.\s*$" src/`.
+
 - id: QD-8QL-0016
 - status: OPEN
 - severity: LOW

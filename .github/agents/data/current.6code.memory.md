@@ -8,6 +8,37 @@
 
 ## Entries
 
+## 2026-04-03 — prj0000121 CI setup-python stack overflow hotfix
+- task_id: prj0000121-ci-setup-python-stack-overflow
+- lifecycle: DONE
+- branch: prj0000121-ci-setup-python-stack-overflow (validated)
+- changed files:
+	- .github/workflows/ci.yml
+	- docs/project/prj0000121-ci-setup-python-stack-overflow/ci-setup-python-stack-overflow.code.md
+	- .github/agents/data/current.6code.memory.md
+	- .github/agents/data/2026-04-03.6code.log.md
+- implementation summary:
+	- Implemented a minimal workflow hotfix for CI / Lightweight by replacing `actions/setup-python@v5` with `actions/setup-python@v4` in `.github/workflows/ci.yml`.
+	- Kept scope limited to the incident branch and project artifact updates.
+	- Validated the requested CI selectors and project docs-policy selector successfully.
+- verification commands:
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/ci/test_placeholder_smoke.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/ci/test_workflow_count.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/ci/test_ci_parallelization.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py
+- unresolved risks:
+	- The upstream cause of `actions/setup-python@v5` stack overflow is external; long-term remediation may re-upgrade once upstream stability is confirmed.
+- handoff target: @7exec
+
+### Lesson
+- Pattern: CI action major-version regressions can break workflow startup before tests, and a narrow rollback to the previous stable major restores execution quickly.
+- Root cause: `actions/setup-python@v5` fails in the runner with `Maximum call stack size exceeded` during CI / Lightweight setup.
+- Prevention: Pin to stable major versions for critical bootstrap actions and re-upgrade only after confirmed upstream fix.
+- First seen: 2026-04-03
+- Seen in: prj0000121-ci-setup-python-stack-overflow
+- Recurrence count: 1
+- Promotion status: Candidate
+
 ## 2026-04-03 — prj0000120 backend OpenAPI artifact generation
 - task_id: prj0000120-openapi-spec-generation
 - lifecycle: DONE
