@@ -1,6 +1,6 @@
 # idea-017 - rust-criterion-benchmarks
 
-Planned project mapping: None yet
+Planned project mapping: prj0000116
 
 ## Idea summary
 This idea focuses on rust criterion benchmarks in area 2 – Rust core. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is O (Opportunity to improve capability).
