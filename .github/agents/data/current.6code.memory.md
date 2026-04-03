@@ -3,10 +3,40 @@
 ## Metadata
 - agent: @6code
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-04-02
+- updated_at: 2026-04-03
 - rollover: At new project start, append this file's entries to history.6code.memory.md in chronological order, then clear Entries.
 
 ## Entries
+
+## 2026-04-03 — prj0000116 rust benchmark clippy remediation
+- task_id: prj0000116-rust-criterion-benchmarks
+- lifecycle: DONE
+- branch: prj0000116-rust-criterion-benchmarks (validated and up to date)
+- changed files:
+	- rust_core/benches/stats_baseline.rs
+	- docs/project/prj0000116-rust-criterion-benchmarks/rust-criterion-benchmarks.code.md
+	- .github/agents/data/current.6code.memory.md
+	- .github/agents/data/2026-04-03.6code.log.md
+- implementation summary:
+	- Fixed Criterion API contract usage in `rust_core/benches/stats_baseline.rs` by providing the required second argument to `BenchmarkId::new`.
+	- Ran rustfmt scoped to the benchmark file only to avoid unrelated `rust_core/src` churn.
+	- Verified required quality gates: benchmark clippy with `-D warnings` and project-scoped pytest selector.
+- verification commands:
+	- rustfmt rust_core/benches/stats_baseline.rs
+	- cd rust_core; cargo clippy --bench stats_baseline -- -D warnings
+	- cd C:/Dev/PyAgent; python -m pytest -q tests/rust/test_rust_criterion_baseline.py
+- unresolved risks:
+	- None identified in scoped files.
+- handoff target: @7exec
+
+### Lesson
+- Pattern: Criterion constructor contracts may tighten by requiring both benchmark name and parameter in `BenchmarkId::new`.
+- Root cause: `BenchmarkId::new` was called with one argument in `stats_baseline.rs`.
+- Prevention: Prefer explicit two-argument `BenchmarkId::new(name, parameter)` when declaring bench IDs.
+- First seen: 2026-04-03
+- Seen in: prj0000116-rust-criterion-benchmarks
+- Recurrence count: 1
+- Promotion status: Candidate
 
 ## 2026-04-03 — prj0000116 rust criterion baseline benchmark implementation
 - task_id: prj0000116-rust-criterion-benchmarks

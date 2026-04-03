@@ -1,6 +1,6 @@
 # rust-criterion-benchmarks - Code Artifacts
 
-_Status: IN_PROGRESS_
+_Status: DONE_
 _Coder: @6code | Updated: 2026-04-03_
 
 ## Implementation Summary
@@ -10,6 +10,7 @@ Implemented the minimal benchmark baseline required by red contracts:
 	- group: `stats/core`
 	- benchmark id: `sum/1k`
 3. Added exactly one CI smoke benchmark command and artifact path check in `.github/workflows/ci.yml` without threshold gates or matrix expansion.
+4. Remediated project-scoped Rust quality gate by fixing `BenchmarkId::new` contract in `rust_core/benches/stats_baseline.rs` to provide the required second argument.
 
 ## AC Evidence Mapping
 | AC ID | Changed module/file | Validating test(s) | Status |
@@ -19,6 +20,7 @@ Implemented the minimal benchmark baseline required by red contracts:
 | AC-BENCH-005 | `.github/workflows/ci.yml` | `tests/ci/test_ci_workflow.py::test_ci_workflow_has_single_rust_benchmark_smoke_step_without_threshold_gate` | PASS |
 | AC-BENCH-006 | `.github/workflows/ci.yml` | `tests/ci/test_ci_workflow.py::test_ci_workflow_has_single_rust_benchmark_smoke_step_without_threshold_gate` | PASS |
 | AC-BENCH-007 | `rust_core/Cargo.toml`; `rust_core/benches/stats_baseline.rs`; `.github/workflows/ci.yml` | `git status --short` scope check | PASS |
+| AC-BENCH-008 | `rust_core/benches/stats_baseline.rs` | `cd rust_core; cargo clippy --bench stats_baseline -- -D warnings`; `python -m pytest -q tests/rust/test_rust_criterion_baseline.py` | PASS |
 
 ## Modules Changed
 | Module | Change | Lines |
@@ -26,6 +28,7 @@ Implemented the minimal benchmark baseline required by red contracts:
 | `.github/workflows/ci.yml` | Add single rust benchmark smoke step and criterion artifact check | +7/-1 |
 | `rust_core/Cargo.toml` | Add Criterion dev dependency and `[[bench]]` target config | +5/-0 |
 | `rust_core/benches/stats_baseline.rs` | Add new minimal Criterion benchmark harness | +14/-0 |
+| `rust_core/benches/stats_baseline.rs` | Fix `BenchmarkId::new` call signature for clippy/compile compatibility | +1/-1 |
 
 ## Test Run Results
 ```
@@ -36,6 +39,14 @@ python -m pytest -q tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_
 python -m pytest -q tests/ci/test_ci_workflow.py
 ........                                                                                    [100%]
 8 passed in 4.79s
+
+cd rust_core; cargo clippy --bench stats_baseline -- -D warnings
+Checking rust_core v0.1.0 (C:\Dev\PyAgent\rust_core)
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.66s
+
+python -m pytest -q tests/rust/test_rust_criterion_baseline.py
+...                                                                                         [100%]
+3 passed in 3.16s
 ```
 
 ## Deferred Items
