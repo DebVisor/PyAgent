@@ -94,8 +94,7 @@ def test_root_workspace_lockfile_is_single_authoritative_lockfile() -> None:
     assert root_lockfile.exists(), "rust_core/Cargo.lock must exist as the canonical workspace lockfile"
     unexpected_member_locks = [str(path.relative_to(root)) for path in member_lockfiles if path.exists()]
     assert not unexpected_member_locks, (
-        "Workspace lockfile contract violation: member lockfiles must be removed. "
-        f"Found: {unexpected_member_locks}"
+        f"Workspace lockfile contract violation: member lockfiles must be removed. Found: {unexpected_member_locks}"
     )
 
 

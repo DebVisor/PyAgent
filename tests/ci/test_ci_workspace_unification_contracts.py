@@ -90,8 +90,7 @@ def test_ci_contains_single_benchmark_smoke_command() -> None:
     target_command = "cargo bench --bench stats_baseline -- --noplot"
     matches = [command for command in commands if target_command in command]
     assert len(matches) == 1, (
-        "ci.yml must include exactly one benchmark smoke command for stats_baseline: "
-        f"{target_command}"
+        f"ci.yml must include exactly one benchmark smoke command for stats_baseline: {target_command}"
     )
 
 
