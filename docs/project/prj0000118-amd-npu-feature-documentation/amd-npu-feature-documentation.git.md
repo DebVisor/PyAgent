@@ -1,7 +1,7 @@
 # amd-npu-feature-documentation - Git Summary
 
 _Status: BLOCKED_
-_Git: @9git | Updated: 2026-04-03_
+_Git: @9git | Updated: 2026-04-03 (validation gate failed on baseline infra debt)_
 
 ## Branch Plan
 **Expected branch:** `prj0000118-amd-npu-feature-documentation`
@@ -47,7 +47,30 @@ N/A
 None
 
 ## Failure Disposition
-Commit and push were not performed. The exact required validation rerun produced `VALIDATION_OK` for `scripts/project_registry_governance.py validate`, but `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` still failed on two files outside this project's allowed scope: missing `docs/project/prj0000005/prj005-llm-swarm-architecture.git.md` and missing `## Scope Validation` in the already-committed `docs/project/prj0000117-rust-sub-crate-unification/rust-sub-crate-unification.git.md`.
+**BLOCKED by out-of-scope baseline debt — return to @0master.**
+
+The mandatory pre-commit policy test (`tests/docs/test_agent_workflow_policy_docs.py::test_legacy_git_summaries_document_branch_exception_and_corrective_ownership`) failed while validating this docs-only closure.
+
+Failing check: Missing legacy project baseline file
+- File: `docs/project/prj0000005/prj005-llm-swarm-architecture.git.md`
+- Scope: Out of prj0000118 boundary
+- Remediation: Create the missing legacy git artifact or update test to exclude non-existent legacy projects
+
+**Branch/Scope Validation Status:** Both PASS
+- Project branch matches expected: `prj0000118-amd-npu-feature-documentation` ✅
+- All changed files within scope boundary ✅
+- Registry governance validation: PASS ✅
+
+**Staged Files Ready:**
+- prj0000118 canonical artifacts (think, design, plan, test, code, exec, ql, git)
+- Feature documentation: `docs/performance/HARDWARE_ACCELERATION.md`
+- Test contracts: `tests/docs/test_prj0000118_amd_npu_feature_documentation_contracts.py`
+- Registry updates: `kanban.json`, `projects.json`, `nextproject.md`, idea mapping
+
+**Next Steps for @0master:**
+1. Create or confirm status of `docs/project/prj0000005/prj005-llm-swarm-architecture.git.md`
+2. Or update test to skip non-existent legacy projects
+3. Trigger @9git handoff again when baseline is remediated
 
 ## Lessons Learned
 Resume checks must rerun the exact mandatory selectors instead of relying on earlier summaries, because inherited branch-local documentation debt can still invalidate a supposedly clean initialization handoff.
