@@ -1,7 +1,7 @@
 # Current Memory - 0master
 
 ## Metadata
-- updated_at: 2026-04-02
+- updated_at: 2026-04-03
 - rollover: At new project start, append this file's entries to history.0master.memory.md in chronological order, then clear Entries.
 
 ## Entries
@@ -39,4 +39,15 @@
 	- Commit: 1cd2c8041fa89e529dadbc89248250583a48134c pushed to origin
 - Memory rollover committed: 04c9a8991f
 - Next step: @2think discovery for pre-commit-first CI consolidation options.
+
+## 2026-04-03 — prj0000115 post-merge release closure completed
+
+- Trigger: user confirmed PR #272 merged and requested workflow finish.
+- Branch gate: active branch verified as `prj0000115-ci-security-quality-workflow-consolidation`.
+- Release closure actions:
+	- `docs/project/kanban.json` lane moved for `prj0000115` from `Discovery` to `Released`.
+	- Archived idea files with `idea000131` tag under `docs/project/ideas/archive/`.
+- Governance evidence:
+	- `python scripts/project_registry_governance.py validate` -> `VALIDATION_OK`, `projects=114`.
+- Next operational step: switch to `main`, sync latest, then allocate and initialize `prj0000116` for the next idea.
 
