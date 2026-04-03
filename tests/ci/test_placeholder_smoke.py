@@ -26,4 +26,4 @@ def test_repo_layout_smoke() -> None:
 def test_workflow_files_smoke() -> None:
     """Expected lightweight workflow files remain present."""
     assert Path(".github/workflows/ci.yml").is_file()
-    assert Path(".github/workflows/security.yml").is_file()
+    assert Path(".github/workflows/security-scheduled.yml").is_file()
