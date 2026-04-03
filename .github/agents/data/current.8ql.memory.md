@@ -12,21 +12,26 @@
 - task_id: prj0000116-rust-criterion-benchmarks
 - lifecycle: OPEN -> IN_PROGRESS -> BLOCKED
 - branch: prj0000116-rust-criterion-benchmarks (validated)
-- files scanned: .github/workflows/ci.yml; tests/rust/test_rust_criterion_baseline.py; tests/ci/test_ci_workflow.py; tests/docs/test_agent_workflow_policy_docs.py; rust_core/benches/stats_baseline.rs; docs/project/prj0000116-rust-criterion-benchmarks/rust-criterion-benchmarks.ql.md
+- files scanned: .github/workflows/ci.yml; tests/rust/test_rust_criterion_baseline.py; tests/ci/test_ci_workflow.py; tests/docs/test_agent_workflow_policy_docs.py; rust_core/benches/stats_baseline.rs; rust_core/src/*.rs (fmt/clippy impact set); docs/project/prj0000116-rust-criterion-benchmarks/rust-criterion-benchmarks.ql.md
 - security/quality checks run:
 	- git branch --show-current
 	- git pull
 	- python -m pytest -q tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py
 	- python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py
-	- python -m ruff check rust_core/benches/stats_baseline.rs tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py
+	- python -m ruff check tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py
+	- cargo fmt --all -- --check (in rust_core)
+	- cargo clippy --all-targets --all-features -- -D warnings (in rust_core)
+	- cargo clippy --bench stats_baseline -- -D warnings (in rust_core fallback)
 - findings:
 	- PASS: branch gate validated; branch synced with remote
 	- PASS: benchmark and CI selectors are green (`11 passed`)
 	- BASELINE NON-BLOCKING: docs policy selector failed only known legacy missing file (`docs/project/prj0000005/prj005-llm-swarm-architecture.git.md`)
+	- PASS: corrected Ruff scope on Python-only targets is green (`All checks passed!`)
 	- PASS: CI workflow sanity check found explicit least-privilege `permissions: contents: read`, no `pull_request_target`, and no untrusted context interpolation in `run:` steps
-	- BLOCKER: requested Ruff invocation included Rust file `rust_core/benches/stats_baseline.rs` and produced invalid-syntax parser failures
+	- BLOCKER: `cargo fmt --all -- --check` reports formatting diffs in existing `rust_core/src/*.rs` files
+	- BLOCKER: `cargo clippy --all-targets --all-features -- -D warnings` fails; fallback bench-only clippy also fails in `rust_core/benches/stats_baseline.rs` (`BenchmarkId::new` missing argument)
 - handoff target: @6code
-- overall: BLOCKED (quality command mismatch in required lint step)
+- overall: BLOCKED (true Rust quality failures remain after false Ruff blocker cleared)
 
 ### Lesson
 - Pattern: Including `.rs` files in Python Ruff checks creates parser noise and false quality blockers.
@@ -34,8 +39,8 @@
 - Prevention: Scope Ruff commands to Python targets; use Rust-native tooling (`cargo clippy`, `cargo fmt --check`) for `.rs` files.
 - First seen: prj0000116-rust-criterion-benchmarks
 - Seen in: prj0000116-rust-criterion-benchmarks
-- Recurrence count: 1
-- Promotion status: CANDIDATE
+- Recurrence count: 2
+- Promotion status: HARD
 
 ## Last scan - 2026-04-02
 - task_id: prj0000115-ci-security-quality-workflow-consolidation

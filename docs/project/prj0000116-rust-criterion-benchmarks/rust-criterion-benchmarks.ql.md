@@ -21,12 +21,14 @@ _Status: BLOCKED_
 | # | Type | Description | Responsible agent | Blocking? |
 |---|------|-------------|-------------------|-----------|
 | 1 | Docs policy baseline | `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` failed only at legacy baseline missing file `docs/project/prj0000005/prj005-llm-swarm-architecture.git.md` (known exception). | Baseline debt (outside prj0000116 scope) | No |
-| 2 | Lint command targeting mismatch | `ruff check rust_core/benches/stats_baseline.rs tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py` produced invalid-syntax errors because Ruff parsed Rust source as Python. | @6code | Yes |
+| 2 | Corrected lint scope | `ruff check tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py` passed; prior blocker from mixed-language Ruff target is cleared. | @8ql | No |
+| 3 | Rust fmt baseline drift | `cargo fmt --all -- --check` reported formatting diffs in multiple `rust_core/src/*.rs` files. | @6code | Yes |
+| 4 | Rust clippy project failure | `cargo clippy --all-targets --all-features -- -D warnings` failed; fallback `cargo clippy --bench stats_baseline -- -D warnings` also failed in `rust_core/benches/stats_baseline.rs` (`BenchmarkId::new` missing argument). | @6code | Yes |
 
 ## Part C - Lessons Written
 | Pattern | Agent memory file | Recurrence | Promoted to agent rule? |
 |---------|------------------|-----------|------------------------|
-| Running Ruff against `.rs` files creates false blocking syntax noise in Python lint gates | .github/agents/data/current.8ql.memory.md | 1 | No (CANDIDATE) |
+| Running Ruff against `.rs` files creates false blocking syntax noise in Python lint gates | .github/agents/data/current.8ql.memory.md | 2 | Yes (HARD) |
 
 ## OWASP Coverage
 | Category | Status | Notes |
@@ -40,7 +42,7 @@ _Status: BLOCKED_
 ## Verdict
 | Gate | Status |
 |------|--------|
-| Security (CodeQL / ruff-S / CVEs / workflow) | PASS (workflow sanity) / BLOCKED (requested Ruff command failed on `.rs` target mismatch) |
+| Security (CodeQL / ruff-S / CVEs / workflow) | PASS (workflow least-privilege and injection sanity) |
 | Plan vs delivery | PASS (project ql deliverable produced in-scope) |
 | AC vs test coverage | PASS (`11 passed` on benchmark + CI selectors) |
 | Docs vs implementation | PASS with known baseline note (`1 failed, 16 passed` docs policy legacy file outside scope) |
@@ -53,7 +55,11 @@ _Status: BLOCKED_
 2. Required tests:
 	- `python -m pytest -q tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py` -> `11 passed in 5.22s`
 	- `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> `1 failed, 16 passed` (known legacy baseline file missing)
-3. Required lint command:
-	- `python -m ruff check rust_core/benches/stats_baseline.rs tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py` -> failed with `invalid-syntax` on Rust file parsing.
-4. Workflow security sanity:
+3. Corrected lint command:
+	- `python -m ruff check tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py` -> `All checks passed!`
+4. Rust quality checks:
+	- `cargo fmt --all -- --check` (in `rust_core/`) -> failed with formatting diffs in existing `rust_core/src/*.rs` files.
+	- `cargo clippy --all-targets --all-features -- -D warnings` (in `rust_core/`) -> failed (`dead_code` and bench compile error).
+	- Fallback `cargo clippy --bench stats_baseline -- -D warnings` -> failed in `rust_core/benches/stats_baseline.rs:7` (`BenchmarkId::new("sum/1k")` missing required parameter argument).
+5. Workflow security sanity:
 	- `.github/workflows/ci.yml` keeps top-level `permissions: contents: read` and avoids `pull_request_target`.
