@@ -9,6 +9,38 @@
 ## Entries
 
 ## Last run - 2026-04-03
+- task_id: prj0000121-ci-setup-python-stack-overflow
+- Task: Execution validation for CI setup-python stack overflow hotfix
+- lifecycle: IN_PROGRESS -> BLOCKED
+- Branch gate: PASS (expected=prj0000121-ci-setup-python-stack-overflow, observed=prj0000121-ci-setup-python-stack-overflow)
+- Dependency gate: PASS (`python -m pip check` -> No broken requirements found), classification: NON_BLOCKING
+- Required selector gate: PASS (`python -m pytest -q tests/ci/test_placeholder_smoke.py` -> 2 passed in 6.05s)
+- Required selector gate: PASS (`python -m pytest -q tests/ci/test_workflow_count.py` -> 6 passed in 6.28s)
+- Required selector gate: PASS (`python -m pytest -q tests/ci/test_ci_parallelization.py` -> 3 passed in 5.91s)
+- Required selector gate: PASS (`python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> 17 passed in 8.43s)
+- Required registry gate: PASS (`python scripts/project_registry_governance.py validate` -> VALIDATION_OK, projects=121)
+- Import check: SKIPPED (no changed Python modules in @6code scope)
+- Smoke test: SKIPPED (no CLI/API/web entrypoint changes in scope)
+- rust_core: SKIPPED (`rust_core/` unchanged)
+- Pre-commit gate: PASS (`pre-commit run --files <changed+untracked>`)
+- Placeholder scan gate: FAIL (`rg --type py "^\s*\.\.\.\s*$" src/`)
+	- src/multimodal/processor.py:36
+	- src/tools/tool_registry.py:23
+	- src/tools/FileWatcher.py:59
+- Outcome: BLOCKED (mandatory @7exec placeholder policy) -> @0master/@6code
+- Next handoff target: @0master (policy exception/routing) or @6code (remediation ownership)
+- Notes: User-requested five validation commands all passed; blocker is a pre-existing out-of-scope placeholder policy finding.
+
+### Lesson
+- Pattern: Project-scoped selector suites can pass while mandatory global placeholder policy still blocks downstream handoff.
+- Root cause: Bare ellipsis placeholders exist in `src/` outside the active project scope.
+- Prevention: Run placeholder scan early during @6code scope planning or assign explicit exception ownership before @7exec.
+- First seen: 2026-04-03
+- Seen in: prj0000121-ci-setup-python-stack-overflow
+- Recurrence count: 1
+- Promotion status: Candidate
+
+## Last run - 2026-04-03
 - task_id: prj0000120-openapi-spec-generation
 - Task: Deterministic execution validation for backend OpenAPI artifact workflow
 - Branch gate: PASS (expected=prj0000120-openapi-spec-generation, observed=prj0000120-openapi-spec-generation)
