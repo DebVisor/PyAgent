@@ -8,6 +8,20 @@
 
 ## Entries
 
+## 2026-04-03 - prj0000121-ci-setup-python-stack-overflow
+- task_id: prj0000121-ci-setup-python-stack-overflow
+- status: IN_PROGRESS
+- branch_expected: prj0000121-ci-setup-python-stack-overflow
+- branch_observed: prj0000121-ci-setup-python-stack-overflow
+- branch_validation: PASS
+- scope_validation: PASS_WITH_EXCLUSION
+- notes:
+	- Mandatory dashboard refresh gate executed successfully before staging (`python scripts/generate_project_dashboard.py`).
+	- Scope allowlist applied; excluded generated out-of-scope `docs/project/PROJECT_DASHBOARD.md` from staging.
+	- Mandatory staged-file pre-commit gate passed (`pre-commit run --files (git diff --cached --name-only)`).
+	- Hotfix/lane commit created: `8546a063f8` (`ci(prj0000121): pin setup-python to v4 for lightweight checks`).
+	- Next actions: stage @9git evidence files, run docs-policy selector, push branch, and create/update PR to `main`.
+
 ## 2026-04-03 - prj0000117-rust-sub-crate-unification
 - task_id: prj0000117-rust-sub-crate-unification
 - status: IN_PROGRESS
