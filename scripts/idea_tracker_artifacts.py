@@ -319,10 +319,7 @@ def _build_section_frequency(section_rows: list[dict[str, Any]]) -> list[dict[st
     for row in section_rows:
         for section_name in row.get("section_names", []):
             frequency[section_name] = frequency.get(section_name, 0) + 1
-    return [
-        {"section_name": section_name, "count": count}
-        for section_name, count in sorted(frequency.items())
-    ]
+    return [{"section_name": section_name, "count": count} for section_name, count in sorted(frequency.items())]
 
 
 def write_mapping_rows(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:

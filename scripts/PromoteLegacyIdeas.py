@@ -223,11 +223,7 @@ def main() -> int:
         manifest_path=Path(args.manifest).resolve(),
     )
 
-    print(
-        "LEGACY_IDEA_PROMOTION_OK "
-        f"selected={manifest['selected_count']} "
-        f"manifest={Path(args.manifest).resolve()}"
-    )
+    print(f"LEGACY_IDEA_PROMOTION_OK selected={manifest['selected_count']} manifest={Path(args.manifest).resolve()}")
     return 0
 
 

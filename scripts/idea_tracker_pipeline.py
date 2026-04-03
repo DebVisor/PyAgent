@@ -83,11 +83,13 @@ def _build_batch_rows(
             }
         )
         for reference in sorted(record.get("source_references", [])):
-            reference_rows.append({
-                "idea_id": idea_id,
-                "reference": reference,
-                "batch_id": batch_id,
-            })
+            reference_rows.append(
+                {
+                    "idea_id": idea_id,
+                    "reference": reference,
+                    "batch_id": batch_id,
+                }
+            )
         section_rows.append(
             {
                 "idea_id": idea_id,
@@ -266,9 +268,7 @@ def build_tracker_payload_from_artifacts(
         "queues": {
             "ready": [item.get("idea_id", "") for item in idea_records if item.get("readiness_status") == "ready"],
             "needs-discovery": [
-                item.get("idea_id", "")
-                for item in idea_records
-                if item.get("readiness_status") == "needs-discovery"
+                item.get("idea_id", "") for item in idea_records if item.get("readiness_status") == "needs-discovery"
             ],
             "blocked": [item.get("idea_id", "") for item in idea_records if item.get("readiness_status") == "blocked"],
         },
@@ -340,14 +340,10 @@ def write_split_tracker_chunks(output_path: Path, payload: dict[str, Any], chunk
             "queues": {
                 "ready": [item.get("idea_id", "") for item in chunk_ideas if item.get("readiness_status") == "ready"],
                 "needs-discovery": [
-                    item.get("idea_id", "")
-                    for item in chunk_ideas
-                    if item.get("readiness_status") == "needs-discovery"
+                    item.get("idea_id", "") for item in chunk_ideas if item.get("readiness_status") == "needs-discovery"
                 ],
                 "blocked": [
-                    item.get("idea_id", "")
-                    for item in chunk_ideas
-                    if item.get("readiness_status") == "blocked"
+                    item.get("idea_id", "") for item in chunk_ideas if item.get("readiness_status") == "blocked"
                 ],
             },
             "duplicate_candidates": duplicate_candidates,
@@ -419,10 +415,7 @@ def run_incremental_tracker(
 
     for batch_offset in range(0, len(scoped_files), effective_batch_size):
         batch_slice = scoped_files[batch_offset : batch_offset + effective_batch_size]
-        batch_records = [
-            collect_record(repo_root, file_path, archived=archived)
-            for file_path, archived in batch_slice
-        ]
+        batch_records = [collect_record(repo_root, file_path, archived=archived) for file_path, archived in batch_slice]
         batch_id = f"batch-{scoped_start + batch_offset:06d}"
         batch_rows = _build_batch_rows(batch_records, batch_id, tokenize, blocking_keys)
         write_mapping_rows(paths["mapping"], batch_rows["mapping"])

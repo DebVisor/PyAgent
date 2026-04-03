@@ -16,9 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Set
 
-RE_PLAN = re.compile(
-    r"^(?P<date>\d{4}-\d{2}-\d{2})-(?P<topic>.+?)(?:-plan|-implementation-plan|_plan)$"
-)
+RE_PLAN = re.compile(r"^(?P<date>\d{4}-\d{2}-\d{2})-(?P<topic>.+?)(?:-plan|-implementation-plan|_plan)$")
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_ROOT = ROOT / "docs" / "project"
@@ -149,11 +147,7 @@ projects = []
 registry_topics = _load_registry_topics()
 
 # Each project lives under docs/project/prjNNNNNNN and contains plan.md + optional brainstorm.md
-project_dirs = sorted(
-    d
-    for d in OUT_ROOT.iterdir()
-    if d.is_dir() and RE_PROJECT_DIR.match(d.name)
-)
+project_dirs = sorted(d for d in OUT_ROOT.iterdir() if d.is_dir() and RE_PROJECT_DIR.match(d.name))
 
 for prj_dir in project_dirs:
     prj_id = prj_dir.name
@@ -254,9 +248,7 @@ for p in projects:
     pct = round((p["Completed"] / p["Total"] * 100) if p["Total"] else 0)
     md = "Yes" if p["MissingDesign"] else "No"
     code = "Yes" if p.get("CodeFound") else "No"
-    lines.append(
-        f"| {p['ProjectId']} | {pct}% ({p['Completed']}/{p['Total']}) | {code} | {md} |"
-    )
+    lines.append(f"| {p['ProjectId']} | {pct}% ({p['Completed']}/{p['Total']}) | {code} | {md} |")
 
 (OUT_ROOT / "PROJECT_DASHBOARD.md").write_text("\n".join(lines), encoding="utf-8")
 

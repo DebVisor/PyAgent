@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Setup script for test environment."""
+
 import os
 
 

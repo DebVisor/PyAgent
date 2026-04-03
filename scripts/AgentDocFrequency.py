@@ -23,6 +23,7 @@ Usage::
 Staleness score: days since last commit / ``--days-stale`` threshold (capped at 1.0).
 A score of 1.0 means the file is at or beyond the staleness threshold.
 """
+
 from __future__ import annotations
 
 import argparse

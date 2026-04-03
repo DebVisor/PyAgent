@@ -67,7 +67,9 @@ def _normalize_register(data: dict[str, Any]) -> dict[str, Any]:
     """Normalize the register data structure, ensuring all required fields are present."""
     data.setdefault("schema_version", "1.0.0")
     data.setdefault("register_id", "parallel-agents-register")
-    data.setdefault("description", "Shared coordination register for parallel agent work, file touches, and file locks.")
+    data.setdefault(
+        "description", "Shared coordination register for parallel agent work, file touches, and file locks."
+    )
     data.setdefault("updated_at", "")
     data.setdefault("updated_by", "")
     data.setdefault("active_project_id", "")
@@ -102,7 +104,7 @@ def _register_mutex(lock_path: Path, timeout_seconds: float = 8.0) -> Iterator[N
             break
         except FileExistsError:
             if time.monotonic() - start > timeout_seconds:
-                raise TimeoutError(f"Timed out waiting for register lock: {lock_path}")
+                raise TimeoutError(f"Timed out waiting for register lock: {lock_path}") from None
             time.sleep(0.05)
 
     try:

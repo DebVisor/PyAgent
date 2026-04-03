@@ -146,10 +146,7 @@ def _build_idea_markdown(
     scoring: dict[str, int],
 ) -> str:
     """Render a near-complete @10idea template for one generated idea."""
-    idea_summary = (
-        f"Generate a focused improvement initiative for `{source_path}` "
-        f"with objective: {archetype_focus}"
-    )
+    idea_summary = f"Generate a focused improvement initiative for `{source_path}` with objective: {archetype_focus}"
     problem_statement = (
         f"Legacy file `{source_path}` from v3.7.0 may contain latent quality risks, "
         "drift, or missing modernization opportunities."
@@ -158,30 +155,15 @@ def _build_idea_markdown(
         "This file comes from the pre-breakage baseline and is a candidate "
         "for high-confidence recovery and modernization."
     )
-    persona = (
-        "Primary personas: maintainers, release engineers, and "
-        "quality/security reviewers."
-    )
+    persona = "Primary personas: maintainers, release engineers, and quality/security reviewers."
     detailed = (
         "Perform a targeted review, codify findings as tests and safeguards, "
         "and evolve behavior with minimal regressions."
     )
-    scope = (
-        "In scope: this file and directly related tests/docs. "
-        "Out of scope: unrelated subsystem redesign."
-    )
-    non_goals = (
-        "Do not rewrite unrelated modules or perform broad architecture "
-        "changes in this slice."
-    )
-    requirements = (
-        "Preserve behavior parity where required, add deterministic validation, "
-        "and keep changes auditable."
-    )
-    constraints = (
-        "Constraints include existing coding standards, governance checks, "
-        "and CI policy gates."
-    )
+    scope = "In scope: this file and directly related tests/docs. Out of scope: unrelated subsystem redesign."
+    non_goals = "Do not rewrite unrelated modules or perform broad architecture changes in this slice."
+    requirements = "Preserve behavior parity where required, add deterministic validation, and keep changes auditable."
+    constraints = "Constraints include existing coding standards, governance checks, and CI policy gates."
     findings = (
         f"Static signals: size={context['size_bytes']} bytes, "
         f"function_like_tokens={context['function_like_tokens']}, "
@@ -394,9 +376,7 @@ def _write_manifest(manifest_path: Path, payload: dict[str, Any], split_files: l
 
 def _build_parser() -> argparse.ArgumentParser:
     """Build command-line parser."""
-    parser = argparse.ArgumentParser(
-        description="Generate template-filled ideas from legacy repository files."
-    )
+    parser = argparse.ArgumentParser(description="Generate template-filled ideas from legacy repository files.")
     parser.add_argument(
         "--legacy-root",
         required=True,

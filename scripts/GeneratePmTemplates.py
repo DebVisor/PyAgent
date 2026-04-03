@@ -16,6 +16,7 @@
 Usage:
     python scripts/GeneratePmTemplates.py [--out project/templates]
 """
+
 from __future__ import annotations
 
 import argparse
@@ -27,10 +28,10 @@ _TEMPLATES: dict[str, str] = {
 # Daily Stand-up — {{date}}
 
 **What did I do yesterday?**
-- 
+-
 
 **What will I do today?**
-- 
+-
 
 **Blockers?**
 - None

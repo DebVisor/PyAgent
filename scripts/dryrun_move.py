@@ -11,7 +11,7 @@ MAPPINGS = {
 }
 
 
-def dryrun(root: Path = Path('.')) -> dict[str, list[str]]:
+def dryrun(root: Path = Path(".")) -> dict[str, list[str]]:
     """Simulate the file moves based on MAPPINGS and return a mapping of old patterns to new locations."""
     # Very small example: list top-level scripts and map to target folders
     result: dict[str, list[str]] = {}
@@ -23,12 +23,12 @@ def dryrun(root: Path = Path('.')) -> dict[str, list[str]]:
 
 def main() -> None:
     """Main function to perform the dry run and output results."""
-    root = Path('.')
+    root = Path(".")
     mapping = dryrun(root)
-    out = Path('migration_dryrun.json')
-    out.write_text(json.dumps(mapping, indent=2), encoding='utf-8')
+    out = Path("migration_dryrun.json")
+    out.write_text(json.dumps(mapping, indent=2), encoding="utf-8")
     print(f"Wrote {out}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

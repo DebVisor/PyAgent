@@ -87,7 +87,11 @@ pub fn warmup_sizes_rust(
         sizes.push((batch, bucket));
     }
 
-    if sizes.last().map(|(batch, _)| *batch != max_batch).unwrap_or(true) {
+    if sizes
+        .last()
+        .map(|(batch, _)| *batch != max_batch)
+        .unwrap_or(true)
+    {
         let bucket = max_batch.div_ceil(safe_bucket_step) * safe_bucket_step;
         sizes.push((max_batch, bucket));
     }

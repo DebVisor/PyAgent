@@ -50,11 +50,7 @@ pub fn run_tensorrt_inference_rust(
             if row.is_empty() {
                 return row;
             }
-            let max_abs = row
-                .iter()
-                .map(|v| v.abs())
-                .fold(0.0_f32, f32::max)
-                .max(1.0);
+            let max_abs = row.iter().map(|v| v.abs()).fold(0.0_f32, f32::max).max(1.0);
             row.into_iter().map(|v| v / max_abs).collect()
         })
         .collect();
