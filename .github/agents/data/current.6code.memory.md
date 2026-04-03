@@ -3,10 +3,72 @@
 ## Metadata
 - agent: @6code
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-04-02
+- updated_at: 2026-04-03
 - rollover: At new project start, append this file's entries to history.6code.memory.md in chronological order, then clear Entries.
 
 ## Entries
+
+## 2026-04-03 — prj0000116 rust benchmark clippy remediation
+- task_id: prj0000116-rust-criterion-benchmarks
+- lifecycle: DONE
+- branch: prj0000116-rust-criterion-benchmarks (validated and up to date)
+- changed files:
+	- rust_core/benches/stats_baseline.rs
+	- docs/project/prj0000116-rust-criterion-benchmarks/rust-criterion-benchmarks.code.md
+	- .github/agents/data/current.6code.memory.md
+	- .github/agents/data/2026-04-03.6code.log.md
+- implementation summary:
+	- Fixed Criterion API contract usage in `rust_core/benches/stats_baseline.rs` by providing the required second argument to `BenchmarkId::new`.
+	- Ran rustfmt scoped to the benchmark file only to avoid unrelated `rust_core/src` churn.
+	- Verified required quality gates: benchmark clippy with `-D warnings` and project-scoped pytest selector.
+- verification commands:
+	- rustfmt rust_core/benches/stats_baseline.rs
+	- cd rust_core; cargo clippy --bench stats_baseline -- -D warnings
+	- cd C:/Dev/PyAgent; python -m pytest -q tests/rust/test_rust_criterion_baseline.py
+- unresolved risks:
+	- None identified in scoped files.
+- handoff target: @7exec
+
+### Lesson
+- Pattern: Criterion constructor contracts may tighten by requiring both benchmark name and parameter in `BenchmarkId::new`.
+- Root cause: `BenchmarkId::new` was called with one argument in `stats_baseline.rs`.
+- Prevention: Prefer explicit two-argument `BenchmarkId::new(name, parameter)` when declaring bench IDs.
+- First seen: 2026-04-03
+- Seen in: prj0000116-rust-criterion-benchmarks
+- Recurrence count: 1
+- Promotion status: Candidate
+
+## 2026-04-03 — prj0000116 rust criterion baseline benchmark implementation
+- task_id: prj0000116-rust-criterion-benchmarks
+- lifecycle: IN_PROGRESS
+- branch: prj0000116-rust-criterion-benchmarks (validated)
+- changed files:
+	- rust_core/Cargo.toml
+	- rust_core/benches/stats_baseline.rs
+	- .github/workflows/ci.yml
+	- docs/project/prj0000116-rust-criterion-benchmarks/rust-criterion-benchmarks.code.md
+	- .github/agents/data/current.6code.memory.md
+	- .github/agents/data/2026-04-03.6code.log.md
+- implementation summary:
+	- Added Criterion benchmark baseline wiring in `rust_core/Cargo.toml` using a dedicated `[[bench]]` target with `harness = false`.
+	- Created minimal Criterion harness benchmark file at `rust_core/benches/stats_baseline.rs` with required naming contracts.
+	- Added one CI smoke benchmark command and criterion artifact existence check to `.github/workflows/ci.yml` without threshold gating.
+	- Executed required targeted and full CI workflow contract tests in sequence, all green.
+- verification commands:
+	- c:/Dev/PyAgent/.venv/Scripts/python.exe -m pytest -q tests/rust/test_rust_criterion_baseline.py tests/ci/test_ci_workflow.py::test_ci_workflow_has_single_rust_benchmark_smoke_step_without_threshold_gate
+	- c:/Dev/PyAgent/.venv/Scripts/python.exe -m pytest -q tests/ci/test_ci_workflow.py
+- unresolved risks:
+	- None identified in scoped files.
+- handoff target: @7exec
+
+### Lesson
+- Pattern: Contract tests for CI command text are strict substring checks and require command/path tokens to appear verbatim.
+- Root cause: Initial implementation considerations (`--manifest-path` or directory-local artifact checks) can miss exact string contracts even when behavior is equivalent.
+- Prevention: Align workflow command text exactly to contract-tested substrings before running tests.
+- First seen: 2026-04-03
+- Seen in: prj0000116-rust-criterion-benchmarks
+- Recurrence count: 1
+- Promotion status: Candidate
 
 ## 2026-04-02 — prj0000115 pre-commit drift cleanup (legacy tests)
 - task_id: prj0000115-ci-security-quality-workflow-consolidation
