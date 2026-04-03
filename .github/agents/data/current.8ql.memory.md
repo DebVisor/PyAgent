@@ -8,6 +8,40 @@
 
 ## Entries
 
+## Last scan - 2026-04-03 (prj0000117 final gate)
+- task_id: prj0000117-rust-sub-crate-unification
+- lifecycle: OPEN -> IN_PROGRESS -> BLOCKED
+- branch: prj0000117-rust-sub-crate-unification (validated; up to date)
+- files scanned: tests/rust/test_workspace_unification_contracts.py; tests/ci/test_ci_workspace_unification_contracts.py; tests/ci/test_ci_workflow.py; tests/docs/test_agent_workflow_policy_docs.py; .github/workflows/ci.yml; rust_core/src/hardware.rs
+- security/quality checks run:
+	- git branch --show-current
+	- git pull
+	- python -m pytest -q tests/rust/test_workspace_unification_contracts.py tests/ci/test_ci_workspace_unification_contracts.py tests/ci/test_ci_workflow.py
+	- python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py
+	- ruff check tests/rust/test_workspace_unification_contracts.py tests/ci/test_ci_workspace_unification_contracts.py tests/ci/test_ci_workflow.py
+	- cargo clippy -p rust_core --all-features -- -D warnings (in rust_core)
+	- cargo clippy -p pyagent-crdt --all-features -- -D warnings (in rust_core)
+	- ci workflow sanity review on .github/workflows/ci.yml
+- findings:
+	- PASS: branch gate validated and repository up to date.
+	- PASS: project-scoped pytest selectors are green (`15 passed`).
+	- BASELINE NON-BLOCKING: docs policy selector has known legacy missing-file failure (`docs/project/prj0000005/prj005-llm-swarm-architecture.git.md`).
+	- PASS: `ruff check` on project-scoped Python targets (`All checks passed!`).
+	- BLOCKER: `cargo clippy -p rust_core --all-features -- -D warnings` failed on dead code (`rust_core/src/hardware.rs:71`, `AMD_NPU_STATUS_UNAVAILABLE`).
+	- BLOCKER: `cargo clippy -p pyagent-crdt --all-features -- -D warnings` failed with `cannot specify features for packages outside of workspace`.
+	- PASS: workflow sanity confirmed no permission broadening (`permissions: contents: read`), no `pull_request_target`, and one rust benchmark smoke step.
+- handoff target: @6code
+- overall: BLOCKED (project-scoped Rust quality gates failed; no HIGH/CRITICAL workflow security findings)
+
+### Lesson
+- Pattern: Final rust quality gates fail when requested package selector is not resolvable from current workspace.
+- Root cause: Command used `-p pyagent-crdt --all-features` against a package/workspace configuration that does not accept that selector.
+- Prevention: Verify package identity/workspace membership (`cargo metadata`/workspace manifest) before running strict `clippy -p` commands.
+- First seen: prj0000117-rust-sub-crate-unification
+- Seen in: prj0000117-rust-sub-crate-unification
+- Recurrence count: 1
+- Promotion status: CANDIDATE
+
 ## Last scan - 2026-04-03 (final pass)
 - task_id: prj0000116-rust-criterion-benchmarks
 - lifecycle: OPEN -> IN_PROGRESS -> DONE
