@@ -11,13 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Tests that validate the lightweight workflow count and security.yml structure.
+"""Tests that validate the workflow count and security-scheduled.yml structure.
 
 Acceptance criteria:
-- Exactly 2 workflow files: ci.yml and security.yml
-- security.yml is valid YAML with jobs.security_smoke
-- security.yml runs secret scan guardrail
-- security.yml triggers on push/PR to main
+- Exactly 2 workflow files: ci.yml and security-scheduled.yml
+- security-scheduled.yml is valid YAML with jobs.dependency-audit and jobs.codeql-scan
+- security-scheduled.yml runs pip-audit and CodeQL scans
+- security-scheduled.yml triggers on schedule and workflow_dispatch
 """
 
 from pathlib import Path
@@ -25,7 +25,7 @@ from pathlib import Path
 import yaml
 
 _WORKFLOWS_DIR = Path(".github/workflows")
-_SECURITY_YML = _WORKFLOWS_DIR / "security.yml"
+_SECURITY_YML = _WORKFLOWS_DIR / "security-scheduled.yml"
 _CI_YML = _WORKFLOWS_DIR / "ci.yml"
 
 
@@ -46,10 +46,10 @@ def _load_security_yml() -> dict:
 
 
 def test_exactly_two_workflow_files() -> None:
-    """Only ci.yml and security.yml must exist in .github/workflows/."""
+    """Only ci.yml and security-scheduled.yml must exist in .github/workflows/."""
     yml_files = sorted(f.name for f in _WORKFLOWS_DIR.glob("*.yml"))
-    assert yml_files == ["ci.yml", "security.yml"], (
-        f"Expected exactly ['ci.yml', 'security.yml'], got {yml_files}. "
+    assert yml_files == ["ci.yml", "security-scheduled.yml"], (
+        f"Expected exactly ['ci.yml', 'security-scheduled.yml'], got {yml_files}. "
         "Delete redundant workflow files or add missing ones."
     )
 
@@ -60,11 +60,12 @@ def test_exactly_two_workflow_files() -> None:
 
 
 def test_security_yml_exists_and_has_analyze_job() -> None:
-    """security.yml must exist and contain a jobs.security_smoke entry."""
-    assert _SECURITY_YML.exists(), "security.yml does not exist"
+    """security-scheduled.yml must exist and contain dependency-audit and codeql-scan jobs."""
+    assert _SECURITY_YML.exists(), "security-scheduled.yml does not exist"
     data = _load_security_yml()
-    assert "jobs" in data, "security.yml must have a 'jobs' key"
-    assert "security_smoke" in data["jobs"], "security.yml must have a 'jobs.security_smoke' key"
+    assert "jobs" in data, "security-scheduled.yml must have a 'jobs' key"
+    assert "dependency-audit" in data["jobs"], "security-scheduled.yml must have a 'jobs.dependency-audit' key"
+    assert "codeql-scan" in data["jobs"], "security-scheduled.yml must have a 'jobs.codeql-scan' key"
 
 
 # ---------------------------------------------------------------------------
@@ -73,10 +74,11 @@ def test_security_yml_exists_and_has_analyze_job() -> None:
 
 
 def test_security_yml_has_security_events_write_permission() -> None:
-    """security.yml should keep minimal permissions for lightweight scans."""
+    """security-scheduled.yml should keep minimal permissions for security scans."""
     data = _load_security_yml()
     perms = data.get("permissions", {})
-    assert perms.get("contents") == "read", "security.yml must keep 'permissions.contents: read'"
+    assert perms.get("contents") == "read", "security-scheduled.yml must keep 'permissions.contents: read'"
+    assert perms.get("security-events") == "write", "security-scheduled.yml must have 'permissions.security-events: write'"
 
 
 # ---------------------------------------------------------------------------
@@ -85,13 +87,17 @@ def test_security_yml_has_security_events_write_permission() -> None:
 
 
 def test_security_yml_runs_secret_scan_guardrail() -> None:
-    """security.yml must run the repository secret-scan guardrail command."""
+    """security-scheduled.yml must run dependency audit and CodeQL scans."""
     data = _load_security_yml()
-    steps = data["jobs"]["security_smoke"]["steps"]
-    run_values = [step.get("run", "") for step in steps]
-    assert any("python scripts/security/run_secret_scan.py" in command for command in run_values), (
-        "security.yml must include secret scan guardrail command."
+    # Check dependency-audit job
+    audit_steps = data["jobs"]["dependency-audit"]["steps"]
+    audit_runs = [step.get("run", "") for step in audit_steps]
+    assert any("pip-audit" in command for command in audit_runs), (
+        "security-scheduled.yml must include pip-audit command."
     )
+    # Check codeql-scan job
+    codeql_steps = data["jobs"]["codeql-scan"]["steps"]
+    assert len(codeql_steps) > 0, "security-scheduled.yml codeql-scan must have steps"
 
 
 # ---------------------------------------------------------------------------
@@ -100,16 +106,12 @@ def test_security_yml_runs_secret_scan_guardrail() -> None:
 
 
 def test_security_yml_has_schedule_trigger() -> None:
-    """security.yml must trigger on push/pull_request to main."""
+    """security-scheduled.yml must trigger on schedule and workflow_dispatch."""
     data = _load_security_yml()
     on_block = data.get("on", data.get(True, {}))  # YAML 'on' parses as True in some versions
-    assert isinstance(on_block, dict), "security.yml must define an 'on' trigger mapping"
-    assert "push" in on_block, "security.yml must include push trigger"
-    assert "pull_request" in on_block, "security.yml must include pull_request trigger"
-    push_branches = on_block.get("push", {}).get("branches", [])
-    pr_branches = on_block.get("pull_request", {}).get("branches", [])
-    assert "main" in push_branches, "security.yml push trigger must include main"
-    assert "main" in pr_branches, "security.yml pull_request trigger must include main"
+    assert isinstance(on_block, dict), "security-scheduled.yml must define an 'on' trigger mapping"
+    assert "schedule" in on_block, "security-scheduled.yml must include schedule trigger"
+    assert "workflow_dispatch" in on_block, "security-scheduled.yml must include workflow_dispatch trigger"
 
 
 # ---------------------------------------------------------------------------
@@ -118,6 +120,7 @@ def test_security_yml_has_schedule_trigger() -> None:
 
 
 def test_security_yml_references_custom_python_queries() -> None:
-    """security.yml should not include CodeQL steps in lightweight mode."""
+    """security-scheduled.yml should include CodeQL for scheduled security scanning."""
     content = _SECURITY_YML.read_text(encoding="utf-8")
-    assert "codeql-action" not in content, "security.yml should not include codeql-action in lightweight mode"
+    assert "codeql-action" in content, "security-scheduled.yml should include codeql-action for scheduled scans"
+    assert "python" in content, "security-scheduled.yml should scan Python language"
