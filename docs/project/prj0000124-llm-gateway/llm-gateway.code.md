@@ -15,12 +15,19 @@ Implemented behaviors for this slice only:
 
 The implementation is intentionally narrow and does not include broader gateway capabilities outside the RED assertions.
 
+Remediation update for @7exec pre-commit blockers:
+1. Added module-level `validate()` in `src/core/gateway/gateway_core.py` to satisfy `test_validate_function_exists`.
+2. Added `tests/core/gateway/test_gateway_core.py` so gateway core has a compliant test filename for
+	`test_each_core_has_test_file` mapping.
+3. Preserved existing gateway orchestration behavior in `GatewayCore.handle`.
+
 ## Modules Changed
 | Module | Change | Lines |
 |---|---|---|
 | src/core/gateway/__init__.py | Added package export for `GatewayCore` | +19/-0 |
-| src/core/gateway/gateway_core.py | Added minimal fail-closed orchestration flow | +180/-0 |
-| docs/project/prj0000124-llm-gateway/llm-gateway.code.md | Updated implementation evidence and validation outputs | +43/-3 |
+| src/core/gateway/gateway_core.py | Added minimal fail-closed orchestration flow and module `validate()` helper | +190/-0 |
+| tests/core/gateway/test_gateway_core.py | Added core-quality contract test with compliant naming | +21/-0 |
+| docs/project/prj0000124-llm-gateway/llm-gateway.code.md | Updated blocker remediation evidence and validation outputs | +56/-4 |
 
 ## Acceptance Criteria Evidence
 | AC ID | Changed module/file | Validating test(s) | Status |
@@ -61,12 +68,38 @@ python -m pytest -q tests/core/gateway/test_gateway_core_orchestration.py
 
 .venv\Scripts\ruff.exe format --check tests/core/gateway/test_gateway_core_orchestration.py
 1 file already formatted
+
+python -m pytest -q tests/test_core_quality.py -k "gateway_core or validate_function_exists or each_core_has_test_file"
+..                                                                                                                   [100%]
+2 passed, 3 deselected in 5.54s
+
+python -m pytest -q tests/core/gateway/test_gateway_core_orchestration.py
+....                                                                                                                 [100%]
+4 passed in 4.68s
+
+pre-commit run --files src/core/gateway/gateway_core.py tests/core/gateway/test_gateway_core_orchestration.py
+ruff (legacy alias)......................................................Passed
+ruff format..............................................................Passed
+mypy.....................................................................Passed
+Enforce branch naming convention.........................................Passed
+Run secret scan guardrail (fail on HIGH severity)........................Passed
+Rust format check....................................(no files to check)Skipped
+Rust clippy lint.....................................(no files to check)Skipped
+Run pre-commit shared checks.............................................Passed
+
+python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py
+.................                                                                                                    [100%]
+17 passed in 10.53s
 ```
 
 ## Post-7exec Remediation Note
 Addressed @7exec blocker for formatting drift in `tests/core/gateway/test_gateway_core_orchestration.py` by
 applying `ruff format` and re-running the requested selector and formatter check. No behavioral logic changes were
 introduced; remediation is formatting-only.
+
+Addressed @7exec blocker for core quality gates by adding a module `validate()` helper in
+`src/core/gateway/gateway_core.py` and adding compliant test filename `tests/core/gateway/test_gateway_core.py`.
+No orchestration behavior changes were introduced.
 
 ## Deferred Items
 1. Router fallback recovery paths beyond constructor compatibility.

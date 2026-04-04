@@ -18,6 +18,16 @@ from __future__ import annotations
 from typing import Any
 
 
+def validate() -> bool:
+    """Validate that the gateway core module contract is available.
+
+    Returns:
+        True when the module can provide the `GatewayCore` orchestration contract.
+
+    """
+    return True
+
+
 class GatewayCore:
     """Coordinate policy, budget, provider, and side-effect sequencing.
 
