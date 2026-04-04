@@ -32,7 +32,29 @@
 	- Updated M3 to DONE.
 	- Validation: docs policy 17 passed.
 	- Commit: `f061c45cf8` pushed.
-- Next step: @5test RED phase for the first test wave in prj0000127.
+- @5test RED completed on prj0000127:
+	- Added RED docs policy tests for strict-lane contract and N=5 promotion contract.
+	- RED evidence: targeted selector failed as expected prior to GREEN implementation.
+	- Commit: `de56fb3950` pushed.
+- @6code GREEN warn-phase completed on prj0000127:
+	- Implemented strict allowlist warning lane contract in CI with explicit `--config-file pyproject.toml`.
+	- Preserved broad warning lane with explicit `--config-file mypy.ini`.
+	- Updated runbook artifacts with F1/F2/F3 rollback taxonomy and N=5 promotion prerequisites.
+	- Validation: targeted docs selector passed; full docs policy 19 passed.
+	- Commit: `f5eaaddd6f` pushed.
+- @7exec validation gate passed on prj0000127:
+	- Docs policy selector and full docs policy pass.
+	- Strict allowlist mypy command pass and broad mypy warning lane command pass.
+	- Commit: `feae4e155b` pushed.
+- @8ql quality/security gate passed on prj0000127:
+	- Docs policy and registry governance pass; YAML sanity + secret scan clear.
+	- No HIGH/CRITICAL blockers.
+	- Commit: `6d18812994` pushed.
+- @9git handoff:
+	- Opened PR `#291` -> https://github.com/UndiFineD/PyAgent/pull/291
+	- State: OPEN
+	- Scope: warn-phase contracts and gates only; required-phase promotion intentionally deferred.
+- Next step: continue with required-phase promotion track (`T-MYPY-007+`) after PR review/merge.
 
 ## 2026-04-04 — prj0000126 program kickoff: next 24 ideas started
 
