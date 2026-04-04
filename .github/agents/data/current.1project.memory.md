@@ -21,3 +21,9 @@
 	state: DONE
 	summary: Initialized the follow-up remediation boundary for merged PR #287 / prj0000124 on branch prj0000125-llm-gateway-lessons-learned-fixes with canonical artifacts, Discovery registry entries, nextproject advancement to prj0000126, required memory/log rollover, and passing docs-policy plus registry validation evidence.
 
+- task_id: prj0000125-closure
+	owner_agent: @1project
+	updated_at: 2026-04-04
+	state: DONE
+	summary: Closed project prj0000125 after merged PR #289 by updating release lane and PR references in docs/project/kanban.json and data/projects.json, confirming no matching ideaNNNNNN tag for archival (N/A), updating the project overview closure status, and preparing scoped validation plus commit/push evidence.
+

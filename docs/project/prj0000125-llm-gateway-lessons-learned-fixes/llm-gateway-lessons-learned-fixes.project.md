@@ -79,11 +79,11 @@ Follow-up remediation project created after merged PR #287 and source project pr
 | M5 | Code implemented | @6code | NOT_STARTED |
 | M6 | Integration validated | @7exec | NOT_STARTED |
 | M7 | Security clean | @8ql | NOT_STARTED |
-| M8 | Committed | @9git | NOT_STARTED |
+| M8 | Committed | @9git | DONE |
 
 ## Failure Disposition
 None.
 
 ## Status
 _Last updated: 2026-04-04_
-Lane: Discovery. Project boundary initialized on the expected branch, canonical artifacts created, registries synchronized, nextproject advanced to prj0000126, and required validations passed. Ready for downstream discovery work on the follow-up remediation scope.
+Lane: Released. Closure bookkeeping completed on branch prj0000125-llm-gateway-lessons-learned-fixes after merged PR #289. Registries updated with release state and PR reference, and idea archival is N/A because no ideaNNNNNN tag is present for this project.
