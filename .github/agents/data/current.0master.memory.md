@@ -6,6 +6,35 @@
 
 ## Entries
 
+## 2026-04-04 — prj0000124 released and prj0000125 initialized
+
+- Trigger: user reported PR `#287` merged and requested wrap-up, switch to `main`, commit uncommitted files, and start a new lessons-learned fixes project.
+- prj0000124 wrap-up:
+	- Verified merged state of PR `#287` on `main`.
+	- @1project performed post-merge closure on `prj0000124-llm-gateway`:
+		- `data/projects.json` -> `Released`, `pr: "#287"`
+		- `docs/project/kanban.json` -> `Released`, `pr: "#287"`
+		- preserved and committed valid outstanding dashboard/project-doc updates already present in working tree.
+		- validation: `tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`; `project_registry_governance.py validate` -> `VALIDATION_OK, projects=124`.
+	- @9git opened closure PR `#288` for release bookkeeping: https://github.com/UndiFineD/PyAgent/pull/288
+- main sync:
+	- Switched local repo to `main` and fast-forwarded to merge commit `1392b0f7a5` (PR `#287`).
+	- Confirmed `data/nextproject.md` = `prj0000125` before new-project allocation.
+- prj0000125 boundary:
+	- Project id: `prj0000125`
+	- Name: `llm-gateway-lessons-learned-fixes`
+	- Branch: `prj0000125-llm-gateway-lessons-learned-fixes`
+	- Lane: `Discovery`
+	- Source context: follow-up remediation project for lessons learned from merged PR `#287` / prj0000124.
+	- Scope themes:
+		1. fail-closed gateway runtime hardening (budget denial, provider exceptions, telemetry degradation)
+		2. orchestration test determinism fixes
+		3. documentation/governance consistency and markdown-lint cleanup
+		4. naming/convention review for gateway modules
+	- @1project initialized all 9 artifacts, registered prj0000125, and advanced `data/nextproject.md` to `prj0000126`.
+	- Validation: `tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`; `project_registry_governance.py validate` -> `VALIDATION_OK, projects=125`.
+- Next step: @2think discovery for prj0000125.
+
 ## 2026-04-04 — prj0000123 reopened CI stabilization via PR #286
 ## 2026-04-04 — prj0000124 initialized — LLM Gateway greenfield
 
