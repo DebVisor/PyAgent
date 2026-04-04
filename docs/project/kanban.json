@@ -155,6 +155,26 @@
   ],
   "projects": [
     {
+      "id": "prj0000125",
+      "name": "llm-gateway-lessons-learned-fixes",
+      "lane": "Discovery",
+      "summary": "Initialize the follow-up remediation boundary for merged PR #287 / prj0000124 to harden gateway fail-closed behavior, fix orchestration test determinism, and reconcile project-document governance drift.",
+      "branch": "prj0000125-llm-gateway-lessons-learned-fixes",
+      "pr": null,
+      "priority": "P1",
+      "budget_tier": "S",
+      "tags": [
+        "greenfield-follow-up",
+        "post-merge",
+        "lessons-learned",
+        "llm-gateway",
+        "pr287",
+        "prj0000124"
+      ],
+      "created": "2026-04-04",
+      "updated": "2026-04-04"
+    },
+    {
       "id": "prj0000124",
       "name": "llm-gateway",
       "lane": "Discovery",
