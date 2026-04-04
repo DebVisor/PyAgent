@@ -14,3 +14,9 @@
 	state: DONE
 	summary: Initialized post-merge hotfix boundary for ci-setup-python-stack-overflow on branch prj0000121-ci-setup-python-stack-overflow with canonical artifacts, Discovery registry entries, nextproject advancement, governance validation, and scoped commit/push readiness.
 
+- task_id: prj0000121-closure-pr280-pr281
+	owner_agent: @1project
+	updated_at: 2026-04-04
+	state: DONE
+	summary: Completed post-merge closure bookkeeping on branch prj0000121-ci-setup-python-stack-overflow by releasing prj0000120 and prj0000121 with PR refs (#280/#281), archiving idea000021 file by move to docs/project/ideas/archive, and preparing scoped validation plus commit/push evidence.
+

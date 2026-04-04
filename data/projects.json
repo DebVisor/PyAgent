@@ -2,10 +2,10 @@
   {
     "id": "prj0000121",
     "name": "ci-setup-python-stack-overflow",
-    "lane": "Discovery",
+    "lane": "Released",
     "summary": "Post-merge hotfix boundary for PR #280 CI / Lightweight failure in actions/setup-python@v5 with 'Maximum call stack size exceeded'.",
     "branch": "prj0000121-ci-setup-python-stack-overflow",
-    "pr": null,
+    "pr": "#281",
     "priority": "P1",
     "budget_tier": "S",
     "tags": [
@@ -15,15 +15,15 @@
       "setup-python"
     ],
     "created": "2026-04-03",
-    "updated": "2026-04-03"
+    "updated": "2026-04-04"
   },
   {
     "id": "prj0000120",
     "name": "openapi-spec-generation",
-    "lane": "Discovery",
+    "lane": "Released",
     "summary": "Initialize workflow artifacts for idea000021 openapi spec generation and hand off to @2think discovery.",
     "branch": "prj0000120-openapi-spec-generation",
-    "pr": null,
+    "pr": "#280",
     "priority": "P3",
     "budget_tier": "S",
     "tags": [
@@ -32,7 +32,7 @@
       "openapi-spec-generation"
     ],
     "created": "2026-04-03",
-    "updated": "2026-04-03"
+    "updated": "2026-04-04"
   },
   {
     "id": "prj0000119",
