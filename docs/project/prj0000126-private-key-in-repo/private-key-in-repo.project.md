@@ -45,6 +45,6 @@ Initialize a lightweight project boundary for private-key-in-repo, seeded from i
 
 ## Status
 _Last updated: 2026-04-04_
-Lane bootstrap complete for quick-start sequencing.
+Project released: prj0000126 is now in Released lane with PR #290 recorded in registries, and idea000001-private-key-in-repo archived per closure policy.
 
 
