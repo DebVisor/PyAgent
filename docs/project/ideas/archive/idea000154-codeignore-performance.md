@@ -1,6 +1,7 @@
 # idea000154 - .codeignore Performance
 
 Planned project mapping: none yet
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 Generate a focused improvement initiative for `.codeignore` with objective: Improve runtime performance and resource efficiency.

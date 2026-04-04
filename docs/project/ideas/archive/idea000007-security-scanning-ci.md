@@ -1,6 +1,7 @@
 # idea-007 - security-scanning-ci
 
 Planned project mapping: prj0000075 (ci-simplification, lane=Released), prj0000088 (ai-fuzzing-security, lane=Released), prj0000084 (immutable-audit-trail, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on security scanning ci in area 7 – CI. The current signal indicates priority P2, impact H, and urgency H. The SWOT tag is T (Threat or risk exposure requiring mitigation).

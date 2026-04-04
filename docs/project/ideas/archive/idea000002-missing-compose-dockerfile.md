@@ -1,6 +1,7 @@
 # idea-002 - missing-compose-dockerfile
 
 Planned project mapping: prj0000012 (deployment-operations, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on missing compose dockerfile in area 8 – Data/Deploy. The current signal indicates priority P1, impact H, and urgency H. The SWOT tag is W (Weakness in current implementation).

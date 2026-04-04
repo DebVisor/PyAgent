@@ -1,6 +1,7 @@
 # idea-004 - quality-workflow-branch-trigger
 
 Planned project mapping: prj0000087 (n8n-workflow-bridge, lane=Released), prj0000025 (contributing-guide, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on quality workflow branch trigger in area 7 – CI. The current signal indicates priority P2, impact H, and urgency H. The SWOT tag is W (Weakness in current implementation).

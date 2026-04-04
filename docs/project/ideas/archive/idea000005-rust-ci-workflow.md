@@ -1,6 +1,7 @@
 # idea-005 - rust-ci-workflow
 
 Planned project mapping: prj0000087 (n8n-workflow-bridge, lane=Released), prj0000070 (opentelemetry-tracing, lane=Released), prj0000067 (rust-file-watcher, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on rust ci workflow in area 7 – CI. The current signal indicates priority P2, impact H, and urgency H. The SWOT tag is W (Weakness in current implementation).

@@ -1,6 +1,7 @@
 # idea000123 - shard-202602-306.jsonl Hardening
 
 Planned project mapping: none yet
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 Generate a focused improvement initiative for `data/logs/external_ai_learning/shard_202602_306.jsonl.gz` with objective: Reduce defects and improve safety posture.

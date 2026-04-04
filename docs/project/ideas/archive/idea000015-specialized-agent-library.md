@@ -1,6 +1,7 @@
 # idea-015 - specialized-agent-library
 
 Planned project mapping: prj0000086 (universal-agent-shell, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on specialized agent library in area 1 – Python agents. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is O (Opportunity to improve capability).

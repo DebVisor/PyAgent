@@ -1,6 +1,7 @@
 # idea-006 - codeql-ci-integration
 
 Planned project mapping: prj0000088 (ai-fuzzing-security, lane=Released), prj0000087 (n8n-workflow-bridge, lane=Released), prj0000075 (ci-simplification, lane=Released)
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on codeql ci integration in area 7 – CI. The current signal indicates priority P2, impact H, and urgency H. The SWOT tag is O (Opportunity to improve capability).

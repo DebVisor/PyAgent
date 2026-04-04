@@ -1,6 +1,7 @@
 # idea000104 - .codeignore Hardening
 
 Planned project mapping: none yet
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 Generate a focused improvement initiative for `.codeignore` with objective: Reduce defects and improve safety posture.

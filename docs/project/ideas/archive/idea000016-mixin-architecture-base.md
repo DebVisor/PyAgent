@@ -1,6 +1,7 @@
 # idea-016 - mixin-architecture-base
 
 Planned project mapping: prj0000105
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on mixin architecture base in area 1 – Python agents. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is W (Weakness in current implementation).

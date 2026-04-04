@@ -1,6 +1,7 @@
 # idea-020 - amd-npu-feature-documentation
 
 Planned project mapping: prj0000118
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on amd npu feature documentation in area 2 – Rust core. The current signal indicates priority P3, impact M, and urgency L. The SWOT tag is O (Opportunity to improve capability).

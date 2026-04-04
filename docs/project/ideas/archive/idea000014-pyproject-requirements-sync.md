@@ -1,6 +1,7 @@
 # idea-014 - pyproject-requirements-sync
 
 Planned project mapping: prj0000102
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on pyproject requirements sync in area 9 – Dependencies. The current signal indicates priority P2, impact M, and urgency M. The SWOT tag is W (Weakness in current implementation).

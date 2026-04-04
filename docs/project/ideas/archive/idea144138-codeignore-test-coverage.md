@@ -1,6 +1,7 @@
 # idea144138 - .codeignore Test Coverage
 
 Planned project mapping: none yet
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 Generate a focused improvement initiative for `.codeignore` with objective: Increase deterministic test coverage and reliability.

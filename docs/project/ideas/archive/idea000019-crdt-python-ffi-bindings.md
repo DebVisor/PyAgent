@@ -1,6 +1,7 @@
 # idea-019 - crdt-python-ffi-bindings
 
 Planned project mapping: None yet
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on crdt python ffi bindings in area 2 – Rust core. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is O (Opportunity to improve capability).

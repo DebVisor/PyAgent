@@ -1,6 +1,7 @@
 # idea-021 - openapi-spec-generation
 
 Planned project mapping: prj0000120
+Implementation status: Implemented (Archived).
 
 ## Idea summary
 This idea focuses on openapi spec generation in area 3 – Backend. The current signal indicates priority P3, impact H, and urgency M. The SWOT tag is O (Opportunity to improve capability).

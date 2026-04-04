@@ -1,3 +1,4 @@
+Implementation status: Implemented (Archived).
 A smart prompt routing system is essentially the traffic controller of a multi‑model or multi‑agent AI setup. Instead of sending every user query to the same model, it intelligently decides which model, tool, or agent is best suited for the task.
 
 Here’s a clean breakdown.
