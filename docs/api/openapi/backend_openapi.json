@@ -684,6 +684,20 @@
         "title": "ProjectPatch",
         "type": "object"
       },
+      "RefreshTokenRequest": {
+        "description": "Request body for refresh/logout endpoints.\n\nAttributes:\n    refresh_token: Opaque refresh token.",
+        "properties": {
+          "refresh_token": {
+            "title": "Refresh Token",
+            "type": "string"
+          }
+        },
+        "required": [
+          "refresh_token"
+        ],
+        "title": "RefreshTokenRequest",
+        "type": "object"
+      },
       "SystemMetricsResponse": {
         "description": "Full system metrics payload returned by GET /api/metrics/system.",
         "properties": {
@@ -5529,6 +5543,137 @@
           }
         },
         "summary": "Watchdog Status"
+      }
+    },
+    "/v1/auth/logout": {
+      "post": {
+        "description": "Revoke the refresh-session family represented by an active token.\n\nArgs:\n    body: Refresh token payload.\n\nReturns:\n    dict[str, Any]: Revocation status payload.",
+        "operationId": "logout_auth_session_v1_auth_logout_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Logout Auth Session V1 Auth Logout Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Logout Auth Session"
+      }
+    },
+    "/v1/auth/refresh": {
+      "post": {
+        "description": "Rotate a refresh token and return a new managed token pair.\n\nArgs:\n    body: Refresh token payload.\n\nReturns:\n    dict[str, Any]: Rotated managed access/refresh token pair.",
+        "operationId": "refresh_auth_session_v1_auth_refresh_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Refresh Auth Session V1 Auth Refresh Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Refresh Auth Session"
+      }
+    },
+    "/v1/auth/session": {
+      "post": {
+        "description": "Bootstrap a managed auth session from the shared API key.\n\nArgs:\n    x_api_key: API key provided in request header.\n\nReturns:\n    dict[str, Any]: Managed access/refresh token pair.",
+        "operationId": "create_auth_session_v1_auth_session_post",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-api-key",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Create Auth Session V1 Auth Session Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Create Auth Session"
       }
     },
     "/v1/health": {
