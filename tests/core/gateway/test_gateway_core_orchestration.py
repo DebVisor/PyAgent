@@ -421,6 +421,8 @@ async def test_fail_closed_budget_reserve_occurs_before_provider_execute(
 
     Args:
         gateway_envelope: Request envelope fixture.
+        event_log: Shared chronological event log fixture.
+        make_gateway: Fixture that builds a configured GatewayCore instance.
 
     """
     gateway_core = make_gateway()
@@ -614,9 +616,9 @@ async def test_event_log_ordering_detects_reversed_execution(
     Args:
         gateway_envelope: Request envelope fixture.
         event_log: Shared chronological event log fixture.
+        make_gateway: Fixture that builds a configured GatewayCore instance.
 
     """
-
     gateway_core = make_gateway()
 
     await gateway_core.handle(gateway_envelope)

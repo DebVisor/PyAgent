@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "register_id": "parallel-agents-register",
   "description": "Shared coordination register for parallel agent work, file touches, and file locks.",
-  "updated_at": "2026-04-04T18:19:55.848616+00:00",
+  "updated_at": "2026-04-04T18:24:31.352682+00:00",
   "updated_by": "0master",
   "active_project_id": "prj0000125",
   "active_branch": "prj0000125-llm-gateway-lessons-learned-fixes",
@@ -28,6 +28,13 @@
       "closed_at": "2026-04-04T18:19:55.848573+00:00",
       "closed_by": "0master",
       "note": "5test RED complete: added T-LGW2-001,002,003,005 with expected fails; commit 3d19b335b7"
+    },
+    {
+      "wave_id": "prj0000125.wave4",
+      "status": "closed",
+      "closed_at": "2026-04-04T18:24:31.352639+00:00",
+      "closed_by": "0master",
+      "note": "6code GREEN complete: runtime fail-closed + deterministic ordering implemented, tests/core/gateway 9 passed, commit 52d4386d2e"
     }
   ],
   "agents": {
@@ -156,6 +163,15 @@
       "planned_files": [],
       "lock_ids": [],
       "updated_at": "2026-04-04T18:19:55.848604+00:00"
+    },
+    "6code": {
+      "status": "idle",
+      "work_package_id": "",
+      "depends_on": [],
+      "touching_files": [],
+      "planned_files": [],
+      "lock_ids": [],
+      "updated_at": "2026-04-04T18:24:31.352671+00:00"
     }
   },
   "file_locks": [
@@ -194,6 +210,24 @@
       "status": "released",
       "acquired_at": "2026-04-04T18:15:08.128955+00:00",
       "released_at": "2026-04-04T18:19:55.502604+00:00"
+    },
+    {
+      "lock_id": "lock-0dd3297f58ec",
+      "file_path": "src/core/gateway/gateway_core.py",
+      "owner_agent": "6code",
+      "work_package_id": "prj0000125.wave4.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-04T18:20:26.309338+00:00",
+      "released_at": "2026-04-04T18:24:30.659864+00:00"
+    },
+    {
+      "lock_id": "lock-36c98c0136df",
+      "file_path": "tests/core/gateway/test_gateway_core_orchestration.py",
+      "owner_agent": "6code",
+      "work_package_id": "prj0000125.wave4.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-04T18:20:26.730535+00:00",
+      "released_at": "2026-04-04T18:24:30.995544+00:00"
     }
   ],
   "lockfiles": [],
@@ -330,6 +364,64 @@
       "payload": {
         "wave_id": "prj0000125.wave3",
         "note": "5test RED complete: added T-LGW2-001,002,003,005 with expected fails; commit 3d19b335b7"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:20:26.309390+00:00",
+      "event": "acquire-lock",
+      "actor": "6code",
+      "payload": {
+        "lock_id": "lock-0dd3297f58ec",
+        "file_path": "src/core/gateway/gateway_core.py",
+        "work_package_id": "prj0000125.wave4.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:20:26.730587+00:00",
+      "event": "acquire-lock",
+      "actor": "6code",
+      "payload": {
+        "lock_id": "lock-36c98c0136df",
+        "file_path": "tests/core/gateway/test_gateway_core_orchestration.py",
+        "work_package_id": "prj0000125.wave4.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:24:30.659917+00:00",
+      "event": "release-lock",
+      "actor": "6code",
+      "payload": {
+        "lock_id": "lock-0dd3297f58ec",
+        "file_path": "src/core/gateway/gateway_core.py",
+        "work_package_id": "prj0000125.wave4.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:24:30.995582+00:00",
+      "event": "release-lock",
+      "actor": "6code",
+      "payload": {
+        "lock_id": "lock-36c98c0136df",
+        "file_path": "tests/core/gateway/test_gateway_core_orchestration.py",
+        "work_package_id": "prj0000125.wave4.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:24:31.352677+00:00",
+      "event": "wave-agent-reset",
+      "actor": "0master",
+      "payload": {
+        "agent": "6code",
+        "wave_id": "prj0000125.wave4"
+      }
+    },
+    {
+      "ts": "2026-04-04T18:24:31.352687+00:00",
+      "event": "close-wave",
+      "actor": "0master",
+      "payload": {
+        "wave_id": "prj0000125.wave4",
+        "note": "6code GREEN complete: runtime fail-closed + deterministic ordering implemented, tests/core/gateway 9 passed, commit 52d4386d2e"
       }
     }
   ]
