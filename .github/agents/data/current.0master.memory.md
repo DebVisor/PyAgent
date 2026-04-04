@@ -6,6 +6,95 @@
 
 ## Entries
 
+## 2026-04-04 — prj0000125 @4plan phase complete
+
+- @4plan produced `llm-gateway-lessons-learned-fixes.plan.md` with 6 tasks (T-LGW2-001..006).
+- Wave C and D: ZERO remaining — already done in design commit `1c16acfde6`.
+- Wave A tasks: T-LGW2-001 (budget-denied RED), T-LGW2-002 (provider-exception RED), T-LGW2-003 (degraded-telemetry RED), T-LGW2-004 (GREEN implementation).
+- Wave B tasks: T-LGW2-005 (ordering-skeleton RED), T-LGW2-006 (event_log GREEN).
+- Governance: docs policy 17 passed.
+- Commit: `af64828b3f plan(prj0000125)` pushed to origin.
+- Next step: @5test — write all 4 RED tasks (T-LGW2-001, 002, 003, 005) in one session, parallel-safe.
+
+## 2026-04-04 — prj0000125 @5test RED phase complete
+
+- @5test added RED tests for T-LGW2-001, T-LGW2-002, T-LGW2-003, and T-LGW2-005 in `tests/core/gateway/test_gateway_core_orchestration.py`.
+- RED evidence captured as expected (4 failed, 4 passed):
+	- budget-denied path still calls provider
+	- provider exception still propagates
+	- telemetry emit exception still propagates
+	- deterministic event-order sentinel fails (`assert 1 < 0`)
+- Commit: `3d19b335b7 test(prj0000125)` pushed to origin.
+- Next step: @6code GREEN phase for T-LGW2-004 and T-LGW2-006.
+
+## 2026-04-04 — prj0000125 @6code, @7exec, @8ql, @9git progression
+
+- @6code GREEN complete:
+	- Implemented fail-closed runtime in `src/core/gateway/gateway_core.py` (budget-denied guard, provider-exception fail envelope, degraded telemetry guard).
+	- Implemented deterministic shared `event_log` ordering pattern in `tests/core/gateway/test_gateway_core_orchestration.py`.
+	- Validation: `tests/core/gateway/` = 9 passed.
+	- Commit: `52d4386d2e` pushed.
+- @7exec validation gate:
+	- `tests/core/gateway/test_gateway_core_orchestration.py` = 8 passed
+	- `tests/core/gateway/test_gateway_core.py` = 1 passed
+	- `tests/core/gateway/` = 9 passed
+	- `tests/docs/test_agent_workflow_policy_docs.py` = 17 passed
+	- Commit: `77b2166d06` pushed.
+- @8ql quality/security gate:
+	- Focused gateway tests pass, docs governance pass, architecture governance VALIDATION_OK, py_compile pass.
+	- No HIGH/CRITICAL blockers.
+	- Commit: `2fddad4f67` pushed.
+- @9git first attempt blocked by pre-commit D417 (test docstring arg descriptions).
+- Remediation wave executed:
+	- @6code fixed D417 in orchestration tests and preserved staged ql/register artifacts.
+	- Commit: `9fea47aa60` pushed.
+- @9git retry:
+	- Opened PR `#289` -> https://github.com/UndiFineD/PyAgent/pull/289
+	- State: OPEN
+	- Title: `prj0000125: gateway lessons-learned fail-closed and deterministic ordering fixes`
+	- Branch to `main` handoff completed.
+
+## 2026-04-04 — prj0000125 @3design phase complete
+
+- Trigger: @2think was already done (commit `644dd9dc6f`); user re-submitted "learn all lessons" prompt from new session; advanced to @3design.
+- @3design produced `llm-gateway-lessons-learned-fixes.design.md` with 4-wave design:
+  - Wave A (Critical): fail-closed runtime — budget-denied guard, provider exception → `status=failed`+`commit_failure`, degraded telemetry trap.
+  - Wave B (High): shared chronological event log fixture replaces concatenated `.calls` lists; ordering asserted via `event_log.index()`.
+  - Wave C (High): prj0000124 project.md milestones all set DONE; ADR 0009 `## Part 2 — prj0000125 Remediation` appended.
+  - Wave D (Closed): `gateway_core.py` is COMPLIANT with snake_case naming standard; no rename needed.
+- Governance: docs policy 17 passed; architecture governance VALIDATION_OK (9 ADRs).
+- Commit: `1c16acfde6 design(prj0000125)` pushed to origin.
+- Next step: @4plan — execute A → B → C → D wave ordering.
+
+## 2026-04-04 — prj0000124 released and prj0000125 initialized
+
+- Trigger: user reported PR `#287` merged and requested wrap-up, switch to `main`, commit uncommitted files, and start a new lessons-learned fixes project.
+- prj0000124 wrap-up:
+	- Verified merged state of PR `#287` on `main`.
+	- @1project performed post-merge closure on `prj0000124-llm-gateway`:
+		- `data/projects.json` -> `Released`, `pr: "#287"`
+		- `docs/project/kanban.json` -> `Released`, `pr: "#287"`
+		- preserved and committed valid outstanding dashboard/project-doc updates already present in working tree.
+		- validation: `tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`; `project_registry_governance.py validate` -> `VALIDATION_OK, projects=124`.
+	- @9git opened closure PR `#288` for release bookkeeping: https://github.com/UndiFineD/PyAgent/pull/288
+- main sync:
+	- Switched local repo to `main` and fast-forwarded to merge commit `1392b0f7a5` (PR `#287`).
+	- Confirmed `data/nextproject.md` = `prj0000125` before new-project allocation.
+- prj0000125 boundary:
+	- Project id: `prj0000125`
+	- Name: `llm-gateway-lessons-learned-fixes`
+	- Branch: `prj0000125-llm-gateway-lessons-learned-fixes`
+	- Lane: `Discovery`
+	- Source context: follow-up remediation project for lessons learned from merged PR `#287` / prj0000124.
+	- Scope themes:
+		1. fail-closed gateway runtime hardening (budget denial, provider exceptions, telemetry degradation)
+		2. orchestration test determinism fixes
+		3. documentation/governance consistency and markdown-lint cleanup
+		4. naming/convention review for gateway modules
+	- @1project initialized all 9 artifacts, registered prj0000125, and advanced `data/nextproject.md` to `prj0000126`.
+	- Validation: `tests/docs/test_agent_workflow_policy_docs.py` -> `17 passed`; `project_registry_governance.py validate` -> `VALIDATION_OK, projects=125`.
+- Next step: @2think discovery for prj0000125.
+
 ## 2026-04-04 — prj0000123 reopened CI stabilization via PR #286
 ## 2026-04-04 — prj0000124 initialized — LLM Gateway greenfield
 

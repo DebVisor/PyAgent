@@ -8,6 +8,39 @@
 
 ## Entries
 
+## Last scan - 2026-04-04 (prj0000125 gateway lessons-learned fixes)
+- task_id: prj0000125-llm-gateway-lessons-learned-fixes
+- lifecycle: OPEN -> IN_PROGRESS -> DONE
+- branch: prj0000125-llm-gateway-lessons-learned-fixes (validated)
+- files scanned: src/core/gateway/gateway_core.py; tests/core/gateway/test_gateway_core_orchestration.py; docs/project/prj0000125-llm-gateway-lessons-learned-fixes/*; docs/project/prj0000124-llm-gateway/llm-gateway.project.md; docs/architecture/adr/0009-llm-gateway-hybrid-split-plane.md
+- security/quality checks run:
+	- git branch --show-current
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; pytest -q tests/core/gateway/
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; pytest -q tests/docs/test_agent_workflow_policy_docs.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python scripts/architecture_governance.py validate
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m py_compile src/core/gateway/gateway_core.py
+	- git diff --name-only HEAD
+	- git ls-files --others --exclude-standard
+- findings:
+	- PASS: branch gate matched expected project branch.
+	- PASS: focused gateway selector green (`9 passed`).
+	- PASS: docs policy selector green (`17 passed`).
+	- PASS: architecture governance validator green (`VALIDATION_OK`, `adr_files=9`).
+	- PASS: static sanity compile check green on `src/core/gateway/gateway_core.py`.
+	- PASS: no HIGH/CRITICAL security blocker surfaced in required scope.
+- blocker severity: NONE
+- handoff target: @9git
+- overall: CLEAN (PASS; no governance blockers)
+
+### Lesson
+- Pattern: Gateway closure is stable when branch gate, scoped selector rerun, docs policy, ADR governance, and py_compile are all executed in one deterministic pass.
+- Root cause: None (all required checks passed).
+- Prevention: Keep @8ql closure command set fixed for gateway follow-up slices and record exact outputs.
+- First seen: prj0000125-llm-gateway-lessons-learned-fixes
+- Seen in: prj0000125-llm-gateway-lessons-learned-fixes
+- Recurrence count: 1
+- Promotion status: CANDIDATE
+
 ## Last scan - 2026-04-04 (prj0000124 phase-one gateway core slice)
 - task_id: prj0000124-llm-gateway
 - lifecycle: OPEN -> IN_PROGRESS -> DONE

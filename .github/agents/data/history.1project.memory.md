@@ -381,3 +381,17 @@ prj0000075 ci-simplification branch prj0000075-ci-simplification — project set
 - task_id: prj0000118 | owner_agent: @1project | updated_at: 2026-04-03 | state: DONE
 	summary: Re-verified branch gate on prj0000118-amd-npu-feature-documentation, applied the authorized single-line blocker remediation in prj0000117 (`## Scope Validation`), reran required validations (`tests/docs/test_agent_workflow_policy_docs.py` and `scripts/project_registry_governance.py validate`), confirmed docs-policy now fails only on accepted legacy prj0000005 missing file, and proceeded with scoped commit/push preparation.
 
+## 2026-04-04 rollover - prj0000121 to prj0000124
+
+- task_id: prj0000121 | owner_agent: @1project | updated_at: 2026-04-03 | state: DONE
+	summary: Initialized post-merge hotfix boundary for ci-setup-python-stack-overflow on branch prj0000121-ci-setup-python-stack-overflow with canonical artifacts, Discovery registry entries, nextproject advancement, governance validation, and scoped commit/push readiness.
+
+- task_id: prj0000121-closure-pr280-pr281 | owner_agent: @1project | updated_at: 2026-04-04 | state: DONE
+	summary: Completed post-merge closure bookkeeping on branch prj0000121-ci-setup-python-stack-overflow by releasing prj0000120 and prj0000121 with PR refs (#280/#281), archiving idea000021 file by move to docs/project/ideas/archive, and preparing scoped validation plus commit/push evidence.
+
+- task_id: prj0000122 | owner_agent: @1project | updated_at: 2026-04-04 | state: DONE
+	summary: Initialized project boundary for idea000022 jwt-refresh-token-support on branch prj0000122-jwt-refresh-token-support with canonical artifacts, Discovery registry entries in data/projects.json and docs/project/kanban.json, nextproject advancement to prj0000123, idea mapping update, and required validation pass evidence.
+
+- task_id: prj0000124 | owner_agent: @1project | updated_at: 2026-04-04 | state: DONE
+	summary: Initialized project boundary for greenfield llm-gateway on branch prj0000124-llm-gateway with canonical artifacts, Discovery registry entries in data/projects.json and docs/project/kanban.json, nextproject advancement to prj0000125, and required validation pass evidence.
+

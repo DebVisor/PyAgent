@@ -8,6 +8,37 @@
 
 ## Entries
 
+## 2026-04-04 — prj0000125 llm gateway lessons learned fixes (green phase)
+- task_id: prj0000125-llm-gateway-lessons-learned-fixes
+- lifecycle: DONE
+- branch: prj0000125-llm-gateway-lessons-learned-fixes (validated)
+- changed files:
+	- src/core/gateway/gateway_core.py
+	- tests/core/gateway/test_gateway_core_orchestration.py
+	- .github/agents/data/current.6code.memory.md
+	- .github/agents/data/2026-04-04.6code.log.md
+- implementation summary:
+	- Implemented budget-denied fail-closed runtime behavior in `GatewayCore.handle()` so denied reservations return a `denied` envelope with `budget_denied` and never call provider runtime.
+	- Wrapped provider execution in fail-closed handling: provider exceptions now commit budget failure and return a non-raising `failed` envelope with `provider_exception`.
+	- Added degraded-telemetry guard for final result emission so telemetry outages never block business results and returned envelopes set `telemetry.degraded=True` on emit failure.
+	- Replaced non-deterministic cross-list ordering assertions in gateway orchestration tests with a deterministic shared `event_log` fixture + `make_gateway` fixture wiring for chronological index assertions.
+- verification commands:
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; pytest -q tests/core/gateway/test_gateway_core_orchestration.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; pytest -q tests/core/gateway/test_gateway_core.py
+	- & c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; pytest -q tests/core/gateway/
+- unresolved risks:
+	- None identified within scoped GREEN tasks T-LGW2-004 and T-LGW2-006.
+- handoff target: @7exec
+
+### Lesson
+- Pattern: Fail-closed orchestration remains robust when each external boundary (budget, provider, telemetry) has explicit non-raising fallback envelope behavior.
+- Root cause: Runtime path lacked budget-denied check, provider exception guard, and telemetry-emission degradation handling.
+- Prevention: Keep explicit policy and resilience guards in `handle()` with deterministic envelope builders and no propagation of provider/telemetry exceptions.
+- First seen: 2026-04-04
+- Seen in: prj0000125-llm-gateway-lessons-learned-fixes
+- Recurrence count: 1
+- Promotion status: Candidate
+
 ## 2026-04-04 — prj0000124 gateway core-quality gate remediation
 - task_id: prj0000124-llm-gateway
 - lifecycle: DONE

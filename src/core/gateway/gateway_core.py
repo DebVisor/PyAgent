@@ -90,7 +90,10 @@ class GatewayCore:
             Minimal result envelope with decision, budget, and telemetry sections.
 
         """
-        self._telemetry_emitter.emit_request_start(envelope)
+        try:
+            self._telemetry_emitter.emit_request_start(envelope)
+        except Exception:
+            pass
         pre_decision = self._policy_engine.evaluate_pre_request(envelope)
         if not pre_decision.get("allow", False):
             result = self._build_denied_result(
@@ -99,15 +102,36 @@ class GatewayCore:
                 budget={"status": "not_reserved"},
                 telemetry={"degraded": False},
             )
-            self._telemetry_emitter.emit_result(result)
-            return result
+            return self._emit_result_with_degraded_guard(result)
 
         reservation = self._budget_manager.reserve(envelope)
+        if not reservation.get("allowed", True):
+            result = self._build_budget_denied_result(envelope=envelope, reservation=reservation)
+            return self._emit_result_with_degraded_guard(result)
+
         cache_lookup = self._semantic_cache.lookup(envelope)
         route = self._router.route(envelope, pre_decision)
-        self._telemetry_emitter.emit_decision(pre_decision, route)
+        try:
+            self._telemetry_emitter.emit_decision(pre_decision, route)
+        except Exception:
+            pass
 
-        response = await self._provider_runtime.execute(route, envelope)
+        try:
+            response = await self._provider_runtime.execute(route, envelope)
+        except Exception as exc:
+            budget_commit = self._budget_manager.commit_failure(
+                reservation,
+                {"error_code": "provider_exception", "category": "provider"},
+            )
+            result = self._build_provider_exception_result(
+                envelope=envelope,
+                decision=pre_decision,
+                route=route,
+                budget=budget_commit,
+                detail=str(exc),
+            )
+            return self._emit_result_with_degraded_guard(result)
+
         post_decision = self._policy_engine.evaluate_post_response(envelope, response)
         if not post_decision.get("allow", False):
             budget_commit = self._budget_manager.commit_failure(
@@ -121,8 +145,7 @@ class GatewayCore:
                 telemetry={"degraded": False},
             )
             result["cache"] = cache_lookup
-            self._telemetry_emitter.emit_result(result)
-            return result
+            return self._emit_result_with_degraded_guard(result)
 
         budget_commit = self._budget_manager.commit_success(
             reservation,
@@ -149,8 +172,91 @@ class GatewayCore:
             "tool_audit": tool_audit,
             "telemetry": {"degraded": False},
         }
-        self._telemetry_emitter.emit_result(result)
-        return result
+        return self._emit_result_with_degraded_guard(result)
+
+    def _emit_result_with_degraded_guard(self, result: dict[str, Any]) -> dict[str, Any]:
+        """Emit final result telemetry without breaking the business response.
+
+        Args:
+            result: Gateway result envelope.
+
+        Returns:
+            Result envelope, with `telemetry.degraded=True` when emit fails.
+
+        """
+        try:
+            self._telemetry_emitter.emit_result(result)
+            return result
+        except Exception:
+            degraded_result = dict(result)
+            degraded_result["telemetry"] = {"degraded": True}
+            return degraded_result
+
+    def _build_budget_denied_result(
+        self,
+        *,
+        envelope: dict[str, Any],
+        reservation: dict[str, Any],
+    ) -> dict[str, Any]:
+        """Build a fail-closed result for budget-denied reservations.
+
+        Args:
+            envelope: Request payload.
+            reservation: Budget reservation payload.
+
+        Returns:
+            Budget-denied result envelope.
+
+        """
+        return {
+            "request_id": envelope.get("request_id"),
+            "correlation_id": envelope.get("correlation_id"),
+            "status": "denied",
+            "decision": {"allow": False, "decision": "deny", "reason": "budget_denied"},
+            "route": None,
+            "provider_response": None,
+            "error": {"error_code": "budget_denied", "category": "budget"},
+            "budget": reservation,
+            "cache": {"hit": False},
+            "tool_audit": [],
+            "telemetry": {"degraded": False},
+        }
+
+    def _build_provider_exception_result(
+        self,
+        *,
+        envelope: dict[str, Any],
+        decision: dict[str, Any],
+        route: dict[str, Any],
+        budget: dict[str, Any],
+        detail: str,
+    ) -> dict[str, Any]:
+        """Build a fail-closed result for provider runtime exceptions.
+
+        Args:
+            envelope: Request payload.
+            decision: Policy decision captured before provider execution.
+            route: Route payload selected for provider execution.
+            budget: Budget failure commit payload.
+            detail: Exception text for observability.
+
+        Returns:
+            Provider-failed result envelope.
+
+        """
+        return {
+            "request_id": envelope.get("request_id"),
+            "correlation_id": envelope.get("correlation_id"),
+            "status": "failed",
+            "decision": decision,
+            "route": route,
+            "provider_response": None,
+            "error": {"error_code": "provider_exception", "category": "provider", "detail": detail},
+            "budget": budget,
+            "cache": {"hit": False},
+            "tool_audit": [],
+            "telemetry": {"degraded": False},
+        }
 
     def _build_denied_result(
         self,

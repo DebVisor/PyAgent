@@ -62,6 +62,11 @@ Greenfield initialization and release-closure record for the LLM Gateway subsyst
 | M5 | Code implemented | @6code | DONE |
 | M6 | Integration validated | @7exec | DONE |
 | M7 | Security clean | @8ql | DONE |
+| M8 | Committed | @9git | DONE |
+
+## Status
+_Last updated: 2026-04-04_
+Lane: Done. Gateway core slice merged via PR #287. Remediation and lessons-learned fixes tracked in prj0000125-llm-gateway-lessons-learned-fixes.
 | M8 | Closure bookkeeping committed | @1project | DONE |
 
 ## Status
