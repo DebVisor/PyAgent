@@ -6,9 +6,42 @@
 - updated_at: 2026-04-04
 - rollover: At new project start, append this file's entries to history.4plan.memory.md in chronological order, then clear Entries.
 
-## Entries
+## prj0000125 - llm-gateway-lessons-learned-fixes
 
-## prj0000124 - llm-gateway
+| Field | Value |
+|---|---|
+| task_id | prj0000125-llm-gateway-lessons-learned-fixes |
+| owner_agent | @4plan |
+| source | user request + design.md (4 waves) + project.md + gateway_core.py + test_gateway_core_orchestration.py + ADR-0009 |
+| created_at | 2026-04-04 |
+| updated_at | 2026-04-04 |
+| status | DONE |
+| lifecycle | OPEN -> IN_PROGRESS -> DONE |
+| chunk_boundaries | Single plan file (6 tasks total: T-LGW2-001..T-LGW2-006) |
+| wave_a_tasks | T-LGW2-001 (RED: budget_denied), T-LGW2-002 (RED: provider_exception), T-LGW2-003 (RED: degraded_telemetry), T-LGW2-004 (GREEN: fail-closed handle()) |
+| wave_b_tasks | T-LGW2-005 (RED: ordering skeleton), T-LGW2-006 (GREEN: event_log fixture) |
+| wave_c_status | DONE — completed in commit 1c16acfde6; rg NOT_STARTED docs/project/prj0000124-llm-gateway/ returns 0 matches; ADR 0009 Part 2 present |
+| wave_d_status | DONE — decision recorded in design.md; gateway_core.py snake_case COMPLIANT; no rename |
+| acceptance_criteria_scope | AC-A1, AC-A2, AC-A3, AC-B1, AC-B2 (C1/C2/D1 already satisfied) |
+| dependency_order | T-LGW2-001 + T-LGW2-002 + T-LGW2-003 (parallel) -> T-LGW2-004; T-LGW2-005 -> T-LGW2-006; convergence: T-LGW2-004 + T-LGW2-006 -> @7exec |
+| handoff_target | @5test |
+| artifact_paths | docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.plan.md |
+| commit_sha | af64828b3f |
+| branch | prj0000125-llm-gateway-lessons-learned-fixes (PASS) |
+| governance_gate | python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py -> 17 passed |
+| first_red_slice | T-LGW2-001: test_budget_denied_does_not_call_provider in tests/core/gateway/test_gateway_core_orchestration.py |
+
+### @5test Handoff Directive
+
+Start with all 4 RED tasks in a single session (parallel-safe, independent test functions):
+- T-LGW2-001: `test_budget_denied_does_not_call_provider` — budget allowed=False must block provider execution
+- T-LGW2-002: `test_provider_exception_returns_failed_result` — provider raise must return failed result without propagation
+- T-LGW2-003: `test_degraded_telemetry_result_still_returned` — emit_result raise must return with telemetry.degraded=True
+- T-LGW2-005: `test_event_log_ordering_detects_reversed_execution` — shared event_log skeleton (stubs not yet wired, so FAILS)
+
+All four tests must FAIL against the current gateway_core.py before handoff to @6code.
+
+
 
 | Field | Value |
 |---|---|

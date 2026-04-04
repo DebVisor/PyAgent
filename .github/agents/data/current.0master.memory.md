@@ -6,6 +6,16 @@
 
 ## Entries
 
+## 2026-04-04 — prj0000125 @4plan phase complete
+
+- @4plan produced `llm-gateway-lessons-learned-fixes.plan.md` with 6 tasks (T-LGW2-001..006).
+- Wave C and D: ZERO remaining — already done in design commit `1c16acfde6`.
+- Wave A tasks: T-LGW2-001 (budget-denied RED), T-LGW2-002 (provider-exception RED), T-LGW2-003 (degraded-telemetry RED), T-LGW2-004 (GREEN implementation).
+- Wave B tasks: T-LGW2-005 (ordering-skeleton RED), T-LGW2-006 (event_log GREEN).
+- Governance: docs policy 17 passed.
+- Commit: `af64828b3f plan(prj0000125)` pushed to origin.
+- Next step: @5test — write all 4 RED tasks (T-LGW2-001, 002, 003, 005) in one session, parallel-safe.
+
 ## 2026-04-04 — prj0000125 @3design phase complete
 
 - Trigger: @2think was already done (commit `644dd9dc6f`); user re-submitted "learn all lessons" prompt from new session; advanced to @3design.

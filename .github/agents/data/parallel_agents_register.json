@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "register_id": "parallel-agents-register",
   "description": "Shared coordination register for parallel agent work, file touches, and file locks.",
-  "updated_at": "2026-04-04T17:23:03.063389+00:00",
+  "updated_at": "2026-04-04T17:43:43.705071+00:00",
   "updated_by": "0master",
   "active_project_id": "prj0000125",
   "active_branch": "prj0000125-llm-gateway-lessons-learned-fixes",
@@ -14,6 +14,13 @@
       "closed_at": "2026-04-04T17:23:03.063323+00:00",
       "closed_by": "0master",
       "note": "3design phase complete: design.md created, ADR 0009 amended, wave A-D decisions finalized, commit 1c16acfde6"
+    },
+    {
+      "wave_id": "prj0000125.wave2",
+      "status": "closed",
+      "closed_at": "2026-04-04T17:43:43.705021+00:00",
+      "closed_by": "0master",
+      "note": "4plan phase complete: plan.md created with T-LGW2-001..006, C/D already done, commit af64828b3f"
     }
   ],
   "agents": {
@@ -124,6 +131,15 @@
       "planned_files": [],
       "lock_ids": [],
       "updated_at": "2026-04-04T17:23:03.063370+00:00"
+    },
+    "4plan": {
+      "status": "idle",
+      "work_package_id": "",
+      "depends_on": [],
+      "touching_files": [],
+      "planned_files": [],
+      "lock_ids": [],
+      "updated_at": "2026-04-04T17:43:43.705057+00:00"
     }
   },
   "file_locks": [
@@ -144,6 +160,15 @@
       "status": "released",
       "acquired_at": "2026-04-04T17:07:32.671883+00:00",
       "released_at": "2026-04-04T17:23:02.726766+00:00"
+    },
+    {
+      "lock_id": "lock-6856dac322bc",
+      "file_path": "docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.plan.md",
+      "owner_agent": "4plan",
+      "work_package_id": "prj0000125.wave2.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-04T17:36:01.217521+00:00",
+      "released_at": "2026-04-04T17:43:43.375570+00:00"
     }
   ],
   "lockfiles": [],
@@ -204,6 +229,44 @@
       "payload": {
         "wave_id": "prj0000125.wave1",
         "note": "3design phase complete: design.md created, ADR 0009 amended, wave A-D decisions finalized, commit 1c16acfde6"
+      }
+    },
+    {
+      "ts": "2026-04-04T17:36:01.217562+00:00",
+      "event": "acquire-lock",
+      "actor": "4plan",
+      "payload": {
+        "lock_id": "lock-6856dac322bc",
+        "file_path": "docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.plan.md",
+        "work_package_id": "prj0000125.wave2.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T17:43:43.375625+00:00",
+      "event": "release-lock",
+      "actor": "4plan",
+      "payload": {
+        "lock_id": "lock-6856dac322bc",
+        "file_path": "docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.plan.md",
+        "work_package_id": "prj0000125.wave2.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T17:43:43.705065+00:00",
+      "event": "wave-agent-reset",
+      "actor": "0master",
+      "payload": {
+        "agent": "4plan",
+        "wave_id": "prj0000125.wave2"
+      }
+    },
+    {
+      "ts": "2026-04-04T17:43:43.705076+00:00",
+      "event": "close-wave",
+      "actor": "0master",
+      "payload": {
+        "wave_id": "prj0000125.wave2",
+        "note": "4plan phase complete: plan.md created with T-LGW2-001..006, C/D already done, commit af64828b3f"
       }
     }
   ]
