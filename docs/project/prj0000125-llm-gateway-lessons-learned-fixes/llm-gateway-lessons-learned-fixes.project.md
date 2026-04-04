@@ -72,8 +72,8 @@ Follow-up remediation project created after merged PR #287 and source project pr
 ## Milestones
 | # | Milestone | Agent | Status |
 |---|---|---|---|
-| M1 | Options explored | @2think | NOT_STARTED |
-| M2 | Design confirmed | @3design | NOT_STARTED |
+| M1 | Options explored | @2think | DONE |
+| M2 | Design confirmed | @3design | DONE |
 | M3 | Plan finalized | @4plan | NOT_STARTED |
 | M4 | Tests written | @5test | NOT_STARTED |
 | M5 | Code implemented | @6code | NOT_STARTED |
