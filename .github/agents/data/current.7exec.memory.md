@@ -3,10 +3,34 @@
 ## Metadata
 - agent: @7exec
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-04-02
+- updated_at: 2026-04-04
 - rollover: At new project start, append this file's entries to history.7exec.memory.md in chronological order, then clear Entries.
 
 ## Entries
+
+## Last run - 2026-04-04 (rerun after remediation commit 7d58dc9e94b61552b941874bfe8db16d1a828d4f)
+- task_id: prj0000124-llm-gateway
+- Task: Re-run execution gate and confirm blockers are cleared for gateway core slice
+- lifecycle: IN_PROGRESS -> DONE
+- Branch gate: PASS (expected=prj0000124-llm-gateway, observed=prj0000124-llm-gateway)
+- Required selector gate: PASS (`python -m pytest -q tests/core/gateway/test_gateway_core_orchestration.py` -> 4 passed in 5.43s)
+- Required selector gate: PASS (`python -m pytest -q tests/core/gateway/test_gateway_core.py` -> 1 passed in 5.06s)
+- Required selector gate: PASS (`python -m pytest -q tests/test_core_quality.py -k "gateway_core or validate_function_exists or each_core_has_test_file"` -> 2 passed, 3 deselected in 5.41s)
+- Required selector gate: PASS (`python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> 17 passed in 9.78s)
+- Mandatory pre-commit gate: PASS (`pre-commit run --files src/core/gateway/gateway_core.py tests/core/gateway/test_gateway_core.py tests/core/gateway/test_gateway_core_orchestration.py docs/project/prj0000124-llm-gateway/llm-gateway.exec.md .github/agents/data/current.7exec.memory.md .github/agents/data/2026-04-04.7exec.log.md`)
+- Dependency warning classification: NONE
+- Outcome: PASSED -> @8ql readiness: PASS
+- Next handoff target: @8ql
+- Notes: Prior in-scope pre-commit/core-quality blocker is cleared on this rerun.
+
+### Lesson
+- Pattern: Re-running the exact handoff command set with the full pre-commit file list confirms blocker clearance without scope drift.
+- Root cause: Prior blocker came from downstream shared checks in pre-commit and required exact command parity to verify remediation.
+- Prevention: Keep @7exec reruns pinned to the exact required selector and pre-commit file list from handoff.
+- First seen: 2026-04-04
+- Seen in: prj0000124-llm-gateway
+- Recurrence count: 1
+- Promotion status: Candidate
 
 ## Last run - 2026-04-04 (rerun after remediation commit dc7d0cc8feec68c47fea725fcf72549d9be52197)
 - task_id: prj0000124-llm-gateway
