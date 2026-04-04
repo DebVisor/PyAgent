@@ -27,6 +27,12 @@
 	- Validation: docs policy 17 passed.
 	- Commit: `bd58fd954f` pushed.
 - Next step: @4plan on prj0000127.
+- @4plan completed on prj0000127:
+	- Produced executable task plan `T-MYPY-001` through `T-MYPY-010` with phased warn->required rollout and rollback checkpoints.
+	- Updated M3 to DONE.
+	- Validation: docs policy 17 passed.
+	- Commit: `f061c45cf8` pushed.
+- Next step: @5test RED phase for the first test wave in prj0000127.
 
 ## 2026-04-04 — prj0000126 program kickoff: next 24 ideas started
 
