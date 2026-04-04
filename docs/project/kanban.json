@@ -2187,6 +2187,25 @@
       ],
       "created": "2026-04-01",
       "updated": "2026-04-01"
+    },
+    {
+      "id": "prj0000123",
+      "name": "openapi-drift-post-merge-hotfix",
+      "lane": "Released",
+      "summary": "Post-merge hotfix for PR #284 CI drift. Hardened OpenAPI drift test canonicalization to strip volatile ValidationError/HTTPValidationError schemas.",
+      "branch": "prj0000123-openapi-drift-post-merge-hotfix",
+      "pr": "#285 #286",
+      "priority": "P1",
+      "budget_tier": "S",
+      "tags": [
+        "hotfix",
+        "post-merge",
+        "ci",
+        "openapi",
+        "drift"
+      ],
+      "created": "2026-04-04",
+      "updated": "2026-04-04"
     }
   ]
 }
