@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "register_id": "parallel-agents-register",
   "description": "Shared coordination register for parallel agent work, file touches, and file locks.",
-  "updated_at": "2026-04-04T19:26:09.265835+00:00",
+  "updated_at": "2026-04-04T20:55:58.191355+00:00",
   "updated_by": "0master",
   "active_project_id": "prj0000126",
   "active_branch": "prj0000126-next-24-ideas-rollout",
@@ -49,6 +49,13 @@
       "closed_at": "2026-04-04T19:26:09.265793+00:00",
       "closed_by": "0master",
       "note": "Batch-started prj0000126-prj0000149, validations passed, commit e3b91adfca"
+    },
+    {
+      "wave_id": "prj0000126.close",
+      "status": "closed",
+      "closed_at": "2026-04-04T20:55:58.191296+00:00",
+      "closed_by": "0master",
+      "note": "prj0000126 released after PR #290; idea000001 archived; commit a14eafdffa"
     }
   ],
   "agents": {
@@ -194,7 +201,7 @@
       "touching_files": [],
       "planned_files": [],
       "lock_ids": [],
-      "updated_at": "2026-04-04T19:26:09.265823+00:00"
+      "updated_at": "2026-04-04T20:55:58.191340+00:00"
     }
   },
   "file_locks": [
@@ -287,6 +294,24 @@
       "status": "released",
       "acquired_at": "2026-04-04T19:14:48.436937+00:00",
       "released_at": "2026-04-04T19:22:35.041428+00:00"
+    },
+    {
+      "lock_id": "lock-1711e7324d57",
+      "file_path": "docs/project/kanban.json",
+      "owner_agent": "1project",
+      "work_package_id": "prj0000126.close.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-04T20:19:54.277728+00:00",
+      "released_at": "2026-04-04T20:45:34.215632+00:00"
+    },
+    {
+      "lock_id": "lock-9dd4bdfeea7e",
+      "file_path": "data/projects.json",
+      "owner_agent": "1project",
+      "work_package_id": "prj0000126.close.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-04T20:19:56.622266+00:00",
+      "released_at": "2026-04-04T20:45:34.911357+00:00"
     }
   ],
   "lockfiles": [],
@@ -597,6 +622,64 @@
       "payload": {
         "wave_id": "prj0000126.wave1",
         "note": "Batch-started prj0000126-prj0000149, validations passed, commit e3b91adfca"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:19:54.278701+00:00",
+      "event": "acquire-lock",
+      "actor": "1project",
+      "payload": {
+        "lock_id": "lock-1711e7324d57",
+        "file_path": "docs/project/kanban.json",
+        "work_package_id": "prj0000126.close.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:19:56.622308+00:00",
+      "event": "acquire-lock",
+      "actor": "1project",
+      "payload": {
+        "lock_id": "lock-9dd4bdfeea7e",
+        "file_path": "data/projects.json",
+        "work_package_id": "prj0000126.close.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:45:34.215737+00:00",
+      "event": "release-lock",
+      "actor": "1project",
+      "payload": {
+        "lock_id": "lock-1711e7324d57",
+        "file_path": "docs/project/kanban.json",
+        "work_package_id": "prj0000126.close.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:45:34.911405+00:00",
+      "event": "release-lock",
+      "actor": "1project",
+      "payload": {
+        "lock_id": "lock-9dd4bdfeea7e",
+        "file_path": "data/projects.json",
+        "work_package_id": "prj0000126.close.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:55:58.191348+00:00",
+      "event": "wave-agent-reset",
+      "actor": "0master",
+      "payload": {
+        "agent": "1project",
+        "wave_id": "prj0000126.close"
+      }
+    },
+    {
+      "ts": "2026-04-04T20:55:58.191360+00:00",
+      "event": "close-wave",
+      "actor": "0master",
+      "payload": {
+        "wave_id": "prj0000126.close",
+        "note": "prj0000126 released after PR #290; idea000001 archived; commit a14eafdffa"
       }
     }
   ]

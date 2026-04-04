@@ -6,6 +6,19 @@
 
 ## Entries
 
+## 2026-04-04 — prj0000126 released after PR #290 merge
+
+- Merge confirmed: PR `#290` (`prj0000126-next-24-ideas-rollout` -> `main`) state `MERGED`.
+- @1project closure completed:
+	- `prj0000126` set to `Released` in `data/projects.json` and `docs/project/kanban.json` with PR linkage.
+	- `docs/project/prj0000126-private-key-in-repo/private-key-in-repo.project.md` status aligned to Released/DONE.
+	- Idea archival policy executed: moved `docs/project/ideas/idea000001-private-key-in-repo.md` to `docs/project/ideas/archive/idea000001-private-key-in-repo.md`.
+- Validation evidence:
+	- `tests/docs/test_agent_workflow_policy_docs.py` -> 17 passed.
+	- `scripts/project_registry_governance.py validate` -> VALIDATION_OK, projects=149.
+- Delivery commit: `a14eafdffa` pushed.
+- Continuation target: move execution to first active Discovery project `prj0000127-mypy-strict-enforcement`.
+
 ## 2026-04-04 — prj0000126 program kickoff: next 24 ideas started
 
 - User objective: make a rapid implementation plan for next 24 ideas and start projects.
