@@ -8,6 +8,31 @@
 
 ## Entries
 
+### 2026-04-04 - prj0000125-llm-gateway-lessons-learned-fixes
+- task_id: prj0000125-llm-gateway-lessons-learned-fixes
+- status: DONE
+- lifecycle: OPEN -> IN_PROGRESS -> DONE
+- target_agent: @3design
+- canonical_artifact: docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.think.md
+- recommendation_summary: Select Option B and execute prj0000125 as sequenced remediation waves inside one project: runtime/test hardening first, docs/governance truth sync second, and naming review third as an explicit default-no-rename decision gate.
+- prior_art_refs:
+	- docs/project/prj0000124-llm-gateway/llm-gateway.design.md
+	- docs/project/prj0000124-llm-gateway/llm-gateway.git.md
+	- docs/project/archive/prj0000100-repo-cleanup-docs-code/prj0000100-repo-cleanup-docs-code.plan.md
+	- docs/project/archive/prj0000093-projectmanager-ideas-autosync/projectmanager-ideas-autosync.think.md
+- branch_gate_evidence: `git branch --show-current` -> `prj0000125-llm-gateway-lessons-learned-fixes`
+- rationale_for_handoff: Repository evidence showed the highest-risk defects are narrow runtime/test correctness gaps in `GatewayCore` and its orchestration tests, while docs/governance drift and naming guidance need cleanup but should not drive rename scope. Sequenced waves preserve one-project accountability with lower execution risk than a single blended remediation.
+- required_validation: `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py`
+
+#### Lesson
+- Pattern: Post-merge remediation projects should sequence runtime correctness ahead of lifecycle/document truth sync, while treating naming disputes as explicit governance decisions instead of automatic renames.
+- Root cause: Narrow phase-one slices often merge with accurate passing tests but still leave fail-closed hardening gaps and stale project-state artifacts behind.
+- Prevention: Split follow-up work into bounded waves with separate validation gates and a default-no-rename rule unless import-impact evidence proves otherwise.
+- First seen: 2026-04-04
+- Seen in: prj0000125-llm-gateway-lessons-learned-fixes
+- Recurrence count: 1
+- Promotion status: MONITOR
+
 ### 2026-04-04 - prj0000124-llm-gateway
 - task_id: prj0000124-llm-gateway
 - status: DONE
