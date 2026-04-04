@@ -300,6 +300,17 @@ def gateway_envelope() -> dict[str, Any]:
     }
 
 
+@pytest.fixture
+def event_log() -> list[str]:
+    """Provide a shared chronological event log for ordering checks.
+
+    Returns:
+        Shared append-only event sequence.
+
+    """
+    return []
+
+
 def _load_gateway_core_class() -> type[Any]:
     """Load the GatewayCore contract class or fail with a RED contract signal.
 
@@ -417,6 +428,220 @@ async def test_fail_closed_post_policy_deny_blocks_cache_write_and_tool_dispatch
     assert "cache_write" not in semantic_cache.calls
     assert tool_catcher.calls == []
     assert result["status"] == "denied"
+
+
+@pytest.mark.asyncio
+async def test_budget_denied_does_not_call_provider(gateway_envelope: dict[str, Any]) -> None:
+    """Budget denial must fail-closed without invoking provider runtime.
+
+    Args:
+        gateway_envelope: Request envelope fixture.
+
+    """
+
+    class _BudgetDeniedManagerStub(_BudgetManagerStub):
+        """Budget stub returning an explicit denied reservation."""
+
+        def reserve(self, envelope: dict[str, Any]) -> dict[str, Any]:
+            """Return denied reservation payload.
+
+            Args:
+                envelope: Gateway request envelope.
+
+            Returns:
+                Reservation payload with allow flag set to false.
+
+            """
+            self.calls.append("budget_reserve")
+            return {"reservation_id": "rsv-deny-1", "allowed": False, "reason": "limit_exceeded"}
+
+    policy_engine = _PolicyEngineStub(pre_allow=True, post_allow=True)
+    budget_manager = _BudgetDeniedManagerStub()
+    provider_runtime = _ProviderRuntimeStub()
+
+    gateway_core_cls = _load_gateway_core_class()
+    gateway_core = gateway_core_cls(
+        policy_engine=policy_engine,
+        router=_RouterStub(),
+        provider_runtime=provider_runtime,
+        budget_manager=budget_manager,
+        semantic_cache=_SemanticCacheStub(),
+        fallback_manager=_FallbackManagerStub(),
+        telemetry_emitter=_TelemetryEmitterStub(),
+        tool_skill_catcher=_ToolCatcherStub(),
+    )
+
+    result = await gateway_core.handle(gateway_envelope)
+
+    assert provider_runtime.calls == []
+    assert result["status"] == "denied"
+    assert "budget_denied" in result["error"]["error_code"]
+
+
+@pytest.mark.asyncio
+async def test_provider_exception_returns_failed_result(gateway_envelope: dict[str, Any]) -> None:
+    """Provider failures must return a failed result and not propagate exceptions.
+
+    Args:
+        gateway_envelope: Request envelope fixture.
+
+    """
+
+    class _RaisingProviderRuntimeStub(_ProviderRuntimeStub):
+        """Provider runtime stub that always raises execution errors."""
+
+        async def execute(self, route: dict[str, Any], envelope: dict[str, Any]) -> dict[str, Any]:
+            """Raise provider runtime exception.
+
+            Args:
+                route: Route plan payload.
+                envelope: Gateway request envelope.
+
+            Returns:
+                This method does not return.
+
+            Raises:
+                RuntimeError: Always raised to simulate provider outage.
+
+            """
+            self.calls.append("provider_execute")
+            raise RuntimeError("provider down")
+
+    gateway_core_cls = _load_gateway_core_class()
+    gateway_core = gateway_core_cls(
+        policy_engine=_PolicyEngineStub(pre_allow=True, post_allow=True),
+        router=_RouterStub(),
+        provider_runtime=_RaisingProviderRuntimeStub(),
+        budget_manager=_BudgetManagerStub(),
+        semantic_cache=_SemanticCacheStub(),
+        fallback_manager=_FallbackManagerStub(),
+        telemetry_emitter=_TelemetryEmitterStub(),
+        tool_skill_catcher=_ToolCatcherStub(),
+    )
+
+    result = await gateway_core.handle(gateway_envelope)
+
+    assert result["status"] == "failed"
+    assert result["budget"]["status"] == "failed"
+
+
+@pytest.mark.asyncio
+async def test_degraded_telemetry_result_still_returned(gateway_envelope: dict[str, Any]) -> None:
+    """Telemetry emitter failures must not block result delivery.
+
+    Args:
+        gateway_envelope: Request envelope fixture.
+
+    """
+
+    class _RaisingTelemetryEmitterStub(_TelemetryEmitterStub):
+        """Telemetry stub that raises during final result emission."""
+
+        def emit_result(self, result: dict[str, Any]) -> None:
+            """Raise emission error.
+
+            Args:
+                result: Gateway result envelope.
+
+            Raises:
+                RuntimeError: Always raised to simulate telemetry outage.
+
+            """
+            self.calls.append("telemetry_result")
+            raise RuntimeError("telemetry down")
+
+    gateway_core_cls = _load_gateway_core_class()
+    gateway_core = gateway_core_cls(
+        policy_engine=_PolicyEngineStub(pre_allow=True, post_allow=True),
+        router=_RouterStub(),
+        provider_runtime=_ProviderRuntimeStub(),
+        budget_manager=_BudgetManagerStub(),
+        semantic_cache=_SemanticCacheStub(),
+        fallback_manager=_FallbackManagerStub(),
+        telemetry_emitter=_RaisingTelemetryEmitterStub(),
+        tool_skill_catcher=_ToolCatcherStub(),
+    )
+
+    result = await gateway_core.handle(gateway_envelope)
+
+    assert result["status"] == "success"
+    assert result["telemetry"]["degraded"] is True
+
+
+@pytest.mark.asyncio
+async def test_event_log_ordering_detects_reversed_execution(
+    gateway_envelope: dict[str, Any],
+    event_log: list[str],
+) -> None:
+    """Shared event log must fail when checked with reversed-order sentinel.
+
+    Args:
+        gateway_envelope: Request envelope fixture.
+        event_log: Shared chronological event log fixture.
+
+    """
+
+    class _EventLogBudgetManagerStub(_BudgetManagerStub):
+        """Budget manager stub that appends chronological markers."""
+
+        def __init__(self, log: list[str]) -> None:
+            super().__init__()
+            self._log = log
+
+        def reserve(self, envelope: dict[str, Any]) -> dict[str, Any]:
+            """Append reserve marker and return reservation.
+
+            Args:
+                envelope: Gateway request envelope.
+
+            Returns:
+                Reservation payload.
+
+            """
+            self._log.append("budget_reserve")
+            return super().reserve(envelope)
+
+    class _EventLogProviderRuntimeStub(_ProviderRuntimeStub):
+        """Provider runtime stub that appends chronological markers."""
+
+        def __init__(self, log: list[str]) -> None:
+            super().__init__()
+            self._log = log
+
+        async def execute(self, route: dict[str, Any], envelope: dict[str, Any]) -> dict[str, Any]:
+            """Append provider marker and return provider response.
+
+            Args:
+                route: Route plan payload.
+                envelope: Gateway request envelope.
+
+            Returns:
+                Provider response payload.
+
+            """
+            self._log.append("provider_execute")
+            return await super().execute(route, envelope)
+
+    budget_manager = _EventLogBudgetManagerStub(event_log)
+    provider_runtime = _EventLogProviderRuntimeStub(event_log)
+
+    gateway_core_cls = _load_gateway_core_class()
+    gateway_core = gateway_core_cls(
+        policy_engine=_PolicyEngineStub(pre_allow=True, post_allow=True),
+        router=_RouterStub(),
+        provider_runtime=provider_runtime,
+        budget_manager=budget_manager,
+        semantic_cache=_SemanticCacheStub(),
+        fallback_manager=_FallbackManagerStub(),
+        telemetry_emitter=_TelemetryEmitterStub(),
+        tool_skill_catcher=_ToolCatcherStub(),
+    )
+
+    await gateway_core.handle(gateway_envelope)
+
+    assert "budget_reserve" in event_log
+    assert "provider_execute" in event_log
+    assert event_log.index("provider_execute") < event_log.index("budget_reserve")
 
 
 @pytest.mark.asyncio

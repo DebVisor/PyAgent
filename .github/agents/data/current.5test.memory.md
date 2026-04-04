@@ -8,6 +8,45 @@
 
 ## Entries
 
+### Entry 2026-04-04 - prj0000125 llm gateway lessons learned fixes RED wave A/B
+- task_id: prj0000125-llm-gateway-lessons-learned-fixes
+- status: DONE
+- lifecycle_transition: OPEN -> IN_PROGRESS -> DONE
+- branch_gate:
+  - expected: prj0000125-llm-gateway-lessons-learned-fixes
+  - observed: prj0000125-llm-gateway-lessons-learned-fixes
+  - result: PASS
+- scope:
+  - tests/core/gateway/test_gateway_core_orchestration.py
+  - docs/project/prj0000125-llm-gateway-lessons-learned-fixes/llm-gateway-lessons-learned-fixes.test.md
+  - .github/agents/data/current.5test.memory.md
+  - .github/agents/data/2026-04-04.5test.log.md
+- pass_fail_summary:
+  - RED(expected): pytest -q tests/core/gateway/test_gateway_core_orchestration.py (4 failed, 4 passed)
+- red_failure_signatures:
+  - AssertionError: provider execute occurred despite denied budget reservation in test_budget_denied_does_not_call_provider
+  - RuntimeError: provider down propagated from GatewayCore.handle in test_provider_exception_returns_failed_result
+  - RuntimeError: telemetry down propagated from emit_result in test_degraded_telemetry_result_still_returned
+  - AssertionError: reversed ordering sentinel failed (assert 1 < 0) in test_event_log_ordering_detects_reversed_execution
+  - non-qualifying failures absent: ImportError, AttributeError, SyntaxError
+- handoff_notes:
+  - target_agent: @6code
+  - readiness: READY_FOR_IMPLEMENTATION
+  - implementation_delta_required:
+    - add budget-denied guard returning denied result and block provider execution
+    - wrap provider execution in fail-closed exception handling with failed budget commit
+    - wrap telemetry emit_result in degraded guard and preserve response return
+    - perform Wave B GREEN deterministic ordering refactor after RED sentinel
+
+#### Lesson
+- Pattern: RED tests that encode fail-closed gateway contracts reveal runtime exception propagation and policy bypass paths immediately.
+- Root cause: GatewayCore.handle currently lacks budget-denied short-circuit, provider exception guard, and telemetry emit_result degradation guard.
+- Prevention: Keep fail-closed invariants as dedicated async tests asserting status, error code, budget state, and non-propagation behavior.
+- First seen: 2026-04-04
+- Seen in: prj0000125-llm-gateway-lessons-learned-fixes
+- Recurrence count: 1
+- Promotion status: Candidate
+
 ### Entry 2026-04-04 - prj0000124 llm gateway red slice RED-SLICE-LGW-001
 - task_id: prj0000124-llm-gateway
 - status: DONE
