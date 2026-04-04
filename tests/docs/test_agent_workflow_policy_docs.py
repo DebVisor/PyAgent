@@ -20,6 +20,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PRJ0000109_TEST_ARTIFACT = (
     "docs/project/prj0000109-idea000002-missing-compose-dockerfile/idea000002-missing-compose-dockerfile.test.md"
 )
+PRJ0000127_PLAN_ARTIFACT = "docs/project/prj0000127-mypy-strict-enforcement/mypy-strict-enforcement.plan.md"
+PRJ0000127_EXEC_ARTIFACT = "docs/project/prj0000127-mypy-strict-enforcement/mypy-strict-enforcement.exec.md"
 
 
 def _read(relative_path: str) -> str:
@@ -470,6 +472,41 @@ def test_prj0000109_test_artifact_defines_red_phase_e2e_selector_order() -> None
 
     assert "python -m pytest -q tests/deploy/test_compose_dockerfile_paths.py" in artifact_text
     assert "python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py" in artifact_text
+
+
+def test_prj0000127_mypy_strict_lane_ci_contract_requires_explicit_config_and_phase1_allowlist() -> None:
+    """prj0000127 strict lane must be encoded in CI with explicit config and phase-1 allowlist entries."""
+    ci_text = _read(".github/workflows/ci.yml")
+    plan_text = _read(PRJ0000127_PLAN_ARTIFACT)
+    ci_normalized = _normalize(ci_text)
+    plan_normalized = _normalize(plan_text)
+
+    assert "t-mypy-001" in plan_normalized
+    assert "--config-file pyproject.toml" in plan_text
+
+    assert "python -m mypy --config-file pyproject.toml" in ci_text
+    assert "src/core/base/mixins/base_behavior_mixin.py" in ci_text
+    assert "src/core/base/mixins/host_contract.py" in ci_text
+    assert "src/core/base/mixins/shim_registry.py" in ci_text
+    assert "src/core/agent_registry.py" in ci_text
+    assert "src/core/agent_state_manager.py" in ci_text
+    assert "strict" in ci_normalized
+
+
+def test_prj0000127_mypy_promotion_contract_requires_n5_warn_to_required_artifacts() -> None:
+    """prj0000127 promotion contract must declare N=5 warn-to-required evidence in execution artifacts."""
+    plan_text = _read(PRJ0000127_PLAN_ARTIFACT)
+    exec_text = _read(PRJ0000127_EXEC_ARTIFACT)
+    exec_normalized = _normalize(exec_text)
+
+    assert "t-mypy-002" in _normalize(plan_text)
+    assert "n=5" in _normalize(plan_text)
+
+    assert "n=5" in exec_normalized
+    assert "warn" in exec_normalized
+    assert "required" in exec_normalized
+    assert "consecutive" in exec_normalized
+    assert "promotion" in exec_normalized
 
 
 # ---------------------------------------------------------------------------

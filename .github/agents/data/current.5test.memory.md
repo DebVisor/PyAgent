@@ -8,6 +8,41 @@
 
 ## Entries
 
+### Entry 2026-04-04 - prj0000127 mypy strict enforcement RED phase T-MYPY-001..003
+- task_id: prj0000127-mypy-strict-enforcement
+- status: DONE
+- lifecycle_transition: OPEN -> IN_PROGRESS -> DONE
+- branch_gate:
+  - expected: prj0000127-mypy-strict-enforcement
+  - observed: prj0000127-mypy-strict-enforcement
+  - result: PASS
+- scope:
+  - tests/docs/test_agent_workflow_policy_docs.py
+  - docs/project/prj0000127-mypy-strict-enforcement/mypy-strict-enforcement.test.md
+  - .github/agents/data/current.5test.memory.md
+  - .github/agents/data/2026-04-04.5test.log.md
+- pass_fail_summary:
+  - RED(expected): python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py -k "prj0000127 or mypy or promotion" (2 failed, 17 deselected)
+- red_failure_signatures:
+  - AssertionError: strict-lane CI command contract missing `python -m mypy --config-file pyproject.toml` in `.github/workflows/ci.yml`
+  - AssertionError: promotion contract missing explicit `n=5` markers in `mypy-strict-enforcement.exec.md`
+  - non-qualifying failures absent: ImportError, AttributeError, SyntaxError
+- handoff_notes:
+  - target_agent: @6code
+  - readiness: READY_FOR_IMPLEMENTATION
+  - implementation_delta_required:
+    - add strict-lane CI command contract with explicit `--config-file pyproject.toml` and phase-1 allowlist module list
+    - add explicit `N=5` warn->required promotion evidence contract to `mypy-strict-enforcement.exec.md`
+
+#### Lesson
+- Pattern: RED docs-policy assertions should target implementation-facing workflow and execution artifacts, not only plan text that may already satisfy requirements.
+- Root cause: Plan/design documented strict and promotion contracts, but workflow and execution artifacts did not yet encode them.
+- Prevention: Anchor RED selectors to CI workflow and execution logs for enforceable contract verification before GREEN implementation.
+- First seen: 2026-04-04
+- Seen in: prj0000127-mypy-strict-enforcement
+- Recurrence count: 1
+- Promotion status: Candidate
+
 ### Entry 2026-04-04 - prj0000125 llm gateway lessons learned fixes RED wave A/B
 - task_id: prj0000125-llm-gateway-lessons-learned-fixes
 - status: DONE
