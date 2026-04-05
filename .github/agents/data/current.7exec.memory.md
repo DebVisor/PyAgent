@@ -3,10 +3,31 @@
 ## Metadata
 - agent: @7exec
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-04-04
+- updated_at: 2026-04-05
 - rollover: At new project start, append this file's entries to history.7exec.memory.md in chronological order, then clear Entries.
 
 ## Entries
+
+## Last run - 2026-04-05
+- task_id: prj0000128-coverage-minimum-enforcement
+- Task: Execute @7exec for dedicated coverage gate validation
+- lifecycle: IN_PROGRESS -> DONE
+- Branch gate: PASS (expected=prj0000128-coverage-minimum-enforcement, observed=prj0000128-coverage-minimum-enforcement)
+- Required selector gate: PASS (`& c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/structure/test_ci_yaml.py -k "coverage or quick"` -> 4 passed, 5 deselected in 4.12s)
+- Required selector gate: PASS (`& c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/test_coverage_config.py` -> 7 passed in 4.73s)
+- Required docs-policy gate: PASS (`& c:\Dev\PyAgent\.venv\Scripts\Activate.ps1; python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> 19 passed in 8.85s)
+- Outcome: PASSED
+- Next handoff target: @8ql
+- Notes: User-scoped execution contract completed with all requested selectors green.
+
+### Lesson
+- Pattern: Coverage gate validation remains stable when CI-structure selector, coverage-config selector, and docs-policy selector are run in fixed order.
+- Root cause: None (all gates passed).
+- Prevention: Keep this exact command trio and ordering in future coverage-gate @7exec runs.
+- First seen: 2026-04-05
+- Seen in: prj0000128-coverage-minimum-enforcement
+- Recurrence count: 1
+- Promotion status: Candidate
 
 ## Last run - 2026-04-04
 - task_id: prj0000127-mypy-strict-enforcement
