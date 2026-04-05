@@ -3,8 +3,40 @@
 ## Metadata
 - agent: @4plan
 - lifecycle: OPEN -> IN_PROGRESS -> DONE|BLOCKED
-- updated_at: 2026-04-04
+- updated_at: 2026-04-05
 - rollover: At new project start, append this file's entries to history.4plan.memory.md in chronological order, then clear Entries.
+
+## prj0000128 - coverage-minimum-enforcement
+
+| Field | Value |
+|---|---|
+| task_id | prj0000128-coverage-minimum-enforcement |
+| owner_agent | @4plan |
+| source | user request + `coverage-minimum-enforcement.project.md` + `coverage-minimum-enforcement.think.md` + `coverage-minimum-enforcement.design.md` + `.github/workflows/ci.yml` + `pyproject.toml` |
+| created_at | 2026-04-05 |
+| updated_at | 2026-04-05 |
+| status | DONE |
+| lifecycle | OPEN -> IN_PROGRESS -> DONE |
+| chunk_boundaries | Single bounded slice `T-COV-001..T-COV-006` covering workflow-shape RED tests, one blocking coverage-job GREEN task, and execution evidence capture |
+| acceptance_criteria_scope | One dedicated blocking `coverage` job, canonical pytest-cov command, `pyproject.toml` threshold authority at `fail_under >= 40`, no warn phase, threshold-only rollback |
+| dependency_order | `T-COV-001 || T-COV-002` -> `T-COV-003` -> `T-COV-004` -> `T-COV-005` -> `T-COV-006` |
+| handoff_target | @5test |
+| artifact_paths | `docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.plan.md` |
+| branch | prj0000128-coverage-minimum-enforcement (validated PASS before artifact writes) |
+| first_red_slice | `T-COV-001` on `tests/structure/test_ci_yaml.py` with selector `python -m pytest -q tests/structure/test_ci_yaml.py -k "coverage or quick"` |
+| validation_evidence | `git branch --show-current` -> `prj0000128-coverage-minimum-enforcement`; `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py` -> `19 passed in 10.81s` |
+
+### Lesson Entry
+
+| Field | Value |
+|---|---|
+| Pattern | CI enforcement plans need an explicit required-from-first-merge declaration when the same workflow already contains warn-only lanes. |
+| Root cause | Mixed workflow semantics can cause downstream agents to assume a gradual warn phase even when the selected design requires an immediate blocking gate. |
+| Prevention | Record a dedicated warn/required distinction section in the plan and forbid soft-launch mechanisms (`continue-on-error`, `|| true`, threshold duplication) when the design is fail-closed. |
+| First seen | 2026-04-05 |
+| Seen in | prj0000128-coverage-minimum-enforcement |
+| Recurrence count | 1 |
+| Promotion status | CANDIDATE |
 
 ## prj0000127 - mypy-strict-enforcement
 

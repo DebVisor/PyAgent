@@ -36,7 +36,7 @@ Initialize a lightweight project boundary for coverage-minimum-enforcement, seed
 |---|---|---|---|
 | M1 | Options explored | @2think | DONE |
 | M2 | Design confirmed | @3design | DONE |
-| M3 | Plan finalized | @4plan | NOT_STARTED |
+| M3 | Plan finalized | @4plan | DONE |
 | M4 | Tests written | @5test | NOT_STARTED |
 | M5 | Code implemented | @6code | NOT_STARTED |
 | M6 | Integration validated | @7exec | NOT_STARTED |
@@ -45,6 +45,6 @@ Initialize a lightweight project boundary for coverage-minimum-enforcement, seed
 
 ## Status
 _Last updated: 2026-04-05_
-M1 and M2 are complete. The selected design reconciles the stale idea premise with current repo truth and defines one dedicated blocking `coverage` job in `ci.yml` that honors the existing `fail_under = 40` baseline from `pyproject.toml`.
+M1, M2, and M3 are complete. The selected design now has an executable implementation plan that preserves `jobs.quick`, adds one dedicated blocking `coverage` job in `ci.yml`, treats `pyproject.toml` as the sole threshold authority at `fail_under = 40`, and records no-warn-phase rollout plus threshold-only rollback boundaries for downstream agents.
 
 
