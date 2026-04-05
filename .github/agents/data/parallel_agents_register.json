@@ -2,11 +2,11 @@
   "schema_version": "1.0.0",
   "register_id": "parallel-agents-register",
   "description": "Shared coordination register for parallel agent work, file touches, and file locks.",
-  "updated_at": "2026-04-05T06:48:55.620787+00:00",
-  "updated_by": "@1project",
-  "active_project_id": "prj0000127",
-  "active_branch": "prj0000127-mypy-strict-enforcement",
-  "active_wave_id": "",
+  "updated_at": "2026-04-05T06:53:37.815375+00:00",
+  "updated_by": "2think",
+  "active_project_id": "prj0000128",
+  "active_branch": "prj0000128-coverage-minimum-enforcement",
+  "active_wave_id": "prj0000128.wave1",
   "waves": [
     {
       "wave_id": "prj0000125.wave1",
@@ -239,13 +239,17 @@
       "updated_at": "2026-04-05T06:48:55.620772+00:00"
     },
     "2think": {
-      "status": "idle",
-      "work_package_id": "",
+      "status": "in-progress",
+      "work_package_id": "prj0000128.wave1.wp1",
       "depends_on": [],
-      "touching_files": [],
+      "touching_files": [
+        "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.think.md"
+      ],
       "planned_files": [],
-      "lock_ids": [],
-      "updated_at": "2026-04-04T21:33:45.628909+00:00"
+      "lock_ids": [
+        "lock-0dbc604a626d"
+      ],
+      "updated_at": "2026-04-05T06:53:37.815369+00:00"
     }
   },
   "file_locks": [
@@ -410,9 +414,20 @@
       "status": "released",
       "acquired_at": "2026-04-05T06:43:48.020541+00:00",
       "released_at": "2026-04-05T06:48:50.021584+00:00"
+    },
+    {
+      "lock_id": "lock-0dbc604a626d",
+      "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.think.md",
+      "owner_agent": "2think",
+      "work_package_id": "prj0000128.wave1.wp1",
+      "status": "active",
+      "acquired_at": "2026-04-05T06:53:37.815343+00:00",
+      "released_at": ""
     }
   ],
-  "lockfiles": [],
+  "lockfiles": [
+    "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.think.md"
+  ],
   "event_log": [
     {
       "ts": "2026-04-04T17:07:24.614064+00:00",
@@ -988,6 +1003,16 @@
       "payload": {
         "wave_id": "prj0000127.close",
         "note": "Closed prj0000127 release bookkeeping wave after PR #291 merge closure."
+      }
+    },
+    {
+      "ts": "2026-04-05T06:53:37.815380+00:00",
+      "event": "acquire-lock",
+      "actor": "2think",
+      "payload": {
+        "lock_id": "lock-0dbc604a626d",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.think.md",
+        "work_package_id": "prj0000128.wave1.wp1"
       }
     }
   ]
