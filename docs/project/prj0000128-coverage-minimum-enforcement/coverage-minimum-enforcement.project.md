@@ -37,10 +37,10 @@ Initialize a lightweight project boundary for coverage-minimum-enforcement, seed
 | M1 | Options explored | @2think | DONE |
 | M2 | Design confirmed | @3design | DONE |
 | M3 | Plan finalized | @4plan | DONE |
-| M4 | Tests written | @5test | NOT_STARTED |
-| M5 | Code implemented | @6code | NOT_STARTED |
-| M6 | Integration validated | @7exec | NOT_STARTED |
-| M7 | Security clean | @8ql | NOT_STARTED |
+| M4 | Tests written | @5test | DONE |
+| M5 | Code implemented | @6code | DONE |
+| M6 | Integration validated | @7exec | DONE |
+| M7 | Security clean | @8ql | DONE |
 | M8 | Committed | @9git | NOT_STARTED |
 
 ## Status

@@ -8,6 +8,31 @@
 
 ## Entries
 
+## Last scan - 2026-04-05 (prj0000128 coverage-minimum-enforcement)
+- task_id: prj0000128-coverage-minimum-enforcement
+- lifecycle: OPEN -> IN_PROGRESS -> DONE
+- branch: prj0000128-coverage-minimum-enforcement (validated)
+- files scanned: .github/workflows/ci.yml; tests/docs/test_agent_workflow_policy_docs.py; tests/structure/test_ci_yaml.py; tests/test_coverage_config.py; docs/project/prj0000128-coverage-minimum-enforcement/*
+- security/quality checks run:
+	- git branch --show-current → prj0000128-coverage-minimum-enforcement ✅ MATCH
+	- python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py → 19 passed (10.03s) ✅
+	- python scripts/project_registry_governance.py validate → VALIDATION_OK, projects=149 ✅
+	- python -c "import yaml; yaml.safe_load(open('.github/workflows/ci.yml').read())" → YAML OK ✅
+	- python -m ruff check --select S docs/project/prj0000128-coverage-minimum-enforcement/ → All checks passed ✅
+	- python -m ruff check tests/docs/test_agent_workflow_policy_docs.py tests/structure/test_ci_yaml.py tests/test_coverage_config.py → All checks passed ✅
+	- Workflow injection review: pull_request_target=False, dangerous_interpolations=NONE, permissions block present ✅
+- findings:
+	- PASS: branch gate matched expected project branch.
+	- PASS: docs policy gate green (19 passed in 10.03s).
+	- PASS: registry governance validator green (VALIDATION_OK, projects=149).
+	- PASS: YAML sanity check green on .github/workflows/ci.yml.
+	- PASS: secret scan on project docs directory returned no findings.
+	- PASS: ruff lint on all 3 test files returned no errors.
+	- PASS: workflow injection review — no pull_request_target, no untrusted context interpolation, top-level permissions block present, coverage job blocking.
+- blocker severity: NONE
+- handoff target: @9git
+- overall: CLEAN (PASS; no HIGH/CRITICAL security or governance blockers)
+
 ## Last scan - 2026-04-04 (prj0000127 warn-phase mypy strict enforcement)
 - task_id: prj0000127-mypy-strict-enforcement
 - lifecycle: OPEN -> IN_PROGRESS -> DONE
