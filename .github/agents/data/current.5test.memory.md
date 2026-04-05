@@ -8,6 +8,50 @@
 
 ## Entries
 
+### Entry 2026-04-05 - prj0000128 coverage minimum enforcement RED wave T-COV-001..003
+- task_id: prj0000128-coverage-minimum-enforcement
+- status: DONE
+- lifecycle_transition: OPEN -> IN_PROGRESS -> DONE
+- branch_gate:
+  - expected: prj0000128-coverage-minimum-enforcement
+  - observed: prj0000128-coverage-minimum-enforcement
+  - result: PASS
+- scope:
+  - tests/structure/test_ci_yaml.py
+  - tests/test_coverage_config.py
+  - docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.test.md
+  - .github/agents/data/current.5test.memory.md
+  - .github/agents/data/2026-04-05.5test.log.md
+- pass_fail_summary:
+  - RED(expected): python -m pytest -q tests/structure/test_ci_yaml.py -k "coverage or quick" (3 failed, 1 passed, 5 deselected)
+  - PASS: python -m pytest -q tests/test_coverage_config.py (7 passed)
+  - PASS: .venv\Scripts\ruff.exe check --fix tests/structure/test_ci_yaml.py
+  - PASS: .venv\Scripts\ruff.exe check tests/structure/test_ci_yaml.py
+  - PASS: .venv\Scripts\ruff.exe check --select D tests/structure/test_ci_yaml.py
+- red_failure_signatures:
+  - AssertionError: CI must define exactly one jobs.coverage gate.
+  - AssertionError: CI must define jobs.coverage for required coverage gating.
+  - AssertionError: Coverage command must include canonical marker: pytest.
+  - non-qualifying failures absent: ImportError, AttributeError, SyntaxError
+- handoff_notes:
+  - target_agent: @6code
+  - readiness: READY_FOR_IMPLEMENTATION
+  - implementation_delta_required:
+    - add one blocking jobs.coverage lane in .github/workflows/ci.yml
+    - enforce jobs.coverage.needs includes quick
+    - use canonical pytest-cov markers in coverage command path
+    - keep threshold authority in pyproject.toml (no --cov-fail-under)
+    - keep coverage path fail-closed (no continue-on-error, || true, set +e)
+
+#### Lesson
+- Pattern: RED workflow-gate tests should assert job topology and command contract so missing lane behavior fails via assertion-level evidence.
+- Root cause: .github/workflows/ci.yml currently contains only jobs.quick and no jobs.coverage lane.
+- Prevention: Maintain dedicated coverage-lane assertions coupled with forbidden soft-fail marker checks in structure tests.
+- First seen: 2026-04-05
+- Seen in: prj0000128-coverage-minimum-enforcement
+- Recurrence count: 1
+- Promotion status: Candidate
+
 ### Entry 2026-04-04 - prj0000127 mypy strict enforcement RED phase T-MYPY-001..003
 - task_id: prj0000127-mypy-strict-enforcement
 - status: DONE
