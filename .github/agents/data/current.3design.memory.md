@@ -106,3 +106,31 @@
 		Recurrence count: 1
 		Promotion status: Candidate
 
+- task_id: prj0000127-mypy-strict-enforcement
+	state: DONE
+	branch: prj0000127-mypy-strict-enforcement
+	selected_design_path: Option B (progressive blocking allowlist with warn->required CI promotion)
+	assumptions:
+		- Strict lane will be command-scoped to explicit config source and phase allowlist.
+		- Broad mypy visibility lane remains non-blocking during early rollout.
+		- Phase-1 module set is intentionally narrow to keep CI stability.
+	interface_contract_notes:
+		- IFACE-MYPY-001 strict lane command contract.
+		- IFACE-MYPY-002 warning lane command contract.
+		- IFACE-MYPY-003 allowlist registry contract.
+		- IFACE-MYPY-004 promotion gate contract.
+		- IFACE-MYPY-005 rollback contract.
+		- IFACE-MYPY-006 config precedence assertion contract.
+	handoff:
+		target_agent: @4plan
+		canonical_artifact: docs/project/prj0000127-mypy-strict-enforcement/mypy-strict-enforcement.design.md
+		chunked_artifacts: none
+	lesson:
+		Pattern: Progressive type-enforcement efforts stay executable when warn/required lane contracts, rollback rules, and allowlist drift checks are designed together.
+		Root cause: Teams often define strictness goals without deterministic promotion and rollback mechanics, causing gate flapping and ad-hoc bypasses.
+		Prevention: Require AC table + interface-to-task traceability + explicit failure taxonomy in design before @4plan handoff.
+		First seen: 2026-04-04
+		Seen in: prj0000127-mypy-strict-enforcement
+		Recurrence count: 1
+		Promotion status: Candidate
+

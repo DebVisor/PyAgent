@@ -6,6 +6,38 @@
 - updated_at: 2026-04-04
 - rollover: At new project start, append this file's entries to history.4plan.memory.md in chronological order, then clear Entries.
 
+## prj0000127 - mypy-strict-enforcement
+
+| Field | Value |
+|---|---|
+| task_id | prj0000127-mypy-strict-enforcement |
+| owner_agent | @4plan |
+| source | user request + `mypy-strict-enforcement.project.md` + `mypy-strict-enforcement.think.md` + `mypy-strict-enforcement.design.md` + `mypy.ini` + `pyproject.toml` |
+| created_at | 2026-04-04 |
+| updated_at | 2026-04-04 |
+| status | DONE |
+| lifecycle | OPEN -> IN_PROGRESS -> DONE |
+| chunk_boundaries | Chunk A warn-phase planning tasks `T-MYPY-001..T-MYPY-006`; Chunk B required-phase planning tasks `T-MYPY-007..T-MYPY-010` |
+| acceptance_criteria_scope | Strict command contract, config authority contract, allowlist drift control, warn->required promotion threshold, rollback taxonomy checkpoints |
+| dependency_order | `T-MYPY-001 || T-MYPY-002` -> `T-MYPY-003` -> `T-MYPY-004 || T-MYPY-005` -> `T-MYPY-006` -> `T-MYPY-007` -> `T-MYPY-008` -> `T-MYPY-009` -> `T-MYPY-010` |
+| handoff_target | @5test |
+| artifact_paths | `docs/project/prj0000127-mypy-strict-enforcement/mypy-strict-enforcement.plan.md` |
+| branch | prj0000127-mypy-strict-enforcement (validated PASS before artifact writes) |
+| first_red_slice | `T-MYPY-001` on `tests/docs/test_agent_workflow_policy_docs.py` with selector `python -m pytest -q tests/docs/test_agent_workflow_policy_docs.py -k "prj0000127 or mypy"` |
+| validation_evidence | pending run in current session (docs policy selector) |
+
+### Lesson Entry
+
+| Field | Value |
+|---|---|
+| Pattern | Phased type-enforcement plans are most reliable when warn and required gates are modeled as separate milestones with explicit rollback checkpoints. |
+| Root cause | Plans that skip mode-transition contracts tend to mix advisory and blocking behavior, creating ambiguous execution ownership between @6code and @7exec. |
+| Prevention | Require per-task mode labels (RED/GREEN/EXEC), explicit promotion thresholds, and lane-level rollback criteria in the initial plan artifact. |
+| First seen | 2026-04-04 |
+| Seen in | prj0000127-mypy-strict-enforcement |
+| Recurrence count | 1 |
+| Promotion status | CANDIDATE |
+
 ## prj0000125 - llm-gateway-lessons-learned-fixes
 
 | Field | Value |
