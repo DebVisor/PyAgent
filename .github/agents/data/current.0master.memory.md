@@ -54,7 +54,31 @@
 	- Opened PR `#291` -> https://github.com/UndiFineD/PyAgent/pull/291
 	- State: OPEN
 	- Scope: warn-phase contracts and gates only; required-phase promotion intentionally deferred.
-- Next step: continue with required-phase promotion track (`T-MYPY-007+`) after PR review/merge.
+- Project closure:
+	- PR `#291` merged.
+	- `prj0000127` set to Released and `idea000003-mypy-strict-enforcement.md` archived.
+	- Closure commit: `d3613b17be` pushed.
+
+## 2026-04-05 — prj0000128 progressed through @2think, @3design, and @4plan
+
+- Branch activated: `prj0000128-coverage-minimum-enforcement`.
+- @2think completed on prj0000128:
+	- Reconciled stale idea assumptions with current repo truth (`fail_under = 40` already configured; CI missing blocking coverage job).
+	- Recommended one dedicated blocking coverage job as the smallest valuable slice.
+	- Updated M1 to DONE.
+	- Validation: docs policy 19 passed.
+	- Commit: `1554dd2c1e` pushed.
+- @3design completed on prj0000128:
+	- Produced design for dedicated coverage gate in CI, explicit coverage command, threshold authority, and rollback path.
+	- Updated M2 to DONE.
+	- Validation: docs policy 19 passed.
+	- Commit: `965f86b30e` pushed.
+- @4plan completed on prj0000128:
+	- Produced executable plan `T-COV-001` through `T-COV-006` with RED/GREEN/EXEC ordering and rollback checkpoints.
+	- Updated M3 to DONE.
+	- Validation: docs policy 19 passed.
+	- Commit: `ac129ebccd` pushed.
+- Next step: @5test RED phase for coverage gate contracts.
 
 ## 2026-04-04 — prj0000126 program kickoff: next 24 ideas started
 

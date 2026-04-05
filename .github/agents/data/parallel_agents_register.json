@@ -2,11 +2,11 @@
   "schema_version": "1.0.0",
   "register_id": "parallel-agents-register",
   "description": "Shared coordination register for parallel agent work, file touches, and file locks.",
-  "updated_at": "2026-04-05T07:07:41.137593+00:00",
-  "updated_by": "3design",
+  "updated_at": "2026-04-05T07:20:05.015695+00:00",
+  "updated_by": "0master",
   "active_project_id": "prj0000128",
   "active_branch": "prj0000128-coverage-minimum-enforcement",
-  "active_wave_id": "prj0000128.wave2",
+  "active_wave_id": "",
   "waves": [
     {
       "wave_id": "prj0000125.wave1",
@@ -98,6 +98,20 @@
       "closed_at": "2026-04-05T07:07:39.030748+00:00",
       "closed_by": "0master",
       "note": "2think complete for prj0000128; stale-idea analysis done; commit 1554dd2c1e"
+    },
+    {
+      "wave_id": "prj0000128.wave2",
+      "status": "closed",
+      "closed_at": "2026-04-05T07:14:56.764012+00:00",
+      "closed_by": "0master",
+      "note": "3design complete for prj0000128; dedicated coverage gate design; commit 965f86b30e"
+    },
+    {
+      "wave_id": "prj0000128.wave3",
+      "status": "closed",
+      "closed_at": "2026-04-05T07:20:05.015653+00:00",
+      "closed_by": "0master",
+      "note": "4plan complete for prj0000128; dedicated coverage gate plan; commit ac129ebccd"
     }
   ],
   "agents": {
@@ -201,17 +215,18 @@
       "updated_at": ""
     },
     "3design": {
-      "status": "in-progress",
-      "work_package_id": "prj0000128.wave2.wp1",
+      "status": "idle",
+      "work_package_id": "",
       "depends_on": [],
-      "touching_files": [
-        "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md"
+      "touching_files": [],
+      "planned_files": [
+        "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.project.md",
+        ".github/agents/data/current.3design.memory.md",
+        ".github/agents/data/history.3design.memory.md",
+        ".github/agents/data/2026-04-05.3design.log.md"
       ],
-      "planned_files": [],
-      "lock_ids": [
-        "lock-f391211ad1e1"
-      ],
-      "updated_at": "2026-04-05T07:07:41.137476+00:00"
+      "lock_ids": [],
+      "updated_at": "2026-04-05T07:14:56.764063+00:00"
     },
     "4plan": {
       "status": "idle",
@@ -220,7 +235,7 @@
       "touching_files": [],
       "planned_files": [],
       "lock_ids": [],
-      "updated_at": "2026-04-04T21:42:36.548083+00:00"
+      "updated_at": "2026-04-05T07:20:05.015683+00:00"
     },
     "5test": {
       "status": "idle",
@@ -436,14 +451,21 @@
       "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md",
       "owner_agent": "3design",
       "work_package_id": "prj0000128.wave2.wp1",
-      "status": "active",
+      "status": "released",
       "acquired_at": "2026-04-05T07:07:41.137436+00:00",
-      "released_at": ""
+      "released_at": "2026-04-05T07:14:18.597999+00:00"
+    },
+    {
+      "lock_id": "lock-fcea5ea3cb39",
+      "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.plan.md",
+      "owner_agent": "4plan",
+      "work_package_id": "prj0000128.wave3.wp1",
+      "status": "released",
+      "acquired_at": "2026-04-05T07:14:57.213441+00:00",
+      "released_at": "2026-04-05T07:20:04.664931+00:00"
     }
   ],
-  "lockfiles": [
-    "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md"
-  ],
+  "lockfiles": [],
   "event_log": [
     {
       "ts": "2026-04-04T17:07:24.614064+00:00",
@@ -1067,6 +1089,122 @@
         "lock_id": "lock-f391211ad1e1",
         "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md",
         "work_package_id": "prj0000128.wave2.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:08:55.615584+00:00",
+      "event": "touch-file",
+      "actor": "3design",
+      "payload": {
+        "work_package_id": "prj0000128.wave2.wp1",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md",
+        "kind": "touching"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:08:56.129332+00:00",
+      "event": "touch-file",
+      "actor": "3design",
+      "payload": {
+        "work_package_id": "prj0000128.wave2.wp1",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.project.md",
+        "kind": "planned"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:08:57.073196+00:00",
+      "event": "touch-file",
+      "actor": "3design",
+      "payload": {
+        "work_package_id": "prj0000128.wave2.wp1",
+        "file_path": ".github/agents/data/current.3design.memory.md",
+        "kind": "planned"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:08:58.093892+00:00",
+      "event": "touch-file",
+      "actor": "3design",
+      "payload": {
+        "work_package_id": "prj0000128.wave2.wp1",
+        "file_path": ".github/agents/data/history.3design.memory.md",
+        "kind": "planned"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:08:58.729487+00:00",
+      "event": "touch-file",
+      "actor": "3design",
+      "payload": {
+        "work_package_id": "prj0000128.wave2.wp1",
+        "file_path": ".github/agents/data/2026-04-05.3design.log.md",
+        "kind": "planned"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:14:18.598049+00:00",
+      "event": "release-lock",
+      "actor": "3design",
+      "payload": {
+        "lock_id": "lock-f391211ad1e1",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.design.md",
+        "work_package_id": "prj0000128.wave2.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:14:56.764069+00:00",
+      "event": "wave-agent-reset",
+      "actor": "0master",
+      "payload": {
+        "agent": "3design",
+        "wave_id": "prj0000128.wave2"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:14:56.764082+00:00",
+      "event": "close-wave",
+      "actor": "0master",
+      "payload": {
+        "wave_id": "prj0000128.wave2",
+        "note": "3design complete for prj0000128; dedicated coverage gate design; commit 965f86b30e"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:14:57.213509+00:00",
+      "event": "acquire-lock",
+      "actor": "4plan",
+      "payload": {
+        "lock_id": "lock-fcea5ea3cb39",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.plan.md",
+        "work_package_id": "prj0000128.wave3.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:20:04.664976+00:00",
+      "event": "release-lock",
+      "actor": "4plan",
+      "payload": {
+        "lock_id": "lock-fcea5ea3cb39",
+        "file_path": "docs/project/prj0000128-coverage-minimum-enforcement/coverage-minimum-enforcement.plan.md",
+        "work_package_id": "prj0000128.wave3.wp1"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:20:05.015689+00:00",
+      "event": "wave-agent-reset",
+      "actor": "0master",
+      "payload": {
+        "agent": "4plan",
+        "wave_id": "prj0000128.wave3"
+      }
+    },
+    {
+      "ts": "2026-04-05T07:20:05.015700+00:00",
+      "event": "close-wave",
+      "actor": "0master",
+      "payload": {
+        "wave_id": "prj0000128.wave3",
+        "note": "4plan complete for prj0000128; dedicated coverage gate plan; commit ac129ebccd"
       }
     }
   ]
