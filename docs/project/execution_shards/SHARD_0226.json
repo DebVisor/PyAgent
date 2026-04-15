@@ -1,0 +1,4510 @@
+{
+  "shard_number": 226,
+  "shard_id": "SHARD_0226",
+  "start_index": 112500,
+  "end_index": 113000,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 112501,
+      "idea_id": "idea112496",
+      "filename": "idea112496-types-test-cpython-313-observability",
+      "title": "idea112496 - types-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "types-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112496-types-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112502,
+      "idea_id": "idea112497",
+      "filename": "idea112497-types-test-cpython-313-test-coverage",
+      "title": "idea112497 - types-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "types-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112497-types-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112503,
+      "idea_id": "idea112498",
+      "filename": "idea112498-base-developer-experience",
+      "title": "idea112498 - base Developer Experience",
+      "archetype": "experience",
+      "component": "base-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112498-base-developer-experience.md"
+    },
+    {
+      "index": 112504,
+      "idea_id": "idea112499",
+      "filename": "idea112499-base-documentation",
+      "title": "idea112499 - base Documentation",
+      "archetype": "documentation",
+      "component": "base",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112499-base-documentation.md"
+    },
+    {
+      "index": 112505,
+      "idea_id": "idea112500",
+      "filename": "idea112500-base-hardening",
+      "title": "idea112500 - base Hardening",
+      "archetype": "hardening",
+      "component": "base",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112500-base-hardening.md"
+    },
+    {
+      "index": 112506,
+      "idea_id": "idea112501",
+      "filename": "idea112501-base-performance",
+      "title": "idea112501 - base Performance",
+      "archetype": "performance",
+      "component": "base",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112501-base-performance.md"
+    },
+    {
+      "index": 112507,
+      "idea_id": "idea112502",
+      "filename": "idea112502-base-resilience",
+      "title": "idea112502 - base Resilience",
+      "archetype": "resilience",
+      "component": "base",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112502-base-resilience.md"
+    },
+    {
+      "index": 112508,
+      "idea_id": "idea112503",
+      "filename": "idea112503-base-py-auto-fix-hardening",
+      "title": "idea112503 - base.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "base-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112503-base-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112509,
+      "idea_id": "idea112504",
+      "filename": "idea112504-base-py-auto-fix-performance",
+      "title": "idea112504 - base.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "base-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112504-base-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112510,
+      "idea_id": "idea112505",
+      "filename": "idea112505-base-py-hardening",
+      "title": "idea112505 - base.py Hardening",
+      "archetype": "hardening",
+      "component": "base-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112505-base-py-hardening.md"
+    },
+    {
+      "index": 112511,
+      "idea_id": "idea112506",
+      "filename": "idea112506-base-py-performance",
+      "title": "idea112506 - base.py Performance",
+      "archetype": "performance",
+      "component": "base-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112506-base-py-performance.md"
+    },
+    {
+      "index": 112512,
+      "idea_id": "idea112507",
+      "filename": "idea112507-base-py-manual-fix-hardening",
+      "title": "idea112507 - base.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "base-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112507-base-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112513,
+      "idea_id": "idea112508",
+      "filename": "idea112508-base-py-manual-fix-performance",
+      "title": "idea112508 - base.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "base-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112508-base-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112514,
+      "idea_id": "idea112509",
+      "filename": "idea112509-base-test-api-consistency",
+      "title": "idea112509 - base-test API Consistency",
+      "archetype": "consistency",
+      "component": "base-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112509-base-test-api-consistency.md"
+    },
+    {
+      "index": 112515,
+      "idea_id": "idea112510",
+      "filename": "idea112510-base-test-migration-readiness",
+      "title": "idea112510 - base-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "base-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112510-base-test-migration-readiness.md"
+    },
+    {
+      "index": 112516,
+      "idea_id": "idea112511",
+      "filename": "idea112511-base-test-observability",
+      "title": "idea112511 - base-test Observability",
+      "archetype": "observability",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112511-base-test-observability.md"
+    },
+    {
+      "index": 112517,
+      "idea_id": "idea112512",
+      "filename": "idea112512-base-test-security",
+      "title": "idea112512 - base-test Security",
+      "archetype": "security",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112512-base-test-security.md"
+    },
+    {
+      "index": 112518,
+      "idea_id": "idea112513",
+      "filename": "idea112513-base-test-test-coverage",
+      "title": "idea112513 - base-test Test Coverage",
+      "archetype": "coverage",
+      "component": "base-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112513-base-test-test-coverage.md"
+    },
+    {
+      "index": 112519,
+      "idea_id": "idea112514",
+      "filename": "idea112514-base-test-py-manual-fix-observability",
+      "title": "idea112514 - base-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "base-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112514-base-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112520,
+      "idea_id": "idea112515",
+      "filename": "idea112515-base-test-py-manual-fix-test-coverage",
+      "title": "idea112515 - base-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "base-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112515-base-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112521,
+      "idea_id": "idea112516",
+      "filename": "idea112516-factory-developer-experience",
+      "title": "idea112516 - factory Developer Experience",
+      "archetype": "experience",
+      "component": "factory-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112516-factory-developer-experience.md"
+    },
+    {
+      "index": 112522,
+      "idea_id": "idea112517",
+      "filename": "idea112517-factory-documentation",
+      "title": "idea112517 - factory Documentation",
+      "archetype": "documentation",
+      "component": "factory",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112517-factory-documentation.md"
+    },
+    {
+      "index": 112523,
+      "idea_id": "idea112518",
+      "filename": "idea112518-factory-hardening",
+      "title": "idea112518 - factory Hardening",
+      "archetype": "hardening",
+      "component": "factory",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112518-factory-hardening.md"
+    },
+    {
+      "index": 112524,
+      "idea_id": "idea112519",
+      "filename": "idea112519-factory-performance",
+      "title": "idea112519 - factory Performance",
+      "archetype": "performance",
+      "component": "factory",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112519-factory-performance.md"
+    },
+    {
+      "index": 112525,
+      "idea_id": "idea112520",
+      "filename": "idea112520-factory-resilience",
+      "title": "idea112520 - factory Resilience",
+      "archetype": "resilience",
+      "component": "factory",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112520-factory-resilience.md"
+    },
+    {
+      "index": 112526,
+      "idea_id": "idea112521",
+      "filename": "idea112521-factory-py-auto-fix-hardening",
+      "title": "idea112521 - factory.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "factory-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112521-factory-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112527,
+      "idea_id": "idea112522",
+      "filename": "idea112522-factory-py-auto-fix-performance",
+      "title": "idea112522 - factory.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "factory-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112522-factory-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112528,
+      "idea_id": "idea112523",
+      "filename": "idea112523-factory-py-hardening",
+      "title": "idea112523 - factory.py Hardening",
+      "archetype": "hardening",
+      "component": "factory-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112523-factory-py-hardening.md"
+    },
+    {
+      "index": 112529,
+      "idea_id": "idea112524",
+      "filename": "idea112524-factory-py-performance",
+      "title": "idea112524 - factory.py Performance",
+      "archetype": "performance",
+      "component": "factory-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112524-factory-py-performance.md"
+    },
+    {
+      "index": 112530,
+      "idea_id": "idea112525",
+      "filename": "idea112525-factory-py-manual-fix-hardening",
+      "title": "idea112525 - factory.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "factory-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112525-factory-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112531,
+      "idea_id": "idea112526",
+      "filename": "idea112526-factory-py-manual-fix-performance",
+      "title": "idea112526 - factory.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "factory-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112526-factory-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112532,
+      "idea_id": "idea112527",
+      "filename": "idea112527-fast-developer-experience",
+      "title": "idea112527 - fast Developer Experience",
+      "archetype": "experience",
+      "component": "fast-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112527-fast-developer-experience.md"
+    },
+    {
+      "index": 112533,
+      "idea_id": "idea112528",
+      "filename": "idea112528-fast-documentation",
+      "title": "idea112528 - fast Documentation",
+      "archetype": "documentation",
+      "component": "fast",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112528-fast-documentation.md"
+    },
+    {
+      "index": 112534,
+      "idea_id": "idea112529",
+      "filename": "idea112529-fast-hardening",
+      "title": "idea112529 - fast Hardening",
+      "archetype": "hardening",
+      "component": "fast",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112529-fast-hardening.md"
+    },
+    {
+      "index": 112535,
+      "idea_id": "idea112530",
+      "filename": "idea112530-fast-performance",
+      "title": "idea112530 - fast Performance",
+      "archetype": "performance",
+      "component": "fast",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112530-fast-performance.md"
+    },
+    {
+      "index": 112536,
+      "idea_id": "idea112531",
+      "filename": "idea112531-fast-resilience",
+      "title": "idea112531 - fast Resilience",
+      "archetype": "resilience",
+      "component": "fast",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112531-fast-resilience.md"
+    },
+    {
+      "index": 112537,
+      "idea_id": "idea112532",
+      "filename": "idea112532-fast-py-auto-fix-hardening",
+      "title": "idea112532 - fast.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "fast-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112532-fast-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112538,
+      "idea_id": "idea112533",
+      "filename": "idea112533-fast-py-auto-fix-performance",
+      "title": "idea112533 - fast.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "fast-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112533-fast-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112539,
+      "idea_id": "idea112534",
+      "filename": "idea112534-fast-py-hardening",
+      "title": "idea112534 - fast.py Hardening",
+      "archetype": "hardening",
+      "component": "fast-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112534-fast-py-hardening.md"
+    },
+    {
+      "index": 112540,
+      "idea_id": "idea112535",
+      "filename": "idea112535-fast-py-performance",
+      "title": "idea112535 - fast.py Performance",
+      "archetype": "performance",
+      "component": "fast-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112535-fast-py-performance.md"
+    },
+    {
+      "index": 112541,
+      "idea_id": "idea112536",
+      "filename": "idea112536-fast-py-manual-fix-hardening",
+      "title": "idea112536 - fast.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "fast-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112536-fast-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112542,
+      "idea_id": "idea112537",
+      "filename": "idea112537-fast-py-manual-fix-performance",
+      "title": "idea112537 - fast.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "fast-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112537-fast-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112543,
+      "idea_id": "idea112538",
+      "filename": "idea112538-fast-test-api-consistency",
+      "title": "idea112538 - fast-test API Consistency",
+      "archetype": "consistency",
+      "component": "fast-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112538-fast-test-api-consistency.md"
+    },
+    {
+      "index": 112544,
+      "idea_id": "idea112539",
+      "filename": "idea112539-fast-test-migration-readiness",
+      "title": "idea112539 - fast-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "fast-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112539-fast-test-migration-readiness.md"
+    },
+    {
+      "index": 112545,
+      "idea_id": "idea112540",
+      "filename": "idea112540-fast-test-observability",
+      "title": "idea112540 - fast-test Observability",
+      "archetype": "observability",
+      "component": "fast-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112540-fast-test-observability.md"
+    },
+    {
+      "index": 112546,
+      "idea_id": "idea112541",
+      "filename": "idea112541-fast-test-security",
+      "title": "idea112541 - fast-test Security",
+      "archetype": "security",
+      "component": "fast-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112541-fast-test-security.md"
+    },
+    {
+      "index": 112547,
+      "idea_id": "idea112542",
+      "filename": "idea112542-fast-test-test-coverage",
+      "title": "idea112542 - fast-test Test Coverage",
+      "archetype": "coverage",
+      "component": "fast-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112542-fast-test-test-coverage.md"
+    },
+    {
+      "index": 112548,
+      "idea_id": "idea112543",
+      "filename": "idea112543-fast-test-py-manual-fix-observability",
+      "title": "idea112543 - fast-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "fast-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112543-fast-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112549,
+      "idea_id": "idea112544",
+      "filename": "idea112544-fast-test-py-manual-fix-test-coverage",
+      "title": "idea112544 - fast-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "fast-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112544-fast-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112550,
+      "idea_id": "idea112545",
+      "filename": "idea112545-slow-developer-experience",
+      "title": "idea112545 - slow Developer Experience",
+      "archetype": "experience",
+      "component": "slow-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112545-slow-developer-experience.md"
+    },
+    {
+      "index": 112551,
+      "idea_id": "idea112546",
+      "filename": "idea112546-slow-documentation",
+      "title": "idea112546 - slow Documentation",
+      "archetype": "documentation",
+      "component": "slow",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112546-slow-documentation.md"
+    },
+    {
+      "index": 112552,
+      "idea_id": "idea112547",
+      "filename": "idea112547-slow-hardening",
+      "title": "idea112547 - slow Hardening",
+      "archetype": "hardening",
+      "component": "slow",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112547-slow-hardening.md"
+    },
+    {
+      "index": 112553,
+      "idea_id": "idea112548",
+      "filename": "idea112548-slow-performance",
+      "title": "idea112548 - slow Performance",
+      "archetype": "performance",
+      "component": "slow",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112548-slow-performance.md"
+    },
+    {
+      "index": 112554,
+      "idea_id": "idea112549",
+      "filename": "idea112549-slow-resilience",
+      "title": "idea112549 - slow Resilience",
+      "archetype": "resilience",
+      "component": "slow",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112549-slow-resilience.md"
+    },
+    {
+      "index": 112555,
+      "idea_id": "idea112550",
+      "filename": "idea112550-slow-py-auto-fix-hardening",
+      "title": "idea112550 - slow.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "slow-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112550-slow-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112556,
+      "idea_id": "idea112551",
+      "filename": "idea112551-slow-py-auto-fix-performance",
+      "title": "idea112551 - slow.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "slow-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112551-slow-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112557,
+      "idea_id": "idea112552",
+      "filename": "idea112552-slow-py-hardening",
+      "title": "idea112552 - slow.py Hardening",
+      "archetype": "hardening",
+      "component": "slow-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112552-slow-py-hardening.md"
+    },
+    {
+      "index": 112558,
+      "idea_id": "idea112553",
+      "filename": "idea112553-slow-py-performance",
+      "title": "idea112553 - slow.py Performance",
+      "archetype": "performance",
+      "component": "slow-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112553-slow-py-performance.md"
+    },
+    {
+      "index": 112559,
+      "idea_id": "idea112554",
+      "filename": "idea112554-slow-py-manual-fix-hardening",
+      "title": "idea112554 - slow.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "slow-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112554-slow-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112560,
+      "idea_id": "idea112555",
+      "filename": "idea112555-slow-py-manual-fix-performance",
+      "title": "idea112555 - slow.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "slow-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112555-slow-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112561,
+      "idea_id": "idea112556",
+      "filename": "idea112556-slow-test-api-consistency",
+      "title": "idea112556 - slow-test API Consistency",
+      "archetype": "consistency",
+      "component": "slow-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112556-slow-test-api-consistency.md"
+    },
+    {
+      "index": 112562,
+      "idea_id": "idea112557",
+      "filename": "idea112557-slow-test-migration-readiness",
+      "title": "idea112557 - slow-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "slow-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112557-slow-test-migration-readiness.md"
+    },
+    {
+      "index": 112563,
+      "idea_id": "idea112558",
+      "filename": "idea112558-slow-test-observability",
+      "title": "idea112558 - slow-test Observability",
+      "archetype": "observability",
+      "component": "slow-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112558-slow-test-observability.md"
+    },
+    {
+      "index": 112564,
+      "idea_id": "idea112559",
+      "filename": "idea112559-slow-test-security",
+      "title": "idea112559 - slow-test Security",
+      "archetype": "security",
+      "component": "slow-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112559-slow-test-security.md"
+    },
+    {
+      "index": 112565,
+      "idea_id": "idea112560",
+      "filename": "idea112560-slow-test-test-coverage",
+      "title": "idea112560 - slow-test Test Coverage",
+      "archetype": "coverage",
+      "component": "slow-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112560-slow-test-test-coverage.md"
+    },
+    {
+      "index": 112566,
+      "idea_id": "idea112561",
+      "filename": "idea112561-slow-test-py-manual-fix-observability",
+      "title": "idea112561 - slow-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "slow-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112561-slow-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112567,
+      "idea_id": "idea112562",
+      "filename": "idea112562-slow-test-py-manual-fix-test-coverage",
+      "title": "idea112562 - slow-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "slow-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112562-slow-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112568,
+      "idea_id": "idea112563",
+      "filename": "idea112563-stop-checker-developer-experience",
+      "title": "idea112563 - stop-checker Developer Experience",
+      "archetype": "experience",
+      "component": "stop-checker-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112563-stop-checker-developer-experience.md"
+    },
+    {
+      "index": 112569,
+      "idea_id": "idea112564",
+      "filename": "idea112564-stop-checker-documentation",
+      "title": "idea112564 - stop-checker Documentation",
+      "archetype": "documentation",
+      "component": "stop-checker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112564-stop-checker-documentation.md"
+    },
+    {
+      "index": 112570,
+      "idea_id": "idea112565",
+      "filename": "idea112565-stop-checker-hardening",
+      "title": "idea112565 - stop-checker Hardening",
+      "archetype": "hardening",
+      "component": "stop-checker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112565-stop-checker-hardening.md"
+    },
+    {
+      "index": 112571,
+      "idea_id": "idea112566",
+      "filename": "idea112566-stop-checker-performance",
+      "title": "idea112566 - stop-checker Performance",
+      "archetype": "performance",
+      "component": "stop-checker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112566-stop-checker-performance.md"
+    },
+    {
+      "index": 112572,
+      "idea_id": "idea112567",
+      "filename": "idea112567-stop-checker-resilience",
+      "title": "idea112567 - stop-checker Resilience",
+      "archetype": "resilience",
+      "component": "stop-checker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112567-stop-checker-resilience.md"
+    },
+    {
+      "index": 112573,
+      "idea_id": "idea112568",
+      "filename": "idea112568-stop-checker-py-auto-fix-hardening",
+      "title": "idea112568 - stop-checker.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "stop-checker-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112568-stop-checker-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112574,
+      "idea_id": "idea112569",
+      "filename": "idea112569-stop-checker-py-auto-fix-performance",
+      "title": "idea112569 - stop-checker.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "stop-checker-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112569-stop-checker-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112575,
+      "idea_id": "idea112570",
+      "filename": "idea112570-stop-checker-py-hardening",
+      "title": "idea112570 - stop-checker.py Hardening",
+      "archetype": "hardening",
+      "component": "stop-checker-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112570-stop-checker-py-hardening.md"
+    },
+    {
+      "index": 112576,
+      "idea_id": "idea112571",
+      "filename": "idea112571-stop-checker-py-performance",
+      "title": "idea112571 - stop-checker.py Performance",
+      "archetype": "performance",
+      "component": "stop-checker-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112571-stop-checker-py-performance.md"
+    },
+    {
+      "index": 112577,
+      "idea_id": "idea112572",
+      "filename": "idea112572-stop-checker-py-manual-fix-hardening",
+      "title": "idea112572 - stop-checker.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "stop-checker-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112572-stop-checker-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112578,
+      "idea_id": "idea112573",
+      "filename": "idea112573-stop-checker-py-manual-fix-performance",
+      "title": "idea112573 - stop-checker.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "stop-checker-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112573-stop-checker-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112579,
+      "idea_id": "idea112574",
+      "filename": "idea112574-stop-checker-test-api-consistency",
+      "title": "idea112574 - stop-checker-test API Consistency",
+      "archetype": "consistency",
+      "component": "stop-checker-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112574-stop-checker-test-api-consistency.md"
+    },
+    {
+      "index": 112580,
+      "idea_id": "idea112575",
+      "filename": "idea112575-stop-checker-test-migration-readiness",
+      "title": "idea112575 - stop-checker-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "stop-checker-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112575-stop-checker-test-migration-readiness.md"
+    },
+    {
+      "index": 112581,
+      "idea_id": "idea112576",
+      "filename": "idea112576-stop-checker-test-observability",
+      "title": "idea112576 - stop-checker-test Observability",
+      "archetype": "observability",
+      "component": "stop-checker-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112576-stop-checker-test-observability.md"
+    },
+    {
+      "index": 112582,
+      "idea_id": "idea112577",
+      "filename": "idea112577-stop-checker-test-security",
+      "title": "idea112577 - stop-checker-test Security",
+      "archetype": "security",
+      "component": "stop-checker-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112577-stop-checker-test-security.md"
+    },
+    {
+      "index": 112583,
+      "idea_id": "idea112578",
+      "filename": "idea112578-stop-checker-test-test-coverage",
+      "title": "idea112578 - stop-checker-test Test Coverage",
+      "archetype": "coverage",
+      "component": "stop-checker-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112578-stop-checker-test-test-coverage.md"
+    },
+    {
+      "index": 112584,
+      "idea_id": "idea112579",
+      "filename": "idea112579-stop-checker-test-py-manual-fix-observability",
+      "title": "idea112579 - stop-checker-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "stop-checker-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112579-stop-checker-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112585,
+      "idea_id": "idea112580",
+      "filename": "idea112580-stop-checker-test-py-manual-fix-test-coverage",
+      "title": "idea112580 - stop-checker-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "stop-checker-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112580-stop-checker-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112586,
+      "idea_id": "idea112581",
+      "filename": "idea112581-types-developer-experience",
+      "title": "idea112581 - types Developer Experience",
+      "archetype": "experience",
+      "component": "types-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112581-types-developer-experience.md"
+    },
+    {
+      "index": 112587,
+      "idea_id": "idea112582",
+      "filename": "idea112582-types-documentation",
+      "title": "idea112582 - types Documentation",
+      "archetype": "documentation",
+      "component": "types",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112582-types-documentation.md"
+    },
+    {
+      "index": 112588,
+      "idea_id": "idea112583",
+      "filename": "idea112583-types-hardening",
+      "title": "idea112583 - types Hardening",
+      "archetype": "hardening",
+      "component": "types",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112583-types-hardening.md"
+    },
+    {
+      "index": 112589,
+      "idea_id": "idea112584",
+      "filename": "idea112584-types-performance",
+      "title": "idea112584 - types Performance",
+      "archetype": "performance",
+      "component": "types",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112584-types-performance.md"
+    },
+    {
+      "index": 112590,
+      "idea_id": "idea112585",
+      "filename": "idea112585-types-resilience",
+      "title": "idea112585 - types Resilience",
+      "archetype": "resilience",
+      "component": "types",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112585-types-resilience.md"
+    },
+    {
+      "index": 112591,
+      "idea_id": "idea112586",
+      "filename": "idea112586-types-py-auto-fix-observability",
+      "title": "idea112586 - types.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "types-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112586-types-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112592,
+      "idea_id": "idea112587",
+      "filename": "idea112587-types-py-auto-fix-test-coverage",
+      "title": "idea112587 - types.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "types-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112587-types-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112593,
+      "idea_id": "idea112588",
+      "filename": "idea112588-types-py-observability",
+      "title": "idea112588 - types.py Observability",
+      "archetype": "observability",
+      "component": "types-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112588-types-py-observability.md"
+    },
+    {
+      "index": 112594,
+      "idea_id": "idea112589",
+      "filename": "idea112589-types-py-test-coverage",
+      "title": "idea112589 - types.py Test Coverage",
+      "archetype": "coverage",
+      "component": "types-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112589-types-py-test-coverage.md"
+    },
+    {
+      "index": 112595,
+      "idea_id": "idea112590",
+      "filename": "idea112590-types-py-manual-fix-hardening",
+      "title": "idea112590 - types.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "types-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112590-types-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112596,
+      "idea_id": "idea112591",
+      "filename": "idea112591-types-py-manual-fix-performance",
+      "title": "idea112591 - types.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "types-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112591-types-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112597,
+      "idea_id": "idea112592",
+      "filename": "idea112592-types-test-api-consistency",
+      "title": "idea112592 - types-test API Consistency",
+      "archetype": "consistency",
+      "component": "types-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112592-types-test-api-consistency.md"
+    },
+    {
+      "index": 112598,
+      "idea_id": "idea112593",
+      "filename": "idea112593-types-test-migration-readiness",
+      "title": "idea112593 - types-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "types-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112593-types-test-migration-readiness.md"
+    },
+    {
+      "index": 112599,
+      "idea_id": "idea112594",
+      "filename": "idea112594-types-test-observability",
+      "title": "idea112594 - types-test Observability",
+      "archetype": "observability",
+      "component": "types-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112594-types-test-observability.md"
+    },
+    {
+      "index": 112600,
+      "idea_id": "idea112595",
+      "filename": "idea112595-types-test-security",
+      "title": "idea112595 - types-test Security",
+      "archetype": "security",
+      "component": "types-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112595-types-test-security.md"
+    },
+    {
+      "index": 112601,
+      "idea_id": "idea112596",
+      "filename": "idea112596-types-test-test-coverage",
+      "title": "idea112596 - types-test Test Coverage",
+      "archetype": "coverage",
+      "component": "types-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112596-types-test-test-coverage.md"
+    },
+    {
+      "index": 112602,
+      "idea_id": "idea112597",
+      "filename": "idea112597-types-test-py-manual-fix-observability",
+      "title": "idea112597 - types-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "types-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112597-types-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112603,
+      "idea_id": "idea112598",
+      "filename": "idea112598-types-test-py-manual-fix-test-coverage",
+      "title": "idea112598 - types-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "types-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112598-types-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112604,
+      "idea_id": "idea112599",
+      "filename": "idea112599-huggingface-developer-experience",
+      "title": "idea112599 - huggingface Developer Experience",
+      "archetype": "experience",
+      "component": "huggingface-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112599-huggingface-developer-experience.md"
+    },
+    {
+      "index": 112605,
+      "idea_id": "idea112600",
+      "filename": "idea112600-huggingface-documentation",
+      "title": "idea112600 - huggingface Documentation",
+      "archetype": "documentation",
+      "component": "huggingface",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112600-huggingface-documentation.md"
+    },
+    {
+      "index": 112606,
+      "idea_id": "idea112601",
+      "filename": "idea112601-huggingface-hardening",
+      "title": "idea112601 - huggingface Hardening",
+      "archetype": "hardening",
+      "component": "huggingface",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112601-huggingface-hardening.md"
+    },
+    {
+      "index": 112607,
+      "idea_id": "idea112602",
+      "filename": "idea112602-huggingface-performance",
+      "title": "idea112602 - huggingface Performance",
+      "archetype": "performance",
+      "component": "huggingface",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112602-huggingface-performance.md"
+    },
+    {
+      "index": 112608,
+      "idea_id": "idea112603",
+      "filename": "idea112603-huggingface-resilience",
+      "title": "idea112603 - huggingface Resilience",
+      "archetype": "resilience",
+      "component": "huggingface",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112603-huggingface-resilience.md"
+    },
+    {
+      "index": 112609,
+      "idea_id": "idea112604",
+      "filename": "idea112604-huggingface-py-auto-fix-hardening",
+      "title": "idea112604 - huggingface.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "huggingface-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112604-huggingface-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112610,
+      "idea_id": "idea112605",
+      "filename": "idea112605-huggingface-py-auto-fix-performance",
+      "title": "idea112605 - huggingface.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "huggingface-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112605-huggingface-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112611,
+      "idea_id": "idea112606",
+      "filename": "idea112606-huggingface-py-hardening",
+      "title": "idea112606 - huggingface.py Hardening",
+      "archetype": "hardening",
+      "component": "huggingface-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112606-huggingface-py-hardening.md"
+    },
+    {
+      "index": 112612,
+      "idea_id": "idea112607",
+      "filename": "idea112607-huggingface-py-performance",
+      "title": "idea112607 - huggingface.py Performance",
+      "archetype": "performance",
+      "component": "huggingface-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112607-huggingface-py-performance.md"
+    },
+    {
+      "index": 112613,
+      "idea_id": "idea112608",
+      "filename": "idea112608-huggingface-py-manual-fix-hardening",
+      "title": "idea112608 - huggingface.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "huggingface-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112608-huggingface-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112614,
+      "idea_id": "idea112609",
+      "filename": "idea112609-huggingface-py-manual-fix-performance",
+      "title": "idea112609 - huggingface.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "huggingface-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112609-huggingface-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112615,
+      "idea_id": "idea112610",
+      "filename": "idea112610-huggingface-test-api-consistency",
+      "title": "idea112610 - huggingface-test API Consistency",
+      "archetype": "consistency",
+      "component": "huggingface-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112610-huggingface-test-api-consistency.md"
+    },
+    {
+      "index": 112616,
+      "idea_id": "idea112611",
+      "filename": "idea112611-huggingface-test-migration-readiness",
+      "title": "idea112611 - huggingface-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "huggingface-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112611-huggingface-test-migration-readiness.md"
+    },
+    {
+      "index": 112617,
+      "idea_id": "idea112612",
+      "filename": "idea112612-huggingface-test-observability",
+      "title": "idea112612 - huggingface-test Observability",
+      "archetype": "observability",
+      "component": "huggingface-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112612-huggingface-test-observability.md"
+    },
+    {
+      "index": 112618,
+      "idea_id": "idea112613",
+      "filename": "idea112613-huggingface-test-security",
+      "title": "idea112613 - huggingface-test Security",
+      "archetype": "security",
+      "component": "huggingface-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112613-huggingface-test-security.md"
+    },
+    {
+      "index": 112619,
+      "idea_id": "idea112614",
+      "filename": "idea112614-huggingface-test-test-coverage",
+      "title": "idea112614 - huggingface-test Test Coverage",
+      "archetype": "coverage",
+      "component": "huggingface-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112614-huggingface-test-test-coverage.md"
+    },
+    {
+      "index": 112620,
+      "idea_id": "idea112615",
+      "filename": "idea112615-huggingface-test-py-manual-fix-observability",
+      "title": "idea112615 - huggingface-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "huggingface-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112615-huggingface-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112621,
+      "idea_id": "idea112616",
+      "filename": "idea112616-huggingface-test-py-manual-fix-test-coverage",
+      "title": "idea112616 - huggingface-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "huggingface-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112616-huggingface-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112622,
+      "idea_id": "idea112617",
+      "filename": "idea112617-incremental-detokenizer-developer-experience",
+      "title": "idea112617 - incremental-detokenizer Developer Experience",
+      "archetype": "experience",
+      "component": "incremental-detokenizer-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112617-incremental-detokenizer-developer-experience.md"
+    },
+    {
+      "index": 112623,
+      "idea_id": "idea112618",
+      "filename": "idea112618-incremental-detokenizer-documentation",
+      "title": "idea112618 - incremental-detokenizer Documentation",
+      "archetype": "documentation",
+      "component": "incremental-detokenizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112618-incremental-detokenizer-documentation.md"
+    },
+    {
+      "index": 112624,
+      "idea_id": "idea112619",
+      "filename": "idea112619-incremental-detokenizer-hardening",
+      "title": "idea112619 - incremental-detokenizer Hardening",
+      "archetype": "hardening",
+      "component": "incremental-detokenizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112619-incremental-detokenizer-hardening.md"
+    },
+    {
+      "index": 112625,
+      "idea_id": "idea112620",
+      "filename": "idea112620-incremental-detokenizer-performance",
+      "title": "idea112620 - incremental-detokenizer Performance",
+      "archetype": "performance",
+      "component": "incremental-detokenizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112620-incremental-detokenizer-performance.md"
+    },
+    {
+      "index": 112626,
+      "idea_id": "idea112621",
+      "filename": "idea112621-incremental-detokenizer-resilience",
+      "title": "idea112621 - incremental-detokenizer Resilience",
+      "archetype": "resilience",
+      "component": "incremental-detokenizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112621-incremental-detokenizer-resilience.md"
+    },
+    {
+      "index": 112627,
+      "idea_id": "idea112622",
+      "filename": "idea112622-incremental-detokenizer-py-manual-fix-hardening",
+      "title": "idea112622 - incremental-detokenizer.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "incremental-detokenizer-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112622-incremental-detokenizer-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112628,
+      "idea_id": "idea112623",
+      "filename": "idea112623-incremental-detokenizer-py-manual-fix-performance",
+      "title": "idea112623 - incremental-detokenizer.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "incremental-detokenizer-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112623-incremental-detokenizer-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112629,
+      "idea_id": "idea112624",
+      "filename": "idea112624-incremental-detokenizer-test-api-consistency",
+      "title": "idea112624 - incremental-detokenizer-test API Consistency",
+      "archetype": "consistency",
+      "component": "incremental-detokenizer-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112624-incremental-detokenizer-test-api-consistency.md"
+    },
+    {
+      "index": 112630,
+      "idea_id": "idea112625",
+      "filename": "idea112625-incremental-detokenizer-test-migration-readiness",
+      "title": "idea112625 - incremental-detokenizer-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "incremental-detokenizer-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112625-incremental-detokenizer-test-migration-readiness.md"
+    },
+    {
+      "index": 112631,
+      "idea_id": "idea112626",
+      "filename": "idea112626-incremental-detokenizer-test-observability",
+      "title": "idea112626 - incremental-detokenizer-test Observability",
+      "archetype": "observability",
+      "component": "incremental-detokenizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112626-incremental-detokenizer-test-observability.md"
+    },
+    {
+      "index": 112632,
+      "idea_id": "idea112627",
+      "filename": "idea112627-incremental-detokenizer-test-security",
+      "title": "idea112627 - incremental-detokenizer-test Security",
+      "archetype": "security",
+      "component": "incremental-detokenizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112627-incremental-detokenizer-test-security.md"
+    },
+    {
+      "index": 112633,
+      "idea_id": "idea112628",
+      "filename": "idea112628-incremental-detokenizer-test-test-coverage",
+      "title": "idea112628 - incremental-detokenizer-test Test Coverage",
+      "archetype": "coverage",
+      "component": "incremental-detokenizer-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112628-incremental-detokenizer-test-test-coverage.md"
+    },
+    {
+      "index": 112634,
+      "idea_id": "idea112629",
+      "filename": "idea112629-incremental-detokenizer-test-py-manual-fix-observability",
+      "title": "idea112629 - incremental-detokenizer-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "incremental-detokenizer-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112629-incremental-detokenizer-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112635,
+      "idea_id": "idea112630",
+      "filename": "idea112630-incremental-detokenizer-test-py-manual-fix-test-coverage",
+      "title": "idea112630 - incremental-detokenizer-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "incremental-detokenizer-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112630-incremental-detokenizer-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112636,
+      "idea_id": "idea112631",
+      "filename": "idea112631-mistral-developer-experience",
+      "title": "idea112631 - mistral Developer Experience",
+      "archetype": "experience",
+      "component": "mistral-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112631-mistral-developer-experience.md"
+    },
+    {
+      "index": 112637,
+      "idea_id": "idea112632",
+      "filename": "idea112632-mistral-documentation",
+      "title": "idea112632 - mistral Documentation",
+      "archetype": "documentation",
+      "component": "mistral",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112632-mistral-documentation.md"
+    },
+    {
+      "index": 112638,
+      "idea_id": "idea112633",
+      "filename": "idea112633-mistral-hardening",
+      "title": "idea112633 - mistral Hardening",
+      "archetype": "hardening",
+      "component": "mistral",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112633-mistral-hardening.md"
+    },
+    {
+      "index": 112639,
+      "idea_id": "idea112634",
+      "filename": "idea112634-mistral-performance",
+      "title": "idea112634 - mistral Performance",
+      "archetype": "performance",
+      "component": "mistral",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112634-mistral-performance.md"
+    },
+    {
+      "index": 112640,
+      "idea_id": "idea112635",
+      "filename": "idea112635-mistral-resilience",
+      "title": "idea112635 - mistral Resilience",
+      "archetype": "resilience",
+      "component": "mistral",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112635-mistral-resilience.md"
+    },
+    {
+      "index": 112641,
+      "idea_id": "idea112636",
+      "filename": "idea112636-mistral-py-auto-fix-observability",
+      "title": "idea112636 - mistral.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "mistral-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112636-mistral-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112642,
+      "idea_id": "idea112637",
+      "filename": "idea112637-mistral-py-auto-fix-test-coverage",
+      "title": "idea112637 - mistral.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "mistral-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112637-mistral-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112643,
+      "idea_id": "idea112638",
+      "filename": "idea112638-mistral-py-observability",
+      "title": "idea112638 - mistral.py Observability",
+      "archetype": "observability",
+      "component": "mistral-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112638-mistral-py-observability.md"
+    },
+    {
+      "index": 112644,
+      "idea_id": "idea112639",
+      "filename": "idea112639-mistral-py-test-coverage",
+      "title": "idea112639 - mistral.py Test Coverage",
+      "archetype": "coverage",
+      "component": "mistral-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112639-mistral-py-test-coverage.md"
+    },
+    {
+      "index": 112645,
+      "idea_id": "idea112640",
+      "filename": "idea112640-mistral-py-manual-fix-hardening",
+      "title": "idea112640 - mistral.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "mistral-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112640-mistral-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112646,
+      "idea_id": "idea112641",
+      "filename": "idea112641-mistral-py-manual-fix-performance",
+      "title": "idea112641 - mistral.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "mistral-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112641-mistral-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112647,
+      "idea_id": "idea112642",
+      "filename": "idea112642-mistral-test-api-consistency",
+      "title": "idea112642 - mistral-test API Consistency",
+      "archetype": "consistency",
+      "component": "mistral-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112642-mistral-test-api-consistency.md"
+    },
+    {
+      "index": 112648,
+      "idea_id": "idea112643",
+      "filename": "idea112643-mistral-test-migration-readiness",
+      "title": "idea112643 - mistral-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "mistral-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112643-mistral-test-migration-readiness.md"
+    },
+    {
+      "index": 112649,
+      "idea_id": "idea112644",
+      "filename": "idea112644-mistral-test-observability",
+      "title": "idea112644 - mistral-test Observability",
+      "archetype": "observability",
+      "component": "mistral-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112644-mistral-test-observability.md"
+    },
+    {
+      "index": 112650,
+      "idea_id": "idea112645",
+      "filename": "idea112645-mistral-test-security",
+      "title": "idea112645 - mistral-test Security",
+      "archetype": "security",
+      "component": "mistral-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112645-mistral-test-security.md"
+    },
+    {
+      "index": 112651,
+      "idea_id": "idea112646",
+      "filename": "idea112646-mistral-test-test-coverage",
+      "title": "idea112646 - mistral-test Test Coverage",
+      "archetype": "coverage",
+      "component": "mistral-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112646-mistral-test-test-coverage.md"
+    },
+    {
+      "index": 112652,
+      "idea_id": "idea112647",
+      "filename": "idea112647-mistral-test-py-manual-fix-observability",
+      "title": "idea112647 - mistral-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "mistral-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112647-mistral-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112653,
+      "idea_id": "idea112648",
+      "filename": "idea112648-mistral-test-py-manual-fix-test-coverage",
+      "title": "idea112648 - mistral-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "mistral-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112648-mistral-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112654,
+      "idea_id": "idea112649",
+      "filename": "idea112649-models-developer-experience",
+      "title": "idea112649 - models Developer Experience",
+      "archetype": "experience",
+      "component": "models-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112649-models-developer-experience.md"
+    },
+    {
+      "index": 112655,
+      "idea_id": "idea112650",
+      "filename": "idea112650-models-documentation",
+      "title": "idea112650 - models Documentation",
+      "archetype": "documentation",
+      "component": "models",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112650-models-documentation.md"
+    },
+    {
+      "index": 112656,
+      "idea_id": "idea112651",
+      "filename": "idea112651-models-hardening",
+      "title": "idea112651 - models Hardening",
+      "archetype": "hardening",
+      "component": "models",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112651-models-hardening.md"
+    },
+    {
+      "index": 112657,
+      "idea_id": "idea112652",
+      "filename": "idea112652-models-performance",
+      "title": "idea112652 - models Performance",
+      "archetype": "performance",
+      "component": "models",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112652-models-performance.md"
+    },
+    {
+      "index": 112658,
+      "idea_id": "idea112653",
+      "filename": "idea112653-models-resilience",
+      "title": "idea112653 - models Resilience",
+      "archetype": "resilience",
+      "component": "models",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112653-models-resilience.md"
+    },
+    {
+      "index": 112659,
+      "idea_id": "idea112654",
+      "filename": "idea112654-models-py-auto-fix-hardening",
+      "title": "idea112654 - models.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "models-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112654-models-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112660,
+      "idea_id": "idea112655",
+      "filename": "idea112655-models-py-auto-fix-performance",
+      "title": "idea112655 - models.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "models-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112655-models-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112661,
+      "idea_id": "idea112656",
+      "filename": "idea112656-models-py-hardening",
+      "title": "idea112656 - models.py Hardening",
+      "archetype": "hardening",
+      "component": "models-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112656-models-py-hardening.md"
+    },
+    {
+      "index": 112662,
+      "idea_id": "idea112657",
+      "filename": "idea112657-models-py-performance",
+      "title": "idea112657 - models.py Performance",
+      "archetype": "performance",
+      "component": "models-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112657-models-py-performance.md"
+    },
+    {
+      "index": 112663,
+      "idea_id": "idea112658",
+      "filename": "idea112658-models-py-manual-fix-hardening",
+      "title": "idea112658 - models.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "models-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112658-models-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112664,
+      "idea_id": "idea112659",
+      "filename": "idea112659-models-py-manual-fix-performance",
+      "title": "idea112659 - models.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "models-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112659-models-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112665,
+      "idea_id": "idea112660",
+      "filename": "idea112660-pool-developer-experience",
+      "title": "idea112660 - pool Developer Experience",
+      "archetype": "experience",
+      "component": "pool-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112660-pool-developer-experience.md"
+    },
+    {
+      "index": 112666,
+      "idea_id": "idea112661",
+      "filename": "idea112661-pool-documentation",
+      "title": "idea112661 - pool Documentation",
+      "archetype": "documentation",
+      "component": "pool",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112661-pool-documentation.md"
+    },
+    {
+      "index": 112667,
+      "idea_id": "idea112662",
+      "filename": "idea112662-pool-hardening",
+      "title": "idea112662 - pool Hardening",
+      "archetype": "hardening",
+      "component": "pool",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112662-pool-hardening.md"
+    },
+    {
+      "index": 112668,
+      "idea_id": "idea112663",
+      "filename": "idea112663-pool-performance",
+      "title": "idea112663 - pool Performance",
+      "archetype": "performance",
+      "component": "pool",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112663-pool-performance.md"
+    },
+    {
+      "index": 112669,
+      "idea_id": "idea112664",
+      "filename": "idea112664-pool-resilience",
+      "title": "idea112664 - pool Resilience",
+      "archetype": "resilience",
+      "component": "pool",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112664-pool-resilience.md"
+    },
+    {
+      "index": 112670,
+      "idea_id": "idea112665",
+      "filename": "idea112665-pool-py-auto-fix-hardening",
+      "title": "idea112665 - pool.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "pool-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112665-pool-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112671,
+      "idea_id": "idea112666",
+      "filename": "idea112666-pool-py-auto-fix-performance",
+      "title": "idea112666 - pool.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "pool-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112666-pool-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112672,
+      "idea_id": "idea112667",
+      "filename": "idea112667-pool-py-hardening",
+      "title": "idea112667 - pool.py Hardening",
+      "archetype": "hardening",
+      "component": "pool-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112667-pool-py-hardening.md"
+    },
+    {
+      "index": 112673,
+      "idea_id": "idea112668",
+      "filename": "idea112668-pool-py-performance",
+      "title": "idea112668 - pool.py Performance",
+      "archetype": "performance",
+      "component": "pool-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112668-pool-py-performance.md"
+    },
+    {
+      "index": 112674,
+      "idea_id": "idea112669",
+      "filename": "idea112669-pool-py-manual-fix-hardening",
+      "title": "idea112669 - pool.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "pool-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112669-pool-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112675,
+      "idea_id": "idea112670",
+      "filename": "idea112670-pool-py-manual-fix-performance",
+      "title": "idea112670 - pool.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "pool-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112670-pool-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112676,
+      "idea_id": "idea112671",
+      "filename": "idea112671-pool-test-api-consistency",
+      "title": "idea112671 - pool-test API Consistency",
+      "archetype": "consistency",
+      "component": "pool-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112671-pool-test-api-consistency.md"
+    },
+    {
+      "index": 112677,
+      "idea_id": "idea112672",
+      "filename": "idea112672-pool-test-migration-readiness",
+      "title": "idea112672 - pool-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "pool-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112672-pool-test-migration-readiness.md"
+    },
+    {
+      "index": 112678,
+      "idea_id": "idea112673",
+      "filename": "idea112673-pool-test-observability",
+      "title": "idea112673 - pool-test Observability",
+      "archetype": "observability",
+      "component": "pool-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112673-pool-test-observability.md"
+    },
+    {
+      "index": 112679,
+      "idea_id": "idea112674",
+      "filename": "idea112674-pool-test-security",
+      "title": "idea112674 - pool-test Security",
+      "archetype": "security",
+      "component": "pool-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112674-pool-test-security.md"
+    },
+    {
+      "index": 112680,
+      "idea_id": "idea112675",
+      "filename": "idea112675-pool-test-test-coverage",
+      "title": "idea112675 - pool-test Test Coverage",
+      "archetype": "coverage",
+      "component": "pool-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112675-pool-test-test-coverage.md"
+    },
+    {
+      "index": 112681,
+      "idea_id": "idea112676",
+      "filename": "idea112676-pool-test-py-manual-fix-observability",
+      "title": "idea112676 - pool-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "pool-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112676-pool-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112682,
+      "idea_id": "idea112677",
+      "filename": "idea112677-pool-test-py-manual-fix-test-coverage",
+      "title": "idea112677 - pool-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "pool-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112677-pool-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112683,
+      "idea_id": "idea112678",
+      "filename": "idea112678-protocol-developer-experience",
+      "title": "idea112678 - protocol Developer Experience",
+      "archetype": "experience",
+      "component": "protocol-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112678-protocol-developer-experience.md"
+    },
+    {
+      "index": 112684,
+      "idea_id": "idea112679",
+      "filename": "idea112679-protocol-documentation",
+      "title": "idea112679 - protocol Documentation",
+      "archetype": "documentation",
+      "component": "protocol",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112679-protocol-documentation.md"
+    },
+    {
+      "index": 112685,
+      "idea_id": "idea112680",
+      "filename": "idea112680-protocol-hardening",
+      "title": "idea112680 - protocol Hardening",
+      "archetype": "hardening",
+      "component": "protocol",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112680-protocol-hardening.md"
+    },
+    {
+      "index": 112686,
+      "idea_id": "idea112681",
+      "filename": "idea112681-protocol-performance",
+      "title": "idea112681 - protocol Performance",
+      "archetype": "performance",
+      "component": "protocol",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112681-protocol-performance.md"
+    },
+    {
+      "index": 112687,
+      "idea_id": "idea112682",
+      "filename": "idea112682-protocol-resilience",
+      "title": "idea112682 - protocol Resilience",
+      "archetype": "resilience",
+      "component": "protocol",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112682-protocol-resilience.md"
+    },
+    {
+      "index": 112688,
+      "idea_id": "idea112683",
+      "filename": "idea112683-protocol-py-auto-fix-observability",
+      "title": "idea112683 - protocol.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "protocol-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112683-protocol-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112689,
+      "idea_id": "idea112684",
+      "filename": "idea112684-protocol-py-auto-fix-test-coverage",
+      "title": "idea112684 - protocol.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "protocol-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112684-protocol-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112690,
+      "idea_id": "idea112685",
+      "filename": "idea112685-protocol-py-observability",
+      "title": "idea112685 - protocol.py Observability",
+      "archetype": "observability",
+      "component": "protocol-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112685-protocol-py-observability.md"
+    },
+    {
+      "index": 112691,
+      "idea_id": "idea112686",
+      "filename": "idea112686-protocol-py-test-coverage",
+      "title": "idea112686 - protocol.py Test Coverage",
+      "archetype": "coverage",
+      "component": "protocol-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112686-protocol-py-test-coverage.md"
+    },
+    {
+      "index": 112692,
+      "idea_id": "idea112687",
+      "filename": "idea112687-protocol-py-manual-fix-hardening",
+      "title": "idea112687 - protocol.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "protocol-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112687-protocol-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112693,
+      "idea_id": "idea112688",
+      "filename": "idea112688-protocol-py-manual-fix-performance",
+      "title": "idea112688 - protocol.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "protocol-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112688-protocol-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112694,
+      "idea_id": "idea112689",
+      "filename": "idea112689-protocol-test-api-consistency",
+      "title": "idea112689 - protocol-test API Consistency",
+      "archetype": "consistency",
+      "component": "protocol-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112689-protocol-test-api-consistency.md"
+    },
+    {
+      "index": 112695,
+      "idea_id": "idea112690",
+      "filename": "idea112690-protocol-test-migration-readiness",
+      "title": "idea112690 - protocol-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "protocol-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112690-protocol-test-migration-readiness.md"
+    },
+    {
+      "index": 112696,
+      "idea_id": "idea112691",
+      "filename": "idea112691-protocol-test-observability",
+      "title": "idea112691 - protocol-test Observability",
+      "archetype": "observability",
+      "component": "protocol-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112691-protocol-test-observability.md"
+    },
+    {
+      "index": 112697,
+      "idea_id": "idea112692",
+      "filename": "idea112692-protocol-test-security",
+      "title": "idea112692 - protocol-test Security",
+      "archetype": "security",
+      "component": "protocol-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112692-protocol-test-security.md"
+    },
+    {
+      "index": 112698,
+      "idea_id": "idea112693",
+      "filename": "idea112693-protocol-test-test-coverage",
+      "title": "idea112693 - protocol-test Test Coverage",
+      "archetype": "coverage",
+      "component": "protocol-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112693-protocol-test-test-coverage.md"
+    },
+    {
+      "index": 112699,
+      "idea_id": "idea112694",
+      "filename": "idea112694-protocol-test-py-manual-fix-observability",
+      "title": "idea112694 - protocol-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "protocol-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112694-protocol-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112700,
+      "idea_id": "idea112695",
+      "filename": "idea112695-protocol-test-py-manual-fix-test-coverage",
+      "title": "idea112695 - protocol-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "protocol-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112695-protocol-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112701,
+      "idea_id": "idea112696",
+      "filename": "idea112696-registry-developer-experience",
+      "title": "idea112696 - registry Developer Experience",
+      "archetype": "experience",
+      "component": "registry-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112696-registry-developer-experience.md"
+    },
+    {
+      "index": 112702,
+      "idea_id": "idea112697",
+      "filename": "idea112697-registry-documentation",
+      "title": "idea112697 - registry Documentation",
+      "archetype": "documentation",
+      "component": "registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112697-registry-documentation.md"
+    },
+    {
+      "index": 112703,
+      "idea_id": "idea112698",
+      "filename": "idea112698-registry-hardening",
+      "title": "idea112698 - registry Hardening",
+      "archetype": "hardening",
+      "component": "registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112698-registry-hardening.md"
+    },
+    {
+      "index": 112704,
+      "idea_id": "idea112699",
+      "filename": "idea112699-registry-performance",
+      "title": "idea112699 - registry Performance",
+      "archetype": "performance",
+      "component": "registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112699-registry-performance.md"
+    },
+    {
+      "index": 112705,
+      "idea_id": "idea112700",
+      "filename": "idea112700-registry-resilience",
+      "title": "idea112700 - registry Resilience",
+      "archetype": "resilience",
+      "component": "registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112700-registry-resilience.md"
+    },
+    {
+      "index": 112706,
+      "idea_id": "idea112701",
+      "filename": "idea112701-registry-py-auto-fix-hardening",
+      "title": "idea112701 - registry.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "registry-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112701-registry-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112707,
+      "idea_id": "idea112702",
+      "filename": "idea112702-registry-py-auto-fix-performance",
+      "title": "idea112702 - registry.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "registry-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112702-registry-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112708,
+      "idea_id": "idea112703",
+      "filename": "idea112703-registry-py-hardening",
+      "title": "idea112703 - registry.py Hardening",
+      "archetype": "hardening",
+      "component": "registry-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112703-registry-py-hardening.md"
+    },
+    {
+      "index": 112709,
+      "idea_id": "idea112704",
+      "filename": "idea112704-registry-py-performance",
+      "title": "idea112704 - registry.py Performance",
+      "archetype": "performance",
+      "component": "registry-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112704-registry-py-performance.md"
+    },
+    {
+      "index": 112710,
+      "idea_id": "idea112705",
+      "filename": "idea112705-registry-py-manual-fix-hardening",
+      "title": "idea112705 - registry.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "registry-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112705-registry-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112711,
+      "idea_id": "idea112706",
+      "filename": "idea112706-registry-py-manual-fix-performance",
+      "title": "idea112706 - registry.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "registry-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112706-registry-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112712,
+      "idea_id": "idea112707",
+      "filename": "idea112707-registry-test-api-consistency",
+      "title": "idea112707 - registry-test API Consistency",
+      "archetype": "consistency",
+      "component": "registry-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112707-registry-test-api-consistency.md"
+    },
+    {
+      "index": 112713,
+      "idea_id": "idea112708",
+      "filename": "idea112708-registry-test-migration-readiness",
+      "title": "idea112708 - registry-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "registry-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112708-registry-test-migration-readiness.md"
+    },
+    {
+      "index": 112714,
+      "idea_id": "idea112709",
+      "filename": "idea112709-registry-test-observability",
+      "title": "idea112709 - registry-test Observability",
+      "archetype": "observability",
+      "component": "registry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112709-registry-test-observability.md"
+    },
+    {
+      "index": 112715,
+      "idea_id": "idea112710",
+      "filename": "idea112710-registry-test-security",
+      "title": "idea112710 - registry-test Security",
+      "archetype": "security",
+      "component": "registry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112710-registry-test-security.md"
+    },
+    {
+      "index": 112716,
+      "idea_id": "idea112711",
+      "filename": "idea112711-registry-test-test-coverage",
+      "title": "idea112711 - registry-test Test Coverage",
+      "archetype": "coverage",
+      "component": "registry-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112711-registry-test-test-coverage.md"
+    },
+    {
+      "index": 112717,
+      "idea_id": "idea112712",
+      "filename": "idea112712-registry-test-py-manual-fix-observability",
+      "title": "idea112712 - registry-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "registry-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112712-registry-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112718,
+      "idea_id": "idea112713",
+      "filename": "idea112713-registry-test-py-manual-fix-test-coverage",
+      "title": "idea112713 - registry-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "registry-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112713-registry-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112719,
+      "idea_id": "idea112714",
+      "filename": "idea112714-tiktoken-developer-experience",
+      "title": "idea112714 - tiktoken Developer Experience",
+      "archetype": "experience",
+      "component": "tiktoken-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112714-tiktoken-developer-experience.md"
+    },
+    {
+      "index": 112720,
+      "idea_id": "idea112715",
+      "filename": "idea112715-tiktoken-documentation",
+      "title": "idea112715 - tiktoken Documentation",
+      "archetype": "documentation",
+      "component": "tiktoken",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112715-tiktoken-documentation.md"
+    },
+    {
+      "index": 112721,
+      "idea_id": "idea112716",
+      "filename": "idea112716-tiktoken-hardening",
+      "title": "idea112716 - tiktoken Hardening",
+      "archetype": "hardening",
+      "component": "tiktoken",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112716-tiktoken-hardening.md"
+    },
+    {
+      "index": 112722,
+      "idea_id": "idea112717",
+      "filename": "idea112717-tiktoken-performance",
+      "title": "idea112717 - tiktoken Performance",
+      "archetype": "performance",
+      "component": "tiktoken",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112717-tiktoken-performance.md"
+    },
+    {
+      "index": 112723,
+      "idea_id": "idea112718",
+      "filename": "idea112718-tiktoken-resilience",
+      "title": "idea112718 - tiktoken Resilience",
+      "archetype": "resilience",
+      "component": "tiktoken",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112718-tiktoken-resilience.md"
+    },
+    {
+      "index": 112724,
+      "idea_id": "idea112719",
+      "filename": "idea112719-tiktoken-py-auto-fix-observability",
+      "title": "idea112719 - tiktoken.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "tiktoken-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112719-tiktoken-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112725,
+      "idea_id": "idea112720",
+      "filename": "idea112720-tiktoken-py-auto-fix-test-coverage",
+      "title": "idea112720 - tiktoken.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "tiktoken-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112720-tiktoken-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112726,
+      "idea_id": "idea112721",
+      "filename": "idea112721-tiktoken-py-observability",
+      "title": "idea112721 - tiktoken.py Observability",
+      "archetype": "observability",
+      "component": "tiktoken-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112721-tiktoken-py-observability.md"
+    },
+    {
+      "index": 112727,
+      "idea_id": "idea112722",
+      "filename": "idea112722-tiktoken-py-test-coverage",
+      "title": "idea112722 - tiktoken.py Test Coverage",
+      "archetype": "coverage",
+      "component": "tiktoken-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112722-tiktoken-py-test-coverage.md"
+    },
+    {
+      "index": 112728,
+      "idea_id": "idea112723",
+      "filename": "idea112723-tiktoken-py-manual-fix-hardening",
+      "title": "idea112723 - tiktoken.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "tiktoken-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112723-tiktoken-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112729,
+      "idea_id": "idea112724",
+      "filename": "idea112724-tiktoken-py-manual-fix-performance",
+      "title": "idea112724 - tiktoken.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "tiktoken-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112724-tiktoken-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112730,
+      "idea_id": "idea112725",
+      "filename": "idea112725-tiktoken-test-api-consistency",
+      "title": "idea112725 - tiktoken-test API Consistency",
+      "archetype": "consistency",
+      "component": "tiktoken-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112725-tiktoken-test-api-consistency.md"
+    },
+    {
+      "index": 112731,
+      "idea_id": "idea112726",
+      "filename": "idea112726-tiktoken-test-migration-readiness",
+      "title": "idea112726 - tiktoken-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "tiktoken-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112726-tiktoken-test-migration-readiness.md"
+    },
+    {
+      "index": 112732,
+      "idea_id": "idea112727",
+      "filename": "idea112727-tiktoken-test-observability",
+      "title": "idea112727 - tiktoken-test Observability",
+      "archetype": "observability",
+      "component": "tiktoken-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112727-tiktoken-test-observability.md"
+    },
+    {
+      "index": 112733,
+      "idea_id": "idea112728",
+      "filename": "idea112728-tiktoken-test-security",
+      "title": "idea112728 - tiktoken-test Security",
+      "archetype": "security",
+      "component": "tiktoken-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112728-tiktoken-test-security.md"
+    },
+    {
+      "index": 112734,
+      "idea_id": "idea112729",
+      "filename": "idea112729-tiktoken-test-test-coverage",
+      "title": "idea112729 - tiktoken-test Test Coverage",
+      "archetype": "coverage",
+      "component": "tiktoken-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112729-tiktoken-test-test-coverage.md"
+    },
+    {
+      "index": 112735,
+      "idea_id": "idea112730",
+      "filename": "idea112730-tiktoken-test-py-manual-fix-observability",
+      "title": "idea112730 - tiktoken-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "tiktoken-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112730-tiktoken-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112736,
+      "idea_id": "idea112731",
+      "filename": "idea112731-tiktoken-test-py-manual-fix-test-coverage",
+      "title": "idea112731 - tiktoken-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "tiktoken-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112731-tiktoken-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112737,
+      "idea_id": "idea112732",
+      "filename": "idea112732-tokenizer-registry-developer-experience",
+      "title": "idea112732 - tokenizer-registry Developer Experience",
+      "archetype": "experience",
+      "component": "tokenizer-registry-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112732-tokenizer-registry-developer-experience.md"
+    },
+    {
+      "index": 112738,
+      "idea_id": "idea112733",
+      "filename": "idea112733-tokenizer-registry-documentation",
+      "title": "idea112733 - tokenizer-registry Documentation",
+      "archetype": "documentation",
+      "component": "tokenizer-registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112733-tokenizer-registry-documentation.md"
+    },
+    {
+      "index": 112739,
+      "idea_id": "idea112734",
+      "filename": "idea112734-tokenizer-registry-hardening",
+      "title": "idea112734 - tokenizer-registry Hardening",
+      "archetype": "hardening",
+      "component": "tokenizer-registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112734-tokenizer-registry-hardening.md"
+    },
+    {
+      "index": 112740,
+      "idea_id": "idea112735",
+      "filename": "idea112735-tokenizer-registry-performance",
+      "title": "idea112735 - tokenizer-registry Performance",
+      "archetype": "performance",
+      "component": "tokenizer-registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112735-tokenizer-registry-performance.md"
+    },
+    {
+      "index": 112741,
+      "idea_id": "idea112736",
+      "filename": "idea112736-tokenizer-registry-resilience",
+      "title": "idea112736 - tokenizer-registry Resilience",
+      "archetype": "resilience",
+      "component": "tokenizer-registry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112736-tokenizer-registry-resilience.md"
+    },
+    {
+      "index": 112742,
+      "idea_id": "idea112737",
+      "filename": "idea112737-tokenizer-registry-py-manual-fix-hardening",
+      "title": "idea112737 - tokenizer-registry.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "tokenizer-registry-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112737-tokenizer-registry-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112743,
+      "idea_id": "idea112738",
+      "filename": "idea112738-tokenizer-registry-py-manual-fix-performance",
+      "title": "idea112738 - tokenizer-registry.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "tokenizer-registry-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112738-tokenizer-registry-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112744,
+      "idea_id": "idea112739",
+      "filename": "idea112739-tokenizer-registry-test-api-consistency",
+      "title": "idea112739 - tokenizer-registry-test API Consistency",
+      "archetype": "consistency",
+      "component": "tokenizer-registry-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112739-tokenizer-registry-test-api-consistency.md"
+    },
+    {
+      "index": 112745,
+      "idea_id": "idea112740",
+      "filename": "idea112740-tokenizer-registry-test-migration-readiness",
+      "title": "idea112740 - tokenizer-registry-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "tokenizer-registry-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112740-tokenizer-registry-test-migration-readiness.md"
+    },
+    {
+      "index": 112746,
+      "idea_id": "idea112741",
+      "filename": "idea112741-tokenizer-registry-test-observability",
+      "title": "idea112741 - tokenizer-registry-test Observability",
+      "archetype": "observability",
+      "component": "tokenizer-registry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112741-tokenizer-registry-test-observability.md"
+    },
+    {
+      "index": 112747,
+      "idea_id": "idea112742",
+      "filename": "idea112742-tokenizer-registry-test-security",
+      "title": "idea112742 - tokenizer-registry-test Security",
+      "archetype": "security",
+      "component": "tokenizer-registry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112742-tokenizer-registry-test-security.md"
+    },
+    {
+      "index": 112748,
+      "idea_id": "idea112743",
+      "filename": "idea112743-tokenizer-registry-test-test-coverage",
+      "title": "idea112743 - tokenizer-registry-test Test Coverage",
+      "archetype": "coverage",
+      "component": "tokenizer-registry-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112743-tokenizer-registry-test-test-coverage.md"
+    },
+    {
+      "index": 112749,
+      "idea_id": "idea112744",
+      "filename": "idea112744-tokenizer-registry-test-py-manual-fix-observability",
+      "title": "idea112744 - tokenizer-registry-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "tokenizer-registry-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112744-tokenizer-registry-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112750,
+      "idea_id": "idea112745",
+      "filename": "idea112745-tokenizer-registry-test-py-manual-fix-test-coverage",
+      "title": "idea112745 - tokenizer-registry-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "tokenizer-registry-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112745-tokenizer-registry-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112751,
+      "idea_id": "idea112746",
+      "filename": "idea112746-utils-developer-experience",
+      "title": "idea112746 - utils Developer Experience",
+      "archetype": "experience",
+      "component": "utils-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112746-utils-developer-experience.md"
+    },
+    {
+      "index": 112752,
+      "idea_id": "idea112747",
+      "filename": "idea112747-utils-documentation",
+      "title": "idea112747 - utils Documentation",
+      "archetype": "documentation",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112747-utils-documentation.md"
+    },
+    {
+      "index": 112753,
+      "idea_id": "idea112748",
+      "filename": "idea112748-utils-hardening",
+      "title": "idea112748 - utils Hardening",
+      "archetype": "hardening",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112748-utils-hardening.md"
+    },
+    {
+      "index": 112754,
+      "idea_id": "idea112749",
+      "filename": "idea112749-utils-performance",
+      "title": "idea112749 - utils Performance",
+      "archetype": "performance",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112749-utils-performance.md"
+    },
+    {
+      "index": 112755,
+      "idea_id": "idea112750",
+      "filename": "idea112750-utils-resilience",
+      "title": "idea112750 - utils Resilience",
+      "archetype": "resilience",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112750-utils-resilience.md"
+    },
+    {
+      "index": 112756,
+      "idea_id": "idea112751",
+      "filename": "idea112751-utils-py-auto-fix-hardening",
+      "title": "idea112751 - utils.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "utils-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112751-utils-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112757,
+      "idea_id": "idea112752",
+      "filename": "idea112752-utils-py-auto-fix-performance",
+      "title": "idea112752 - utils.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "utils-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112752-utils-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112758,
+      "idea_id": "idea112753",
+      "filename": "idea112753-utils-py-hardening",
+      "title": "idea112753 - utils.py Hardening",
+      "archetype": "hardening",
+      "component": "utils-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112753-utils-py-hardening.md"
+    },
+    {
+      "index": 112759,
+      "idea_id": "idea112754",
+      "filename": "idea112754-utils-py-performance",
+      "title": "idea112754 - utils.py Performance",
+      "archetype": "performance",
+      "component": "utils-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112754-utils-py-performance.md"
+    },
+    {
+      "index": 112760,
+      "idea_id": "idea112755",
+      "filename": "idea112755-utils-py-manual-fix-hardening",
+      "title": "idea112755 - utils.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "utils-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112755-utils-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112761,
+      "idea_id": "idea112756",
+      "filename": "idea112756-utils-py-manual-fix-performance",
+      "title": "idea112756 - utils.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "utils-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112756-utils-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112762,
+      "idea_id": "idea112757",
+      "filename": "idea112757-init-developer-experience",
+      "title": "idea112757 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112757-init-developer-experience.md"
+    },
+    {
+      "index": 112763,
+      "idea_id": "idea112758",
+      "filename": "idea112758-init-documentation",
+      "title": "idea112758 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112758-init-documentation.md"
+    },
+    {
+      "index": 112764,
+      "idea_id": "idea112759",
+      "filename": "idea112759-init-hardening",
+      "title": "idea112759 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112759-init-hardening.md"
+    },
+    {
+      "index": 112765,
+      "idea_id": "idea112760",
+      "filename": "idea112760-init-performance",
+      "title": "idea112760 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112760-init-performance.md"
+    },
+    {
+      "index": 112766,
+      "idea_id": "idea112761",
+      "filename": "idea112761-init-resilience",
+      "title": "idea112761 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112761-init-resilience.md"
+    },
+    {
+      "index": 112767,
+      "idea_id": "idea112762",
+      "filename": "idea112762-init-py-manual-fix-hardening",
+      "title": "idea112762 - --init--.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "init-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112762-init-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112768,
+      "idea_id": "idea112763",
+      "filename": "idea112763-init-py-manual-fix-performance",
+      "title": "idea112763 - --init--.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "init-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112763-init-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112769,
+      "idea_id": "idea112764",
+      "filename": "idea112764-init-cpython-313-hardening",
+      "title": "idea112764 - --init--.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "init-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112764-init-cpython-313-hardening.md"
+    },
+    {
+      "index": 112770,
+      "idea_id": "idea112765",
+      "filename": "idea112765-init-cpython-313-performance",
+      "title": "idea112765 - --init--.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "init-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112765-init-cpython-313-performance.md"
+    },
+    {
+      "index": 112771,
+      "idea_id": "idea112766",
+      "filename": "idea112766-buffer-recycler-test-cpython-313-observability",
+      "title": "idea112766 - buffer-recycler-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112766-buffer-recycler-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112772,
+      "idea_id": "idea112767",
+      "filename": "idea112767-buffer-recycler-test-cpython-313-test-coverage",
+      "title": "idea112767 - buffer-recycler-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112767-buffer-recycler-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112773,
+      "idea_id": "idea112768",
+      "filename": "idea112768-memory-profiler-cpython-313-hardening",
+      "title": "idea112768 - memory-profiler.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "memory-profiler-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112768-memory-profiler-cpython-313-hardening.md"
+    },
+    {
+      "index": 112774,
+      "idea_id": "idea112769",
+      "filename": "idea112769-memory-profiler-cpython-313-performance",
+      "title": "idea112769 - memory-profiler.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "memory-profiler-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112769-memory-profiler-cpython-313-performance.md"
+    },
+    {
+      "index": 112775,
+      "idea_id": "idea112770",
+      "filename": "idea112770-memory-profiler-test-cpython-313-observability",
+      "title": "idea112770 - memory-profiler-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "memory-profiler-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112770-memory-profiler-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112776,
+      "idea_id": "idea112771",
+      "filename": "idea112771-memory-profiler-test-cpython-313-test-coverage",
+      "title": "idea112771 - memory-profiler-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112771-memory-profiler-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112777,
+      "idea_id": "idea112772",
+      "filename": "idea112772-predictive-workspace-test-cpython-313-observability",
+      "title": "idea112772 - predictive-workspace-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "predictive-workspace-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112772-predictive-workspace-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112778,
+      "idea_id": "idea112773",
+      "filename": "idea112773-predictive-workspace-test-cpython-313-test-coverage",
+      "title": "idea112773 - predictive-workspace-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "predictive-workspace-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112773-predictive-workspace-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112779,
+      "idea_id": "idea112774",
+      "filename": "idea112774-ubatching-utils-test-cpython-313-observability",
+      "title": "idea112774 - ubatching-utils-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "ubatching-utils-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112774-ubatching-utils-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112780,
+      "idea_id": "idea112775",
+      "filename": "idea112775-ubatching-utils-test-cpython-313-test-coverage",
+      "title": "idea112775 - ubatching-utils-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "ubatching-utils-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112775-ubatching-utils-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112781,
+      "idea_id": "idea112776",
+      "filename": "idea112776-workspace-manager-test-cpython-313-observability",
+      "title": "idea112776 - workspace-manager-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "workspace-manager-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112776-workspace-manager-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112782,
+      "idea_id": "idea112777",
+      "filename": "idea112777-workspace-manager-test-cpython-313-test-coverage",
+      "title": "idea112777 - workspace-manager-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "workspace-manager-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112777-workspace-manager-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112783,
+      "idea_id": "idea112778",
+      "filename": "idea112778-buffer-recycler-api-consistency",
+      "title": "idea112778 - buffer-recycler API Consistency",
+      "archetype": "consistency",
+      "component": "buffer-recycler-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112778-buffer-recycler-api-consistency.md"
+    },
+    {
+      "index": 112784,
+      "idea_id": "idea112779",
+      "filename": "idea112779-buffer-recycler-migration-readiness",
+      "title": "idea112779 - buffer-recycler Migration Readiness",
+      "archetype": "readiness",
+      "component": "buffer-recycler-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112779-buffer-recycler-migration-readiness.md"
+    },
+    {
+      "index": 112785,
+      "idea_id": "idea112780",
+      "filename": "idea112780-buffer-recycler-observability",
+      "title": "idea112780 - buffer-recycler Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112780-buffer-recycler-observability.md"
+    },
+    {
+      "index": 112786,
+      "idea_id": "idea112781",
+      "filename": "idea112781-buffer-recycler-security",
+      "title": "idea112781 - buffer-recycler Security",
+      "archetype": "security",
+      "component": "buffer-recycler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112781-buffer-recycler-security.md"
+    },
+    {
+      "index": 112787,
+      "idea_id": "idea112782",
+      "filename": "idea112782-buffer-recycler-test-coverage",
+      "title": "idea112782 - buffer-recycler Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112782-buffer-recycler-test-coverage.md"
+    },
+    {
+      "index": 112788,
+      "idea_id": "idea112783",
+      "filename": "idea112783-buffer-recycler-py-auto-fix-observability",
+      "title": "idea112783 - buffer-recycler.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112783-buffer-recycler-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112789,
+      "idea_id": "idea112784",
+      "filename": "idea112784-buffer-recycler-py-auto-fix-test-coverage",
+      "title": "idea112784 - buffer-recycler.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112784-buffer-recycler-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112790,
+      "idea_id": "idea112785",
+      "filename": "idea112785-buffer-recycler-py-manual-fix-observability",
+      "title": "idea112785 - buffer-recycler.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112785-buffer-recycler-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112791,
+      "idea_id": "idea112786",
+      "filename": "idea112786-buffer-recycler-py-manual-fix-test-coverage",
+      "title": "idea112786 - buffer-recycler.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112786-buffer-recycler-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112792,
+      "idea_id": "idea112787",
+      "filename": "idea112787-buffer-recycler-test-api-consistency",
+      "title": "idea112787 - buffer-recycler-test API Consistency",
+      "archetype": "consistency",
+      "component": "buffer-recycler-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112787-buffer-recycler-test-api-consistency.md"
+    },
+    {
+      "index": 112793,
+      "idea_id": "idea112788",
+      "filename": "idea112788-buffer-recycler-test-migration-readiness",
+      "title": "idea112788 - buffer-recycler-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "buffer-recycler-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112788-buffer-recycler-test-migration-readiness.md"
+    },
+    {
+      "index": 112794,
+      "idea_id": "idea112789",
+      "filename": "idea112789-buffer-recycler-test-observability",
+      "title": "idea112789 - buffer-recycler-test Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112789-buffer-recycler-test-observability.md"
+    },
+    {
+      "index": 112795,
+      "idea_id": "idea112790",
+      "filename": "idea112790-buffer-recycler-test-security",
+      "title": "idea112790 - buffer-recycler-test Security",
+      "archetype": "security",
+      "component": "buffer-recycler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112790-buffer-recycler-test-security.md"
+    },
+    {
+      "index": 112796,
+      "idea_id": "idea112791",
+      "filename": "idea112791-buffer-recycler-test-test-coverage",
+      "title": "idea112791 - buffer-recycler-test Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112791-buffer-recycler-test-test-coverage.md"
+    },
+    {
+      "index": 112797,
+      "idea_id": "idea112792",
+      "filename": "idea112792-buffer-recycler-test-py-manual-fix-observability",
+      "title": "idea112792 - buffer-recycler-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "buffer-recycler-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112792-buffer-recycler-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112798,
+      "idea_id": "idea112793",
+      "filename": "idea112793-buffer-recycler-test-py-manual-fix-test-coverage",
+      "title": "idea112793 - buffer-recycler-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "buffer-recycler-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112793-buffer-recycler-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112799,
+      "idea_id": "idea112794",
+      "filename": "idea112794-memory-profiler-api-consistency",
+      "title": "idea112794 - memory-profiler API Consistency",
+      "archetype": "consistency",
+      "component": "memory-profiler-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112794-memory-profiler-api-consistency.md"
+    },
+    {
+      "index": 112800,
+      "idea_id": "idea112795",
+      "filename": "idea112795-memory-profiler-migration-readiness",
+      "title": "idea112795 - memory-profiler Migration Readiness",
+      "archetype": "readiness",
+      "component": "memory-profiler-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112795-memory-profiler-migration-readiness.md"
+    },
+    {
+      "index": 112801,
+      "idea_id": "idea112796",
+      "filename": "idea112796-memory-profiler-observability",
+      "title": "idea112796 - memory-profiler Observability",
+      "archetype": "observability",
+      "component": "memory-profiler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112796-memory-profiler-observability.md"
+    },
+    {
+      "index": 112802,
+      "idea_id": "idea112797",
+      "filename": "idea112797-memory-profiler-security",
+      "title": "idea112797 - memory-profiler Security",
+      "archetype": "security",
+      "component": "memory-profiler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112797-memory-profiler-security.md"
+    },
+    {
+      "index": 112803,
+      "idea_id": "idea112798",
+      "filename": "idea112798-memory-profiler-test-coverage",
+      "title": "idea112798 - memory-profiler Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112798-memory-profiler-test-coverage.md"
+    },
+    {
+      "index": 112804,
+      "idea_id": "idea112799",
+      "filename": "idea112799-memory-profiler-py-auto-fix-observability",
+      "title": "idea112799 - memory-profiler.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "memory-profiler-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112799-memory-profiler-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112805,
+      "idea_id": "idea112800",
+      "filename": "idea112800-memory-profiler-py-auto-fix-test-coverage",
+      "title": "idea112800 - memory-profiler.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112800-memory-profiler-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112806,
+      "idea_id": "idea112801",
+      "filename": "idea112801-memory-profiler-py-manual-fix-observability",
+      "title": "idea112801 - memory-profiler.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "memory-profiler-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112801-memory-profiler-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112807,
+      "idea_id": "idea112802",
+      "filename": "idea112802-memory-profiler-py-manual-fix-test-coverage",
+      "title": "idea112802 - memory-profiler.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112802-memory-profiler-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112808,
+      "idea_id": "idea112803",
+      "filename": "idea112803-memory-profiler-test-api-consistency",
+      "title": "idea112803 - memory-profiler-test API Consistency",
+      "archetype": "consistency",
+      "component": "memory-profiler-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112803-memory-profiler-test-api-consistency.md"
+    },
+    {
+      "index": 112809,
+      "idea_id": "idea112804",
+      "filename": "idea112804-memory-profiler-test-migration-readiness",
+      "title": "idea112804 - memory-profiler-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "memory-profiler-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112804-memory-profiler-test-migration-readiness.md"
+    },
+    {
+      "index": 112810,
+      "idea_id": "idea112805",
+      "filename": "idea112805-memory-profiler-test-observability",
+      "title": "idea112805 - memory-profiler-test Observability",
+      "archetype": "observability",
+      "component": "memory-profiler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112805-memory-profiler-test-observability.md"
+    },
+    {
+      "index": 112811,
+      "idea_id": "idea112806",
+      "filename": "idea112806-memory-profiler-test-security",
+      "title": "idea112806 - memory-profiler-test Security",
+      "archetype": "security",
+      "component": "memory-profiler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112806-memory-profiler-test-security.md"
+    },
+    {
+      "index": 112812,
+      "idea_id": "idea112807",
+      "filename": "idea112807-memory-profiler-test-test-coverage",
+      "title": "idea112807 - memory-profiler-test Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112807-memory-profiler-test-test-coverage.md"
+    },
+    {
+      "index": 112813,
+      "idea_id": "idea112808",
+      "filename": "idea112808-memory-profiler-test-py-manual-fix-observability",
+      "title": "idea112808 - memory-profiler-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "memory-profiler-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112808-memory-profiler-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112814,
+      "idea_id": "idea112809",
+      "filename": "idea112809-memory-profiler-test-py-manual-fix-test-coverage",
+      "title": "idea112809 - memory-profiler-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "memory-profiler-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112809-memory-profiler-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112815,
+      "idea_id": "idea112810",
+      "filename": "idea112810-predictive-workspace-developer-experience",
+      "title": "idea112810 - predictive-workspace Developer Experience",
+      "archetype": "experience",
+      "component": "predictive-workspace-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112810-predictive-workspace-developer-experience.md"
+    },
+    {
+      "index": 112816,
+      "idea_id": "idea112811",
+      "filename": "idea112811-predictive-workspace-documentation",
+      "title": "idea112811 - predictive-workspace Documentation",
+      "archetype": "documentation",
+      "component": "predictive-workspace",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112811-predictive-workspace-documentation.md"
+    },
+    {
+      "index": 112817,
+      "idea_id": "idea112812",
+      "filename": "idea112812-predictive-workspace-hardening",
+      "title": "idea112812 - predictive-workspace Hardening",
+      "archetype": "hardening",
+      "component": "predictive-workspace",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112812-predictive-workspace-hardening.md"
+    },
+    {
+      "index": 112818,
+      "idea_id": "idea112813",
+      "filename": "idea112813-predictive-workspace-performance",
+      "title": "idea112813 - predictive-workspace Performance",
+      "archetype": "performance",
+      "component": "predictive-workspace",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112813-predictive-workspace-performance.md"
+    },
+    {
+      "index": 112819,
+      "idea_id": "idea112814",
+      "filename": "idea112814-predictive-workspace-resilience",
+      "title": "idea112814 - predictive-workspace Resilience",
+      "archetype": "resilience",
+      "component": "predictive-workspace",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112814-predictive-workspace-resilience.md"
+    },
+    {
+      "index": 112820,
+      "idea_id": "idea112815",
+      "filename": "idea112815-predictive-workspace-py-manual-fix-hardening",
+      "title": "idea112815 - predictive-workspace.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "predictive-workspace-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112815-predictive-workspace-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112821,
+      "idea_id": "idea112816",
+      "filename": "idea112816-predictive-workspace-py-manual-fix-performance",
+      "title": "idea112816 - predictive-workspace.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "predictive-workspace-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112816-predictive-workspace-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112822,
+      "idea_id": "idea112817",
+      "filename": "idea112817-predictive-workspace-test-api-consistency",
+      "title": "idea112817 - predictive-workspace-test API Consistency",
+      "archetype": "consistency",
+      "component": "predictive-workspace-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112817-predictive-workspace-test-api-consistency.md"
+    },
+    {
+      "index": 112823,
+      "idea_id": "idea112818",
+      "filename": "idea112818-predictive-workspace-test-migration-readiness",
+      "title": "idea112818 - predictive-workspace-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "predictive-workspace-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112818-predictive-workspace-test-migration-readiness.md"
+    },
+    {
+      "index": 112824,
+      "idea_id": "idea112819",
+      "filename": "idea112819-predictive-workspace-test-observability",
+      "title": "idea112819 - predictive-workspace-test Observability",
+      "archetype": "observability",
+      "component": "predictive-workspace-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112819-predictive-workspace-test-observability.md"
+    },
+    {
+      "index": 112825,
+      "idea_id": "idea112820",
+      "filename": "idea112820-predictive-workspace-test-security",
+      "title": "idea112820 - predictive-workspace-test Security",
+      "archetype": "security",
+      "component": "predictive-workspace-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112820-predictive-workspace-test-security.md"
+    },
+    {
+      "index": 112826,
+      "idea_id": "idea112821",
+      "filename": "idea112821-predictive-workspace-test-test-coverage",
+      "title": "idea112821 - predictive-workspace-test Test Coverage",
+      "archetype": "coverage",
+      "component": "predictive-workspace-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112821-predictive-workspace-test-test-coverage.md"
+    },
+    {
+      "index": 112827,
+      "idea_id": "idea112822",
+      "filename": "idea112822-predictive-workspace-test-py-manual-fix-observability",
+      "title": "idea112822 - predictive-workspace-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "predictive-workspace-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112822-predictive-workspace-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112828,
+      "idea_id": "idea112823",
+      "filename": "idea112823-predictive-workspace-test-py-manual-fix-test-coverage",
+      "title": "idea112823 - predictive-workspace-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "predictive-workspace-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112823-predictive-workspace-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112829,
+      "idea_id": "idea112824",
+      "filename": "idea112824-ubatching-utils-developer-experience",
+      "title": "idea112824 - ubatching-utils Developer Experience",
+      "archetype": "experience",
+      "component": "ubatching-utils-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112824-ubatching-utils-developer-experience.md"
+    },
+    {
+      "index": 112830,
+      "idea_id": "idea112825",
+      "filename": "idea112825-ubatching-utils-documentation",
+      "title": "idea112825 - ubatching-utils Documentation",
+      "archetype": "documentation",
+      "component": "ubatching-utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112825-ubatching-utils-documentation.md"
+    },
+    {
+      "index": 112831,
+      "idea_id": "idea112826",
+      "filename": "idea112826-ubatching-utils-hardening",
+      "title": "idea112826 - ubatching-utils Hardening",
+      "archetype": "hardening",
+      "component": "ubatching-utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112826-ubatching-utils-hardening.md"
+    },
+    {
+      "index": 112832,
+      "idea_id": "idea112827",
+      "filename": "idea112827-ubatching-utils-performance",
+      "title": "idea112827 - ubatching-utils Performance",
+      "archetype": "performance",
+      "component": "ubatching-utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112827-ubatching-utils-performance.md"
+    },
+    {
+      "index": 112833,
+      "idea_id": "idea112828",
+      "filename": "idea112828-ubatching-utils-resilience",
+      "title": "idea112828 - ubatching-utils Resilience",
+      "archetype": "resilience",
+      "component": "ubatching-utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112828-ubatching-utils-resilience.md"
+    },
+    {
+      "index": 112834,
+      "idea_id": "idea112829",
+      "filename": "idea112829-ubatching-utils-py-auto-fix-hardening",
+      "title": "idea112829 - ubatching-utils.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "ubatching-utils-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112829-ubatching-utils-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112835,
+      "idea_id": "idea112830",
+      "filename": "idea112830-ubatching-utils-py-auto-fix-performance",
+      "title": "idea112830 - ubatching-utils.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "ubatching-utils-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112830-ubatching-utils-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112836,
+      "idea_id": "idea112831",
+      "filename": "idea112831-ubatching-utils-py-manual-fix-hardening",
+      "title": "idea112831 - ubatching-utils.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "ubatching-utils-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112831-ubatching-utils-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112837,
+      "idea_id": "idea112832",
+      "filename": "idea112832-ubatching-utils-py-manual-fix-performance",
+      "title": "idea112832 - ubatching-utils.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "ubatching-utils-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112832-ubatching-utils-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112838,
+      "idea_id": "idea112833",
+      "filename": "idea112833-ubatching-utils-test-api-consistency",
+      "title": "idea112833 - ubatching-utils-test API Consistency",
+      "archetype": "consistency",
+      "component": "ubatching-utils-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112833-ubatching-utils-test-api-consistency.md"
+    },
+    {
+      "index": 112839,
+      "idea_id": "idea112834",
+      "filename": "idea112834-ubatching-utils-test-migration-readiness",
+      "title": "idea112834 - ubatching-utils-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "ubatching-utils-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112834-ubatching-utils-test-migration-readiness.md"
+    },
+    {
+      "index": 112840,
+      "idea_id": "idea112835",
+      "filename": "idea112835-ubatching-utils-test-observability",
+      "title": "idea112835 - ubatching-utils-test Observability",
+      "archetype": "observability",
+      "component": "ubatching-utils-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112835-ubatching-utils-test-observability.md"
+    },
+    {
+      "index": 112841,
+      "idea_id": "idea112836",
+      "filename": "idea112836-ubatching-utils-test-security",
+      "title": "idea112836 - ubatching-utils-test Security",
+      "archetype": "security",
+      "component": "ubatching-utils-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112836-ubatching-utils-test-security.md"
+    },
+    {
+      "index": 112842,
+      "idea_id": "idea112837",
+      "filename": "idea112837-ubatching-utils-test-test-coverage",
+      "title": "idea112837 - ubatching-utils-test Test Coverage",
+      "archetype": "coverage",
+      "component": "ubatching-utils-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112837-ubatching-utils-test-test-coverage.md"
+    },
+    {
+      "index": 112843,
+      "idea_id": "idea112838",
+      "filename": "idea112838-ubatching-utils-test-py-manual-fix-observability",
+      "title": "idea112838 - ubatching-utils-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "ubatching-utils-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112838-ubatching-utils-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112844,
+      "idea_id": "idea112839",
+      "filename": "idea112839-ubatching-utils-test-py-manual-fix-test-coverage",
+      "title": "idea112839 - ubatching-utils-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "ubatching-utils-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112839-ubatching-utils-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112845,
+      "idea_id": "idea112840",
+      "filename": "idea112840-workspace-manager-test-api-consistency",
+      "title": "idea112840 - workspace-manager-test API Consistency",
+      "archetype": "consistency",
+      "component": "workspace-manager-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112840-workspace-manager-test-api-consistency.md"
+    },
+    {
+      "index": 112846,
+      "idea_id": "idea112841",
+      "filename": "idea112841-workspace-manager-test-migration-readiness",
+      "title": "idea112841 - workspace-manager-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "workspace-manager-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112841-workspace-manager-test-migration-readiness.md"
+    },
+    {
+      "index": 112847,
+      "idea_id": "idea112842",
+      "filename": "idea112842-workspace-manager-test-observability",
+      "title": "idea112842 - workspace-manager-test Observability",
+      "archetype": "observability",
+      "component": "workspace-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112842-workspace-manager-test-observability.md"
+    },
+    {
+      "index": 112848,
+      "idea_id": "idea112843",
+      "filename": "idea112843-workspace-manager-test-security",
+      "title": "idea112843 - workspace-manager-test Security",
+      "archetype": "security",
+      "component": "workspace-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112843-workspace-manager-test-security.md"
+    },
+    {
+      "index": 112849,
+      "idea_id": "idea112844",
+      "filename": "idea112844-workspace-manager-test-test-coverage",
+      "title": "idea112844 - workspace-manager-test Test Coverage",
+      "archetype": "coverage",
+      "component": "workspace-manager-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112844-workspace-manager-test-test-coverage.md"
+    },
+    {
+      "index": 112850,
+      "idea_id": "idea112845",
+      "filename": "idea112845-workspace-manager-test-py-manual-fix-observability",
+      "title": "idea112845 - workspace-manager-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "workspace-manager-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112845-workspace-manager-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112851,
+      "idea_id": "idea112846",
+      "filename": "idea112846-workspace-manager-test-py-manual-fix-test-coverage",
+      "title": "idea112846 - workspace-manager-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "workspace-manager-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112846-workspace-manager-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112852,
+      "idea_id": "idea112847",
+      "filename": "idea112847-lazy-developer-experience",
+      "title": "idea112847 - lazy Developer Experience",
+      "archetype": "experience",
+      "component": "lazy-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112847-lazy-developer-experience.md"
+    },
+    {
+      "index": 112853,
+      "idea_id": "idea112848",
+      "filename": "idea112848-lazy-documentation",
+      "title": "idea112848 - lazy Documentation",
+      "archetype": "documentation",
+      "component": "lazy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112848-lazy-documentation.md"
+    },
+    {
+      "index": 112854,
+      "idea_id": "idea112849",
+      "filename": "idea112849-lazy-hardening",
+      "title": "idea112849 - lazy Hardening",
+      "archetype": "hardening",
+      "component": "lazy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112849-lazy-hardening.md"
+    },
+    {
+      "index": 112855,
+      "idea_id": "idea112850",
+      "filename": "idea112850-lazy-performance",
+      "title": "idea112850 - lazy Performance",
+      "archetype": "performance",
+      "component": "lazy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112850-lazy-performance.md"
+    },
+    {
+      "index": 112856,
+      "idea_id": "idea112851",
+      "filename": "idea112851-lazy-resilience",
+      "title": "idea112851 - lazy Resilience",
+      "archetype": "resilience",
+      "component": "lazy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112851-lazy-resilience.md"
+    },
+    {
+      "index": 112857,
+      "idea_id": "idea112852",
+      "filename": "idea112852-lazy-py-auto-fix-observability",
+      "title": "idea112852 - lazy.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "lazy-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112852-lazy-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112858,
+      "idea_id": "idea112853",
+      "filename": "idea112853-lazy-py-auto-fix-test-coverage",
+      "title": "idea112853 - lazy.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "lazy-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112853-lazy-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112859,
+      "idea_id": "idea112854",
+      "filename": "idea112854-lazy-py-observability",
+      "title": "idea112854 - lazy.py Observability",
+      "archetype": "observability",
+      "component": "lazy-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112854-lazy-py-observability.md"
+    },
+    {
+      "index": 112860,
+      "idea_id": "idea112855",
+      "filename": "idea112855-lazy-py-test-coverage",
+      "title": "idea112855 - lazy.py Test Coverage",
+      "archetype": "coverage",
+      "component": "lazy-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112855-lazy-py-test-coverage.md"
+    },
+    {
+      "index": 112861,
+      "idea_id": "idea112856",
+      "filename": "idea112856-lazy-py-manual-fix-hardening",
+      "title": "idea112856 - lazy.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "lazy-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112856-lazy-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112862,
+      "idea_id": "idea112857",
+      "filename": "idea112857-lazy-py-manual-fix-performance",
+      "title": "idea112857 - lazy.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "lazy-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112857-lazy-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112863,
+      "idea_id": "idea112858",
+      "filename": "idea112858-discovery-service-cpython-313-hardening",
+      "title": "idea112858 - discovery-service.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "discovery-service-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112858-discovery-service-cpython-313-hardening.md"
+    },
+    {
+      "index": 112864,
+      "idea_id": "idea112859",
+      "filename": "idea112859-discovery-service-cpython-313-performance",
+      "title": "idea112859 - discovery-service.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "discovery-service-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112859-discovery-service-cpython-313-performance.md"
+    },
+    {
+      "index": 112865,
+      "idea_id": "idea112860",
+      "filename": "idea112860-discovery-service-suggested-cpython-313-hardening",
+      "title": "idea112860 - discovery-service.suggested.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "discovery-service-suggested-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112860-discovery-service-suggested-cpython-313-hardening.md"
+    },
+    {
+      "index": 112866,
+      "idea_id": "idea112861",
+      "filename": "idea112861-discovery-service-suggested-cpython-313-performance",
+      "title": "idea112861 - discovery-service.suggested.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "discovery-service-suggested-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112861-discovery-service-suggested-cpython-313-performance.md"
+    },
+    {
+      "index": 112867,
+      "idea_id": "idea112862",
+      "filename": "idea112862-discovery-service-suggested-test-cpython-313-observability",
+      "title": "idea112862 - discovery-service.suggested-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112862-discovery-service-suggested-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112868,
+      "idea_id": "idea112863",
+      "filename": "idea112863-discovery-service-suggested-test-cpython-313-test-coverage",
+      "title": "idea112863 - discovery-service.suggested-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112863-discovery-service-suggested-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112869,
+      "idea_id": "idea112864",
+      "filename": "idea112864-discovery-service-test-cpython-313-pytest-9-0-2-observability",
+      "title": "idea112864 - discovery-service-test.cpython-313-pytest-9.0.2 Observability",
+      "archetype": "observability",
+      "component": "discovery-service-test-cpython-313-pytest-9-0-2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112864-discovery-service-test-cpython-313-pytest-9-0-2-observability.md"
+    },
+    {
+      "index": 112870,
+      "idea_id": "idea112865",
+      "filename": "idea112865-discovery-service-test-cpython-313-pytest-9-0-2-test-coverage",
+      "title": "idea112865 - discovery-service-test.cpython-313-pytest-9.0.2 Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-test-cpython-313-pytest-9-0-2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112865-discovery-service-test-cpython-313-pytest-9-0-2-test-coverage.md"
+    },
+    {
+      "index": 112871,
+      "idea_id": "idea112866",
+      "filename": "idea112866-discovery-service-test-cpython-313-observability",
+      "title": "idea112866 - discovery-service-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "discovery-service-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112866-discovery-service-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112872,
+      "idea_id": "idea112867",
+      "filename": "idea112867-discovery-service-test-cpython-313-test-coverage",
+      "title": "idea112867 - discovery-service-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112867-discovery-service-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112873,
+      "idea_id": "idea112868",
+      "filename": "idea112868-discovery-service-api-consistency",
+      "title": "idea112868 - discovery-service API Consistency",
+      "archetype": "consistency",
+      "component": "discovery-service-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112868-discovery-service-api-consistency.md"
+    },
+    {
+      "index": 112874,
+      "idea_id": "idea112869",
+      "filename": "idea112869-discovery-service-migration-readiness",
+      "title": "idea112869 - discovery-service Migration Readiness",
+      "archetype": "readiness",
+      "component": "discovery-service-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112869-discovery-service-migration-readiness.md"
+    },
+    {
+      "index": 112875,
+      "idea_id": "idea112870",
+      "filename": "idea112870-discovery-service-observability",
+      "title": "idea112870 - discovery-service Observability",
+      "archetype": "observability",
+      "component": "discovery-service",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112870-discovery-service-observability.md"
+    },
+    {
+      "index": 112876,
+      "idea_id": "idea112871",
+      "filename": "idea112871-discovery-service-security",
+      "title": "idea112871 - discovery-service Security",
+      "archetype": "security",
+      "component": "discovery-service",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112871-discovery-service-security.md"
+    },
+    {
+      "index": 112877,
+      "idea_id": "idea112872",
+      "filename": "idea112872-discovery-service-test-coverage",
+      "title": "idea112872 - discovery-service Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112872-discovery-service-test-coverage.md"
+    },
+    {
+      "index": 112878,
+      "idea_id": "idea112873",
+      "filename": "idea112873-discovery-service-py-aggressive-fix-bak-observability",
+      "title": "idea112873 - discovery-service.py.aggressive-fix.bak Observability",
+      "archetype": "observability",
+      "component": "discovery-service-py-aggressive-fix-bak",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112873-discovery-service-py-aggressive-fix-bak-observability.md"
+    },
+    {
+      "index": 112879,
+      "idea_id": "idea112874",
+      "filename": "idea112874-discovery-service-py-aggressive-fix-bak-test-coverage",
+      "title": "idea112874 - discovery-service.py.aggressive-fix.bak Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-py-aggressive-fix-bak-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112874-discovery-service-py-aggressive-fix-bak-test-coverage.md"
+    },
+    {
+      "index": 112880,
+      "idea_id": "idea112875",
+      "filename": "idea112875-discovery-service-py-manual-fix-observability",
+      "title": "idea112875 - discovery-service.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "discovery-service-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112875-discovery-service-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112881,
+      "idea_id": "idea112876",
+      "filename": "idea112876-discovery-service-py-manual-fix-test-coverage",
+      "title": "idea112876 - discovery-service.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112876-discovery-service-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112882,
+      "idea_id": "idea112877",
+      "filename": "idea112877-discovery-service-suggested-api-consistency",
+      "title": "idea112877 - discovery-service.suggested API Consistency",
+      "archetype": "consistency",
+      "component": "discovery-service-suggested-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112877-discovery-service-suggested-api-consistency.md"
+    },
+    {
+      "index": 112883,
+      "idea_id": "idea112878",
+      "filename": "idea112878-discovery-service-suggested-migration-readiness",
+      "title": "idea112878 - discovery-service.suggested Migration Readiness",
+      "archetype": "readiness",
+      "component": "discovery-service-suggested-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112878-discovery-service-suggested-migration-readiness.md"
+    },
+    {
+      "index": 112884,
+      "idea_id": "idea112879",
+      "filename": "idea112879-discovery-service-suggested-observability",
+      "title": "idea112879 - discovery-service.suggested Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112879-discovery-service-suggested-observability.md"
+    },
+    {
+      "index": 112885,
+      "idea_id": "idea112880",
+      "filename": "idea112880-discovery-service-suggested-security",
+      "title": "idea112880 - discovery-service.suggested Security",
+      "archetype": "security",
+      "component": "discovery-service-suggested",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112880-discovery-service-suggested-security.md"
+    },
+    {
+      "index": 112886,
+      "idea_id": "idea112881",
+      "filename": "idea112881-discovery-service-suggested-test-coverage",
+      "title": "idea112881 - discovery-service.suggested Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112881-discovery-service-suggested-test-coverage.md"
+    },
+    {
+      "index": 112887,
+      "idea_id": "idea112882",
+      "filename": "idea112882-discovery-service-suggested-py-aggressive-fix-bak-observability",
+      "title": "idea112882 - discovery-service.suggested.py.aggressive-fix.bak Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested-py-aggressive-fix-bak",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112882-discovery-service-suggested-py-aggressive-fix-bak-observability.md"
+    },
+    {
+      "index": 112888,
+      "idea_id": "idea112883",
+      "filename": "idea112883-discovery-service-suggested-py-aggressive-fix-bak-test-coverage",
+      "title": "idea112883 - discovery-service.suggested.py.aggressive-fix.bak Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-py-aggressive-fix-bak-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112883-discovery-service-suggested-py-aggressive-fix-bak-test-coverage.md"
+    },
+    {
+      "index": 112889,
+      "idea_id": "idea112884",
+      "filename": "idea112884-discovery-service-suggested-py-manual-fix-observability",
+      "title": "idea112884 - discovery-service.suggested.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112884-discovery-service-suggested-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112890,
+      "idea_id": "idea112885",
+      "filename": "idea112885-discovery-service-suggested-py-manual-fix-test-coverage",
+      "title": "idea112885 - discovery-service.suggested.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112885-discovery-service-suggested-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112891,
+      "idea_id": "idea112886",
+      "filename": "idea112886-discovery-service-suggested-test-api-consistency",
+      "title": "idea112886 - discovery-service.suggested-test API Consistency",
+      "archetype": "consistency",
+      "component": "discovery-service-suggested-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112886-discovery-service-suggested-test-api-consistency.md"
+    },
+    {
+      "index": 112892,
+      "idea_id": "idea112887",
+      "filename": "idea112887-discovery-service-suggested-test-migration-readiness",
+      "title": "idea112887 - discovery-service.suggested-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "discovery-service-suggested-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112887-discovery-service-suggested-test-migration-readiness.md"
+    },
+    {
+      "index": 112893,
+      "idea_id": "idea112888",
+      "filename": "idea112888-discovery-service-suggested-test-observability",
+      "title": "idea112888 - discovery-service.suggested-test Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112888-discovery-service-suggested-test-observability.md"
+    },
+    {
+      "index": 112894,
+      "idea_id": "idea112889",
+      "filename": "idea112889-discovery-service-suggested-test-security",
+      "title": "idea112889 - discovery-service.suggested-test Security",
+      "archetype": "security",
+      "component": "discovery-service-suggested-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112889-discovery-service-suggested-test-security.md"
+    },
+    {
+      "index": 112895,
+      "idea_id": "idea112890",
+      "filename": "idea112890-discovery-service-suggested-test-test-coverage",
+      "title": "idea112890 - discovery-service.suggested-test Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112890-discovery-service-suggested-test-test-coverage.md"
+    },
+    {
+      "index": 112896,
+      "idea_id": "idea112891",
+      "filename": "idea112891-discovery-service-suggested-test-py-manual-fix-observability",
+      "title": "idea112891 - discovery-service.suggested-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "discovery-service-suggested-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112891-discovery-service-suggested-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112897,
+      "idea_id": "idea112892",
+      "filename": "idea112892-discovery-service-suggested-test-py-manual-fix-test-coverage",
+      "title": "idea112892 - discovery-service.suggested-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-suggested-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112892-discovery-service-suggested-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112898,
+      "idea_id": "idea112893",
+      "filename": "idea112893-discovery-service-test-api-consistency",
+      "title": "idea112893 - discovery-service-test API Consistency",
+      "archetype": "consistency",
+      "component": "discovery-service-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112893-discovery-service-test-api-consistency.md"
+    },
+    {
+      "index": 112899,
+      "idea_id": "idea112894",
+      "filename": "idea112894-discovery-service-test-migration-readiness",
+      "title": "idea112894 - discovery-service-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "discovery-service-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112894-discovery-service-test-migration-readiness.md"
+    },
+    {
+      "index": 112900,
+      "idea_id": "idea112895",
+      "filename": "idea112895-discovery-service-test-observability",
+      "title": "idea112895 - discovery-service-test Observability",
+      "archetype": "observability",
+      "component": "discovery-service-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112895-discovery-service-test-observability.md"
+    },
+    {
+      "index": 112901,
+      "idea_id": "idea112896",
+      "filename": "idea112896-discovery-service-test-security",
+      "title": "idea112896 - discovery-service-test Security",
+      "archetype": "security",
+      "component": "discovery-service-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112896-discovery-service-test-security.md"
+    },
+    {
+      "index": 112902,
+      "idea_id": "idea112897",
+      "filename": "idea112897-discovery-service-test-test-coverage",
+      "title": "idea112897 - discovery-service-test Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112897-discovery-service-test-test-coverage.md"
+    },
+    {
+      "index": 112903,
+      "idea_id": "idea112898",
+      "filename": "idea112898-discovery-service-test-py-manual-fix-observability",
+      "title": "idea112898 - discovery-service-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "discovery-service-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112898-discovery-service-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112904,
+      "idea_id": "idea112899",
+      "filename": "idea112899-discovery-service-test-py-manual-fix-test-coverage",
+      "title": "idea112899 - discovery-service-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "discovery-service-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112899-discovery-service-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112905,
+      "idea_id": "idea112900",
+      "filename": "idea112900-status-hardening",
+      "title": "idea112900 - status Hardening",
+      "archetype": "hardening",
+      "component": "status",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112900-status-hardening.md"
+    },
+    {
+      "index": 112906,
+      "idea_id": "idea112901",
+      "filename": "idea112901-status-performance",
+      "title": "idea112901 - status Performance",
+      "archetype": "performance",
+      "component": "status",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112901-status-performance.md"
+    },
+    {
+      "index": 112907,
+      "idea_id": "idea112902",
+      "filename": "idea112902-sandbox-manager-cpython-313-observability",
+      "title": "idea112902 - sandbox-manager.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "sandbox-manager-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112902-sandbox-manager-cpython-313-observability.md"
+    },
+    {
+      "index": 112908,
+      "idea_id": "idea112903",
+      "filename": "idea112903-sandbox-manager-cpython-313-test-coverage",
+      "title": "idea112903 - sandbox-manager.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "sandbox-manager-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112903-sandbox-manager-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112909,
+      "idea_id": "idea112904",
+      "filename": "idea112904-sandbox-manager-suggested-cpython-313-observability",
+      "title": "idea112904 - sandbox-manager.suggested.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "sandbox-manager-suggested-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112904-sandbox-manager-suggested-cpython-313-observability.md"
+    },
+    {
+      "index": 112910,
+      "idea_id": "idea112905",
+      "filename": "idea112905-sandbox-manager-suggested-cpython-313-test-coverage",
+      "title": "idea112905 - sandbox-manager.suggested.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "sandbox-manager-suggested-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112905-sandbox-manager-suggested-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112911,
+      "idea_id": "idea112906",
+      "filename": "idea112906-sandbox-manager-suggested-test-cpython-313-observability",
+      "title": "idea112906 - sandbox-manager.suggested-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "sandbox-manager-suggested-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112906-sandbox-manager-suggested-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112912,
+      "idea_id": "idea112907",
+      "filename": "idea112907-sandbox-manager-suggested-test-cpython-313-test-coverage",
+      "title": "idea112907 - sandbox-manager.suggested-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "sandbox-manager-suggested-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112907-sandbox-manager-suggested-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112913,
+      "idea_id": "idea112908",
+      "filename": "idea112908-sandbox-manager-test-cpython-313-pytest-9-0-2-observability",
+      "title": "idea112908 - sandbox-manager-test.cpython-313-pytest-9.0.2 Observability",
+      "archetype": "observability",
+      "component": "sandbox-manager-test-cpython-313-pytest-9-0-2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112908-sandbox-manager-test-cpython-313-pytest-9-0-2-observability.md"
+    },
+    {
+      "index": 112914,
+      "idea_id": "idea112909",
+      "filename": "idea112909-sandbox-manager-test-cpython-313-pytest-9-0-2-test-coverage",
+      "title": "idea112909 - sandbox-manager-test.cpython-313-pytest-9.0.2 Test Coverage",
+      "archetype": "coverage",
+      "component": "sandbox-manager-test-cpython-313-pytest-9-0-2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112909-sandbox-manager-test-cpython-313-pytest-9-0-2-test-coverage.md"
+    },
+    {
+      "index": 112915,
+      "idea_id": "idea112910",
+      "filename": "idea112910-sandbox-manager-test-cpython-313-observability",
+      "title": "idea112910 - sandbox-manager-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "sandbox-manager-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112910-sandbox-manager-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112916,
+      "idea_id": "idea112911",
+      "filename": "idea112911-sandbox-manager-test-cpython-313-test-coverage",
+      "title": "idea112911 - sandbox-manager-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "sandbox-manager-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112911-sandbox-manager-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112917,
+      "idea_id": "idea112912",
+      "filename": "idea112912-ai-fuzzer-test-cpython-313-pytest-9-0-2-observability",
+      "title": "idea112912 - ai-fuzzer-test.cpython-313-pytest-9.0.2 Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-test-cpython-313-pytest-9-0-2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112912-ai-fuzzer-test-cpython-313-pytest-9-0-2-observability.md"
+    },
+    {
+      "index": 112918,
+      "idea_id": "idea112913",
+      "filename": "idea112913-ai-fuzzer-test-cpython-313-pytest-9-0-2-test-coverage",
+      "title": "idea112913 - ai-fuzzer-test.cpython-313-pytest-9.0.2 Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-test-cpython-313-pytest-9-0-2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112913-ai-fuzzer-test-cpython-313-pytest-9-0-2-test-coverage.md"
+    },
+    {
+      "index": 112919,
+      "idea_id": "idea112914",
+      "filename": "idea112914-ai-fuzzer-test-cpython-313-observability",
+      "title": "idea112914 - ai-fuzzer-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112914-ai-fuzzer-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112920,
+      "idea_id": "idea112915",
+      "filename": "idea112915-ai-fuzzer-test-cpython-313-test-coverage",
+      "title": "idea112915 - ai-fuzzer-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112915-ai-fuzzer-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112921,
+      "idea_id": "idea112916",
+      "filename": "idea112916-scam-detector-cpython-313-hardening",
+      "title": "idea112916 - scam-detector.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "scam-detector-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112916-scam-detector-cpython-313-hardening.md"
+    },
+    {
+      "index": 112922,
+      "idea_id": "idea112917",
+      "filename": "idea112917-scam-detector-cpython-313-performance",
+      "title": "idea112917 - scam-detector.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "scam-detector-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112917-scam-detector-cpython-313-performance.md"
+    },
+    {
+      "index": 112923,
+      "idea_id": "idea112918",
+      "filename": "idea112918-scam-detector-test-cpython-313-pytest-9-0-2-observability",
+      "title": "idea112918 - scam-detector-test.cpython-313-pytest-9.0.2 Observability",
+      "archetype": "observability",
+      "component": "scam-detector-test-cpython-313-pytest-9-0-2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112918-scam-detector-test-cpython-313-pytest-9-0-2-observability.md"
+    },
+    {
+      "index": 112924,
+      "idea_id": "idea112919",
+      "filename": "idea112919-scam-detector-test-cpython-313-pytest-9-0-2-test-coverage",
+      "title": "idea112919 - scam-detector-test.cpython-313-pytest-9.0.2 Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-test-cpython-313-pytest-9-0-2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112919-scam-detector-test-cpython-313-pytest-9-0-2-test-coverage.md"
+    },
+    {
+      "index": 112925,
+      "idea_id": "idea112920",
+      "filename": "idea112920-scam-detector-test-cpython-313-observability",
+      "title": "idea112920 - scam-detector-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "scam-detector-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112920-scam-detector-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112926,
+      "idea_id": "idea112921",
+      "filename": "idea112921-scam-detector-test-cpython-313-test-coverage",
+      "title": "idea112921 - scam-detector-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112921-scam-detector-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112927,
+      "idea_id": "idea112922",
+      "filename": "idea112922-ai-fuzzer-api-consistency",
+      "title": "idea112922 - ai-fuzzer API Consistency",
+      "archetype": "consistency",
+      "component": "ai-fuzzer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112922-ai-fuzzer-api-consistency.md"
+    },
+    {
+      "index": 112928,
+      "idea_id": "idea112923",
+      "filename": "idea112923-ai-fuzzer-migration-readiness",
+      "title": "idea112923 - ai-fuzzer Migration Readiness",
+      "archetype": "readiness",
+      "component": "ai-fuzzer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112923-ai-fuzzer-migration-readiness.md"
+    },
+    {
+      "index": 112929,
+      "idea_id": "idea112924",
+      "filename": "idea112924-ai-fuzzer-observability",
+      "title": "idea112924 - ai-fuzzer Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112924-ai-fuzzer-observability.md"
+    },
+    {
+      "index": 112930,
+      "idea_id": "idea112925",
+      "filename": "idea112925-ai-fuzzer-security",
+      "title": "idea112925 - ai-fuzzer Security",
+      "archetype": "security",
+      "component": "ai-fuzzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112925-ai-fuzzer-security.md"
+    },
+    {
+      "index": 112931,
+      "idea_id": "idea112926",
+      "filename": "idea112926-ai-fuzzer-test-coverage",
+      "title": "idea112926 - ai-fuzzer Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112926-ai-fuzzer-test-coverage.md"
+    },
+    {
+      "index": 112932,
+      "idea_id": "idea112927",
+      "filename": "idea112927-ai-fuzzer-py-auto-fix-observability",
+      "title": "idea112927 - ai-fuzzer.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112927-ai-fuzzer-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112933,
+      "idea_id": "idea112928",
+      "filename": "idea112928-ai-fuzzer-py-auto-fix-test-coverage",
+      "title": "idea112928 - ai-fuzzer.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112928-ai-fuzzer-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112934,
+      "idea_id": "idea112929",
+      "filename": "idea112929-ai-fuzzer-py-manual-fix-observability",
+      "title": "idea112929 - ai-fuzzer.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112929-ai-fuzzer-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112935,
+      "idea_id": "idea112930",
+      "filename": "idea112930-ai-fuzzer-py-manual-fix-test-coverage",
+      "title": "idea112930 - ai-fuzzer.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112930-ai-fuzzer-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112936,
+      "idea_id": "idea112931",
+      "filename": "idea112931-ai-fuzzer-test-api-consistency",
+      "title": "idea112931 - ai-fuzzer-test API Consistency",
+      "archetype": "consistency",
+      "component": "ai-fuzzer-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112931-ai-fuzzer-test-api-consistency.md"
+    },
+    {
+      "index": 112937,
+      "idea_id": "idea112932",
+      "filename": "idea112932-ai-fuzzer-test-migration-readiness",
+      "title": "idea112932 - ai-fuzzer-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "ai-fuzzer-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112932-ai-fuzzer-test-migration-readiness.md"
+    },
+    {
+      "index": 112938,
+      "idea_id": "idea112933",
+      "filename": "idea112933-ai-fuzzer-test-observability",
+      "title": "idea112933 - ai-fuzzer-test Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112933-ai-fuzzer-test-observability.md"
+    },
+    {
+      "index": 112939,
+      "idea_id": "idea112934",
+      "filename": "idea112934-ai-fuzzer-test-security",
+      "title": "idea112934 - ai-fuzzer-test Security",
+      "archetype": "security",
+      "component": "ai-fuzzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112934-ai-fuzzer-test-security.md"
+    },
+    {
+      "index": 112940,
+      "idea_id": "idea112935",
+      "filename": "idea112935-ai-fuzzer-test-test-coverage",
+      "title": "idea112935 - ai-fuzzer-test Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112935-ai-fuzzer-test-test-coverage.md"
+    },
+    {
+      "index": 112941,
+      "idea_id": "idea112936",
+      "filename": "idea112936-ai-fuzzer-test-py-manual-fix-observability",
+      "title": "idea112936 - ai-fuzzer-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "ai-fuzzer-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112936-ai-fuzzer-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112942,
+      "idea_id": "idea112937",
+      "filename": "idea112937-ai-fuzzer-test-py-manual-fix-test-coverage",
+      "title": "idea112937 - ai-fuzzer-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "ai-fuzzer-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112937-ai-fuzzer-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112943,
+      "idea_id": "idea112938",
+      "filename": "idea112938-scam-detector-api-consistency",
+      "title": "idea112938 - scam-detector API Consistency",
+      "archetype": "consistency",
+      "component": "scam-detector-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112938-scam-detector-api-consistency.md"
+    },
+    {
+      "index": 112944,
+      "idea_id": "idea112939",
+      "filename": "idea112939-scam-detector-migration-readiness",
+      "title": "idea112939 - scam-detector Migration Readiness",
+      "archetype": "readiness",
+      "component": "scam-detector-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112939-scam-detector-migration-readiness.md"
+    },
+    {
+      "index": 112945,
+      "idea_id": "idea112940",
+      "filename": "idea112940-scam-detector-observability",
+      "title": "idea112940 - scam-detector Observability",
+      "archetype": "observability",
+      "component": "scam-detector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112940-scam-detector-observability.md"
+    },
+    {
+      "index": 112946,
+      "idea_id": "idea112941",
+      "filename": "idea112941-scam-detector-security",
+      "title": "idea112941 - scam-detector Security",
+      "archetype": "security",
+      "component": "scam-detector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112941-scam-detector-security.md"
+    },
+    {
+      "index": 112947,
+      "idea_id": "idea112942",
+      "filename": "idea112942-scam-detector-test-coverage",
+      "title": "idea112942 - scam-detector Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112942-scam-detector-test-coverage.md"
+    },
+    {
+      "index": 112948,
+      "idea_id": "idea112943",
+      "filename": "idea112943-scam-detector-py-auto-fix-observability",
+      "title": "idea112943 - scam-detector.py.auto-fix Observability",
+      "archetype": "observability",
+      "component": "scam-detector-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112943-scam-detector-py-auto-fix-observability.md"
+    },
+    {
+      "index": 112949,
+      "idea_id": "idea112944",
+      "filename": "idea112944-scam-detector-py-auto-fix-test-coverage",
+      "title": "idea112944 - scam-detector.py.auto-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-py-auto-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112944-scam-detector-py-auto-fix-test-coverage.md"
+    },
+    {
+      "index": 112950,
+      "idea_id": "idea112945",
+      "filename": "idea112945-scam-detector-py-observability",
+      "title": "idea112945 - scam-detector.py Observability",
+      "archetype": "observability",
+      "component": "scam-detector-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112945-scam-detector-py-observability.md"
+    },
+    {
+      "index": 112951,
+      "idea_id": "idea112946",
+      "filename": "idea112946-scam-detector-py-test-coverage",
+      "title": "idea112946 - scam-detector.py Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112946-scam-detector-py-test-coverage.md"
+    },
+    {
+      "index": 112952,
+      "idea_id": "idea112947",
+      "filename": "idea112947-scam-detector-py-manual-fix-observability",
+      "title": "idea112947 - scam-detector.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "scam-detector-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112947-scam-detector-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112953,
+      "idea_id": "idea112948",
+      "filename": "idea112948-scam-detector-py-manual-fix-test-coverage",
+      "title": "idea112948 - scam-detector.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112948-scam-detector-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112954,
+      "idea_id": "idea112949",
+      "filename": "idea112949-scam-detector-test-api-consistency",
+      "title": "idea112949 - scam-detector-test API Consistency",
+      "archetype": "consistency",
+      "component": "scam-detector-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112949-scam-detector-test-api-consistency.md"
+    },
+    {
+      "index": 112955,
+      "idea_id": "idea112950",
+      "filename": "idea112950-scam-detector-test-migration-readiness",
+      "title": "idea112950 - scam-detector-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "scam-detector-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112950-scam-detector-test-migration-readiness.md"
+    },
+    {
+      "index": 112956,
+      "idea_id": "idea112951",
+      "filename": "idea112951-scam-detector-test-observability",
+      "title": "idea112951 - scam-detector-test Observability",
+      "archetype": "observability",
+      "component": "scam-detector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112951-scam-detector-test-observability.md"
+    },
+    {
+      "index": 112957,
+      "idea_id": "idea112952",
+      "filename": "idea112952-scam-detector-test-security",
+      "title": "idea112952 - scam-detector-test Security",
+      "archetype": "security",
+      "component": "scam-detector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112952-scam-detector-test-security.md"
+    },
+    {
+      "index": 112958,
+      "idea_id": "idea112953",
+      "filename": "idea112953-scam-detector-test-test-coverage",
+      "title": "idea112953 - scam-detector-test Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112953-scam-detector-test-test-coverage.md"
+    },
+    {
+      "index": 112959,
+      "idea_id": "idea112954",
+      "filename": "idea112954-scam-detector-test-py-manual-fix-observability",
+      "title": "idea112954 - scam-detector-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "scam-detector-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112954-scam-detector-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112960,
+      "idea_id": "idea112955",
+      "filename": "idea112955-scam-detector-test-py-manual-fix-test-coverage",
+      "title": "idea112955 - scam-detector-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "scam-detector-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112955-scam-detector-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112961,
+      "idea_id": "idea112956",
+      "filename": "idea112956-init-developer-experience",
+      "title": "idea112956 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112956-init-developer-experience.md"
+    },
+    {
+      "index": 112962,
+      "idea_id": "idea112957",
+      "filename": "idea112957-init-documentation",
+      "title": "idea112957 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112957-init-documentation.md"
+    },
+    {
+      "index": 112963,
+      "idea_id": "idea112958",
+      "filename": "idea112958-init-hardening",
+      "title": "idea112958 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112958-init-hardening.md"
+    },
+    {
+      "index": 112964,
+      "idea_id": "idea112959",
+      "filename": "idea112959-init-performance",
+      "title": "idea112959 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112959-init-performance.md"
+    },
+    {
+      "index": 112965,
+      "idea_id": "idea112960",
+      "filename": "idea112960-init-resilience",
+      "title": "idea112960 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112960-init-resilience.md"
+    },
+    {
+      "index": 112966,
+      "idea_id": "idea112961",
+      "filename": "idea112961-init-cpython-313-hardening",
+      "title": "idea112961 - --init--.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "init-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112961-init-cpython-313-hardening.md"
+    },
+    {
+      "index": 112967,
+      "idea_id": "idea112962",
+      "filename": "idea112962-init-cpython-313-performance",
+      "title": "idea112962 - --init--.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "init-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112962-init-cpython-313-performance.md"
+    },
+    {
+      "index": 112968,
+      "idea_id": "idea112963",
+      "filename": "idea112963-webauthn-manager-developer-experience",
+      "title": "idea112963 - webauthn-manager Developer Experience",
+      "archetype": "experience",
+      "component": "webauthn-manager-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112963-webauthn-manager-developer-experience.md"
+    },
+    {
+      "index": 112969,
+      "idea_id": "idea112964",
+      "filename": "idea112964-webauthn-manager-documentation",
+      "title": "idea112964 - webauthn-manager Documentation",
+      "archetype": "documentation",
+      "component": "webauthn-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112964-webauthn-manager-documentation.md"
+    },
+    {
+      "index": 112970,
+      "idea_id": "idea112965",
+      "filename": "idea112965-webauthn-manager-hardening",
+      "title": "idea112965 - webauthn-manager Hardening",
+      "archetype": "hardening",
+      "component": "webauthn-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112965-webauthn-manager-hardening.md"
+    },
+    {
+      "index": 112971,
+      "idea_id": "idea112966",
+      "filename": "idea112966-webauthn-manager-performance",
+      "title": "idea112966 - webauthn-manager Performance",
+      "archetype": "performance",
+      "component": "webauthn-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112966-webauthn-manager-performance.md"
+    },
+    {
+      "index": 112972,
+      "idea_id": "idea112967",
+      "filename": "idea112967-webauthn-manager-resilience",
+      "title": "idea112967 - webauthn-manager Resilience",
+      "archetype": "resilience",
+      "component": "webauthn-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112967-webauthn-manager-resilience.md"
+    },
+    {
+      "index": 112973,
+      "idea_id": "idea112968",
+      "filename": "idea112968-webauthn-manager-py-auto-fix-hardening",
+      "title": "idea112968 - webauthn-manager.py.auto-fix Hardening",
+      "archetype": "hardening",
+      "component": "webauthn-manager-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112968-webauthn-manager-py-auto-fix-hardening.md"
+    },
+    {
+      "index": 112974,
+      "idea_id": "idea112969",
+      "filename": "idea112969-webauthn-manager-py-auto-fix-performance",
+      "title": "idea112969 - webauthn-manager.py.auto-fix Performance",
+      "archetype": "performance",
+      "component": "webauthn-manager-py-auto-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112969-webauthn-manager-py-auto-fix-performance.md"
+    },
+    {
+      "index": 112975,
+      "idea_id": "idea112970",
+      "filename": "idea112970-webauthn-manager-py-manual-fix-hardening",
+      "title": "idea112970 - webauthn-manager.py.manual-fix Hardening",
+      "archetype": "hardening",
+      "component": "webauthn-manager-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112970-webauthn-manager-py-manual-fix-hardening.md"
+    },
+    {
+      "index": 112976,
+      "idea_id": "idea112971",
+      "filename": "idea112971-webauthn-manager-py-manual-fix-performance",
+      "title": "idea112971 - webauthn-manager.py.manual-fix Performance",
+      "archetype": "performance",
+      "component": "webauthn-manager-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112971-webauthn-manager-py-manual-fix-performance.md"
+    },
+    {
+      "index": 112977,
+      "idea_id": "idea112972",
+      "filename": "idea112972-webauthn-manager-test-api-consistency",
+      "title": "idea112972 - webauthn-manager-test API Consistency",
+      "archetype": "consistency",
+      "component": "webauthn-manager-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112972-webauthn-manager-test-api-consistency.md"
+    },
+    {
+      "index": 112978,
+      "idea_id": "idea112973",
+      "filename": "idea112973-webauthn-manager-test-migration-readiness",
+      "title": "idea112973 - webauthn-manager-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "webauthn-manager-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112973-webauthn-manager-test-migration-readiness.md"
+    },
+    {
+      "index": 112979,
+      "idea_id": "idea112974",
+      "filename": "idea112974-webauthn-manager-test-observability",
+      "title": "idea112974 - webauthn-manager-test Observability",
+      "archetype": "observability",
+      "component": "webauthn-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112974-webauthn-manager-test-observability.md"
+    },
+    {
+      "index": 112980,
+      "idea_id": "idea112975",
+      "filename": "idea112975-webauthn-manager-test-security",
+      "title": "idea112975 - webauthn-manager-test Security",
+      "archetype": "security",
+      "component": "webauthn-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112975-webauthn-manager-test-security.md"
+    },
+    {
+      "index": 112981,
+      "idea_id": "idea112976",
+      "filename": "idea112976-webauthn-manager-test-test-coverage",
+      "title": "idea112976 - webauthn-manager-test Test Coverage",
+      "archetype": "coverage",
+      "component": "webauthn-manager-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112976-webauthn-manager-test-test-coverage.md"
+    },
+    {
+      "index": 112982,
+      "idea_id": "idea112977",
+      "filename": "idea112977-webauthn-manager-test-py-manual-fix-observability",
+      "title": "idea112977 - webauthn-manager-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "webauthn-manager-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112977-webauthn-manager-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112983,
+      "idea_id": "idea112978",
+      "filename": "idea112978-webauthn-manager-test-py-manual-fix-test-coverage",
+      "title": "idea112978 - webauthn-manager-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "webauthn-manager-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112978-webauthn-manager-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112984,
+      "idea_id": "idea112979",
+      "filename": "idea112979-auth-and-checkpointing-test-api-consistency",
+      "title": "idea112979 - auth-and-checkpointing-test API Consistency",
+      "archetype": "consistency",
+      "component": "auth-and-checkpointing-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112979-auth-and-checkpointing-test-api-consistency.md"
+    },
+    {
+      "index": 112985,
+      "idea_id": "idea112980",
+      "filename": "idea112980-auth-and-checkpointing-test-migration-readiness",
+      "title": "idea112980 - auth-and-checkpointing-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "auth-and-checkpointing-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112980-auth-and-checkpointing-test-migration-readiness.md"
+    },
+    {
+      "index": 112986,
+      "idea_id": "idea112981",
+      "filename": "idea112981-auth-and-checkpointing-test-observability",
+      "title": "idea112981 - auth-and-checkpointing-test Observability",
+      "archetype": "observability",
+      "component": "auth-and-checkpointing-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112981-auth-and-checkpointing-test-observability.md"
+    },
+    {
+      "index": 112987,
+      "idea_id": "idea112982",
+      "filename": "idea112982-auth-and-checkpointing-test-security",
+      "title": "idea112982 - auth-and-checkpointing-test Security",
+      "archetype": "security",
+      "component": "auth-and-checkpointing-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112982-auth-and-checkpointing-test-security.md"
+    },
+    {
+      "index": 112988,
+      "idea_id": "idea112983",
+      "filename": "idea112983-auth-and-checkpointing-test-test-coverage",
+      "title": "idea112983 - auth-and-checkpointing-test Test Coverage",
+      "archetype": "coverage",
+      "component": "auth-and-checkpointing-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112983-auth-and-checkpointing-test-test-coverage.md"
+    },
+    {
+      "index": 112989,
+      "idea_id": "idea112984",
+      "filename": "idea112984-auth-and-checkpointing-test-py-manual-fix-observability",
+      "title": "idea112984 - auth-and-checkpointing-test.py.manual-fix Observability",
+      "archetype": "observability",
+      "component": "auth-and-checkpointing-test-py-manual-fix",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112984-auth-and-checkpointing-test-py-manual-fix-observability.md"
+    },
+    {
+      "index": 112990,
+      "idea_id": "idea112985",
+      "filename": "idea112985-auth-and-checkpointing-test-py-manual-fix-test-coverage",
+      "title": "idea112985 - auth-and-checkpointing-test.py.manual-fix Test Coverage",
+      "archetype": "coverage",
+      "component": "auth-and-checkpointing-test-py-manual-fix-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112985-auth-and-checkpointing-test-py-manual-fix-test-coverage.md"
+    },
+    {
+      "index": 112991,
+      "idea_id": "idea112986",
+      "filename": "idea112986-double-ratchet-cpython-313-hardening",
+      "title": "idea112986 - double-ratchet.cpython-313 Hardening",
+      "archetype": "hardening",
+      "component": "double-ratchet-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112986-double-ratchet-cpython-313-hardening.md"
+    },
+    {
+      "index": 112992,
+      "idea_id": "idea112987",
+      "filename": "idea112987-double-ratchet-cpython-313-performance",
+      "title": "idea112987 - double-ratchet.cpython-313 Performance",
+      "archetype": "performance",
+      "component": "double-ratchet-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112987-double-ratchet-cpython-313-performance.md"
+    },
+    {
+      "index": 112993,
+      "idea_id": "idea112988",
+      "filename": "idea112988-double-ratchet-test-cpython-313-pytest-9-0-2-observability",
+      "title": "idea112988 - double-ratchet-test.cpython-313-pytest-9.0.2 Observability",
+      "archetype": "observability",
+      "component": "double-ratchet-test-cpython-313-pytest-9-0-2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112988-double-ratchet-test-cpython-313-pytest-9-0-2-observability.md"
+    },
+    {
+      "index": 112994,
+      "idea_id": "idea112989",
+      "filename": "idea112989-double-ratchet-test-cpython-313-pytest-9-0-2-test-coverage",
+      "title": "idea112989 - double-ratchet-test.cpython-313-pytest-9.0.2 Test Coverage",
+      "archetype": "coverage",
+      "component": "double-ratchet-test-cpython-313-pytest-9-0-2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112989-double-ratchet-test-cpython-313-pytest-9-0-2-test-coverage.md"
+    },
+    {
+      "index": 112995,
+      "idea_id": "idea112990",
+      "filename": "idea112990-double-ratchet-test-cpython-313-observability",
+      "title": "idea112990 - double-ratchet-test.cpython-313 Observability",
+      "archetype": "observability",
+      "component": "double-ratchet-test-cpython-313",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112990-double-ratchet-test-cpython-313-observability.md"
+    },
+    {
+      "index": 112996,
+      "idea_id": "idea112991",
+      "filename": "idea112991-double-ratchet-test-cpython-313-test-coverage",
+      "title": "idea112991 - double-ratchet-test.cpython-313 Test Coverage",
+      "archetype": "coverage",
+      "component": "double-ratchet-test-cpython-313-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112991-double-ratchet-test-cpython-313-test-coverage.md"
+    },
+    {
+      "index": 112997,
+      "idea_id": "idea112992",
+      "filename": "idea112992-double-ratchet-developer-experience",
+      "title": "idea112992 - double-ratchet Developer Experience",
+      "archetype": "experience",
+      "component": "double-ratchet-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112992-double-ratchet-developer-experience.md"
+    },
+    {
+      "index": 112998,
+      "idea_id": "idea112993",
+      "filename": "idea112993-double-ratchet-documentation",
+      "title": "idea112993 - double-ratchet Documentation",
+      "archetype": "documentation",
+      "component": "double-ratchet",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112993-double-ratchet-documentation.md"
+    },
+    {
+      "index": 112999,
+      "idea_id": "idea112994",
+      "filename": "idea112994-double-ratchet-hardening",
+      "title": "idea112994 - double-ratchet Hardening",
+      "archetype": "hardening",
+      "component": "double-ratchet",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112994-double-ratchet-hardening.md"
+    },
+    {
+      "index": 113000,
+      "idea_id": "idea112995",
+      "filename": "idea112995-double-ratchet-performance",
+      "title": "idea112995 - double-ratchet Performance",
+      "archetype": "performance",
+      "component": "double-ratchet",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f11/idea112995-double-ratchet-performance.md"
+    }
+  ],
+  "projects_to_create": 50
+}

@@ -1,0 +1,76 @@
+{
+  "execution_id": "mega-001",
+  "total_ideas": 200000,
+  "total_workers": 10,
+  "total_shards": 420,
+  "ideas_per_shard": 476,
+  "batch_size": 50,
+  "categories": {
+    "infrastructure": {
+      "range": [0, 20000],
+      "description": "Cloud infrastructure, DevOps, deployment"
+    },
+    "backend": {
+      "range": [20000, 60000],
+      "description": "API servers, microservices, databases"
+    },
+    "frontend": {
+      "range": [60000, 100000],
+      "description": "Web/mobile UI, React, Vue, native apps"
+    },
+    "ai_ml": {
+      "range": [100000, 140000],
+      "description": "Machine learning, AI models, NLP, vision"
+    },
+    "data": {
+      "range": [140000, 160000],
+      "description": "Data pipelines, analytics, warehousing"
+    },
+    "tooling": {
+      "range": [160000, 180000],
+      "description": "Dev tools, CLI, editors, IDEs"
+    },
+    "security": {
+      "range": [180000, 190000],
+      "description": "Security, encryption, authentication"
+    },
+    "testing": {
+      "range": [190000, 200000],
+      "description": "Testing frameworks, QA automation"
+    }
+  },
+  "implementation_templates": {
+    "python_module": {
+      "ext": ".py",
+      "has_tests": true,
+      "estimated_loc": 500
+    },
+    "typescript_module": {
+      "ext": ".ts",
+      "has_tests": true,
+      "estimated_loc": 400
+    },
+    "rust_crate": {
+      "ext": ".rs",
+      "has_tests": true,
+      "estimated_loc": 350
+    },
+    "go_package": {
+      "ext": ".go",
+      "has_tests": true,
+      "estimated_loc": 450
+    },
+    "configuration": {
+      "ext": ".yaml",
+      "has_tests": false,
+      "estimated_loc": 100
+    }
+  },
+  "output_structure": {
+    "base_dir": "/home/dev/PyAgent/generated_projects",
+    "worker_dirs": true,
+    "per_worker_dir": "worker_{worker_id:02d}",
+    "per_shard_dir": "shard_{shard_id:04d}",
+    "per_idea_file": "idea_{idea_id:06d}"
+  }
+}

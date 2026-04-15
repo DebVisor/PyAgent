@@ -1,0 +1,4510 @@
+{
+  "shard_number": 358,
+  "shard_id": "SHARD_0358",
+  "start_index": 178500,
+  "end_index": 179000,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 178501,
+      "idea_id": "idea178498",
+      "filename": "idea178498-http-request-manipulator-observability",
+      "title": "idea178498 - http-request-manipulator Observability",
+      "archetype": "observability",
+      "component": "http-request-manipulator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178498-http-request-manipulator-observability.md"
+    },
+    {
+      "index": 178502,
+      "idea_id": "idea178499",
+      "filename": "idea178499-http-request-manipulator-security",
+      "title": "idea178499 - http-request-manipulator Security",
+      "archetype": "security",
+      "component": "http-request-manipulator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178499-http-request-manipulator-security.md"
+    },
+    {
+      "index": 178503,
+      "idea_id": "idea178500",
+      "filename": "idea178500-http-request-manipulator-test-coverage",
+      "title": "idea178500 - http-request-manipulator Test Coverage",
+      "archetype": "coverage",
+      "component": "http-request-manipulator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178500-http-request-manipulator-test-coverage.md"
+    },
+    {
+      "index": 178504,
+      "idea_id": "idea178501",
+      "filename": "idea178501-mcp-server-api-consistency",
+      "title": "idea178501 - mcp-server API Consistency",
+      "archetype": "consistency",
+      "component": "mcp-server-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178501-mcp-server-api-consistency.md"
+    },
+    {
+      "index": 178505,
+      "idea_id": "idea178502",
+      "filename": "idea178502-mcp-server-migration-readiness",
+      "title": "idea178502 - mcp-server Migration Readiness",
+      "archetype": "readiness",
+      "component": "mcp-server-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178502-mcp-server-migration-readiness.md"
+    },
+    {
+      "index": 178506,
+      "idea_id": "idea178503",
+      "filename": "idea178503-mcp-server-observability",
+      "title": "idea178503 - mcp-server Observability",
+      "archetype": "observability",
+      "component": "mcp-server",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178503-mcp-server-observability.md"
+    },
+    {
+      "index": 178507,
+      "idea_id": "idea178504",
+      "filename": "idea178504-mcp-server-security",
+      "title": "idea178504 - mcp-server Security",
+      "archetype": "security",
+      "component": "mcp-server",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178504-mcp-server-security.md"
+    },
+    {
+      "index": 178508,
+      "idea_id": "idea178505",
+      "filename": "idea178505-mcp-server-test-coverage",
+      "title": "idea178505 - mcp-server Test Coverage",
+      "archetype": "coverage",
+      "component": "mcp-server-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178505-mcp-server-test-coverage.md"
+    },
+    {
+      "index": 178509,
+      "idea_id": "idea178506",
+      "filename": "idea178506-template-collector-api-consistency",
+      "title": "idea178506 - template-collector API Consistency",
+      "archetype": "consistency",
+      "component": "template-collector-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178506-template-collector-api-consistency.md"
+    },
+    {
+      "index": 178510,
+      "idea_id": "idea178507",
+      "filename": "idea178507-template-collector-migration-readiness",
+      "title": "idea178507 - template-collector Migration Readiness",
+      "archetype": "readiness",
+      "component": "template-collector-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178507-template-collector-migration-readiness.md"
+    },
+    {
+      "index": 178511,
+      "idea_id": "idea178508",
+      "filename": "idea178508-template-collector-observability",
+      "title": "idea178508 - template-collector Observability",
+      "archetype": "observability",
+      "component": "template-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178508-template-collector-observability.md"
+    },
+    {
+      "index": 178512,
+      "idea_id": "idea178509",
+      "filename": "idea178509-template-collector-security",
+      "title": "idea178509 - template-collector Security",
+      "archetype": "security",
+      "component": "template-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178509-template-collector-security.md"
+    },
+    {
+      "index": 178513,
+      "idea_id": "idea178510",
+      "filename": "idea178510-template-collector-test-coverage",
+      "title": "idea178510 - template-collector Test Coverage",
+      "archetype": "coverage",
+      "component": "template-collector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178510-template-collector-test-coverage.md"
+    },
+    {
+      "index": 178514,
+      "idea_id": "idea178511",
+      "filename": "idea178511-init-api-consistency",
+      "title": "idea178511 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178511-init-api-consistency.md"
+    },
+    {
+      "index": 178515,
+      "idea_id": "idea178512",
+      "filename": "idea178512-init-migration-readiness",
+      "title": "idea178512 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178512-init-migration-readiness.md"
+    },
+    {
+      "index": 178516,
+      "idea_id": "idea178513",
+      "filename": "idea178513-init-observability",
+      "title": "idea178513 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178513-init-observability.md"
+    },
+    {
+      "index": 178517,
+      "idea_id": "idea178514",
+      "filename": "idea178514-init-security",
+      "title": "idea178514 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178514-init-security.md"
+    },
+    {
+      "index": 178518,
+      "idea_id": "idea178515",
+      "filename": "idea178515-init-test-coverage",
+      "title": "idea178515 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178515-init-test-coverage.md"
+    },
+    {
+      "index": 178519,
+      "idea_id": "idea178516",
+      "filename": "idea178516-selfimprovementcoordinator-api-consistency",
+      "title": "idea178516 - selfimprovementcoordinator API Consistency",
+      "archetype": "consistency",
+      "component": "selfimprovementcoordinator-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178516-selfimprovementcoordinator-api-consistency.md"
+    },
+    {
+      "index": 178520,
+      "idea_id": "idea178517",
+      "filename": "idea178517-selfimprovementcoordinator-migration-readiness",
+      "title": "idea178517 - selfimprovementcoordinator Migration Readiness",
+      "archetype": "readiness",
+      "component": "selfimprovementcoordinator-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178517-selfimprovementcoordinator-migration-readiness.md"
+    },
+    {
+      "index": 178521,
+      "idea_id": "idea178518",
+      "filename": "idea178518-selfimprovementcoordinator-observability",
+      "title": "idea178518 - selfimprovementcoordinator Observability",
+      "archetype": "observability",
+      "component": "selfimprovementcoordinator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178518-selfimprovementcoordinator-observability.md"
+    },
+    {
+      "index": 178522,
+      "idea_id": "idea178519",
+      "filename": "idea178519-selfimprovementcoordinator-security",
+      "title": "idea178519 - selfimprovementcoordinator Security",
+      "archetype": "security",
+      "component": "selfimprovementcoordinator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178519-selfimprovementcoordinator-security.md"
+    },
+    {
+      "index": 178523,
+      "idea_id": "idea178520",
+      "filename": "idea178520-selfimprovementcoordinator-test-coverage",
+      "title": "idea178520 - selfimprovementcoordinator Test Coverage",
+      "archetype": "coverage",
+      "component": "selfimprovementcoordinator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178520-selfimprovementcoordinator-test-coverage.md"
+    },
+    {
+      "index": 178524,
+      "idea_id": "idea178521",
+      "filename": "idea178521-selfimprovementcoordinator-py-observability",
+      "title": "idea178521 - selfimprovementcoordinator.py Observability",
+      "archetype": "observability",
+      "component": "selfimprovementcoordinator-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178521-selfimprovementcoordinator-py-observability.md"
+    },
+    {
+      "index": 178525,
+      "idea_id": "idea178522",
+      "filename": "idea178522-selfimprovementcoordinator-py-test-coverage",
+      "title": "idea178522 - selfimprovementcoordinator.py Test Coverage",
+      "archetype": "coverage",
+      "component": "selfimprovementcoordinator-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178522-selfimprovementcoordinator-py-test-coverage.md"
+    },
+    {
+      "index": 178526,
+      "idea_id": "idea178523",
+      "filename": "idea178523-init-api-consistency",
+      "title": "idea178523 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178523-init-api-consistency.md"
+    },
+    {
+      "index": 178527,
+      "idea_id": "idea178524",
+      "filename": "idea178524-init-migration-readiness",
+      "title": "idea178524 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178524-init-migration-readiness.md"
+    },
+    {
+      "index": 178528,
+      "idea_id": "idea178525",
+      "filename": "idea178525-init-observability",
+      "title": "idea178525 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178525-init-observability.md"
+    },
+    {
+      "index": 178529,
+      "idea_id": "idea178526",
+      "filename": "idea178526-init-security",
+      "title": "idea178526 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178526-init-security.md"
+    },
+    {
+      "index": 178530,
+      "idea_id": "idea178527",
+      "filename": "idea178527-init-test-coverage",
+      "title": "idea178527 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178527-init-test-coverage.md"
+    },
+    {
+      "index": 178531,
+      "idea_id": "idea178528",
+      "filename": "idea178528-agents-api-consistency",
+      "title": "idea178528 - agents API Consistency",
+      "archetype": "consistency",
+      "component": "agents-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178528-agents-api-consistency.md"
+    },
+    {
+      "index": 178532,
+      "idea_id": "idea178529",
+      "filename": "idea178529-agents-migration-readiness",
+      "title": "idea178529 - agents Migration Readiness",
+      "archetype": "readiness",
+      "component": "agents-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178529-agents-migration-readiness.md"
+    },
+    {
+      "index": 178533,
+      "idea_id": "idea178530",
+      "filename": "idea178530-agents-observability",
+      "title": "idea178530 - agents Observability",
+      "archetype": "observability",
+      "component": "agents",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178530-agents-observability.md"
+    },
+    {
+      "index": 178534,
+      "idea_id": "idea178531",
+      "filename": "idea178531-agents-security",
+      "title": "idea178531 - agents Security",
+      "archetype": "security",
+      "component": "agents",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178531-agents-security.md"
+    },
+    {
+      "index": 178535,
+      "idea_id": "idea178532",
+      "filename": "idea178532-agents-test-coverage",
+      "title": "idea178532 - agents Test Coverage",
+      "archetype": "coverage",
+      "component": "agents-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178532-agents-test-coverage.md"
+    },
+    {
+      "index": 178536,
+      "idea_id": "idea178533",
+      "filename": "idea178533-artifact-cleanup-api-consistency",
+      "title": "idea178533 - artifact-cleanup API Consistency",
+      "archetype": "consistency",
+      "component": "artifact-cleanup-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178533-artifact-cleanup-api-consistency.md"
+    },
+    {
+      "index": 178537,
+      "idea_id": "idea178534",
+      "filename": "idea178534-artifact-cleanup-migration-readiness",
+      "title": "idea178534 - artifact-cleanup Migration Readiness",
+      "archetype": "readiness",
+      "component": "artifact-cleanup-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178534-artifact-cleanup-migration-readiness.md"
+    },
+    {
+      "index": 178538,
+      "idea_id": "idea178535",
+      "filename": "idea178535-artifact-cleanup-observability",
+      "title": "idea178535 - artifact-cleanup Observability",
+      "archetype": "observability",
+      "component": "artifact-cleanup",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178535-artifact-cleanup-observability.md"
+    },
+    {
+      "index": 178539,
+      "idea_id": "idea178536",
+      "filename": "idea178536-artifact-cleanup-security",
+      "title": "idea178536 - artifact-cleanup Security",
+      "archetype": "security",
+      "component": "artifact-cleanup",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178536-artifact-cleanup-security.md"
+    },
+    {
+      "index": 178540,
+      "idea_id": "idea178537",
+      "filename": "idea178537-artifact-cleanup-test-coverage",
+      "title": "idea178537 - artifact-cleanup Test Coverage",
+      "archetype": "coverage",
+      "component": "artifact-cleanup-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178537-artifact-cleanup-test-coverage.md"
+    },
+    {
+      "index": 178541,
+      "idea_id": "idea178538",
+      "filename": "idea178538-docstring-auditor-api-consistency",
+      "title": "idea178538 - docstring-auditor API Consistency",
+      "archetype": "consistency",
+      "component": "docstring-auditor-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178538-docstring-auditor-api-consistency.md"
+    },
+    {
+      "index": 178542,
+      "idea_id": "idea178539",
+      "filename": "idea178539-docstring-auditor-migration-readiness",
+      "title": "idea178539 - docstring-auditor Migration Readiness",
+      "archetype": "readiness",
+      "component": "docstring-auditor-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178539-docstring-auditor-migration-readiness.md"
+    },
+    {
+      "index": 178543,
+      "idea_id": "idea178540",
+      "filename": "idea178540-docstring-auditor-observability",
+      "title": "idea178540 - docstring-auditor Observability",
+      "archetype": "observability",
+      "component": "docstring-auditor",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178540-docstring-auditor-observability.md"
+    },
+    {
+      "index": 178544,
+      "idea_id": "idea178541",
+      "filename": "idea178541-docstring-auditor-security",
+      "title": "idea178541 - docstring-auditor Security",
+      "archetype": "security",
+      "component": "docstring-auditor",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178541-docstring-auditor-security.md"
+    },
+    {
+      "index": 178545,
+      "idea_id": "idea178542",
+      "filename": "idea178542-docstring-auditor-test-coverage",
+      "title": "idea178542 - docstring-auditor Test Coverage",
+      "archetype": "coverage",
+      "component": "docstring-auditor-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178542-docstring-auditor-test-coverage.md"
+    },
+    {
+      "index": 178546,
+      "idea_id": "idea178543",
+      "filename": "idea178543-cli-api-consistency",
+      "title": "idea178543 - cli API Consistency",
+      "archetype": "consistency",
+      "component": "cli-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178543-cli-api-consistency.md"
+    },
+    {
+      "index": 178547,
+      "idea_id": "idea178544",
+      "filename": "idea178544-cli-migration-readiness",
+      "title": "idea178544 - cli Migration Readiness",
+      "archetype": "readiness",
+      "component": "cli-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178544-cli-migration-readiness.md"
+    },
+    {
+      "index": 178548,
+      "idea_id": "idea178545",
+      "filename": "idea178545-cli-observability",
+      "title": "idea178545 - cli Observability",
+      "archetype": "observability",
+      "component": "cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178545-cli-observability.md"
+    },
+    {
+      "index": 178549,
+      "idea_id": "idea178546",
+      "filename": "idea178546-cli-security",
+      "title": "idea178546 - cli Security",
+      "archetype": "security",
+      "component": "cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178546-cli-security.md"
+    },
+    {
+      "index": 178550,
+      "idea_id": "idea178547",
+      "filename": "idea178547-cli-test-coverage",
+      "title": "idea178547 - cli Test Coverage",
+      "archetype": "coverage",
+      "component": "cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178547-cli-test-coverage.md"
+    },
+    {
+      "index": 178551,
+      "idea_id": "idea178548",
+      "filename": "idea178548-fix-headers-agent-api-consistency",
+      "title": "idea178548 - fix-headers-agent API Consistency",
+      "archetype": "consistency",
+      "component": "fix-headers-agent-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178548-fix-headers-agent-api-consistency.md"
+    },
+    {
+      "index": 178552,
+      "idea_id": "idea178549",
+      "filename": "idea178549-fix-headers-agent-migration-readiness",
+      "title": "idea178549 - fix-headers-agent Migration Readiness",
+      "archetype": "readiness",
+      "component": "fix-headers-agent-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178549-fix-headers-agent-migration-readiness.md"
+    },
+    {
+      "index": 178553,
+      "idea_id": "idea178550",
+      "filename": "idea178550-fix-headers-agent-observability",
+      "title": "idea178550 - fix-headers-agent Observability",
+      "archetype": "observability",
+      "component": "fix-headers-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178550-fix-headers-agent-observability.md"
+    },
+    {
+      "index": 178554,
+      "idea_id": "idea178551",
+      "filename": "idea178551-fix-headers-agent-security",
+      "title": "idea178551 - fix-headers-agent Security",
+      "archetype": "security",
+      "component": "fix-headers-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178551-fix-headers-agent-security.md"
+    },
+    {
+      "index": 178555,
+      "idea_id": "idea178552",
+      "filename": "idea178552-fix-headers-agent-test-coverage",
+      "title": "idea178552 - fix-headers-agent Test Coverage",
+      "archetype": "coverage",
+      "component": "fix-headers-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178552-fix-headers-agent-test-coverage.md"
+    },
+    {
+      "index": 178556,
+      "idea_id": "idea178553",
+      "filename": "idea178553-header-fixer-mixin-api-consistency",
+      "title": "idea178553 - header-fixer-mixin API Consistency",
+      "archetype": "consistency",
+      "component": "header-fixer-mixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178553-header-fixer-mixin-api-consistency.md"
+    },
+    {
+      "index": 178557,
+      "idea_id": "idea178554",
+      "filename": "idea178554-header-fixer-mixin-migration-readiness",
+      "title": "idea178554 - header-fixer-mixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "header-fixer-mixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178554-header-fixer-mixin-migration-readiness.md"
+    },
+    {
+      "index": 178558,
+      "idea_id": "idea178555",
+      "filename": "idea178555-header-fixer-mixin-observability",
+      "title": "idea178555 - header-fixer-mixin Observability",
+      "archetype": "observability",
+      "component": "header-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178555-header-fixer-mixin-observability.md"
+    },
+    {
+      "index": 178559,
+      "idea_id": "idea178556",
+      "filename": "idea178556-header-fixer-mixin-security",
+      "title": "idea178556 - header-fixer-mixin Security",
+      "archetype": "security",
+      "component": "header-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178556-header-fixer-mixin-security.md"
+    },
+    {
+      "index": 178560,
+      "idea_id": "idea178557",
+      "filename": "idea178557-header-fixer-mixin-test-coverage",
+      "title": "idea178557 - header-fixer-mixin Test Coverage",
+      "archetype": "coverage",
+      "component": "header-fixer-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178557-header-fixer-mixin-test-coverage.md"
+    },
+    {
+      "index": 178561,
+      "idea_id": "idea178558",
+      "filename": "idea178558-import-cleanup-mixin-api-consistency",
+      "title": "idea178558 - import-cleanup-mixin API Consistency",
+      "archetype": "consistency",
+      "component": "import-cleanup-mixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178558-import-cleanup-mixin-api-consistency.md"
+    },
+    {
+      "index": 178562,
+      "idea_id": "idea178559",
+      "filename": "idea178559-import-cleanup-mixin-migration-readiness",
+      "title": "idea178559 - import-cleanup-mixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "import-cleanup-mixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178559-import-cleanup-mixin-migration-readiness.md"
+    },
+    {
+      "index": 178563,
+      "idea_id": "idea178560",
+      "filename": "idea178560-import-cleanup-mixin-observability",
+      "title": "idea178560 - import-cleanup-mixin Observability",
+      "archetype": "observability",
+      "component": "import-cleanup-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178560-import-cleanup-mixin-observability.md"
+    },
+    {
+      "index": 178564,
+      "idea_id": "idea178561",
+      "filename": "idea178561-import-cleanup-mixin-security",
+      "title": "idea178561 - import-cleanup-mixin Security",
+      "archetype": "security",
+      "component": "import-cleanup-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178561-import-cleanup-mixin-security.md"
+    },
+    {
+      "index": 178565,
+      "idea_id": "idea178562",
+      "filename": "idea178562-import-cleanup-mixin-test-coverage",
+      "title": "idea178562 - import-cleanup-mixin Test Coverage",
+      "archetype": "coverage",
+      "component": "import-cleanup-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178562-import-cleanup-mixin-test-coverage.md"
+    },
+    {
+      "index": 178566,
+      "idea_id": "idea178563",
+      "filename": "idea178563-pylint-fixer-mixin-api-consistency",
+      "title": "idea178563 - pylint-fixer-mixin API Consistency",
+      "archetype": "consistency",
+      "component": "pylint-fixer-mixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178563-pylint-fixer-mixin-api-consistency.md"
+    },
+    {
+      "index": 178567,
+      "idea_id": "idea178564",
+      "filename": "idea178564-pylint-fixer-mixin-migration-readiness",
+      "title": "idea178564 - pylint-fixer-mixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "pylint-fixer-mixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178564-pylint-fixer-mixin-migration-readiness.md"
+    },
+    {
+      "index": 178568,
+      "idea_id": "idea178565",
+      "filename": "idea178565-pylint-fixer-mixin-observability",
+      "title": "idea178565 - pylint-fixer-mixin Observability",
+      "archetype": "observability",
+      "component": "pylint-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178565-pylint-fixer-mixin-observability.md"
+    },
+    {
+      "index": 178569,
+      "idea_id": "idea178566",
+      "filename": "idea178566-pylint-fixer-mixin-security",
+      "title": "idea178566 - pylint-fixer-mixin Security",
+      "archetype": "security",
+      "component": "pylint-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178566-pylint-fixer-mixin-security.md"
+    },
+    {
+      "index": 178570,
+      "idea_id": "idea178567",
+      "filename": "idea178567-pylint-fixer-mixin-test-coverage",
+      "title": "idea178567 - pylint-fixer-mixin Test Coverage",
+      "archetype": "coverage",
+      "component": "pylint-fixer-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178567-pylint-fixer-mixin-test-coverage.md"
+    },
+    {
+      "index": 178571,
+      "idea_id": "idea178568",
+      "filename": "idea178568-syntax-fixer-mixin-api-consistency",
+      "title": "idea178568 - syntax-fixer-mixin API Consistency",
+      "archetype": "consistency",
+      "component": "syntax-fixer-mixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178568-syntax-fixer-mixin-api-consistency.md"
+    },
+    {
+      "index": 178572,
+      "idea_id": "idea178569",
+      "filename": "idea178569-syntax-fixer-mixin-migration-readiness",
+      "title": "idea178569 - syntax-fixer-mixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "syntax-fixer-mixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178569-syntax-fixer-mixin-migration-readiness.md"
+    },
+    {
+      "index": 178573,
+      "idea_id": "idea178570",
+      "filename": "idea178570-syntax-fixer-mixin-observability",
+      "title": "idea178570 - syntax-fixer-mixin Observability",
+      "archetype": "observability",
+      "component": "syntax-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178570-syntax-fixer-mixin-observability.md"
+    },
+    {
+      "index": 178574,
+      "idea_id": "idea178571",
+      "filename": "idea178571-syntax-fixer-mixin-security",
+      "title": "idea178571 - syntax-fixer-mixin Security",
+      "archetype": "security",
+      "component": "syntax-fixer-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178571-syntax-fixer-mixin-security.md"
+    },
+    {
+      "index": 178575,
+      "idea_id": "idea178572",
+      "filename": "idea178572-syntax-fixer-mixin-test-coverage",
+      "title": "idea178572 - syntax-fixer-mixin Test Coverage",
+      "archetype": "coverage",
+      "component": "syntax-fixer-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178572-syntax-fixer-mixin-test-coverage.md"
+    },
+    {
+      "index": 178576,
+      "idea_id": "idea178573",
+      "filename": "idea178573-orchestrator-api-consistency",
+      "title": "idea178573 - orchestrator API Consistency",
+      "archetype": "consistency",
+      "component": "orchestrator-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178573-orchestrator-api-consistency.md"
+    },
+    {
+      "index": 178577,
+      "idea_id": "idea178574",
+      "filename": "idea178574-orchestrator-migration-readiness",
+      "title": "idea178574 - orchestrator Migration Readiness",
+      "archetype": "readiness",
+      "component": "orchestrator-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178574-orchestrator-migration-readiness.md"
+    },
+    {
+      "index": 178578,
+      "idea_id": "idea178575",
+      "filename": "idea178575-orchestrator-observability",
+      "title": "idea178575 - orchestrator Observability",
+      "archetype": "observability",
+      "component": "orchestrator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178575-orchestrator-observability.md"
+    },
+    {
+      "index": 178579,
+      "idea_id": "idea178576",
+      "filename": "idea178576-orchestrator-security",
+      "title": "idea178576 - orchestrator Security",
+      "archetype": "security",
+      "component": "orchestrator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178576-orchestrator-security.md"
+    },
+    {
+      "index": 178580,
+      "idea_id": "idea178577",
+      "filename": "idea178577-orchestrator-test-coverage",
+      "title": "idea178577 - orchestrator Test Coverage",
+      "archetype": "coverage",
+      "component": "orchestrator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178577-orchestrator-test-coverage.md"
+    },
+    {
+      "index": 178581,
+      "idea_id": "idea178578",
+      "filename": "idea178578-self-improvement-coordinator-api-consistency",
+      "title": "idea178578 - self-improvement-coordinator API Consistency",
+      "archetype": "consistency",
+      "component": "self-improvement-coordinator-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178578-self-improvement-coordinator-api-consistency.md"
+    },
+    {
+      "index": 178582,
+      "idea_id": "idea178579",
+      "filename": "idea178579-self-improvement-coordinator-migration-readiness",
+      "title": "idea178579 - self-improvement-coordinator Migration Readiness",
+      "archetype": "readiness",
+      "component": "self-improvement-coordinator-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178579-self-improvement-coordinator-migration-readiness.md"
+    },
+    {
+      "index": 178583,
+      "idea_id": "idea178580",
+      "filename": "idea178580-self-improvement-coordinator-observability",
+      "title": "idea178580 - self-improvement-coordinator Observability",
+      "archetype": "observability",
+      "component": "self-improvement-coordinator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178580-self-improvement-coordinator-observability.md"
+    },
+    {
+      "index": 178584,
+      "idea_id": "idea178581",
+      "filename": "idea178581-self-improvement-coordinator-security",
+      "title": "idea178581 - self-improvement-coordinator Security",
+      "archetype": "security",
+      "component": "self-improvement-coordinator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178581-self-improvement-coordinator-security.md"
+    },
+    {
+      "index": 178585,
+      "idea_id": "idea178582",
+      "filename": "idea178582-self-improvement-coordinator-test-coverage",
+      "title": "idea178582 - self-improvement-coordinator Test Coverage",
+      "archetype": "coverage",
+      "component": "self-improvement-coordinator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178582-self-improvement-coordinator-test-coverage.md"
+    },
+    {
+      "index": 178586,
+      "idea_id": "idea178583",
+      "filename": "idea178583-self-improvement-coordinator-py-hardening",
+      "title": "idea178583 - self-improvement-coordinator.py Hardening",
+      "archetype": "hardening",
+      "component": "self-improvement-coordinator-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178583-self-improvement-coordinator-py-hardening.md"
+    },
+    {
+      "index": 178587,
+      "idea_id": "idea178584",
+      "filename": "idea178584-self-improvement-coordinator-py-performance",
+      "title": "idea178584 - self-improvement-coordinator.py Performance",
+      "archetype": "performance",
+      "component": "self-improvement-coordinator-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178584-self-improvement-coordinator-py-performance.md"
+    },
+    {
+      "index": 178588,
+      "idea_id": "idea178585",
+      "filename": "idea178585-utils-api-consistency",
+      "title": "idea178585 - utils API Consistency",
+      "archetype": "consistency",
+      "component": "utils-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178585-utils-api-consistency.md"
+    },
+    {
+      "index": 178589,
+      "idea_id": "idea178586",
+      "filename": "idea178586-utils-migration-readiness",
+      "title": "idea178586 - utils Migration Readiness",
+      "archetype": "readiness",
+      "component": "utils-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178586-utils-migration-readiness.md"
+    },
+    {
+      "index": 178590,
+      "idea_id": "idea178587",
+      "filename": "idea178587-utils-observability",
+      "title": "idea178587 - utils Observability",
+      "archetype": "observability",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178587-utils-observability.md"
+    },
+    {
+      "index": 178591,
+      "idea_id": "idea178588",
+      "filename": "idea178588-utils-security",
+      "title": "idea178588 - utils Security",
+      "archetype": "security",
+      "component": "utils",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178588-utils-security.md"
+    },
+    {
+      "index": 178592,
+      "idea_id": "idea178589",
+      "filename": "idea178589-utils-test-coverage",
+      "title": "idea178589 - utils Test Coverage",
+      "archetype": "coverage",
+      "component": "utils-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178589-utils-test-coverage.md"
+    },
+    {
+      "index": 178593,
+      "idea_id": "idea178590",
+      "filename": "idea178590-workspace-maintenance-api-consistency",
+      "title": "idea178590 - workspace-maintenance API Consistency",
+      "archetype": "consistency",
+      "component": "workspace-maintenance-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178590-workspace-maintenance-api-consistency.md"
+    },
+    {
+      "index": 178594,
+      "idea_id": "idea178591",
+      "filename": "idea178591-workspace-maintenance-migration-readiness",
+      "title": "idea178591 - workspace-maintenance Migration Readiness",
+      "archetype": "readiness",
+      "component": "workspace-maintenance-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178591-workspace-maintenance-migration-readiness.md"
+    },
+    {
+      "index": 178595,
+      "idea_id": "idea178592",
+      "filename": "idea178592-workspace-maintenance-observability",
+      "title": "idea178592 - workspace-maintenance Observability",
+      "archetype": "observability",
+      "component": "workspace-maintenance",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178592-workspace-maintenance-observability.md"
+    },
+    {
+      "index": 178596,
+      "idea_id": "idea178593",
+      "filename": "idea178593-workspace-maintenance-security",
+      "title": "idea178593 - workspace-maintenance Security",
+      "archetype": "security",
+      "component": "workspace-maintenance",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178593-workspace-maintenance-security.md"
+    },
+    {
+      "index": 178597,
+      "idea_id": "idea178594",
+      "filename": "idea178594-workspace-maintenance-test-coverage",
+      "title": "idea178594 - workspace-maintenance Test Coverage",
+      "archetype": "coverage",
+      "component": "workspace-maintenance-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178594-workspace-maintenance-test-coverage.md"
+    },
+    {
+      "index": 178598,
+      "idea_id": "idea178595",
+      "filename": "idea178595-managers-errors-api-consistency",
+      "title": "idea178595 - managers.errors API Consistency",
+      "archetype": "consistency",
+      "component": "managers-errors-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178595-managers-errors-api-consistency.md"
+    },
+    {
+      "index": 178599,
+      "idea_id": "idea178596",
+      "filename": "idea178596-managers-errors-observability",
+      "title": "idea178596 - managers.errors Observability",
+      "archetype": "observability",
+      "component": "managers-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178596-managers-errors-observability.md"
+    },
+    {
+      "index": 178600,
+      "idea_id": "idea178597",
+      "filename": "idea178597-managers-errors-test-coverage",
+      "title": "idea178597 - managers.errors Test Coverage",
+      "archetype": "coverage",
+      "component": "managers-errors-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178597-managers-errors-test-coverage.md"
+    },
+    {
+      "index": 178601,
+      "idea_id": "idea178598",
+      "filename": "idea178598-mcp-server-errors-api-consistency",
+      "title": "idea178598 - mcp-server.errors API Consistency",
+      "archetype": "consistency",
+      "component": "mcp-server-errors-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178598-mcp-server-errors-api-consistency.md"
+    },
+    {
+      "index": 178602,
+      "idea_id": "idea178599",
+      "filename": "idea178599-mcp-server-errors-observability",
+      "title": "idea178599 - mcp-server.errors Observability",
+      "archetype": "observability",
+      "component": "mcp-server-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178599-mcp-server-errors-observability.md"
+    },
+    {
+      "index": 178603,
+      "idea_id": "idea178600",
+      "filename": "idea178600-mcp-server-errors-test-coverage",
+      "title": "idea178600 - mcp-server.errors Test Coverage",
+      "archetype": "coverage",
+      "component": "mcp-server-errors-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178600-mcp-server-errors-test-coverage.md"
+    },
+    {
+      "index": 178604,
+      "idea_id": "idea178601",
+      "filename": "idea178601-mcp-server-api-consistency",
+      "title": "idea178601 - mcp-server API Consistency",
+      "archetype": "consistency",
+      "component": "mcp-server-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178601-mcp-server-api-consistency.md"
+    },
+    {
+      "index": 178605,
+      "idea_id": "idea178602",
+      "filename": "idea178602-mcp-server-migration-readiness",
+      "title": "idea178602 - mcp-server Migration Readiness",
+      "archetype": "readiness",
+      "component": "mcp-server-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178602-mcp-server-migration-readiness.md"
+    },
+    {
+      "index": 178606,
+      "idea_id": "idea178603",
+      "filename": "idea178603-mcp-server-observability",
+      "title": "idea178603 - mcp-server Observability",
+      "archetype": "observability",
+      "component": "mcp-server",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178603-mcp-server-observability.md"
+    },
+    {
+      "index": 178607,
+      "idea_id": "idea178604",
+      "filename": "idea178604-mcp-server-security",
+      "title": "idea178604 - mcp-server Security",
+      "archetype": "security",
+      "component": "mcp-server",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178604-mcp-server-security.md"
+    },
+    {
+      "index": 178608,
+      "idea_id": "idea178605",
+      "filename": "idea178605-mcp-server-test-coverage",
+      "title": "idea178605 - mcp-server Test Coverage",
+      "archetype": "coverage",
+      "component": "mcp-server-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178605-mcp-server-test-coverage.md"
+    },
+    {
+      "index": 178609,
+      "idea_id": "idea178606",
+      "filename": "idea178606-models-errors-api-consistency",
+      "title": "idea178606 - models.errors API Consistency",
+      "archetype": "consistency",
+      "component": "models-errors-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178606-models-errors-api-consistency.md"
+    },
+    {
+      "index": 178610,
+      "idea_id": "idea178607",
+      "filename": "idea178607-models-errors-observability",
+      "title": "idea178607 - models.errors Observability",
+      "archetype": "observability",
+      "component": "models-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178607-models-errors-observability.md"
+    },
+    {
+      "index": 178611,
+      "idea_id": "idea178608",
+      "filename": "idea178608-models-errors-test-coverage",
+      "title": "idea178608 - models.errors Test Coverage",
+      "archetype": "coverage",
+      "component": "models-errors-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178608-models-errors-test-coverage.md"
+    },
+    {
+      "index": 178612,
+      "idea_id": "idea178609",
+      "filename": "idea178609-mutation-testing-errors-api-consistency",
+      "title": "idea178609 - mutation-testing.errors API Consistency",
+      "archetype": "consistency",
+      "component": "mutation-testing-errors-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178609-mutation-testing-errors-api-consistency.md"
+    },
+    {
+      "index": 178613,
+      "idea_id": "idea178610",
+      "filename": "idea178610-mutation-testing-errors-observability",
+      "title": "idea178610 - mutation-testing.errors Observability",
+      "archetype": "observability",
+      "component": "mutation-testing-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178610-mutation-testing-errors-observability.md"
+    },
+    {
+      "index": 178614,
+      "idea_id": "idea178611",
+      "filename": "idea178611-mutation-testing-errors-test-coverage",
+      "title": "idea178611 - mutation-testing.errors Test Coverage",
+      "archetype": "coverage",
+      "component": "mutation-testing-errors-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178611-mutation-testing-errors-test-coverage.md"
+    },
+    {
+      "index": 178615,
+      "idea_id": "idea178612",
+      "filename": "idea178612-structuredlogger-api-consistency",
+      "title": "idea178612 - structuredlogger API Consistency",
+      "archetype": "consistency",
+      "component": "structuredlogger-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178612-structuredlogger-api-consistency.md"
+    },
+    {
+      "index": 178616,
+      "idea_id": "idea178613",
+      "filename": "idea178613-structuredlogger-migration-readiness",
+      "title": "idea178613 - structuredlogger Migration Readiness",
+      "archetype": "readiness",
+      "component": "structuredlogger-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178613-structuredlogger-migration-readiness.md"
+    },
+    {
+      "index": 178617,
+      "idea_id": "idea178614",
+      "filename": "idea178614-structuredlogger-observability",
+      "title": "idea178614 - structuredlogger Observability",
+      "archetype": "observability",
+      "component": "structuredlogger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178614-structuredlogger-observability.md"
+    },
+    {
+      "index": 178618,
+      "idea_id": "idea178615",
+      "filename": "idea178615-structuredlogger-security",
+      "title": "idea178615 - structuredlogger Security",
+      "archetype": "security",
+      "component": "structuredlogger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178615-structuredlogger-security.md"
+    },
+    {
+      "index": 178619,
+      "idea_id": "idea178616",
+      "filename": "idea178616-structuredlogger-test-coverage",
+      "title": "idea178616 - structuredlogger Test Coverage",
+      "archetype": "coverage",
+      "component": "structuredlogger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178616-structuredlogger-test-coverage.md"
+    },
+    {
+      "index": 178620,
+      "idea_id": "idea178617",
+      "filename": "idea178617-structuredlogger-py-observability",
+      "title": "idea178617 - structuredlogger.py Observability",
+      "archetype": "observability",
+      "component": "structuredlogger-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178617-structuredlogger-py-observability.md"
+    },
+    {
+      "index": 178621,
+      "idea_id": "idea178618",
+      "filename": "idea178618-structuredlogger-py-test-coverage",
+      "title": "idea178618 - structuredlogger.py Test Coverage",
+      "archetype": "coverage",
+      "component": "structuredlogger-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178618-structuredlogger-py-test-coverage.md"
+    },
+    {
+      "index": 178622,
+      "idea_id": "idea178619",
+      "filename": "idea178619-init-api-consistency",
+      "title": "idea178619 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178619-init-api-consistency.md"
+    },
+    {
+      "index": 178623,
+      "idea_id": "idea178620",
+      "filename": "idea178620-init-migration-readiness",
+      "title": "idea178620 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178620-init-migration-readiness.md"
+    },
+    {
+      "index": 178624,
+      "idea_id": "idea178621",
+      "filename": "idea178621-init-observability",
+      "title": "idea178621 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178621-init-observability.md"
+    },
+    {
+      "index": 178625,
+      "idea_id": "idea178622",
+      "filename": "idea178622-init-security",
+      "title": "idea178622 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178622-init-security.md"
+    },
+    {
+      "index": 178626,
+      "idea_id": "idea178623",
+      "filename": "idea178623-init-test-coverage",
+      "title": "idea178623 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178623-init-test-coverage.md"
+    },
+    {
+      "index": 178627,
+      "idea_id": "idea178624",
+      "filename": "idea178624-loggingcore-api-consistency",
+      "title": "idea178624 - loggingcore API Consistency",
+      "archetype": "consistency",
+      "component": "loggingcore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178624-loggingcore-api-consistency.md"
+    },
+    {
+      "index": 178628,
+      "idea_id": "idea178625",
+      "filename": "idea178625-loggingcore-migration-readiness",
+      "title": "idea178625 - loggingcore Migration Readiness",
+      "archetype": "readiness",
+      "component": "loggingcore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178625-loggingcore-migration-readiness.md"
+    },
+    {
+      "index": 178629,
+      "idea_id": "idea178626",
+      "filename": "idea178626-loggingcore-observability",
+      "title": "idea178626 - loggingcore Observability",
+      "archetype": "observability",
+      "component": "loggingcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178626-loggingcore-observability.md"
+    },
+    {
+      "index": 178630,
+      "idea_id": "idea178627",
+      "filename": "idea178627-loggingcore-security",
+      "title": "idea178627 - loggingcore Security",
+      "archetype": "security",
+      "component": "loggingcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178627-loggingcore-security.md"
+    },
+    {
+      "index": 178631,
+      "idea_id": "idea178628",
+      "filename": "idea178628-loggingcore-test-coverage",
+      "title": "idea178628 - loggingcore Test Coverage",
+      "archetype": "coverage",
+      "component": "loggingcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178628-loggingcore-test-coverage.md"
+    },
+    {
+      "index": 178632,
+      "idea_id": "idea178629",
+      "filename": "idea178629-logging-core-api-consistency",
+      "title": "idea178629 - logging-core API Consistency",
+      "archetype": "consistency",
+      "component": "logging-core-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178629-logging-core-api-consistency.md"
+    },
+    {
+      "index": 178633,
+      "idea_id": "idea178630",
+      "filename": "idea178630-logging-core-migration-readiness",
+      "title": "idea178630 - logging-core Migration Readiness",
+      "archetype": "readiness",
+      "component": "logging-core-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178630-logging-core-migration-readiness.md"
+    },
+    {
+      "index": 178634,
+      "idea_id": "idea178631",
+      "filename": "idea178631-logging-core-observability",
+      "title": "idea178631 - logging-core Observability",
+      "archetype": "observability",
+      "component": "logging-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178631-logging-core-observability.md"
+    },
+    {
+      "index": 178635,
+      "idea_id": "idea178632",
+      "filename": "idea178632-logging-core-security",
+      "title": "idea178632 - logging-core Security",
+      "archetype": "security",
+      "component": "logging-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178632-logging-core-security.md"
+    },
+    {
+      "index": 178636,
+      "idea_id": "idea178633",
+      "filename": "idea178633-logging-core-test-coverage",
+      "title": "idea178633 - logging-core Test Coverage",
+      "archetype": "coverage",
+      "component": "logging-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178633-logging-core-test-coverage.md"
+    },
+    {
+      "index": 178637,
+      "idea_id": "idea178634",
+      "filename": "idea178634-logging-core-py-observability",
+      "title": "idea178634 - logging-core.py Observability",
+      "archetype": "observability",
+      "component": "logging-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178634-logging-core-py-observability.md"
+    },
+    {
+      "index": 178638,
+      "idea_id": "idea178635",
+      "filename": "idea178635-logging-core-py-test-coverage",
+      "title": "idea178635 - logging-core.py Test Coverage",
+      "archetype": "coverage",
+      "component": "logging-core-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178635-logging-core-py-test-coverage.md"
+    },
+    {
+      "index": 178639,
+      "idea_id": "idea178636",
+      "filename": "idea178636-errorcluster-api-consistency",
+      "title": "idea178636 - errorcluster API Consistency",
+      "archetype": "consistency",
+      "component": "errorcluster-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178636-errorcluster-api-consistency.md"
+    },
+    {
+      "index": 178640,
+      "idea_id": "idea178637",
+      "filename": "idea178637-errorcluster-migration-readiness",
+      "title": "idea178637 - errorcluster Migration Readiness",
+      "archetype": "readiness",
+      "component": "errorcluster-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178637-errorcluster-migration-readiness.md"
+    },
+    {
+      "index": 178641,
+      "idea_id": "idea178638",
+      "filename": "idea178638-errorcluster-observability",
+      "title": "idea178638 - errorcluster Observability",
+      "archetype": "observability",
+      "component": "errorcluster",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178638-errorcluster-observability.md"
+    },
+    {
+      "index": 178642,
+      "idea_id": "idea178639",
+      "filename": "idea178639-errorcluster-security",
+      "title": "idea178639 - errorcluster Security",
+      "archetype": "security",
+      "component": "errorcluster",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178639-errorcluster-security.md"
+    },
+    {
+      "index": 178643,
+      "idea_id": "idea178640",
+      "filename": "idea178640-errorcluster-test-coverage",
+      "title": "idea178640 - errorcluster Test Coverage",
+      "archetype": "coverage",
+      "component": "errorcluster-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178640-errorcluster-test-coverage.md"
+    },
+    {
+      "index": 178644,
+      "idea_id": "idea178641",
+      "filename": "idea178641-errorpattern-api-consistency",
+      "title": "idea178641 - errorpattern API Consistency",
+      "archetype": "consistency",
+      "component": "errorpattern-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178641-errorpattern-api-consistency.md"
+    },
+    {
+      "index": 178645,
+      "idea_id": "idea178642",
+      "filename": "idea178642-errorpattern-migration-readiness",
+      "title": "idea178642 - errorpattern Migration Readiness",
+      "archetype": "readiness",
+      "component": "errorpattern-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178642-errorpattern-migration-readiness.md"
+    },
+    {
+      "index": 178646,
+      "idea_id": "idea178643",
+      "filename": "idea178643-errorpattern-observability",
+      "title": "idea178643 - errorpattern Observability",
+      "archetype": "observability",
+      "component": "errorpattern",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178643-errorpattern-observability.md"
+    },
+    {
+      "index": 178647,
+      "idea_id": "idea178644",
+      "filename": "idea178644-errorpattern-security",
+      "title": "idea178644 - errorpattern Security",
+      "archetype": "security",
+      "component": "errorpattern",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178644-errorpattern-security.md"
+    },
+    {
+      "index": 178648,
+      "idea_id": "idea178645",
+      "filename": "idea178645-errorpattern-test-coverage",
+      "title": "idea178645 - errorpattern Test Coverage",
+      "archetype": "coverage",
+      "component": "errorpattern-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178645-errorpattern-test-coverage.md"
+    },
+    {
+      "index": 178649,
+      "idea_id": "idea178646",
+      "filename": "idea178646-errorseverity-api-consistency",
+      "title": "idea178646 - errorseverity API Consistency",
+      "archetype": "consistency",
+      "component": "errorseverity-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178646-errorseverity-api-consistency.md"
+    },
+    {
+      "index": 178650,
+      "idea_id": "idea178647",
+      "filename": "idea178647-errorseverity-migration-readiness",
+      "title": "idea178647 - errorseverity Migration Readiness",
+      "archetype": "readiness",
+      "component": "errorseverity-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178647-errorseverity-migration-readiness.md"
+    },
+    {
+      "index": 178651,
+      "idea_id": "idea178648",
+      "filename": "idea178648-errorseverity-observability",
+      "title": "idea178648 - errorseverity Observability",
+      "archetype": "observability",
+      "component": "errorseverity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178648-errorseverity-observability.md"
+    },
+    {
+      "index": 178652,
+      "idea_id": "idea178649",
+      "filename": "idea178649-errorseverity-security",
+      "title": "idea178649 - errorseverity Security",
+      "archetype": "security",
+      "component": "errorseverity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178649-errorseverity-security.md"
+    },
+    {
+      "index": 178653,
+      "idea_id": "idea178650",
+      "filename": "idea178650-errorseverity-test-coverage",
+      "title": "idea178650 - errorseverity Test Coverage",
+      "archetype": "coverage",
+      "component": "errorseverity-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178650-errorseverity-test-coverage.md"
+    },
+    {
+      "index": 178654,
+      "idea_id": "idea178651",
+      "filename": "idea178651-externalreporter-api-consistency",
+      "title": "idea178651 - externalreporter API Consistency",
+      "archetype": "consistency",
+      "component": "externalreporter-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178651-externalreporter-api-consistency.md"
+    },
+    {
+      "index": 178655,
+      "idea_id": "idea178652",
+      "filename": "idea178652-externalreporter-migration-readiness",
+      "title": "idea178652 - externalreporter Migration Readiness",
+      "archetype": "readiness",
+      "component": "externalreporter-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178652-externalreporter-migration-readiness.md"
+    },
+    {
+      "index": 178656,
+      "idea_id": "idea178653",
+      "filename": "idea178653-externalreporter-observability",
+      "title": "idea178653 - externalreporter Observability",
+      "archetype": "observability",
+      "component": "externalreporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178653-externalreporter-observability.md"
+    },
+    {
+      "index": 178657,
+      "idea_id": "idea178654",
+      "filename": "idea178654-externalreporter-security",
+      "title": "idea178654 - externalreporter Security",
+      "archetype": "security",
+      "component": "externalreporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178654-externalreporter-security.md"
+    },
+    {
+      "index": 178658,
+      "idea_id": "idea178655",
+      "filename": "idea178655-externalreporter-test-coverage",
+      "title": "idea178655 - externalreporter Test Coverage",
+      "archetype": "coverage",
+      "component": "externalreporter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178655-externalreporter-test-coverage.md"
+    },
+    {
+      "index": 178659,
+      "idea_id": "idea178656",
+      "filename": "idea178656-notificationchannel-api-consistency",
+      "title": "idea178656 - notificationchannel API Consistency",
+      "archetype": "consistency",
+      "component": "notificationchannel-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178656-notificationchannel-api-consistency.md"
+    },
+    {
+      "index": 178660,
+      "idea_id": "idea178657",
+      "filename": "idea178657-notificationchannel-migration-readiness",
+      "title": "idea178657 - notificationchannel Migration Readiness",
+      "archetype": "readiness",
+      "component": "notificationchannel-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178657-notificationchannel-migration-readiness.md"
+    },
+    {
+      "index": 178661,
+      "idea_id": "idea178658",
+      "filename": "idea178658-notificationchannel-observability",
+      "title": "idea178658 - notificationchannel Observability",
+      "archetype": "observability",
+      "component": "notificationchannel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178658-notificationchannel-observability.md"
+    },
+    {
+      "index": 178662,
+      "idea_id": "idea178659",
+      "filename": "idea178659-notificationchannel-security",
+      "title": "idea178659 - notificationchannel Security",
+      "archetype": "security",
+      "component": "notificationchannel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178659-notificationchannel-security.md"
+    },
+    {
+      "index": 178663,
+      "idea_id": "idea178660",
+      "filename": "idea178660-notificationchannel-test-coverage",
+      "title": "idea178660 - notificationchannel Test Coverage",
+      "archetype": "coverage",
+      "component": "notificationchannel-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178660-notificationchannel-test-coverage.md"
+    },
+    {
+      "index": 178664,
+      "idea_id": "idea178661",
+      "filename": "idea178661-notificationmanager-api-consistency",
+      "title": "idea178661 - notificationmanager API Consistency",
+      "archetype": "consistency",
+      "component": "notificationmanager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178661-notificationmanager-api-consistency.md"
+    },
+    {
+      "index": 178665,
+      "idea_id": "idea178662",
+      "filename": "idea178662-notificationmanager-migration-readiness",
+      "title": "idea178662 - notificationmanager Migration Readiness",
+      "archetype": "readiness",
+      "component": "notificationmanager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178662-notificationmanager-migration-readiness.md"
+    },
+    {
+      "index": 178666,
+      "idea_id": "idea178663",
+      "filename": "idea178663-notificationmanager-observability",
+      "title": "idea178663 - notificationmanager Observability",
+      "archetype": "observability",
+      "component": "notificationmanager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178663-notificationmanager-observability.md"
+    },
+    {
+      "index": 178667,
+      "idea_id": "idea178664",
+      "filename": "idea178664-notificationmanager-security",
+      "title": "idea178664 - notificationmanager Security",
+      "archetype": "security",
+      "component": "notificationmanager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178664-notificationmanager-security.md"
+    },
+    {
+      "index": 178668,
+      "idea_id": "idea178665",
+      "filename": "idea178665-notificationmanager-test-coverage",
+      "title": "idea178665 - notificationmanager Test Coverage",
+      "archetype": "coverage",
+      "component": "notificationmanager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178665-notificationmanager-test-coverage.md"
+    },
+    {
+      "index": 178669,
+      "idea_id": "idea178666",
+      "filename": "idea178666-suppressionrule-api-consistency",
+      "title": "idea178666 - suppressionrule API Consistency",
+      "archetype": "consistency",
+      "component": "suppressionrule-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178666-suppressionrule-api-consistency.md"
+    },
+    {
+      "index": 178670,
+      "idea_id": "idea178667",
+      "filename": "idea178667-suppressionrule-migration-readiness",
+      "title": "idea178667 - suppressionrule Migration Readiness",
+      "archetype": "readiness",
+      "component": "suppressionrule-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178667-suppressionrule-migration-readiness.md"
+    },
+    {
+      "index": 178671,
+      "idea_id": "idea178668",
+      "filename": "idea178668-suppressionrule-observability",
+      "title": "idea178668 - suppressionrule Observability",
+      "archetype": "observability",
+      "component": "suppressionrule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178668-suppressionrule-observability.md"
+    },
+    {
+      "index": 178672,
+      "idea_id": "idea178669",
+      "filename": "idea178669-suppressionrule-security",
+      "title": "idea178669 - suppressionrule Security",
+      "archetype": "security",
+      "component": "suppressionrule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178669-suppressionrule-security.md"
+    },
+    {
+      "index": 178673,
+      "idea_id": "idea178670",
+      "filename": "idea178670-suppressionrule-test-coverage",
+      "title": "idea178670 - suppressionrule Test Coverage",
+      "archetype": "coverage",
+      "component": "suppressionrule-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178670-suppressionrule-test-coverage.md"
+    },
+    {
+      "index": 178674,
+      "idea_id": "idea178671",
+      "filename": "idea178671-trenddirection-api-consistency",
+      "title": "idea178671 - trenddirection API Consistency",
+      "archetype": "consistency",
+      "component": "trenddirection-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178671-trenddirection-api-consistency.md"
+    },
+    {
+      "index": 178675,
+      "idea_id": "idea178672",
+      "filename": "idea178672-trenddirection-migration-readiness",
+      "title": "idea178672 - trenddirection Migration Readiness",
+      "archetype": "readiness",
+      "component": "trenddirection-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178672-trenddirection-migration-readiness.md"
+    },
+    {
+      "index": 178676,
+      "idea_id": "idea178673",
+      "filename": "idea178673-trenddirection-observability",
+      "title": "idea178673 - trenddirection Observability",
+      "archetype": "observability",
+      "component": "trenddirection",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178673-trenddirection-observability.md"
+    },
+    {
+      "index": 178677,
+      "idea_id": "idea178674",
+      "filename": "idea178674-trenddirection-security",
+      "title": "idea178674 - trenddirection Security",
+      "archetype": "security",
+      "component": "trenddirection",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178674-trenddirection-security.md"
+    },
+    {
+      "index": 178678,
+      "idea_id": "idea178675",
+      "filename": "idea178675-trenddirection-test-coverage",
+      "title": "idea178675 - trenddirection Test Coverage",
+      "archetype": "coverage",
+      "component": "trenddirection-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178675-trenddirection-test-coverage.md"
+    },
+    {
+      "index": 178679,
+      "idea_id": "idea178676",
+      "filename": "idea178676-init-api-consistency",
+      "title": "idea178676 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178676-init-api-consistency.md"
+    },
+    {
+      "index": 178680,
+      "idea_id": "idea178677",
+      "filename": "idea178677-init-migration-readiness",
+      "title": "idea178677 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178677-init-migration-readiness.md"
+    },
+    {
+      "index": 178681,
+      "idea_id": "idea178678",
+      "filename": "idea178678-init-observability",
+      "title": "idea178678 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178678-init-observability.md"
+    },
+    {
+      "index": 178682,
+      "idea_id": "idea178679",
+      "filename": "idea178679-init-security",
+      "title": "idea178679 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178679-init-security.md"
+    },
+    {
+      "index": 178683,
+      "idea_id": "idea178680",
+      "filename": "idea178680-init-test-coverage",
+      "title": "idea178680 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178680-init-test-coverage.md"
+    },
+    {
+      "index": 178684,
+      "idea_id": "idea178681",
+      "filename": "idea178681-init-py-observability",
+      "title": "idea178681 - --init--.py Observability",
+      "archetype": "observability",
+      "component": "init-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178681-init-py-observability.md"
+    },
+    {
+      "index": 178685,
+      "idea_id": "idea178682",
+      "filename": "idea178682-init-py-test-coverage",
+      "title": "idea178682 - --init--.py Test Coverage",
+      "archetype": "coverage",
+      "component": "init-py-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178682-init-py-test-coverage.md"
+    },
+    {
+      "index": 178686,
+      "idea_id": "idea178683",
+      "filename": "idea178683-auto-fix-suggester-api-consistency",
+      "title": "idea178683 - auto-fix-suggester API Consistency",
+      "archetype": "consistency",
+      "component": "auto-fix-suggester-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178683-auto-fix-suggester-api-consistency.md"
+    },
+    {
+      "index": 178687,
+      "idea_id": "idea178684",
+      "filename": "idea178684-auto-fix-suggester-migration-readiness",
+      "title": "idea178684 - auto-fix-suggester Migration Readiness",
+      "archetype": "readiness",
+      "component": "auto-fix-suggester-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178684-auto-fix-suggester-migration-readiness.md"
+    },
+    {
+      "index": 178688,
+      "idea_id": "idea178685",
+      "filename": "idea178685-auto-fix-suggester-observability",
+      "title": "idea178685 - auto-fix-suggester Observability",
+      "archetype": "observability",
+      "component": "auto-fix-suggester",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178685-auto-fix-suggester-observability.md"
+    },
+    {
+      "index": 178689,
+      "idea_id": "idea178686",
+      "filename": "idea178686-auto-fix-suggester-security",
+      "title": "idea178686 - auto-fix-suggester Security",
+      "archetype": "security",
+      "component": "auto-fix-suggester",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178686-auto-fix-suggester-security.md"
+    },
+    {
+      "index": 178690,
+      "idea_id": "idea178687",
+      "filename": "idea178687-auto-fix-suggester-test-coverage",
+      "title": "idea178687 - auto-fix-suggester Test Coverage",
+      "archetype": "coverage",
+      "component": "auto-fix-suggester-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178687-auto-fix-suggester-test-coverage.md"
+    },
+    {
+      "index": 178691,
+      "idea_id": "idea178688",
+      "filename": "idea178688-blame-info-api-consistency",
+      "title": "idea178688 - blame-info API Consistency",
+      "archetype": "consistency",
+      "component": "blame-info-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178688-blame-info-api-consistency.md"
+    },
+    {
+      "index": 178692,
+      "idea_id": "idea178689",
+      "filename": "idea178689-blame-info-migration-readiness",
+      "title": "idea178689 - blame-info Migration Readiness",
+      "archetype": "readiness",
+      "component": "blame-info-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178689-blame-info-migration-readiness.md"
+    },
+    {
+      "index": 178693,
+      "idea_id": "idea178690",
+      "filename": "idea178690-blame-info-observability",
+      "title": "idea178690 - blame-info Observability",
+      "archetype": "observability",
+      "component": "blame-info",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178690-blame-info-observability.md"
+    },
+    {
+      "index": 178694,
+      "idea_id": "idea178691",
+      "filename": "idea178691-blame-info-security",
+      "title": "idea178691 - blame-info Security",
+      "archetype": "security",
+      "component": "blame-info",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178691-blame-info-security.md"
+    },
+    {
+      "index": 178695,
+      "idea_id": "idea178692",
+      "filename": "idea178692-blame-info-test-coverage",
+      "title": "idea178692 - blame-info Test Coverage",
+      "archetype": "coverage",
+      "component": "blame-info-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178692-blame-info-test-coverage.md"
+    },
+    {
+      "index": 178696,
+      "idea_id": "idea178693",
+      "filename": "idea178693-blame-tracker-api-consistency",
+      "title": "idea178693 - blame-tracker API Consistency",
+      "archetype": "consistency",
+      "component": "blame-tracker-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178693-blame-tracker-api-consistency.md"
+    },
+    {
+      "index": 178697,
+      "idea_id": "idea178694",
+      "filename": "idea178694-blame-tracker-migration-readiness",
+      "title": "idea178694 - blame-tracker Migration Readiness",
+      "archetype": "readiness",
+      "component": "blame-tracker-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178694-blame-tracker-migration-readiness.md"
+    },
+    {
+      "index": 178698,
+      "idea_id": "idea178695",
+      "filename": "idea178695-blame-tracker-observability",
+      "title": "idea178695 - blame-tracker Observability",
+      "archetype": "observability",
+      "component": "blame-tracker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178695-blame-tracker-observability.md"
+    },
+    {
+      "index": 178699,
+      "idea_id": "idea178696",
+      "filename": "idea178696-blame-tracker-security",
+      "title": "idea178696 - blame-tracker Security",
+      "archetype": "security",
+      "component": "blame-tracker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178696-blame-tracker-security.md"
+    },
+    {
+      "index": 178700,
+      "idea_id": "idea178697",
+      "filename": "idea178697-blame-tracker-test-coverage",
+      "title": "idea178697 - blame-tracker Test Coverage",
+      "archetype": "coverage",
+      "component": "blame-tracker-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178697-blame-tracker-test-coverage.md"
+    },
+    {
+      "index": 178701,
+      "idea_id": "idea178698",
+      "filename": "idea178698-branch-comparer-api-consistency",
+      "title": "idea178698 - branch-comparer API Consistency",
+      "archetype": "consistency",
+      "component": "branch-comparer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178698-branch-comparer-api-consistency.md"
+    },
+    {
+      "index": 178702,
+      "idea_id": "idea178699",
+      "filename": "idea178699-branch-comparer-migration-readiness",
+      "title": "idea178699 - branch-comparer Migration Readiness",
+      "archetype": "readiness",
+      "component": "branch-comparer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178699-branch-comparer-migration-readiness.md"
+    },
+    {
+      "index": 178703,
+      "idea_id": "idea178700",
+      "filename": "idea178700-branch-comparer-observability",
+      "title": "idea178700 - branch-comparer Observability",
+      "archetype": "observability",
+      "component": "branch-comparer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178700-branch-comparer-observability.md"
+    },
+    {
+      "index": 178704,
+      "idea_id": "idea178701",
+      "filename": "idea178701-branch-comparer-security",
+      "title": "idea178701 - branch-comparer Security",
+      "archetype": "security",
+      "component": "branch-comparer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178701-branch-comparer-security.md"
+    },
+    {
+      "index": 178705,
+      "idea_id": "idea178702",
+      "filename": "idea178702-branch-comparer-test-coverage",
+      "title": "idea178702 - branch-comparer Test Coverage",
+      "archetype": "coverage",
+      "component": "branch-comparer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178702-branch-comparer-test-coverage.md"
+    },
+    {
+      "index": 178706,
+      "idea_id": "idea178703",
+      "filename": "idea178703-branch-comparison-api-consistency",
+      "title": "idea178703 - branch-comparison API Consistency",
+      "archetype": "consistency",
+      "component": "branch-comparison-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178703-branch-comparison-api-consistency.md"
+    },
+    {
+      "index": 178707,
+      "idea_id": "idea178704",
+      "filename": "idea178704-branch-comparison-migration-readiness",
+      "title": "idea178704 - branch-comparison Migration Readiness",
+      "archetype": "readiness",
+      "component": "branch-comparison-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178704-branch-comparison-migration-readiness.md"
+    },
+    {
+      "index": 178708,
+      "idea_id": "idea178705",
+      "filename": "idea178705-branch-comparison-observability",
+      "title": "idea178705 - branch-comparison Observability",
+      "archetype": "observability",
+      "component": "branch-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178705-branch-comparison-observability.md"
+    },
+    {
+      "index": 178709,
+      "idea_id": "idea178706",
+      "filename": "idea178706-branch-comparison-security",
+      "title": "idea178706 - branch-comparison Security",
+      "archetype": "security",
+      "component": "branch-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178706-branch-comparison-security.md"
+    },
+    {
+      "index": 178710,
+      "idea_id": "idea178707",
+      "filename": "idea178707-branch-comparison-test-coverage",
+      "title": "idea178707 - branch-comparison Test Coverage",
+      "archetype": "coverage",
+      "component": "branch-comparison-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178707-branch-comparison-test-coverage.md"
+    },
+    {
+      "index": 178711,
+      "idea_id": "idea178708",
+      "filename": "idea178708-error-budget-api-consistency",
+      "title": "idea178708 - error-budget API Consistency",
+      "archetype": "consistency",
+      "component": "error-budget-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178708-error-budget-api-consistency.md"
+    },
+    {
+      "index": 178712,
+      "idea_id": "idea178709",
+      "filename": "idea178709-error-budget-migration-readiness",
+      "title": "idea178709 - error-budget Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-budget-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178709-error-budget-migration-readiness.md"
+    },
+    {
+      "index": 178713,
+      "idea_id": "idea178710",
+      "filename": "idea178710-error-budget-observability",
+      "title": "idea178710 - error-budget Observability",
+      "archetype": "observability",
+      "component": "error-budget",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178710-error-budget-observability.md"
+    },
+    {
+      "index": 178714,
+      "idea_id": "idea178711",
+      "filename": "idea178711-error-budget-security",
+      "title": "idea178711 - error-budget Security",
+      "archetype": "security",
+      "component": "error-budget",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178711-error-budget-security.md"
+    },
+    {
+      "index": 178715,
+      "idea_id": "idea178712",
+      "filename": "idea178712-error-budget-test-coverage",
+      "title": "idea178712 - error-budget Test Coverage",
+      "archetype": "coverage",
+      "component": "error-budget-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178712-error-budget-test-coverage.md"
+    },
+    {
+      "index": 178716,
+      "idea_id": "idea178713",
+      "filename": "idea178713-error-budget-manager-api-consistency",
+      "title": "idea178713 - error-budget-manager API Consistency",
+      "archetype": "consistency",
+      "component": "error-budget-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178713-error-budget-manager-api-consistency.md"
+    },
+    {
+      "index": 178717,
+      "idea_id": "idea178714",
+      "filename": "idea178714-error-budget-manager-migration-readiness",
+      "title": "idea178714 - error-budget-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-budget-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178714-error-budget-manager-migration-readiness.md"
+    },
+    {
+      "index": 178718,
+      "idea_id": "idea178715",
+      "filename": "idea178715-error-budget-manager-observability",
+      "title": "idea178715 - error-budget-manager Observability",
+      "archetype": "observability",
+      "component": "error-budget-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178715-error-budget-manager-observability.md"
+    },
+    {
+      "index": 178719,
+      "idea_id": "idea178716",
+      "filename": "idea178716-error-budget-manager-security",
+      "title": "idea178716 - error-budget-manager Security",
+      "archetype": "security",
+      "component": "error-budget-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178716-error-budget-manager-security.md"
+    },
+    {
+      "index": 178720,
+      "idea_id": "idea178717",
+      "filename": "idea178717-error-budget-manager-test-coverage",
+      "title": "idea178717 - error-budget-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "error-budget-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178717-error-budget-manager-test-coverage.md"
+    },
+    {
+      "index": 178721,
+      "idea_id": "idea178718",
+      "filename": "idea178718-error-category-api-consistency",
+      "title": "idea178718 - error-category API Consistency",
+      "archetype": "consistency",
+      "component": "error-category-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178718-error-category-api-consistency.md"
+    },
+    {
+      "index": 178722,
+      "idea_id": "idea178719",
+      "filename": "idea178719-error-category-migration-readiness",
+      "title": "idea178719 - error-category Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-category-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178719-error-category-migration-readiness.md"
+    },
+    {
+      "index": 178723,
+      "idea_id": "idea178720",
+      "filename": "idea178720-error-category-observability",
+      "title": "idea178720 - error-category Observability",
+      "archetype": "observability",
+      "component": "error-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178720-error-category-observability.md"
+    },
+    {
+      "index": 178724,
+      "idea_id": "idea178721",
+      "filename": "idea178721-error-category-security",
+      "title": "idea178721 - error-category Security",
+      "archetype": "security",
+      "component": "error-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178721-error-category-security.md"
+    },
+    {
+      "index": 178725,
+      "idea_id": "idea178722",
+      "filename": "idea178722-error-category-test-coverage",
+      "title": "idea178722 - error-category Test Coverage",
+      "archetype": "coverage",
+      "component": "error-category-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178722-error-category-test-coverage.md"
+    },
+    {
+      "index": 178726,
+      "idea_id": "idea178723",
+      "filename": "idea178723-error-cluster-api-consistency",
+      "title": "idea178723 - error-cluster API Consistency",
+      "archetype": "consistency",
+      "component": "error-cluster-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178723-error-cluster-api-consistency.md"
+    },
+    {
+      "index": 178727,
+      "idea_id": "idea178724",
+      "filename": "idea178724-error-cluster-migration-readiness",
+      "title": "idea178724 - error-cluster Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-cluster-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178724-error-cluster-migration-readiness.md"
+    },
+    {
+      "index": 178728,
+      "idea_id": "idea178725",
+      "filename": "idea178725-error-cluster-observability",
+      "title": "idea178725 - error-cluster Observability",
+      "archetype": "observability",
+      "component": "error-cluster",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178725-error-cluster-observability.md"
+    },
+    {
+      "index": 178729,
+      "idea_id": "idea178726",
+      "filename": "idea178726-error-cluster-security",
+      "title": "idea178726 - error-cluster Security",
+      "archetype": "security",
+      "component": "error-cluster",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178726-error-cluster-security.md"
+    },
+    {
+      "index": 178730,
+      "idea_id": "idea178727",
+      "filename": "idea178727-error-cluster-test-coverage",
+      "title": "idea178727 - error-cluster Test Coverage",
+      "archetype": "coverage",
+      "component": "error-cluster-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178727-error-cluster-test-coverage.md"
+    },
+    {
+      "index": 178731,
+      "idea_id": "idea178728",
+      "filename": "idea178728-error-entry-api-consistency",
+      "title": "idea178728 - error-entry API Consistency",
+      "archetype": "consistency",
+      "component": "error-entry-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178728-error-entry-api-consistency.md"
+    },
+    {
+      "index": 178732,
+      "idea_id": "idea178729",
+      "filename": "idea178729-error-entry-migration-readiness",
+      "title": "idea178729 - error-entry Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-entry-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178729-error-entry-migration-readiness.md"
+    },
+    {
+      "index": 178733,
+      "idea_id": "idea178730",
+      "filename": "idea178730-error-entry-observability",
+      "title": "idea178730 - error-entry Observability",
+      "archetype": "observability",
+      "component": "error-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178730-error-entry-observability.md"
+    },
+    {
+      "index": 178734,
+      "idea_id": "idea178731",
+      "filename": "idea178731-error-entry-security",
+      "title": "idea178731 - error-entry Security",
+      "archetype": "security",
+      "component": "error-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178731-error-entry-security.md"
+    },
+    {
+      "index": 178735,
+      "idea_id": "idea178732",
+      "filename": "idea178732-error-entry-test-coverage",
+      "title": "idea178732 - error-entry Test Coverage",
+      "archetype": "coverage",
+      "component": "error-entry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178732-error-entry-test-coverage.md"
+    },
+    {
+      "index": 178736,
+      "idea_id": "idea178733",
+      "filename": "idea178733-error-handler-api-consistency",
+      "title": "idea178733 - error-handler API Consistency",
+      "archetype": "consistency",
+      "component": "error-handler-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178733-error-handler-api-consistency.md"
+    },
+    {
+      "index": 178737,
+      "idea_id": "idea178734",
+      "filename": "idea178734-error-handler-migration-readiness",
+      "title": "idea178734 - error-handler Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-handler-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178734-error-handler-migration-readiness.md"
+    },
+    {
+      "index": 178738,
+      "idea_id": "idea178735",
+      "filename": "idea178735-error-handler-observability",
+      "title": "idea178735 - error-handler Observability",
+      "archetype": "observability",
+      "component": "error-handler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178735-error-handler-observability.md"
+    },
+    {
+      "index": 178739,
+      "idea_id": "idea178736",
+      "filename": "idea178736-error-handler-security",
+      "title": "idea178736 - error-handler Security",
+      "archetype": "security",
+      "component": "error-handler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178736-error-handler-security.md"
+    },
+    {
+      "index": 178740,
+      "idea_id": "idea178737",
+      "filename": "idea178737-error-handler-test-coverage",
+      "title": "idea178737 - error-handler Test Coverage",
+      "archetype": "coverage",
+      "component": "error-handler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178737-error-handler-test-coverage.md"
+    },
+    {
+      "index": 178741,
+      "idea_id": "idea178738",
+      "filename": "idea178738-error-impact-api-consistency",
+      "title": "idea178738 - error-impact API Consistency",
+      "archetype": "consistency",
+      "component": "error-impact-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178738-error-impact-api-consistency.md"
+    },
+    {
+      "index": 178742,
+      "idea_id": "idea178739",
+      "filename": "idea178739-error-impact-migration-readiness",
+      "title": "idea178739 - error-impact Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-impact-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178739-error-impact-migration-readiness.md"
+    },
+    {
+      "index": 178743,
+      "idea_id": "idea178740",
+      "filename": "idea178740-error-impact-observability",
+      "title": "idea178740 - error-impact Observability",
+      "archetype": "observability",
+      "component": "error-impact",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178740-error-impact-observability.md"
+    },
+    {
+      "index": 178744,
+      "idea_id": "idea178741",
+      "filename": "idea178741-error-impact-security",
+      "title": "idea178741 - error-impact Security",
+      "archetype": "security",
+      "component": "error-impact",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178741-error-impact-security.md"
+    },
+    {
+      "index": 178745,
+      "idea_id": "idea178742",
+      "filename": "idea178742-error-impact-test-coverage",
+      "title": "idea178742 - error-impact Test Coverage",
+      "archetype": "coverage",
+      "component": "error-impact-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178742-error-impact-test-coverage.md"
+    },
+    {
+      "index": 178746,
+      "idea_id": "idea178743",
+      "filename": "idea178743-error-pattern-api-consistency",
+      "title": "idea178743 - error-pattern API Consistency",
+      "archetype": "consistency",
+      "component": "error-pattern-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178743-error-pattern-api-consistency.md"
+    },
+    {
+      "index": 178747,
+      "idea_id": "idea178744",
+      "filename": "idea178744-error-pattern-migration-readiness",
+      "title": "idea178744 - error-pattern Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-pattern-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178744-error-pattern-migration-readiness.md"
+    },
+    {
+      "index": 178748,
+      "idea_id": "idea178745",
+      "filename": "idea178745-error-pattern-observability",
+      "title": "idea178745 - error-pattern Observability",
+      "archetype": "observability",
+      "component": "error-pattern",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178745-error-pattern-observability.md"
+    },
+    {
+      "index": 178749,
+      "idea_id": "idea178746",
+      "filename": "idea178746-error-pattern-security",
+      "title": "idea178746 - error-pattern Security",
+      "archetype": "security",
+      "component": "error-pattern",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178746-error-pattern-security.md"
+    },
+    {
+      "index": 178750,
+      "idea_id": "idea178747",
+      "filename": "idea178747-error-pattern-test-coverage",
+      "title": "idea178747 - error-pattern Test Coverage",
+      "archetype": "coverage",
+      "component": "error-pattern-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178747-error-pattern-test-coverage.md"
+    },
+    {
+      "index": 178751,
+      "idea_id": "idea178748",
+      "filename": "idea178748-error-severity-api-consistency",
+      "title": "idea178748 - error-severity API Consistency",
+      "archetype": "consistency",
+      "component": "error-severity-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178748-error-severity-api-consistency.md"
+    },
+    {
+      "index": 178752,
+      "idea_id": "idea178749",
+      "filename": "idea178749-error-severity-migration-readiness",
+      "title": "idea178749 - error-severity Migration Readiness",
+      "archetype": "readiness",
+      "component": "error-severity-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178749-error-severity-migration-readiness.md"
+    },
+    {
+      "index": 178753,
+      "idea_id": "idea178750",
+      "filename": "idea178750-error-severity-observability",
+      "title": "idea178750 - error-severity Observability",
+      "archetype": "observability",
+      "component": "error-severity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178750-error-severity-observability.md"
+    },
+    {
+      "index": 178754,
+      "idea_id": "idea178751",
+      "filename": "idea178751-error-severity-security",
+      "title": "idea178751 - error-severity Security",
+      "archetype": "security",
+      "component": "error-severity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178751-error-severity-security.md"
+    },
+    {
+      "index": 178755,
+      "idea_id": "idea178752",
+      "filename": "idea178752-error-severity-test-coverage",
+      "title": "idea178752 - error-severity Test Coverage",
+      "archetype": "coverage",
+      "component": "error-severity-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178752-error-severity-test-coverage.md"
+    },
+    {
+      "index": 178756,
+      "idea_id": "idea178753",
+      "filename": "idea178753-errors-agent-api-consistency",
+      "title": "idea178753 - errors-agent API Consistency",
+      "archetype": "consistency",
+      "component": "errors-agent-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178753-errors-agent-api-consistency.md"
+    },
+    {
+      "index": 178757,
+      "idea_id": "idea178754",
+      "filename": "idea178754-errors-agent-migration-readiness",
+      "title": "idea178754 - errors-agent Migration Readiness",
+      "archetype": "readiness",
+      "component": "errors-agent-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178754-errors-agent-migration-readiness.md"
+    },
+    {
+      "index": 178758,
+      "idea_id": "idea178755",
+      "filename": "idea178755-errors-agent-observability",
+      "title": "idea178755 - errors-agent Observability",
+      "archetype": "observability",
+      "component": "errors-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178755-errors-agent-observability.md"
+    },
+    {
+      "index": 178759,
+      "idea_id": "idea178756",
+      "filename": "idea178756-errors-agent-security",
+      "title": "idea178756 - errors-agent Security",
+      "archetype": "security",
+      "component": "errors-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178756-errors-agent-security.md"
+    },
+    {
+      "index": 178760,
+      "idea_id": "idea178757",
+      "filename": "idea178757-errors-agent-test-coverage",
+      "title": "idea178757 - errors-agent Test Coverage",
+      "archetype": "coverage",
+      "component": "errors-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178757-errors-agent-test-coverage.md"
+    },
+    {
+      "index": 178761,
+      "idea_id": "idea178758",
+      "filename": "idea178758-errors-agent-py-hardening",
+      "title": "idea178758 - errors-agent.py Hardening",
+      "archetype": "hardening",
+      "component": "errors-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178758-errors-agent-py-hardening.md"
+    },
+    {
+      "index": 178762,
+      "idea_id": "idea178759",
+      "filename": "idea178759-errors-agent-py-performance",
+      "title": "idea178759 - errors-agent.py Performance",
+      "archetype": "performance",
+      "component": "errors-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178759-errors-agent-py-performance.md"
+    },
+    {
+      "index": 178763,
+      "idea_id": "idea178760",
+      "filename": "idea178760-external-reporter-api-consistency",
+      "title": "idea178760 - external-reporter API Consistency",
+      "archetype": "consistency",
+      "component": "external-reporter-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178760-external-reporter-api-consistency.md"
+    },
+    {
+      "index": 178764,
+      "idea_id": "idea178761",
+      "filename": "idea178761-external-reporter-migration-readiness",
+      "title": "idea178761 - external-reporter Migration Readiness",
+      "archetype": "readiness",
+      "component": "external-reporter-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178761-external-reporter-migration-readiness.md"
+    },
+    {
+      "index": 178765,
+      "idea_id": "idea178762",
+      "filename": "idea178762-external-reporter-observability",
+      "title": "idea178762 - external-reporter Observability",
+      "archetype": "observability",
+      "component": "external-reporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178762-external-reporter-observability.md"
+    },
+    {
+      "index": 178766,
+      "idea_id": "idea178763",
+      "filename": "idea178763-external-reporter-security",
+      "title": "idea178763 - external-reporter Security",
+      "archetype": "security",
+      "component": "external-reporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178763-external-reporter-security.md"
+    },
+    {
+      "index": 178767,
+      "idea_id": "idea178764",
+      "filename": "idea178764-external-reporter-test-coverage",
+      "title": "idea178764 - external-reporter Test Coverage",
+      "archetype": "coverage",
+      "component": "external-reporter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178764-external-reporter-test-coverage.md"
+    },
+    {
+      "index": 178768,
+      "idea_id": "idea178765",
+      "filename": "idea178765-external-reporting-client-api-consistency",
+      "title": "idea178765 - external-reporting-client API Consistency",
+      "archetype": "consistency",
+      "component": "external-reporting-client-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178765-external-reporting-client-api-consistency.md"
+    },
+    {
+      "index": 178769,
+      "idea_id": "idea178766",
+      "filename": "idea178766-external-reporting-client-migration-readiness",
+      "title": "idea178766 - external-reporting-client Migration Readiness",
+      "archetype": "readiness",
+      "component": "external-reporting-client-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178766-external-reporting-client-migration-readiness.md"
+    },
+    {
+      "index": 178770,
+      "idea_id": "idea178767",
+      "filename": "idea178767-external-reporting-client-observability",
+      "title": "idea178767 - external-reporting-client Observability",
+      "archetype": "observability",
+      "component": "external-reporting-client",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178767-external-reporting-client-observability.md"
+    },
+    {
+      "index": 178771,
+      "idea_id": "idea178768",
+      "filename": "idea178768-external-reporting-client-security",
+      "title": "idea178768 - external-reporting-client Security",
+      "archetype": "security",
+      "component": "external-reporting-client",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178768-external-reporting-client-security.md"
+    },
+    {
+      "index": 178772,
+      "idea_id": "idea178769",
+      "filename": "idea178769-external-reporting-client-test-coverage",
+      "title": "idea178769 - external-reporting-client Test Coverage",
+      "archetype": "coverage",
+      "component": "external-reporting-client-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178769-external-reporting-client-test-coverage.md"
+    },
+    {
+      "index": 178773,
+      "idea_id": "idea178770",
+      "filename": "idea178770-fix-suggestion-api-consistency",
+      "title": "idea178770 - fix-suggestion API Consistency",
+      "archetype": "consistency",
+      "component": "fix-suggestion-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178770-fix-suggestion-api-consistency.md"
+    },
+    {
+      "index": 178774,
+      "idea_id": "idea178771",
+      "filename": "idea178771-fix-suggestion-migration-readiness",
+      "title": "idea178771 - fix-suggestion Migration Readiness",
+      "archetype": "readiness",
+      "component": "fix-suggestion-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178771-fix-suggestion-migration-readiness.md"
+    },
+    {
+      "index": 178775,
+      "idea_id": "idea178772",
+      "filename": "idea178772-fix-suggestion-observability",
+      "title": "idea178772 - fix-suggestion Observability",
+      "archetype": "observability",
+      "component": "fix-suggestion",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178772-fix-suggestion-observability.md"
+    },
+    {
+      "index": 178776,
+      "idea_id": "idea178773",
+      "filename": "idea178773-fix-suggestion-security",
+      "title": "idea178773 - fix-suggestion Security",
+      "archetype": "security",
+      "component": "fix-suggestion",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178773-fix-suggestion-security.md"
+    },
+    {
+      "index": 178777,
+      "idea_id": "idea178774",
+      "filename": "idea178774-fix-suggestion-test-coverage",
+      "title": "idea178774 - fix-suggestion Test Coverage",
+      "archetype": "coverage",
+      "component": "fix-suggestion-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178774-fix-suggestion-test-coverage.md"
+    },
+    {
+      "index": 178778,
+      "idea_id": "idea178775",
+      "filename": "idea178775-impact-analyzer-api-consistency",
+      "title": "idea178775 - impact-analyzer API Consistency",
+      "archetype": "consistency",
+      "component": "impact-analyzer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178775-impact-analyzer-api-consistency.md"
+    },
+    {
+      "index": 178779,
+      "idea_id": "idea178776",
+      "filename": "idea178776-impact-analyzer-migration-readiness",
+      "title": "idea178776 - impact-analyzer Migration Readiness",
+      "archetype": "readiness",
+      "component": "impact-analyzer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178776-impact-analyzer-migration-readiness.md"
+    },
+    {
+      "index": 178780,
+      "idea_id": "idea178777",
+      "filename": "idea178777-impact-analyzer-observability",
+      "title": "idea178777 - impact-analyzer Observability",
+      "archetype": "observability",
+      "component": "impact-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178777-impact-analyzer-observability.md"
+    },
+    {
+      "index": 178781,
+      "idea_id": "idea178778",
+      "filename": "idea178778-impact-analyzer-security",
+      "title": "idea178778 - impact-analyzer Security",
+      "archetype": "security",
+      "component": "impact-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178778-impact-analyzer-security.md"
+    },
+    {
+      "index": 178782,
+      "idea_id": "idea178779",
+      "filename": "idea178779-impact-analyzer-test-coverage",
+      "title": "idea178779 - impact-analyzer Test Coverage",
+      "archetype": "coverage",
+      "component": "impact-analyzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178779-impact-analyzer-test-coverage.md"
+    },
+    {
+      "index": 178783,
+      "idea_id": "idea178780",
+      "filename": "idea178780-notification-channel-api-consistency",
+      "title": "idea178780 - notification-channel API Consistency",
+      "archetype": "consistency",
+      "component": "notification-channel-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178780-notification-channel-api-consistency.md"
+    },
+    {
+      "index": 178784,
+      "idea_id": "idea178781",
+      "filename": "idea178781-notification-channel-migration-readiness",
+      "title": "idea178781 - notification-channel Migration Readiness",
+      "archetype": "readiness",
+      "component": "notification-channel-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178781-notification-channel-migration-readiness.md"
+    },
+    {
+      "index": 178785,
+      "idea_id": "idea178782",
+      "filename": "idea178782-notification-channel-observability",
+      "title": "idea178782 - notification-channel Observability",
+      "archetype": "observability",
+      "component": "notification-channel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178782-notification-channel-observability.md"
+    },
+    {
+      "index": 178786,
+      "idea_id": "idea178783",
+      "filename": "idea178783-notification-channel-security",
+      "title": "idea178783 - notification-channel Security",
+      "archetype": "security",
+      "component": "notification-channel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178783-notification-channel-security.md"
+    },
+    {
+      "index": 178787,
+      "idea_id": "idea178784",
+      "filename": "idea178784-notification-channel-test-coverage",
+      "title": "idea178784 - notification-channel Test Coverage",
+      "archetype": "coverage",
+      "component": "notification-channel-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178784-notification-channel-test-coverage.md"
+    },
+    {
+      "index": 178788,
+      "idea_id": "idea178785",
+      "filename": "idea178785-notification-config-api-consistency",
+      "title": "idea178785 - notification-config API Consistency",
+      "archetype": "consistency",
+      "component": "notification-config-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178785-notification-config-api-consistency.md"
+    },
+    {
+      "index": 178789,
+      "idea_id": "idea178786",
+      "filename": "idea178786-notification-config-migration-readiness",
+      "title": "idea178786 - notification-config Migration Readiness",
+      "archetype": "readiness",
+      "component": "notification-config-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178786-notification-config-migration-readiness.md"
+    },
+    {
+      "index": 178790,
+      "idea_id": "idea178787",
+      "filename": "idea178787-notification-config-observability",
+      "title": "idea178787 - notification-config Observability",
+      "archetype": "observability",
+      "component": "notification-config",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178787-notification-config-observability.md"
+    },
+    {
+      "index": 178791,
+      "idea_id": "idea178788",
+      "filename": "idea178788-notification-config-security",
+      "title": "idea178788 - notification-config Security",
+      "archetype": "security",
+      "component": "notification-config",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178788-notification-config-security.md"
+    },
+    {
+      "index": 178792,
+      "idea_id": "idea178789",
+      "filename": "idea178789-notification-config-test-coverage",
+      "title": "idea178789 - notification-config Test Coverage",
+      "archetype": "coverage",
+      "component": "notification-config-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178789-notification-config-test-coverage.md"
+    },
+    {
+      "index": 178793,
+      "idea_id": "idea178790",
+      "filename": "idea178790-notification-manager-api-consistency",
+      "title": "idea178790 - notification-manager API Consistency",
+      "archetype": "consistency",
+      "component": "notification-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178790-notification-manager-api-consistency.md"
+    },
+    {
+      "index": 178794,
+      "idea_id": "idea178791",
+      "filename": "idea178791-notification-manager-migration-readiness",
+      "title": "idea178791 - notification-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "notification-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178791-notification-manager-migration-readiness.md"
+    },
+    {
+      "index": 178795,
+      "idea_id": "idea178792",
+      "filename": "idea178792-notification-manager-observability",
+      "title": "idea178792 - notification-manager Observability",
+      "archetype": "observability",
+      "component": "notification-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178792-notification-manager-observability.md"
+    },
+    {
+      "index": 178796,
+      "idea_id": "idea178793",
+      "filename": "idea178793-notification-manager-security",
+      "title": "idea178793 - notification-manager Security",
+      "archetype": "security",
+      "component": "notification-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178793-notification-manager-security.md"
+    },
+    {
+      "index": 178797,
+      "idea_id": "idea178794",
+      "filename": "idea178794-notification-manager-test-coverage",
+      "title": "idea178794 - notification-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "notification-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178794-notification-manager-test-coverage.md"
+    },
+    {
+      "index": 178798,
+      "idea_id": "idea178795",
+      "filename": "idea178795-regression-detector-api-consistency",
+      "title": "idea178795 - regression-detector API Consistency",
+      "archetype": "consistency",
+      "component": "regression-detector-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178795-regression-detector-api-consistency.md"
+    },
+    {
+      "index": 178799,
+      "idea_id": "idea178796",
+      "filename": "idea178796-regression-detector-migration-readiness",
+      "title": "idea178796 - regression-detector Migration Readiness",
+      "archetype": "readiness",
+      "component": "regression-detector-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178796-regression-detector-migration-readiness.md"
+    },
+    {
+      "index": 178800,
+      "idea_id": "idea178797",
+      "filename": "idea178797-regression-detector-observability",
+      "title": "idea178797 - regression-detector Observability",
+      "archetype": "observability",
+      "component": "regression-detector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178797-regression-detector-observability.md"
+    },
+    {
+      "index": 178801,
+      "idea_id": "idea178798",
+      "filename": "idea178798-regression-detector-security",
+      "title": "idea178798 - regression-detector Security",
+      "archetype": "security",
+      "component": "regression-detector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178798-regression-detector-security.md"
+    },
+    {
+      "index": 178802,
+      "idea_id": "idea178799",
+      "filename": "idea178799-regression-detector-test-coverage",
+      "title": "idea178799 - regression-detector Test Coverage",
+      "archetype": "coverage",
+      "component": "regression-detector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178799-regression-detector-test-coverage.md"
+    },
+    {
+      "index": 178803,
+      "idea_id": "idea178800",
+      "filename": "idea178800-regression-info-api-consistency",
+      "title": "idea178800 - regression-info API Consistency",
+      "archetype": "consistency",
+      "component": "regression-info-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178800-regression-info-api-consistency.md"
+    },
+    {
+      "index": 178804,
+      "idea_id": "idea178801",
+      "filename": "idea178801-regression-info-migration-readiness",
+      "title": "idea178801 - regression-info Migration Readiness",
+      "archetype": "readiness",
+      "component": "regression-info-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178801-regression-info-migration-readiness.md"
+    },
+    {
+      "index": 178805,
+      "idea_id": "idea178802",
+      "filename": "idea178802-regression-info-observability",
+      "title": "idea178802 - regression-info Observability",
+      "archetype": "observability",
+      "component": "regression-info",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178802-regression-info-observability.md"
+    },
+    {
+      "index": 178806,
+      "idea_id": "idea178803",
+      "filename": "idea178803-regression-info-security",
+      "title": "idea178803 - regression-info Security",
+      "archetype": "security",
+      "component": "regression-info",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178803-regression-info-security.md"
+    },
+    {
+      "index": 178807,
+      "idea_id": "idea178804",
+      "filename": "idea178804-regression-info-test-coverage",
+      "title": "idea178804 - regression-info Test Coverage",
+      "archetype": "coverage",
+      "component": "regression-info-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178804-regression-info-test-coverage.md"
+    },
+    {
+      "index": 178808,
+      "idea_id": "idea178805",
+      "filename": "idea178805-suppression-rule-api-consistency",
+      "title": "idea178805 - suppression-rule API Consistency",
+      "archetype": "consistency",
+      "component": "suppression-rule-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178805-suppression-rule-api-consistency.md"
+    },
+    {
+      "index": 178809,
+      "idea_id": "idea178806",
+      "filename": "idea178806-suppression-rule-migration-readiness",
+      "title": "idea178806 - suppression-rule Migration Readiness",
+      "archetype": "readiness",
+      "component": "suppression-rule-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178806-suppression-rule-migration-readiness.md"
+    },
+    {
+      "index": 178810,
+      "idea_id": "idea178807",
+      "filename": "idea178807-suppression-rule-observability",
+      "title": "idea178807 - suppression-rule Observability",
+      "archetype": "observability",
+      "component": "suppression-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178807-suppression-rule-observability.md"
+    },
+    {
+      "index": 178811,
+      "idea_id": "idea178808",
+      "filename": "idea178808-suppression-rule-security",
+      "title": "idea178808 - suppression-rule Security",
+      "archetype": "security",
+      "component": "suppression-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178808-suppression-rule-security.md"
+    },
+    {
+      "index": 178812,
+      "idea_id": "idea178809",
+      "filename": "idea178809-suppression-rule-test-coverage",
+      "title": "idea178809 - suppression-rule Test Coverage",
+      "archetype": "coverage",
+      "component": "suppression-rule-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178809-suppression-rule-test-coverage.md"
+    },
+    {
+      "index": 178813,
+      "idea_id": "idea178810",
+      "filename": "idea178810-timeline-event-api-consistency",
+      "title": "idea178810 - timeline-event API Consistency",
+      "archetype": "consistency",
+      "component": "timeline-event-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178810-timeline-event-api-consistency.md"
+    },
+    {
+      "index": 178814,
+      "idea_id": "idea178811",
+      "filename": "idea178811-timeline-event-migration-readiness",
+      "title": "idea178811 - timeline-event Migration Readiness",
+      "archetype": "readiness",
+      "component": "timeline-event-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178811-timeline-event-migration-readiness.md"
+    },
+    {
+      "index": 178815,
+      "idea_id": "idea178812",
+      "filename": "idea178812-timeline-event-observability",
+      "title": "idea178812 - timeline-event Observability",
+      "archetype": "observability",
+      "component": "timeline-event",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178812-timeline-event-observability.md"
+    },
+    {
+      "index": 178816,
+      "idea_id": "idea178813",
+      "filename": "idea178813-timeline-event-security",
+      "title": "idea178813 - timeline-event Security",
+      "archetype": "security",
+      "component": "timeline-event",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178813-timeline-event-security.md"
+    },
+    {
+      "index": 178817,
+      "idea_id": "idea178814",
+      "filename": "idea178814-timeline-event-test-coverage",
+      "title": "idea178814 - timeline-event Test Coverage",
+      "archetype": "coverage",
+      "component": "timeline-event-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178814-timeline-event-test-coverage.md"
+    },
+    {
+      "index": 178818,
+      "idea_id": "idea178815",
+      "filename": "idea178815-timeline-tracker-api-consistency",
+      "title": "idea178815 - timeline-tracker API Consistency",
+      "archetype": "consistency",
+      "component": "timeline-tracker-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178815-timeline-tracker-api-consistency.md"
+    },
+    {
+      "index": 178819,
+      "idea_id": "idea178816",
+      "filename": "idea178816-timeline-tracker-migration-readiness",
+      "title": "idea178816 - timeline-tracker Migration Readiness",
+      "archetype": "readiness",
+      "component": "timeline-tracker-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178816-timeline-tracker-migration-readiness.md"
+    },
+    {
+      "index": 178820,
+      "idea_id": "idea178817",
+      "filename": "idea178817-timeline-tracker-observability",
+      "title": "idea178817 - timeline-tracker Observability",
+      "archetype": "observability",
+      "component": "timeline-tracker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178817-timeline-tracker-observability.md"
+    },
+    {
+      "index": 178821,
+      "idea_id": "idea178818",
+      "filename": "idea178818-timeline-tracker-security",
+      "title": "idea178818 - timeline-tracker Security",
+      "archetype": "security",
+      "component": "timeline-tracker",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178818-timeline-tracker-security.md"
+    },
+    {
+      "index": 178822,
+      "idea_id": "idea178819",
+      "filename": "idea178819-timeline-tracker-test-coverage",
+      "title": "idea178819 - timeline-tracker Test Coverage",
+      "archetype": "coverage",
+      "component": "timeline-tracker-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178819-timeline-tracker-test-coverage.md"
+    },
+    {
+      "index": 178823,
+      "idea_id": "idea178820",
+      "filename": "idea178820-trend-analyzer-api-consistency",
+      "title": "idea178820 - trend-analyzer API Consistency",
+      "archetype": "consistency",
+      "component": "trend-analyzer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178820-trend-analyzer-api-consistency.md"
+    },
+    {
+      "index": 178824,
+      "idea_id": "idea178821",
+      "filename": "idea178821-trend-analyzer-migration-readiness",
+      "title": "idea178821 - trend-analyzer Migration Readiness",
+      "archetype": "readiness",
+      "component": "trend-analyzer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178821-trend-analyzer-migration-readiness.md"
+    },
+    {
+      "index": 178825,
+      "idea_id": "idea178822",
+      "filename": "idea178822-trend-analyzer-observability",
+      "title": "idea178822 - trend-analyzer Observability",
+      "archetype": "observability",
+      "component": "trend-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178822-trend-analyzer-observability.md"
+    },
+    {
+      "index": 178826,
+      "idea_id": "idea178823",
+      "filename": "idea178823-trend-analyzer-security",
+      "title": "idea178823 - trend-analyzer Security",
+      "archetype": "security",
+      "component": "trend-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178823-trend-analyzer-security.md"
+    },
+    {
+      "index": 178827,
+      "idea_id": "idea178824",
+      "filename": "idea178824-trend-analyzer-test-coverage",
+      "title": "idea178824 - trend-analyzer Test Coverage",
+      "archetype": "coverage",
+      "component": "trend-analyzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178824-trend-analyzer-test-coverage.md"
+    },
+    {
+      "index": 178828,
+      "idea_id": "idea178825",
+      "filename": "idea178825-trend-data-api-consistency",
+      "title": "idea178825 - trend-data API Consistency",
+      "archetype": "consistency",
+      "component": "trend-data-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178825-trend-data-api-consistency.md"
+    },
+    {
+      "index": 178829,
+      "idea_id": "idea178826",
+      "filename": "idea178826-trend-data-migration-readiness",
+      "title": "idea178826 - trend-data Migration Readiness",
+      "archetype": "readiness",
+      "component": "trend-data-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178826-trend-data-migration-readiness.md"
+    },
+    {
+      "index": 178830,
+      "idea_id": "idea178827",
+      "filename": "idea178827-trend-data-observability",
+      "title": "idea178827 - trend-data Observability",
+      "archetype": "observability",
+      "component": "trend-data",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178827-trend-data-observability.md"
+    },
+    {
+      "index": 178831,
+      "idea_id": "idea178828",
+      "filename": "idea178828-trend-data-security",
+      "title": "idea178828 - trend-data Security",
+      "archetype": "security",
+      "component": "trend-data",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178828-trend-data-security.md"
+    },
+    {
+      "index": 178832,
+      "idea_id": "idea178829",
+      "filename": "idea178829-trend-data-test-coverage",
+      "title": "idea178829 - trend-data Test Coverage",
+      "archetype": "coverage",
+      "component": "trend-data-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178829-trend-data-test-coverage.md"
+    },
+    {
+      "index": 178833,
+      "idea_id": "idea178830",
+      "filename": "idea178830-trend-direction-api-consistency",
+      "title": "idea178830 - trend-direction API Consistency",
+      "archetype": "consistency",
+      "component": "trend-direction-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178830-trend-direction-api-consistency.md"
+    },
+    {
+      "index": 178834,
+      "idea_id": "idea178831",
+      "filename": "idea178831-trend-direction-migration-readiness",
+      "title": "idea178831 - trend-direction Migration Readiness",
+      "archetype": "readiness",
+      "component": "trend-direction-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178831-trend-direction-migration-readiness.md"
+    },
+    {
+      "index": 178835,
+      "idea_id": "idea178832",
+      "filename": "idea178832-trend-direction-observability",
+      "title": "idea178832 - trend-direction Observability",
+      "archetype": "observability",
+      "component": "trend-direction",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178832-trend-direction-observability.md"
+    },
+    {
+      "index": 178836,
+      "idea_id": "idea178833",
+      "filename": "idea178833-trend-direction-security",
+      "title": "idea178833 - trend-direction Security",
+      "archetype": "security",
+      "component": "trend-direction",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178833-trend-direction-security.md"
+    },
+    {
+      "index": 178837,
+      "idea_id": "idea178834",
+      "filename": "idea178834-trend-direction-test-coverage",
+      "title": "idea178834 - trend-direction Test Coverage",
+      "archetype": "coverage",
+      "component": "trend-direction-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178834-trend-direction-test-coverage.md"
+    },
+    {
+      "index": 178838,
+      "idea_id": "idea178835",
+      "filename": "idea178835-analysistooltype-api-consistency",
+      "title": "idea178835 - analysistooltype API Consistency",
+      "archetype": "consistency",
+      "component": "analysistooltype-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178835-analysistooltype-api-consistency.md"
+    },
+    {
+      "index": 178839,
+      "idea_id": "idea178836",
+      "filename": "idea178836-analysistooltype-migration-readiness",
+      "title": "idea178836 - analysistooltype Migration Readiness",
+      "archetype": "readiness",
+      "component": "analysistooltype-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178836-analysistooltype-migration-readiness.md"
+    },
+    {
+      "index": 178840,
+      "idea_id": "idea178837",
+      "filename": "idea178837-analysistooltype-observability",
+      "title": "idea178837 - analysistooltype Observability",
+      "archetype": "observability",
+      "component": "analysistooltype",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178837-analysistooltype-observability.md"
+    },
+    {
+      "index": 178841,
+      "idea_id": "idea178838",
+      "filename": "idea178838-analysistooltype-security",
+      "title": "idea178838 - analysistooltype Security",
+      "archetype": "security",
+      "component": "analysistooltype",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178838-analysistooltype-security.md"
+    },
+    {
+      "index": 178842,
+      "idea_id": "idea178839",
+      "filename": "idea178839-analysistooltype-test-coverage",
+      "title": "idea178839 - analysistooltype Test Coverage",
+      "archetype": "coverage",
+      "component": "analysistooltype-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178839-analysistooltype-test-coverage.md"
+    },
+    {
+      "index": 178843,
+      "idea_id": "idea178840",
+      "filename": "idea178840-branchcomparisonstatus-api-consistency",
+      "title": "idea178840 - branchcomparisonstatus API Consistency",
+      "archetype": "consistency",
+      "component": "branchcomparisonstatus-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178840-branchcomparisonstatus-api-consistency.md"
+    },
+    {
+      "index": 178844,
+      "idea_id": "idea178841",
+      "filename": "idea178841-branchcomparisonstatus-migration-readiness",
+      "title": "idea178841 - branchcomparisonstatus Migration Readiness",
+      "archetype": "readiness",
+      "component": "branchcomparisonstatus-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178841-branchcomparisonstatus-migration-readiness.md"
+    },
+    {
+      "index": 178845,
+      "idea_id": "idea178842",
+      "filename": "idea178842-branchcomparisonstatus-observability",
+      "title": "idea178842 - branchcomparisonstatus Observability",
+      "archetype": "observability",
+      "component": "branchcomparisonstatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178842-branchcomparisonstatus-observability.md"
+    },
+    {
+      "index": 178846,
+      "idea_id": "idea178843",
+      "filename": "idea178843-branchcomparisonstatus-security",
+      "title": "idea178843 - branchcomparisonstatus Security",
+      "archetype": "security",
+      "component": "branchcomparisonstatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178843-branchcomparisonstatus-security.md"
+    },
+    {
+      "index": 178847,
+      "idea_id": "idea178844",
+      "filename": "idea178844-branchcomparisonstatus-test-coverage",
+      "title": "idea178844 - branchcomparisonstatus Test Coverage",
+      "archetype": "coverage",
+      "component": "branchcomparisonstatus-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178844-branchcomparisonstatus-test-coverage.md"
+    },
+    {
+      "index": 178848,
+      "idea_id": "idea178845",
+      "filename": "idea178845-bulkoperationresult-api-consistency",
+      "title": "idea178845 - bulkoperationresult API Consistency",
+      "archetype": "consistency",
+      "component": "bulkoperationresult-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178845-bulkoperationresult-api-consistency.md"
+    },
+    {
+      "index": 178849,
+      "idea_id": "idea178846",
+      "filename": "idea178846-bulkoperationresult-migration-readiness",
+      "title": "idea178846 - bulkoperationresult Migration Readiness",
+      "archetype": "readiness",
+      "component": "bulkoperationresult-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178846-bulkoperationresult-migration-readiness.md"
+    },
+    {
+      "index": 178850,
+      "idea_id": "idea178847",
+      "filename": "idea178847-bulkoperationresult-observability",
+      "title": "idea178847 - bulkoperationresult Observability",
+      "archetype": "observability",
+      "component": "bulkoperationresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178847-bulkoperationresult-observability.md"
+    },
+    {
+      "index": 178851,
+      "idea_id": "idea178848",
+      "filename": "idea178848-bulkoperationresult-security",
+      "title": "idea178848 - bulkoperationresult Security",
+      "archetype": "security",
+      "component": "bulkoperationresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178848-bulkoperationresult-security.md"
+    },
+    {
+      "index": 178852,
+      "idea_id": "idea178849",
+      "filename": "idea178849-bulkoperationresult-test-coverage",
+      "title": "idea178849 - bulkoperationresult Test Coverage",
+      "archetype": "coverage",
+      "component": "bulkoperationresult-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178849-bulkoperationresult-test-coverage.md"
+    },
+    {
+      "index": 178853,
+      "idea_id": "idea178850",
+      "filename": "idea178850-completiontrend-api-consistency",
+      "title": "idea178850 - completiontrend API Consistency",
+      "archetype": "consistency",
+      "component": "completiontrend-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178850-completiontrend-api-consistency.md"
+    },
+    {
+      "index": 178854,
+      "idea_id": "idea178851",
+      "filename": "idea178851-completiontrend-migration-readiness",
+      "title": "idea178851 - completiontrend Migration Readiness",
+      "archetype": "readiness",
+      "component": "completiontrend-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178851-completiontrend-migration-readiness.md"
+    },
+    {
+      "index": 178855,
+      "idea_id": "idea178852",
+      "filename": "idea178852-completiontrend-observability",
+      "title": "idea178852 - completiontrend Observability",
+      "archetype": "observability",
+      "component": "completiontrend",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178852-completiontrend-observability.md"
+    },
+    {
+      "index": 178856,
+      "idea_id": "idea178853",
+      "filename": "idea178853-completiontrend-security",
+      "title": "idea178853 - completiontrend Security",
+      "archetype": "security",
+      "component": "completiontrend",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178853-completiontrend-security.md"
+    },
+    {
+      "index": 178857,
+      "idea_id": "idea178854",
+      "filename": "idea178854-completiontrend-test-coverage",
+      "title": "idea178854 - completiontrend Test Coverage",
+      "archetype": "coverage",
+      "component": "completiontrend-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178854-completiontrend-test-coverage.md"
+    },
+    {
+      "index": 178858,
+      "idea_id": "idea178855",
+      "filename": "idea178855-effortestimate-api-consistency",
+      "title": "idea178855 - effortestimate API Consistency",
+      "archetype": "consistency",
+      "component": "effortestimate-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178855-effortestimate-api-consistency.md"
+    },
+    {
+      "index": 178859,
+      "idea_id": "idea178856",
+      "filename": "idea178856-effortestimate-migration-readiness",
+      "title": "idea178856 - effortestimate Migration Readiness",
+      "archetype": "readiness",
+      "component": "effortestimate-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178856-effortestimate-migration-readiness.md"
+    },
+    {
+      "index": 178860,
+      "idea_id": "idea178857",
+      "filename": "idea178857-effortestimate-observability",
+      "title": "idea178857 - effortestimate Observability",
+      "archetype": "observability",
+      "component": "effortestimate",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178857-effortestimate-observability.md"
+    },
+    {
+      "index": 178861,
+      "idea_id": "idea178858",
+      "filename": "idea178858-effortestimate-security",
+      "title": "idea178858 - effortestimate Security",
+      "archetype": "security",
+      "component": "effortestimate",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178858-effortestimate-security.md"
+    },
+    {
+      "index": 178862,
+      "idea_id": "idea178859",
+      "filename": "idea178859-effortestimate-test-coverage",
+      "title": "idea178859 - effortestimate Test Coverage",
+      "archetype": "coverage",
+      "component": "effortestimate-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178859-effortestimate-test-coverage.md"
+    },
+    {
+      "index": 178863,
+      "idea_id": "idea178860",
+      "filename": "idea178860-effortestimateresult-api-consistency",
+      "title": "idea178860 - effortestimateresult API Consistency",
+      "archetype": "consistency",
+      "component": "effortestimateresult-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178860-effortestimateresult-api-consistency.md"
+    },
+    {
+      "index": 178864,
+      "idea_id": "idea178861",
+      "filename": "idea178861-effortestimateresult-migration-readiness",
+      "title": "idea178861 - effortestimateresult Migration Readiness",
+      "archetype": "readiness",
+      "component": "effortestimateresult-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178861-effortestimateresult-migration-readiness.md"
+    },
+    {
+      "index": 178865,
+      "idea_id": "idea178862",
+      "filename": "idea178862-effortestimateresult-observability",
+      "title": "idea178862 - effortestimateresult Observability",
+      "archetype": "observability",
+      "component": "effortestimateresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178862-effortestimateresult-observability.md"
+    },
+    {
+      "index": 178866,
+      "idea_id": "idea178863",
+      "filename": "idea178863-effortestimateresult-security",
+      "title": "idea178863 - effortestimateresult Security",
+      "archetype": "security",
+      "component": "effortestimateresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178863-effortestimateresult-security.md"
+    },
+    {
+      "index": 178867,
+      "idea_id": "idea178864",
+      "filename": "idea178864-effortestimateresult-test-coverage",
+      "title": "idea178864 - effortestimateresult Test Coverage",
+      "archetype": "coverage",
+      "component": "effortestimateresult-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178864-effortestimateresult-test-coverage.md"
+    },
+    {
+      "index": 178868,
+      "idea_id": "idea178865",
+      "filename": "idea178865-improvementpriority-api-consistency",
+      "title": "idea178865 - improvementpriority API Consistency",
+      "archetype": "consistency",
+      "component": "improvementpriority-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178865-improvementpriority-api-consistency.md"
+    },
+    {
+      "index": 178869,
+      "idea_id": "idea178866",
+      "filename": "idea178866-improvementpriority-migration-readiness",
+      "title": "idea178866 - improvementpriority Migration Readiness",
+      "archetype": "readiness",
+      "component": "improvementpriority-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178866-improvementpriority-migration-readiness.md"
+    },
+    {
+      "index": 178870,
+      "idea_id": "idea178867",
+      "filename": "idea178867-improvementpriority-observability",
+      "title": "idea178867 - improvementpriority Observability",
+      "archetype": "observability",
+      "component": "improvementpriority",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178867-improvementpriority-observability.md"
+    },
+    {
+      "index": 178871,
+      "idea_id": "idea178868",
+      "filename": "idea178868-improvementpriority-security",
+      "title": "idea178868 - improvementpriority Security",
+      "archetype": "security",
+      "component": "improvementpriority",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178868-improvementpriority-security.md"
+    },
+    {
+      "index": 178872,
+      "idea_id": "idea178869",
+      "filename": "idea178869-improvementpriority-test-coverage",
+      "title": "idea178869 - improvementpriority Test Coverage",
+      "archetype": "coverage",
+      "component": "improvementpriority-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178869-improvementpriority-test-coverage.md"
+    },
+    {
+      "index": 178873,
+      "idea_id": "idea178870",
+      "filename": "idea178870-improvementstatus-api-consistency",
+      "title": "idea178870 - improvementstatus API Consistency",
+      "archetype": "consistency",
+      "component": "improvementstatus-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178870-improvementstatus-api-consistency.md"
+    },
+    {
+      "index": 178874,
+      "idea_id": "idea178871",
+      "filename": "idea178871-improvementstatus-migration-readiness",
+      "title": "idea178871 - improvementstatus Migration Readiness",
+      "archetype": "readiness",
+      "component": "improvementstatus-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178871-improvementstatus-migration-readiness.md"
+    },
+    {
+      "index": 178875,
+      "idea_id": "idea178872",
+      "filename": "idea178872-improvementstatus-observability",
+      "title": "idea178872 - improvementstatus Observability",
+      "archetype": "observability",
+      "component": "improvementstatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178872-improvementstatus-observability.md"
+    },
+    {
+      "index": 178876,
+      "idea_id": "idea178873",
+      "filename": "idea178873-improvementstatus-security",
+      "title": "idea178873 - improvementstatus Security",
+      "archetype": "security",
+      "component": "improvementstatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178873-improvementstatus-security.md"
+    },
+    {
+      "index": 178877,
+      "idea_id": "idea178874",
+      "filename": "idea178874-improvementstatus-test-coverage",
+      "title": "idea178874 - improvementstatus Test Coverage",
+      "archetype": "coverage",
+      "component": "improvementstatus-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178874-improvementstatus-test-coverage.md"
+    },
+    {
+      "index": 178878,
+      "idea_id": "idea178875",
+      "filename": "idea178875-notificationmanager-api-consistency",
+      "title": "idea178875 - notificationmanager API Consistency",
+      "archetype": "consistency",
+      "component": "notificationmanager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178875-notificationmanager-api-consistency.md"
+    },
+    {
+      "index": 178879,
+      "idea_id": "idea178876",
+      "filename": "idea178876-notificationmanager-migration-readiness",
+      "title": "idea178876 - notificationmanager Migration Readiness",
+      "archetype": "readiness",
+      "component": "notificationmanager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178876-notificationmanager-migration-readiness.md"
+    },
+    {
+      "index": 178880,
+      "idea_id": "idea178877",
+      "filename": "idea178877-notificationmanager-observability",
+      "title": "idea178877 - notificationmanager Observability",
+      "archetype": "observability",
+      "component": "notificationmanager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178877-notificationmanager-observability.md"
+    },
+    {
+      "index": 178881,
+      "idea_id": "idea178878",
+      "filename": "idea178878-notificationmanager-security",
+      "title": "idea178878 - notificationmanager Security",
+      "archetype": "security",
+      "component": "notificationmanager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178878-notificationmanager-security.md"
+    },
+    {
+      "index": 178882,
+      "idea_id": "idea178879",
+      "filename": "idea178879-notificationmanager-test-coverage",
+      "title": "idea178879 - notificationmanager Test Coverage",
+      "archetype": "coverage",
+      "component": "notificationmanager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178879-notificationmanager-test-coverage.md"
+    },
+    {
+      "index": 178883,
+      "idea_id": "idea178880",
+      "filename": "idea178880-resourceallocation-api-consistency",
+      "title": "idea178880 - resourceallocation API Consistency",
+      "archetype": "consistency",
+      "component": "resourceallocation-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178880-resourceallocation-api-consistency.md"
+    },
+    {
+      "index": 178884,
+      "idea_id": "idea178881",
+      "filename": "idea178881-resourceallocation-migration-readiness",
+      "title": "idea178881 - resourceallocation Migration Readiness",
+      "archetype": "readiness",
+      "component": "resourceallocation-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178881-resourceallocation-migration-readiness.md"
+    },
+    {
+      "index": 178885,
+      "idea_id": "idea178882",
+      "filename": "idea178882-resourceallocation-observability",
+      "title": "idea178882 - resourceallocation Observability",
+      "archetype": "observability",
+      "component": "resourceallocation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178882-resourceallocation-observability.md"
+    },
+    {
+      "index": 178886,
+      "idea_id": "idea178883",
+      "filename": "idea178883-resourceallocation-security",
+      "title": "idea178883 - resourceallocation Security",
+      "archetype": "security",
+      "component": "resourceallocation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178883-resourceallocation-security.md"
+    },
+    {
+      "index": 178887,
+      "idea_id": "idea178884",
+      "filename": "idea178884-resourceallocation-test-coverage",
+      "title": "idea178884 - resourceallocation Test Coverage",
+      "archetype": "coverage",
+      "component": "resourceallocation-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178884-resourceallocation-test-coverage.md"
+    },
+    {
+      "index": 178888,
+      "idea_id": "idea178885",
+      "filename": "idea178885-rollbackpoint-api-consistency",
+      "title": "idea178885 - rollbackpoint API Consistency",
+      "archetype": "consistency",
+      "component": "rollbackpoint-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178885-rollbackpoint-api-consistency.md"
+    },
+    {
+      "index": 178889,
+      "idea_id": "idea178886",
+      "filename": "idea178886-rollbackpoint-migration-readiness",
+      "title": "idea178886 - rollbackpoint Migration Readiness",
+      "archetype": "readiness",
+      "component": "rollbackpoint-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178886-rollbackpoint-migration-readiness.md"
+    },
+    {
+      "index": 178890,
+      "idea_id": "idea178887",
+      "filename": "idea178887-rollbackpoint-observability",
+      "title": "idea178887 - rollbackpoint Observability",
+      "archetype": "observability",
+      "component": "rollbackpoint",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178887-rollbackpoint-observability.md"
+    },
+    {
+      "index": 178891,
+      "idea_id": "idea178888",
+      "filename": "idea178888-rollbackpoint-security",
+      "title": "idea178888 - rollbackpoint Security",
+      "archetype": "security",
+      "component": "rollbackpoint",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178888-rollbackpoint-security.md"
+    },
+    {
+      "index": 178892,
+      "idea_id": "idea178889",
+      "filename": "idea178889-rollbackpoint-test-coverage",
+      "title": "idea178889 - rollbackpoint Test Coverage",
+      "archetype": "coverage",
+      "component": "rollbackpoint-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178889-rollbackpoint-test-coverage.md"
+    },
+    {
+      "index": 178893,
+      "idea_id": "idea178890",
+      "filename": "idea178890-slalevel-api-consistency",
+      "title": "idea178890 - slalevel API Consistency",
+      "archetype": "consistency",
+      "component": "slalevel-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178890-slalevel-api-consistency.md"
+    },
+    {
+      "index": 178894,
+      "idea_id": "idea178891",
+      "filename": "idea178891-slalevel-migration-readiness",
+      "title": "idea178891 - slalevel Migration Readiness",
+      "archetype": "readiness",
+      "component": "slalevel-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178891-slalevel-migration-readiness.md"
+    },
+    {
+      "index": 178895,
+      "idea_id": "idea178892",
+      "filename": "idea178892-slalevel-observability",
+      "title": "idea178892 - slalevel Observability",
+      "archetype": "observability",
+      "component": "slalevel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178892-slalevel-observability.md"
+    },
+    {
+      "index": 178896,
+      "idea_id": "idea178893",
+      "filename": "idea178893-slalevel-security",
+      "title": "idea178893 - slalevel Security",
+      "archetype": "security",
+      "component": "slalevel",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178893-slalevel-security.md"
+    },
+    {
+      "index": 178897,
+      "idea_id": "idea178894",
+      "filename": "idea178894-slalevel-test-coverage",
+      "title": "idea178894 - slalevel Test Coverage",
+      "archetype": "coverage",
+      "component": "slalevel-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178894-slalevel-test-coverage.md"
+    },
+    {
+      "index": 178898,
+      "idea_id": "idea178895",
+      "filename": "idea178895-slapolicy-api-consistency",
+      "title": "idea178895 - slapolicy API Consistency",
+      "archetype": "consistency",
+      "component": "slapolicy-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178895-slapolicy-api-consistency.md"
+    },
+    {
+      "index": 178899,
+      "idea_id": "idea178896",
+      "filename": "idea178896-slapolicy-migration-readiness",
+      "title": "idea178896 - slapolicy Migration Readiness",
+      "archetype": "readiness",
+      "component": "slapolicy-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178896-slapolicy-migration-readiness.md"
+    },
+    {
+      "index": 178900,
+      "idea_id": "idea178897",
+      "filename": "idea178897-slapolicy-observability",
+      "title": "idea178897 - slapolicy Observability",
+      "archetype": "observability",
+      "component": "slapolicy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178897-slapolicy-observability.md"
+    },
+    {
+      "index": 178901,
+      "idea_id": "idea178898",
+      "filename": "idea178898-slapolicy-security",
+      "title": "idea178898 - slapolicy Security",
+      "archetype": "security",
+      "component": "slapolicy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178898-slapolicy-security.md"
+    },
+    {
+      "index": 178902,
+      "idea_id": "idea178899",
+      "filename": "idea178899-slapolicy-test-coverage",
+      "title": "idea178899 - slapolicy Test Coverage",
+      "archetype": "coverage",
+      "component": "slapolicy-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178899-slapolicy-test-coverage.md"
+    },
+    {
+      "index": 178903,
+      "idea_id": "idea178900",
+      "filename": "idea178900-schedulestatus-api-consistency",
+      "title": "idea178900 - schedulestatus API Consistency",
+      "archetype": "consistency",
+      "component": "schedulestatus-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178900-schedulestatus-api-consistency.md"
+    },
+    {
+      "index": 178904,
+      "idea_id": "idea178901",
+      "filename": "idea178901-schedulestatus-migration-readiness",
+      "title": "idea178901 - schedulestatus Migration Readiness",
+      "archetype": "readiness",
+      "component": "schedulestatus-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178901-schedulestatus-migration-readiness.md"
+    },
+    {
+      "index": 178905,
+      "idea_id": "idea178902",
+      "filename": "idea178902-schedulestatus-observability",
+      "title": "idea178902 - schedulestatus Observability",
+      "archetype": "observability",
+      "component": "schedulestatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178902-schedulestatus-observability.md"
+    },
+    {
+      "index": 178906,
+      "idea_id": "idea178903",
+      "filename": "idea178903-schedulestatus-security",
+      "title": "idea178903 - schedulestatus Security",
+      "archetype": "security",
+      "component": "schedulestatus",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178903-schedulestatus-security.md"
+    },
+    {
+      "index": 178907,
+      "idea_id": "idea178904",
+      "filename": "idea178904-schedulestatus-test-coverage",
+      "title": "idea178904 - schedulestatus Test Coverage",
+      "archetype": "coverage",
+      "component": "schedulestatus-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178904-schedulestatus-test-coverage.md"
+    },
+    {
+      "index": 178908,
+      "idea_id": "idea178905",
+      "filename": "idea178905-scheduledentry-api-consistency",
+      "title": "idea178905 - scheduledentry API Consistency",
+      "archetype": "consistency",
+      "component": "scheduledentry-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178905-scheduledentry-api-consistency.md"
+    },
+    {
+      "index": 178909,
+      "idea_id": "idea178906",
+      "filename": "idea178906-scheduledentry-migration-readiness",
+      "title": "idea178906 - scheduledentry Migration Readiness",
+      "archetype": "readiness",
+      "component": "scheduledentry-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178906-scheduledentry-migration-readiness.md"
+    },
+    {
+      "index": 178910,
+      "idea_id": "idea178907",
+      "filename": "idea178907-scheduledentry-observability",
+      "title": "idea178907 - scheduledentry Observability",
+      "archetype": "observability",
+      "component": "scheduledentry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178907-scheduledentry-observability.md"
+    },
+    {
+      "index": 178911,
+      "idea_id": "idea178908",
+      "filename": "idea178908-scheduledentry-security",
+      "title": "idea178908 - scheduledentry Security",
+      "archetype": "security",
+      "component": "scheduledentry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178908-scheduledentry-security.md"
+    },
+    {
+      "index": 178912,
+      "idea_id": "idea178909",
+      "filename": "idea178909-scheduledentry-test-coverage",
+      "title": "idea178909 - scheduledentry Test Coverage",
+      "archetype": "coverage",
+      "component": "scheduledentry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178909-scheduledentry-test-coverage.md"
+    },
+    {
+      "index": 178913,
+      "idea_id": "idea178910",
+      "filename": "idea178910-toolintegration-api-consistency",
+      "title": "idea178910 - toolintegration API Consistency",
+      "archetype": "consistency",
+      "component": "toolintegration-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178910-toolintegration-api-consistency.md"
+    },
+    {
+      "index": 178914,
+      "idea_id": "idea178911",
+      "filename": "idea178911-toolintegration-migration-readiness",
+      "title": "idea178911 - toolintegration Migration Readiness",
+      "archetype": "readiness",
+      "component": "toolintegration-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178911-toolintegration-migration-readiness.md"
+    },
+    {
+      "index": 178915,
+      "idea_id": "idea178912",
+      "filename": "idea178912-toolintegration-observability",
+      "title": "idea178912 - toolintegration Observability",
+      "archetype": "observability",
+      "component": "toolintegration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178912-toolintegration-observability.md"
+    },
+    {
+      "index": 178916,
+      "idea_id": "idea178913",
+      "filename": "idea178913-toolintegration-security",
+      "title": "idea178913 - toolintegration Security",
+      "archetype": "security",
+      "component": "toolintegration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178913-toolintegration-security.md"
+    },
+    {
+      "index": 178917,
+      "idea_id": "idea178914",
+      "filename": "idea178914-toolintegration-test-coverage",
+      "title": "idea178914 - toolintegration Test Coverage",
+      "archetype": "coverage",
+      "component": "toolintegration-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178914-toolintegration-test-coverage.md"
+    },
+    {
+      "index": 178918,
+      "idea_id": "idea178915",
+      "filename": "idea178915-transitionresult-api-consistency",
+      "title": "idea178915 - transitionresult API Consistency",
+      "archetype": "consistency",
+      "component": "transitionresult-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178915-transitionresult-api-consistency.md"
+    },
+    {
+      "index": 178919,
+      "idea_id": "idea178916",
+      "filename": "idea178916-transitionresult-migration-readiness",
+      "title": "idea178916 - transitionresult Migration Readiness",
+      "archetype": "readiness",
+      "component": "transitionresult-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178916-transitionresult-migration-readiness.md"
+    },
+    {
+      "index": 178920,
+      "idea_id": "idea178917",
+      "filename": "idea178917-transitionresult-observability",
+      "title": "idea178917 - transitionresult Observability",
+      "archetype": "observability",
+      "component": "transitionresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178917-transitionresult-observability.md"
+    },
+    {
+      "index": 178921,
+      "idea_id": "idea178918",
+      "filename": "idea178918-transitionresult-security",
+      "title": "idea178918 - transitionresult Security",
+      "archetype": "security",
+      "component": "transitionresult",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178918-transitionresult-security.md"
+    },
+    {
+      "index": 178922,
+      "idea_id": "idea178919",
+      "filename": "idea178919-transitionresult-test-coverage",
+      "title": "idea178919 - transitionresult Test Coverage",
+      "archetype": "coverage",
+      "component": "transitionresult-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178919-transitionresult-test-coverage.md"
+    },
+    {
+      "index": 178923,
+      "idea_id": "idea178920",
+      "filename": "idea178920-validationseverity-api-consistency",
+      "title": "idea178920 - validationseverity API Consistency",
+      "archetype": "consistency",
+      "component": "validationseverity-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178920-validationseverity-api-consistency.md"
+    },
+    {
+      "index": 178924,
+      "idea_id": "idea178921",
+      "filename": "idea178921-validationseverity-migration-readiness",
+      "title": "idea178921 - validationseverity Migration Readiness",
+      "archetype": "readiness",
+      "component": "validationseverity-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178921-validationseverity-migration-readiness.md"
+    },
+    {
+      "index": 178925,
+      "idea_id": "idea178922",
+      "filename": "idea178922-validationseverity-observability",
+      "title": "idea178922 - validationseverity Observability",
+      "archetype": "observability",
+      "component": "validationseverity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178922-validationseverity-observability.md"
+    },
+    {
+      "index": 178926,
+      "idea_id": "idea178923",
+      "filename": "idea178923-validationseverity-security",
+      "title": "idea178923 - validationseverity Security",
+      "archetype": "security",
+      "component": "validationseverity",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178923-validationseverity-security.md"
+    },
+    {
+      "index": 178927,
+      "idea_id": "idea178924",
+      "filename": "idea178924-validationseverity-test-coverage",
+      "title": "idea178924 - validationseverity Test Coverage",
+      "archetype": "coverage",
+      "component": "validationseverity-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178924-validationseverity-test-coverage.md"
+    },
+    {
+      "index": 178928,
+      "idea_id": "idea178925",
+      "filename": "idea178925-init-api-consistency",
+      "title": "idea178925 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178925-init-api-consistency.md"
+    },
+    {
+      "index": 178929,
+      "idea_id": "idea178926",
+      "filename": "idea178926-init-migration-readiness",
+      "title": "idea178926 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178926-init-migration-readiness.md"
+    },
+    {
+      "index": 178930,
+      "idea_id": "idea178927",
+      "filename": "idea178927-init-observability",
+      "title": "idea178927 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178927-init-observability.md"
+    },
+    {
+      "index": 178931,
+      "idea_id": "idea178928",
+      "filename": "idea178928-init-security",
+      "title": "idea178928 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178928-init-security.md"
+    },
+    {
+      "index": 178932,
+      "idea_id": "idea178929",
+      "filename": "idea178929-init-test-coverage",
+      "title": "idea178929 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178929-init-test-coverage.md"
+    },
+    {
+      "index": 178933,
+      "idea_id": "idea178930",
+      "filename": "idea178930-access-controller-api-consistency",
+      "title": "idea178930 - access-controller API Consistency",
+      "archetype": "consistency",
+      "component": "access-controller-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178930-access-controller-api-consistency.md"
+    },
+    {
+      "index": 178934,
+      "idea_id": "idea178931",
+      "filename": "idea178931-access-controller-migration-readiness",
+      "title": "idea178931 - access-controller Migration Readiness",
+      "archetype": "readiness",
+      "component": "access-controller-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178931-access-controller-migration-readiness.md"
+    },
+    {
+      "index": 178935,
+      "idea_id": "idea178932",
+      "filename": "idea178932-access-controller-observability",
+      "title": "idea178932 - access-controller Observability",
+      "archetype": "observability",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178932-access-controller-observability.md"
+    },
+    {
+      "index": 178936,
+      "idea_id": "idea178933",
+      "filename": "idea178933-access-controller-security",
+      "title": "idea178933 - access-controller Security",
+      "archetype": "security",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178933-access-controller-security.md"
+    },
+    {
+      "index": 178937,
+      "idea_id": "idea178934",
+      "filename": "idea178934-access-controller-test-coverage",
+      "title": "idea178934 - access-controller Test Coverage",
+      "archetype": "coverage",
+      "component": "access-controller-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178934-access-controller-test-coverage.md"
+    },
+    {
+      "index": 178938,
+      "idea_id": "idea178935",
+      "filename": "idea178935-analysis-tool-type-api-consistency",
+      "title": "idea178935 - analysis-tool-type API Consistency",
+      "archetype": "consistency",
+      "component": "analysis-tool-type-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178935-analysis-tool-type-api-consistency.md"
+    },
+    {
+      "index": 178939,
+      "idea_id": "idea178936",
+      "filename": "idea178936-analysis-tool-type-migration-readiness",
+      "title": "idea178936 - analysis-tool-type Migration Readiness",
+      "archetype": "readiness",
+      "component": "analysis-tool-type-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178936-analysis-tool-type-migration-readiness.md"
+    },
+    {
+      "index": 178940,
+      "idea_id": "idea178937",
+      "filename": "idea178937-analysis-tool-type-observability",
+      "title": "idea178937 - analysis-tool-type Observability",
+      "archetype": "observability",
+      "component": "analysis-tool-type",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178937-analysis-tool-type-observability.md"
+    },
+    {
+      "index": 178941,
+      "idea_id": "idea178938",
+      "filename": "idea178938-analysis-tool-type-security",
+      "title": "idea178938 - analysis-tool-type Security",
+      "archetype": "security",
+      "component": "analysis-tool-type",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178938-analysis-tool-type-security.md"
+    },
+    {
+      "index": 178942,
+      "idea_id": "idea178939",
+      "filename": "idea178939-analysis-tool-type-test-coverage",
+      "title": "idea178939 - analysis-tool-type Test Coverage",
+      "archetype": "coverage",
+      "component": "analysis-tool-type-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178939-analysis-tool-type-test-coverage.md"
+    },
+    {
+      "index": 178943,
+      "idea_id": "idea178940",
+      "filename": "idea178940-analytics-engine-api-consistency",
+      "title": "idea178940 - analytics-engine API Consistency",
+      "archetype": "consistency",
+      "component": "analytics-engine-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178940-analytics-engine-api-consistency.md"
+    },
+    {
+      "index": 178944,
+      "idea_id": "idea178941",
+      "filename": "idea178941-analytics-engine-migration-readiness",
+      "title": "idea178941 - analytics-engine Migration Readiness",
+      "archetype": "readiness",
+      "component": "analytics-engine-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178941-analytics-engine-migration-readiness.md"
+    },
+    {
+      "index": 178945,
+      "idea_id": "idea178942",
+      "filename": "idea178942-analytics-engine-observability",
+      "title": "idea178942 - analytics-engine Observability",
+      "archetype": "observability",
+      "component": "analytics-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178942-analytics-engine-observability.md"
+    },
+    {
+      "index": 178946,
+      "idea_id": "idea178943",
+      "filename": "idea178943-analytics-engine-security",
+      "title": "idea178943 - analytics-engine Security",
+      "archetype": "security",
+      "component": "analytics-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178943-analytics-engine-security.md"
+    },
+    {
+      "index": 178947,
+      "idea_id": "idea178944",
+      "filename": "idea178944-analytics-engine-test-coverage",
+      "title": "idea178944 - analytics-engine Test Coverage",
+      "archetype": "coverage",
+      "component": "analytics-engine-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178944-analytics-engine-test-coverage.md"
+    },
+    {
+      "index": 178948,
+      "idea_id": "idea178945",
+      "filename": "idea178945-archive-manager-api-consistency",
+      "title": "idea178945 - archive-manager API Consistency",
+      "archetype": "consistency",
+      "component": "archive-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178945-archive-manager-api-consistency.md"
+    },
+    {
+      "index": 178949,
+      "idea_id": "idea178946",
+      "filename": "idea178946-archive-manager-migration-readiness",
+      "title": "idea178946 - archive-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "archive-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178946-archive-manager-migration-readiness.md"
+    },
+    {
+      "index": 178950,
+      "idea_id": "idea178947",
+      "filename": "idea178947-archive-manager-observability",
+      "title": "idea178947 - archive-manager Observability",
+      "archetype": "observability",
+      "component": "archive-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178947-archive-manager-observability.md"
+    },
+    {
+      "index": 178951,
+      "idea_id": "idea178948",
+      "filename": "idea178948-archive-manager-security",
+      "title": "idea178948 - archive-manager Security",
+      "archetype": "security",
+      "component": "archive-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178948-archive-manager-security.md"
+    },
+    {
+      "index": 178952,
+      "idea_id": "idea178949",
+      "filename": "idea178949-archive-manager-test-coverage",
+      "title": "idea178949 - archive-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "archive-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178949-archive-manager-test-coverage.md"
+    },
+    {
+      "index": 178953,
+      "idea_id": "idea178950",
+      "filename": "idea178950-archived-improvement-api-consistency",
+      "title": "idea178950 - archived-improvement API Consistency",
+      "archetype": "consistency",
+      "component": "archived-improvement-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178950-archived-improvement-api-consistency.md"
+    },
+    {
+      "index": 178954,
+      "idea_id": "idea178951",
+      "filename": "idea178951-archived-improvement-migration-readiness",
+      "title": "idea178951 - archived-improvement Migration Readiness",
+      "archetype": "readiness",
+      "component": "archived-improvement-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178951-archived-improvement-migration-readiness.md"
+    },
+    {
+      "index": 178955,
+      "idea_id": "idea178952",
+      "filename": "idea178952-archived-improvement-observability",
+      "title": "idea178952 - archived-improvement Observability",
+      "archetype": "observability",
+      "component": "archived-improvement",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178952-archived-improvement-observability.md"
+    },
+    {
+      "index": 178956,
+      "idea_id": "idea178953",
+      "filename": "idea178953-archived-improvement-security",
+      "title": "idea178953 - archived-improvement Security",
+      "archetype": "security",
+      "component": "archived-improvement",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178953-archived-improvement-security.md"
+    },
+    {
+      "index": 178957,
+      "idea_id": "idea178954",
+      "filename": "idea178954-archived-improvement-test-coverage",
+      "title": "idea178954 - archived-improvement Test Coverage",
+      "archetype": "coverage",
+      "component": "archived-improvement-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178954-archived-improvement-test-coverage.md"
+    },
+    {
+      "index": 178958,
+      "idea_id": "idea178955",
+      "filename": "idea178955-assignment-manager-api-consistency",
+      "title": "idea178955 - assignment-manager API Consistency",
+      "archetype": "consistency",
+      "component": "assignment-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178955-assignment-manager-api-consistency.md"
+    },
+    {
+      "index": 178959,
+      "idea_id": "idea178956",
+      "filename": "idea178956-assignment-manager-migration-readiness",
+      "title": "idea178956 - assignment-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "assignment-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178956-assignment-manager-migration-readiness.md"
+    },
+    {
+      "index": 178960,
+      "idea_id": "idea178957",
+      "filename": "idea178957-assignment-manager-observability",
+      "title": "idea178957 - assignment-manager Observability",
+      "archetype": "observability",
+      "component": "assignment-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178957-assignment-manager-observability.md"
+    },
+    {
+      "index": 178961,
+      "idea_id": "idea178958",
+      "filename": "idea178958-assignment-manager-security",
+      "title": "idea178958 - assignment-manager Security",
+      "archetype": "security",
+      "component": "assignment-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178958-assignment-manager-security.md"
+    },
+    {
+      "index": 178962,
+      "idea_id": "idea178959",
+      "filename": "idea178959-assignment-manager-test-coverage",
+      "title": "idea178959 - assignment-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "assignment-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178959-assignment-manager-test-coverage.md"
+    },
+    {
+      "index": 178963,
+      "idea_id": "idea178960",
+      "filename": "idea178960-branch-comparer-api-consistency",
+      "title": "idea178960 - branch-comparer API Consistency",
+      "archetype": "consistency",
+      "component": "branch-comparer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178960-branch-comparer-api-consistency.md"
+    },
+    {
+      "index": 178964,
+      "idea_id": "idea178961",
+      "filename": "idea178961-branch-comparer-migration-readiness",
+      "title": "idea178961 - branch-comparer Migration Readiness",
+      "archetype": "readiness",
+      "component": "branch-comparer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178961-branch-comparer-migration-readiness.md"
+    },
+    {
+      "index": 178965,
+      "idea_id": "idea178962",
+      "filename": "idea178962-branch-comparer-observability",
+      "title": "idea178962 - branch-comparer Observability",
+      "archetype": "observability",
+      "component": "branch-comparer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178962-branch-comparer-observability.md"
+    },
+    {
+      "index": 178966,
+      "idea_id": "idea178963",
+      "filename": "idea178963-branch-comparer-security",
+      "title": "idea178963 - branch-comparer Security",
+      "archetype": "security",
+      "component": "branch-comparer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178963-branch-comparer-security.md"
+    },
+    {
+      "index": 178967,
+      "idea_id": "idea178964",
+      "filename": "idea178964-branch-comparer-test-coverage",
+      "title": "idea178964 - branch-comparer Test Coverage",
+      "archetype": "coverage",
+      "component": "branch-comparer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178964-branch-comparer-test-coverage.md"
+    },
+    {
+      "index": 178968,
+      "idea_id": "idea178965",
+      "filename": "idea178965-branch-comparison-api-consistency",
+      "title": "idea178965 - branch-comparison API Consistency",
+      "archetype": "consistency",
+      "component": "branch-comparison-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178965-branch-comparison-api-consistency.md"
+    },
+    {
+      "index": 178969,
+      "idea_id": "idea178966",
+      "filename": "idea178966-branch-comparison-migration-readiness",
+      "title": "idea178966 - branch-comparison Migration Readiness",
+      "archetype": "readiness",
+      "component": "branch-comparison-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178966-branch-comparison-migration-readiness.md"
+    },
+    {
+      "index": 178970,
+      "idea_id": "idea178967",
+      "filename": "idea178967-branch-comparison-observability",
+      "title": "idea178967 - branch-comparison Observability",
+      "archetype": "observability",
+      "component": "branch-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178967-branch-comparison-observability.md"
+    },
+    {
+      "index": 178971,
+      "idea_id": "idea178968",
+      "filename": "idea178968-branch-comparison-security",
+      "title": "idea178968 - branch-comparison Security",
+      "archetype": "security",
+      "component": "branch-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178968-branch-comparison-security.md"
+    },
+    {
+      "index": 178972,
+      "idea_id": "idea178969",
+      "filename": "idea178969-branch-comparison-test-coverage",
+      "title": "idea178969 - branch-comparison Test Coverage",
+      "archetype": "coverage",
+      "component": "branch-comparison-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178969-branch-comparison-test-coverage.md"
+    },
+    {
+      "index": 178973,
+      "idea_id": "idea178970",
+      "filename": "idea178970-branch-comparison-status-api-consistency",
+      "title": "idea178970 - branch-comparison-status API Consistency",
+      "archetype": "consistency",
+      "component": "branch-comparison-status-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178970-branch-comparison-status-api-consistency.md"
+    },
+    {
+      "index": 178974,
+      "idea_id": "idea178971",
+      "filename": "idea178971-branch-comparison-status-migration-readiness",
+      "title": "idea178971 - branch-comparison-status Migration Readiness",
+      "archetype": "readiness",
+      "component": "branch-comparison-status-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178971-branch-comparison-status-migration-readiness.md"
+    },
+    {
+      "index": 178975,
+      "idea_id": "idea178972",
+      "filename": "idea178972-branch-comparison-status-observability",
+      "title": "idea178972 - branch-comparison-status Observability",
+      "archetype": "observability",
+      "component": "branch-comparison-status",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178972-branch-comparison-status-observability.md"
+    },
+    {
+      "index": 178976,
+      "idea_id": "idea178973",
+      "filename": "idea178973-branch-comparison-status-security",
+      "title": "idea178973 - branch-comparison-status Security",
+      "archetype": "security",
+      "component": "branch-comparison-status",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178973-branch-comparison-status-security.md"
+    },
+    {
+      "index": 178977,
+      "idea_id": "idea178974",
+      "filename": "idea178974-branch-comparison-status-test-coverage",
+      "title": "idea178974 - branch-comparison-status Test Coverage",
+      "archetype": "coverage",
+      "component": "branch-comparison-status-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178974-branch-comparison-status-test-coverage.md"
+    },
+    {
+      "index": 178978,
+      "idea_id": "idea178975",
+      "filename": "idea178975-bulk-manager-api-consistency",
+      "title": "idea178975 - bulk-manager API Consistency",
+      "archetype": "consistency",
+      "component": "bulk-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178975-bulk-manager-api-consistency.md"
+    },
+    {
+      "index": 178979,
+      "idea_id": "idea178976",
+      "filename": "idea178976-bulk-manager-migration-readiness",
+      "title": "idea178976 - bulk-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "bulk-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178976-bulk-manager-migration-readiness.md"
+    },
+    {
+      "index": 178980,
+      "idea_id": "idea178977",
+      "filename": "idea178977-bulk-manager-observability",
+      "title": "idea178977 - bulk-manager Observability",
+      "archetype": "observability",
+      "component": "bulk-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178977-bulk-manager-observability.md"
+    },
+    {
+      "index": 178981,
+      "idea_id": "idea178978",
+      "filename": "idea178978-bulk-manager-security",
+      "title": "idea178978 - bulk-manager Security",
+      "archetype": "security",
+      "component": "bulk-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178978-bulk-manager-security.md"
+    },
+    {
+      "index": 178982,
+      "idea_id": "idea178979",
+      "filename": "idea178979-bulk-manager-test-coverage",
+      "title": "idea178979 - bulk-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "bulk-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178979-bulk-manager-test-coverage.md"
+    },
+    {
+      "index": 178983,
+      "idea_id": "idea178980",
+      "filename": "idea178980-bulk-operation-result-api-consistency",
+      "title": "idea178980 - bulk-operation-result API Consistency",
+      "archetype": "consistency",
+      "component": "bulk-operation-result-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178980-bulk-operation-result-api-consistency.md"
+    },
+    {
+      "index": 178984,
+      "idea_id": "idea178981",
+      "filename": "idea178981-bulk-operation-result-migration-readiness",
+      "title": "idea178981 - bulk-operation-result Migration Readiness",
+      "archetype": "readiness",
+      "component": "bulk-operation-result-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178981-bulk-operation-result-migration-readiness.md"
+    },
+    {
+      "index": 178985,
+      "idea_id": "idea178982",
+      "filename": "idea178982-bulk-operation-result-observability",
+      "title": "idea178982 - bulk-operation-result Observability",
+      "archetype": "observability",
+      "component": "bulk-operation-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178982-bulk-operation-result-observability.md"
+    },
+    {
+      "index": 178986,
+      "idea_id": "idea178983",
+      "filename": "idea178983-bulk-operation-result-security",
+      "title": "idea178983 - bulk-operation-result Security",
+      "archetype": "security",
+      "component": "bulk-operation-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178983-bulk-operation-result-security.md"
+    },
+    {
+      "index": 178987,
+      "idea_id": "idea178984",
+      "filename": "idea178984-bulk-operation-result-test-coverage",
+      "title": "idea178984 - bulk-operation-result Test Coverage",
+      "archetype": "coverage",
+      "component": "bulk-operation-result-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178984-bulk-operation-result-test-coverage.md"
+    },
+    {
+      "index": 178988,
+      "idea_id": "idea178985",
+      "filename": "idea178985-code-analyzer-api-consistency",
+      "title": "idea178985 - code-analyzer API Consistency",
+      "archetype": "consistency",
+      "component": "code-analyzer-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178985-code-analyzer-api-consistency.md"
+    },
+    {
+      "index": 178989,
+      "idea_id": "idea178986",
+      "filename": "idea178986-code-analyzer-migration-readiness",
+      "title": "idea178986 - code-analyzer Migration Readiness",
+      "archetype": "readiness",
+      "component": "code-analyzer-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178986-code-analyzer-migration-readiness.md"
+    },
+    {
+      "index": 178990,
+      "idea_id": "idea178987",
+      "filename": "idea178987-code-analyzer-observability",
+      "title": "idea178987 - code-analyzer Observability",
+      "archetype": "observability",
+      "component": "code-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178987-code-analyzer-observability.md"
+    },
+    {
+      "index": 178991,
+      "idea_id": "idea178988",
+      "filename": "idea178988-code-analyzer-security",
+      "title": "idea178988 - code-analyzer Security",
+      "archetype": "security",
+      "component": "code-analyzer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178988-code-analyzer-security.md"
+    },
+    {
+      "index": 178992,
+      "idea_id": "idea178989",
+      "filename": "idea178989-code-analyzer-test-coverage",
+      "title": "idea178989 - code-analyzer Test Coverage",
+      "archetype": "coverage",
+      "component": "code-analyzer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178989-code-analyzer-test-coverage.md"
+    },
+    {
+      "index": 178993,
+      "idea_id": "idea178990",
+      "filename": "idea178990-completion-trend-api-consistency",
+      "title": "idea178990 - completion-trend API Consistency",
+      "archetype": "consistency",
+      "component": "completion-trend-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178990-completion-trend-api-consistency.md"
+    },
+    {
+      "index": 178994,
+      "idea_id": "idea178991",
+      "filename": "idea178991-completion-trend-migration-readiness",
+      "title": "idea178991 - completion-trend Migration Readiness",
+      "archetype": "readiness",
+      "component": "completion-trend-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178991-completion-trend-migration-readiness.md"
+    },
+    {
+      "index": 178995,
+      "idea_id": "idea178992",
+      "filename": "idea178992-completion-trend-observability",
+      "title": "idea178992 - completion-trend Observability",
+      "archetype": "observability",
+      "component": "completion-trend",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178992-completion-trend-observability.md"
+    },
+    {
+      "index": 178996,
+      "idea_id": "idea178993",
+      "filename": "idea178993-completion-trend-security",
+      "title": "idea178993 - completion-trend Security",
+      "archetype": "security",
+      "component": "completion-trend",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178993-completion-trend-security.md"
+    },
+    {
+      "index": 178997,
+      "idea_id": "idea178994",
+      "filename": "idea178994-completion-trend-test-coverage",
+      "title": "idea178994 - completion-trend Test Coverage",
+      "archetype": "coverage",
+      "component": "completion-trend-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178994-completion-trend-test-coverage.md"
+    },
+    {
+      "index": 178998,
+      "idea_id": "idea178995",
+      "filename": "idea178995-conflict-resolution-api-consistency",
+      "title": "idea178995 - conflict-resolution API Consistency",
+      "archetype": "consistency",
+      "component": "conflict-resolution-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178995-conflict-resolution-api-consistency.md"
+    },
+    {
+      "index": 178999,
+      "idea_id": "idea178996",
+      "filename": "idea178996-conflict-resolution-migration-readiness",
+      "title": "idea178996 - conflict-resolution Migration Readiness",
+      "archetype": "readiness",
+      "component": "conflict-resolution-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178996-conflict-resolution-migration-readiness.md"
+    },
+    {
+      "index": 179000,
+      "idea_id": "idea178997",
+      "filename": "idea178997-conflict-resolution-observability",
+      "title": "idea178997 - conflict-resolution Observability",
+      "archetype": "observability",
+      "component": "conflict-resolution",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f17/idea178997-conflict-resolution-observability.md"
+    }
+  ],
+  "projects_to_create": 50
+}

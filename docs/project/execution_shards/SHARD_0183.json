@@ -1,0 +1,4510 @@
+{
+  "shard_number": 183,
+  "shard_id": "SHARD_0183",
+  "start_index": 91000,
+  "end_index": 91500,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 91001,
+      "idea_id": "idea090996",
+      "filename": "idea090996-swarm-visualizer-agent-resilience",
+      "title": "idea090996 - swarm-visualizer-agent Resilience",
+      "archetype": "resilience",
+      "component": "swarm-visualizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea090996-swarm-visualizer-agent-resilience.md"
+    },
+    {
+      "index": 91002,
+      "idea_id": "idea090997",
+      "filename": "idea090997-swarm-visualizer-agent-test-api-consistency",
+      "title": "idea090997 - swarm-visualizer-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "swarm-visualizer-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea090997-swarm-visualizer-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91003,
+      "idea_id": "idea090998",
+      "filename": "idea090998-swarm-visualizer-agent-test-migration-readiness",
+      "title": "idea090998 - swarm-visualizer-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "swarm-visualizer-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea090998-swarm-visualizer-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91004,
+      "idea_id": "idea090999",
+      "filename": "idea090999-swarm-visualizer-agent-test-observability",
+      "title": "idea090999 - swarm-visualizer-agent-test Observability",
+      "archetype": "observability",
+      "component": "swarm-visualizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea090999-swarm-visualizer-agent-test-observability.md"
+    },
+    {
+      "index": 91005,
+      "idea_id": "idea091000",
+      "filename": "idea091000-swarm-visualizer-agent-test-security",
+      "title": "idea091000 - swarm-visualizer-agent-test Security",
+      "archetype": "security",
+      "component": "swarm-visualizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091000-swarm-visualizer-agent-test-security.md"
+    },
+    {
+      "index": 91006,
+      "idea_id": "idea091001",
+      "filename": "idea091001-swarm-visualizer-agent-test-test-coverage",
+      "title": "idea091001 - swarm-visualizer-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "swarm-visualizer-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091001-swarm-visualizer-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91007,
+      "idea_id": "idea091002",
+      "filename": "idea091002-validation-rule-developer-experience",
+      "title": "idea091002 - validation-rule Developer Experience",
+      "archetype": "experience",
+      "component": "validation-rule-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091002-validation-rule-developer-experience.md"
+    },
+    {
+      "index": 91008,
+      "idea_id": "idea091003",
+      "filename": "idea091003-validation-rule-documentation",
+      "title": "idea091003 - validation-rule Documentation",
+      "archetype": "documentation",
+      "component": "validation-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091003-validation-rule-documentation.md"
+    },
+    {
+      "index": 91009,
+      "idea_id": "idea091004",
+      "filename": "idea091004-validation-rule-hardening",
+      "title": "idea091004 - validation-rule Hardening",
+      "archetype": "hardening",
+      "component": "validation-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091004-validation-rule-hardening.md"
+    },
+    {
+      "index": 91010,
+      "idea_id": "idea091005",
+      "filename": "idea091005-validation-rule-performance",
+      "title": "idea091005 - validation-rule Performance",
+      "archetype": "performance",
+      "component": "validation-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091005-validation-rule-performance.md"
+    },
+    {
+      "index": 91011,
+      "idea_id": "idea091006",
+      "filename": "idea091006-validation-rule-resilience",
+      "title": "idea091006 - validation-rule Resilience",
+      "archetype": "resilience",
+      "component": "validation-rule",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091006-validation-rule-resilience.md"
+    },
+    {
+      "index": 91012,
+      "idea_id": "idea091007",
+      "filename": "idea091007-validation-rule-test-api-consistency",
+      "title": "idea091007 - validation-rule-test API Consistency",
+      "archetype": "consistency",
+      "component": "validation-rule-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091007-validation-rule-test-api-consistency.md"
+    },
+    {
+      "index": 91013,
+      "idea_id": "idea091008",
+      "filename": "idea091008-validation-rule-test-migration-readiness",
+      "title": "idea091008 - validation-rule-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "validation-rule-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091008-validation-rule-test-migration-readiness.md"
+    },
+    {
+      "index": 91014,
+      "idea_id": "idea091009",
+      "filename": "idea091009-validation-rule-test-observability",
+      "title": "idea091009 - validation-rule-test Observability",
+      "archetype": "observability",
+      "component": "validation-rule-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091009-validation-rule-test-observability.md"
+    },
+    {
+      "index": 91015,
+      "idea_id": "idea091010",
+      "filename": "idea091010-validation-rule-test-security",
+      "title": "idea091010 - validation-rule-test Security",
+      "archetype": "security",
+      "component": "validation-rule-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091010-validation-rule-test-security.md"
+    },
+    {
+      "index": 91016,
+      "idea_id": "idea091011",
+      "filename": "idea091011-validation-rule-test-test-coverage",
+      "title": "idea091011 - validation-rule-test Test Coverage",
+      "archetype": "coverage",
+      "component": "validation-rule-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091011-validation-rule-test-test-coverage.md"
+    },
+    {
+      "index": 91017,
+      "idea_id": "idea091012",
+      "filename": "idea091012-versioning-strategy-developer-experience",
+      "title": "idea091012 - versioning-strategy Developer Experience",
+      "archetype": "experience",
+      "component": "versioning-strategy-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091012-versioning-strategy-developer-experience.md"
+    },
+    {
+      "index": 91018,
+      "idea_id": "idea091013",
+      "filename": "idea091013-versioning-strategy-documentation",
+      "title": "idea091013 - versioning-strategy Documentation",
+      "archetype": "documentation",
+      "component": "versioning-strategy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091013-versioning-strategy-documentation.md"
+    },
+    {
+      "index": 91019,
+      "idea_id": "idea091014",
+      "filename": "idea091014-versioning-strategy-hardening",
+      "title": "idea091014 - versioning-strategy Hardening",
+      "archetype": "hardening",
+      "component": "versioning-strategy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091014-versioning-strategy-hardening.md"
+    },
+    {
+      "index": 91020,
+      "idea_id": "idea091015",
+      "filename": "idea091015-versioning-strategy-performance",
+      "title": "idea091015 - versioning-strategy Performance",
+      "archetype": "performance",
+      "component": "versioning-strategy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091015-versioning-strategy-performance.md"
+    },
+    {
+      "index": 91021,
+      "idea_id": "idea091016",
+      "filename": "idea091016-versioning-strategy-resilience",
+      "title": "idea091016 - versioning-strategy Resilience",
+      "archetype": "resilience",
+      "component": "versioning-strategy",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091016-versioning-strategy-resilience.md"
+    },
+    {
+      "index": 91022,
+      "idea_id": "idea091017",
+      "filename": "idea091017-versioning-strategy-test-api-consistency",
+      "title": "idea091017 - versioning-strategy-test API Consistency",
+      "archetype": "consistency",
+      "component": "versioning-strategy-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091017-versioning-strategy-test-api-consistency.md"
+    },
+    {
+      "index": 91023,
+      "idea_id": "idea091018",
+      "filename": "idea091018-versioning-strategy-test-migration-readiness",
+      "title": "idea091018 - versioning-strategy-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "versioning-strategy-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091018-versioning-strategy-test-migration-readiness.md"
+    },
+    {
+      "index": 91024,
+      "idea_id": "idea091019",
+      "filename": "idea091019-versioning-strategy-test-observability",
+      "title": "idea091019 - versioning-strategy-test Observability",
+      "archetype": "observability",
+      "component": "versioning-strategy-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091019-versioning-strategy-test-observability.md"
+    },
+    {
+      "index": 91025,
+      "idea_id": "idea091020",
+      "filename": "idea091020-versioning-strategy-test-security",
+      "title": "idea091020 - versioning-strategy-test Security",
+      "archetype": "security",
+      "component": "versioning-strategy-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091020-versioning-strategy-test-security.md"
+    },
+    {
+      "index": 91026,
+      "idea_id": "idea091021",
+      "filename": "idea091021-versioning-strategy-test-test-coverage",
+      "title": "idea091021 - versioning-strategy-test Test Coverage",
+      "archetype": "coverage",
+      "component": "versioning-strategy-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091021-versioning-strategy-test-test-coverage.md"
+    },
+    {
+      "index": 91027,
+      "idea_id": "idea091022",
+      "filename": "idea091022-loggingagent-developer-experience",
+      "title": "idea091022 - loggingagent Developer Experience",
+      "archetype": "experience",
+      "component": "loggingagent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091022-loggingagent-developer-experience.md"
+    },
+    {
+      "index": 91028,
+      "idea_id": "idea091023",
+      "filename": "idea091023-loggingagent-documentation",
+      "title": "idea091023 - loggingagent Documentation",
+      "archetype": "documentation",
+      "component": "loggingagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091023-loggingagent-documentation.md"
+    },
+    {
+      "index": 91029,
+      "idea_id": "idea091024",
+      "filename": "idea091024-loggingagent-hardening",
+      "title": "idea091024 - loggingagent Hardening",
+      "archetype": "hardening",
+      "component": "loggingagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091024-loggingagent-hardening.md"
+    },
+    {
+      "index": 91030,
+      "idea_id": "idea091025",
+      "filename": "idea091025-loggingagent-performance",
+      "title": "idea091025 - loggingagent Performance",
+      "archetype": "performance",
+      "component": "loggingagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091025-loggingagent-performance.md"
+    },
+    {
+      "index": 91031,
+      "idea_id": "idea091026",
+      "filename": "idea091026-loggingagent-resilience",
+      "title": "idea091026 - loggingagent Resilience",
+      "archetype": "resilience",
+      "component": "loggingagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091026-loggingagent-resilience.md"
+    },
+    {
+      "index": 91032,
+      "idea_id": "idea091027",
+      "filename": "idea091027-loggingagent-test-api-consistency",
+      "title": "idea091027 - loggingagent-test API Consistency",
+      "archetype": "consistency",
+      "component": "loggingagent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091027-loggingagent-test-api-consistency.md"
+    },
+    {
+      "index": 91033,
+      "idea_id": "idea091028",
+      "filename": "idea091028-loggingagent-test-migration-readiness",
+      "title": "idea091028 - loggingagent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "loggingagent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091028-loggingagent-test-migration-readiness.md"
+    },
+    {
+      "index": 91034,
+      "idea_id": "idea091029",
+      "filename": "idea091029-loggingagent-test-observability",
+      "title": "idea091029 - loggingagent-test Observability",
+      "archetype": "observability",
+      "component": "loggingagent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091029-loggingagent-test-observability.md"
+    },
+    {
+      "index": 91035,
+      "idea_id": "idea091030",
+      "filename": "idea091030-loggingagent-test-security",
+      "title": "idea091030 - loggingagent-test Security",
+      "archetype": "security",
+      "component": "loggingagent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091030-loggingagent-test-security.md"
+    },
+    {
+      "index": 91036,
+      "idea_id": "idea091031",
+      "filename": "idea091031-loggingagent-test-test-coverage",
+      "title": "idea091031 - loggingagent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "loggingagent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091031-loggingagent-test-test-coverage.md"
+    },
+    {
+      "index": 91037,
+      "idea_id": "idea091032",
+      "filename": "idea091032-mcpagent-developer-experience",
+      "title": "idea091032 - mcpagent Developer Experience",
+      "archetype": "experience",
+      "component": "mcpagent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091032-mcpagent-developer-experience.md"
+    },
+    {
+      "index": 91038,
+      "idea_id": "idea091033",
+      "filename": "idea091033-mcpagent-documentation",
+      "title": "idea091033 - mcpagent Documentation",
+      "archetype": "documentation",
+      "component": "mcpagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091033-mcpagent-documentation.md"
+    },
+    {
+      "index": 91039,
+      "idea_id": "idea091034",
+      "filename": "idea091034-mcpagent-hardening",
+      "title": "idea091034 - mcpagent Hardening",
+      "archetype": "hardening",
+      "component": "mcpagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091034-mcpagent-hardening.md"
+    },
+    {
+      "index": 91040,
+      "idea_id": "idea091035",
+      "filename": "idea091035-mcpagent-performance",
+      "title": "idea091035 - mcpagent Performance",
+      "archetype": "performance",
+      "component": "mcpagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091035-mcpagent-performance.md"
+    },
+    {
+      "index": 91041,
+      "idea_id": "idea091036",
+      "filename": "idea091036-mcpagent-resilience",
+      "title": "idea091036 - mcpagent Resilience",
+      "archetype": "resilience",
+      "component": "mcpagent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091036-mcpagent-resilience.md"
+    },
+    {
+      "index": 91042,
+      "idea_id": "idea091037",
+      "filename": "idea091037-mcpagent-py-hardening",
+      "title": "idea091037 - mcpagent.py Hardening",
+      "archetype": "hardening",
+      "component": "mcpagent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091037-mcpagent-py-hardening.md"
+    },
+    {
+      "index": 91043,
+      "idea_id": "idea091038",
+      "filename": "idea091038-mcpagent-py-performance",
+      "title": "idea091038 - mcpagent.py Performance",
+      "archetype": "performance",
+      "component": "mcpagent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091038-mcpagent-py-performance.md"
+    },
+    {
+      "index": 91044,
+      "idea_id": "idea091039",
+      "filename": "idea091039-topologicalnavigator-developer-experience",
+      "title": "idea091039 - topologicalnavigator Developer Experience",
+      "archetype": "experience",
+      "component": "topologicalnavigator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091039-topologicalnavigator-developer-experience.md"
+    },
+    {
+      "index": 91045,
+      "idea_id": "idea091040",
+      "filename": "idea091040-topologicalnavigator-documentation",
+      "title": "idea091040 - topologicalnavigator Documentation",
+      "archetype": "documentation",
+      "component": "topologicalnavigator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091040-topologicalnavigator-documentation.md"
+    },
+    {
+      "index": 91046,
+      "idea_id": "idea091041",
+      "filename": "idea091041-topologicalnavigator-hardening",
+      "title": "idea091041 - topologicalnavigator Hardening",
+      "archetype": "hardening",
+      "component": "topologicalnavigator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091041-topologicalnavigator-hardening.md"
+    },
+    {
+      "index": 91047,
+      "idea_id": "idea091042",
+      "filename": "idea091042-topologicalnavigator-performance",
+      "title": "idea091042 - topologicalnavigator Performance",
+      "archetype": "performance",
+      "component": "topologicalnavigator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091042-topologicalnavigator-performance.md"
+    },
+    {
+      "index": 91048,
+      "idea_id": "idea091043",
+      "filename": "idea091043-topologicalnavigator-resilience",
+      "title": "idea091043 - topologicalnavigator Resilience",
+      "archetype": "resilience",
+      "component": "topologicalnavigator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091043-topologicalnavigator-resilience.md"
+    },
+    {
+      "index": 91049,
+      "idea_id": "idea091044",
+      "filename": "idea091044-topologicalnavigator-test-api-consistency",
+      "title": "idea091044 - topologicalnavigator-test API Consistency",
+      "archetype": "consistency",
+      "component": "topologicalnavigator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091044-topologicalnavigator-test-api-consistency.md"
+    },
+    {
+      "index": 91050,
+      "idea_id": "idea091045",
+      "filename": "idea091045-topologicalnavigator-test-migration-readiness",
+      "title": "idea091045 - topologicalnavigator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "topologicalnavigator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091045-topologicalnavigator-test-migration-readiness.md"
+    },
+    {
+      "index": 91051,
+      "idea_id": "idea091046",
+      "filename": "idea091046-topologicalnavigator-test-observability",
+      "title": "idea091046 - topologicalnavigator-test Observability",
+      "archetype": "observability",
+      "component": "topologicalnavigator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091046-topologicalnavigator-test-observability.md"
+    },
+    {
+      "index": 91052,
+      "idea_id": "idea091047",
+      "filename": "idea091047-topologicalnavigator-test-security",
+      "title": "idea091047 - topologicalnavigator-test Security",
+      "archetype": "security",
+      "component": "topologicalnavigator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091047-topologicalnavigator-test-security.md"
+    },
+    {
+      "index": 91053,
+      "idea_id": "idea091048",
+      "filename": "idea091048-topologicalnavigator-test-test-coverage",
+      "title": "idea091048 - topologicalnavigator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "topologicalnavigator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091048-topologicalnavigator-test-test-coverage.md"
+    },
+    {
+      "index": 91054,
+      "idea_id": "idea091049",
+      "filename": "idea091049-init-developer-experience",
+      "title": "idea091049 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091049-init-developer-experience.md"
+    },
+    {
+      "index": 91055,
+      "idea_id": "idea091050",
+      "filename": "idea091050-init-documentation",
+      "title": "idea091050 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091050-init-documentation.md"
+    },
+    {
+      "index": 91056,
+      "idea_id": "idea091051",
+      "filename": "idea091051-init-hardening",
+      "title": "idea091051 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091051-init-hardening.md"
+    },
+    {
+      "index": 91057,
+      "idea_id": "idea091052",
+      "filename": "idea091052-init-performance",
+      "title": "idea091052 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091052-init-performance.md"
+    },
+    {
+      "index": 91058,
+      "idea_id": "idea091053",
+      "filename": "idea091053-init-resilience",
+      "title": "idea091053 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091053-init-resilience.md"
+    },
+    {
+      "index": 91059,
+      "idea_id": "idea091054",
+      "filename": "idea091054-init-test-api-consistency",
+      "title": "idea091054 - --init---test API Consistency",
+      "archetype": "consistency",
+      "component": "init-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091054-init-test-api-consistency.md"
+    },
+    {
+      "index": 91060,
+      "idea_id": "idea091055",
+      "filename": "idea091055-init-test-migration-readiness",
+      "title": "idea091055 - --init---test Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091055-init-test-migration-readiness.md"
+    },
+    {
+      "index": 91061,
+      "idea_id": "idea091056",
+      "filename": "idea091056-init-test-observability",
+      "title": "idea091056 - --init---test Observability",
+      "archetype": "observability",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091056-init-test-observability.md"
+    },
+    {
+      "index": 91062,
+      "idea_id": "idea091057",
+      "filename": "idea091057-init-test-security",
+      "title": "idea091057 - --init---test Security",
+      "archetype": "security",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091057-init-test-security.md"
+    },
+    {
+      "index": 91063,
+      "idea_id": "idea091058",
+      "filename": "idea091058-init-test-test-coverage",
+      "title": "idea091058 - --init---test Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091058-init-test-test-coverage.md"
+    },
+    {
+      "index": 91064,
+      "idea_id": "idea091059",
+      "filename": "idea091059-cloud-provider-agent-developer-experience",
+      "title": "idea091059 - cloud-provider-agent Developer Experience",
+      "archetype": "experience",
+      "component": "cloud-provider-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091059-cloud-provider-agent-developer-experience.md"
+    },
+    {
+      "index": 91065,
+      "idea_id": "idea091060",
+      "filename": "idea091060-cloud-provider-agent-documentation",
+      "title": "idea091060 - cloud-provider-agent Documentation",
+      "archetype": "documentation",
+      "component": "cloud-provider-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091060-cloud-provider-agent-documentation.md"
+    },
+    {
+      "index": 91066,
+      "idea_id": "idea091061",
+      "filename": "idea091061-cloud-provider-agent-hardening",
+      "title": "idea091061 - cloud-provider-agent Hardening",
+      "archetype": "hardening",
+      "component": "cloud-provider-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091061-cloud-provider-agent-hardening.md"
+    },
+    {
+      "index": 91067,
+      "idea_id": "idea091062",
+      "filename": "idea091062-cloud-provider-agent-performance",
+      "title": "idea091062 - cloud-provider-agent Performance",
+      "archetype": "performance",
+      "component": "cloud-provider-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091062-cloud-provider-agent-performance.md"
+    },
+    {
+      "index": 91068,
+      "idea_id": "idea091063",
+      "filename": "idea091063-cloud-provider-agent-resilience",
+      "title": "idea091063 - cloud-provider-agent Resilience",
+      "archetype": "resilience",
+      "component": "cloud-provider-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091063-cloud-provider-agent-resilience.md"
+    },
+    {
+      "index": 91069,
+      "idea_id": "idea091064",
+      "filename": "idea091064-cloud-provider-agent-test-api-consistency",
+      "title": "idea091064 - cloud-provider-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "cloud-provider-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091064-cloud-provider-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91070,
+      "idea_id": "idea091065",
+      "filename": "idea091065-cloud-provider-agent-test-migration-readiness",
+      "title": "idea091065 - cloud-provider-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "cloud-provider-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091065-cloud-provider-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91071,
+      "idea_id": "idea091066",
+      "filename": "idea091066-cloud-provider-agent-test-observability",
+      "title": "idea091066 - cloud-provider-agent-test Observability",
+      "archetype": "observability",
+      "component": "cloud-provider-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091066-cloud-provider-agent-test-observability.md"
+    },
+    {
+      "index": 91072,
+      "idea_id": "idea091067",
+      "filename": "idea091067-cloud-provider-agent-test-security",
+      "title": "idea091067 - cloud-provider-agent-test Security",
+      "archetype": "security",
+      "component": "cloud-provider-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091067-cloud-provider-agent-test-security.md"
+    },
+    {
+      "index": 91073,
+      "idea_id": "idea091068",
+      "filename": "idea091068-cloud-provider-agent-test-test-coverage",
+      "title": "idea091068 - cloud-provider-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "cloud-provider-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091068-cloud-provider-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91074,
+      "idea_id": "idea091069",
+      "filename": "idea091069-compression-agent-developer-experience",
+      "title": "idea091069 - compression-agent Developer Experience",
+      "archetype": "experience",
+      "component": "compression-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091069-compression-agent-developer-experience.md"
+    },
+    {
+      "index": 91075,
+      "idea_id": "idea091070",
+      "filename": "idea091070-compression-agent-documentation",
+      "title": "idea091070 - compression-agent Documentation",
+      "archetype": "documentation",
+      "component": "compression-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091070-compression-agent-documentation.md"
+    },
+    {
+      "index": 91076,
+      "idea_id": "idea091071",
+      "filename": "idea091071-compression-agent-hardening",
+      "title": "idea091071 - compression-agent Hardening",
+      "archetype": "hardening",
+      "component": "compression-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091071-compression-agent-hardening.md"
+    },
+    {
+      "index": 91077,
+      "idea_id": "idea091072",
+      "filename": "idea091072-compression-agent-performance",
+      "title": "idea091072 - compression-agent Performance",
+      "archetype": "performance",
+      "component": "compression-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091072-compression-agent-performance.md"
+    },
+    {
+      "index": 91078,
+      "idea_id": "idea091073",
+      "filename": "idea091073-compression-agent-resilience",
+      "title": "idea091073 - compression-agent Resilience",
+      "archetype": "resilience",
+      "component": "compression-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091073-compression-agent-resilience.md"
+    },
+    {
+      "index": 91079,
+      "idea_id": "idea091074",
+      "filename": "idea091074-compression-agent-test-api-consistency",
+      "title": "idea091074 - compression-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "compression-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091074-compression-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91080,
+      "idea_id": "idea091075",
+      "filename": "idea091075-compression-agent-test-migration-readiness",
+      "title": "idea091075 - compression-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "compression-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091075-compression-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91081,
+      "idea_id": "idea091076",
+      "filename": "idea091076-compression-agent-test-observability",
+      "title": "idea091076 - compression-agent-test Observability",
+      "archetype": "observability",
+      "component": "compression-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091076-compression-agent-test-observability.md"
+    },
+    {
+      "index": 91082,
+      "idea_id": "idea091077",
+      "filename": "idea091077-compression-agent-test-security",
+      "title": "idea091077 - compression-agent-test Security",
+      "archetype": "security",
+      "component": "compression-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091077-compression-agent-test-security.md"
+    },
+    {
+      "index": 91083,
+      "idea_id": "idea091078",
+      "filename": "idea091078-compression-agent-test-test-coverage",
+      "title": "idea091078 - compression-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "compression-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091078-compression-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91084,
+      "idea_id": "idea091079",
+      "filename": "idea091079-config-agent-developer-experience",
+      "title": "idea091079 - config-agent Developer Experience",
+      "archetype": "experience",
+      "component": "config-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091079-config-agent-developer-experience.md"
+    },
+    {
+      "index": 91085,
+      "idea_id": "idea091080",
+      "filename": "idea091080-config-agent-documentation",
+      "title": "idea091080 - config-agent Documentation",
+      "archetype": "documentation",
+      "component": "config-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091080-config-agent-documentation.md"
+    },
+    {
+      "index": 91086,
+      "idea_id": "idea091081",
+      "filename": "idea091081-config-agent-hardening",
+      "title": "idea091081 - config-agent Hardening",
+      "archetype": "hardening",
+      "component": "config-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091081-config-agent-hardening.md"
+    },
+    {
+      "index": 91087,
+      "idea_id": "idea091082",
+      "filename": "idea091082-config-agent-performance",
+      "title": "idea091082 - config-agent Performance",
+      "archetype": "performance",
+      "component": "config-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091082-config-agent-performance.md"
+    },
+    {
+      "index": 91088,
+      "idea_id": "idea091083",
+      "filename": "idea091083-config-agent-resilience",
+      "title": "idea091083 - config-agent Resilience",
+      "archetype": "resilience",
+      "component": "config-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091083-config-agent-resilience.md"
+    },
+    {
+      "index": 91089,
+      "idea_id": "idea091084",
+      "filename": "idea091084-config-agent-test-api-consistency",
+      "title": "idea091084 - config-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "config-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091084-config-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91090,
+      "idea_id": "idea091085",
+      "filename": "idea091085-config-agent-test-migration-readiness",
+      "title": "idea091085 - config-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "config-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091085-config-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91091,
+      "idea_id": "idea091086",
+      "filename": "idea091086-config-agent-test-observability",
+      "title": "idea091086 - config-agent-test Observability",
+      "archetype": "observability",
+      "component": "config-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091086-config-agent-test-observability.md"
+    },
+    {
+      "index": 91092,
+      "idea_id": "idea091087",
+      "filename": "idea091087-config-agent-test-security",
+      "title": "idea091087 - config-agent-test Security",
+      "archetype": "security",
+      "component": "config-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091087-config-agent-test-security.md"
+    },
+    {
+      "index": 91093,
+      "idea_id": "idea091088",
+      "filename": "idea091088-config-agent-test-test-coverage",
+      "title": "idea091088 - config-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "config-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091088-config-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91094,
+      "idea_id": "idea091089",
+      "filename": "idea091089-confighygienecore-api-consistency",
+      "title": "idea091089 - confighygienecore API Consistency",
+      "archetype": "consistency",
+      "component": "confighygienecore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091089-confighygienecore-api-consistency.md"
+    },
+    {
+      "index": 91095,
+      "idea_id": "idea091090",
+      "filename": "idea091090-confighygienecore-migration-readiness",
+      "title": "idea091090 - confighygienecore Migration Readiness",
+      "archetype": "readiness",
+      "component": "confighygienecore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091090-confighygienecore-migration-readiness.md"
+    },
+    {
+      "index": 91096,
+      "idea_id": "idea091091",
+      "filename": "idea091091-confighygienecore-observability",
+      "title": "idea091091 - confighygienecore Observability",
+      "archetype": "observability",
+      "component": "confighygienecore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091091-confighygienecore-observability.md"
+    },
+    {
+      "index": 91097,
+      "idea_id": "idea091092",
+      "filename": "idea091092-confighygienecore-security",
+      "title": "idea091092 - confighygienecore Security",
+      "archetype": "security",
+      "component": "confighygienecore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091092-confighygienecore-security.md"
+    },
+    {
+      "index": 91098,
+      "idea_id": "idea091093",
+      "filename": "idea091093-confighygienecore-test-coverage",
+      "title": "idea091093 - confighygienecore Test Coverage",
+      "archetype": "coverage",
+      "component": "confighygienecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091093-confighygienecore-test-coverage.md"
+    },
+    {
+      "index": 91099,
+      "idea_id": "idea091094",
+      "filename": "idea091094-confighygienecore-test-api-consistency",
+      "title": "idea091094 - confighygienecore-test API Consistency",
+      "archetype": "consistency",
+      "component": "confighygienecore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091094-confighygienecore-test-api-consistency.md"
+    },
+    {
+      "index": 91100,
+      "idea_id": "idea091095",
+      "filename": "idea091095-confighygienecore-test-migration-readiness",
+      "title": "idea091095 - confighygienecore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "confighygienecore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091095-confighygienecore-test-migration-readiness.md"
+    },
+    {
+      "index": 91101,
+      "idea_id": "idea091096",
+      "filename": "idea091096-confighygienecore-test-observability",
+      "title": "idea091096 - confighygienecore-test Observability",
+      "archetype": "observability",
+      "component": "confighygienecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091096-confighygienecore-test-observability.md"
+    },
+    {
+      "index": 91102,
+      "idea_id": "idea091097",
+      "filename": "idea091097-confighygienecore-test-security",
+      "title": "idea091097 - confighygienecore-test Security",
+      "archetype": "security",
+      "component": "confighygienecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091097-confighygienecore-test-security.md"
+    },
+    {
+      "index": 91103,
+      "idea_id": "idea091098",
+      "filename": "idea091098-confighygienecore-test-test-coverage",
+      "title": "idea091098 - confighygienecore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "confighygienecore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091098-confighygienecore-test-test-coverage.md"
+    },
+    {
+      "index": 91104,
+      "idea_id": "idea091099",
+      "filename": "idea091099-convergencecore-api-consistency",
+      "title": "idea091099 - convergencecore API Consistency",
+      "archetype": "consistency",
+      "component": "convergencecore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091099-convergencecore-api-consistency.md"
+    },
+    {
+      "index": 91105,
+      "idea_id": "idea091100",
+      "filename": "idea091100-convergencecore-migration-readiness",
+      "title": "idea091100 - convergencecore Migration Readiness",
+      "archetype": "readiness",
+      "component": "convergencecore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091100-convergencecore-migration-readiness.md"
+    },
+    {
+      "index": 91106,
+      "idea_id": "idea091101",
+      "filename": "idea091101-convergencecore-observability",
+      "title": "idea091101 - convergencecore Observability",
+      "archetype": "observability",
+      "component": "convergencecore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091101-convergencecore-observability.md"
+    },
+    {
+      "index": 91107,
+      "idea_id": "idea091102",
+      "filename": "idea091102-convergencecore-security",
+      "title": "idea091102 - convergencecore Security",
+      "archetype": "security",
+      "component": "convergencecore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091102-convergencecore-security.md"
+    },
+    {
+      "index": 91108,
+      "idea_id": "idea091103",
+      "filename": "idea091103-convergencecore-test-coverage",
+      "title": "idea091103 - convergencecore Test Coverage",
+      "archetype": "coverage",
+      "component": "convergencecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091103-convergencecore-test-coverage.md"
+    },
+    {
+      "index": 91109,
+      "idea_id": "idea091104",
+      "filename": "idea091104-convergencecore-test-api-consistency",
+      "title": "idea091104 - convergencecore-test API Consistency",
+      "archetype": "consistency",
+      "component": "convergencecore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091104-convergencecore-test-api-consistency.md"
+    },
+    {
+      "index": 91110,
+      "idea_id": "idea091105",
+      "filename": "idea091105-convergencecore-test-migration-readiness",
+      "title": "idea091105 - convergencecore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "convergencecore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091105-convergencecore-test-migration-readiness.md"
+    },
+    {
+      "index": 91111,
+      "idea_id": "idea091106",
+      "filename": "idea091106-convergencecore-test-observability",
+      "title": "idea091106 - convergencecore-test Observability",
+      "archetype": "observability",
+      "component": "convergencecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091106-convergencecore-test-observability.md"
+    },
+    {
+      "index": 91112,
+      "idea_id": "idea091107",
+      "filename": "idea091107-convergencecore-test-security",
+      "title": "idea091107 - convergencecore-test Security",
+      "archetype": "security",
+      "component": "convergencecore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091107-convergencecore-test-security.md"
+    },
+    {
+      "index": 91113,
+      "idea_id": "idea091108",
+      "filename": "idea091108-convergencecore-test-test-coverage",
+      "title": "idea091108 - convergencecore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "convergencecore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091108-convergencecore-test-test-coverage.md"
+    },
+    {
+      "index": 91114,
+      "idea_id": "idea091109",
+      "filename": "idea091109-curationcore-api-consistency",
+      "title": "idea091109 - curationcore API Consistency",
+      "archetype": "consistency",
+      "component": "curationcore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091109-curationcore-api-consistency.md"
+    },
+    {
+      "index": 91115,
+      "idea_id": "idea091110",
+      "filename": "idea091110-curationcore-migration-readiness",
+      "title": "idea091110 - curationcore Migration Readiness",
+      "archetype": "readiness",
+      "component": "curationcore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091110-curationcore-migration-readiness.md"
+    },
+    {
+      "index": 91116,
+      "idea_id": "idea091111",
+      "filename": "idea091111-curationcore-observability",
+      "title": "idea091111 - curationcore Observability",
+      "archetype": "observability",
+      "component": "curationcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091111-curationcore-observability.md"
+    },
+    {
+      "index": 91117,
+      "idea_id": "idea091112",
+      "filename": "idea091112-curationcore-security",
+      "title": "idea091112 - curationcore Security",
+      "archetype": "security",
+      "component": "curationcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091112-curationcore-security.md"
+    },
+    {
+      "index": 91118,
+      "idea_id": "idea091113",
+      "filename": "idea091113-curationcore-test-coverage",
+      "title": "idea091113 - curationcore Test Coverage",
+      "archetype": "coverage",
+      "component": "curationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091113-curationcore-test-coverage.md"
+    },
+    {
+      "index": 91119,
+      "idea_id": "idea091114",
+      "filename": "idea091114-curationcore-test-api-consistency",
+      "title": "idea091114 - curationcore-test API Consistency",
+      "archetype": "consistency",
+      "component": "curationcore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091114-curationcore-test-api-consistency.md"
+    },
+    {
+      "index": 91120,
+      "idea_id": "idea091115",
+      "filename": "idea091115-curationcore-test-migration-readiness",
+      "title": "idea091115 - curationcore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "curationcore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091115-curationcore-test-migration-readiness.md"
+    },
+    {
+      "index": 91121,
+      "idea_id": "idea091116",
+      "filename": "idea091116-curationcore-test-observability",
+      "title": "idea091116 - curationcore-test Observability",
+      "archetype": "observability",
+      "component": "curationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091116-curationcore-test-observability.md"
+    },
+    {
+      "index": 91122,
+      "idea_id": "idea091117",
+      "filename": "idea091117-curationcore-test-security",
+      "title": "idea091117 - curationcore-test Security",
+      "archetype": "security",
+      "component": "curationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091117-curationcore-test-security.md"
+    },
+    {
+      "index": 91123,
+      "idea_id": "idea091118",
+      "filename": "idea091118-curationcore-test-test-coverage",
+      "title": "idea091118 - curationcore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "curationcore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091118-curationcore-test-test-coverage.md"
+    },
+    {
+      "index": 91124,
+      "idea_id": "idea091119",
+      "filename": "idea091119-dependencycore-developer-experience",
+      "title": "idea091119 - dependencycore Developer Experience",
+      "archetype": "experience",
+      "component": "dependencycore-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091119-dependencycore-developer-experience.md"
+    },
+    {
+      "index": 91125,
+      "idea_id": "idea091120",
+      "filename": "idea091120-dependencycore-documentation",
+      "title": "idea091120 - dependencycore Documentation",
+      "archetype": "documentation",
+      "component": "dependencycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091120-dependencycore-documentation.md"
+    },
+    {
+      "index": 91126,
+      "idea_id": "idea091121",
+      "filename": "idea091121-dependencycore-hardening",
+      "title": "idea091121 - dependencycore Hardening",
+      "archetype": "hardening",
+      "component": "dependencycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091121-dependencycore-hardening.md"
+    },
+    {
+      "index": 91127,
+      "idea_id": "idea091122",
+      "filename": "idea091122-dependencycore-performance",
+      "title": "idea091122 - dependencycore Performance",
+      "archetype": "performance",
+      "component": "dependencycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091122-dependencycore-performance.md"
+    },
+    {
+      "index": 91128,
+      "idea_id": "idea091123",
+      "filename": "idea091123-dependencycore-resilience",
+      "title": "idea091123 - dependencycore Resilience",
+      "archetype": "resilience",
+      "component": "dependencycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091123-dependencycore-resilience.md"
+    },
+    {
+      "index": 91129,
+      "idea_id": "idea091124",
+      "filename": "idea091124-dependencycore-test-api-consistency",
+      "title": "idea091124 - dependencycore-test API Consistency",
+      "archetype": "consistency",
+      "component": "dependencycore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091124-dependencycore-test-api-consistency.md"
+    },
+    {
+      "index": 91130,
+      "idea_id": "idea091125",
+      "filename": "idea091125-dependencycore-test-migration-readiness",
+      "title": "idea091125 - dependencycore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "dependencycore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091125-dependencycore-test-migration-readiness.md"
+    },
+    {
+      "index": 91131,
+      "idea_id": "idea091126",
+      "filename": "idea091126-dependencycore-test-observability",
+      "title": "idea091126 - dependencycore-test Observability",
+      "archetype": "observability",
+      "component": "dependencycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091126-dependencycore-test-observability.md"
+    },
+    {
+      "index": 91132,
+      "idea_id": "idea091127",
+      "filename": "idea091127-dependencycore-test-security",
+      "title": "idea091127 - dependencycore-test Security",
+      "archetype": "security",
+      "component": "dependencycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091127-dependencycore-test-security.md"
+    },
+    {
+      "index": 91133,
+      "idea_id": "idea091128",
+      "filename": "idea091128-dependencycore-test-test-coverage",
+      "title": "idea091128 - dependencycore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "dependencycore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091128-dependencycore-test-test-coverage.md"
+    },
+    {
+      "index": 91134,
+      "idea_id": "idea091129",
+      "filename": "idea091129-entropycore-api-consistency",
+      "title": "idea091129 - entropycore API Consistency",
+      "archetype": "consistency",
+      "component": "entropycore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091129-entropycore-api-consistency.md"
+    },
+    {
+      "index": 91135,
+      "idea_id": "idea091130",
+      "filename": "idea091130-entropycore-migration-readiness",
+      "title": "idea091130 - entropycore Migration Readiness",
+      "archetype": "readiness",
+      "component": "entropycore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091130-entropycore-migration-readiness.md"
+    },
+    {
+      "index": 91136,
+      "idea_id": "idea091131",
+      "filename": "idea091131-entropycore-observability",
+      "title": "idea091131 - entropycore Observability",
+      "archetype": "observability",
+      "component": "entropycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091131-entropycore-observability.md"
+    },
+    {
+      "index": 91137,
+      "idea_id": "idea091132",
+      "filename": "idea091132-entropycore-security",
+      "title": "idea091132 - entropycore Security",
+      "archetype": "security",
+      "component": "entropycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091132-entropycore-security.md"
+    },
+    {
+      "index": 91138,
+      "idea_id": "idea091133",
+      "filename": "idea091133-entropycore-test-coverage",
+      "title": "idea091133 - entropycore Test Coverage",
+      "archetype": "coverage",
+      "component": "entropycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091133-entropycore-test-coverage.md"
+    },
+    {
+      "index": 91139,
+      "idea_id": "idea091134",
+      "filename": "idea091134-entropycore-test-api-consistency",
+      "title": "idea091134 - entropycore-test API Consistency",
+      "archetype": "consistency",
+      "component": "entropycore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091134-entropycore-test-api-consistency.md"
+    },
+    {
+      "index": 91140,
+      "idea_id": "idea091135",
+      "filename": "idea091135-entropycore-test-migration-readiness",
+      "title": "idea091135 - entropycore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "entropycore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091135-entropycore-test-migration-readiness.md"
+    },
+    {
+      "index": 91141,
+      "idea_id": "idea091136",
+      "filename": "idea091136-entropycore-test-observability",
+      "title": "idea091136 - entropycore-test Observability",
+      "archetype": "observability",
+      "component": "entropycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091136-entropycore-test-observability.md"
+    },
+    {
+      "index": 91142,
+      "idea_id": "idea091137",
+      "filename": "idea091137-entropycore-test-security",
+      "title": "idea091137 - entropycore-test Security",
+      "archetype": "security",
+      "component": "entropycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091137-entropycore-test-security.md"
+    },
+    {
+      "index": 91143,
+      "idea_id": "idea091138",
+      "filename": "idea091138-entropycore-test-test-coverage",
+      "title": "idea091138 - entropycore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "entropycore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091138-entropycore-test-test-coverage.md"
+    },
+    {
+      "index": 91144,
+      "idea_id": "idea091139",
+      "filename": "idea091139-modelregistrycore-api-consistency",
+      "title": "idea091139 - modelregistrycore API Consistency",
+      "archetype": "consistency",
+      "component": "modelregistrycore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091139-modelregistrycore-api-consistency.md"
+    },
+    {
+      "index": 91145,
+      "idea_id": "idea091140",
+      "filename": "idea091140-modelregistrycore-migration-readiness",
+      "title": "idea091140 - modelregistrycore Migration Readiness",
+      "archetype": "readiness",
+      "component": "modelregistrycore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091140-modelregistrycore-migration-readiness.md"
+    },
+    {
+      "index": 91146,
+      "idea_id": "idea091141",
+      "filename": "idea091141-modelregistrycore-observability",
+      "title": "idea091141 - modelregistrycore Observability",
+      "archetype": "observability",
+      "component": "modelregistrycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091141-modelregistrycore-observability.md"
+    },
+    {
+      "index": 91147,
+      "idea_id": "idea091142",
+      "filename": "idea091142-modelregistrycore-security",
+      "title": "idea091142 - modelregistrycore Security",
+      "archetype": "security",
+      "component": "modelregistrycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091142-modelregistrycore-security.md"
+    },
+    {
+      "index": 91148,
+      "idea_id": "idea091143",
+      "filename": "idea091143-modelregistrycore-test-coverage",
+      "title": "idea091143 - modelregistrycore Test Coverage",
+      "archetype": "coverage",
+      "component": "modelregistrycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091143-modelregistrycore-test-coverage.md"
+    },
+    {
+      "index": 91149,
+      "idea_id": "idea091144",
+      "filename": "idea091144-modelregistrycore-test-api-consistency",
+      "title": "idea091144 - modelregistrycore-test API Consistency",
+      "archetype": "consistency",
+      "component": "modelregistrycore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091144-modelregistrycore-test-api-consistency.md"
+    },
+    {
+      "index": 91150,
+      "idea_id": "idea091145",
+      "filename": "idea091145-modelregistrycore-test-migration-readiness",
+      "title": "idea091145 - modelregistrycore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "modelregistrycore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091145-modelregistrycore-test-migration-readiness.md"
+    },
+    {
+      "index": 91151,
+      "idea_id": "idea091146",
+      "filename": "idea091146-modelregistrycore-test-observability",
+      "title": "idea091146 - modelregistrycore-test Observability",
+      "archetype": "observability",
+      "component": "modelregistrycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091146-modelregistrycore-test-observability.md"
+    },
+    {
+      "index": 91152,
+      "idea_id": "idea091147",
+      "filename": "idea091147-modelregistrycore-test-security",
+      "title": "idea091147 - modelregistrycore-test Security",
+      "archetype": "security",
+      "component": "modelregistrycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091147-modelregistrycore-test-security.md"
+    },
+    {
+      "index": 91153,
+      "idea_id": "idea091148",
+      "filename": "idea091148-modelregistrycore-test-test-coverage",
+      "title": "idea091148 - modelregistrycore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "modelregistrycore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091148-modelregistrycore-test-test-coverage.md"
+    },
+    {
+      "index": 91154,
+      "idea_id": "idea091149",
+      "filename": "idea091149-morphologycore-api-consistency",
+      "title": "idea091149 - morphologycore API Consistency",
+      "archetype": "consistency",
+      "component": "morphologycore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091149-morphologycore-api-consistency.md"
+    },
+    {
+      "index": 91155,
+      "idea_id": "idea091150",
+      "filename": "idea091150-morphologycore-migration-readiness",
+      "title": "idea091150 - morphologycore Migration Readiness",
+      "archetype": "readiness",
+      "component": "morphologycore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091150-morphologycore-migration-readiness.md"
+    },
+    {
+      "index": 91156,
+      "idea_id": "idea091151",
+      "filename": "idea091151-morphologycore-observability",
+      "title": "idea091151 - morphologycore Observability",
+      "archetype": "observability",
+      "component": "morphologycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091151-morphologycore-observability.md"
+    },
+    {
+      "index": 91157,
+      "idea_id": "idea091152",
+      "filename": "idea091152-morphologycore-security",
+      "title": "idea091152 - morphologycore Security",
+      "archetype": "security",
+      "component": "morphologycore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091152-morphologycore-security.md"
+    },
+    {
+      "index": 91158,
+      "idea_id": "idea091153",
+      "filename": "idea091153-morphologycore-test-coverage",
+      "title": "idea091153 - morphologycore Test Coverage",
+      "archetype": "coverage",
+      "component": "morphologycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091153-morphologycore-test-coverage.md"
+    },
+    {
+      "index": 91159,
+      "idea_id": "idea091154",
+      "filename": "idea091154-morphologycore-test-api-consistency",
+      "title": "idea091154 - morphologycore-test API Consistency",
+      "archetype": "consistency",
+      "component": "morphologycore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091154-morphologycore-test-api-consistency.md"
+    },
+    {
+      "index": 91160,
+      "idea_id": "idea091155",
+      "filename": "idea091155-morphologycore-test-migration-readiness",
+      "title": "idea091155 - morphologycore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "morphologycore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091155-morphologycore-test-migration-readiness.md"
+    },
+    {
+      "index": 91161,
+      "idea_id": "idea091156",
+      "filename": "idea091156-morphologycore-test-observability",
+      "title": "idea091156 - morphologycore-test Observability",
+      "archetype": "observability",
+      "component": "morphologycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091156-morphologycore-test-observability.md"
+    },
+    {
+      "index": 91162,
+      "idea_id": "idea091157",
+      "filename": "idea091157-morphologycore-test-security",
+      "title": "idea091157 - morphologycore-test Security",
+      "archetype": "security",
+      "component": "morphologycore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091157-morphologycore-test-security.md"
+    },
+    {
+      "index": 91163,
+      "idea_id": "idea091158",
+      "filename": "idea091158-morphologycore-test-test-coverage",
+      "title": "idea091158 - morphologycore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "morphologycore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091158-morphologycore-test-test-coverage.md"
+    },
+    {
+      "index": 91164,
+      "idea_id": "idea091159",
+      "filename": "idea091159-multimodalcore-api-consistency",
+      "title": "idea091159 - multimodalcore API Consistency",
+      "archetype": "consistency",
+      "component": "multimodalcore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091159-multimodalcore-api-consistency.md"
+    },
+    {
+      "index": 91165,
+      "idea_id": "idea091160",
+      "filename": "idea091160-multimodalcore-migration-readiness",
+      "title": "idea091160 - multimodalcore Migration Readiness",
+      "archetype": "readiness",
+      "component": "multimodalcore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091160-multimodalcore-migration-readiness.md"
+    },
+    {
+      "index": 91166,
+      "idea_id": "idea091161",
+      "filename": "idea091161-multimodalcore-observability",
+      "title": "idea091161 - multimodalcore Observability",
+      "archetype": "observability",
+      "component": "multimodalcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091161-multimodalcore-observability.md"
+    },
+    {
+      "index": 91167,
+      "idea_id": "idea091162",
+      "filename": "idea091162-multimodalcore-security",
+      "title": "idea091162 - multimodalcore Security",
+      "archetype": "security",
+      "component": "multimodalcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091162-multimodalcore-security.md"
+    },
+    {
+      "index": 91168,
+      "idea_id": "idea091163",
+      "filename": "idea091163-multimodalcore-test-coverage",
+      "title": "idea091163 - multimodalcore Test Coverage",
+      "archetype": "coverage",
+      "component": "multimodalcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091163-multimodalcore-test-coverage.md"
+    },
+    {
+      "index": 91169,
+      "idea_id": "idea091164",
+      "filename": "idea091164-multimodalcore-test-api-consistency",
+      "title": "idea091164 - multimodalcore-test API Consistency",
+      "archetype": "consistency",
+      "component": "multimodalcore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091164-multimodalcore-test-api-consistency.md"
+    },
+    {
+      "index": 91170,
+      "idea_id": "idea091165",
+      "filename": "idea091165-multimodalcore-test-migration-readiness",
+      "title": "idea091165 - multimodalcore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "multimodalcore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091165-multimodalcore-test-migration-readiness.md"
+    },
+    {
+      "index": 91171,
+      "idea_id": "idea091166",
+      "filename": "idea091166-multimodalcore-test-observability",
+      "title": "idea091166 - multimodalcore-test Observability",
+      "archetype": "observability",
+      "component": "multimodalcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091166-multimodalcore-test-observability.md"
+    },
+    {
+      "index": 91172,
+      "idea_id": "idea091167",
+      "filename": "idea091167-multimodalcore-test-security",
+      "title": "idea091167 - multimodalcore-test Security",
+      "archetype": "security",
+      "component": "multimodalcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091167-multimodalcore-test-security.md"
+    },
+    {
+      "index": 91173,
+      "idea_id": "idea091168",
+      "filename": "idea091168-multimodalcore-test-test-coverage",
+      "title": "idea091168 - multimodalcore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "multimodalcore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091168-multimodalcore-test-test-coverage.md"
+    },
+    {
+      "index": 91174,
+      "idea_id": "idea091169",
+      "filename": "idea091169-init-api-consistency",
+      "title": "idea091169 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091169-init-api-consistency.md"
+    },
+    {
+      "index": 91175,
+      "idea_id": "idea091170",
+      "filename": "idea091170-init-migration-readiness",
+      "title": "idea091170 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091170-init-migration-readiness.md"
+    },
+    {
+      "index": 91176,
+      "idea_id": "idea091171",
+      "filename": "idea091171-init-observability",
+      "title": "idea091171 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091171-init-observability.md"
+    },
+    {
+      "index": 91177,
+      "idea_id": "idea091172",
+      "filename": "idea091172-init-security",
+      "title": "idea091172 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091172-init-security.md"
+    },
+    {
+      "index": 91178,
+      "idea_id": "idea091173",
+      "filename": "idea091173-init-test-coverage",
+      "title": "idea091173 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091173-init-test-coverage.md"
+    },
+    {
+      "index": 91179,
+      "idea_id": "idea091174",
+      "filename": "idea091174-config-hygiene-core-developer-experience",
+      "title": "idea091174 - config-hygiene-core Developer Experience",
+      "archetype": "experience",
+      "component": "config-hygiene-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091174-config-hygiene-core-developer-experience.md"
+    },
+    {
+      "index": 91180,
+      "idea_id": "idea091175",
+      "filename": "idea091175-config-hygiene-core-documentation",
+      "title": "idea091175 - config-hygiene-core Documentation",
+      "archetype": "documentation",
+      "component": "config-hygiene-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091175-config-hygiene-core-documentation.md"
+    },
+    {
+      "index": 91181,
+      "idea_id": "idea091176",
+      "filename": "idea091176-config-hygiene-core-hardening",
+      "title": "idea091176 - config-hygiene-core Hardening",
+      "archetype": "hardening",
+      "component": "config-hygiene-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091176-config-hygiene-core-hardening.md"
+    },
+    {
+      "index": 91182,
+      "idea_id": "idea091177",
+      "filename": "idea091177-config-hygiene-core-performance",
+      "title": "idea091177 - config-hygiene-core Performance",
+      "archetype": "performance",
+      "component": "config-hygiene-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091177-config-hygiene-core-performance.md"
+    },
+    {
+      "index": 91183,
+      "idea_id": "idea091178",
+      "filename": "idea091178-config-hygiene-core-resilience",
+      "title": "idea091178 - config-hygiene-core Resilience",
+      "archetype": "resilience",
+      "component": "config-hygiene-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091178-config-hygiene-core-resilience.md"
+    },
+    {
+      "index": 91184,
+      "idea_id": "idea091179",
+      "filename": "idea091179-config-hygiene-core-py-hardening",
+      "title": "idea091179 - config-hygiene-core.py Hardening",
+      "archetype": "hardening",
+      "component": "config-hygiene-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091179-config-hygiene-core-py-hardening.md"
+    },
+    {
+      "index": 91185,
+      "idea_id": "idea091180",
+      "filename": "idea091180-config-hygiene-core-py-performance",
+      "title": "idea091180 - config-hygiene-core.py Performance",
+      "archetype": "performance",
+      "component": "config-hygiene-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091180-config-hygiene-core-py-performance.md"
+    },
+    {
+      "index": 91186,
+      "idea_id": "idea091181",
+      "filename": "idea091181-config-hygiene-core-test-api-consistency",
+      "title": "idea091181 - config-hygiene-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "config-hygiene-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091181-config-hygiene-core-test-api-consistency.md"
+    },
+    {
+      "index": 91187,
+      "idea_id": "idea091182",
+      "filename": "idea091182-config-hygiene-core-test-migration-readiness",
+      "title": "idea091182 - config-hygiene-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "config-hygiene-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091182-config-hygiene-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91188,
+      "idea_id": "idea091183",
+      "filename": "idea091183-config-hygiene-core-test-observability",
+      "title": "idea091183 - config-hygiene-core-test Observability",
+      "archetype": "observability",
+      "component": "config-hygiene-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091183-config-hygiene-core-test-observability.md"
+    },
+    {
+      "index": 91189,
+      "idea_id": "idea091184",
+      "filename": "idea091184-config-hygiene-core-test-security",
+      "title": "idea091184 - config-hygiene-core-test Security",
+      "archetype": "security",
+      "component": "config-hygiene-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091184-config-hygiene-core-test-security.md"
+    },
+    {
+      "index": 91190,
+      "idea_id": "idea091185",
+      "filename": "idea091185-config-hygiene-core-test-test-coverage",
+      "title": "idea091185 - config-hygiene-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "config-hygiene-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091185-config-hygiene-core-test-test-coverage.md"
+    },
+    {
+      "index": 91191,
+      "idea_id": "idea091186",
+      "filename": "idea091186-convergence-core-developer-experience",
+      "title": "idea091186 - convergence-core Developer Experience",
+      "archetype": "experience",
+      "component": "convergence-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091186-convergence-core-developer-experience.md"
+    },
+    {
+      "index": 91192,
+      "idea_id": "idea091187",
+      "filename": "idea091187-convergence-core-documentation",
+      "title": "idea091187 - convergence-core Documentation",
+      "archetype": "documentation",
+      "component": "convergence-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091187-convergence-core-documentation.md"
+    },
+    {
+      "index": 91193,
+      "idea_id": "idea091188",
+      "filename": "idea091188-convergence-core-hardening",
+      "title": "idea091188 - convergence-core Hardening",
+      "archetype": "hardening",
+      "component": "convergence-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091188-convergence-core-hardening.md"
+    },
+    {
+      "index": 91194,
+      "idea_id": "idea091189",
+      "filename": "idea091189-convergence-core-performance",
+      "title": "idea091189 - convergence-core Performance",
+      "archetype": "performance",
+      "component": "convergence-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091189-convergence-core-performance.md"
+    },
+    {
+      "index": 91195,
+      "idea_id": "idea091190",
+      "filename": "idea091190-convergence-core-resilience",
+      "title": "idea091190 - convergence-core Resilience",
+      "archetype": "resilience",
+      "component": "convergence-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091190-convergence-core-resilience.md"
+    },
+    {
+      "index": 91196,
+      "idea_id": "idea091191",
+      "filename": "idea091191-convergence-core-test-api-consistency",
+      "title": "idea091191 - convergence-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "convergence-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091191-convergence-core-test-api-consistency.md"
+    },
+    {
+      "index": 91197,
+      "idea_id": "idea091192",
+      "filename": "idea091192-convergence-core-test-migration-readiness",
+      "title": "idea091192 - convergence-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "convergence-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091192-convergence-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91198,
+      "idea_id": "idea091193",
+      "filename": "idea091193-convergence-core-test-observability",
+      "title": "idea091193 - convergence-core-test Observability",
+      "archetype": "observability",
+      "component": "convergence-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091193-convergence-core-test-observability.md"
+    },
+    {
+      "index": 91199,
+      "idea_id": "idea091194",
+      "filename": "idea091194-convergence-core-test-security",
+      "title": "idea091194 - convergence-core-test Security",
+      "archetype": "security",
+      "component": "convergence-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091194-convergence-core-test-security.md"
+    },
+    {
+      "index": 91200,
+      "idea_id": "idea091195",
+      "filename": "idea091195-convergence-core-test-test-coverage",
+      "title": "idea091195 - convergence-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "convergence-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091195-convergence-core-test-test-coverage.md"
+    },
+    {
+      "index": 91201,
+      "idea_id": "idea091196",
+      "filename": "idea091196-curation-core-developer-experience",
+      "title": "idea091196 - curation-core Developer Experience",
+      "archetype": "experience",
+      "component": "curation-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091196-curation-core-developer-experience.md"
+    },
+    {
+      "index": 91202,
+      "idea_id": "idea091197",
+      "filename": "idea091197-curation-core-documentation",
+      "title": "idea091197 - curation-core Documentation",
+      "archetype": "documentation",
+      "component": "curation-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091197-curation-core-documentation.md"
+    },
+    {
+      "index": 91203,
+      "idea_id": "idea091198",
+      "filename": "idea091198-curation-core-hardening",
+      "title": "idea091198 - curation-core Hardening",
+      "archetype": "hardening",
+      "component": "curation-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091198-curation-core-hardening.md"
+    },
+    {
+      "index": 91204,
+      "idea_id": "idea091199",
+      "filename": "idea091199-curation-core-performance",
+      "title": "idea091199 - curation-core Performance",
+      "archetype": "performance",
+      "component": "curation-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091199-curation-core-performance.md"
+    },
+    {
+      "index": 91205,
+      "idea_id": "idea091200",
+      "filename": "idea091200-curation-core-resilience",
+      "title": "idea091200 - curation-core Resilience",
+      "archetype": "resilience",
+      "component": "curation-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091200-curation-core-resilience.md"
+    },
+    {
+      "index": 91206,
+      "idea_id": "idea091201",
+      "filename": "idea091201-curation-core-py-hardening",
+      "title": "idea091201 - curation-core.py Hardening",
+      "archetype": "hardening",
+      "component": "curation-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091201-curation-core-py-hardening.md"
+    },
+    {
+      "index": 91207,
+      "idea_id": "idea091202",
+      "filename": "idea091202-curation-core-py-performance",
+      "title": "idea091202 - curation-core.py Performance",
+      "archetype": "performance",
+      "component": "curation-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091202-curation-core-py-performance.md"
+    },
+    {
+      "index": 91208,
+      "idea_id": "idea091203",
+      "filename": "idea091203-curation-core-test-api-consistency",
+      "title": "idea091203 - curation-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "curation-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091203-curation-core-test-api-consistency.md"
+    },
+    {
+      "index": 91209,
+      "idea_id": "idea091204",
+      "filename": "idea091204-curation-core-test-migration-readiness",
+      "title": "idea091204 - curation-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "curation-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091204-curation-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91210,
+      "idea_id": "idea091205",
+      "filename": "idea091205-curation-core-test-observability",
+      "title": "idea091205 - curation-core-test Observability",
+      "archetype": "observability",
+      "component": "curation-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091205-curation-core-test-observability.md"
+    },
+    {
+      "index": 91211,
+      "idea_id": "idea091206",
+      "filename": "idea091206-curation-core-test-security",
+      "title": "idea091206 - curation-core-test Security",
+      "archetype": "security",
+      "component": "curation-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091206-curation-core-test-security.md"
+    },
+    {
+      "index": 91212,
+      "idea_id": "idea091207",
+      "filename": "idea091207-curation-core-test-test-coverage",
+      "title": "idea091207 - curation-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "curation-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091207-curation-core-test-test-coverage.md"
+    },
+    {
+      "index": 91213,
+      "idea_id": "idea091208",
+      "filename": "idea091208-dependency-core-developer-experience",
+      "title": "idea091208 - dependency-core Developer Experience",
+      "archetype": "experience",
+      "component": "dependency-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091208-dependency-core-developer-experience.md"
+    },
+    {
+      "index": 91214,
+      "idea_id": "idea091209",
+      "filename": "idea091209-dependency-core-documentation",
+      "title": "idea091209 - dependency-core Documentation",
+      "archetype": "documentation",
+      "component": "dependency-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091209-dependency-core-documentation.md"
+    },
+    {
+      "index": 91215,
+      "idea_id": "idea091210",
+      "filename": "idea091210-dependency-core-hardening",
+      "title": "idea091210 - dependency-core Hardening",
+      "archetype": "hardening",
+      "component": "dependency-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091210-dependency-core-hardening.md"
+    },
+    {
+      "index": 91216,
+      "idea_id": "idea091211",
+      "filename": "idea091211-dependency-core-performance",
+      "title": "idea091211 - dependency-core Performance",
+      "archetype": "performance",
+      "component": "dependency-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091211-dependency-core-performance.md"
+    },
+    {
+      "index": 91217,
+      "idea_id": "idea091212",
+      "filename": "idea091212-dependency-core-resilience",
+      "title": "idea091212 - dependency-core Resilience",
+      "archetype": "resilience",
+      "component": "dependency-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091212-dependency-core-resilience.md"
+    },
+    {
+      "index": 91218,
+      "idea_id": "idea091213",
+      "filename": "idea091213-dependency-core-test-api-consistency",
+      "title": "idea091213 - dependency-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "dependency-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091213-dependency-core-test-api-consistency.md"
+    },
+    {
+      "index": 91219,
+      "idea_id": "idea091214",
+      "filename": "idea091214-dependency-core-test-migration-readiness",
+      "title": "idea091214 - dependency-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "dependency-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091214-dependency-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91220,
+      "idea_id": "idea091215",
+      "filename": "idea091215-dependency-core-test-observability",
+      "title": "idea091215 - dependency-core-test Observability",
+      "archetype": "observability",
+      "component": "dependency-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091215-dependency-core-test-observability.md"
+    },
+    {
+      "index": 91221,
+      "idea_id": "idea091216",
+      "filename": "idea091216-dependency-core-test-security",
+      "title": "idea091216 - dependency-core-test Security",
+      "archetype": "security",
+      "component": "dependency-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091216-dependency-core-test-security.md"
+    },
+    {
+      "index": 91222,
+      "idea_id": "idea091217",
+      "filename": "idea091217-dependency-core-test-test-coverage",
+      "title": "idea091217 - dependency-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "dependency-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091217-dependency-core-test-test-coverage.md"
+    },
+    {
+      "index": 91223,
+      "idea_id": "idea091218",
+      "filename": "idea091218-entropy-core-developer-experience",
+      "title": "idea091218 - entropy-core Developer Experience",
+      "archetype": "experience",
+      "component": "entropy-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091218-entropy-core-developer-experience.md"
+    },
+    {
+      "index": 91224,
+      "idea_id": "idea091219",
+      "filename": "idea091219-entropy-core-documentation",
+      "title": "idea091219 - entropy-core Documentation",
+      "archetype": "documentation",
+      "component": "entropy-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091219-entropy-core-documentation.md"
+    },
+    {
+      "index": 91225,
+      "idea_id": "idea091220",
+      "filename": "idea091220-entropy-core-hardening",
+      "title": "idea091220 - entropy-core Hardening",
+      "archetype": "hardening",
+      "component": "entropy-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091220-entropy-core-hardening.md"
+    },
+    {
+      "index": 91226,
+      "idea_id": "idea091221",
+      "filename": "idea091221-entropy-core-performance",
+      "title": "idea091221 - entropy-core Performance",
+      "archetype": "performance",
+      "component": "entropy-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091221-entropy-core-performance.md"
+    },
+    {
+      "index": 91227,
+      "idea_id": "idea091222",
+      "filename": "idea091222-entropy-core-resilience",
+      "title": "idea091222 - entropy-core Resilience",
+      "archetype": "resilience",
+      "component": "entropy-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091222-entropy-core-resilience.md"
+    },
+    {
+      "index": 91228,
+      "idea_id": "idea091223",
+      "filename": "idea091223-entropy-core-py-hardening",
+      "title": "idea091223 - entropy-core.py Hardening",
+      "archetype": "hardening",
+      "component": "entropy-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091223-entropy-core-py-hardening.md"
+    },
+    {
+      "index": 91229,
+      "idea_id": "idea091224",
+      "filename": "idea091224-entropy-core-py-performance",
+      "title": "idea091224 - entropy-core.py Performance",
+      "archetype": "performance",
+      "component": "entropy-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091224-entropy-core-py-performance.md"
+    },
+    {
+      "index": 91230,
+      "idea_id": "idea091225",
+      "filename": "idea091225-entropy-core-test-api-consistency",
+      "title": "idea091225 - entropy-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "entropy-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091225-entropy-core-test-api-consistency.md"
+    },
+    {
+      "index": 91231,
+      "idea_id": "idea091226",
+      "filename": "idea091226-entropy-core-test-migration-readiness",
+      "title": "idea091226 - entropy-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "entropy-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091226-entropy-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91232,
+      "idea_id": "idea091227",
+      "filename": "idea091227-entropy-core-test-observability",
+      "title": "idea091227 - entropy-core-test Observability",
+      "archetype": "observability",
+      "component": "entropy-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091227-entropy-core-test-observability.md"
+    },
+    {
+      "index": 91233,
+      "idea_id": "idea091228",
+      "filename": "idea091228-entropy-core-test-security",
+      "title": "idea091228 - entropy-core-test Security",
+      "archetype": "security",
+      "component": "entropy-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091228-entropy-core-test-security.md"
+    },
+    {
+      "index": 91234,
+      "idea_id": "idea091229",
+      "filename": "idea091229-entropy-core-test-test-coverage",
+      "title": "idea091229 - entropy-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "entropy-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091229-entropy-core-test-test-coverage.md"
+    },
+    {
+      "index": 91235,
+      "idea_id": "idea091230",
+      "filename": "idea091230-model-registry-core-developer-experience",
+      "title": "idea091230 - model-registry-core Developer Experience",
+      "archetype": "experience",
+      "component": "model-registry-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091230-model-registry-core-developer-experience.md"
+    },
+    {
+      "index": 91236,
+      "idea_id": "idea091231",
+      "filename": "idea091231-model-registry-core-documentation",
+      "title": "idea091231 - model-registry-core Documentation",
+      "archetype": "documentation",
+      "component": "model-registry-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091231-model-registry-core-documentation.md"
+    },
+    {
+      "index": 91237,
+      "idea_id": "idea091232",
+      "filename": "idea091232-model-registry-core-hardening",
+      "title": "idea091232 - model-registry-core Hardening",
+      "archetype": "hardening",
+      "component": "model-registry-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091232-model-registry-core-hardening.md"
+    },
+    {
+      "index": 91238,
+      "idea_id": "idea091233",
+      "filename": "idea091233-model-registry-core-performance",
+      "title": "idea091233 - model-registry-core Performance",
+      "archetype": "performance",
+      "component": "model-registry-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091233-model-registry-core-performance.md"
+    },
+    {
+      "index": 91239,
+      "idea_id": "idea091234",
+      "filename": "idea091234-model-registry-core-resilience",
+      "title": "idea091234 - model-registry-core Resilience",
+      "archetype": "resilience",
+      "component": "model-registry-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091234-model-registry-core-resilience.md"
+    },
+    {
+      "index": 91240,
+      "idea_id": "idea091235",
+      "filename": "idea091235-model-registry-core-py-hardening",
+      "title": "idea091235 - model-registry-core.py Hardening",
+      "archetype": "hardening",
+      "component": "model-registry-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091235-model-registry-core-py-hardening.md"
+    },
+    {
+      "index": 91241,
+      "idea_id": "idea091236",
+      "filename": "idea091236-model-registry-core-py-performance",
+      "title": "idea091236 - model-registry-core.py Performance",
+      "archetype": "performance",
+      "component": "model-registry-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091236-model-registry-core-py-performance.md"
+    },
+    {
+      "index": 91242,
+      "idea_id": "idea091237",
+      "filename": "idea091237-model-registry-core-test-api-consistency",
+      "title": "idea091237 - model-registry-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "model-registry-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091237-model-registry-core-test-api-consistency.md"
+    },
+    {
+      "index": 91243,
+      "idea_id": "idea091238",
+      "filename": "idea091238-model-registry-core-test-migration-readiness",
+      "title": "idea091238 - model-registry-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "model-registry-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091238-model-registry-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91244,
+      "idea_id": "idea091239",
+      "filename": "idea091239-model-registry-core-test-observability",
+      "title": "idea091239 - model-registry-core-test Observability",
+      "archetype": "observability",
+      "component": "model-registry-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091239-model-registry-core-test-observability.md"
+    },
+    {
+      "index": 91245,
+      "idea_id": "idea091240",
+      "filename": "idea091240-model-registry-core-test-security",
+      "title": "idea091240 - model-registry-core-test Security",
+      "archetype": "security",
+      "component": "model-registry-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091240-model-registry-core-test-security.md"
+    },
+    {
+      "index": 91246,
+      "idea_id": "idea091241",
+      "filename": "idea091241-model-registry-core-test-test-coverage",
+      "title": "idea091241 - model-registry-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "model-registry-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091241-model-registry-core-test-test-coverage.md"
+    },
+    {
+      "index": 91247,
+      "idea_id": "idea091242",
+      "filename": "idea091242-morphology-core-developer-experience",
+      "title": "idea091242 - morphology-core Developer Experience",
+      "archetype": "experience",
+      "component": "morphology-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091242-morphology-core-developer-experience.md"
+    },
+    {
+      "index": 91248,
+      "idea_id": "idea091243",
+      "filename": "idea091243-morphology-core-documentation",
+      "title": "idea091243 - morphology-core Documentation",
+      "archetype": "documentation",
+      "component": "morphology-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091243-morphology-core-documentation.md"
+    },
+    {
+      "index": 91249,
+      "idea_id": "idea091244",
+      "filename": "idea091244-morphology-core-hardening",
+      "title": "idea091244 - morphology-core Hardening",
+      "archetype": "hardening",
+      "component": "morphology-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091244-morphology-core-hardening.md"
+    },
+    {
+      "index": 91250,
+      "idea_id": "idea091245",
+      "filename": "idea091245-morphology-core-performance",
+      "title": "idea091245 - morphology-core Performance",
+      "archetype": "performance",
+      "component": "morphology-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091245-morphology-core-performance.md"
+    },
+    {
+      "index": 91251,
+      "idea_id": "idea091246",
+      "filename": "idea091246-morphology-core-resilience",
+      "title": "idea091246 - morphology-core Resilience",
+      "archetype": "resilience",
+      "component": "morphology-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091246-morphology-core-resilience.md"
+    },
+    {
+      "index": 91252,
+      "idea_id": "idea091247",
+      "filename": "idea091247-morphology-core-py-hardening",
+      "title": "idea091247 - morphology-core.py Hardening",
+      "archetype": "hardening",
+      "component": "morphology-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091247-morphology-core-py-hardening.md"
+    },
+    {
+      "index": 91253,
+      "idea_id": "idea091248",
+      "filename": "idea091248-morphology-core-py-performance",
+      "title": "idea091248 - morphology-core.py Performance",
+      "archetype": "performance",
+      "component": "morphology-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091248-morphology-core-py-performance.md"
+    },
+    {
+      "index": 91254,
+      "idea_id": "idea091249",
+      "filename": "idea091249-morphology-core-test-api-consistency",
+      "title": "idea091249 - morphology-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "morphology-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091249-morphology-core-test-api-consistency.md"
+    },
+    {
+      "index": 91255,
+      "idea_id": "idea091250",
+      "filename": "idea091250-morphology-core-test-migration-readiness",
+      "title": "idea091250 - morphology-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "morphology-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091250-morphology-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91256,
+      "idea_id": "idea091251",
+      "filename": "idea091251-morphology-core-test-observability",
+      "title": "idea091251 - morphology-core-test Observability",
+      "archetype": "observability",
+      "component": "morphology-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091251-morphology-core-test-observability.md"
+    },
+    {
+      "index": 91257,
+      "idea_id": "idea091252",
+      "filename": "idea091252-morphology-core-test-security",
+      "title": "idea091252 - morphology-core-test Security",
+      "archetype": "security",
+      "component": "morphology-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091252-morphology-core-test-security.md"
+    },
+    {
+      "index": 91258,
+      "idea_id": "idea091253",
+      "filename": "idea091253-morphology-core-test-test-coverage",
+      "title": "idea091253 - morphology-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "morphology-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091253-morphology-core-test-test-coverage.md"
+    },
+    {
+      "index": 91259,
+      "idea_id": "idea091254",
+      "filename": "idea091254-multi-modal-core-developer-experience",
+      "title": "idea091254 - multi-modal-core Developer Experience",
+      "archetype": "experience",
+      "component": "multi-modal-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091254-multi-modal-core-developer-experience.md"
+    },
+    {
+      "index": 91260,
+      "idea_id": "idea091255",
+      "filename": "idea091255-multi-modal-core-documentation",
+      "title": "idea091255 - multi-modal-core Documentation",
+      "archetype": "documentation",
+      "component": "multi-modal-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091255-multi-modal-core-documentation.md"
+    },
+    {
+      "index": 91261,
+      "idea_id": "idea091256",
+      "filename": "idea091256-multi-modal-core-hardening",
+      "title": "idea091256 - multi-modal-core Hardening",
+      "archetype": "hardening",
+      "component": "multi-modal-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091256-multi-modal-core-hardening.md"
+    },
+    {
+      "index": 91262,
+      "idea_id": "idea091257",
+      "filename": "idea091257-multi-modal-core-performance",
+      "title": "idea091257 - multi-modal-core Performance",
+      "archetype": "performance",
+      "component": "multi-modal-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091257-multi-modal-core-performance.md"
+    },
+    {
+      "index": 91263,
+      "idea_id": "idea091258",
+      "filename": "idea091258-multi-modal-core-resilience",
+      "title": "idea091258 - multi-modal-core Resilience",
+      "archetype": "resilience",
+      "component": "multi-modal-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091258-multi-modal-core-resilience.md"
+    },
+    {
+      "index": 91264,
+      "idea_id": "idea091259",
+      "filename": "idea091259-multi-modal-core-test-api-consistency",
+      "title": "idea091259 - multi-modal-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "multi-modal-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091259-multi-modal-core-test-api-consistency.md"
+    },
+    {
+      "index": 91265,
+      "idea_id": "idea091260",
+      "filename": "idea091260-multi-modal-core-test-migration-readiness",
+      "title": "idea091260 - multi-modal-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "multi-modal-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091260-multi-modal-core-test-migration-readiness.md"
+    },
+    {
+      "index": 91266,
+      "idea_id": "idea091261",
+      "filename": "idea091261-multi-modal-core-test-observability",
+      "title": "idea091261 - multi-modal-core-test Observability",
+      "archetype": "observability",
+      "component": "multi-modal-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091261-multi-modal-core-test-observability.md"
+    },
+    {
+      "index": 91267,
+      "idea_id": "idea091262",
+      "filename": "idea091262-multi-modal-core-test-security",
+      "title": "idea091262 - multi-modal-core-test Security",
+      "archetype": "security",
+      "component": "multi-modal-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091262-multi-modal-core-test-security.md"
+    },
+    {
+      "index": 91268,
+      "idea_id": "idea091263",
+      "filename": "idea091263-multi-modal-core-test-test-coverage",
+      "title": "idea091263 - multi-modal-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "multi-modal-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091263-multi-modal-core-test-test-coverage.md"
+    },
+    {
+      "index": 91269,
+      "idea_id": "idea091264",
+      "filename": "idea091264-core-evolution-guard-developer-experience",
+      "title": "idea091264 - core-evolution-guard Developer Experience",
+      "archetype": "experience",
+      "component": "core-evolution-guard-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091264-core-evolution-guard-developer-experience.md"
+    },
+    {
+      "index": 91270,
+      "idea_id": "idea091265",
+      "filename": "idea091265-core-evolution-guard-documentation",
+      "title": "idea091265 - core-evolution-guard Documentation",
+      "archetype": "documentation",
+      "component": "core-evolution-guard",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091265-core-evolution-guard-documentation.md"
+    },
+    {
+      "index": 91271,
+      "idea_id": "idea091266",
+      "filename": "idea091266-core-evolution-guard-hardening",
+      "title": "idea091266 - core-evolution-guard Hardening",
+      "archetype": "hardening",
+      "component": "core-evolution-guard",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091266-core-evolution-guard-hardening.md"
+    },
+    {
+      "index": 91272,
+      "idea_id": "idea091267",
+      "filename": "idea091267-core-evolution-guard-performance",
+      "title": "idea091267 - core-evolution-guard Performance",
+      "archetype": "performance",
+      "component": "core-evolution-guard",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091267-core-evolution-guard-performance.md"
+    },
+    {
+      "index": 91273,
+      "idea_id": "idea091268",
+      "filename": "idea091268-core-evolution-guard-resilience",
+      "title": "idea091268 - core-evolution-guard Resilience",
+      "archetype": "resilience",
+      "component": "core-evolution-guard",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091268-core-evolution-guard-resilience.md"
+    },
+    {
+      "index": 91274,
+      "idea_id": "idea091269",
+      "filename": "idea091269-core-evolution-guard-test-api-consistency",
+      "title": "idea091269 - core-evolution-guard-test API Consistency",
+      "archetype": "consistency",
+      "component": "core-evolution-guard-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091269-core-evolution-guard-test-api-consistency.md"
+    },
+    {
+      "index": 91275,
+      "idea_id": "idea091270",
+      "filename": "idea091270-core-evolution-guard-test-migration-readiness",
+      "title": "idea091270 - core-evolution-guard-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "core-evolution-guard-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091270-core-evolution-guard-test-migration-readiness.md"
+    },
+    {
+      "index": 91276,
+      "idea_id": "idea091271",
+      "filename": "idea091271-core-evolution-guard-test-observability",
+      "title": "idea091271 - core-evolution-guard-test Observability",
+      "archetype": "observability",
+      "component": "core-evolution-guard-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091271-core-evolution-guard-test-observability.md"
+    },
+    {
+      "index": 91277,
+      "idea_id": "idea091272",
+      "filename": "idea091272-core-evolution-guard-test-security",
+      "title": "idea091272 - core-evolution-guard-test Security",
+      "archetype": "security",
+      "component": "core-evolution-guard-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091272-core-evolution-guard-test-security.md"
+    },
+    {
+      "index": 91278,
+      "idea_id": "idea091273",
+      "filename": "idea091273-core-evolution-guard-test-test-coverage",
+      "title": "idea091273 - core-evolution-guard-test Test Coverage",
+      "archetype": "coverage",
+      "component": "core-evolution-guard-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091273-core-evolution-guard-test-test-coverage.md"
+    },
+    {
+      "index": 91279,
+      "idea_id": "idea091274",
+      "filename": "idea091274-core-expansion-agent-developer-experience",
+      "title": "idea091274 - core-expansion-agent Developer Experience",
+      "archetype": "experience",
+      "component": "core-expansion-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091274-core-expansion-agent-developer-experience.md"
+    },
+    {
+      "index": 91280,
+      "idea_id": "idea091275",
+      "filename": "idea091275-core-expansion-agent-documentation",
+      "title": "idea091275 - core-expansion-agent Documentation",
+      "archetype": "documentation",
+      "component": "core-expansion-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091275-core-expansion-agent-documentation.md"
+    },
+    {
+      "index": 91281,
+      "idea_id": "idea091276",
+      "filename": "idea091276-core-expansion-agent-hardening",
+      "title": "idea091276 - core-expansion-agent Hardening",
+      "archetype": "hardening",
+      "component": "core-expansion-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091276-core-expansion-agent-hardening.md"
+    },
+    {
+      "index": 91282,
+      "idea_id": "idea091277",
+      "filename": "idea091277-core-expansion-agent-performance",
+      "title": "idea091277 - core-expansion-agent Performance",
+      "archetype": "performance",
+      "component": "core-expansion-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091277-core-expansion-agent-performance.md"
+    },
+    {
+      "index": 91283,
+      "idea_id": "idea091278",
+      "filename": "idea091278-core-expansion-agent-resilience",
+      "title": "idea091278 - core-expansion-agent Resilience",
+      "archetype": "resilience",
+      "component": "core-expansion-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091278-core-expansion-agent-resilience.md"
+    },
+    {
+      "index": 91284,
+      "idea_id": "idea091279",
+      "filename": "idea091279-core-expansion-agent-py-hardening",
+      "title": "idea091279 - core-expansion-agent.py Hardening",
+      "archetype": "hardening",
+      "component": "core-expansion-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091279-core-expansion-agent-py-hardening.md"
+    },
+    {
+      "index": 91285,
+      "idea_id": "idea091280",
+      "filename": "idea091280-core-expansion-agent-py-performance",
+      "title": "idea091280 - core-expansion-agent.py Performance",
+      "archetype": "performance",
+      "component": "core-expansion-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091280-core-expansion-agent-py-performance.md"
+    },
+    {
+      "index": 91286,
+      "idea_id": "idea091281",
+      "filename": "idea091281-core-expansion-agent-test-api-consistency",
+      "title": "idea091281 - core-expansion-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "core-expansion-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091281-core-expansion-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91287,
+      "idea_id": "idea091282",
+      "filename": "idea091282-core-expansion-agent-test-migration-readiness",
+      "title": "idea091282 - core-expansion-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "core-expansion-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091282-core-expansion-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91288,
+      "idea_id": "idea091283",
+      "filename": "idea091283-core-expansion-agent-test-observability",
+      "title": "idea091283 - core-expansion-agent-test Observability",
+      "archetype": "observability",
+      "component": "core-expansion-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091283-core-expansion-agent-test-observability.md"
+    },
+    {
+      "index": 91289,
+      "idea_id": "idea091284",
+      "filename": "idea091284-core-expansion-agent-test-security",
+      "title": "idea091284 - core-expansion-agent-test Security",
+      "archetype": "security",
+      "component": "core-expansion-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091284-core-expansion-agent-test-security.md"
+    },
+    {
+      "index": 91290,
+      "idea_id": "idea091285",
+      "filename": "idea091285-core-expansion-agent-test-test-coverage",
+      "title": "idea091285 - core-expansion-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "core-expansion-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091285-core-expansion-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91291,
+      "idea_id": "idea091286",
+      "filename": "idea091286-dashboard-agent-developer-experience",
+      "title": "idea091286 - dashboard-agent Developer Experience",
+      "archetype": "experience",
+      "component": "dashboard-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091286-dashboard-agent-developer-experience.md"
+    },
+    {
+      "index": 91292,
+      "idea_id": "idea091287",
+      "filename": "idea091287-dashboard-agent-documentation",
+      "title": "idea091287 - dashboard-agent Documentation",
+      "archetype": "documentation",
+      "component": "dashboard-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091287-dashboard-agent-documentation.md"
+    },
+    {
+      "index": 91293,
+      "idea_id": "idea091288",
+      "filename": "idea091288-dashboard-agent-hardening",
+      "title": "idea091288 - dashboard-agent Hardening",
+      "archetype": "hardening",
+      "component": "dashboard-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091288-dashboard-agent-hardening.md"
+    },
+    {
+      "index": 91294,
+      "idea_id": "idea091289",
+      "filename": "idea091289-dashboard-agent-performance",
+      "title": "idea091289 - dashboard-agent Performance",
+      "archetype": "performance",
+      "component": "dashboard-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091289-dashboard-agent-performance.md"
+    },
+    {
+      "index": 91295,
+      "idea_id": "idea091290",
+      "filename": "idea091290-dashboard-agent-resilience",
+      "title": "idea091290 - dashboard-agent Resilience",
+      "archetype": "resilience",
+      "component": "dashboard-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091290-dashboard-agent-resilience.md"
+    },
+    {
+      "index": 91296,
+      "idea_id": "idea091291",
+      "filename": "idea091291-dashboard-agent-py-hardening",
+      "title": "idea091291 - dashboard-agent.py Hardening",
+      "archetype": "hardening",
+      "component": "dashboard-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091291-dashboard-agent-py-hardening.md"
+    },
+    {
+      "index": 91297,
+      "idea_id": "idea091292",
+      "filename": "idea091292-dashboard-agent-py-performance",
+      "title": "idea091292 - dashboard-agent.py Performance",
+      "archetype": "performance",
+      "component": "dashboard-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091292-dashboard-agent-py-performance.md"
+    },
+    {
+      "index": 91298,
+      "idea_id": "idea091293",
+      "filename": "idea091293-dashboard-agent-test-api-consistency",
+      "title": "idea091293 - dashboard-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "dashboard-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091293-dashboard-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91299,
+      "idea_id": "idea091294",
+      "filename": "idea091294-dashboard-agent-test-migration-readiness",
+      "title": "idea091294 - dashboard-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "dashboard-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091294-dashboard-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91300,
+      "idea_id": "idea091295",
+      "filename": "idea091295-dashboard-agent-test-observability",
+      "title": "idea091295 - dashboard-agent-test Observability",
+      "archetype": "observability",
+      "component": "dashboard-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091295-dashboard-agent-test-observability.md"
+    },
+    {
+      "index": 91301,
+      "idea_id": "idea091296",
+      "filename": "idea091296-dashboard-agent-test-security",
+      "title": "idea091296 - dashboard-agent-test Security",
+      "archetype": "security",
+      "component": "dashboard-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091296-dashboard-agent-test-security.md"
+    },
+    {
+      "index": 91302,
+      "idea_id": "idea091297",
+      "filename": "idea091297-dashboard-agent-test-test-coverage",
+      "title": "idea091297 - dashboard-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "dashboard-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091297-dashboard-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91303,
+      "idea_id": "idea091298",
+      "filename": "idea091298-external-ai-recorder-agent-developer-experience",
+      "title": "idea091298 - external-ai-recorder-agent Developer Experience",
+      "archetype": "experience",
+      "component": "external-ai-recorder-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091298-external-ai-recorder-agent-developer-experience.md"
+    },
+    {
+      "index": 91304,
+      "idea_id": "idea091299",
+      "filename": "idea091299-external-ai-recorder-agent-documentation",
+      "title": "idea091299 - external-ai-recorder-agent Documentation",
+      "archetype": "documentation",
+      "component": "external-ai-recorder-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091299-external-ai-recorder-agent-documentation.md"
+    },
+    {
+      "index": 91305,
+      "idea_id": "idea091300",
+      "filename": "idea091300-external-ai-recorder-agent-hardening",
+      "title": "idea091300 - external-ai-recorder-agent Hardening",
+      "archetype": "hardening",
+      "component": "external-ai-recorder-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091300-external-ai-recorder-agent-hardening.md"
+    },
+    {
+      "index": 91306,
+      "idea_id": "idea091301",
+      "filename": "idea091301-external-ai-recorder-agent-performance",
+      "title": "idea091301 - external-ai-recorder-agent Performance",
+      "archetype": "performance",
+      "component": "external-ai-recorder-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091301-external-ai-recorder-agent-performance.md"
+    },
+    {
+      "index": 91307,
+      "idea_id": "idea091302",
+      "filename": "idea091302-external-ai-recorder-agent-resilience",
+      "title": "idea091302 - external-ai-recorder-agent Resilience",
+      "archetype": "resilience",
+      "component": "external-ai-recorder-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091302-external-ai-recorder-agent-resilience.md"
+    },
+    {
+      "index": 91308,
+      "idea_id": "idea091303",
+      "filename": "idea091303-external-ai-recorder-agent-test-api-consistency",
+      "title": "idea091303 - external-ai-recorder-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "external-ai-recorder-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091303-external-ai-recorder-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91309,
+      "idea_id": "idea091304",
+      "filename": "idea091304-external-ai-recorder-agent-test-migration-readiness",
+      "title": "idea091304 - external-ai-recorder-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "external-ai-recorder-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091304-external-ai-recorder-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91310,
+      "idea_id": "idea091305",
+      "filename": "idea091305-external-ai-recorder-agent-test-observability",
+      "title": "idea091305 - external-ai-recorder-agent-test Observability",
+      "archetype": "observability",
+      "component": "external-ai-recorder-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091305-external-ai-recorder-agent-test-observability.md"
+    },
+    {
+      "index": 91311,
+      "idea_id": "idea091306",
+      "filename": "idea091306-external-ai-recorder-agent-test-security",
+      "title": "idea091306 - external-ai-recorder-agent-test Security",
+      "archetype": "security",
+      "component": "external-ai-recorder-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091306-external-ai-recorder-agent-test-security.md"
+    },
+    {
+      "index": 91312,
+      "idea_id": "idea091307",
+      "filename": "idea091307-external-ai-recorder-agent-test-test-coverage",
+      "title": "idea091307 - external-ai-recorder-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "external-ai-recorder-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091307-external-ai-recorder-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91313,
+      "idea_id": "idea091308",
+      "filename": "idea091308-identity-agent-developer-experience",
+      "title": "idea091308 - identity-agent Developer Experience",
+      "archetype": "experience",
+      "component": "identity-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091308-identity-agent-developer-experience.md"
+    },
+    {
+      "index": 91314,
+      "idea_id": "idea091309",
+      "filename": "idea091309-identity-agent-documentation",
+      "title": "idea091309 - identity-agent Documentation",
+      "archetype": "documentation",
+      "component": "identity-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091309-identity-agent-documentation.md"
+    },
+    {
+      "index": 91315,
+      "idea_id": "idea091310",
+      "filename": "idea091310-identity-agent-hardening",
+      "title": "idea091310 - identity-agent Hardening",
+      "archetype": "hardening",
+      "component": "identity-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091310-identity-agent-hardening.md"
+    },
+    {
+      "index": 91316,
+      "idea_id": "idea091311",
+      "filename": "idea091311-identity-agent-performance",
+      "title": "idea091311 - identity-agent Performance",
+      "archetype": "performance",
+      "component": "identity-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091311-identity-agent-performance.md"
+    },
+    {
+      "index": 91317,
+      "idea_id": "idea091312",
+      "filename": "idea091312-identity-agent-resilience",
+      "title": "idea091312 - identity-agent Resilience",
+      "archetype": "resilience",
+      "component": "identity-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091312-identity-agent-resilience.md"
+    },
+    {
+      "index": 91318,
+      "idea_id": "idea091313",
+      "filename": "idea091313-identity-agent-py-hardening",
+      "title": "idea091313 - identity-agent.py Hardening",
+      "archetype": "hardening",
+      "component": "identity-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091313-identity-agent-py-hardening.md"
+    },
+    {
+      "index": 91319,
+      "idea_id": "idea091314",
+      "filename": "idea091314-identity-agent-py-performance",
+      "title": "idea091314 - identity-agent.py Performance",
+      "archetype": "performance",
+      "component": "identity-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091314-identity-agent-py-performance.md"
+    },
+    {
+      "index": 91320,
+      "idea_id": "idea091315",
+      "filename": "idea091315-identity-agent-test-api-consistency",
+      "title": "idea091315 - identity-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "identity-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091315-identity-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91321,
+      "idea_id": "idea091316",
+      "filename": "idea091316-identity-agent-test-migration-readiness",
+      "title": "idea091316 - identity-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "identity-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091316-identity-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91322,
+      "idea_id": "idea091317",
+      "filename": "idea091317-identity-agent-test-observability",
+      "title": "idea091317 - identity-agent-test Observability",
+      "archetype": "observability",
+      "component": "identity-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091317-identity-agent-test-observability.md"
+    },
+    {
+      "index": 91323,
+      "idea_id": "idea091318",
+      "filename": "idea091318-identity-agent-test-security",
+      "title": "idea091318 - identity-agent-test Security",
+      "archetype": "security",
+      "component": "identity-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091318-identity-agent-test-security.md"
+    },
+    {
+      "index": 91324,
+      "idea_id": "idea091319",
+      "filename": "idea091319-identity-agent-test-test-coverage",
+      "title": "idea091319 - identity-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "identity-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091319-identity-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91325,
+      "idea_id": "idea091320",
+      "filename": "idea091320-kernel-agent-developer-experience",
+      "title": "idea091320 - kernel-agent Developer Experience",
+      "archetype": "experience",
+      "component": "kernel-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091320-kernel-agent-developer-experience.md"
+    },
+    {
+      "index": 91326,
+      "idea_id": "idea091321",
+      "filename": "idea091321-kernel-agent-documentation",
+      "title": "idea091321 - kernel-agent Documentation",
+      "archetype": "documentation",
+      "component": "kernel-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091321-kernel-agent-documentation.md"
+    },
+    {
+      "index": 91327,
+      "idea_id": "idea091322",
+      "filename": "idea091322-kernel-agent-hardening",
+      "title": "idea091322 - kernel-agent Hardening",
+      "archetype": "hardening",
+      "component": "kernel-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091322-kernel-agent-hardening.md"
+    },
+    {
+      "index": 91328,
+      "idea_id": "idea091323",
+      "filename": "idea091323-kernel-agent-performance",
+      "title": "idea091323 - kernel-agent Performance",
+      "archetype": "performance",
+      "component": "kernel-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091323-kernel-agent-performance.md"
+    },
+    {
+      "index": 91329,
+      "idea_id": "idea091324",
+      "filename": "idea091324-kernel-agent-resilience",
+      "title": "idea091324 - kernel-agent Resilience",
+      "archetype": "resilience",
+      "component": "kernel-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091324-kernel-agent-resilience.md"
+    },
+    {
+      "index": 91330,
+      "idea_id": "idea091325",
+      "filename": "idea091325-kernel-agent-test-api-consistency",
+      "title": "idea091325 - kernel-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "kernel-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091325-kernel-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91331,
+      "idea_id": "idea091326",
+      "filename": "idea091326-kernel-agent-test-migration-readiness",
+      "title": "idea091326 - kernel-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "kernel-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091326-kernel-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91332,
+      "idea_id": "idea091327",
+      "filename": "idea091327-kernel-agent-test-observability",
+      "title": "idea091327 - kernel-agent-test Observability",
+      "archetype": "observability",
+      "component": "kernel-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091327-kernel-agent-test-observability.md"
+    },
+    {
+      "index": 91333,
+      "idea_id": "idea091328",
+      "filename": "idea091328-kernel-agent-test-security",
+      "title": "idea091328 - kernel-agent-test Security",
+      "archetype": "security",
+      "component": "kernel-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091328-kernel-agent-test-security.md"
+    },
+    {
+      "index": 91334,
+      "idea_id": "idea091329",
+      "filename": "idea091329-kernel-agent-test-test-coverage",
+      "title": "idea091329 - kernel-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "kernel-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091329-kernel-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91335,
+      "idea_id": "idea091330",
+      "filename": "idea091330-logging-agent-developer-experience",
+      "title": "idea091330 - logging-agent Developer Experience",
+      "archetype": "experience",
+      "component": "logging-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091330-logging-agent-developer-experience.md"
+    },
+    {
+      "index": 91336,
+      "idea_id": "idea091331",
+      "filename": "idea091331-logging-agent-documentation",
+      "title": "idea091331 - logging-agent Documentation",
+      "archetype": "documentation",
+      "component": "logging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091331-logging-agent-documentation.md"
+    },
+    {
+      "index": 91337,
+      "idea_id": "idea091332",
+      "filename": "idea091332-logging-agent-hardening",
+      "title": "idea091332 - logging-agent Hardening",
+      "archetype": "hardening",
+      "component": "logging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091332-logging-agent-hardening.md"
+    },
+    {
+      "index": 91338,
+      "idea_id": "idea091333",
+      "filename": "idea091333-logging-agent-performance",
+      "title": "idea091333 - logging-agent Performance",
+      "archetype": "performance",
+      "component": "logging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091333-logging-agent-performance.md"
+    },
+    {
+      "index": 91339,
+      "idea_id": "idea091334",
+      "filename": "idea091334-logging-agent-resilience",
+      "title": "idea091334 - logging-agent Resilience",
+      "archetype": "resilience",
+      "component": "logging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091334-logging-agent-resilience.md"
+    },
+    {
+      "index": 91340,
+      "idea_id": "idea091335",
+      "filename": "idea091335-logging-agent-test-api-consistency",
+      "title": "idea091335 - logging-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "logging-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091335-logging-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91341,
+      "idea_id": "idea091336",
+      "filename": "idea091336-logging-agent-test-migration-readiness",
+      "title": "idea091336 - logging-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "logging-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091336-logging-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91342,
+      "idea_id": "idea091337",
+      "filename": "idea091337-logging-agent-test-observability",
+      "title": "idea091337 - logging-agent-test Observability",
+      "archetype": "observability",
+      "component": "logging-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091337-logging-agent-test-observability.md"
+    },
+    {
+      "index": 91343,
+      "idea_id": "idea091338",
+      "filename": "idea091338-logging-agent-test-security",
+      "title": "idea091338 - logging-agent-test Security",
+      "archetype": "security",
+      "component": "logging-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091338-logging-agent-test-security.md"
+    },
+    {
+      "index": 91344,
+      "idea_id": "idea091339",
+      "filename": "idea091339-logging-agent-test-test-coverage",
+      "title": "idea091339 - logging-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "logging-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091339-logging-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91345,
+      "idea_id": "idea091340",
+      "filename": "idea091340-mcp-agent-api-consistency",
+      "title": "idea091340 - mcp-agent API Consistency",
+      "archetype": "consistency",
+      "component": "mcp-agent-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091340-mcp-agent-api-consistency.md"
+    },
+    {
+      "index": 91346,
+      "idea_id": "idea091341",
+      "filename": "idea091341-mcp-agent-migration-readiness",
+      "title": "idea091341 - mcp-agent Migration Readiness",
+      "archetype": "readiness",
+      "component": "mcp-agent-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091341-mcp-agent-migration-readiness.md"
+    },
+    {
+      "index": 91347,
+      "idea_id": "idea091342",
+      "filename": "idea091342-mcp-agent-observability",
+      "title": "idea091342 - mcp-agent Observability",
+      "archetype": "observability",
+      "component": "mcp-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091342-mcp-agent-observability.md"
+    },
+    {
+      "index": 91348,
+      "idea_id": "idea091343",
+      "filename": "idea091343-mcp-agent-security",
+      "title": "idea091343 - mcp-agent Security",
+      "archetype": "security",
+      "component": "mcp-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091343-mcp-agent-security.md"
+    },
+    {
+      "index": 91349,
+      "idea_id": "idea091344",
+      "filename": "idea091344-mcp-agent-test-coverage",
+      "title": "idea091344 - mcp-agent Test Coverage",
+      "archetype": "coverage",
+      "component": "mcp-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091344-mcp-agent-test-coverage.md"
+    },
+    {
+      "index": 91350,
+      "idea_id": "idea091345",
+      "filename": "idea091345-mcp-agent-test-api-consistency",
+      "title": "idea091345 - mcp-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "mcp-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091345-mcp-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91351,
+      "idea_id": "idea091346",
+      "filename": "idea091346-mcp-agent-test-migration-readiness",
+      "title": "idea091346 - mcp-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "mcp-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091346-mcp-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91352,
+      "idea_id": "idea091347",
+      "filename": "idea091347-mcp-agent-test-observability",
+      "title": "idea091347 - mcp-agent-test Observability",
+      "archetype": "observability",
+      "component": "mcp-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091347-mcp-agent-test-observability.md"
+    },
+    {
+      "index": 91353,
+      "idea_id": "idea091348",
+      "filename": "idea091348-mcp-agent-test-security",
+      "title": "idea091348 - mcp-agent-test Security",
+      "archetype": "security",
+      "component": "mcp-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091348-mcp-agent-test-security.md"
+    },
+    {
+      "index": 91354,
+      "idea_id": "idea091349",
+      "filename": "idea091349-mcp-agent-test-test-coverage",
+      "title": "idea091349 - mcp-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "mcp-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091349-mcp-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91355,
+      "idea_id": "idea091350",
+      "filename": "idea091350-messaging-agent-developer-experience",
+      "title": "idea091350 - messaging-agent Developer Experience",
+      "archetype": "experience",
+      "component": "messaging-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091350-messaging-agent-developer-experience.md"
+    },
+    {
+      "index": 91356,
+      "idea_id": "idea091351",
+      "filename": "idea091351-messaging-agent-documentation",
+      "title": "idea091351 - messaging-agent Documentation",
+      "archetype": "documentation",
+      "component": "messaging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091351-messaging-agent-documentation.md"
+    },
+    {
+      "index": 91357,
+      "idea_id": "idea091352",
+      "filename": "idea091352-messaging-agent-hardening",
+      "title": "idea091352 - messaging-agent Hardening",
+      "archetype": "hardening",
+      "component": "messaging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091352-messaging-agent-hardening.md"
+    },
+    {
+      "index": 91358,
+      "idea_id": "idea091353",
+      "filename": "idea091353-messaging-agent-performance",
+      "title": "idea091353 - messaging-agent Performance",
+      "archetype": "performance",
+      "component": "messaging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091353-messaging-agent-performance.md"
+    },
+    {
+      "index": 91359,
+      "idea_id": "idea091354",
+      "filename": "idea091354-messaging-agent-resilience",
+      "title": "idea091354 - messaging-agent Resilience",
+      "archetype": "resilience",
+      "component": "messaging-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091354-messaging-agent-resilience.md"
+    },
+    {
+      "index": 91360,
+      "idea_id": "idea091355",
+      "filename": "idea091355-messaging-agent-test-api-consistency",
+      "title": "idea091355 - messaging-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "messaging-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091355-messaging-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91361,
+      "idea_id": "idea091356",
+      "filename": "idea091356-messaging-agent-test-migration-readiness",
+      "title": "idea091356 - messaging-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "messaging-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091356-messaging-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91362,
+      "idea_id": "idea091357",
+      "filename": "idea091357-messaging-agent-test-observability",
+      "title": "idea091357 - messaging-agent-test Observability",
+      "archetype": "observability",
+      "component": "messaging-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091357-messaging-agent-test-observability.md"
+    },
+    {
+      "index": 91363,
+      "idea_id": "idea091358",
+      "filename": "idea091358-messaging-agent-test-security",
+      "title": "idea091358 - messaging-agent-test Security",
+      "archetype": "security",
+      "component": "messaging-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091358-messaging-agent-test-security.md"
+    },
+    {
+      "index": 91364,
+      "idea_id": "idea091359",
+      "filename": "idea091359-messaging-agent-test-test-coverage",
+      "title": "idea091359 - messaging-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "messaging-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091359-messaging-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91365,
+      "idea_id": "idea091360",
+      "filename": "idea091360-federationmixin-api-consistency",
+      "title": "idea091360 - federationmixin API Consistency",
+      "archetype": "consistency",
+      "component": "federationmixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091360-federationmixin-api-consistency.md"
+    },
+    {
+      "index": 91366,
+      "idea_id": "idea091361",
+      "filename": "idea091361-federationmixin-migration-readiness",
+      "title": "idea091361 - federationmixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "federationmixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091361-federationmixin-migration-readiness.md"
+    },
+    {
+      "index": 91367,
+      "idea_id": "idea091362",
+      "filename": "idea091362-federationmixin-observability",
+      "title": "idea091362 - federationmixin Observability",
+      "archetype": "observability",
+      "component": "federationmixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091362-federationmixin-observability.md"
+    },
+    {
+      "index": 91368,
+      "idea_id": "idea091363",
+      "filename": "idea091363-federationmixin-security",
+      "title": "idea091363 - federationmixin Security",
+      "archetype": "security",
+      "component": "federationmixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091363-federationmixin-security.md"
+    },
+    {
+      "index": 91369,
+      "idea_id": "idea091364",
+      "filename": "idea091364-federationmixin-test-coverage",
+      "title": "idea091364 - federationmixin Test Coverage",
+      "archetype": "coverage",
+      "component": "federationmixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091364-federationmixin-test-coverage.md"
+    },
+    {
+      "index": 91370,
+      "idea_id": "idea091365",
+      "filename": "idea091365-federationmixin-test-api-consistency",
+      "title": "idea091365 - federationmixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "federationmixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091365-federationmixin-test-api-consistency.md"
+    },
+    {
+      "index": 91371,
+      "idea_id": "idea091366",
+      "filename": "idea091366-federationmixin-test-migration-readiness",
+      "title": "idea091366 - federationmixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "federationmixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091366-federationmixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91372,
+      "idea_id": "idea091367",
+      "filename": "idea091367-federationmixin-test-observability",
+      "title": "idea091367 - federationmixin-test Observability",
+      "archetype": "observability",
+      "component": "federationmixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091367-federationmixin-test-observability.md"
+    },
+    {
+      "index": 91373,
+      "idea_id": "idea091368",
+      "filename": "idea091368-federationmixin-test-security",
+      "title": "idea091368 - federationmixin-test Security",
+      "archetype": "security",
+      "component": "federationmixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091368-federationmixin-test-security.md"
+    },
+    {
+      "index": 91374,
+      "idea_id": "idea091369",
+      "filename": "idea091369-federationmixin-test-test-coverage",
+      "title": "idea091369 - federationmixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "federationmixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091369-federationmixin-test-test-coverage.md"
+    },
+    {
+      "index": 91375,
+      "idea_id": "idea091370",
+      "filename": "idea091370-graphanalysismixin-api-consistency",
+      "title": "idea091370 - graphanalysismixin API Consistency",
+      "archetype": "consistency",
+      "component": "graphanalysismixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091370-graphanalysismixin-api-consistency.md"
+    },
+    {
+      "index": 91376,
+      "idea_id": "idea091371",
+      "filename": "idea091371-graphanalysismixin-migration-readiness",
+      "title": "idea091371 - graphanalysismixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "graphanalysismixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091371-graphanalysismixin-migration-readiness.md"
+    },
+    {
+      "index": 91377,
+      "idea_id": "idea091372",
+      "filename": "idea091372-graphanalysismixin-observability",
+      "title": "idea091372 - graphanalysismixin Observability",
+      "archetype": "observability",
+      "component": "graphanalysismixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091372-graphanalysismixin-observability.md"
+    },
+    {
+      "index": 91378,
+      "idea_id": "idea091373",
+      "filename": "idea091373-graphanalysismixin-security",
+      "title": "idea091373 - graphanalysismixin Security",
+      "archetype": "security",
+      "component": "graphanalysismixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091373-graphanalysismixin-security.md"
+    },
+    {
+      "index": 91379,
+      "idea_id": "idea091374",
+      "filename": "idea091374-graphanalysismixin-test-coverage",
+      "title": "idea091374 - graphanalysismixin Test Coverage",
+      "archetype": "coverage",
+      "component": "graphanalysismixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091374-graphanalysismixin-test-coverage.md"
+    },
+    {
+      "index": 91380,
+      "idea_id": "idea091375",
+      "filename": "idea091375-graphanalysismixin-test-api-consistency",
+      "title": "idea091375 - graphanalysismixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "graphanalysismixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091375-graphanalysismixin-test-api-consistency.md"
+    },
+    {
+      "index": 91381,
+      "idea_id": "idea091376",
+      "filename": "idea091376-graphanalysismixin-test-migration-readiness",
+      "title": "idea091376 - graphanalysismixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "graphanalysismixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091376-graphanalysismixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91382,
+      "idea_id": "idea091377",
+      "filename": "idea091377-graphanalysismixin-test-observability",
+      "title": "idea091377 - graphanalysismixin-test Observability",
+      "archetype": "observability",
+      "component": "graphanalysismixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091377-graphanalysismixin-test-observability.md"
+    },
+    {
+      "index": 91383,
+      "idea_id": "idea091378",
+      "filename": "idea091378-graphanalysismixin-test-security",
+      "title": "idea091378 - graphanalysismixin-test Security",
+      "archetype": "security",
+      "component": "graphanalysismixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091378-graphanalysismixin-test-security.md"
+    },
+    {
+      "index": 91384,
+      "idea_id": "idea091379",
+      "filename": "idea091379-graphanalysismixin-test-test-coverage",
+      "title": "idea091379 - graphanalysismixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "graphanalysismixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091379-graphanalysismixin-test-test-coverage.md"
+    },
+    {
+      "index": 91385,
+      "idea_id": "idea091380",
+      "filename": "idea091380-mapbuildermixin-api-consistency",
+      "title": "idea091380 - mapbuildermixin API Consistency",
+      "archetype": "consistency",
+      "component": "mapbuildermixin-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091380-mapbuildermixin-api-consistency.md"
+    },
+    {
+      "index": 91386,
+      "idea_id": "idea091381",
+      "filename": "idea091381-mapbuildermixin-migration-readiness",
+      "title": "idea091381 - mapbuildermixin Migration Readiness",
+      "archetype": "readiness",
+      "component": "mapbuildermixin-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091381-mapbuildermixin-migration-readiness.md"
+    },
+    {
+      "index": 91387,
+      "idea_id": "idea091382",
+      "filename": "idea091382-mapbuildermixin-observability",
+      "title": "idea091382 - mapbuildermixin Observability",
+      "archetype": "observability",
+      "component": "mapbuildermixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091382-mapbuildermixin-observability.md"
+    },
+    {
+      "index": 91388,
+      "idea_id": "idea091383",
+      "filename": "idea091383-mapbuildermixin-security",
+      "title": "idea091383 - mapbuildermixin Security",
+      "archetype": "security",
+      "component": "mapbuildermixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091383-mapbuildermixin-security.md"
+    },
+    {
+      "index": 91389,
+      "idea_id": "idea091384",
+      "filename": "idea091384-mapbuildermixin-test-coverage",
+      "title": "idea091384 - mapbuildermixin Test Coverage",
+      "archetype": "coverage",
+      "component": "mapbuildermixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091384-mapbuildermixin-test-coverage.md"
+    },
+    {
+      "index": 91390,
+      "idea_id": "idea091385",
+      "filename": "idea091385-mapbuildermixin-test-api-consistency",
+      "title": "idea091385 - mapbuildermixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "mapbuildermixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091385-mapbuildermixin-test-api-consistency.md"
+    },
+    {
+      "index": 91391,
+      "idea_id": "idea091386",
+      "filename": "idea091386-mapbuildermixin-test-migration-readiness",
+      "title": "idea091386 - mapbuildermixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "mapbuildermixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091386-mapbuildermixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91392,
+      "idea_id": "idea091387",
+      "filename": "idea091387-mapbuildermixin-test-observability",
+      "title": "idea091387 - mapbuildermixin-test Observability",
+      "archetype": "observability",
+      "component": "mapbuildermixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091387-mapbuildermixin-test-observability.md"
+    },
+    {
+      "index": 91393,
+      "idea_id": "idea091388",
+      "filename": "idea091388-mapbuildermixin-test-security",
+      "title": "idea091388 - mapbuildermixin-test Security",
+      "archetype": "security",
+      "component": "mapbuildermixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091388-mapbuildermixin-test-security.md"
+    },
+    {
+      "index": 91394,
+      "idea_id": "idea091389",
+      "filename": "idea091389-mapbuildermixin-test-test-coverage",
+      "title": "idea091389 - mapbuildermixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "mapbuildermixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091389-mapbuildermixin-test-test-coverage.md"
+    },
+    {
+      "index": 91395,
+      "idea_id": "idea091390",
+      "filename": "idea091390-init-api-consistency",
+      "title": "idea091390 - --init-- API Consistency",
+      "archetype": "consistency",
+      "component": "init-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091390-init-api-consistency.md"
+    },
+    {
+      "index": 91396,
+      "idea_id": "idea091391",
+      "filename": "idea091391-init-migration-readiness",
+      "title": "idea091391 - --init-- Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091391-init-migration-readiness.md"
+    },
+    {
+      "index": 91397,
+      "idea_id": "idea091392",
+      "filename": "idea091392-init-observability",
+      "title": "idea091392 - --init-- Observability",
+      "archetype": "observability",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091392-init-observability.md"
+    },
+    {
+      "index": 91398,
+      "idea_id": "idea091393",
+      "filename": "idea091393-init-security",
+      "title": "idea091393 - --init-- Security",
+      "archetype": "security",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091393-init-security.md"
+    },
+    {
+      "index": 91399,
+      "idea_id": "idea091394",
+      "filename": "idea091394-init-test-coverage",
+      "title": "idea091394 - --init-- Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091394-init-test-coverage.md"
+    },
+    {
+      "index": 91400,
+      "idea_id": "idea091395",
+      "filename": "idea091395-federation-mixin-developer-experience",
+      "title": "idea091395 - federation-mixin Developer Experience",
+      "archetype": "experience",
+      "component": "federation-mixin-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091395-federation-mixin-developer-experience.md"
+    },
+    {
+      "index": 91401,
+      "idea_id": "idea091396",
+      "filename": "idea091396-federation-mixin-documentation",
+      "title": "idea091396 - federation-mixin Documentation",
+      "archetype": "documentation",
+      "component": "federation-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091396-federation-mixin-documentation.md"
+    },
+    {
+      "index": 91402,
+      "idea_id": "idea091397",
+      "filename": "idea091397-federation-mixin-hardening",
+      "title": "idea091397 - federation-mixin Hardening",
+      "archetype": "hardening",
+      "component": "federation-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091397-federation-mixin-hardening.md"
+    },
+    {
+      "index": 91403,
+      "idea_id": "idea091398",
+      "filename": "idea091398-federation-mixin-performance",
+      "title": "idea091398 - federation-mixin Performance",
+      "archetype": "performance",
+      "component": "federation-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091398-federation-mixin-performance.md"
+    },
+    {
+      "index": 91404,
+      "idea_id": "idea091399",
+      "filename": "idea091399-federation-mixin-resilience",
+      "title": "idea091399 - federation-mixin Resilience",
+      "archetype": "resilience",
+      "component": "federation-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091399-federation-mixin-resilience.md"
+    },
+    {
+      "index": 91405,
+      "idea_id": "idea091400",
+      "filename": "idea091400-federation-mixin-test-api-consistency",
+      "title": "idea091400 - federation-mixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "federation-mixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091400-federation-mixin-test-api-consistency.md"
+    },
+    {
+      "index": 91406,
+      "idea_id": "idea091401",
+      "filename": "idea091401-federation-mixin-test-migration-readiness",
+      "title": "idea091401 - federation-mixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "federation-mixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091401-federation-mixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91407,
+      "idea_id": "idea091402",
+      "filename": "idea091402-federation-mixin-test-observability",
+      "title": "idea091402 - federation-mixin-test Observability",
+      "archetype": "observability",
+      "component": "federation-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091402-federation-mixin-test-observability.md"
+    },
+    {
+      "index": 91408,
+      "idea_id": "idea091403",
+      "filename": "idea091403-federation-mixin-test-security",
+      "title": "idea091403 - federation-mixin-test Security",
+      "archetype": "security",
+      "component": "federation-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091403-federation-mixin-test-security.md"
+    },
+    {
+      "index": 91409,
+      "idea_id": "idea091404",
+      "filename": "idea091404-federation-mixin-test-test-coverage",
+      "title": "idea091404 - federation-mixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "federation-mixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091404-federation-mixin-test-test-coverage.md"
+    },
+    {
+      "index": 91410,
+      "idea_id": "idea091405",
+      "filename": "idea091405-graph-analysis-mixin-developer-experience",
+      "title": "idea091405 - graph-analysis-mixin Developer Experience",
+      "archetype": "experience",
+      "component": "graph-analysis-mixin-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091405-graph-analysis-mixin-developer-experience.md"
+    },
+    {
+      "index": 91411,
+      "idea_id": "idea091406",
+      "filename": "idea091406-graph-analysis-mixin-documentation",
+      "title": "idea091406 - graph-analysis-mixin Documentation",
+      "archetype": "documentation",
+      "component": "graph-analysis-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091406-graph-analysis-mixin-documentation.md"
+    },
+    {
+      "index": 91412,
+      "idea_id": "idea091407",
+      "filename": "idea091407-graph-analysis-mixin-hardening",
+      "title": "idea091407 - graph-analysis-mixin Hardening",
+      "archetype": "hardening",
+      "component": "graph-analysis-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091407-graph-analysis-mixin-hardening.md"
+    },
+    {
+      "index": 91413,
+      "idea_id": "idea091408",
+      "filename": "idea091408-graph-analysis-mixin-performance",
+      "title": "idea091408 - graph-analysis-mixin Performance",
+      "archetype": "performance",
+      "component": "graph-analysis-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091408-graph-analysis-mixin-performance.md"
+    },
+    {
+      "index": 91414,
+      "idea_id": "idea091409",
+      "filename": "idea091409-graph-analysis-mixin-resilience",
+      "title": "idea091409 - graph-analysis-mixin Resilience",
+      "archetype": "resilience",
+      "component": "graph-analysis-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091409-graph-analysis-mixin-resilience.md"
+    },
+    {
+      "index": 91415,
+      "idea_id": "idea091410",
+      "filename": "idea091410-graph-analysis-mixin-test-api-consistency",
+      "title": "idea091410 - graph-analysis-mixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "graph-analysis-mixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091410-graph-analysis-mixin-test-api-consistency.md"
+    },
+    {
+      "index": 91416,
+      "idea_id": "idea091411",
+      "filename": "idea091411-graph-analysis-mixin-test-migration-readiness",
+      "title": "idea091411 - graph-analysis-mixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "graph-analysis-mixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091411-graph-analysis-mixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91417,
+      "idea_id": "idea091412",
+      "filename": "idea091412-graph-analysis-mixin-test-observability",
+      "title": "idea091412 - graph-analysis-mixin-test Observability",
+      "archetype": "observability",
+      "component": "graph-analysis-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091412-graph-analysis-mixin-test-observability.md"
+    },
+    {
+      "index": 91418,
+      "idea_id": "idea091413",
+      "filename": "idea091413-graph-analysis-mixin-test-security",
+      "title": "idea091413 - graph-analysis-mixin-test Security",
+      "archetype": "security",
+      "component": "graph-analysis-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091413-graph-analysis-mixin-test-security.md"
+    },
+    {
+      "index": 91419,
+      "idea_id": "idea091414",
+      "filename": "idea091414-graph-analysis-mixin-test-test-coverage",
+      "title": "idea091414 - graph-analysis-mixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "graph-analysis-mixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091414-graph-analysis-mixin-test-test-coverage.md"
+    },
+    {
+      "index": 91420,
+      "idea_id": "idea091415",
+      "filename": "idea091415-map-builder-mixin-developer-experience",
+      "title": "idea091415 - map-builder-mixin Developer Experience",
+      "archetype": "experience",
+      "component": "map-builder-mixin-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091415-map-builder-mixin-developer-experience.md"
+    },
+    {
+      "index": 91421,
+      "idea_id": "idea091416",
+      "filename": "idea091416-map-builder-mixin-documentation",
+      "title": "idea091416 - map-builder-mixin Documentation",
+      "archetype": "documentation",
+      "component": "map-builder-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091416-map-builder-mixin-documentation.md"
+    },
+    {
+      "index": 91422,
+      "idea_id": "idea091417",
+      "filename": "idea091417-map-builder-mixin-hardening",
+      "title": "idea091417 - map-builder-mixin Hardening",
+      "archetype": "hardening",
+      "component": "map-builder-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091417-map-builder-mixin-hardening.md"
+    },
+    {
+      "index": 91423,
+      "idea_id": "idea091418",
+      "filename": "idea091418-map-builder-mixin-performance",
+      "title": "idea091418 - map-builder-mixin Performance",
+      "archetype": "performance",
+      "component": "map-builder-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091418-map-builder-mixin-performance.md"
+    },
+    {
+      "index": 91424,
+      "idea_id": "idea091419",
+      "filename": "idea091419-map-builder-mixin-resilience",
+      "title": "idea091419 - map-builder-mixin Resilience",
+      "archetype": "resilience",
+      "component": "map-builder-mixin",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091419-map-builder-mixin-resilience.md"
+    },
+    {
+      "index": 91425,
+      "idea_id": "idea091420",
+      "filename": "idea091420-map-builder-mixin-test-api-consistency",
+      "title": "idea091420 - map-builder-mixin-test API Consistency",
+      "archetype": "consistency",
+      "component": "map-builder-mixin-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091420-map-builder-mixin-test-api-consistency.md"
+    },
+    {
+      "index": 91426,
+      "idea_id": "idea091421",
+      "filename": "idea091421-map-builder-mixin-test-migration-readiness",
+      "title": "idea091421 - map-builder-mixin-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "map-builder-mixin-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091421-map-builder-mixin-test-migration-readiness.md"
+    },
+    {
+      "index": 91427,
+      "idea_id": "idea091422",
+      "filename": "idea091422-map-builder-mixin-test-observability",
+      "title": "idea091422 - map-builder-mixin-test Observability",
+      "archetype": "observability",
+      "component": "map-builder-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091422-map-builder-mixin-test-observability.md"
+    },
+    {
+      "index": 91428,
+      "idea_id": "idea091423",
+      "filename": "idea091423-map-builder-mixin-test-security",
+      "title": "idea091423 - map-builder-mixin-test Security",
+      "archetype": "security",
+      "component": "map-builder-mixin-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091423-map-builder-mixin-test-security.md"
+    },
+    {
+      "index": 91429,
+      "idea_id": "idea091424",
+      "filename": "idea091424-map-builder-mixin-test-test-coverage",
+      "title": "idea091424 - map-builder-mixin-test Test Coverage",
+      "archetype": "coverage",
+      "component": "map-builder-mixin-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091424-map-builder-mixin-test-test-coverage.md"
+    },
+    {
+      "index": 91430,
+      "idea_id": "idea091425",
+      "filename": "idea091425-model-forge-agent-developer-experience",
+      "title": "idea091425 - model-forge-agent Developer Experience",
+      "archetype": "experience",
+      "component": "model-forge-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091425-model-forge-agent-developer-experience.md"
+    },
+    {
+      "index": 91431,
+      "idea_id": "idea091426",
+      "filename": "idea091426-model-forge-agent-documentation",
+      "title": "idea091426 - model-forge-agent Documentation",
+      "archetype": "documentation",
+      "component": "model-forge-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091426-model-forge-agent-documentation.md"
+    },
+    {
+      "index": 91432,
+      "idea_id": "idea091427",
+      "filename": "idea091427-model-forge-agent-hardening",
+      "title": "idea091427 - model-forge-agent Hardening",
+      "archetype": "hardening",
+      "component": "model-forge-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091427-model-forge-agent-hardening.md"
+    },
+    {
+      "index": 91433,
+      "idea_id": "idea091428",
+      "filename": "idea091428-model-forge-agent-performance",
+      "title": "idea091428 - model-forge-agent Performance",
+      "archetype": "performance",
+      "component": "model-forge-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091428-model-forge-agent-performance.md"
+    },
+    {
+      "index": 91434,
+      "idea_id": "idea091429",
+      "filename": "idea091429-model-forge-agent-resilience",
+      "title": "idea091429 - model-forge-agent Resilience",
+      "archetype": "resilience",
+      "component": "model-forge-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091429-model-forge-agent-resilience.md"
+    },
+    {
+      "index": 91435,
+      "idea_id": "idea091430",
+      "filename": "idea091430-model-forge-agent-test-api-consistency",
+      "title": "idea091430 - model-forge-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "model-forge-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091430-model-forge-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91436,
+      "idea_id": "idea091431",
+      "filename": "idea091431-model-forge-agent-test-migration-readiness",
+      "title": "idea091431 - model-forge-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "model-forge-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091431-model-forge-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91437,
+      "idea_id": "idea091432",
+      "filename": "idea091432-model-forge-agent-test-observability",
+      "title": "idea091432 - model-forge-agent-test Observability",
+      "archetype": "observability",
+      "component": "model-forge-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091432-model-forge-agent-test-observability.md"
+    },
+    {
+      "index": 91438,
+      "idea_id": "idea091433",
+      "filename": "idea091433-model-forge-agent-test-security",
+      "title": "idea091433 - model-forge-agent-test Security",
+      "archetype": "security",
+      "component": "model-forge-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091433-model-forge-agent-test-security.md"
+    },
+    {
+      "index": 91439,
+      "idea_id": "idea091434",
+      "filename": "idea091434-model-forge-agent-test-test-coverage",
+      "title": "idea091434 - model-forge-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "model-forge-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091434-model-forge-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91440,
+      "idea_id": "idea091435",
+      "filename": "idea091435-model-optimizer-agent-developer-experience",
+      "title": "idea091435 - model-optimizer-agent Developer Experience",
+      "archetype": "experience",
+      "component": "model-optimizer-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091435-model-optimizer-agent-developer-experience.md"
+    },
+    {
+      "index": 91441,
+      "idea_id": "idea091436",
+      "filename": "idea091436-model-optimizer-agent-documentation",
+      "title": "idea091436 - model-optimizer-agent Documentation",
+      "archetype": "documentation",
+      "component": "model-optimizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091436-model-optimizer-agent-documentation.md"
+    },
+    {
+      "index": 91442,
+      "idea_id": "idea091437",
+      "filename": "idea091437-model-optimizer-agent-hardening",
+      "title": "idea091437 - model-optimizer-agent Hardening",
+      "archetype": "hardening",
+      "component": "model-optimizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091437-model-optimizer-agent-hardening.md"
+    },
+    {
+      "index": 91443,
+      "idea_id": "idea091438",
+      "filename": "idea091438-model-optimizer-agent-performance",
+      "title": "idea091438 - model-optimizer-agent Performance",
+      "archetype": "performance",
+      "component": "model-optimizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091438-model-optimizer-agent-performance.md"
+    },
+    {
+      "index": 91444,
+      "idea_id": "idea091439",
+      "filename": "idea091439-model-optimizer-agent-resilience",
+      "title": "idea091439 - model-optimizer-agent Resilience",
+      "archetype": "resilience",
+      "component": "model-optimizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091439-model-optimizer-agent-resilience.md"
+    },
+    {
+      "index": 91445,
+      "idea_id": "idea091440",
+      "filename": "idea091440-model-optimizer-agent-py-hardening",
+      "title": "idea091440 - model-optimizer-agent.py Hardening",
+      "archetype": "hardening",
+      "component": "model-optimizer-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091440-model-optimizer-agent-py-hardening.md"
+    },
+    {
+      "index": 91446,
+      "idea_id": "idea091441",
+      "filename": "idea091441-model-optimizer-agent-py-performance",
+      "title": "idea091441 - model-optimizer-agent.py Performance",
+      "archetype": "performance",
+      "component": "model-optimizer-agent-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091441-model-optimizer-agent-py-performance.md"
+    },
+    {
+      "index": 91447,
+      "idea_id": "idea091442",
+      "filename": "idea091442-model-optimizer-agent-test-api-consistency",
+      "title": "idea091442 - model-optimizer-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "model-optimizer-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091442-model-optimizer-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91448,
+      "idea_id": "idea091443",
+      "filename": "idea091443-model-optimizer-agent-test-migration-readiness",
+      "title": "idea091443 - model-optimizer-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "model-optimizer-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091443-model-optimizer-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91449,
+      "idea_id": "idea091444",
+      "filename": "idea091444-model-optimizer-agent-test-observability",
+      "title": "idea091444 - model-optimizer-agent-test Observability",
+      "archetype": "observability",
+      "component": "model-optimizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091444-model-optimizer-agent-test-observability.md"
+    },
+    {
+      "index": 91450,
+      "idea_id": "idea091445",
+      "filename": "idea091445-model-optimizer-agent-test-security",
+      "title": "idea091445 - model-optimizer-agent-test Security",
+      "archetype": "security",
+      "component": "model-optimizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091445-model-optimizer-agent-test-security.md"
+    },
+    {
+      "index": 91451,
+      "idea_id": "idea091446",
+      "filename": "idea091446-model-optimizer-agent-test-test-coverage",
+      "title": "idea091446 - model-optimizer-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "model-optimizer-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091446-model-optimizer-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91452,
+      "idea_id": "idea091447",
+      "filename": "idea091447-morphological-evolution-agent-developer-experience",
+      "title": "idea091447 - morphological-evolution-agent Developer Experience",
+      "archetype": "experience",
+      "component": "morphological-evolution-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091447-morphological-evolution-agent-developer-experience.md"
+    },
+    {
+      "index": 91453,
+      "idea_id": "idea091448",
+      "filename": "idea091448-morphological-evolution-agent-documentation",
+      "title": "idea091448 - morphological-evolution-agent Documentation",
+      "archetype": "documentation",
+      "component": "morphological-evolution-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091448-morphological-evolution-agent-documentation.md"
+    },
+    {
+      "index": 91454,
+      "idea_id": "idea091449",
+      "filename": "idea091449-morphological-evolution-agent-hardening",
+      "title": "idea091449 - morphological-evolution-agent Hardening",
+      "archetype": "hardening",
+      "component": "morphological-evolution-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091449-morphological-evolution-agent-hardening.md"
+    },
+    {
+      "index": 91455,
+      "idea_id": "idea091450",
+      "filename": "idea091450-morphological-evolution-agent-performance",
+      "title": "idea091450 - morphological-evolution-agent Performance",
+      "archetype": "performance",
+      "component": "morphological-evolution-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091450-morphological-evolution-agent-performance.md"
+    },
+    {
+      "index": 91456,
+      "idea_id": "idea091451",
+      "filename": "idea091451-morphological-evolution-agent-resilience",
+      "title": "idea091451 - morphological-evolution-agent Resilience",
+      "archetype": "resilience",
+      "component": "morphological-evolution-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091451-morphological-evolution-agent-resilience.md"
+    },
+    {
+      "index": 91457,
+      "idea_id": "idea091452",
+      "filename": "idea091452-morphological-evolution-agent-test-api-consistency",
+      "title": "idea091452 - morphological-evolution-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "morphological-evolution-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091452-morphological-evolution-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91458,
+      "idea_id": "idea091453",
+      "filename": "idea091453-morphological-evolution-agent-test-migration-readiness",
+      "title": "idea091453 - morphological-evolution-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "morphological-evolution-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091453-morphological-evolution-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91459,
+      "idea_id": "idea091454",
+      "filename": "idea091454-morphological-evolution-agent-test-observability",
+      "title": "idea091454 - morphological-evolution-agent-test Observability",
+      "archetype": "observability",
+      "component": "morphological-evolution-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091454-morphological-evolution-agent-test-observability.md"
+    },
+    {
+      "index": 91460,
+      "idea_id": "idea091455",
+      "filename": "idea091455-morphological-evolution-agent-test-security",
+      "title": "idea091455 - morphological-evolution-agent-test Security",
+      "archetype": "security",
+      "component": "morphological-evolution-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091455-morphological-evolution-agent-test-security.md"
+    },
+    {
+      "index": 91461,
+      "idea_id": "idea091456",
+      "filename": "idea091456-morphological-evolution-agent-test-test-coverage",
+      "title": "idea091456 - morphological-evolution-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "morphological-evolution-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091456-morphological-evolution-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91462,
+      "idea_id": "idea091457",
+      "filename": "idea091457-multi-modal-context-agent-developer-experience",
+      "title": "idea091457 - multi-modal-context-agent Developer Experience",
+      "archetype": "experience",
+      "component": "multi-modal-context-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091457-multi-modal-context-agent-developer-experience.md"
+    },
+    {
+      "index": 91463,
+      "idea_id": "idea091458",
+      "filename": "idea091458-multi-modal-context-agent-documentation",
+      "title": "idea091458 - multi-modal-context-agent Documentation",
+      "archetype": "documentation",
+      "component": "multi-modal-context-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091458-multi-modal-context-agent-documentation.md"
+    },
+    {
+      "index": 91464,
+      "idea_id": "idea091459",
+      "filename": "idea091459-multi-modal-context-agent-hardening",
+      "title": "idea091459 - multi-modal-context-agent Hardening",
+      "archetype": "hardening",
+      "component": "multi-modal-context-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091459-multi-modal-context-agent-hardening.md"
+    },
+    {
+      "index": 91465,
+      "idea_id": "idea091460",
+      "filename": "idea091460-multi-modal-context-agent-performance",
+      "title": "idea091460 - multi-modal-context-agent Performance",
+      "archetype": "performance",
+      "component": "multi-modal-context-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091460-multi-modal-context-agent-performance.md"
+    },
+    {
+      "index": 91466,
+      "idea_id": "idea091461",
+      "filename": "idea091461-multi-modal-context-agent-resilience",
+      "title": "idea091461 - multi-modal-context-agent Resilience",
+      "archetype": "resilience",
+      "component": "multi-modal-context-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091461-multi-modal-context-agent-resilience.md"
+    },
+    {
+      "index": 91467,
+      "idea_id": "idea091462",
+      "filename": "idea091462-multi-modal-context-agent-test-api-consistency",
+      "title": "idea091462 - multi-modal-context-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "multi-modal-context-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091462-multi-modal-context-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91468,
+      "idea_id": "idea091463",
+      "filename": "idea091463-multi-modal-context-agent-test-migration-readiness",
+      "title": "idea091463 - multi-modal-context-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "multi-modal-context-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091463-multi-modal-context-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91469,
+      "idea_id": "idea091464",
+      "filename": "idea091464-multi-modal-context-agent-test-observability",
+      "title": "idea091464 - multi-modal-context-agent-test Observability",
+      "archetype": "observability",
+      "component": "multi-modal-context-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091464-multi-modal-context-agent-test-observability.md"
+    },
+    {
+      "index": 91470,
+      "idea_id": "idea091465",
+      "filename": "idea091465-multi-modal-context-agent-test-security",
+      "title": "idea091465 - multi-modal-context-agent-test Security",
+      "archetype": "security",
+      "component": "multi-modal-context-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091465-multi-modal-context-agent-test-security.md"
+    },
+    {
+      "index": 91471,
+      "idea_id": "idea091466",
+      "filename": "idea091466-multi-modal-context-agent-test-test-coverage",
+      "title": "idea091466 - multi-modal-context-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "multi-modal-context-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091466-multi-modal-context-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91472,
+      "idea_id": "idea091467",
+      "filename": "idea091467-neural-anchor-agent-developer-experience",
+      "title": "idea091467 - neural-anchor-agent Developer Experience",
+      "archetype": "experience",
+      "component": "neural-anchor-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091467-neural-anchor-agent-developer-experience.md"
+    },
+    {
+      "index": 91473,
+      "idea_id": "idea091468",
+      "filename": "idea091468-neural-anchor-agent-documentation",
+      "title": "idea091468 - neural-anchor-agent Documentation",
+      "archetype": "documentation",
+      "component": "neural-anchor-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091468-neural-anchor-agent-documentation.md"
+    },
+    {
+      "index": 91474,
+      "idea_id": "idea091469",
+      "filename": "idea091469-neural-anchor-agent-hardening",
+      "title": "idea091469 - neural-anchor-agent Hardening",
+      "archetype": "hardening",
+      "component": "neural-anchor-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091469-neural-anchor-agent-hardening.md"
+    },
+    {
+      "index": 91475,
+      "idea_id": "idea091470",
+      "filename": "idea091470-neural-anchor-agent-performance",
+      "title": "idea091470 - neural-anchor-agent Performance",
+      "archetype": "performance",
+      "component": "neural-anchor-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091470-neural-anchor-agent-performance.md"
+    },
+    {
+      "index": 91476,
+      "idea_id": "idea091471",
+      "filename": "idea091471-neural-anchor-agent-resilience",
+      "title": "idea091471 - neural-anchor-agent Resilience",
+      "archetype": "resilience",
+      "component": "neural-anchor-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091471-neural-anchor-agent-resilience.md"
+    },
+    {
+      "index": 91477,
+      "idea_id": "idea091472",
+      "filename": "idea091472-neural-anchor-agent-test-api-consistency",
+      "title": "idea091472 - neural-anchor-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "neural-anchor-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091472-neural-anchor-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91478,
+      "idea_id": "idea091473",
+      "filename": "idea091473-neural-anchor-agent-test-migration-readiness",
+      "title": "idea091473 - neural-anchor-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "neural-anchor-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091473-neural-anchor-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91479,
+      "idea_id": "idea091474",
+      "filename": "idea091474-neural-anchor-agent-test-observability",
+      "title": "idea091474 - neural-anchor-agent-test Observability",
+      "archetype": "observability",
+      "component": "neural-anchor-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091474-neural-anchor-agent-test-observability.md"
+    },
+    {
+      "index": 91480,
+      "idea_id": "idea091475",
+      "filename": "idea091475-neural-anchor-agent-test-security",
+      "title": "idea091475 - neural-anchor-agent-test Security",
+      "archetype": "security",
+      "component": "neural-anchor-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091475-neural-anchor-agent-test-security.md"
+    },
+    {
+      "index": 91481,
+      "idea_id": "idea091476",
+      "filename": "idea091476-neural-anchor-agent-test-test-coverage",
+      "title": "idea091476 - neural-anchor-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "neural-anchor-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091476-neural-anchor-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91482,
+      "idea_id": "idea091477",
+      "filename": "idea091477-performance-profiling-agent-developer-experience",
+      "title": "idea091477 - performance-profiling-agent Developer Experience",
+      "archetype": "experience",
+      "component": "performance-profiling-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091477-performance-profiling-agent-developer-experience.md"
+    },
+    {
+      "index": 91483,
+      "idea_id": "idea091478",
+      "filename": "idea091478-performance-profiling-agent-documentation",
+      "title": "idea091478 - performance-profiling-agent Documentation",
+      "archetype": "documentation",
+      "component": "performance-profiling-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091478-performance-profiling-agent-documentation.md"
+    },
+    {
+      "index": 91484,
+      "idea_id": "idea091479",
+      "filename": "idea091479-performance-profiling-agent-hardening",
+      "title": "idea091479 - performance-profiling-agent Hardening",
+      "archetype": "hardening",
+      "component": "performance-profiling-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091479-performance-profiling-agent-hardening.md"
+    },
+    {
+      "index": 91485,
+      "idea_id": "idea091480",
+      "filename": "idea091480-performance-profiling-agent-performance",
+      "title": "idea091480 - performance-profiling-agent Performance",
+      "archetype": "performance",
+      "component": "performance-profiling-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091480-performance-profiling-agent-performance.md"
+    },
+    {
+      "index": 91486,
+      "idea_id": "idea091481",
+      "filename": "idea091481-performance-profiling-agent-resilience",
+      "title": "idea091481 - performance-profiling-agent Resilience",
+      "archetype": "resilience",
+      "component": "performance-profiling-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091481-performance-profiling-agent-resilience.md"
+    },
+    {
+      "index": 91487,
+      "idea_id": "idea091482",
+      "filename": "idea091482-performance-profiling-agent-test-api-consistency",
+      "title": "idea091482 - performance-profiling-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "performance-profiling-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091482-performance-profiling-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91488,
+      "idea_id": "idea091483",
+      "filename": "idea091483-performance-profiling-agent-test-migration-readiness",
+      "title": "idea091483 - performance-profiling-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "performance-profiling-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091483-performance-profiling-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91489,
+      "idea_id": "idea091484",
+      "filename": "idea091484-performance-profiling-agent-test-observability",
+      "title": "idea091484 - performance-profiling-agent-test Observability",
+      "archetype": "observability",
+      "component": "performance-profiling-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091484-performance-profiling-agent-test-observability.md"
+    },
+    {
+      "index": 91490,
+      "idea_id": "idea091485",
+      "filename": "idea091485-performance-profiling-agent-test-security",
+      "title": "idea091485 - performance-profiling-agent-test Security",
+      "archetype": "security",
+      "component": "performance-profiling-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091485-performance-profiling-agent-test-security.md"
+    },
+    {
+      "index": 91491,
+      "idea_id": "idea091486",
+      "filename": "idea091486-performance-profiling-agent-test-test-coverage",
+      "title": "idea091486 - performance-profiling-agent-test Test Coverage",
+      "archetype": "coverage",
+      "component": "performance-profiling-agent-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091486-performance-profiling-agent-test-test-coverage.md"
+    },
+    {
+      "index": 91492,
+      "idea_id": "idea091487",
+      "filename": "idea091487-process-synthesizer-agent-developer-experience",
+      "title": "idea091487 - process-synthesizer-agent Developer Experience",
+      "archetype": "experience",
+      "component": "process-synthesizer-agent-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091487-process-synthesizer-agent-developer-experience.md"
+    },
+    {
+      "index": 91493,
+      "idea_id": "idea091488",
+      "filename": "idea091488-process-synthesizer-agent-documentation",
+      "title": "idea091488 - process-synthesizer-agent Documentation",
+      "archetype": "documentation",
+      "component": "process-synthesizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091488-process-synthesizer-agent-documentation.md"
+    },
+    {
+      "index": 91494,
+      "idea_id": "idea091489",
+      "filename": "idea091489-process-synthesizer-agent-hardening",
+      "title": "idea091489 - process-synthesizer-agent Hardening",
+      "archetype": "hardening",
+      "component": "process-synthesizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091489-process-synthesizer-agent-hardening.md"
+    },
+    {
+      "index": 91495,
+      "idea_id": "idea091490",
+      "filename": "idea091490-process-synthesizer-agent-performance",
+      "title": "idea091490 - process-synthesizer-agent Performance",
+      "archetype": "performance",
+      "component": "process-synthesizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091490-process-synthesizer-agent-performance.md"
+    },
+    {
+      "index": 91496,
+      "idea_id": "idea091491",
+      "filename": "idea091491-process-synthesizer-agent-resilience",
+      "title": "idea091491 - process-synthesizer-agent Resilience",
+      "archetype": "resilience",
+      "component": "process-synthesizer-agent",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091491-process-synthesizer-agent-resilience.md"
+    },
+    {
+      "index": 91497,
+      "idea_id": "idea091492",
+      "filename": "idea091492-process-synthesizer-agent-test-api-consistency",
+      "title": "idea091492 - process-synthesizer-agent-test API Consistency",
+      "archetype": "consistency",
+      "component": "process-synthesizer-agent-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091492-process-synthesizer-agent-test-api-consistency.md"
+    },
+    {
+      "index": 91498,
+      "idea_id": "idea091493",
+      "filename": "idea091493-process-synthesizer-agent-test-migration-readiness",
+      "title": "idea091493 - process-synthesizer-agent-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "process-synthesizer-agent-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091493-process-synthesizer-agent-test-migration-readiness.md"
+    },
+    {
+      "index": 91499,
+      "idea_id": "idea091494",
+      "filename": "idea091494-process-synthesizer-agent-test-observability",
+      "title": "idea091494 - process-synthesizer-agent-test Observability",
+      "archetype": "observability",
+      "component": "process-synthesizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091494-process-synthesizer-agent-test-observability.md"
+    },
+    {
+      "index": 91500,
+      "idea_id": "idea091495",
+      "filename": "idea091495-process-synthesizer-agent-test-security",
+      "title": "idea091495 - process-synthesizer-agent-test Security",
+      "archetype": "security",
+      "component": "process-synthesizer-agent-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea091495-process-synthesizer-agent-test-security.md"
+    }
+  ],
+  "projects_to_create": 50
+}

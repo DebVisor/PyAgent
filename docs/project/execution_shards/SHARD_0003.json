@@ -1,0 +1,4510 @@
+{
+  "shard_number": 3,
+  "shard_id": "SHARD_0003",
+  "start_index": 1000,
+  "end_index": 1500,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 1001,
+      "idea_id": "idea000996",
+      "filename": "idea000996-credential-extraction-agent-test-py-performance",
+      "title": "idea000996 - credential-extraction-agent-test.py Performance",
+      "archetype": "performance",
+      "component": "credential-extraction-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea000996-credential-extraction-agent-test-py-performance.md"
+    },
+    {
+      "index": 1002,
+      "idea_id": "idea000997",
+      "filename": "idea000997-foreach-distributed-test-py-hardening",
+      "title": "idea000997 - foreach-distributed-test.py Hardening",
+      "archetype": "hardening",
+      "component": "foreach-distributed-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea000997-foreach-distributed-test-py-hardening.md"
+    },
+    {
+      "index": 1003,
+      "idea_id": "idea000998",
+      "filename": "idea000998-foreach-distributed-test-py-performance",
+      "title": "idea000998 - foreach-distributed-test.py Performance",
+      "archetype": "performance",
+      "component": "foreach-distributed-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea000998-foreach-distributed-test-py-performance.md"
+    },
+    {
+      "index": 1004,
+      "idea_id": "idea000999",
+      "filename": "idea000999-security-scanner-agent-test-py-hardening",
+      "title": "idea000999 - security-scanner-agent-test.py Hardening",
+      "archetype": "hardening",
+      "component": "security-scanner-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea000999-security-scanner-agent-test-py-hardening.md"
+    },
+    {
+      "index": 1005,
+      "idea_id": "idea001000",
+      "filename": "idea001000-security-scanner-agent-test-py-performance",
+      "title": "idea001000 - security-scanner-agent-test.py Performance",
+      "archetype": "performance",
+      "component": "security-scanner-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001000-security-scanner-agent-test-py-performance.md"
+    },
+    {
+      "index": 1006,
+      "idea_id": "idea001001",
+      "filename": "idea001001-web-security-scanner-agent-test-py-hardening",
+      "title": "idea001001 - web-security-scanner-agent-test.py Hardening",
+      "archetype": "hardening",
+      "component": "web-security-scanner-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001001-web-security-scanner-agent-test-py-hardening.md"
+    },
+    {
+      "index": 1007,
+      "idea_id": "idea001002",
+      "filename": "idea001002-web-security-scanner-agent-test-py-performance",
+      "title": "idea001002 - web-security-scanner-agent-test.py Performance",
+      "archetype": "performance",
+      "component": "web-security-scanner-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001002-web-security-scanner-agent-test-py-performance.md"
+    },
+    {
+      "index": 1008,
+      "idea_id": "idea001003",
+      "filename": "idea001003-architecturemapper-test-py-hardening",
+      "title": "idea001003 - architecturemapper-test.py Hardening",
+      "archetype": "hardening",
+      "component": "architecturemapper-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001003-architecturemapper-test-py-hardening.md"
+    },
+    {
+      "index": 1009,
+      "idea_id": "idea001004",
+      "filename": "idea001004-architecturemapper-test-py-performance",
+      "title": "idea001004 - architecturemapper-test.py Performance",
+      "archetype": "performance",
+      "component": "architecturemapper-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001004-architecturemapper-test-py-performance.md"
+    },
+    {
+      "index": 1010,
+      "idea_id": "idea001005",
+      "filename": "idea001005-baseagentcore-test-py-hardening",
+      "title": "idea001005 - baseagentcore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "baseagentcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001005-baseagentcore-test-py-hardening.md"
+    },
+    {
+      "index": 1011,
+      "idea_id": "idea001006",
+      "filename": "idea001006-baseagentcore-test-py-performance",
+      "title": "idea001006 - baseagentcore-test.py Performance",
+      "archetype": "performance",
+      "component": "baseagentcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001006-baseagentcore-test-py-performance.md"
+    },
+    {
+      "index": 1012,
+      "idea_id": "idea001007",
+      "filename": "idea001007-baseagent-test-py-hardening",
+      "title": "idea001007 - baseagent-test.py Hardening",
+      "archetype": "hardening",
+      "component": "baseagent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001007-baseagent-test-py-hardening.md"
+    },
+    {
+      "index": 1013,
+      "idea_id": "idea001008",
+      "filename": "idea001008-baseagent-test-py-performance",
+      "title": "idea001008 - baseagent-test.py Performance",
+      "archetype": "performance",
+      "component": "baseagent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001008-baseagent-test-py-performance.md"
+    },
+    {
+      "index": 1014,
+      "idea_id": "idea001009",
+      "filename": "idea001009-circuitbreaker-test-py-hardening",
+      "title": "idea001009 - circuitbreaker-test.py Hardening",
+      "archetype": "hardening",
+      "component": "circuitbreaker-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001009-circuitbreaker-test-py-hardening.md"
+    },
+    {
+      "index": 1015,
+      "idea_id": "idea001010",
+      "filename": "idea001010-circuitbreaker-test-py-performance",
+      "title": "idea001010 - circuitbreaker-test.py Performance",
+      "archetype": "performance",
+      "component": "circuitbreaker-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001010-circuitbreaker-test-py-performance.md"
+    },
+    {
+      "index": 1016,
+      "idea_id": "idea001011",
+      "filename": "idea001011-dependencygraph-test-py-hardening",
+      "title": "idea001011 - dependencygraph-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dependencygraph-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001011-dependencygraph-test-py-hardening.md"
+    },
+    {
+      "index": 1017,
+      "idea_id": "idea001012",
+      "filename": "idea001012-dependencygraph-test-py-performance",
+      "title": "idea001012 - dependencygraph-test.py Performance",
+      "archetype": "performance",
+      "component": "dependencygraph-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001012-dependencygraph-test-py-performance.md"
+    },
+    {
+      "index": 1018,
+      "idea_id": "idea001013",
+      "filename": "idea001013-incrementalprocessor-test-py-hardening",
+      "title": "idea001013 - incrementalprocessor-test.py Hardening",
+      "archetype": "hardening",
+      "component": "incrementalprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001013-incrementalprocessor-test-py-hardening.md"
+    },
+    {
+      "index": 1019,
+      "idea_id": "idea001014",
+      "filename": "idea001014-incrementalprocessor-test-py-performance",
+      "title": "idea001014 - incrementalprocessor-test.py Performance",
+      "archetype": "performance",
+      "component": "incrementalprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001014-incrementalprocessor-test-py-performance.md"
+    },
+    {
+      "index": 1020,
+      "idea_id": "idea001015",
+      "filename": "idea001015-neuralpruningengine-test-py-hardening",
+      "title": "idea001015 - neuralpruningengine-test.py Hardening",
+      "archetype": "hardening",
+      "component": "neuralpruningengine-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001015-neuralpruningengine-test-py-hardening.md"
+    },
+    {
+      "index": 1021,
+      "idea_id": "idea001016",
+      "filename": "idea001016-neuralpruningengine-test-py-performance",
+      "title": "idea001016 - neuralpruningengine-test.py Performance",
+      "archetype": "performance",
+      "component": "neuralpruningengine-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001016-neuralpruningengine-test-py-performance.md"
+    },
+    {
+      "index": 1022,
+      "idea_id": "idea001017",
+      "filename": "idea001017-shardedknowledgecore-test-py-hardening",
+      "title": "idea001017 - shardedknowledgecore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "shardedknowledgecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001017-shardedknowledgecore-test-py-hardening.md"
+    },
+    {
+      "index": 1023,
+      "idea_id": "idea001018",
+      "filename": "idea001018-shardedknowledgecore-test-py-performance",
+      "title": "idea001018 - shardedknowledgecore-test.py Performance",
+      "archetype": "performance",
+      "component": "shardedknowledgecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001018-shardedknowledgecore-test-py-performance.md"
+    },
+    {
+      "index": 1024,
+      "idea_id": "idea001019",
+      "filename": "idea001019-acceleration-test-py-hardening",
+      "title": "idea001019 - acceleration-test.py Hardening",
+      "archetype": "hardening",
+      "component": "acceleration-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001019-acceleration-test-py-hardening.md"
+    },
+    {
+      "index": 1025,
+      "idea_id": "idea001020",
+      "filename": "idea001020-acceleration-test-py-performance",
+      "title": "idea001020 - acceleration-test.py Performance",
+      "archetype": "performance",
+      "component": "acceleration-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001020-acceleration-test-py-performance.md"
+    },
+    {
+      "index": 1026,
+      "idea_id": "idea001021",
+      "filename": "idea001021-agentcommandhandler-test-py-hardening",
+      "title": "idea001021 - agentcommandhandler-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentcommandhandler-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001021-agentcommandhandler-test-py-hardening.md"
+    },
+    {
+      "index": 1027,
+      "idea_id": "idea001022",
+      "filename": "idea001022-agentcommandhandler-test-py-performance",
+      "title": "idea001022 - agentcommandhandler-test.py Performance",
+      "archetype": "performance",
+      "component": "agentcommandhandler-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001022-agentcommandhandler-test-py-performance.md"
+    },
+    {
+      "index": 1028,
+      "idea_id": "idea001023",
+      "filename": "idea001023-agentcore-test-py-hardening",
+      "title": "idea001023 - agentcore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001023-agentcore-test-py-hardening.md"
+    },
+    {
+      "index": 1029,
+      "idea_id": "idea001024",
+      "filename": "idea001024-agentcore-test-py-performance",
+      "title": "idea001024 - agentcore-test.py Performance",
+      "archetype": "performance",
+      "component": "agentcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001024-agentcore-test-py-performance.md"
+    },
+    {
+      "index": 1030,
+      "idea_id": "idea001025",
+      "filename": "idea001025-agentfilemanager-test-py-hardening",
+      "title": "idea001025 - agentfilemanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentfilemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001025-agentfilemanager-test-py-hardening.md"
+    },
+    {
+      "index": 1031,
+      "idea_id": "idea001026",
+      "filename": "idea001026-agentfilemanager-test-py-performance",
+      "title": "idea001026 - agentfilemanager-test.py Performance",
+      "archetype": "performance",
+      "component": "agentfilemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001026-agentfilemanager-test-py-performance.md"
+    },
+    {
+      "index": 1032,
+      "idea_id": "idea001027",
+      "filename": "idea001027-agentgithandler-test-py-hardening",
+      "title": "idea001027 - agentgithandler-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentgithandler-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001027-agentgithandler-test-py-hardening.md"
+    },
+    {
+      "index": 1033,
+      "idea_id": "idea001028",
+      "filename": "idea001028-agentgithandler-test-py-performance",
+      "title": "idea001028 - agentgithandler-test.py Performance",
+      "archetype": "performance",
+      "component": "agentgithandler-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001028-agentgithandler-test-py-performance.md"
+    },
+    {
+      "index": 1034,
+      "idea_id": "idea001029",
+      "filename": "idea001029-agentmetrics-test-py-hardening",
+      "title": "idea001029 - agentmetrics-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentmetrics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001029-agentmetrics-test-py-hardening.md"
+    },
+    {
+      "index": 1035,
+      "idea_id": "idea001030",
+      "filename": "idea001030-agentmetrics-test-py-performance",
+      "title": "idea001030 - agentmetrics-test.py Performance",
+      "archetype": "performance",
+      "component": "agentmetrics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001030-agentmetrics-test-py-performance.md"
+    },
+    {
+      "index": 1036,
+      "idea_id": "idea001031",
+      "filename": "idea001031-agentupdatemanager-test-py-hardening",
+      "title": "idea001031 - agentupdatemanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentupdatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001031-agentupdatemanager-test-py-hardening.md"
+    },
+    {
+      "index": 1037,
+      "idea_id": "idea001032",
+      "filename": "idea001032-agentupdatemanager-test-py-performance",
+      "title": "idea001032 - agentupdatemanager-test.py Performance",
+      "archetype": "performance",
+      "component": "agentupdatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001032-agentupdatemanager-test-py-performance.md"
+    },
+    {
+      "index": 1038,
+      "idea_id": "idea001033",
+      "filename": "idea001033-longtermmemory-test-py-hardening",
+      "title": "idea001033 - longtermmemory-test.py Hardening",
+      "archetype": "hardening",
+      "component": "longtermmemory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001033-longtermmemory-test-py-hardening.md"
+    },
+    {
+      "index": 1039,
+      "idea_id": "idea001034",
+      "filename": "idea001034-longtermmemory-test-py-performance",
+      "title": "idea001034 - longtermmemory-test.py Performance",
+      "archetype": "performance",
+      "component": "longtermmemory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001034-longtermmemory-test-py-performance.md"
+    },
+    {
+      "index": 1040,
+      "idea_id": "idea001035",
+      "filename": "idea001035-notificationmanager-test-py-hardening",
+      "title": "idea001035 - notificationmanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "notificationmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001035-notificationmanager-test-py-hardening.md"
+    },
+    {
+      "index": 1041,
+      "idea_id": "idea001036",
+      "filename": "idea001036-notificationmanager-test-py-performance",
+      "title": "idea001036 - notificationmanager-test.py Performance",
+      "archetype": "performance",
+      "component": "notificationmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001036-notificationmanager-test-py-performance.md"
+    },
+    {
+      "index": 1042,
+      "idea_id": "idea001037",
+      "filename": "idea001037-parallelprocessor-test-py-hardening",
+      "title": "idea001037 - parallelprocessor-test.py Hardening",
+      "archetype": "hardening",
+      "component": "parallelprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001037-parallelprocessor-test-py-hardening.md"
+    },
+    {
+      "index": 1043,
+      "idea_id": "idea001038",
+      "filename": "idea001038-parallelprocessor-test-py-performance",
+      "title": "idea001038 - parallelprocessor-test.py Performance",
+      "archetype": "performance",
+      "component": "parallelprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001038-parallelprocessor-test-py-performance.md"
+    },
+    {
+      "index": 1044,
+      "idea_id": "idea001039",
+      "filename": "idea001039-test-runner-test-py-hardening",
+      "title": "idea001039 - test-runner-test.py Hardening",
+      "archetype": "hardening",
+      "component": "test-runner-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001039-test-runner-test-py-hardening.md"
+    },
+    {
+      "index": 1045,
+      "idea_id": "idea001040",
+      "filename": "idea001040-test-runner-test-py-performance",
+      "title": "idea001040 - test-runner-test.py Performance",
+      "archetype": "performance",
+      "component": "test-runner-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001040-test-runner-test-py-performance.md"
+    },
+    {
+      "index": 1046,
+      "idea_id": "idea001041",
+      "filename": "idea001041-connectivity-test-py-hardening",
+      "title": "idea001041 - connectivity-test.py Hardening",
+      "archetype": "hardening",
+      "component": "connectivity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001041-connectivity-test-py-hardening.md"
+    },
+    {
+      "index": 1047,
+      "idea_id": "idea001042",
+      "filename": "idea001042-connectivity-test-py-performance",
+      "title": "idea001042 - connectivity-test.py Performance",
+      "archetype": "performance",
+      "component": "connectivity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001042-connectivity-test-py-performance.md"
+    },
+    {
+      "index": 1048,
+      "idea_id": "idea001043",
+      "filename": "idea001043-authcore-test-py-hardening",
+      "title": "idea001043 - authcore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "authcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001043-authcore-test-py-hardening.md"
+    },
+    {
+      "index": 1049,
+      "idea_id": "idea001044",
+      "filename": "idea001044-authcore-test-py-performance",
+      "title": "idea001044 - authcore-test.py Performance",
+      "archetype": "performance",
+      "component": "authcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001044-authcore-test-py-performance.md"
+    },
+    {
+      "index": 1050,
+      "idea_id": "idea001045",
+      "filename": "idea001045-autonomycore-test-py-hardening",
+      "title": "idea001045 - autonomycore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "autonomycore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001045-autonomycore-test-py-hardening.md"
+    },
+    {
+      "index": 1051,
+      "idea_id": "idea001046",
+      "filename": "idea001046-autonomycore-test-py-performance",
+      "title": "idea001046 - autonomycore-test.py Performance",
+      "archetype": "performance",
+      "component": "autonomycore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001046-autonomycore-test-py-performance.md"
+    },
+    {
+      "index": 1052,
+      "idea_id": "idea001047",
+      "filename": "idea001047-convergencecore-test-py-hardening",
+      "title": "idea001047 - convergencecore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "convergencecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001047-convergencecore-test-py-hardening.md"
+    },
+    {
+      "index": 1053,
+      "idea_id": "idea001048",
+      "filename": "idea001048-convergencecore-test-py-performance",
+      "title": "idea001048 - convergencecore-test.py Performance",
+      "archetype": "performance",
+      "component": "convergencecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001048-convergencecore-test-py-performance.md"
+    },
+    {
+      "index": 1054,
+      "idea_id": "idea001049",
+      "filename": "idea001049-cudastreampool-test-py-hardening",
+      "title": "idea001049 - cudastreampool-test.py Hardening",
+      "archetype": "hardening",
+      "component": "cudastreampool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001049-cudastreampool-test-py-hardening.md"
+    },
+    {
+      "index": 1055,
+      "idea_id": "idea001050",
+      "filename": "idea001050-cudastreampool-test-py-performance",
+      "title": "idea001050 - cudastreampool-test.py Performance",
+      "archetype": "performance",
+      "component": "cudastreampool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001050-cudastreampool-test-py-performance.md"
+    },
+    {
+      "index": 1056,
+      "idea_id": "idea001051",
+      "filename": "idea001051-errormappingcore-test-py-hardening",
+      "title": "idea001051 - errormappingcore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "errormappingcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001051-errormappingcore-test-py-hardening.md"
+    },
+    {
+      "index": 1057,
+      "idea_id": "idea001052",
+      "filename": "idea001052-errormappingcore-test-py-performance",
+      "title": "idea001052 - errormappingcore-test.py Performance",
+      "archetype": "performance",
+      "component": "errormappingcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001052-errormappingcore-test-py-performance.md"
+    },
+    {
+      "index": 1058,
+      "idea_id": "idea001053",
+      "filename": "idea001053-identitycore-test-py-hardening",
+      "title": "idea001053 - identitycore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "identitycore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001053-identitycore-test-py-hardening.md"
+    },
+    {
+      "index": 1059,
+      "idea_id": "idea001054",
+      "filename": "idea001054-identitycore-test-py-performance",
+      "title": "idea001054 - identitycore-test.py Performance",
+      "archetype": "performance",
+      "component": "identitycore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001054-identitycore-test-py-performance.md"
+    },
+    {
+      "index": 1060,
+      "idea_id": "idea001055",
+      "filename": "idea001055-microbatchcontext-test-py-hardening",
+      "title": "idea001055 - microbatchcontext-test.py Hardening",
+      "archetype": "hardening",
+      "component": "microbatchcontext-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001055-microbatchcontext-test-py-hardening.md"
+    },
+    {
+      "index": 1061,
+      "idea_id": "idea001056",
+      "filename": "idea001056-microbatchcontext-test-py-performance",
+      "title": "idea001056 - microbatchcontext-test.py Performance",
+      "archetype": "performance",
+      "component": "microbatchcontext-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001056-microbatchcontext-test-py-performance.md"
+    },
+    {
+      "index": 1062,
+      "idea_id": "idea001057",
+      "filename": "idea001057-pruningcore-test-py-hardening",
+      "title": "idea001057 - pruningcore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "pruningcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001057-pruningcore-test-py-hardening.md"
+    },
+    {
+      "index": 1063,
+      "idea_id": "idea001058",
+      "filename": "idea001058-pruningcore-test-py-performance",
+      "title": "idea001058 - pruningcore-test.py Performance",
+      "archetype": "performance",
+      "component": "pruningcore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001058-pruningcore-test-py-performance.md"
+    },
+    {
+      "index": 1064,
+      "idea_id": "idea001059",
+      "filename": "idea001059-resiliencecore-test-py-hardening",
+      "title": "idea001059 - resiliencecore-test.py Hardening",
+      "archetype": "hardening",
+      "component": "resiliencecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001059-resiliencecore-test-py-hardening.md"
+    },
+    {
+      "index": 1065,
+      "idea_id": "idea001060",
+      "filename": "idea001060-resiliencecore-test-py-performance",
+      "title": "idea001060 - resiliencecore-test.py Performance",
+      "archetype": "performance",
+      "component": "resiliencecore-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001060-resiliencecore-test-py-performance.md"
+    },
+    {
+      "index": 1066,
+      "idea_id": "idea001061",
+      "filename": "idea001061-events-test-py-hardening",
+      "title": "idea001061 - events-test.py Hardening",
+      "archetype": "hardening",
+      "component": "events-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001061-events-test-py-hardening.md"
+    },
+    {
+      "index": 1067,
+      "idea_id": "idea001062",
+      "filename": "idea001062-events-test-py-performance",
+      "title": "idea001062 - events-test.py Performance",
+      "archetype": "performance",
+      "component": "events-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001062-events-test-py-performance.md"
+    },
+    {
+      "index": 1068,
+      "idea_id": "idea001063",
+      "filename": "idea001063-formatting-test-py-hardening",
+      "title": "idea001063 - formatting-test.py Hardening",
+      "archetype": "hardening",
+      "component": "formatting-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001063-formatting-test-py-hardening.md"
+    },
+    {
+      "index": 1069,
+      "idea_id": "idea001064",
+      "filename": "idea001064-formatting-test-py-performance",
+      "title": "idea001064 - formatting-test.py Performance",
+      "archetype": "performance",
+      "component": "formatting-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001064-formatting-test-py-performance.md"
+    },
+    {
+      "index": 1070,
+      "idea_id": "idea001065",
+      "filename": "idea001065-metrics-test-py-hardening",
+      "title": "idea001065 - metrics-test.py Hardening",
+      "archetype": "hardening",
+      "component": "metrics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001065-metrics-test-py-hardening.md"
+    },
+    {
+      "index": 1071,
+      "idea_id": "idea001066",
+      "filename": "idea001066-metrics-test-py-performance",
+      "title": "idea001066 - metrics-test.py Performance",
+      "archetype": "performance",
+      "component": "metrics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001066-metrics-test-py-performance.md"
+    },
+    {
+      "index": 1072,
+      "idea_id": "idea001067",
+      "filename": "idea001067-utils-test-py-hardening",
+      "title": "idea001067 - utils-test.py Hardening",
+      "archetype": "hardening",
+      "component": "utils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001067-utils-test-py-hardening.md"
+    },
+    {
+      "index": 1073,
+      "idea_id": "idea001068",
+      "filename": "idea001068-utils-test-py-performance",
+      "title": "idea001068 - utils-test.py Performance",
+      "archetype": "performance",
+      "component": "utils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001068-utils-test-py-performance.md"
+    },
+    {
+      "index": 1074,
+      "idea_id": "idea001069",
+      "filename": "idea001069-validation-test-py-hardening",
+      "title": "idea001069 - validation-test.py Hardening",
+      "archetype": "hardening",
+      "component": "validation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001069-validation-test-py-hardening.md"
+    },
+    {
+      "index": 1075,
+      "idea_id": "idea001070",
+      "filename": "idea001070-validation-test-py-performance",
+      "title": "idea001070 - validation-test.py Performance",
+      "archetype": "performance",
+      "component": "validation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001070-validation-test-py-performance.md"
+    },
+    {
+      "index": 1076,
+      "idea_id": "idea001071",
+      "filename": "idea001071-delegation-test-py-hardening",
+      "title": "idea001071 - delegation-test.py Hardening",
+      "archetype": "hardening",
+      "component": "delegation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001071-delegation-test-py-hardening.md"
+    },
+    {
+      "index": 1077,
+      "idea_id": "idea001072",
+      "filename": "idea001072-delegation-test-py-performance",
+      "title": "idea001072 - delegation-test.py Performance",
+      "archetype": "performance",
+      "component": "delegation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001072-delegation-test-py-performance.md"
+    },
+    {
+      "index": 1078,
+      "idea_id": "idea001073",
+      "filename": "idea001073-environment-manager-test-py-hardening",
+      "title": "idea001073 - environment-manager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "environment-manager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001073-environment-manager-test-py-hardening.md"
+    },
+    {
+      "index": 1079,
+      "idea_id": "idea001074",
+      "filename": "idea001074-environment-manager-test-py-performance",
+      "title": "idea001074 - environment-manager-test.py Performance",
+      "archetype": "performance",
+      "component": "environment-manager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001074-environment-manager-test-py-performance.md"
+    },
+    {
+      "index": 1080,
+      "idea_id": "idea001075",
+      "filename": "idea001075-exceptions-test-py-hardening",
+      "title": "idea001075 - exceptions-test.py Hardening",
+      "archetype": "hardening",
+      "component": "exceptions-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001075-exceptions-test-py-hardening.md"
+    },
+    {
+      "index": 1081,
+      "idea_id": "idea001076",
+      "filename": "idea001076-exceptions-test-py-performance",
+      "title": "idea001076 - exceptions-test.py Performance",
+      "archetype": "performance",
+      "component": "exceptions-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001076-exceptions-test-py-performance.md"
+    },
+    {
+      "index": 1082,
+      "idea_id": "idea001077",
+      "filename": "idea001077-interfaces-test-py-hardening",
+      "title": "idea001077 - interfaces-test.py Hardening",
+      "archetype": "hardening",
+      "component": "interfaces-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001077-interfaces-test-py-hardening.md"
+    },
+    {
+      "index": 1083,
+      "idea_id": "idea001078",
+      "filename": "idea001078-interfaces-test-py-performance",
+      "title": "idea001078 - interfaces-test.py Performance",
+      "archetype": "performance",
+      "component": "interfaces-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001078-interfaces-test-py-performance.md"
+    },
+    {
+      "index": 1084,
+      "idea_id": "idea001079",
+      "filename": "idea001079-a2a-communication-test-py-hardening",
+      "title": "idea001079 - a2a-communication-test.py Hardening",
+      "archetype": "hardening",
+      "component": "a2a-communication-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001079-a2a-communication-test-py-hardening.md"
+    },
+    {
+      "index": 1085,
+      "idea_id": "idea001080",
+      "filename": "idea001080-a2a-communication-test-py-performance",
+      "title": "idea001080 - a2a-communication-test.py Performance",
+      "archetype": "performance",
+      "component": "a2a-communication-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001080-a2a-communication-test-py-performance.md"
+    },
+    {
+      "index": 1086,
+      "idea_id": "idea001081",
+      "filename": "idea001081-agent-pool-manager-test-py-hardening",
+      "title": "idea001081 - agent-pool-manager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agent-pool-manager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001081-agent-pool-manager-test-py-hardening.md"
+    },
+    {
+      "index": 1087,
+      "idea_id": "idea001082",
+      "filename": "idea001082-agent-pool-manager-test-py-performance",
+      "title": "idea001082 - agent-pool-manager-test.py Performance",
+      "archetype": "performance",
+      "component": "agent-pool-manager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001082-agent-pool-manager-test-py-performance.md"
+    },
+    {
+      "index": 1088,
+      "idea_id": "idea001083",
+      "filename": "idea001083-async-pipeline-core-test-py-hardening",
+      "title": "idea001083 - async-pipeline-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "async-pipeline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001083-async-pipeline-core-test-py-hardening.md"
+    },
+    {
+      "index": 1089,
+      "idea_id": "idea001084",
+      "filename": "idea001084-async-pipeline-core-test-py-performance",
+      "title": "idea001084 - async-pipeline-core-test.py Performance",
+      "archetype": "performance",
+      "component": "async-pipeline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001084-async-pipeline-core-test-py-performance.md"
+    },
+    {
+      "index": 1090,
+      "idea_id": "idea001085",
+      "filename": "idea001085-cassette-orchestrator-test-py-hardening",
+      "title": "idea001085 - cassette-orchestrator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "cassette-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001085-cassette-orchestrator-test-py-hardening.md"
+    },
+    {
+      "index": 1091,
+      "idea_id": "idea001086",
+      "filename": "idea001086-cassette-orchestrator-test-py-performance",
+      "title": "idea001086 - cassette-orchestrator-test.py Performance",
+      "archetype": "performance",
+      "component": "cassette-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001086-cassette-orchestrator-test-py-performance.md"
+    },
+    {
+      "index": 1092,
+      "idea_id": "idea001087",
+      "filename": "idea001087-agent-card-core-test-py-hardening",
+      "title": "idea001087 - agent-card-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agent-card-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001087-agent-card-core-test-py-hardening.md"
+    },
+    {
+      "index": 1093,
+      "idea_id": "idea001088",
+      "filename": "idea001088-agent-card-core-test-py-performance",
+      "title": "idea001088 - agent-card-core-test.py Performance",
+      "archetype": "performance",
+      "component": "agent-card-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001088-agent-card-core-test-py-performance.md"
+    },
+    {
+      "index": 1094,
+      "idea_id": "idea001089",
+      "filename": "idea001089-ai-agent-orchestration-core-test-py-hardening",
+      "title": "idea001089 - ai-agent-orchestration-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ai-agent-orchestration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001089-ai-agent-orchestration-core-test-py-hardening.md"
+    },
+    {
+      "index": 1095,
+      "idea_id": "idea001090",
+      "filename": "idea001090-ai-agent-orchestration-core-test-py-performance",
+      "title": "idea001090 - ai-agent-orchestration-core-test.py Performance",
+      "archetype": "performance",
+      "component": "ai-agent-orchestration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001090-ai-agent-orchestration-core-test-py-performance.md"
+    },
+    {
+      "index": 1096,
+      "idea_id": "idea001091",
+      "filename": "idea001091-ai-content-editor-core-test-py-hardening",
+      "title": "idea001091 - ai-content-editor-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ai-content-editor-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001091-ai-content-editor-core-test-py-hardening.md"
+    },
+    {
+      "index": 1097,
+      "idea_id": "idea001092",
+      "filename": "idea001092-ai-content-editor-core-test-py-performance",
+      "title": "idea001092 - ai-content-editor-core-test.py Performance",
+      "archetype": "performance",
+      "component": "ai-content-editor-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001092-ai-content-editor-core-test-py-performance.md"
+    },
+    {
+      "index": 1098,
+      "idea_id": "idea001093",
+      "filename": "idea001093-ai-security-validation-core-test-py-hardening",
+      "title": "idea001093 - ai-security-validation-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ai-security-validation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001093-ai-security-validation-core-test-py-hardening.md"
+    },
+    {
+      "index": 1099,
+      "idea_id": "idea001094",
+      "filename": "idea001094-ai-security-validation-core-test-py-performance",
+      "title": "idea001094 - ai-security-validation-core-test.py Performance",
+      "archetype": "performance",
+      "component": "ai-security-validation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001094-ai-security-validation-core-test-py-performance.md"
+    },
+    {
+      "index": 1100,
+      "idea_id": "idea001095",
+      "filename": "idea001095-ai-talking-head-core-test-py-hardening",
+      "title": "idea001095 - ai-talking-head-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ai-talking-head-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001095-ai-talking-head-core-test-py-hardening.md"
+    },
+    {
+      "index": 1101,
+      "idea_id": "idea001096",
+      "filename": "idea001096-ai-talking-head-core-test-py-performance",
+      "title": "idea001096 - ai-talking-head-core-test.py Performance",
+      "archetype": "performance",
+      "component": "ai-talking-head-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001096-ai-talking-head-core-test-py-performance.md"
+    },
+    {
+      "index": 1102,
+      "idea_id": "idea001097",
+      "filename": "idea001097-artifact-cleanup-core-test-py-hardening",
+      "title": "idea001097 - artifact-cleanup-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "artifact-cleanup-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001097-artifact-cleanup-core-test-py-hardening.md"
+    },
+    {
+      "index": 1103,
+      "idea_id": "idea001098",
+      "filename": "idea001098-artifact-cleanup-core-test-py-performance",
+      "title": "idea001098 - artifact-cleanup-core-test.py Performance",
+      "archetype": "performance",
+      "component": "artifact-cleanup-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001098-artifact-cleanup-core-test-py-performance.md"
+    },
+    {
+      "index": 1104,
+      "idea_id": "idea001099",
+      "filename": "idea001099-asynchronous-agent-pipeline-core-test-py-hardening",
+      "title": "idea001099 - asynchronous-agent-pipeline-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "asynchronous-agent-pipeline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001099-asynchronous-agent-pipeline-core-test-py-hardening.md"
+    },
+    {
+      "index": 1105,
+      "idea_id": "idea001100",
+      "filename": "idea001100-asynchronous-agent-pipeline-core-test-py-performance",
+      "title": "idea001100 - asynchronous-agent-pipeline-core-test.py Performance",
+      "archetype": "performance",
+      "component": "asynchronous-agent-pipeline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001100-asynchronous-agent-pipeline-core-test-py-performance.md"
+    },
+    {
+      "index": 1106,
+      "idea_id": "idea001101",
+      "filename": "idea001101-audio-stream-core-test-py-hardening",
+      "title": "idea001101 - audio-stream-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "audio-stream-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001101-audio-stream-core-test-py-hardening.md"
+    },
+    {
+      "index": 1107,
+      "idea_id": "idea001102",
+      "filename": "idea001102-audio-stream-core-test-py-performance",
+      "title": "idea001102 - audio-stream-core-test.py Performance",
+      "archetype": "performance",
+      "component": "audio-stream-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001102-audio-stream-core-test-py-performance.md"
+    },
+    {
+      "index": 1108,
+      "idea_id": "idea001103",
+      "filename": "idea001103-browser-outline-core-test-py-hardening",
+      "title": "idea001103 - browser-outline-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "browser-outline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001103-browser-outline-core-test-py-hardening.md"
+    },
+    {
+      "index": 1109,
+      "idea_id": "idea001104",
+      "filename": "idea001104-browser-outline-core-test-py-performance",
+      "title": "idea001104 - browser-outline-core-test.py Performance",
+      "archetype": "performance",
+      "component": "browser-outline-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001104-browser-outline-core-test-py-performance.md"
+    },
+    {
+      "index": 1110,
+      "idea_id": "idea001105",
+      "filename": "idea001105-code-analyzer-test-py-hardening",
+      "title": "idea001105 - code-analyzer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "code-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001105-code-analyzer-test-py-hardening.md"
+    },
+    {
+      "index": 1111,
+      "idea_id": "idea001106",
+      "filename": "idea001106-code-analyzer-test-py-performance",
+      "title": "idea001106 - code-analyzer-test.py Performance",
+      "archetype": "performance",
+      "component": "code-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001106-code-analyzer-test-py-performance.md"
+    },
+    {
+      "index": 1112,
+      "idea_id": "idea001107",
+      "filename": "idea001107-crew-orchestrator-test-py-hardening",
+      "title": "idea001107 - crew-orchestrator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "crew-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001107-crew-orchestrator-test-py-hardening.md"
+    },
+    {
+      "index": 1113,
+      "idea_id": "idea001108",
+      "filename": "idea001108-crew-orchestrator-test-py-performance",
+      "title": "idea001108 - crew-orchestrator-test.py Performance",
+      "archetype": "performance",
+      "component": "crew-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001108-crew-orchestrator-test-py-performance.md"
+    },
+    {
+      "index": 1114,
+      "idea_id": "idea001109",
+      "filename": "idea001109-dag-workflow-core-test-py-hardening",
+      "title": "idea001109 - dag-workflow-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dag-workflow-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001109-dag-workflow-core-test-py-hardening.md"
+    },
+    {
+      "index": 1115,
+      "idea_id": "idea001110",
+      "filename": "idea001110-dag-workflow-core-test-py-performance",
+      "title": "idea001110 - dag-workflow-core-test.py Performance",
+      "archetype": "performance",
+      "component": "dag-workflow-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001110-dag-workflow-core-test-py-performance.md"
+    },
+    {
+      "index": 1116,
+      "idea_id": "idea001111",
+      "filename": "idea001111-dns-security-core-test-py-hardening",
+      "title": "idea001111 - dns-security-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dns-security-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001111-dns-security-core-test-py-hardening.md"
+    },
+    {
+      "index": 1117,
+      "idea_id": "idea001112",
+      "filename": "idea001112-dns-security-core-test-py-performance",
+      "title": "idea001112 - dns-security-core-test.py Performance",
+      "archetype": "performance",
+      "component": "dns-security-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001112-dns-security-core-test-py-performance.md"
+    },
+    {
+      "index": 1118,
+      "idea_id": "idea001113",
+      "filename": "idea001113-egress-lockdown-core-test-py-hardening",
+      "title": "idea001113 - egress-lockdown-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "egress-lockdown-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001113-egress-lockdown-core-test-py-hardening.md"
+    },
+    {
+      "index": 1119,
+      "idea_id": "idea001114",
+      "filename": "idea001114-egress-lockdown-core-test-py-performance",
+      "title": "idea001114 - egress-lockdown-core-test.py Performance",
+      "archetype": "performance",
+      "component": "egress-lockdown-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001114-egress-lockdown-core-test-py-performance.md"
+    },
+    {
+      "index": 1120,
+      "idea_id": "idea001115",
+      "filename": "idea001115-evolution-core-test-py-hardening",
+      "title": "idea001115 - evolution-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "evolution-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001115-evolution-core-test-py-hardening.md"
+    },
+    {
+      "index": 1121,
+      "idea_id": "idea001116",
+      "filename": "idea001116-evolution-core-test-py-performance",
+      "title": "idea001116 - evolution-core-test.py Performance",
+      "archetype": "performance",
+      "component": "evolution-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001116-evolution-core-test-py-performance.md"
+    },
+    {
+      "index": 1122,
+      "idea_id": "idea001117",
+      "filename": "idea001117-exchange-vulnerability-assessment-core-test-py-hardening",
+      "title": "idea001117 - exchange-vulnerability-assessment-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "exchange-vulnerability-assessment-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001117-exchange-vulnerability-assessment-core-test-py-hardening.md"
+    },
+    {
+      "index": 1123,
+      "idea_id": "idea001118",
+      "filename": "idea001118-exchange-vulnerability-assessment-core-test-py-performance",
+      "title": "idea001118 - exchange-vulnerability-assessment-core-test.py Performance",
+      "archetype": "performance",
+      "component": "exchange-vulnerability-assessment-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001118-exchange-vulnerability-assessment-core-test-py-performance.md"
+    },
+    {
+      "index": 1124,
+      "idea_id": "idea001119",
+      "filename": "idea001119-exploit-crafting-core-py-hardening",
+      "title": "idea001119 - exploit-crafting-core.py Hardening",
+      "archetype": "hardening",
+      "component": "exploit-crafting-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001119-exploit-crafting-core-py-hardening.md"
+    },
+    {
+      "index": 1125,
+      "idea_id": "idea001120",
+      "filename": "idea001120-exploit-crafting-core-py-performance",
+      "title": "idea001120 - exploit-crafting-core.py Performance",
+      "archetype": "performance",
+      "component": "exploit-crafting-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001120-exploit-crafting-core-py-performance.md"
+    },
+    {
+      "index": 1126,
+      "idea_id": "idea001121",
+      "filename": "idea001121-exploit-crafting-core-test-py-hardening",
+      "title": "idea001121 - exploit-crafting-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "exploit-crafting-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001121-exploit-crafting-core-test-py-hardening.md"
+    },
+    {
+      "index": 1127,
+      "idea_id": "idea001122",
+      "filename": "idea001122-exploit-crafting-core-test-py-performance",
+      "title": "idea001122 - exploit-crafting-core-test.py Performance",
+      "archetype": "performance",
+      "component": "exploit-crafting-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001122-exploit-crafting-core-test-py-performance.md"
+    },
+    {
+      "index": 1128,
+      "idea_id": "idea001123",
+      "filename": "idea001123-federation-services-core-test-py-hardening",
+      "title": "idea001123 - federation-services-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "federation-services-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001123-federation-services-core-test-py-hardening.md"
+    },
+    {
+      "index": 1129,
+      "idea_id": "idea001124",
+      "filename": "idea001124-federation-services-core-test-py-performance",
+      "title": "idea001124 - federation-services-core-test.py Performance",
+      "archetype": "performance",
+      "component": "federation-services-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001124-federation-services-core-test-py-performance.md"
+    },
+    {
+      "index": 1130,
+      "idea_id": "idea001125",
+      "filename": "idea001125-goal-setting-core-test-py-hardening",
+      "title": "idea001125 - goal-setting-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "goal-setting-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001125-goal-setting-core-test-py-hardening.md"
+    },
+    {
+      "index": 1131,
+      "idea_id": "idea001126",
+      "filename": "idea001126-goal-setting-core-test-py-performance",
+      "title": "idea001126 - goal-setting-core-test.py Performance",
+      "archetype": "performance",
+      "component": "goal-setting-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001126-goal-setting-core-test-py-performance.md"
+    },
+    {
+      "index": 1132,
+      "idea_id": "idea001127",
+      "filename": "idea001127-graph-analysis-core-test-py-hardening",
+      "title": "idea001127 - graph-analysis-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "graph-analysis-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001127-graph-analysis-core-test-py-hardening.md"
+    },
+    {
+      "index": 1133,
+      "idea_id": "idea001128",
+      "filename": "idea001128-graph-analysis-core-test-py-performance",
+      "title": "idea001128 - graph-analysis-core-test.py Performance",
+      "archetype": "performance",
+      "component": "graph-analysis-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001128-graph-analysis-core-test-py-performance.md"
+    },
+    {
+      "index": 1134,
+      "idea_id": "idea001129",
+      "filename": "idea001129-guardrail-core-test-py-hardening",
+      "title": "idea001129 - guardrail-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "guardrail-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001129-guardrail-core-test-py-hardening.md"
+    },
+    {
+      "index": 1135,
+      "idea_id": "idea001130",
+      "filename": "idea001130-guardrail-core-test-py-performance",
+      "title": "idea001130 - guardrail-core-test.py Performance",
+      "archetype": "performance",
+      "component": "guardrail-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001130-guardrail-core-test-py-performance.md"
+    },
+    {
+      "index": 1136,
+      "idea_id": "idea001131",
+      "filename": "idea001131-inference-scaling-core-test-py-hardening",
+      "title": "idea001131 - inference-scaling-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "inference-scaling-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001131-inference-scaling-core-test-py-hardening.md"
+    },
+    {
+      "index": 1137,
+      "idea_id": "idea001132",
+      "filename": "idea001132-inference-scaling-core-test-py-performance",
+      "title": "idea001132 - inference-scaling-core-test.py Performance",
+      "archetype": "performance",
+      "component": "inference-scaling-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001132-inference-scaling-core-test-py-performance.md"
+    },
+    {
+      "index": 1138,
+      "idea_id": "idea001133",
+      "filename": "idea001133-inter-agent-communication-core-test-py-hardening",
+      "title": "idea001133 - inter-agent-communication-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "inter-agent-communication-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001133-inter-agent-communication-core-test-py-hardening.md"
+    },
+    {
+      "index": 1139,
+      "idea_id": "idea001134",
+      "filename": "idea001134-inter-agent-communication-core-test-py-performance",
+      "title": "idea001134 - inter-agent-communication-core-test.py Performance",
+      "archetype": "performance",
+      "component": "inter-agent-communication-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001134-inter-agent-communication-core-test-py-performance.md"
+    },
+    {
+      "index": 1140,
+      "idea_id": "idea001135",
+      "filename": "idea001135-job-manager-core-test-py-hardening",
+      "title": "idea001135 - job-manager-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "job-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001135-job-manager-core-test-py-hardening.md"
+    },
+    {
+      "index": 1141,
+      "idea_id": "idea001136",
+      "filename": "idea001136-job-manager-core-test-py-performance",
+      "title": "idea001136 - job-manager-core-test.py Performance",
+      "archetype": "performance",
+      "component": "job-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001136-job-manager-core-test-py-performance.md"
+    },
+    {
+      "index": 1142,
+      "idea_id": "idea001137",
+      "filename": "idea001137-job-market-intelligence-core-test-py-hardening",
+      "title": "idea001137 - job-market-intelligence-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "job-market-intelligence-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001137-job-market-intelligence-core-test-py-hardening.md"
+    },
+    {
+      "index": 1143,
+      "idea_id": "idea001138",
+      "filename": "idea001138-job-market-intelligence-core-test-py-performance",
+      "title": "idea001138 - job-market-intelligence-core-test.py Performance",
+      "archetype": "performance",
+      "component": "job-market-intelligence-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001138-job-market-intelligence-core-test-py-performance.md"
+    },
+    {
+      "index": 1144,
+      "idea_id": "idea001139",
+      "filename": "idea001139-mcp-validator-core-test-py-hardening",
+      "title": "idea001139 - mcp-validator-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "mcp-validator-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001139-mcp-validator-core-test-py-hardening.md"
+    },
+    {
+      "index": 1145,
+      "idea_id": "idea001140",
+      "filename": "idea001140-mcp-validator-core-test-py-performance",
+      "title": "idea001140 - mcp-validator-core-test.py Performance",
+      "archetype": "performance",
+      "component": "mcp-validator-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001140-mcp-validator-core-test-py-performance.md"
+    },
+    {
+      "index": 1146,
+      "idea_id": "idea001141",
+      "filename": "idea001141-memory-consolidation-core-test-py-hardening",
+      "title": "idea001141 - memory-consolidation-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "memory-consolidation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001141-memory-consolidation-core-test-py-hardening.md"
+    },
+    {
+      "index": 1147,
+      "idea_id": "idea001142",
+      "filename": "idea001142-memory-consolidation-core-test-py-performance",
+      "title": "idea001142 - memory-consolidation-core-test.py Performance",
+      "archetype": "performance",
+      "component": "memory-consolidation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001142-memory-consolidation-core-test-py-performance.md"
+    },
+    {
+      "index": 1148,
+      "idea_id": "idea001143",
+      "filename": "idea001143-metacognitive-memory-core-test-py-hardening",
+      "title": "idea001143 - metacognitive-memory-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "metacognitive-memory-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001143-metacognitive-memory-core-test-py-hardening.md"
+    },
+    {
+      "index": 1149,
+      "idea_id": "idea001144",
+      "filename": "idea001144-metacognitive-memory-core-test-py-performance",
+      "title": "idea001144 - metacognitive-memory-core-test.py Performance",
+      "archetype": "performance",
+      "component": "metacognitive-memory-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001144-metacognitive-memory-core-test-py-performance.md"
+    },
+    {
+      "index": 1150,
+      "idea_id": "idea001145",
+      "filename": "idea001145-model-manager-core-test-py-hardening",
+      "title": "idea001145 - model-manager-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "model-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001145-model-manager-core-test-py-hardening.md"
+    },
+    {
+      "index": 1151,
+      "idea_id": "idea001146",
+      "filename": "idea001146-model-manager-core-test-py-performance",
+      "title": "idea001146 - model-manager-core-test.py Performance",
+      "archetype": "performance",
+      "component": "model-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001146-model-manager-core-test-py-performance.md"
+    },
+    {
+      "index": 1152,
+      "idea_id": "idea001147",
+      "filename": "idea001147-multi-agent-orchestration-core-test-py-hardening",
+      "title": "idea001147 - multi-agent-orchestration-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multi-agent-orchestration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001147-multi-agent-orchestration-core-test-py-hardening.md"
+    },
+    {
+      "index": 1153,
+      "idea_id": "idea001148",
+      "filename": "idea001148-multi-agent-orchestration-core-test-py-performance",
+      "title": "idea001148 - multi-agent-orchestration-core-test.py Performance",
+      "archetype": "performance",
+      "component": "multi-agent-orchestration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001148-multi-agent-orchestration-core-test-py-performance.md"
+    },
+    {
+      "index": 1154,
+      "idea_id": "idea001149",
+      "filename": "idea001149-multi-tenant-agent-core-test-py-hardening",
+      "title": "idea001149 - multi-tenant-agent-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multi-tenant-agent-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001149-multi-tenant-agent-core-test-py-hardening.md"
+    },
+    {
+      "index": 1155,
+      "idea_id": "idea001150",
+      "filename": "idea001150-multi-tenant-agent-core-test-py-performance",
+      "title": "idea001150 - multi-tenant-agent-core-test.py Performance",
+      "archetype": "performance",
+      "component": "multi-tenant-agent-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001150-multi-tenant-agent-core-test-py-performance.md"
+    },
+    {
+      "index": 1156,
+      "idea_id": "idea001151",
+      "filename": "idea001151-multimodal-core-test-py-hardening",
+      "title": "idea001151 - multimodal-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multimodal-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001151-multimodal-core-test-py-hardening.md"
+    },
+    {
+      "index": 1157,
+      "idea_id": "idea001152",
+      "filename": "idea001152-multimodal-core-test-py-performance",
+      "title": "idea001152 - multimodal-core-test.py Performance",
+      "archetype": "performance",
+      "component": "multimodal-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001152-multimodal-core-test-py-performance.md"
+    },
+    {
+      "index": 1158,
+      "idea_id": "idea001153",
+      "filename": "idea001153-network-reconnaissance-core-test-py-hardening",
+      "title": "idea001153 - network-reconnaissance-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "network-reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001153-network-reconnaissance-core-test-py-hardening.md"
+    },
+    {
+      "index": 1159,
+      "idea_id": "idea001154",
+      "filename": "idea001154-network-reconnaissance-core-test-py-performance",
+      "title": "idea001154 - network-reconnaissance-core-test.py Performance",
+      "archetype": "performance",
+      "component": "network-reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001154-network-reconnaissance-core-test-py-performance.md"
+    },
+    {
+      "index": 1160,
+      "idea_id": "idea001155",
+      "filename": "idea001155-nuclei-template-engine-test-py-hardening",
+      "title": "idea001155 - nuclei-template-engine-test.py Hardening",
+      "archetype": "hardening",
+      "component": "nuclei-template-engine-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001155-nuclei-template-engine-test-py-hardening.md"
+    },
+    {
+      "index": 1161,
+      "idea_id": "idea001156",
+      "filename": "idea001156-nuclei-template-engine-test-py-performance",
+      "title": "idea001156 - nuclei-template-engine-test.py Performance",
+      "archetype": "performance",
+      "component": "nuclei-template-engine-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001156-nuclei-template-engine-test-py-performance.md"
+    },
+    {
+      "index": 1162,
+      "idea_id": "idea001157",
+      "filename": "idea001157-rag-core-test-py-hardening",
+      "title": "idea001157 - rag-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "rag-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001157-rag-core-test-py-hardening.md"
+    },
+    {
+      "index": 1163,
+      "idea_id": "idea001158",
+      "filename": "idea001158-rag-core-test-py-performance",
+      "title": "idea001158 - rag-core-test.py Performance",
+      "archetype": "performance",
+      "component": "rag-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001158-rag-core-test-py-performance.md"
+    },
+    {
+      "index": 1164,
+      "idea_id": "idea001159",
+      "filename": "idea001159-response-modifier-core-test-py-hardening",
+      "title": "idea001159 - response-modifier-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "response-modifier-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001159-response-modifier-core-test-py-hardening.md"
+    },
+    {
+      "index": 1165,
+      "idea_id": "idea001160",
+      "filename": "idea001160-response-modifier-core-test-py-performance",
+      "title": "idea001160 - response-modifier-core-test.py Performance",
+      "archetype": "performance",
+      "component": "response-modifier-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001160-response-modifier-core-test-py-performance.md"
+    },
+    {
+      "index": 1166,
+      "idea_id": "idea001161",
+      "filename": "idea001161-satellite-reconnaissance-core-test-py-hardening",
+      "title": "idea001161 - satellite-reconnaissance-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "satellite-reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001161-satellite-reconnaissance-core-test-py-hardening.md"
+    },
+    {
+      "index": 1167,
+      "idea_id": "idea001162",
+      "filename": "idea001162-satellite-reconnaissance-core-test-py-performance",
+      "title": "idea001162 - satellite-reconnaissance-core-test.py Performance",
+      "archetype": "performance",
+      "component": "satellite-reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001162-satellite-reconnaissance-core-test-py-performance.md"
+    },
+    {
+      "index": 1168,
+      "idea_id": "idea001163",
+      "filename": "idea001163-session-control-core-test-py-hardening",
+      "title": "idea001163 - session-control-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "session-control-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001163-session-control-core-test-py-hardening.md"
+    },
+    {
+      "index": 1169,
+      "idea_id": "idea001164",
+      "filename": "idea001164-session-control-core-test-py-performance",
+      "title": "idea001164 - session-control-core-test.py Performance",
+      "archetype": "performance",
+      "component": "session-control-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001164-session-control-core-test-py-performance.md"
+    },
+    {
+      "index": 1170,
+      "idea_id": "idea001165",
+      "filename": "idea001165-session-lock-core-test-py-hardening",
+      "title": "idea001165 - session-lock-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "session-lock-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001165-session-lock-core-test-py-hardening.md"
+    },
+    {
+      "index": 1171,
+      "idea_id": "idea001166",
+      "filename": "idea001166-session-lock-core-test-py-performance",
+      "title": "idea001166 - session-lock-core-test.py Performance",
+      "archetype": "performance",
+      "component": "session-lock-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001166-session-lock-core-test-py-performance.md"
+    },
+    {
+      "index": 1172,
+      "idea_id": "idea001167",
+      "filename": "idea001167-skill-manager-core-test-py-hardening",
+      "title": "idea001167 - skill-manager-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "skill-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001167-skill-manager-core-test-py-hardening.md"
+    },
+    {
+      "index": 1173,
+      "idea_id": "idea001168",
+      "filename": "idea001168-skill-manager-core-test-py-performance",
+      "title": "idea001168 - skill-manager-core-test.py Performance",
+      "archetype": "performance",
+      "component": "skill-manager-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001168-skill-manager-core-test-py-performance.md"
+    },
+    {
+      "index": 1174,
+      "idea_id": "idea001169",
+      "filename": "idea001169-sop-core-test-py-hardening",
+      "title": "idea001169 - sop-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "sop-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001169-sop-core-test-py-hardening.md"
+    },
+    {
+      "index": 1175,
+      "idea_id": "idea001170",
+      "filename": "idea001170-sop-core-test-py-performance",
+      "title": "idea001170 - sop-core-test.py Performance",
+      "archetype": "performance",
+      "component": "sop-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001170-sop-core-test-py-performance.md"
+    },
+    {
+      "index": 1176,
+      "idea_id": "idea001171",
+      "filename": "idea001171-swarm-orchestrator-core-test-py-hardening",
+      "title": "idea001171 - swarm-orchestrator-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "swarm-orchestrator-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001171-swarm-orchestrator-core-test-py-hardening.md"
+    },
+    {
+      "index": 1177,
+      "idea_id": "idea001172",
+      "filename": "idea001172-swarm-orchestrator-core-test-py-performance",
+      "title": "idea001172 - swarm-orchestrator-core-test.py Performance",
+      "archetype": "performance",
+      "component": "swarm-orchestrator-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001172-swarm-orchestrator-core-test-py-performance.md"
+    },
+    {
+      "index": 1178,
+      "idea_id": "idea001173",
+      "filename": "idea001173-tenant-isolation-core-test-py-hardening",
+      "title": "idea001173 - tenant-isolation-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "tenant-isolation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001173-tenant-isolation-core-test-py-hardening.md"
+    },
+    {
+      "index": 1179,
+      "idea_id": "idea001174",
+      "filename": "idea001174-tenant-isolation-core-test-py-performance",
+      "title": "idea001174 - tenant-isolation-core-test.py Performance",
+      "archetype": "performance",
+      "component": "tenant-isolation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001174-tenant-isolation-core-test-py-performance.md"
+    },
+    {
+      "index": 1180,
+      "idea_id": "idea001175",
+      "filename": "idea001175-video-analyzer-core-test-py-hardening",
+      "title": "idea001175 - video-analyzer-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "video-analyzer-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001175-video-analyzer-core-test-py-hardening.md"
+    },
+    {
+      "index": 1181,
+      "idea_id": "idea001176",
+      "filename": "idea001176-video-analyzer-core-test-py-performance",
+      "title": "idea001176 - video-analyzer-core-test.py Performance",
+      "archetype": "performance",
+      "component": "video-analyzer-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001176-video-analyzer-core-test-py-performance.md"
+    },
+    {
+      "index": 1182,
+      "idea_id": "idea001177",
+      "filename": "idea001177-video-fragment-core-test-py-hardening",
+      "title": "idea001177 - video-fragment-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "video-fragment-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001177-video-fragment-core-test-py-hardening.md"
+    },
+    {
+      "index": 1183,
+      "idea_id": "idea001178",
+      "filename": "idea001178-video-fragment-core-test-py-performance",
+      "title": "idea001178 - video-fragment-core-test.py Performance",
+      "archetype": "performance",
+      "component": "video-fragment-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001178-video-fragment-core-test-py-performance.md"
+    },
+    {
+      "index": 1184,
+      "idea_id": "idea001179",
+      "filename": "idea001179-dynamic-agent-evolution-orchestrator-test-py-hardening",
+      "title": "idea001179 - dynamic-agent-evolution-orchestrator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dynamic-agent-evolution-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001179-dynamic-agent-evolution-orchestrator-test-py-hardening.md"
+    },
+    {
+      "index": 1185,
+      "idea_id": "idea001180",
+      "filename": "idea001180-dynamic-agent-evolution-orchestrator-test-py-performance",
+      "title": "idea001180 - dynamic-agent-evolution-orchestrator-test.py Performance",
+      "archetype": "performance",
+      "component": "dynamic-agent-evolution-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001180-dynamic-agent-evolution-orchestrator-test-py-performance.md"
+    },
+    {
+      "index": 1186,
+      "idea_id": "idea001181",
+      "filename": "idea001181-efficient-change-detector-test-py-hardening",
+      "title": "idea001181 - efficient-change-detector-test.py Hardening",
+      "archetype": "hardening",
+      "component": "efficient-change-detector-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001181-efficient-change-detector-test-py-hardening.md"
+    },
+    {
+      "index": 1187,
+      "idea_id": "idea001182",
+      "filename": "idea001182-efficient-change-detector-test-py-performance",
+      "title": "idea001182 - efficient-change-detector-test.py Performance",
+      "archetype": "performance",
+      "component": "efficient-change-detector-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001182-efficient-change-detector-test-py-performance.md"
+    },
+    {
+      "index": 1188,
+      "idea_id": "idea001183",
+      "filename": "idea001183-enhanced-strategy-optimizer-test-py-hardening",
+      "title": "idea001183 - enhanced-strategy-optimizer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "enhanced-strategy-optimizer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001183-enhanced-strategy-optimizer-test-py-hardening.md"
+    },
+    {
+      "index": 1189,
+      "idea_id": "idea001184",
+      "filename": "idea001184-enhanced-strategy-optimizer-test-py-performance",
+      "title": "idea001184 - enhanced-strategy-optimizer-test.py Performance",
+      "archetype": "performance",
+      "component": "enhanced-strategy-optimizer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001184-enhanced-strategy-optimizer-test-py-performance.md"
+    },
+    {
+      "index": 1190,
+      "idea_id": "idea001185",
+      "filename": "idea001185-job-queue-test-py-hardening",
+      "title": "idea001185 - job-queue-test.py Hardening",
+      "archetype": "hardening",
+      "component": "job-queue-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001185-job-queue-test-py-hardening.md"
+    },
+    {
+      "index": 1191,
+      "idea_id": "idea001186",
+      "filename": "idea001186-job-queue-test-py-performance",
+      "title": "idea001186 - job-queue-test.py Performance",
+      "archetype": "performance",
+      "component": "job-queue-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001186-job-queue-test-py-performance.md"
+    },
+    {
+      "index": 1192,
+      "idea_id": "idea001187",
+      "filename": "idea001187-maestro-security-analyzer-test-py-hardening",
+      "title": "idea001187 - maestro-security-analyzer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "maestro-security-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001187-maestro-security-analyzer-test-py-hardening.md"
+    },
+    {
+      "index": 1193,
+      "idea_id": "idea001188",
+      "filename": "idea001188-maestro-security-analyzer-test-py-performance",
+      "title": "idea001188 - maestro-security-analyzer-test.py Performance",
+      "archetype": "performance",
+      "component": "maestro-security-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001188-maestro-security-analyzer-test-py-performance.md"
+    },
+    {
+      "index": 1194,
+      "idea_id": "idea001189",
+      "filename": "idea001189-memory-core-test-py-hardening",
+      "title": "idea001189 - memory-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "memory-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001189-memory-core-test-py-hardening.md"
+    },
+    {
+      "index": 1195,
+      "idea_id": "idea001190",
+      "filename": "idea001190-memory-core-test-py-performance",
+      "title": "idea001190 - memory-core-test.py Performance",
+      "archetype": "performance",
+      "component": "memory-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001190-memory-core-test-py-performance.md"
+    },
+    {
+      "index": 1196,
+      "idea_id": "idea001191",
+      "filename": "idea001191-multi-agent-orchestrator-test-py-hardening",
+      "title": "idea001191 - multi-agent-orchestrator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multi-agent-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001191-multi-agent-orchestrator-test-py-hardening.md"
+    },
+    {
+      "index": 1197,
+      "idea_id": "idea001192",
+      "filename": "idea001192-multi-agent-orchestrator-test-py-performance",
+      "title": "idea001192 - multi-agent-orchestrator-test.py Performance",
+      "archetype": "performance",
+      "component": "multi-agent-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001192-multi-agent-orchestrator-test-py-performance.md"
+    },
+    {
+      "index": 1198,
+      "idea_id": "idea001193",
+      "filename": "idea001193-multi-channel-gateway-test-py-hardening",
+      "title": "idea001193 - multi-channel-gateway-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multi-channel-gateway-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001193-multi-channel-gateway-test-py-hardening.md"
+    },
+    {
+      "index": 1199,
+      "idea_id": "idea001194",
+      "filename": "idea001194-multi-channel-gateway-test-py-performance",
+      "title": "idea001194 - multi-channel-gateway-test.py Performance",
+      "archetype": "performance",
+      "component": "multi-channel-gateway-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001194-multi-channel-gateway-test-py-performance.md"
+    },
+    {
+      "index": 1200,
+      "idea_id": "idea001195",
+      "filename": "idea001195-multimodal-ai-service-test-py-hardening",
+      "title": "idea001195 - multimodal-ai-service-test.py Hardening",
+      "archetype": "hardening",
+      "component": "multimodal-ai-service-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001195-multimodal-ai-service-test-py-hardening.md"
+    },
+    {
+      "index": 1201,
+      "idea_id": "idea001196",
+      "filename": "idea001196-multimodal-ai-service-test-py-performance",
+      "title": "idea001196 - multimodal-ai-service-test.py Performance",
+      "archetype": "performance",
+      "component": "multimodal-ai-service-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001196-multimodal-ai-service-test-py-performance.md"
+    },
+    {
+      "index": 1202,
+      "idea_id": "idea001197",
+      "filename": "idea001197-crypto-core-test-py-hardening",
+      "title": "idea001197 - crypto-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "crypto-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001197-crypto-core-test-py-hardening.md"
+    },
+    {
+      "index": 1203,
+      "idea_id": "idea001198",
+      "filename": "idea001198-crypto-core-test-py-performance",
+      "title": "idea001198 - crypto-core-test.py Performance",
+      "archetype": "performance",
+      "component": "crypto-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001198-crypto-core-test-py-performance.md"
+    },
+    {
+      "index": 1204,
+      "idea_id": "idea001199",
+      "filename": "idea001199-data-parsing-core-test-py-hardening",
+      "title": "idea001199 - data-parsing-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "data-parsing-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001199-data-parsing-core-test-py-hardening.md"
+    },
+    {
+      "index": 1205,
+      "idea_id": "idea001200",
+      "filename": "idea001200-data-parsing-core-test-py-performance",
+      "title": "idea001200 - data-parsing-core-test.py Performance",
+      "archetype": "performance",
+      "component": "data-parsing-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001200-data-parsing-core-test-py-performance.md"
+    },
+    {
+      "index": 1206,
+      "idea_id": "idea001201",
+      "filename": "idea001201-database-access-core-test-py-hardening",
+      "title": "idea001201 - database-access-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "database-access-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001201-database-access-core-test-py-hardening.md"
+    },
+    {
+      "index": 1207,
+      "idea_id": "idea001202",
+      "filename": "idea001202-database-access-core-test-py-performance",
+      "title": "idea001202 - database-access-core-test.py Performance",
+      "archetype": "performance",
+      "component": "database-access-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001202-database-access-core-test-py-performance.md"
+    },
+    {
+      "index": 1208,
+      "idea_id": "idea001203",
+      "filename": "idea001203-reconnaissance-core-test-py-hardening",
+      "title": "idea001203 - reconnaissance-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001203-reconnaissance-core-test-py-hardening.md"
+    },
+    {
+      "index": 1209,
+      "idea_id": "idea001204",
+      "filename": "idea001204-reconnaissance-core-test-py-performance",
+      "title": "idea001204 - reconnaissance-core-test.py Performance",
+      "archetype": "performance",
+      "component": "reconnaissance-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001204-reconnaissance-core-test-py-performance.md"
+    },
+    {
+      "index": 1210,
+      "idea_id": "idea001205",
+      "filename": "idea001205-reflection-loop-test-py-hardening",
+      "title": "idea001205 - reflection-loop-test.py Hardening",
+      "archetype": "hardening",
+      "component": "reflection-loop-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001205-reflection-loop-test-py-hardening.md"
+    },
+    {
+      "index": 1211,
+      "idea_id": "idea001206",
+      "filename": "idea001206-reflection-loop-test-py-performance",
+      "title": "idea001206 - reflection-loop-test.py Performance",
+      "archetype": "performance",
+      "component": "reflection-loop-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001206-reflection-loop-test-py-performance.md"
+    },
+    {
+      "index": 1212,
+      "idea_id": "idea001207",
+      "filename": "idea001207-safety-guardrails-test-py-hardening",
+      "title": "idea001207 - safety-guardrails-test.py Hardening",
+      "archetype": "hardening",
+      "component": "safety-guardrails-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001207-safety-guardrails-test-py-hardening.md"
+    },
+    {
+      "index": 1213,
+      "idea_id": "idea001208",
+      "filename": "idea001208-safety-guardrails-test-py-performance",
+      "title": "idea001208 - safety-guardrails-test.py Performance",
+      "archetype": "performance",
+      "component": "safety-guardrails-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001208-safety-guardrails-test-py-performance.md"
+    },
+    {
+      "index": 1214,
+      "idea_id": "idea001209",
+      "filename": "idea001209-api-security-core-test-py-hardening",
+      "title": "idea001209 - api-security-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "api-security-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001209-api-security-core-test-py-hardening.md"
+    },
+    {
+      "index": 1215,
+      "idea_id": "idea001210",
+      "filename": "idea001210-api-security-core-test-py-performance",
+      "title": "idea001210 - api-security-core-test.py Performance",
+      "archetype": "performance",
+      "component": "api-security-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001210-api-security-core-test-py-performance.md"
+    },
+    {
+      "index": 1216,
+      "idea_id": "idea001211",
+      "filename": "idea001211-privilege-escalation-core-test-py-hardening",
+      "title": "idea001211 - privilege-escalation-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "privilege-escalation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001211-privilege-escalation-core-test-py-hardening.md"
+    },
+    {
+      "index": 1217,
+      "idea_id": "idea001212",
+      "filename": "idea001212-privilege-escalation-core-test-py-performance",
+      "title": "idea001212 - privilege-escalation-core-test.py Performance",
+      "archetype": "performance",
+      "component": "privilege-escalation-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001212-privilege-escalation-core-test-py-performance.md"
+    },
+    {
+      "index": 1218,
+      "idea_id": "idea001213",
+      "filename": "idea001213-web-security-scanner-core-test-py-hardening",
+      "title": "idea001213 - web-security-scanner-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "web-security-scanner-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001213-web-security-scanner-core-test-py-hardening.md"
+    },
+    {
+      "index": 1219,
+      "idea_id": "idea001214",
+      "filename": "idea001214-web-security-scanner-core-test-py-performance",
+      "title": "idea001214 - web-security-scanner-core-test.py Performance",
+      "archetype": "performance",
+      "component": "web-security-scanner-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001214-web-security-scanner-core-test-py-performance.md"
+    },
+    {
+      "index": 1220,
+      "idea_id": "idea001215",
+      "filename": "idea001215-strategy-optimizer-test-py-hardening",
+      "title": "idea001215 - strategy-optimizer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "strategy-optimizer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001215-strategy-optimizer-test-py-hardening.md"
+    },
+    {
+      "index": 1221,
+      "idea_id": "idea001216",
+      "filename": "idea001216-strategy-optimizer-test-py-performance",
+      "title": "idea001216 - strategy-optimizer-test.py Performance",
+      "archetype": "performance",
+      "component": "strategy-optimizer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001216-strategy-optimizer-test-py-performance.md"
+    },
+    {
+      "index": 1222,
+      "idea_id": "idea001217",
+      "filename": "idea001217-swarm-migration-core-test-py-hardening",
+      "title": "idea001217 - swarm-migration-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "swarm-migration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001217-swarm-migration-core-test-py-hardening.md"
+    },
+    {
+      "index": 1223,
+      "idea_id": "idea001218",
+      "filename": "idea001218-swarm-migration-core-test-py-performance",
+      "title": "idea001218 - swarm-migration-core-test.py Performance",
+      "archetype": "performance",
+      "component": "swarm-migration-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001218-swarm-migration-core-test-py-performance.md"
+    },
+    {
+      "index": 1224,
+      "idea_id": "idea001219",
+      "filename": "idea001219-task-prioritization-test-py-hardening",
+      "title": "idea001219 - task-prioritization-test.py Hardening",
+      "archetype": "hardening",
+      "component": "task-prioritization-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001219-task-prioritization-test-py-hardening.md"
+    },
+    {
+      "index": 1225,
+      "idea_id": "idea001220",
+      "filename": "idea001220-task-prioritization-test-py-performance",
+      "title": "idea001220 - task-prioritization-test.py Performance",
+      "archetype": "performance",
+      "component": "task-prioritization-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001220-task-prioritization-test-py-performance.md"
+    },
+    {
+      "index": 1226,
+      "idea_id": "idea001221",
+      "filename": "idea001221-tts-service-test-py-hardening",
+      "title": "idea001221 - tts-service-test.py Hardening",
+      "archetype": "hardening",
+      "component": "tts-service-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001221-tts-service-test-py-hardening.md"
+    },
+    {
+      "index": 1227,
+      "idea_id": "idea001222",
+      "filename": "idea001222-tts-service-test-py-performance",
+      "title": "idea001222 - tts-service-test.py Performance",
+      "archetype": "performance",
+      "component": "tts-service-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001222-tts-service-test-py-performance.md"
+    },
+    {
+      "index": 1228,
+      "idea_id": "idea001223",
+      "filename": "idea001223-unified-environment-test-py-hardening",
+      "title": "idea001223 - unified-environment-test.py Hardening",
+      "archetype": "hardening",
+      "component": "unified-environment-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001223-unified-environment-test-py-hardening.md"
+    },
+    {
+      "index": 1229,
+      "idea_id": "idea001224",
+      "filename": "idea001224-unified-environment-test-py-performance",
+      "title": "idea001224 - unified-environment-test.py Performance",
+      "archetype": "performance",
+      "component": "unified-environment-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001224-unified-environment-test-py-performance.md"
+    },
+    {
+      "index": 1230,
+      "idea_id": "idea001225",
+      "filename": "idea001225-voice-agent-orchestrator-test-py-hardening",
+      "title": "idea001225 - voice-agent-orchestrator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "voice-agent-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001225-voice-agent-orchestrator-test-py-hardening.md"
+    },
+    {
+      "index": 1231,
+      "idea_id": "idea001226",
+      "filename": "idea001226-voice-agent-orchestrator-test-py-performance",
+      "title": "idea001226 - voice-agent-orchestrator-test.py Performance",
+      "archetype": "performance",
+      "component": "voice-agent-orchestrator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001226-voice-agent-orchestrator-test-py-performance.md"
+    },
+    {
+      "index": 1232,
+      "idea_id": "idea001227",
+      "filename": "idea001227-work-pattern-test-py-hardening",
+      "title": "idea001227 - work-pattern-test.py Hardening",
+      "archetype": "hardening",
+      "component": "work-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001227-work-pattern-test-py-hardening.md"
+    },
+    {
+      "index": 1233,
+      "idea_id": "idea001228",
+      "filename": "idea001228-work-pattern-test-py-performance",
+      "title": "idea001228 - work-pattern-test.py Performance",
+      "archetype": "performance",
+      "component": "work-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001228-work-pattern-test-py-performance.md"
+    },
+    {
+      "index": 1234,
+      "idea_id": "idea001229",
+      "filename": "idea001229-authmanager-test-py-hardening",
+      "title": "idea001229 - authmanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "authmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001229-authmanager-test-py-hardening.md"
+    },
+    {
+      "index": 1235,
+      "idea_id": "idea001230",
+      "filename": "idea001230-authmanager-test-py-performance",
+      "title": "idea001230 - authmanager-test.py Performance",
+      "archetype": "performance",
+      "component": "authmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001230-authmanager-test-py-performance.md"
+    },
+    {
+      "index": 1236,
+      "idea_id": "idea001231",
+      "filename": "idea001231-pluginmanager-test-py-hardening",
+      "title": "idea001231 - pluginmanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "pluginmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001231-pluginmanager-test-py-hardening.md"
+    },
+    {
+      "index": 1237,
+      "idea_id": "idea001232",
+      "filename": "idea001232-pluginmanager-test-py-performance",
+      "title": "idea001232 - pluginmanager-test.py Performance",
+      "archetype": "performance",
+      "component": "pluginmanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001232-pluginmanager-test-py-performance.md"
+    },
+    {
+      "index": 1238,
+      "idea_id": "idea001233",
+      "filename": "idea001233-resourcequotamanager-test-py-hardening",
+      "title": "idea001233 - resourcequotamanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "resourcequotamanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001233-resourcequotamanager-test-py-hardening.md"
+    },
+    {
+      "index": 1239,
+      "idea_id": "idea001234",
+      "filename": "idea001234-resourcequotamanager-test-py-performance",
+      "title": "idea001234 - resourcequotamanager-test.py Performance",
+      "archetype": "performance",
+      "component": "resourcequotamanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001234-resourcequotamanager-test-py-performance.md"
+    },
+    {
+      "index": 1240,
+      "idea_id": "idea001235",
+      "filename": "idea001235-systemmanagers-test-py-hardening",
+      "title": "idea001235 - systemmanagers-test.py Hardening",
+      "archetype": "hardening",
+      "component": "systemmanagers-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001235-systemmanagers-test-py-hardening.md"
+    },
+    {
+      "index": 1241,
+      "idea_id": "idea001236",
+      "filename": "idea001236-systemmanagers-test-py-performance",
+      "title": "idea001236 - systemmanagers-test.py Performance",
+      "archetype": "performance",
+      "component": "systemmanagers-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001236-systemmanagers-test-py-performance.md"
+    },
+    {
+      "index": 1242,
+      "idea_id": "idea001237",
+      "filename": "idea001237-batchinvariantops-test-py-hardening",
+      "title": "idea001237 - batchinvariantops-test.py Hardening",
+      "archetype": "hardening",
+      "component": "batchinvariantops-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001237-batchinvariantops-test-py-hardening.md"
+    },
+    {
+      "index": 1243,
+      "idea_id": "idea001238",
+      "filename": "idea001238-batchinvariantops-test-py-performance",
+      "title": "idea001238 - batchinvariantops-test.py Performance",
+      "archetype": "performance",
+      "component": "batchinvariantops-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001238-batchinvariantops-test-py-performance.md"
+    },
+    {
+      "index": 1244,
+      "idea_id": "idea001239",
+      "filename": "idea001239-governancemixin-test-py-hardening",
+      "title": "idea001239 - governancemixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "governancemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001239-governancemixin-test-py-hardening.md"
+    },
+    {
+      "index": 1245,
+      "idea_id": "idea001240",
+      "filename": "idea001240-governancemixin-test-py-performance",
+      "title": "idea001240 - governancemixin-test.py Performance",
+      "archetype": "performance",
+      "component": "governancemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001240-governancemixin-test-py-performance.md"
+    },
+    {
+      "index": 1246,
+      "idea_id": "idea001241",
+      "filename": "idea001241-identitymixin-test-py-hardening",
+      "title": "idea001241 - identitymixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "identitymixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001241-identitymixin-test-py-hardening.md"
+    },
+    {
+      "index": 1247,
+      "idea_id": "idea001242",
+      "filename": "idea001242-identitymixin-test-py-performance",
+      "title": "idea001242 - identitymixin-test.py Performance",
+      "archetype": "performance",
+      "component": "identitymixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001242-identitymixin-test-py-performance.md"
+    },
+    {
+      "index": 1248,
+      "idea_id": "idea001243",
+      "filename": "idea001243-knowledgemixin-test-py-hardening",
+      "title": "idea001243 - knowledgemixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "knowledgemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001243-knowledgemixin-test-py-hardening.md"
+    },
+    {
+      "index": 1249,
+      "idea_id": "idea001244",
+      "filename": "idea001244-knowledgemixin-test-py-performance",
+      "title": "idea001244 - knowledgemixin-test.py Performance",
+      "archetype": "performance",
+      "component": "knowledgemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001244-knowledgemixin-test-py-performance.md"
+    },
+    {
+      "index": 1250,
+      "idea_id": "idea001245",
+      "filename": "idea001245-orchestrationmixin-test-py-hardening",
+      "title": "idea001245 - orchestrationmixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "orchestrationmixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001245-orchestrationmixin-test-py-hardening.md"
+    },
+    {
+      "index": 1251,
+      "idea_id": "idea001246",
+      "filename": "idea001246-orchestrationmixin-test-py-performance",
+      "title": "idea001246 - orchestrationmixin-test.py Performance",
+      "archetype": "performance",
+      "component": "orchestrationmixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001246-orchestrationmixin-test-py-performance.md"
+    },
+    {
+      "index": 1252,
+      "idea_id": "idea001247",
+      "filename": "idea001247-persistencemixin-test-py-hardening",
+      "title": "idea001247 - persistencemixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "persistencemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001247-persistencemixin-test-py-hardening.md"
+    },
+    {
+      "index": 1253,
+      "idea_id": "idea001248",
+      "filename": "idea001248-persistencemixin-test-py-performance",
+      "title": "idea001248 - persistencemixin-test.py Performance",
+      "archetype": "performance",
+      "component": "persistencemixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001248-persistencemixin-test-py-performance.md"
+    },
+    {
+      "index": 1254,
+      "idea_id": "idea001249",
+      "filename": "idea001249-cassette-mixin-test-py-hardening",
+      "title": "idea001249 - cassette-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "cassette-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001249-cassette-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1255,
+      "idea_id": "idea001250",
+      "filename": "idea001250-cassette-mixin-test-py-performance",
+      "title": "idea001250 - cassette-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "cassette-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001250-cassette-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1256,
+      "idea_id": "idea001251",
+      "filename": "idea001251-crypto-mixin-test-py-hardening",
+      "title": "idea001251 - crypto-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "crypto-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001251-crypto-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1257,
+      "idea_id": "idea001252",
+      "filename": "idea001252-crypto-mixin-test-py-performance",
+      "title": "idea001252 - crypto-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "crypto-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001252-crypto-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1258,
+      "idea_id": "idea001253",
+      "filename": "idea001253-data-parsing-mixin-test-py-hardening",
+      "title": "idea001253 - data-parsing-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "data-parsing-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001253-data-parsing-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1259,
+      "idea_id": "idea001254",
+      "filename": "idea001254-data-parsing-mixin-test-py-performance",
+      "title": "idea001254 - data-parsing-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "data-parsing-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001254-data-parsing-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1260,
+      "idea_id": "idea001255",
+      "filename": "idea001255-data-processing-mixin-test-py-hardening",
+      "title": "idea001255 - data-processing-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "data-processing-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001255-data-processing-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1261,
+      "idea_id": "idea001256",
+      "filename": "idea001256-data-processing-mixin-test-py-performance",
+      "title": "idea001256 - data-processing-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "data-processing-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001256-data-processing-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1262,
+      "idea_id": "idea001257",
+      "filename": "idea001257-database-access-mixin-test-py-hardening",
+      "title": "idea001257 - database-access-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "database-access-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001257-database-access-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1263,
+      "idea_id": "idea001258",
+      "filename": "idea001258-database-access-mixin-test-py-performance",
+      "title": "idea001258 - database-access-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "database-access-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001258-database-access-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1264,
+      "idea_id": "idea001259",
+      "filename": "idea001259-environment-mixin-test-py-hardening",
+      "title": "idea001259 - environment-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "environment-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001259-environment-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1265,
+      "idea_id": "idea001260",
+      "filename": "idea001260-environment-mixin-test-py-performance",
+      "title": "idea001260 - environment-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "environment-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001260-environment-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1266,
+      "idea_id": "idea001261",
+      "filename": "idea001261-payload-generator-mixin-test-py-hardening",
+      "title": "idea001261 - payload-generator-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "payload-generator-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001261-payload-generator-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1267,
+      "idea_id": "idea001262",
+      "filename": "idea001262-payload-generator-mixin-test-py-performance",
+      "title": "idea001262 - payload-generator-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "payload-generator-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001262-payload-generator-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1268,
+      "idea_id": "idea001263",
+      "filename": "idea001263-privilege-escalation-mixin-test-py-hardening",
+      "title": "idea001263 - privilege-escalation-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "privilege-escalation-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001263-privilege-escalation-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1269,
+      "idea_id": "idea001264",
+      "filename": "idea001264-privilege-escalation-mixin-test-py-performance",
+      "title": "idea001264 - privilege-escalation-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "privilege-escalation-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001264-privilege-escalation-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1270,
+      "idea_id": "idea001265",
+      "filename": "idea001265-reconnaissance-mixin-test-py-hardening",
+      "title": "idea001265 - reconnaissance-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "reconnaissance-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001265-reconnaissance-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1271,
+      "idea_id": "idea001266",
+      "filename": "idea001266-reconnaissance-mixin-test-py-performance",
+      "title": "idea001266 - reconnaissance-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "reconnaissance-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001266-reconnaissance-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1272,
+      "idea_id": "idea001267",
+      "filename": "idea001267-security-mixin-test-py-hardening",
+      "title": "idea001267 - security-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "security-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001267-security-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1273,
+      "idea_id": "idea001268",
+      "filename": "idea001268-security-mixin-test-py-performance",
+      "title": "idea001268 - security-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "security-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001268-security-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1274,
+      "idea_id": "idea001269",
+      "filename": "idea001269-ssrf-detector-mixin-test-py-hardening",
+      "title": "idea001269 - ssrf-detector-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ssrf-detector-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001269-ssrf-detector-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1275,
+      "idea_id": "idea001270",
+      "filename": "idea001270-ssrf-detector-mixin-test-py-performance",
+      "title": "idea001270 - ssrf-detector-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "ssrf-detector-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001270-ssrf-detector-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1276,
+      "idea_id": "idea001271",
+      "filename": "idea001271-stream-manager-mixin-test-py-hardening",
+      "title": "idea001271 - stream-manager-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "stream-manager-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001271-stream-manager-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1277,
+      "idea_id": "idea001272",
+      "filename": "idea001272-stream-manager-mixin-test-py-performance",
+      "title": "idea001272 - stream-manager-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "stream-manager-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001272-stream-manager-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1278,
+      "idea_id": "idea001273",
+      "filename": "idea001273-task-manager-mixin-test-py-hardening",
+      "title": "idea001273 - task-manager-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "task-manager-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001273-task-manager-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1279,
+      "idea_id": "idea001274",
+      "filename": "idea001274-task-manager-mixin-test-py-performance",
+      "title": "idea001274 - task-manager-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "task-manager-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001274-task-manager-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1280,
+      "idea_id": "idea001275",
+      "filename": "idea001275-task-queue-mixin-test-py-hardening",
+      "title": "idea001275 - task-queue-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "task-queue-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001275-task-queue-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1281,
+      "idea_id": "idea001276",
+      "filename": "idea001276-task-queue-mixin-test-py-performance",
+      "title": "idea001276 - task-queue-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "task-queue-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001276-task-queue-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1282,
+      "idea_id": "idea001277",
+      "filename": "idea001277-tool-framework-mixin-test-py-hardening",
+      "title": "idea001277 - tool-framework-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "tool-framework-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001277-tool-framework-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1283,
+      "idea_id": "idea001278",
+      "filename": "idea001278-tool-framework-mixin-test-py-performance",
+      "title": "idea001278 - tool-framework-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "tool-framework-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001278-tool-framework-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1284,
+      "idea_id": "idea001279",
+      "filename": "idea001279-vulnerability-scanner-mixin-test-py-hardening",
+      "title": "idea001279 - vulnerability-scanner-mixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "vulnerability-scanner-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001279-vulnerability-scanner-mixin-test-py-hardening.md"
+    },
+    {
+      "index": 1285,
+      "idea_id": "idea001280",
+      "filename": "idea001280-vulnerability-scanner-mixin-test-py-performance",
+      "title": "idea001280 - vulnerability-scanner-mixin-test.py Performance",
+      "archetype": "performance",
+      "component": "vulnerability-scanner-mixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001280-vulnerability-scanner-mixin-test-py-performance.md"
+    },
+    {
+      "index": 1286,
+      "idea_id": "idea001281",
+      "filename": "idea001281-agent-card-test-py-hardening",
+      "title": "idea001281 - agent-card-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agent-card-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001281-agent-card-test-py-hardening.md"
+    },
+    {
+      "index": 1287,
+      "idea_id": "idea001282",
+      "filename": "idea001282-agent-card-test-py-performance",
+      "title": "idea001282 - agent-card-test.py Performance",
+      "archetype": "performance",
+      "component": "agent-card-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001282-agent-card-test-py-performance.md"
+    },
+    {
+      "index": 1288,
+      "idea_id": "idea001283",
+      "filename": "idea001283-agent-models-test-py-hardening",
+      "title": "idea001283 - agent-models-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agent-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001283-agent-models-test-py-hardening.md"
+    },
+    {
+      "index": 1289,
+      "idea_id": "idea001284",
+      "filename": "idea001284-agent-models-test-py-performance",
+      "title": "idea001284 - agent-models-test.py Performance",
+      "archetype": "performance",
+      "component": "agent-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001284-agent-models-test-py-performance.md"
+    },
+    {
+      "index": 1290,
+      "idea_id": "idea001285",
+      "filename": "idea001285-base-models-test-py-hardening",
+      "title": "idea001285 - base-models-test.py Hardening",
+      "archetype": "hardening",
+      "component": "base-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001285-base-models-test-py-hardening.md"
+    },
+    {
+      "index": 1291,
+      "idea_id": "idea001286",
+      "filename": "idea001286-base-models-test-py-performance",
+      "title": "idea001286 - base-models-test.py Performance",
+      "archetype": "performance",
+      "component": "base-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001286-base-models-test-py-performance.md"
+    },
+    {
+      "index": 1292,
+      "idea_id": "idea001287",
+      "filename": "idea001287-communication-models-test-py-hardening",
+      "title": "idea001287 - communication-models-test.py Hardening",
+      "archetype": "hardening",
+      "component": "communication-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001287-communication-models-test-py-hardening.md"
+    },
+    {
+      "index": 1293,
+      "idea_id": "idea001288",
+      "filename": "idea001288-communication-models-test-py-performance",
+      "title": "idea001288 - communication-models-test.py Performance",
+      "archetype": "performance",
+      "component": "communication-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001288-communication-models-test-py-performance.md"
+    },
+    {
+      "index": 1294,
+      "idea_id": "idea001289",
+      "filename": "idea001289-enums-test-py-hardening",
+      "title": "idea001289 - enums-test.py Hardening",
+      "archetype": "hardening",
+      "component": "enums-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001289-enums-test-py-hardening.md"
+    },
+    {
+      "index": 1295,
+      "idea_id": "idea001290",
+      "filename": "idea001290-enums-test-py-performance",
+      "title": "idea001290 - enums-test.py Performance",
+      "archetype": "performance",
+      "component": "enums-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001290-enums-test-py-performance.md"
+    },
+    {
+      "index": 1296,
+      "idea_id": "idea001291",
+      "filename": "idea001291-fleet-models-test-py-hardening",
+      "title": "idea001291 - fleet-models-test.py Hardening",
+      "archetype": "hardening",
+      "component": "fleet-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001291-fleet-models-test-py-hardening.md"
+    },
+    {
+      "index": 1297,
+      "idea_id": "idea001292",
+      "filename": "idea001292-fleet-models-test-py-performance",
+      "title": "idea001292 - fleet-models-test.py Performance",
+      "archetype": "performance",
+      "component": "fleet-models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001292-fleet-models-test-py-performance.md"
+    },
+    {
+      "index": 1298,
+      "idea_id": "idea001293",
+      "filename": "idea001293-modules-test-py-hardening",
+      "title": "idea001293 - modules-test.py Hardening",
+      "archetype": "hardening",
+      "component": "modules-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001293-modules-test-py-hardening.md"
+    },
+    {
+      "index": 1299,
+      "idea_id": "idea001294",
+      "filename": "idea001294-modules-test-py-performance",
+      "title": "idea001294 - modules-test.py Performance",
+      "archetype": "performance",
+      "component": "modules-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001294-modules-test-py-performance.md"
+    },
+    {
+      "index": 1300,
+      "idea_id": "idea001295",
+      "filename": "idea001295-toolparser-test-py-hardening",
+      "title": "idea001295 - toolparser-test.py Hardening",
+      "archetype": "hardening",
+      "component": "toolparser-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001295-toolparser-test-py-hardening.md"
+    },
+    {
+      "index": 1301,
+      "idea_id": "idea001296",
+      "filename": "idea001296-toolparser-test-py-performance",
+      "title": "idea001296 - toolparser-test.py Performance",
+      "archetype": "performance",
+      "component": "toolparser-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001296-toolparser-test-py-performance.md"
+    },
+    {
+      "index": 1302,
+      "idea_id": "idea001297",
+      "filename": "idea001297-base-test-py-hardening",
+      "title": "idea001297 - base-test.py Hardening",
+      "archetype": "hardening",
+      "component": "base-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001297-base-test-py-hardening.md"
+    },
+    {
+      "index": 1303,
+      "idea_id": "idea001298",
+      "filename": "idea001298-base-test-py-performance",
+      "title": "idea001298 - base-test.py Performance",
+      "archetype": "performance",
+      "component": "base-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001298-base-test-py-performance.md"
+    },
+    {
+      "index": 1304,
+      "idea_id": "idea001299",
+      "filename": "idea001299-identity-test-py-hardening",
+      "title": "idea001299 - identity-test.py Hardening",
+      "archetype": "hardening",
+      "component": "identity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001299-identity-test-py-hardening.md"
+    },
+    {
+      "index": 1305,
+      "idea_id": "idea001300",
+      "filename": "idea001300-identity-test-py-performance",
+      "title": "idea001300 - identity-test.py Performance",
+      "archetype": "performance",
+      "component": "identity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001300-identity-test-py-performance.md"
+    },
+    {
+      "index": 1306,
+      "idea_id": "idea001301",
+      "filename": "idea001301-json-test-py-hardening",
+      "title": "idea001301 - json-test.py Hardening",
+      "archetype": "hardening",
+      "component": "json-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001301-json-test-py-hardening.md"
+    },
+    {
+      "index": 1307,
+      "idea_id": "idea001302",
+      "filename": "idea001302-json-test-py-performance",
+      "title": "idea001302 - json-test.py Performance",
+      "archetype": "performance",
+      "component": "json-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001302-json-test-py-performance.md"
+    },
+    {
+      "index": 1308,
+      "idea_id": "idea001303",
+      "filename": "idea001303-markdown-test-py-hardening",
+      "title": "idea001303 - markdown-test.py Hardening",
+      "archetype": "hardening",
+      "component": "markdown-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001303-markdown-test-py-hardening.md"
+    },
+    {
+      "index": 1309,
+      "idea_id": "idea001304",
+      "filename": "idea001304-markdown-test-py-performance",
+      "title": "idea001304 - markdown-test.py Performance",
+      "archetype": "performance",
+      "component": "markdown-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001304-markdown-test-py-performance.md"
+    },
+    {
+      "index": 1310,
+      "idea_id": "idea001305",
+      "filename": "idea001305-xml-test-py-hardening",
+      "title": "idea001305 - xml-test.py Hardening",
+      "archetype": "hardening",
+      "component": "xml-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001305-xml-test-py-hardening.md"
+    },
+    {
+      "index": 1311,
+      "idea_id": "idea001306",
+      "filename": "idea001306-xml-test-py-performance",
+      "title": "idea001306 - xml-test.py Performance",
+      "archetype": "performance",
+      "component": "xml-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001306-xml-test-py-performance.md"
+    },
+    {
+      "index": 1312,
+      "idea_id": "idea001307",
+      "filename": "idea001307-models-test-py-hardening",
+      "title": "idea001307 - models-test.py Hardening",
+      "archetype": "hardening",
+      "component": "models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001307-models-test-py-hardening.md"
+    },
+    {
+      "index": 1313,
+      "idea_id": "idea001308",
+      "filename": "idea001308-models-test-py-performance",
+      "title": "idea001308 - models-test.py Performance",
+      "archetype": "performance",
+      "component": "models-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001308-models-test-py-performance.md"
+    },
+    {
+      "index": 1314,
+      "idea_id": "idea001309",
+      "filename": "idea001309-registry-test-py-hardening",
+      "title": "idea001309 - registry-test.py Hardening",
+      "archetype": "hardening",
+      "component": "registry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001309-registry-test-py-hardening.md"
+    },
+    {
+      "index": 1315,
+      "idea_id": "idea001310",
+      "filename": "idea001310-registry-test-py-performance",
+      "title": "idea001310 - registry-test.py Performance",
+      "archetype": "performance",
+      "component": "registry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001310-registry-test-py-performance.md"
+    },
+    {
+      "index": 1316,
+      "idea_id": "idea001311",
+      "filename": "idea001311-utils-test-py-hardening",
+      "title": "idea001311 - utils-test.py Hardening",
+      "archetype": "hardening",
+      "component": "utils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001311-utils-test-py-hardening.md"
+    },
+    {
+      "index": 1317,
+      "idea_id": "idea001312",
+      "filename": "idea001312-utils-test-py-performance",
+      "title": "idea001312 - utils-test.py Performance",
+      "archetype": "performance",
+      "component": "utils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001312-utils-test-py-performance.md"
+    },
+    {
+      "index": 1318,
+      "idea_id": "idea001313",
+      "filename": "idea001313-logitsprocessor-test-py-hardening",
+      "title": "idea001313 - logitsprocessor-test.py Hardening",
+      "archetype": "hardening",
+      "component": "logitsprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001313-logitsprocessor-test-py-hardening.md"
+    },
+    {
+      "index": 1319,
+      "idea_id": "idea001314",
+      "filename": "idea001314-logitsprocessor-test-py-performance",
+      "title": "idea001314 - logitsprocessor-test.py Performance",
+      "archetype": "performance",
+      "component": "logitsprocessor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001314-logitsprocessor-test-py-performance.md"
+    },
+    {
+      "index": 1320,
+      "idea_id": "idea001315",
+      "filename": "idea001315-extensionregistry-test-py-hardening",
+      "title": "idea001315 - extensionregistry-test.py Hardening",
+      "archetype": "hardening",
+      "component": "extensionregistry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001315-extensionregistry-test-py-hardening.md"
+    },
+    {
+      "index": 1321,
+      "idea_id": "idea001316",
+      "filename": "idea001316-extensionregistry-test-py-performance",
+      "title": "idea001316 - extensionregistry-test.py Performance",
+      "archetype": "performance",
+      "component": "extensionregistry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001316-extensionregistry-test-py-performance.md"
+    },
+    {
+      "index": 1322,
+      "idea_id": "idea001317",
+      "filename": "idea001317-registry-test-py-hardening",
+      "title": "idea001317 - registry-test.py Hardening",
+      "archetype": "hardening",
+      "component": "registry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001317-registry-test-py-hardening.md"
+    },
+    {
+      "index": 1323,
+      "idea_id": "idea001318",
+      "filename": "idea001318-registry-test-py-performance",
+      "title": "idea001318 - registry-test.py Performance",
+      "archetype": "performance",
+      "component": "registry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001318-registry-test-py-performance.md"
+    },
+    {
+      "index": 1324,
+      "idea_id": "idea001319",
+      "filename": "idea001319-sandbox-test-py-hardening",
+      "title": "idea001319 - sandbox-test.py Hardening",
+      "archetype": "hardening",
+      "component": "sandbox-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001319-sandbox-test-py-hardening.md"
+    },
+    {
+      "index": 1325,
+      "idea_id": "idea001320",
+      "filename": "idea001320-sandbox-test-py-performance",
+      "title": "idea001320 - sandbox-test.py Performance",
+      "archetype": "performance",
+      "component": "sandbox-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001320-sandbox-test-py-performance.md"
+    },
+    {
+      "index": 1326,
+      "idea_id": "idea001321",
+      "filename": "idea001321-shell-test-py-hardening",
+      "title": "idea001321 - shell-test.py Hardening",
+      "archetype": "hardening",
+      "component": "shell-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001321-shell-test-py-hardening.md"
+    },
+    {
+      "index": 1327,
+      "idea_id": "idea001322",
+      "filename": "idea001322-shell-test-py-performance",
+      "title": "idea001322 - shell-test.py Performance",
+      "archetype": "performance",
+      "component": "shell-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001322-shell-test-py-performance.md"
+    },
+    {
+      "index": 1328,
+      "idea_id": "idea001323",
+      "filename": "idea001323-state-test-py-hardening",
+      "title": "idea001323 - state-test.py Hardening",
+      "archetype": "hardening",
+      "component": "state-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001323-state-test-py-hardening.md"
+    },
+    {
+      "index": 1329,
+      "idea_id": "idea001324",
+      "filename": "idea001324-state-test-py-performance",
+      "title": "idea001324 - state-test.py Performance",
+      "archetype": "performance",
+      "component": "state-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001324-state-test-py-performance.md"
+    },
+    {
+      "index": 1330,
+      "idea_id": "idea001325",
+      "filename": "idea001325-bloomfilter-test-py-hardening",
+      "title": "idea001325 - bloomfilter-test.py Hardening",
+      "archetype": "hardening",
+      "component": "bloomfilter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001325-bloomfilter-test-py-hardening.md"
+    },
+    {
+      "index": 1331,
+      "idea_id": "idea001326",
+      "filename": "idea001326-bloomfilter-test-py-performance",
+      "title": "idea001326 - bloomfilter-test.py Performance",
+      "archetype": "performance",
+      "component": "bloomfilter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001326-bloomfilter-test-py-performance.md"
+    },
+    {
+      "index": 1332,
+      "idea_id": "idea001327",
+      "filename": "idea001327-cpugpubuffer-test-py-hardening",
+      "title": "idea001327 - cpugpubuffer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "cpugpubuffer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001327-cpugpubuffer-test-py-hardening.md"
+    },
+    {
+      "index": 1333,
+      "idea_id": "idea001328",
+      "filename": "idea001328-cpugpubuffer-test-py-performance",
+      "title": "idea001328 - cpugpubuffer-test.py Performance",
+      "archetype": "performance",
+      "component": "cpugpubuffer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001328-cpugpubuffer-test-py-performance.md"
+    },
+    {
+      "index": 1334,
+      "idea_id": "idea001329",
+      "filename": "idea001329-flatlogprobs-test-py-hardening",
+      "title": "idea001329 - flatlogprobs-test.py Hardening",
+      "archetype": "hardening",
+      "component": "flatlogprobs-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001329-flatlogprobs-test-py-hardening.md"
+    },
+    {
+      "index": 1335,
+      "idea_id": "idea001330",
+      "filename": "idea001330-flatlogprobs-test-py-performance",
+      "title": "idea001330 - flatlogprobs-test.py Performance",
+      "archetype": "performance",
+      "component": "flatlogprobs-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001330-flatlogprobs-test-py-performance.md"
+    },
+    {
+      "index": 1336,
+      "idea_id": "idea001331",
+      "filename": "idea001331-immutablecollections-test-py-hardening",
+      "title": "idea001331 - immutablecollections-test.py Hardening",
+      "archetype": "hardening",
+      "component": "immutablecollections-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001331-immutablecollections-test-py-hardening.md"
+    },
+    {
+      "index": 1337,
+      "idea_id": "idea001332",
+      "filename": "idea001332-immutablecollections-test-py-performance",
+      "title": "idea001332 - immutablecollections-test.py Performance",
+      "archetype": "performance",
+      "component": "immutablecollections-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001332-immutablecollections-test-py-performance.md"
+    },
+    {
+      "index": 1338,
+      "idea_id": "idea001333",
+      "filename": "idea001333-lockfreequeue-test-py-hardening",
+      "title": "idea001333 - lockfreequeue-test.py Hardening",
+      "archetype": "hardening",
+      "component": "lockfreequeue-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001333-lockfreequeue-test-py-hardening.md"
+    },
+    {
+      "index": 1339,
+      "idea_id": "idea001334",
+      "filename": "idea001334-lockfreequeue-test-py-performance",
+      "title": "idea001334 - lockfreequeue-test.py Performance",
+      "archetype": "performance",
+      "component": "lockfreequeue-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001334-lockfreequeue-test-py-performance.md"
+    },
+    {
+      "index": 1340,
+      "idea_id": "idea001335",
+      "filename": "idea001335-memoryarena-test-py-hardening",
+      "title": "idea001335 - memoryarena-test.py Hardening",
+      "archetype": "hardening",
+      "component": "memoryarena-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001335-memoryarena-test-py-hardening.md"
+    },
+    {
+      "index": 1341,
+      "idea_id": "idea001336",
+      "filename": "idea001336-memoryarena-test-py-performance",
+      "title": "idea001336 - memoryarena-test.py Performance",
+      "archetype": "performance",
+      "component": "memoryarena-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001336-memoryarena-test-py-performance.md"
+    },
+    {
+      "index": 1342,
+      "idea_id": "idea001337",
+      "filename": "idea001337-objectpool-test-py-hardening",
+      "title": "idea001337 - objectpool-test.py Hardening",
+      "archetype": "hardening",
+      "component": "objectpool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001337-objectpool-test-py-hardening.md"
+    },
+    {
+      "index": 1343,
+      "idea_id": "idea001338",
+      "filename": "idea001338-objectpool-test-py-performance",
+      "title": "idea001338 - objectpool-test.py Performance",
+      "archetype": "performance",
+      "component": "objectpool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001338-objectpool-test-py-performance.md"
+    },
+    {
+      "index": 1344,
+      "idea_id": "idea001339",
+      "filename": "idea001339-ringbuffer-test-py-hardening",
+      "title": "idea001339 - ringbuffer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "ringbuffer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001339-ringbuffer-test-py-hardening.md"
+    },
+    {
+      "index": 1345,
+      "idea_id": "idea001340",
+      "filename": "idea001340-ringbuffer-test-py-performance",
+      "title": "idea001340 - ringbuffer-test.py Performance",
+      "archetype": "performance",
+      "component": "ringbuffer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001340-ringbuffer-test-py-performance.md"
+    },
+    {
+      "index": 1346,
+      "idea_id": "idea001341",
+      "filename": "idea001341-stagedbatchwriter-test-py-hardening",
+      "title": "idea001341 - stagedbatchwriter-test.py Hardening",
+      "archetype": "hardening",
+      "component": "stagedbatchwriter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001341-stagedbatchwriter-test-py-hardening.md"
+    },
+    {
+      "index": 1347,
+      "idea_id": "idea001342",
+      "filename": "idea001342-stagedbatchwriter-test-py-performance",
+      "title": "idea001342 - stagedbatchwriter-test.py Performance",
+      "archetype": "performance",
+      "component": "stagedbatchwriter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001342-stagedbatchwriter-test-py-performance.md"
+    },
+    {
+      "index": 1348,
+      "idea_id": "idea001343",
+      "filename": "idea001343-uvabufferpool-test-py-hardening",
+      "title": "idea001343 - uvabufferpool-test.py Hardening",
+      "archetype": "hardening",
+      "component": "uvabufferpool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001343-uvabufferpool-test-py-hardening.md"
+    },
+    {
+      "index": 1349,
+      "idea_id": "idea001344",
+      "filename": "idea001344-uvabufferpool-test-py-performance",
+      "title": "idea001344 - uvabufferpool-test.py Performance",
+      "archetype": "performance",
+      "component": "uvabufferpool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001344-uvabufferpool-test-py-performance.md"
+    },
+    {
+      "index": 1350,
+      "idea_id": "idea001345",
+      "filename": "idea001345-accessibilityseverity-test-py-hardening",
+      "title": "idea001345 - accessibilityseverity-test.py Hardening",
+      "archetype": "hardening",
+      "component": "accessibilityseverity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001345-accessibilityseverity-test-py-hardening.md"
+    },
+    {
+      "index": 1351,
+      "idea_id": "idea001346",
+      "filename": "idea001346-accessibilityseverity-test-py-performance",
+      "title": "idea001346 - accessibilityseverity-test.py Performance",
+      "archetype": "performance",
+      "component": "accessibilityseverity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001346-accessibilityseverity-test-py-performance.md"
+    },
+    {
+      "index": 1352,
+      "idea_id": "idea001347",
+      "filename": "idea001347-codesmell-test-py-hardening",
+      "title": "idea001347 - codesmell-test.py Hardening",
+      "archetype": "hardening",
+      "component": "codesmell-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001347-codesmell-test-py-hardening.md"
+    },
+    {
+      "index": 1353,
+      "idea_id": "idea001348",
+      "filename": "idea001348-codesmell-test-py-performance",
+      "title": "idea001348 - codesmell-test.py Performance",
+      "archetype": "performance",
+      "component": "codesmell-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001348-codesmell-test-py-performance.md"
+    },
+    {
+      "index": 1354,
+      "idea_id": "idea001349",
+      "filename": "idea001349-compliancecategory-test-py-hardening",
+      "title": "idea001349 - compliancecategory-test.py Hardening",
+      "archetype": "hardening",
+      "component": "compliancecategory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001349-compliancecategory-test-py-hardening.md"
+    },
+    {
+      "index": 1355,
+      "idea_id": "idea001350",
+      "filename": "idea001350-compliancecategory-test-py-performance",
+      "title": "idea001350 - compliancecategory-test.py Performance",
+      "archetype": "performance",
+      "component": "compliancecategory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001350-compliancecategory-test-py-performance.md"
+    },
+    {
+      "index": 1356,
+      "idea_id": "idea001351",
+      "filename": "idea001351-dependencytype-test-py-hardening",
+      "title": "idea001351 - dependencytype-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dependencytype-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001351-dependencytype-test-py-hardening.md"
+    },
+    {
+      "index": 1357,
+      "idea_id": "idea001352",
+      "filename": "idea001352-dependencytype-test-py-performance",
+      "title": "idea001352 - dependencytype-test.py Performance",
+      "archetype": "performance",
+      "component": "dependencytype-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001352-dependencytype-test-py-performance.md"
+    },
+    {
+      "index": 1358,
+      "idea_id": "idea001353",
+      "filename": "idea001353-diffviewmode-test-py-hardening",
+      "title": "idea001353 - diffviewmode-test.py Hardening",
+      "archetype": "hardening",
+      "component": "diffviewmode-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001353-diffviewmode-test-py-hardening.md"
+    },
+    {
+      "index": 1359,
+      "idea_id": "idea001354",
+      "filename": "idea001354-diffviewmode-test-py-performance",
+      "title": "idea001354 - diffviewmode-test.py Performance",
+      "archetype": "performance",
+      "component": "diffviewmode-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001354-diffviewmode-test-py-performance.md"
+    },
+    {
+      "index": 1360,
+      "idea_id": "idea001355",
+      "filename": "idea001355-feedformat-test-py-hardening",
+      "title": "idea001355 - feedformat-test.py Hardening",
+      "archetype": "hardening",
+      "component": "feedformat-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001355-feedformat-test-py-hardening.md"
+    },
+    {
+      "index": 1361,
+      "idea_id": "idea001356",
+      "filename": "idea001356-feedformat-test-py-performance",
+      "title": "idea001356 - feedformat-test.py Performance",
+      "archetype": "performance",
+      "component": "feedformat-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001356-feedformat-test-py-performance.md"
+    },
+    {
+      "index": 1362,
+      "idea_id": "idea001357",
+      "filename": "idea001357-groupingstrategy-test-py-hardening",
+      "title": "idea001357 - groupingstrategy-test.py Hardening",
+      "archetype": "hardening",
+      "component": "groupingstrategy-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001357-groupingstrategy-test-py-hardening.md"
+    },
+    {
+      "index": 1363,
+      "idea_id": "idea001358",
+      "filename": "idea001358-groupingstrategy-test-py-performance",
+      "title": "idea001358 - groupingstrategy-test.py Performance",
+      "archetype": "performance",
+      "component": "groupingstrategy-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001358-groupingstrategy-test-py-performance.md"
+    },
+    {
+      "index": 1364,
+      "idea_id": "idea001359",
+      "filename": "idea001359-migrationstatus-test-py-hardening",
+      "title": "idea001359 - migrationstatus-test.py Hardening",
+      "archetype": "hardening",
+      "component": "migrationstatus-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001359-migrationstatus-test-py-hardening.md"
+    },
+    {
+      "index": 1365,
+      "idea_id": "idea001360",
+      "filename": "idea001360-migrationstatus-test-py-performance",
+      "title": "idea001360 - migrationstatus-test.py Performance",
+      "archetype": "performance",
+      "component": "migrationstatus-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001360-migrationstatus-test-py-performance.md"
+    },
+    {
+      "index": 1366,
+      "idea_id": "idea001361",
+      "filename": "idea001361-optimizationtype-test-py-hardening",
+      "title": "idea001361 - optimizationtype-test.py Hardening",
+      "archetype": "hardening",
+      "component": "optimizationtype-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001361-optimizationtype-test-py-hardening.md"
+    },
+    {
+      "index": 1367,
+      "idea_id": "idea001362",
+      "filename": "idea001362-optimizationtype-test-py-performance",
+      "title": "idea001362 - optimizationtype-test.py Performance",
+      "archetype": "performance",
+      "component": "optimizationtype-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001362-optimizationtype-test-py-performance.md"
+    },
+    {
+      "index": 1368,
+      "idea_id": "idea001363",
+      "filename": "idea001363-profilingcategory-test-py-hardening",
+      "title": "idea001363 - profilingcategory-test.py Hardening",
+      "archetype": "hardening",
+      "component": "profilingcategory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001363-profilingcategory-test-py-hardening.md"
+    },
+    {
+      "index": 1369,
+      "idea_id": "idea001364",
+      "filename": "idea001364-profilingcategory-test-py-performance",
+      "title": "idea001364 - profilingcategory-test.py Performance",
+      "archetype": "performance",
+      "component": "profilingcategory-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001364-profilingcategory-test-py-performance.md"
+    },
+    {
+      "index": 1370,
+      "idea_id": "idea001365",
+      "filename": "idea001365-refactoringpattern-test-py-hardening",
+      "title": "idea001365 - refactoringpattern-test.py Hardening",
+      "archetype": "hardening",
+      "component": "refactoringpattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001365-refactoringpattern-test-py-hardening.md"
+    },
+    {
+      "index": 1371,
+      "idea_id": "idea001366",
+      "filename": "idea001366-refactoringpattern-test-py-performance",
+      "title": "idea001366 - refactoringpattern-test.py Performance",
+      "archetype": "performance",
+      "component": "refactoringpattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001366-refactoringpattern-test-py-performance.md"
+    },
+    {
+      "index": 1372,
+      "idea_id": "idea001367",
+      "filename": "idea001367-styleruleseverity-test-py-hardening",
+      "title": "idea001367 - styleruleseverity-test.py Hardening",
+      "archetype": "hardening",
+      "component": "styleruleseverity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001367-styleruleseverity-test-py-hardening.md"
+    },
+    {
+      "index": 1373,
+      "idea_id": "idea001368",
+      "filename": "idea001368-styleruleseverity-test-py-performance",
+      "title": "idea001368 - styleruleseverity-test.py Performance",
+      "archetype": "performance",
+      "component": "styleruleseverity-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001368-styleruleseverity-test-py-performance.md"
+    },
+    {
+      "index": 1374,
+      "idea_id": "idea001369",
+      "filename": "idea001369-templatemanager-test-py-hardening",
+      "title": "idea001369 - templatemanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "templatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001369-templatemanager-test-py-hardening.md"
+    },
+    {
+      "index": 1375,
+      "idea_id": "idea001370",
+      "filename": "idea001370-templatemanager-test-py-performance",
+      "title": "idea001370 - templatemanager-test.py Performance",
+      "archetype": "performance",
+      "component": "templatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001370-templatemanager-test-py-performance.md"
+    },
+    {
+      "index": 1376,
+      "idea_id": "idea001371",
+      "filename": "idea001371-typedprompts-test-py-hardening",
+      "title": "idea001371 - typedprompts-test.py Hardening",
+      "archetype": "hardening",
+      "component": "typedprompts-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001371-typedprompts-test-py-hardening.md"
+    },
+    {
+      "index": 1377,
+      "idea_id": "idea001372",
+      "filename": "idea001372-typedprompts-test-py-performance",
+      "title": "idea001372 - typedprompts-test.py Performance",
+      "archetype": "performance",
+      "component": "typedprompts-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001372-typedprompts-test-py-performance.md"
+    },
+    {
+      "index": 1378,
+      "idea_id": "idea001373",
+      "filename": "idea001373-wcaglevel-test-py-hardening",
+      "title": "idea001373 - wcaglevel-test.py Hardening",
+      "archetype": "hardening",
+      "component": "wcaglevel-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001373-wcaglevel-test-py-hardening.md"
+    },
+    {
+      "index": 1379,
+      "idea_id": "idea001374",
+      "filename": "idea001374-wcaglevel-test-py-performance",
+      "title": "idea001374 - wcaglevel-test.py Performance",
+      "archetype": "performance",
+      "component": "wcaglevel-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001374-wcaglevel-test-py-performance.md"
+    },
+    {
+      "index": 1380,
+      "idea_id": "idea001375",
+      "filename": "idea001375-atomiccounter-test-py-hardening",
+      "title": "idea001375 - atomiccounter-test.py Hardening",
+      "archetype": "hardening",
+      "component": "atomiccounter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001375-atomiccounter-test-py-hardening.md"
+    },
+    {
+      "index": 1381,
+      "idea_id": "idea001376",
+      "filename": "idea001376-atomiccounter-test-py-performance",
+      "title": "idea001376 - atomiccounter-test.py Performance",
+      "archetype": "performance",
+      "component": "atomiccounter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001376-atomiccounter-test-py-performance.md"
+    },
+    {
+      "index": 1382,
+      "idea_id": "idea001377",
+      "filename": "idea001377-collectionutils-test-py-hardening",
+      "title": "idea001377 - collectionutils-test.py Hardening",
+      "archetype": "hardening",
+      "component": "collectionutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001377-collectionutils-test-py-hardening.md"
+    },
+    {
+      "index": 1383,
+      "idea_id": "idea001378",
+      "filename": "idea001378-collectionutils-test-py-performance",
+      "title": "idea001378 - collectionutils-test.py Performance",
+      "archetype": "performance",
+      "component": "collectionutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001378-collectionutils-test-py-performance.md"
+    },
+    {
+      "index": 1384,
+      "idea_id": "idea001379",
+      "filename": "idea001379-dynamicimporter-test-py-hardening",
+      "title": "idea001379 - dynamicimporter-test.py Hardening",
+      "archetype": "hardening",
+      "component": "dynamicimporter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001379-dynamicimporter-test-py-hardening.md"
+    },
+    {
+      "index": 1385,
+      "idea_id": "idea001380",
+      "filename": "idea001380-dynamicimporter-test-py-performance",
+      "title": "idea001380 - dynamicimporter-test.py Performance",
+      "archetype": "performance",
+      "component": "dynamicimporter-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001380-dynamicimporter-test-py-performance.md"
+    },
+    {
+      "index": 1386,
+      "idea_id": "idea001381",
+      "filename": "idea001381-funcutils-test-py-hardening",
+      "title": "idea001381 - funcutils-test.py Hardening",
+      "archetype": "hardening",
+      "component": "funcutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001381-funcutils-test-py-hardening.md"
+    },
+    {
+      "index": 1387,
+      "idea_id": "idea001382",
+      "filename": "idea001382-funcutils-test-py-performance",
+      "title": "idea001382 - funcutils-test.py Performance",
+      "archetype": "performance",
+      "component": "funcutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001382-funcutils-test-py-performance.md"
+    },
+    {
+      "index": 1388,
+      "idea_id": "idea001383",
+      "filename": "idea001383-hashregistry-test-py-hardening",
+      "title": "idea001383 - hashregistry-test.py Hardening",
+      "archetype": "hardening",
+      "component": "hashregistry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001383-hashregistry-test-py-hardening.md"
+    },
+    {
+      "index": 1389,
+      "idea_id": "idea001384",
+      "filename": "idea001384-hashregistry-test-py-performance",
+      "title": "idea001384 - hashregistry-test.py Performance",
+      "archetype": "performance",
+      "component": "hashregistry-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001384-hashregistry-test-py-performance.md"
+    },
+    {
+      "index": 1390,
+      "idea_id": "idea001385",
+      "filename": "idea001385-lazyloader-test-py-hardening",
+      "title": "idea001385 - lazyloader-test.py Hardening",
+      "archetype": "hardening",
+      "component": "lazyloader-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001385-lazyloader-test-py-hardening.md"
+    },
+    {
+      "index": 1391,
+      "idea_id": "idea001386",
+      "filename": "idea001386-lazyloader-test-py-performance",
+      "title": "idea001386 - lazyloader-test.py Performance",
+      "archetype": "performance",
+      "component": "lazyloader-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001386-lazyloader-test-py-performance.md"
+    },
+    {
+      "index": 1392,
+      "idea_id": "idea001387",
+      "filename": "idea001387-mathutils-test-py-hardening",
+      "title": "idea001387 - mathutils-test.py Hardening",
+      "archetype": "hardening",
+      "component": "mathutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001387-mathutils-test-py-hardening.md"
+    },
+    {
+      "index": 1393,
+      "idea_id": "idea001388",
+      "filename": "idea001388-mathutils-test-py-performance",
+      "title": "idea001388 - mathutils-test.py Performance",
+      "archetype": "performance",
+      "component": "mathutils-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001388-mathutils-test-py-performance.md"
+    },
+    {
+      "index": 1394,
+      "idea_id": "idea001389",
+      "filename": "idea001389-resultcache-test-py-hardening",
+      "title": "idea001389 - resultcache-test.py Hardening",
+      "archetype": "hardening",
+      "component": "resultcache-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001389-resultcache-test-py-hardening.md"
+    },
+    {
+      "index": 1395,
+      "idea_id": "idea001390",
+      "filename": "idea001390-resultcache-test-py-performance",
+      "title": "idea001390 - resultcache-test.py Performance",
+      "archetype": "performance",
+      "component": "resultcache-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001390-resultcache-test-py-performance.md"
+    },
+    {
+      "index": 1396,
+      "idea_id": "idea001391",
+      "filename": "idea001391-templatemanager-test-py-hardening",
+      "title": "idea001391 - templatemanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "templatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001391-templatemanager-test-py-hardening.md"
+    },
+    {
+      "index": 1397,
+      "idea_id": "idea001392",
+      "filename": "idea001392-templatemanager-test-py-performance",
+      "title": "idea001392 - templatemanager-test.py Performance",
+      "archetype": "performance",
+      "component": "templatemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001392-templatemanager-test-py-performance.md"
+    },
+    {
+      "index": 1398,
+      "idea_id": "idea001393",
+      "filename": "idea001393-validationrulemanager-test-py-hardening",
+      "title": "idea001393 - validationrulemanager-test.py Hardening",
+      "archetype": "hardening",
+      "component": "validationrulemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001393-validationrulemanager-test-py-hardening.md"
+    },
+    {
+      "index": 1399,
+      "idea_id": "idea001394",
+      "filename": "idea001394-validationrulemanager-test-py-performance",
+      "title": "idea001394 - validationrulemanager-test.py Performance",
+      "archetype": "performance",
+      "component": "validationrulemanager-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001394-validationrulemanager-test-py-performance.md"
+    },
+    {
+      "index": 1400,
+      "idea_id": "idea001395",
+      "filename": "idea001395-iteration-test-py-hardening",
+      "title": "idea001395 - iteration-test.py Hardening",
+      "archetype": "hardening",
+      "component": "iteration-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001395-iteration-test-py-hardening.md"
+    },
+    {
+      "index": 1401,
+      "idea_id": "idea001396",
+      "filename": "idea001396-iteration-test-py-performance",
+      "title": "idea001396 - iteration-test.py Performance",
+      "archetype": "performance",
+      "component": "iteration-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001396-iteration-test-py-performance.md"
+    },
+    {
+      "index": 1402,
+      "idea_id": "idea001397",
+      "filename": "idea001397-mapping-test-py-hardening",
+      "title": "idea001397 - mapping-test.py Hardening",
+      "archetype": "hardening",
+      "component": "mapping-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001397-mapping-test-py-hardening.md"
+    },
+    {
+      "index": 1403,
+      "idea_id": "idea001398",
+      "filename": "idea001398-mapping-test-py-performance",
+      "title": "idea001398 - mapping-test.py Performance",
+      "archetype": "performance",
+      "component": "mapping-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001398-mapping-test-py-performance.md"
+    },
+    {
+      "index": 1404,
+      "idea_id": "idea001399",
+      "filename": "idea001399-meta-test-py-hardening",
+      "title": "idea001399 - meta-test.py Hardening",
+      "archetype": "hardening",
+      "component": "meta-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001399-meta-test-py-hardening.md"
+    },
+    {
+      "index": 1405,
+      "idea_id": "idea001400",
+      "filename": "idea001400-meta-test-py-performance",
+      "title": "idea001400 - meta-test.py Performance",
+      "archetype": "performance",
+      "component": "meta-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001400-meta-test-py-performance.md"
+    },
+    {
+      "index": 1406,
+      "idea_id": "idea001401",
+      "filename": "idea001401-path-test-py-hardening",
+      "title": "idea001401 - path-test.py Hardening",
+      "archetype": "hardening",
+      "component": "path-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001401-path-test-py-hardening.md"
+    },
+    {
+      "index": 1407,
+      "idea_id": "idea001402",
+      "filename": "idea001402-path-test-py-performance",
+      "title": "idea001402 - path-test.py Performance",
+      "archetype": "performance",
+      "component": "path-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001402-path-test-py-performance.md"
+    },
+    {
+      "index": 1408,
+      "idea_id": "idea001403",
+      "filename": "idea001403-reduction-test-py-hardening",
+      "title": "idea001403 - reduction-test.py Hardening",
+      "archetype": "hardening",
+      "component": "reduction-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001403-reduction-test-py-hardening.md"
+    },
+    {
+      "index": 1409,
+      "idea_id": "idea001404",
+      "filename": "idea001404-reduction-test-py-performance",
+      "title": "idea001404 - reduction-test.py Performance",
+      "archetype": "performance",
+      "component": "reduction-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001404-reduction-test-py-performance.md"
+    },
+    {
+      "index": 1410,
+      "idea_id": "idea001405",
+      "filename": "idea001405-transmutation-test-py-hardening",
+      "title": "idea001405 - transmutation-test.py Hardening",
+      "archetype": "hardening",
+      "component": "transmutation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001405-transmutation-test-py-hardening.md"
+    },
+    {
+      "index": 1411,
+      "idea_id": "idea001406",
+      "filename": "idea001406-transmutation-test-py-performance",
+      "title": "idea001406 - transmutation-test.py Performance",
+      "archetype": "performance",
+      "component": "transmutation-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001406-transmutation-test-py-performance.md"
+    },
+    {
+      "index": 1412,
+      "idea_id": "idea001407",
+      "filename": "idea001407-tensorschema-test-py-hardening",
+      "title": "idea001407 - tensorschema-test.py Hardening",
+      "archetype": "hardening",
+      "component": "tensorschema-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001407-tensorschema-test-py-hardening.md"
+    },
+    {
+      "index": 1413,
+      "idea_id": "idea001408",
+      "filename": "idea001408-tensorschema-test-py-performance",
+      "title": "idea001408 - tensorschema-test.py Performance",
+      "archetype": "performance",
+      "component": "tensorschema-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001408-tensorschema-test-py-performance.md"
+    },
+    {
+      "index": 1414,
+      "idea_id": "idea001409",
+      "filename": "idea001409-agentverifier-test-py-hardening",
+      "title": "idea001409 - agentverifier-test.py Hardening",
+      "archetype": "hardening",
+      "component": "agentverifier-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001409-agentverifier-test-py-hardening.md"
+    },
+    {
+      "index": 1415,
+      "idea_id": "idea001410",
+      "filename": "idea001410-agentverifier-test-py-performance",
+      "title": "idea001410 - agentverifier-test.py Performance",
+      "archetype": "performance",
+      "component": "agentverifier-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001410-agentverifier-test-py-performance.md"
+    },
+    {
+      "index": 1416,
+      "idea_id": "idea001411",
+      "filename": "idea001411-codehealthauditor-test-py-hardening",
+      "title": "idea001411 - codehealthauditor-test.py Hardening",
+      "archetype": "hardening",
+      "component": "codehealthauditor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001411-codehealthauditor-test-py-hardening.md"
+    },
+    {
+      "index": 1417,
+      "idea_id": "idea001412",
+      "filename": "idea001412-codehealthauditor-test-py-performance",
+      "title": "idea001412 - codehealthauditor-test.py Performance",
+      "archetype": "performance",
+      "component": "codehealthauditor-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001412-codehealthauditor-test-py-performance.md"
+    },
+    {
+      "index": 1418,
+      "idea_id": "idea001413",
+      "filename": "idea001413-codeintegrityverifier-test-py-hardening",
+      "title": "idea001413 - codeintegrityverifier-test.py Hardening",
+      "archetype": "hardening",
+      "component": "codeintegrityverifier-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001413-codeintegrityverifier-test-py-hardening.md"
+    },
+    {
+      "index": 1419,
+      "idea_id": "idea001414",
+      "filename": "idea001414-codeintegrityverifier-test-py-performance",
+      "title": "idea001414 - codeintegrityverifier-test.py Performance",
+      "archetype": "performance",
+      "component": "codeintegrityverifier-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001414-codeintegrityverifier-test-py-performance.md"
+    },
+    {
+      "index": 1420,
+      "idea_id": "idea001415",
+      "filename": "idea001415-configvalidator-test-py-hardening",
+      "title": "idea001415 - configvalidator-test.py Hardening",
+      "archetype": "hardening",
+      "component": "configvalidator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001415-configvalidator-test-py-hardening.md"
+    },
+    {
+      "index": 1421,
+      "idea_id": "idea001416",
+      "filename": "idea001416-configvalidator-test-py-performance",
+      "title": "idea001416 - configvalidator-test.py Performance",
+      "archetype": "performance",
+      "component": "configvalidator-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001416-configvalidator-test-py-performance.md"
+    },
+    {
+      "index": 1422,
+      "idea_id": "idea001417",
+      "filename": "idea001417-stubdetectormixin-test-py-hardening",
+      "title": "idea001417 - stubdetectormixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "stubdetectormixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001417-stubdetectormixin-test-py-hardening.md"
+    },
+    {
+      "index": 1423,
+      "idea_id": "idea001418",
+      "filename": "idea001418-stubdetectormixin-test-py-performance",
+      "title": "idea001418 - stubdetectormixin-test.py Performance",
+      "archetype": "performance",
+      "component": "stubdetectormixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001418-stubdetectormixin-test-py-performance.md"
+    },
+    {
+      "index": 1424,
+      "idea_id": "idea001419",
+      "filename": "idea001419-workspaceauditormixin-test-py-hardening",
+      "title": "idea001419 - workspaceauditormixin-test.py Hardening",
+      "archetype": "hardening",
+      "component": "workspaceauditormixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001419-workspaceauditormixin-test-py-hardening.md"
+    },
+    {
+      "index": 1425,
+      "idea_id": "idea001420",
+      "filename": "idea001420-workspaceauditormixin-test-py-performance",
+      "title": "idea001420 - workspaceauditormixin-test.py Performance",
+      "archetype": "performance",
+      "component": "workspaceauditormixin-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001420-workspaceauditormixin-test-py-performance.md"
+    },
+    {
+      "index": 1426,
+      "idea_id": "idea001421",
+      "filename": "idea001421-verification-test-py-hardening",
+      "title": "idea001421 - verification-test.py Hardening",
+      "archetype": "hardening",
+      "component": "verification-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001421-verification-test-py-hardening.md"
+    },
+    {
+      "index": 1427,
+      "idea_id": "idea001422",
+      "filename": "idea001422-verification-test-py-performance",
+      "title": "idea001422 - verification-test.py Performance",
+      "archetype": "performance",
+      "component": "verification-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001422-verification-test-py-performance.md"
+    },
+    {
+      "index": 1428,
+      "idea_id": "idea001423",
+      "filename": "idea001423-base-pattern-test-py-hardening",
+      "title": "idea001423 - base-pattern-test.py Hardening",
+      "archetype": "hardening",
+      "component": "base-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001423-base-pattern-test-py-hardening.md"
+    },
+    {
+      "index": 1429,
+      "idea_id": "idea001424",
+      "filename": "idea001424-base-pattern-test-py-performance",
+      "title": "idea001424 - base-pattern-test.py Performance",
+      "archetype": "performance",
+      "component": "base-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001424-base-pattern-test-py-performance.md"
+    },
+    {
+      "index": 1430,
+      "idea_id": "idea001425",
+      "filename": "idea001425-debate-pattern-test-py-hardening",
+      "title": "idea001425 - debate-pattern-test.py Hardening",
+      "archetype": "hardening",
+      "component": "debate-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001425-debate-pattern-test-py-hardening.md"
+    },
+    {
+      "index": 1431,
+      "idea_id": "idea001426",
+      "filename": "idea001426-debate-pattern-test-py-performance",
+      "title": "idea001426 - debate-pattern-test.py Performance",
+      "archetype": "performance",
+      "component": "debate-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001426-debate-pattern-test-py-performance.md"
+    },
+    {
+      "index": 1432,
+      "idea_id": "idea001427",
+      "filename": "idea001427-peer-pattern-test-py-hardening",
+      "title": "idea001427 - peer-pattern-test.py Hardening",
+      "archetype": "hardening",
+      "component": "peer-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001427-peer-pattern-test-py-hardening.md"
+    },
+    {
+      "index": 1433,
+      "idea_id": "idea001428",
+      "filename": "idea001428-peer-pattern-test-py-performance",
+      "title": "idea001428 - peer-pattern-test.py Performance",
+      "archetype": "performance",
+      "component": "peer-pattern-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001428-peer-pattern-test-py-performance.md"
+    },
+    {
+      "index": 1434,
+      "idea_id": "idea001429",
+      "filename": "idea001429-envconfig-test-py-hardening",
+      "title": "idea001429 - envconfig-test.py Hardening",
+      "archetype": "hardening",
+      "component": "envconfig-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001429-envconfig-test-py-hardening.md"
+    },
+    {
+      "index": 1435,
+      "idea_id": "idea001430",
+      "filename": "idea001430-envconfig-test-py-performance",
+      "title": "idea001430 - envconfig-test.py Performance",
+      "archetype": "performance",
+      "component": "envconfig-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001430-envconfig-test-py-performance.md"
+    },
+    {
+      "index": 1436,
+      "idea_id": "idea001431",
+      "filename": "idea001431-mcp-tool-test-py-hardening",
+      "title": "idea001431 - mcp-tool-test.py Hardening",
+      "archetype": "hardening",
+      "component": "mcp-tool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001431-mcp-tool-test-py-hardening.md"
+    },
+    {
+      "index": 1437,
+      "idea_id": "idea001432",
+      "filename": "idea001432-mcp-tool-test-py-performance",
+      "title": "idea001432 - mcp-tool-test.py Performance",
+      "archetype": "performance",
+      "component": "mcp-tool-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001432-mcp-tool-test-py-performance.md"
+    },
+    {
+      "index": 1438,
+      "idea_id": "idea001433",
+      "filename": "idea001433-automem-core-test-py-hardening",
+      "title": "idea001433 - automem-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "automem-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001433-automem-core-test-py-hardening.md"
+    },
+    {
+      "index": 1439,
+      "idea_id": "idea001434",
+      "filename": "idea001434-automem-core-test-py-performance",
+      "title": "idea001434 - automem-core-test.py Performance",
+      "archetype": "performance",
+      "component": "automem-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001434-automem-core-test-py-performance.md"
+    },
+    {
+      "index": 1440,
+      "idea_id": "idea001435",
+      "filename": "idea001435-blackboardmodule-test-py-hardening",
+      "title": "idea001435 - blackboardmodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "blackboardmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001435-blackboardmodule-test-py-hardening.md"
+    },
+    {
+      "index": 1441,
+      "idea_id": "idea001436",
+      "filename": "idea001436-blackboardmodule-test-py-performance",
+      "title": "idea001436 - blackboardmodule-test.py Performance",
+      "archetype": "performance",
+      "component": "blackboardmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001436-blackboardmodule-test-py-performance.md"
+    },
+    {
+      "index": 1442,
+      "idea_id": "idea001437",
+      "filename": "idea001437-codequalitymodule-test-py-hardening",
+      "title": "idea001437 - codequalitymodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "codequalitymodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001437-codequalitymodule-test-py-hardening.md"
+    },
+    {
+      "index": 1443,
+      "idea_id": "idea001438",
+      "filename": "idea001438-codequalitymodule-test-py-performance",
+      "title": "idea001438 - codequalitymodule-test.py Performance",
+      "archetype": "performance",
+      "component": "codequalitymodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001438-codequalitymodule-test-py-performance.md"
+    },
+    {
+      "index": 1444,
+      "idea_id": "idea001439",
+      "filename": "idea001439-consensusmodule-test-py-hardening",
+      "title": "idea001439 - consensusmodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "consensusmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001439-consensusmodule-test-py-hardening.md"
+    },
+    {
+      "index": 1445,
+      "idea_id": "idea001440",
+      "filename": "idea001440-consensusmodule-test-py-performance",
+      "title": "idea001440 - consensusmodule-test.py Performance",
+      "archetype": "performance",
+      "component": "consensusmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001440-consensusmodule-test-py-performance.md"
+    },
+    {
+      "index": 1446,
+      "idea_id": "idea001441",
+      "filename": "idea001441-docgenmodule-test-py-hardening",
+      "title": "idea001441 - docgenmodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "docgenmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001441-docgenmodule-test-py-hardening.md"
+    },
+    {
+      "index": 1447,
+      "idea_id": "idea001442",
+      "filename": "idea001442-docgenmodule-test-py-performance",
+      "title": "idea001442 - docgenmodule-test.py Performance",
+      "archetype": "performance",
+      "component": "docgenmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001442-docgenmodule-test-py-performance.md"
+    },
+    {
+      "index": 1448,
+      "idea_id": "idea001443",
+      "filename": "idea001443-signalmodule-test-py-hardening",
+      "title": "idea001443 - signalmodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "signalmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001443-signalmodule-test-py-hardening.md"
+    },
+    {
+      "index": 1449,
+      "idea_id": "idea001444",
+      "filename": "idea001444-signalmodule-test-py-performance",
+      "title": "idea001444 - signalmodule-test.py Performance",
+      "archetype": "performance",
+      "component": "signalmodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001444-signalmodule-test-py-performance.md"
+    },
+    {
+      "index": 1450,
+      "idea_id": "idea001445",
+      "filename": "idea001445-taskdecomposermodule-test-py-hardening",
+      "title": "idea001445 - taskdecomposermodule-test.py Hardening",
+      "archetype": "hardening",
+      "component": "taskdecomposermodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001445-taskdecomposermodule-test-py-hardening.md"
+    },
+    {
+      "index": 1451,
+      "idea_id": "idea001446",
+      "filename": "idea001446-taskdecomposermodule-test-py-performance",
+      "title": "idea001446 - taskdecomposermodule-test.py Performance",
+      "archetype": "performance",
+      "component": "taskdecomposermodule-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001446-taskdecomposermodule-test-py-performance.md"
+    },
+    {
+      "index": 1452,
+      "idea_id": "idea001447",
+      "filename": "idea001447-cort-core-test-py-hardening",
+      "title": "idea001447 - cort-core-test.py Hardening",
+      "archetype": "hardening",
+      "component": "cort-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001447-cort-core-test-py-hardening.md"
+    },
+    {
+      "index": 1453,
+      "idea_id": "idea001448",
+      "filename": "idea001448-cort-core-test-py-performance",
+      "title": "idea001448 - cort-core-test.py Performance",
+      "archetype": "performance",
+      "component": "cort-core-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001448-cort-core-test-py-performance.md"
+    },
+    {
+      "index": 1454,
+      "idea_id": "idea001449",
+      "filename": "idea001449-actionspace-test-py-hardening",
+      "title": "idea001449 - actionspace-test.py Hardening",
+      "archetype": "hardening",
+      "component": "actionspace-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001449-actionspace-test-py-hardening.md"
+    },
+    {
+      "index": 1455,
+      "idea_id": "idea001450",
+      "filename": "idea001450-actionspace-test-py-performance",
+      "title": "idea001450 - actionspace-test.py Performance",
+      "archetype": "performance",
+      "component": "actionspace-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001450-actionspace-test-py-performance.md"
+    },
+    {
+      "index": 1456,
+      "idea_id": "idea001451",
+      "filename": "idea001451-learningalgorithms-test-py-hardening",
+      "title": "idea001451 - learningalgorithms-test.py Hardening",
+      "archetype": "hardening",
+      "component": "learningalgorithms-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001451-learningalgorithms-test-py-hardening.md"
+    },
+    {
+      "index": 1457,
+      "idea_id": "idea001452",
+      "filename": "idea001452-learningalgorithms-test-py-performance",
+      "title": "idea001452 - learningalgorithms-test.py Performance",
+      "archetype": "performance",
+      "component": "learningalgorithms-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001452-learningalgorithms-test-py-performance.md"
+    },
+    {
+      "index": 1458,
+      "idea_id": "idea001453",
+      "filename": "idea001453-learningobjectives-test-py-hardening",
+      "title": "idea001453 - learningobjectives-test.py Hardening",
+      "archetype": "hardening",
+      "component": "learningobjectives-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001453-learningobjectives-test-py-hardening.md"
+    },
+    {
+      "index": 1459,
+      "idea_id": "idea001454",
+      "filename": "idea001454-learningobjectives-test-py-performance",
+      "title": "idea001454 - learningobjectives-test.py Performance",
+      "archetype": "performance",
+      "component": "learningobjectives-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001454-learningobjectives-test-py-performance.md"
+    },
+    {
+      "index": 1460,
+      "idea_id": "idea001455",
+      "filename": "idea001455-rewardfunctions-test-py-hardening",
+      "title": "idea001455 - rewardfunctions-test.py Hardening",
+      "archetype": "hardening",
+      "component": "rewardfunctions-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001455-rewardfunctions-test-py-hardening.md"
+    },
+    {
+      "index": 1461,
+      "idea_id": "idea001456",
+      "filename": "idea001456-rewardfunctions-test-py-performance",
+      "title": "idea001456 - rewardfunctions-test.py Performance",
+      "archetype": "performance",
+      "component": "rewardfunctions-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001456-rewardfunctions-test-py-performance.md"
+    },
+    {
+      "index": 1462,
+      "idea_id": "idea001457",
+      "filename": "idea001457-transitiondynamics-test-py-hardening",
+      "title": "idea001457 - transitiondynamics-test.py Hardening",
+      "archetype": "hardening",
+      "component": "transitiondynamics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001457-transitiondynamics-test-py-hardening.md"
+    },
+    {
+      "index": 1463,
+      "idea_id": "idea001458",
+      "filename": "idea001458-transitiondynamics-test-py-performance",
+      "title": "idea001458 - transitiondynamics-test.py Performance",
+      "archetype": "performance",
+      "component": "transitiondynamics-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001458-transitiondynamics-test-py-performance.md"
+    },
+    {
+      "index": 1464,
+      "idea_id": "idea001459",
+      "filename": "idea001459-loop-analyzer-test-py-hardening",
+      "title": "idea001459 - loop-analyzer-test.py Hardening",
+      "archetype": "hardening",
+      "component": "loop-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001459-loop-analyzer-test-py-hardening.md"
+    },
+    {
+      "index": 1465,
+      "idea_id": "idea001460",
+      "filename": "idea001460-loop-analyzer-test-py-performance",
+      "title": "idea001460 - loop-analyzer-test.py Performance",
+      "archetype": "performance",
+      "component": "loop-analyzer-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001460-loop-analyzer-test-py-performance.md"
+    },
+    {
+      "index": 1466,
+      "idea_id": "idea001461",
+      "filename": "idea001461-security-fuzzing-agent-test-py-hardening",
+      "title": "idea001461 - security-fuzzing-agent-test.py Hardening",
+      "archetype": "hardening",
+      "component": "security-fuzzing-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001461-security-fuzzing-agent-test-py-hardening.md"
+    },
+    {
+      "index": 1467,
+      "idea_id": "idea001462",
+      "filename": "idea001462-security-fuzzing-agent-test-py-performance",
+      "title": "idea001462 - security-fuzzing-agent-test.py Performance",
+      "archetype": "performance",
+      "component": "security-fuzzing-agent-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001462-security-fuzzing-agent-test-py-performance.md"
+    },
+    {
+      "index": 1468,
+      "idea_id": "idea001463",
+      "filename": "idea001463-fix-codebase-test-py-hardening",
+      "title": "idea001463 - fix-codebase-test.py Hardening",
+      "archetype": "hardening",
+      "component": "fix-codebase-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001463-fix-codebase-test-py-hardening.md"
+    },
+    {
+      "index": 1469,
+      "idea_id": "idea001464",
+      "filename": "idea001464-fix-codebase-test-py-performance",
+      "title": "idea001464 - fix-codebase-test.py Performance",
+      "archetype": "performance",
+      "component": "fix-codebase-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001464-fix-codebase-test-py-performance.md"
+    },
+    {
+      "index": 1470,
+      "idea_id": "idea001465",
+      "filename": "idea001465-generate-agent-reports-test-py-hardening",
+      "title": "idea001465 - generate-agent-reports-test.py Hardening",
+      "archetype": "hardening",
+      "component": "generate-agent-reports-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001465-generate-agent-reports-test-py-hardening.md"
+    },
+    {
+      "index": 1471,
+      "idea_id": "idea001466",
+      "filename": "idea001466-generate-agent-reports-test-py-performance",
+      "title": "idea001466 - generate-agent-reports-test.py Performance",
+      "archetype": "performance",
+      "component": "generate-agent-reports-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001466-generate-agent-reports-test-py-performance.md"
+    },
+    {
+      "index": 1472,
+      "idea_id": "idea001467",
+      "filename": "idea001467-tool-1-test-py-hardening",
+      "title": "idea001467 - tool-1-test.py Hardening",
+      "archetype": "hardening",
+      "component": "tool-1-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001467-tool-1-test-py-hardening.md"
+    },
+    {
+      "index": 1473,
+      "idea_id": "idea001468",
+      "filename": "idea001468-tool-1-test-py-performance",
+      "title": "idea001468 - tool-1-test.py Performance",
+      "archetype": "performance",
+      "component": "tool-1-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001468-tool-1-test-py-performance.md"
+    },
+    {
+      "index": 1474,
+      "idea_id": "idea001469",
+      "filename": "idea001469-agentcli-developer-experience",
+      "title": "idea001469 - agentcli Developer Experience",
+      "archetype": "experience",
+      "component": "agentcli-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001469-agentcli-developer-experience.md"
+    },
+    {
+      "index": 1475,
+      "idea_id": "idea001470",
+      "filename": "idea001470-agentcli-documentation",
+      "title": "idea001470 - agentcli Documentation",
+      "archetype": "documentation",
+      "component": "agentcli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001470-agentcli-documentation.md"
+    },
+    {
+      "index": 1476,
+      "idea_id": "idea001471",
+      "filename": "idea001471-agentcli-hardening",
+      "title": "idea001471 - agentcli Hardening",
+      "archetype": "hardening",
+      "component": "agentcli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001471-agentcli-hardening.md"
+    },
+    {
+      "index": 1477,
+      "idea_id": "idea001472",
+      "filename": "idea001472-agentcli-performance",
+      "title": "idea001472 - agentcli Performance",
+      "archetype": "performance",
+      "component": "agentcli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001472-agentcli-performance.md"
+    },
+    {
+      "index": 1478,
+      "idea_id": "idea001473",
+      "filename": "idea001473-agentcli-resilience",
+      "title": "idea001473 - agentcli Resilience",
+      "archetype": "resilience",
+      "component": "agentcli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001473-agentcli-resilience.md"
+    },
+    {
+      "index": 1479,
+      "idea_id": "idea001474",
+      "filename": "idea001474-thoughtdebugger-test-py-hardening",
+      "title": "idea001474 - thoughtdebugger-test.py Hardening",
+      "archetype": "hardening",
+      "component": "thoughtdebugger-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001474-thoughtdebugger-test-py-hardening.md"
+    },
+    {
+      "index": 1480,
+      "idea_id": "idea001475",
+      "filename": "idea001475-thoughtdebugger-test-py-performance",
+      "title": "idea001475 - thoughtdebugger-test.py Performance",
+      "archetype": "performance",
+      "component": "thoughtdebugger-test-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001475-thoughtdebugger-test-py-performance.md"
+    },
+    {
+      "index": 1481,
+      "idea_id": "idea001476",
+      "filename": "idea001476-agent-cli-test-developer-experience",
+      "title": "idea001476 - agent-cli-test Developer Experience",
+      "archetype": "experience",
+      "component": "agent-cli-test-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001476-agent-cli-test-developer-experience.md"
+    },
+    {
+      "index": 1482,
+      "idea_id": "idea001477",
+      "filename": "idea001477-agent-cli-test-documentation",
+      "title": "idea001477 - agent-cli-test Documentation",
+      "archetype": "documentation",
+      "component": "agent-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001477-agent-cli-test-documentation.md"
+    },
+    {
+      "index": 1483,
+      "idea_id": "idea001478",
+      "filename": "idea001478-agent-cli-test-hardening",
+      "title": "idea001478 - agent-cli-test Hardening",
+      "archetype": "hardening",
+      "component": "agent-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001478-agent-cli-test-hardening.md"
+    },
+    {
+      "index": 1484,
+      "idea_id": "idea001479",
+      "filename": "idea001479-agent-cli-test-performance",
+      "title": "idea001479 - agent-cli-test Performance",
+      "archetype": "performance",
+      "component": "agent-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001479-agent-cli-test-performance.md"
+    },
+    {
+      "index": 1485,
+      "idea_id": "idea001480",
+      "filename": "idea001480-agent-cli-test-resilience",
+      "title": "idea001480 - agent-cli-test Resilience",
+      "archetype": "resilience",
+      "component": "agent-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001480-agent-cli-test-resilience.md"
+    },
+    {
+      "index": 1486,
+      "idea_id": "idea001481",
+      "filename": "idea001481-thought-debugger-test-developer-experience",
+      "title": "idea001481 - thought-debugger-test Developer Experience",
+      "archetype": "experience",
+      "component": "thought-debugger-test-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001481-thought-debugger-test-developer-experience.md"
+    },
+    {
+      "index": 1487,
+      "idea_id": "idea001482",
+      "filename": "idea001482-thought-debugger-test-documentation",
+      "title": "idea001482 - thought-debugger-test Documentation",
+      "archetype": "documentation",
+      "component": "thought-debugger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001482-thought-debugger-test-documentation.md"
+    },
+    {
+      "index": 1488,
+      "idea_id": "idea001483",
+      "filename": "idea001483-thought-debugger-test-hardening",
+      "title": "idea001483 - thought-debugger-test Hardening",
+      "archetype": "hardening",
+      "component": "thought-debugger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001483-thought-debugger-test-hardening.md"
+    },
+    {
+      "index": 1489,
+      "idea_id": "idea001484",
+      "filename": "idea001484-thought-debugger-test-performance",
+      "title": "idea001484 - thought-debugger-test Performance",
+      "archetype": "performance",
+      "component": "thought-debugger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001484-thought-debugger-test-performance.md"
+    },
+    {
+      "index": 1490,
+      "idea_id": "idea001485",
+      "filename": "idea001485-thought-debugger-test-resilience",
+      "title": "idea001485 - thought-debugger-test Resilience",
+      "archetype": "resilience",
+      "component": "thought-debugger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001485-thought-debugger-test-resilience.md"
+    },
+    {
+      "index": 1491,
+      "idea_id": "idea001486",
+      "filename": "idea001486-init-developer-experience",
+      "title": "idea001486 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001486-init-developer-experience.md"
+    },
+    {
+      "index": 1492,
+      "idea_id": "idea001487",
+      "filename": "idea001487-init-documentation",
+      "title": "idea001487 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001487-init-documentation.md"
+    },
+    {
+      "index": 1493,
+      "idea_id": "idea001488",
+      "filename": "idea001488-init-hardening",
+      "title": "idea001488 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001488-init-hardening.md"
+    },
+    {
+      "index": 1494,
+      "idea_id": "idea001489",
+      "filename": "idea001489-init-performance",
+      "title": "idea001489 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001489-init-performance.md"
+    },
+    {
+      "index": 1495,
+      "idea_id": "idea001490",
+      "filename": "idea001490-init-resilience",
+      "title": "idea001490 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001490-init-resilience.md"
+    },
+    {
+      "index": 1496,
+      "idea_id": "idea001491",
+      "filename": "idea001491-base-test-developer-experience",
+      "title": "idea001491 - base-test Developer Experience",
+      "archetype": "experience",
+      "component": "base-test-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001491-base-test-developer-experience.md"
+    },
+    {
+      "index": 1497,
+      "idea_id": "idea001492",
+      "filename": "idea001492-base-test-documentation",
+      "title": "idea001492 - base-test Documentation",
+      "archetype": "documentation",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001492-base-test-documentation.md"
+    },
+    {
+      "index": 1498,
+      "idea_id": "idea001493",
+      "filename": "idea001493-base-test-hardening",
+      "title": "idea001493 - base-test Hardening",
+      "archetype": "hardening",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001493-base-test-hardening.md"
+    },
+    {
+      "index": 1499,
+      "idea_id": "idea001494",
+      "filename": "idea001494-base-test-performance",
+      "title": "idea001494 - base-test Performance",
+      "archetype": "performance",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001494-base-test-performance.md"
+    },
+    {
+      "index": 1500,
+      "idea_id": "idea001495",
+      "filename": "idea001495-base-test-resilience",
+      "title": "idea001495 - base-test Resilience",
+      "archetype": "resilience",
+      "component": "base-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f00/idea001495-base-test-resilience.md"
+    }
+  ],
+  "projects_to_create": 50
+}

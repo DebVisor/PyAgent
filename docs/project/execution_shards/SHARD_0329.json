@@ -1,0 +1,4510 @@
+{
+  "shard_number": 329,
+  "shard_id": "SHARD_0329",
+  "start_index": 164000,
+  "end_index": 164500,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 164001,
+      "idea_id": "idea163998",
+      "filename": "idea163998-build-script-build-performance",
+      "title": "idea163998 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea163998-build-script-build-performance.md"
+    },
+    {
+      "index": 164002,
+      "idea_id": "idea163999",
+      "filename": "idea163999-invoked-observability",
+      "title": "idea163999 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea163999-invoked-observability.md"
+    },
+    {
+      "index": 164003,
+      "idea_id": "idea164000",
+      "filename": "idea164000-invoked-test-coverage",
+      "title": "idea164000 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164000-invoked-test-coverage.md"
+    },
+    {
+      "index": 164004,
+      "idea_id": "idea164001",
+      "filename": "idea164001-pyo3-build-config-file-api-consistency",
+      "title": "idea164001 - pyo3-build-config-file API Consistency",
+      "archetype": "consistency",
+      "component": "pyo3-build-config-file-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164001-pyo3-build-config-file-api-consistency.md"
+    },
+    {
+      "index": 164005,
+      "idea_id": "idea164002",
+      "filename": "idea164002-pyo3-build-config-file-observability",
+      "title": "idea164002 - pyo3-build-config-file Observability",
+      "archetype": "observability",
+      "component": "pyo3-build-config-file",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164002-pyo3-build-config-file-observability.md"
+    },
+    {
+      "index": 164006,
+      "idea_id": "idea164003",
+      "filename": "idea164003-pyo3-build-config-file-test-coverage",
+      "title": "idea164003 - pyo3-build-config-file Test Coverage",
+      "archetype": "coverage",
+      "component": "pyo3-build-config-file-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164003-pyo3-build-config-file-test-coverage.md"
+    },
+    {
+      "index": 164007,
+      "idea_id": "idea164004",
+      "filename": "idea164004-pyo3-build-config-api-consistency",
+      "title": "idea164004 - pyo3-build-config API Consistency",
+      "archetype": "consistency",
+      "component": "pyo3-build-config-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164004-pyo3-build-config-api-consistency.md"
+    },
+    {
+      "index": 164008,
+      "idea_id": "idea164005",
+      "filename": "idea164005-pyo3-build-config-observability",
+      "title": "idea164005 - pyo3-build-config Observability",
+      "archetype": "observability",
+      "component": "pyo3-build-config",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164005-pyo3-build-config-observability.md"
+    },
+    {
+      "index": 164009,
+      "idea_id": "idea164006",
+      "filename": "idea164006-pyo3-build-config-test-coverage",
+      "title": "idea164006 - pyo3-build-config Test Coverage",
+      "archetype": "coverage",
+      "component": "pyo3-build-config-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164006-pyo3-build-config-test-coverage.md"
+    },
+    {
+      "index": 164010,
+      "idea_id": "idea164007",
+      "filename": "idea164007-output-observability",
+      "title": "idea164007 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164007-output-observability.md"
+    },
+    {
+      "index": 164011,
+      "idea_id": "idea164008",
+      "filename": "idea164008-output-test-coverage",
+      "title": "idea164008 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164008-output-test-coverage.md"
+    },
+    {
+      "index": 164012,
+      "idea_id": "idea164009",
+      "filename": "idea164009-root-output-observability",
+      "title": "idea164009 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164009-root-output-observability.md"
+    },
+    {
+      "index": 164013,
+      "idea_id": "idea164010",
+      "filename": "idea164010-root-output-test-coverage",
+      "title": "idea164010 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164010-root-output-test-coverage.md"
+    },
+    {
+      "index": 164014,
+      "idea_id": "idea164011",
+      "filename": "idea164011-stderr-observability",
+      "title": "idea164011 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164011-stderr-observability.md"
+    },
+    {
+      "index": 164015,
+      "idea_id": "idea164012",
+      "filename": "idea164012-stderr-test-coverage",
+      "title": "idea164012 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164012-stderr-test-coverage.md"
+    },
+    {
+      "index": 164016,
+      "idea_id": "idea164013",
+      "filename": "idea164013-invoked-observability",
+      "title": "idea164013 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164013-invoked-observability.md"
+    },
+    {
+      "index": 164017,
+      "idea_id": "idea164014",
+      "filename": "idea164014-invoked-test-coverage",
+      "title": "idea164014 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164014-invoked-test-coverage.md"
+    },
+    {
+      "index": 164018,
+      "idea_id": "idea164015",
+      "filename": "idea164015-output-observability",
+      "title": "idea164015 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164015-output-observability.md"
+    },
+    {
+      "index": 164019,
+      "idea_id": "idea164016",
+      "filename": "idea164016-output-test-coverage",
+      "title": "idea164016 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164016-output-test-coverage.md"
+    },
+    {
+      "index": 164020,
+      "idea_id": "idea164017",
+      "filename": "idea164017-root-output-observability",
+      "title": "idea164017 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164017-root-output-observability.md"
+    },
+    {
+      "index": 164021,
+      "idea_id": "idea164018",
+      "filename": "idea164018-root-output-test-coverage",
+      "title": "idea164018 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164018-root-output-test-coverage.md"
+    },
+    {
+      "index": 164022,
+      "idea_id": "idea164019",
+      "filename": "idea164019-stderr-observability",
+      "title": "idea164019 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164019-stderr-observability.md"
+    },
+    {
+      "index": 164023,
+      "idea_id": "idea164020",
+      "filename": "idea164020-stderr-test-coverage",
+      "title": "idea164020 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164020-stderr-test-coverage.md"
+    },
+    {
+      "index": 164024,
+      "idea_id": "idea164021",
+      "filename": "idea164021-invoked-observability",
+      "title": "idea164021 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164021-invoked-observability.md"
+    },
+    {
+      "index": 164025,
+      "idea_id": "idea164022",
+      "filename": "idea164022-invoked-test-coverage",
+      "title": "idea164022 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164022-invoked-test-coverage.md"
+    },
+    {
+      "index": 164026,
+      "idea_id": "idea164023",
+      "filename": "idea164023-output-observability",
+      "title": "idea164023 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164023-output-observability.md"
+    },
+    {
+      "index": 164027,
+      "idea_id": "idea164024",
+      "filename": "idea164024-output-test-coverage",
+      "title": "idea164024 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164024-output-test-coverage.md"
+    },
+    {
+      "index": 164028,
+      "idea_id": "idea164025",
+      "filename": "idea164025-root-output-observability",
+      "title": "idea164025 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164025-root-output-observability.md"
+    },
+    {
+      "index": 164029,
+      "idea_id": "idea164026",
+      "filename": "idea164026-root-output-test-coverage",
+      "title": "idea164026 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164026-root-output-test-coverage.md"
+    },
+    {
+      "index": 164030,
+      "idea_id": "idea164027",
+      "filename": "idea164027-stderr-observability",
+      "title": "idea164027 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164027-stderr-observability.md"
+    },
+    {
+      "index": 164031,
+      "idea_id": "idea164028",
+      "filename": "idea164028-stderr-test-coverage",
+      "title": "idea164028 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164028-stderr-test-coverage.md"
+    },
+    {
+      "index": 164032,
+      "idea_id": "idea164029",
+      "filename": "idea164029-invoked-observability",
+      "title": "idea164029 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164029-invoked-observability.md"
+    },
+    {
+      "index": 164033,
+      "idea_id": "idea164030",
+      "filename": "idea164030-invoked-test-coverage",
+      "title": "idea164030 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164030-invoked-test-coverage.md"
+    },
+    {
+      "index": 164034,
+      "idea_id": "idea164031",
+      "filename": "idea164031-output-observability",
+      "title": "idea164031 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164031-output-observability.md"
+    },
+    {
+      "index": 164035,
+      "idea_id": "idea164032",
+      "filename": "idea164032-output-test-coverage",
+      "title": "idea164032 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164032-output-test-coverage.md"
+    },
+    {
+      "index": 164036,
+      "idea_id": "idea164033",
+      "filename": "idea164033-root-output-observability",
+      "title": "idea164033 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164033-root-output-observability.md"
+    },
+    {
+      "index": 164037,
+      "idea_id": "idea164034",
+      "filename": "idea164034-root-output-test-coverage",
+      "title": "idea164034 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164034-root-output-test-coverage.md"
+    },
+    {
+      "index": 164038,
+      "idea_id": "idea164035",
+      "filename": "idea164035-stderr-observability",
+      "title": "idea164035 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164035-stderr-observability.md"
+    },
+    {
+      "index": 164039,
+      "idea_id": "idea164036",
+      "filename": "idea164036-stderr-test-coverage",
+      "title": "idea164036 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164036-stderr-test-coverage.md"
+    },
+    {
+      "index": 164040,
+      "idea_id": "idea164037",
+      "filename": "idea164037-build-script-build-hardening",
+      "title": "idea164037 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164037-build-script-build-hardening.md"
+    },
+    {
+      "index": 164041,
+      "idea_id": "idea164038",
+      "filename": "idea164038-build-script-build-performance",
+      "title": "idea164038 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164038-build-script-build-performance.md"
+    },
+    {
+      "index": 164042,
+      "idea_id": "idea164039",
+      "filename": "idea164039-build-script-build-81b67b718c1c562d-observability",
+      "title": "idea164039 - build-script-build-81b67b718c1c562d Observability",
+      "archetype": "observability",
+      "component": "build-script-build-81b67b718c1c562d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164039-build-script-build-81b67b718c1c562d-observability.md"
+    },
+    {
+      "index": 164043,
+      "idea_id": "idea164040",
+      "filename": "idea164040-build-script-build-81b67b718c1c562d-test-coverage",
+      "title": "idea164040 - build-script-build-81b67b718c1c562d Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-81b67b718c1c562d-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164040-build-script-build-81b67b718c1c562d-test-coverage.md"
+    },
+    {
+      "index": 164044,
+      "idea_id": "idea164041",
+      "filename": "idea164041-build-script-build-81b67b718c1c562d-hardening",
+      "title": "idea164041 - build-script-build-81b67b718c1c562d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-81b67b718c1c562d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164041-build-script-build-81b67b718c1c562d-hardening.md"
+    },
+    {
+      "index": 164045,
+      "idea_id": "idea164042",
+      "filename": "idea164042-build-script-build-81b67b718c1c562d-performance",
+      "title": "idea164042 - build-script-build-81b67b718c1c562d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-81b67b718c1c562d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164042-build-script-build-81b67b718c1c562d-performance.md"
+    },
+    {
+      "index": 164046,
+      "idea_id": "idea164043",
+      "filename": "idea164043-build-script-build-81b67b718c1c562d-hardening",
+      "title": "idea164043 - build-script-build-81b67b718c1c562d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-81b67b718c1c562d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164043-build-script-build-81b67b718c1c562d-hardening.md"
+    },
+    {
+      "index": 164047,
+      "idea_id": "idea164044",
+      "filename": "idea164044-build-script-build-81b67b718c1c562d-performance",
+      "title": "idea164044 - build-script-build-81b67b718c1c562d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-81b67b718c1c562d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164044-build-script-build-81b67b718c1c562d-performance.md"
+    },
+    {
+      "index": 164048,
+      "idea_id": "idea164045",
+      "filename": "idea164045-build-script-build-hardening",
+      "title": "idea164045 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164045-build-script-build-hardening.md"
+    },
+    {
+      "index": 164049,
+      "idea_id": "idea164046",
+      "filename": "idea164046-build-script-build-performance",
+      "title": "idea164046 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164046-build-script-build-performance.md"
+    },
+    {
+      "index": 164050,
+      "idea_id": "idea164047",
+      "filename": "idea164047-build-script-build-hardening",
+      "title": "idea164047 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164047-build-script-build-hardening.md"
+    },
+    {
+      "index": 164051,
+      "idea_id": "idea164048",
+      "filename": "idea164048-build-script-build-performance",
+      "title": "idea164048 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164048-build-script-build-performance.md"
+    },
+    {
+      "index": 164052,
+      "idea_id": "idea164049",
+      "filename": "idea164049-build-script-build-a3076a351a4f08ba-observability",
+      "title": "idea164049 - build-script-build-a3076a351a4f08ba Observability",
+      "archetype": "observability",
+      "component": "build-script-build-a3076a351a4f08ba",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164049-build-script-build-a3076a351a4f08ba-observability.md"
+    },
+    {
+      "index": 164053,
+      "idea_id": "idea164050",
+      "filename": "idea164050-build-script-build-a3076a351a4f08ba-test-coverage",
+      "title": "idea164050 - build-script-build-a3076a351a4f08ba Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-a3076a351a4f08ba-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164050-build-script-build-a3076a351a4f08ba-test-coverage.md"
+    },
+    {
+      "index": 164054,
+      "idea_id": "idea164051",
+      "filename": "idea164051-build-script-build-a3076a351a4f08ba-hardening",
+      "title": "idea164051 - build-script-build-a3076a351a4f08ba Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-a3076a351a4f08ba",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164051-build-script-build-a3076a351a4f08ba-hardening.md"
+    },
+    {
+      "index": 164055,
+      "idea_id": "idea164052",
+      "filename": "idea164052-build-script-build-a3076a351a4f08ba-performance",
+      "title": "idea164052 - build-script-build-a3076a351a4f08ba Performance",
+      "archetype": "performance",
+      "component": "build-script-build-a3076a351a4f08ba",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164052-build-script-build-a3076a351a4f08ba-performance.md"
+    },
+    {
+      "index": 164056,
+      "idea_id": "idea164053",
+      "filename": "idea164053-build-script-build-a3076a351a4f08ba-hardening",
+      "title": "idea164053 - build-script-build-a3076a351a4f08ba Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-a3076a351a4f08ba",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164053-build-script-build-a3076a351a4f08ba-hardening.md"
+    },
+    {
+      "index": 164057,
+      "idea_id": "idea164054",
+      "filename": "idea164054-build-script-build-a3076a351a4f08ba-performance",
+      "title": "idea164054 - build-script-build-a3076a351a4f08ba Performance",
+      "archetype": "performance",
+      "component": "build-script-build-a3076a351a4f08ba",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164054-build-script-build-a3076a351a4f08ba-performance.md"
+    },
+    {
+      "index": 164058,
+      "idea_id": "idea164055",
+      "filename": "idea164055-build-script-build-hardening",
+      "title": "idea164055 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164055-build-script-build-hardening.md"
+    },
+    {
+      "index": 164059,
+      "idea_id": "idea164056",
+      "filename": "idea164056-build-script-build-performance",
+      "title": "idea164056 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164056-build-script-build-performance.md"
+    },
+    {
+      "index": 164060,
+      "idea_id": "idea164057",
+      "filename": "idea164057-build-script-build-hardening",
+      "title": "idea164057 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164057-build-script-build-hardening.md"
+    },
+    {
+      "index": 164061,
+      "idea_id": "idea164058",
+      "filename": "idea164058-build-script-build-performance",
+      "title": "idea164058 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164058-build-script-build-performance.md"
+    },
+    {
+      "index": 164062,
+      "idea_id": "idea164059",
+      "filename": "idea164059-build-script-build-e1aa56f44aa84790-observability",
+      "title": "idea164059 - build-script-build-e1aa56f44aa84790 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-e1aa56f44aa84790",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164059-build-script-build-e1aa56f44aa84790-observability.md"
+    },
+    {
+      "index": 164063,
+      "idea_id": "idea164060",
+      "filename": "idea164060-build-script-build-e1aa56f44aa84790-test-coverage",
+      "title": "idea164060 - build-script-build-e1aa56f44aa84790 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-e1aa56f44aa84790-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164060-build-script-build-e1aa56f44aa84790-test-coverage.md"
+    },
+    {
+      "index": 164064,
+      "idea_id": "idea164061",
+      "filename": "idea164061-build-script-build-e1aa56f44aa84790-hardening",
+      "title": "idea164061 - build-script-build-e1aa56f44aa84790 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-e1aa56f44aa84790",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164061-build-script-build-e1aa56f44aa84790-hardening.md"
+    },
+    {
+      "index": 164065,
+      "idea_id": "idea164062",
+      "filename": "idea164062-build-script-build-e1aa56f44aa84790-performance",
+      "title": "idea164062 - build-script-build-e1aa56f44aa84790 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-e1aa56f44aa84790",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164062-build-script-build-e1aa56f44aa84790-performance.md"
+    },
+    {
+      "index": 164066,
+      "idea_id": "idea164063",
+      "filename": "idea164063-build-script-build-e1aa56f44aa84790-hardening",
+      "title": "idea164063 - build-script-build-e1aa56f44aa84790 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-e1aa56f44aa84790",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164063-build-script-build-e1aa56f44aa84790-hardening.md"
+    },
+    {
+      "index": 164067,
+      "idea_id": "idea164064",
+      "filename": "idea164064-build-script-build-e1aa56f44aa84790-performance",
+      "title": "idea164064 - build-script-build-e1aa56f44aa84790 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-e1aa56f44aa84790",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164064-build-script-build-e1aa56f44aa84790-performance.md"
+    },
+    {
+      "index": 164068,
+      "idea_id": "idea164065",
+      "filename": "idea164065-build-script-build-hardening",
+      "title": "idea164065 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164065-build-script-build-hardening.md"
+    },
+    {
+      "index": 164069,
+      "idea_id": "idea164066",
+      "filename": "idea164066-build-script-build-performance",
+      "title": "idea164066 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164066-build-script-build-performance.md"
+    },
+    {
+      "index": 164070,
+      "idea_id": "idea164067",
+      "filename": "idea164067-invoked-observability",
+      "title": "idea164067 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164067-invoked-observability.md"
+    },
+    {
+      "index": 164071,
+      "idea_id": "idea164068",
+      "filename": "idea164068-invoked-test-coverage",
+      "title": "idea164068 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164068-invoked-test-coverage.md"
+    },
+    {
+      "index": 164072,
+      "idea_id": "idea164069",
+      "filename": "idea164069-output-observability",
+      "title": "idea164069 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164069-output-observability.md"
+    },
+    {
+      "index": 164073,
+      "idea_id": "idea164070",
+      "filename": "idea164070-output-test-coverage",
+      "title": "idea164070 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164070-output-test-coverage.md"
+    },
+    {
+      "index": 164074,
+      "idea_id": "idea164071",
+      "filename": "idea164071-root-output-observability",
+      "title": "idea164071 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164071-root-output-observability.md"
+    },
+    {
+      "index": 164075,
+      "idea_id": "idea164072",
+      "filename": "idea164072-root-output-test-coverage",
+      "title": "idea164072 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164072-root-output-test-coverage.md"
+    },
+    {
+      "index": 164076,
+      "idea_id": "idea164073",
+      "filename": "idea164073-stderr-observability",
+      "title": "idea164073 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164073-stderr-observability.md"
+    },
+    {
+      "index": 164077,
+      "idea_id": "idea164074",
+      "filename": "idea164074-stderr-test-coverage",
+      "title": "idea164074 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164074-stderr-test-coverage.md"
+    },
+    {
+      "index": 164078,
+      "idea_id": "idea164075",
+      "filename": "idea164075-invoked-observability",
+      "title": "idea164075 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164075-invoked-observability.md"
+    },
+    {
+      "index": 164079,
+      "idea_id": "idea164076",
+      "filename": "idea164076-invoked-test-coverage",
+      "title": "idea164076 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164076-invoked-test-coverage.md"
+    },
+    {
+      "index": 164080,
+      "idea_id": "idea164077",
+      "filename": "idea164077-output-observability",
+      "title": "idea164077 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164077-output-observability.md"
+    },
+    {
+      "index": 164081,
+      "idea_id": "idea164078",
+      "filename": "idea164078-output-test-coverage",
+      "title": "idea164078 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164078-output-test-coverage.md"
+    },
+    {
+      "index": 164082,
+      "idea_id": "idea164079",
+      "filename": "idea164079-root-output-observability",
+      "title": "idea164079 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164079-root-output-observability.md"
+    },
+    {
+      "index": 164083,
+      "idea_id": "idea164080",
+      "filename": "idea164080-root-output-test-coverage",
+      "title": "idea164080 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164080-root-output-test-coverage.md"
+    },
+    {
+      "index": 164084,
+      "idea_id": "idea164081",
+      "filename": "idea164081-stderr-observability",
+      "title": "idea164081 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164081-stderr-observability.md"
+    },
+    {
+      "index": 164085,
+      "idea_id": "idea164082",
+      "filename": "idea164082-stderr-test-coverage",
+      "title": "idea164082 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164082-stderr-test-coverage.md"
+    },
+    {
+      "index": 164086,
+      "idea_id": "idea164083",
+      "filename": "idea164083-build-script-build-hardening",
+      "title": "idea164083 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164083-build-script-build-hardening.md"
+    },
+    {
+      "index": 164087,
+      "idea_id": "idea164084",
+      "filename": "idea164084-build-script-build-performance",
+      "title": "idea164084 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164084-build-script-build-performance.md"
+    },
+    {
+      "index": 164088,
+      "idea_id": "idea164085",
+      "filename": "idea164085-build-script-build-2002ccab8d7c5ead-observability",
+      "title": "idea164085 - build-script-build-2002ccab8d7c5ead Observability",
+      "archetype": "observability",
+      "component": "build-script-build-2002ccab8d7c5ead",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164085-build-script-build-2002ccab8d7c5ead-observability.md"
+    },
+    {
+      "index": 164089,
+      "idea_id": "idea164086",
+      "filename": "idea164086-build-script-build-2002ccab8d7c5ead-test-coverage",
+      "title": "idea164086 - build-script-build-2002ccab8d7c5ead Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-2002ccab8d7c5ead-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164086-build-script-build-2002ccab8d7c5ead-test-coverage.md"
+    },
+    {
+      "index": 164090,
+      "idea_id": "idea164087",
+      "filename": "idea164087-build-script-build-2002ccab8d7c5ead-hardening",
+      "title": "idea164087 - build-script-build-2002ccab8d7c5ead Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-2002ccab8d7c5ead",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164087-build-script-build-2002ccab8d7c5ead-hardening.md"
+    },
+    {
+      "index": 164091,
+      "idea_id": "idea164088",
+      "filename": "idea164088-build-script-build-2002ccab8d7c5ead-performance",
+      "title": "idea164088 - build-script-build-2002ccab8d7c5ead Performance",
+      "archetype": "performance",
+      "component": "build-script-build-2002ccab8d7c5ead",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164088-build-script-build-2002ccab8d7c5ead-performance.md"
+    },
+    {
+      "index": 164092,
+      "idea_id": "idea164089",
+      "filename": "idea164089-build-script-build-2002ccab8d7c5ead-hardening",
+      "title": "idea164089 - build-script-build-2002ccab8d7c5ead Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-2002ccab8d7c5ead",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164089-build-script-build-2002ccab8d7c5ead-hardening.md"
+    },
+    {
+      "index": 164093,
+      "idea_id": "idea164090",
+      "filename": "idea164090-build-script-build-2002ccab8d7c5ead-performance",
+      "title": "idea164090 - build-script-build-2002ccab8d7c5ead Performance",
+      "archetype": "performance",
+      "component": "build-script-build-2002ccab8d7c5ead",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164090-build-script-build-2002ccab8d7c5ead-performance.md"
+    },
+    {
+      "index": 164094,
+      "idea_id": "idea164091",
+      "filename": "idea164091-build-script-build-hardening",
+      "title": "idea164091 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164091-build-script-build-hardening.md"
+    },
+    {
+      "index": 164095,
+      "idea_id": "idea164092",
+      "filename": "idea164092-build-script-build-performance",
+      "title": "idea164092 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164092-build-script-build-performance.md"
+    },
+    {
+      "index": 164096,
+      "idea_id": "idea164093",
+      "filename": "idea164093-build-script-build-hardening",
+      "title": "idea164093 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164093-build-script-build-hardening.md"
+    },
+    {
+      "index": 164097,
+      "idea_id": "idea164094",
+      "filename": "idea164094-build-script-build-performance",
+      "title": "idea164094 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164094-build-script-build-performance.md"
+    },
+    {
+      "index": 164098,
+      "idea_id": "idea164095",
+      "filename": "idea164095-build-script-build-48ba2a3d2f96a4e2-observability",
+      "title": "idea164095 - build-script-build-48ba2a3d2f96a4e2 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-48ba2a3d2f96a4e2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164095-build-script-build-48ba2a3d2f96a4e2-observability.md"
+    },
+    {
+      "index": 164099,
+      "idea_id": "idea164096",
+      "filename": "idea164096-build-script-build-48ba2a3d2f96a4e2-test-coverage",
+      "title": "idea164096 - build-script-build-48ba2a3d2f96a4e2 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-48ba2a3d2f96a4e2-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164096-build-script-build-48ba2a3d2f96a4e2-test-coverage.md"
+    },
+    {
+      "index": 164100,
+      "idea_id": "idea164097",
+      "filename": "idea164097-build-script-build-48ba2a3d2f96a4e2-hardening",
+      "title": "idea164097 - build-script-build-48ba2a3d2f96a4e2 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-48ba2a3d2f96a4e2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164097-build-script-build-48ba2a3d2f96a4e2-hardening.md"
+    },
+    {
+      "index": 164101,
+      "idea_id": "idea164098",
+      "filename": "idea164098-build-script-build-48ba2a3d2f96a4e2-performance",
+      "title": "idea164098 - build-script-build-48ba2a3d2f96a4e2 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-48ba2a3d2f96a4e2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164098-build-script-build-48ba2a3d2f96a4e2-performance.md"
+    },
+    {
+      "index": 164102,
+      "idea_id": "idea164099",
+      "filename": "idea164099-build-script-build-48ba2a3d2f96a4e2-hardening",
+      "title": "idea164099 - build-script-build-48ba2a3d2f96a4e2 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-48ba2a3d2f96a4e2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164099-build-script-build-48ba2a3d2f96a4e2-hardening.md"
+    },
+    {
+      "index": 164103,
+      "idea_id": "idea164100",
+      "filename": "idea164100-build-script-build-48ba2a3d2f96a4e2-performance",
+      "title": "idea164100 - build-script-build-48ba2a3d2f96a4e2 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-48ba2a3d2f96a4e2",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164100-build-script-build-48ba2a3d2f96a4e2-performance.md"
+    },
+    {
+      "index": 164104,
+      "idea_id": "idea164101",
+      "filename": "idea164101-build-script-build-hardening",
+      "title": "idea164101 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164101-build-script-build-hardening.md"
+    },
+    {
+      "index": 164105,
+      "idea_id": "idea164102",
+      "filename": "idea164102-build-script-build-performance",
+      "title": "idea164102 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164102-build-script-build-performance.md"
+    },
+    {
+      "index": 164106,
+      "idea_id": "idea164103",
+      "filename": "idea164103-invoked-observability",
+      "title": "idea164103 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164103-invoked-observability.md"
+    },
+    {
+      "index": 164107,
+      "idea_id": "idea164104",
+      "filename": "idea164104-invoked-test-coverage",
+      "title": "idea164104 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164104-invoked-test-coverage.md"
+    },
+    {
+      "index": 164108,
+      "idea_id": "idea164105",
+      "filename": "idea164105-output-observability",
+      "title": "idea164105 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164105-output-observability.md"
+    },
+    {
+      "index": 164109,
+      "idea_id": "idea164106",
+      "filename": "idea164106-output-test-coverage",
+      "title": "idea164106 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164106-output-test-coverage.md"
+    },
+    {
+      "index": 164110,
+      "idea_id": "idea164107",
+      "filename": "idea164107-root-output-observability",
+      "title": "idea164107 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164107-root-output-observability.md"
+    },
+    {
+      "index": 164111,
+      "idea_id": "idea164108",
+      "filename": "idea164108-root-output-test-coverage",
+      "title": "idea164108 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164108-root-output-test-coverage.md"
+    },
+    {
+      "index": 164112,
+      "idea_id": "idea164109",
+      "filename": "idea164109-stderr-observability",
+      "title": "idea164109 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164109-stderr-observability.md"
+    },
+    {
+      "index": 164113,
+      "idea_id": "idea164110",
+      "filename": "idea164110-stderr-test-coverage",
+      "title": "idea164110 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164110-stderr-test-coverage.md"
+    },
+    {
+      "index": 164114,
+      "idea_id": "idea164111",
+      "filename": "idea164111-build-script-build-hardening",
+      "title": "idea164111 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164111-build-script-build-hardening.md"
+    },
+    {
+      "index": 164115,
+      "idea_id": "idea164112",
+      "filename": "idea164112-build-script-build-performance",
+      "title": "idea164112 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164112-build-script-build-performance.md"
+    },
+    {
+      "index": 164116,
+      "idea_id": "idea164113",
+      "filename": "idea164113-build-script-build-5e1991e4f3fa03f1-observability",
+      "title": "idea164113 - build-script-build-5e1991e4f3fa03f1 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-5e1991e4f3fa03f1",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164113-build-script-build-5e1991e4f3fa03f1-observability.md"
+    },
+    {
+      "index": 164117,
+      "idea_id": "idea164114",
+      "filename": "idea164114-build-script-build-5e1991e4f3fa03f1-test-coverage",
+      "title": "idea164114 - build-script-build-5e1991e4f3fa03f1 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-5e1991e4f3fa03f1-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164114-build-script-build-5e1991e4f3fa03f1-test-coverage.md"
+    },
+    {
+      "index": 164118,
+      "idea_id": "idea164115",
+      "filename": "idea164115-build-script-build-5e1991e4f3fa03f1-hardening",
+      "title": "idea164115 - build-script-build-5e1991e4f3fa03f1 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-5e1991e4f3fa03f1",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164115-build-script-build-5e1991e4f3fa03f1-hardening.md"
+    },
+    {
+      "index": 164119,
+      "idea_id": "idea164116",
+      "filename": "idea164116-build-script-build-5e1991e4f3fa03f1-performance",
+      "title": "idea164116 - build-script-build-5e1991e4f3fa03f1 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-5e1991e4f3fa03f1",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164116-build-script-build-5e1991e4f3fa03f1-performance.md"
+    },
+    {
+      "index": 164120,
+      "idea_id": "idea164117",
+      "filename": "idea164117-build-script-build-5e1991e4f3fa03f1-hardening",
+      "title": "idea164117 - build-script-build-5e1991e4f3fa03f1 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-5e1991e4f3fa03f1",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164117-build-script-build-5e1991e4f3fa03f1-hardening.md"
+    },
+    {
+      "index": 164121,
+      "idea_id": "idea164118",
+      "filename": "idea164118-build-script-build-5e1991e4f3fa03f1-performance",
+      "title": "idea164118 - build-script-build-5e1991e4f3fa03f1 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-5e1991e4f3fa03f1",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164118-build-script-build-5e1991e4f3fa03f1-performance.md"
+    },
+    {
+      "index": 164122,
+      "idea_id": "idea164119",
+      "filename": "idea164119-build-script-build-hardening",
+      "title": "idea164119 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164119-build-script-build-hardening.md"
+    },
+    {
+      "index": 164123,
+      "idea_id": "idea164120",
+      "filename": "idea164120-build-script-build-performance",
+      "title": "idea164120 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164120-build-script-build-performance.md"
+    },
+    {
+      "index": 164124,
+      "idea_id": "idea164121",
+      "filename": "idea164121-invoked-observability",
+      "title": "idea164121 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164121-invoked-observability.md"
+    },
+    {
+      "index": 164125,
+      "idea_id": "idea164122",
+      "filename": "idea164122-invoked-test-coverage",
+      "title": "idea164122 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164122-invoked-test-coverage.md"
+    },
+    {
+      "index": 164126,
+      "idea_id": "idea164123",
+      "filename": "idea164123-output-observability",
+      "title": "idea164123 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164123-output-observability.md"
+    },
+    {
+      "index": 164127,
+      "idea_id": "idea164124",
+      "filename": "idea164124-output-test-coverage",
+      "title": "idea164124 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164124-output-test-coverage.md"
+    },
+    {
+      "index": 164128,
+      "idea_id": "idea164125",
+      "filename": "idea164125-root-output-observability",
+      "title": "idea164125 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164125-root-output-observability.md"
+    },
+    {
+      "index": 164129,
+      "idea_id": "idea164126",
+      "filename": "idea164126-root-output-test-coverage",
+      "title": "idea164126 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164126-root-output-test-coverage.md"
+    },
+    {
+      "index": 164130,
+      "idea_id": "idea164127",
+      "filename": "idea164127-stderr-observability",
+      "title": "idea164127 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164127-stderr-observability.md"
+    },
+    {
+      "index": 164131,
+      "idea_id": "idea164128",
+      "filename": "idea164128-stderr-test-coverage",
+      "title": "idea164128 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164128-stderr-test-coverage.md"
+    },
+    {
+      "index": 164132,
+      "idea_id": "idea164129",
+      "filename": "idea164129-invoked-observability",
+      "title": "idea164129 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164129-invoked-observability.md"
+    },
+    {
+      "index": 164133,
+      "idea_id": "idea164130",
+      "filename": "idea164130-invoked-test-coverage",
+      "title": "idea164130 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164130-invoked-test-coverage.md"
+    },
+    {
+      "index": 164134,
+      "idea_id": "idea164131",
+      "filename": "idea164131-output-observability",
+      "title": "idea164131 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164131-output-observability.md"
+    },
+    {
+      "index": 164135,
+      "idea_id": "idea164132",
+      "filename": "idea164132-output-test-coverage",
+      "title": "idea164132 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164132-output-test-coverage.md"
+    },
+    {
+      "index": 164136,
+      "idea_id": "idea164133",
+      "filename": "idea164133-root-output-observability",
+      "title": "idea164133 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164133-root-output-observability.md"
+    },
+    {
+      "index": 164137,
+      "idea_id": "idea164134",
+      "filename": "idea164134-root-output-test-coverage",
+      "title": "idea164134 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164134-root-output-test-coverage.md"
+    },
+    {
+      "index": 164138,
+      "idea_id": "idea164135",
+      "filename": "idea164135-stderr-observability",
+      "title": "idea164135 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164135-stderr-observability.md"
+    },
+    {
+      "index": 164139,
+      "idea_id": "idea164136",
+      "filename": "idea164136-stderr-test-coverage",
+      "title": "idea164136 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164136-stderr-test-coverage.md"
+    },
+    {
+      "index": 164140,
+      "idea_id": "idea164137",
+      "filename": "idea164137-build-script-build-hardening",
+      "title": "idea164137 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164137-build-script-build-hardening.md"
+    },
+    {
+      "index": 164141,
+      "idea_id": "idea164138",
+      "filename": "idea164138-build-script-build-performance",
+      "title": "idea164138 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164138-build-script-build-performance.md"
+    },
+    {
+      "index": 164142,
+      "idea_id": "idea164139",
+      "filename": "idea164139-build-script-build-b9f59e07358033b7-observability",
+      "title": "idea164139 - build-script-build-b9f59e07358033b7 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-b9f59e07358033b7",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164139-build-script-build-b9f59e07358033b7-observability.md"
+    },
+    {
+      "index": 164143,
+      "idea_id": "idea164140",
+      "filename": "idea164140-build-script-build-b9f59e07358033b7-test-coverage",
+      "title": "idea164140 - build-script-build-b9f59e07358033b7 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-b9f59e07358033b7-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164140-build-script-build-b9f59e07358033b7-test-coverage.md"
+    },
+    {
+      "index": 164144,
+      "idea_id": "idea164141",
+      "filename": "idea164141-build-script-build-b9f59e07358033b7-hardening",
+      "title": "idea164141 - build-script-build-b9f59e07358033b7 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-b9f59e07358033b7",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164141-build-script-build-b9f59e07358033b7-hardening.md"
+    },
+    {
+      "index": 164145,
+      "idea_id": "idea164142",
+      "filename": "idea164142-build-script-build-b9f59e07358033b7-performance",
+      "title": "idea164142 - build-script-build-b9f59e07358033b7 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-b9f59e07358033b7",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164142-build-script-build-b9f59e07358033b7-performance.md"
+    },
+    {
+      "index": 164146,
+      "idea_id": "idea164143",
+      "filename": "idea164143-build-script-build-b9f59e07358033b7-hardening",
+      "title": "idea164143 - build-script-build-b9f59e07358033b7 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-b9f59e07358033b7",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164143-build-script-build-b9f59e07358033b7-hardening.md"
+    },
+    {
+      "index": 164147,
+      "idea_id": "idea164144",
+      "filename": "idea164144-build-script-build-b9f59e07358033b7-performance",
+      "title": "idea164144 - build-script-build-b9f59e07358033b7 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-b9f59e07358033b7",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164144-build-script-build-b9f59e07358033b7-performance.md"
+    },
+    {
+      "index": 164148,
+      "idea_id": "idea164145",
+      "filename": "idea164145-build-script-build-hardening",
+      "title": "idea164145 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164145-build-script-build-hardening.md"
+    },
+    {
+      "index": 164149,
+      "idea_id": "idea164146",
+      "filename": "idea164146-build-script-build-performance",
+      "title": "idea164146 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164146-build-script-build-performance.md"
+    },
+    {
+      "index": 164150,
+      "idea_id": "idea164147",
+      "filename": "idea164147-invoked-observability",
+      "title": "idea164147 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164147-invoked-observability.md"
+    },
+    {
+      "index": 164151,
+      "idea_id": "idea164148",
+      "filename": "idea164148-invoked-test-coverage",
+      "title": "idea164148 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164148-invoked-test-coverage.md"
+    },
+    {
+      "index": 164152,
+      "idea_id": "idea164149",
+      "filename": "idea164149-output-observability",
+      "title": "idea164149 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164149-output-observability.md"
+    },
+    {
+      "index": 164153,
+      "idea_id": "idea164150",
+      "filename": "idea164150-output-test-coverage",
+      "title": "idea164150 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164150-output-test-coverage.md"
+    },
+    {
+      "index": 164154,
+      "idea_id": "idea164151",
+      "filename": "idea164151-root-output-observability",
+      "title": "idea164151 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164151-root-output-observability.md"
+    },
+    {
+      "index": 164155,
+      "idea_id": "idea164152",
+      "filename": "idea164152-root-output-test-coverage",
+      "title": "idea164152 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164152-root-output-test-coverage.md"
+    },
+    {
+      "index": 164156,
+      "idea_id": "idea164153",
+      "filename": "idea164153-stderr-observability",
+      "title": "idea164153 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164153-stderr-observability.md"
+    },
+    {
+      "index": 164157,
+      "idea_id": "idea164154",
+      "filename": "idea164154-stderr-test-coverage",
+      "title": "idea164154 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164154-stderr-test-coverage.md"
+    },
+    {
+      "index": 164158,
+      "idea_id": "idea164155",
+      "filename": "idea164155-build-script-build-hardening",
+      "title": "idea164155 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164155-build-script-build-hardening.md"
+    },
+    {
+      "index": 164159,
+      "idea_id": "idea164156",
+      "filename": "idea164156-build-script-build-performance",
+      "title": "idea164156 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164156-build-script-build-performance.md"
+    },
+    {
+      "index": 164160,
+      "idea_id": "idea164157",
+      "filename": "idea164157-build-script-build-f685fff22c91881d-observability",
+      "title": "idea164157 - build-script-build-f685fff22c91881d Observability",
+      "archetype": "observability",
+      "component": "build-script-build-f685fff22c91881d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164157-build-script-build-f685fff22c91881d-observability.md"
+    },
+    {
+      "index": 164161,
+      "idea_id": "idea164158",
+      "filename": "idea164158-build-script-build-f685fff22c91881d-test-coverage",
+      "title": "idea164158 - build-script-build-f685fff22c91881d Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-f685fff22c91881d-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164158-build-script-build-f685fff22c91881d-test-coverage.md"
+    },
+    {
+      "index": 164162,
+      "idea_id": "idea164159",
+      "filename": "idea164159-build-script-build-f685fff22c91881d-hardening",
+      "title": "idea164159 - build-script-build-f685fff22c91881d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-f685fff22c91881d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164159-build-script-build-f685fff22c91881d-hardening.md"
+    },
+    {
+      "index": 164163,
+      "idea_id": "idea164160",
+      "filename": "idea164160-build-script-build-f685fff22c91881d-performance",
+      "title": "idea164160 - build-script-build-f685fff22c91881d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-f685fff22c91881d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164160-build-script-build-f685fff22c91881d-performance.md"
+    },
+    {
+      "index": 164164,
+      "idea_id": "idea164161",
+      "filename": "idea164161-build-script-build-f685fff22c91881d-hardening",
+      "title": "idea164161 - build-script-build-f685fff22c91881d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-f685fff22c91881d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164161-build-script-build-f685fff22c91881d-hardening.md"
+    },
+    {
+      "index": 164165,
+      "idea_id": "idea164162",
+      "filename": "idea164162-build-script-build-f685fff22c91881d-performance",
+      "title": "idea164162 - build-script-build-f685fff22c91881d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-f685fff22c91881d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164162-build-script-build-f685fff22c91881d-performance.md"
+    },
+    {
+      "index": 164166,
+      "idea_id": "idea164163",
+      "filename": "idea164163-build-script-build-hardening",
+      "title": "idea164163 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164163-build-script-build-hardening.md"
+    },
+    {
+      "index": 164167,
+      "idea_id": "idea164164",
+      "filename": "idea164164-build-script-build-performance",
+      "title": "idea164164 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164164-build-script-build-performance.md"
+    },
+    {
+      "index": 164168,
+      "idea_id": "idea164165",
+      "filename": "idea164165-build-script-build-hardening",
+      "title": "idea164165 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164165-build-script-build-hardening.md"
+    },
+    {
+      "index": 164169,
+      "idea_id": "idea164166",
+      "filename": "idea164166-build-script-build-performance",
+      "title": "idea164166 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164166-build-script-build-performance.md"
+    },
+    {
+      "index": 164170,
+      "idea_id": "idea164167",
+      "filename": "idea164167-build-script-build-17f3e4bf83a111f9-observability",
+      "title": "idea164167 - build-script-build-17f3e4bf83a111f9 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-17f3e4bf83a111f9",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164167-build-script-build-17f3e4bf83a111f9-observability.md"
+    },
+    {
+      "index": 164171,
+      "idea_id": "idea164168",
+      "filename": "idea164168-build-script-build-17f3e4bf83a111f9-test-coverage",
+      "title": "idea164168 - build-script-build-17f3e4bf83a111f9 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-17f3e4bf83a111f9-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164168-build-script-build-17f3e4bf83a111f9-test-coverage.md"
+    },
+    {
+      "index": 164172,
+      "idea_id": "idea164169",
+      "filename": "idea164169-build-script-build-17f3e4bf83a111f9-hardening",
+      "title": "idea164169 - build-script-build-17f3e4bf83a111f9 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-17f3e4bf83a111f9",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164169-build-script-build-17f3e4bf83a111f9-hardening.md"
+    },
+    {
+      "index": 164173,
+      "idea_id": "idea164170",
+      "filename": "idea164170-build-script-build-17f3e4bf83a111f9-performance",
+      "title": "idea164170 - build-script-build-17f3e4bf83a111f9 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-17f3e4bf83a111f9",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164170-build-script-build-17f3e4bf83a111f9-performance.md"
+    },
+    {
+      "index": 164174,
+      "idea_id": "idea164171",
+      "filename": "idea164171-build-script-build-17f3e4bf83a111f9-hardening",
+      "title": "idea164171 - build-script-build-17f3e4bf83a111f9 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-17f3e4bf83a111f9",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164171-build-script-build-17f3e4bf83a111f9-hardening.md"
+    },
+    {
+      "index": 164175,
+      "idea_id": "idea164172",
+      "filename": "idea164172-build-script-build-17f3e4bf83a111f9-performance",
+      "title": "idea164172 - build-script-build-17f3e4bf83a111f9 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-17f3e4bf83a111f9",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164172-build-script-build-17f3e4bf83a111f9-performance.md"
+    },
+    {
+      "index": 164176,
+      "idea_id": "idea164173",
+      "filename": "idea164173-build-script-build-hardening",
+      "title": "idea164173 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164173-build-script-build-hardening.md"
+    },
+    {
+      "index": 164177,
+      "idea_id": "idea164174",
+      "filename": "idea164174-build-script-build-performance",
+      "title": "idea164174 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164174-build-script-build-performance.md"
+    },
+    {
+      "index": 164178,
+      "idea_id": "idea164175",
+      "filename": "idea164175-build-script-build-hardening",
+      "title": "idea164175 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164175-build-script-build-hardening.md"
+    },
+    {
+      "index": 164179,
+      "idea_id": "idea164176",
+      "filename": "idea164176-build-script-build-performance",
+      "title": "idea164176 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164176-build-script-build-performance.md"
+    },
+    {
+      "index": 164180,
+      "idea_id": "idea164177",
+      "filename": "idea164177-build-script-build-7a456e4e476257ce-observability",
+      "title": "idea164177 - build-script-build-7a456e4e476257ce Observability",
+      "archetype": "observability",
+      "component": "build-script-build-7a456e4e476257ce",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164177-build-script-build-7a456e4e476257ce-observability.md"
+    },
+    {
+      "index": 164181,
+      "idea_id": "idea164178",
+      "filename": "idea164178-build-script-build-7a456e4e476257ce-test-coverage",
+      "title": "idea164178 - build-script-build-7a456e4e476257ce Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-7a456e4e476257ce-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164178-build-script-build-7a456e4e476257ce-test-coverage.md"
+    },
+    {
+      "index": 164182,
+      "idea_id": "idea164179",
+      "filename": "idea164179-build-script-build-7a456e4e476257ce-hardening",
+      "title": "idea164179 - build-script-build-7a456e4e476257ce Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-7a456e4e476257ce",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164179-build-script-build-7a456e4e476257ce-hardening.md"
+    },
+    {
+      "index": 164183,
+      "idea_id": "idea164180",
+      "filename": "idea164180-build-script-build-7a456e4e476257ce-performance",
+      "title": "idea164180 - build-script-build-7a456e4e476257ce Performance",
+      "archetype": "performance",
+      "component": "build-script-build-7a456e4e476257ce",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164180-build-script-build-7a456e4e476257ce-performance.md"
+    },
+    {
+      "index": 164184,
+      "idea_id": "idea164181",
+      "filename": "idea164181-build-script-build-7a456e4e476257ce-hardening",
+      "title": "idea164181 - build-script-build-7a456e4e476257ce Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-7a456e4e476257ce",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164181-build-script-build-7a456e4e476257ce-hardening.md"
+    },
+    {
+      "index": 164185,
+      "idea_id": "idea164182",
+      "filename": "idea164182-build-script-build-7a456e4e476257ce-performance",
+      "title": "idea164182 - build-script-build-7a456e4e476257ce Performance",
+      "archetype": "performance",
+      "component": "build-script-build-7a456e4e476257ce",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164182-build-script-build-7a456e4e476257ce-performance.md"
+    },
+    {
+      "index": 164186,
+      "idea_id": "idea164183",
+      "filename": "idea164183-build-script-build-hardening",
+      "title": "idea164183 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164183-build-script-build-hardening.md"
+    },
+    {
+      "index": 164187,
+      "idea_id": "idea164184",
+      "filename": "idea164184-build-script-build-performance",
+      "title": "idea164184 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164184-build-script-build-performance.md"
+    },
+    {
+      "index": 164188,
+      "idea_id": "idea164185",
+      "filename": "idea164185-invoked-observability",
+      "title": "idea164185 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164185-invoked-observability.md"
+    },
+    {
+      "index": 164189,
+      "idea_id": "idea164186",
+      "filename": "idea164186-invoked-test-coverage",
+      "title": "idea164186 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164186-invoked-test-coverage.md"
+    },
+    {
+      "index": 164190,
+      "idea_id": "idea164187",
+      "filename": "idea164187-output-observability",
+      "title": "idea164187 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164187-output-observability.md"
+    },
+    {
+      "index": 164191,
+      "idea_id": "idea164188",
+      "filename": "idea164188-output-test-coverage",
+      "title": "idea164188 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164188-output-test-coverage.md"
+    },
+    {
+      "index": 164192,
+      "idea_id": "idea164189",
+      "filename": "idea164189-root-output-observability",
+      "title": "idea164189 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164189-root-output-observability.md"
+    },
+    {
+      "index": 164193,
+      "idea_id": "idea164190",
+      "filename": "idea164190-root-output-test-coverage",
+      "title": "idea164190 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164190-root-output-test-coverage.md"
+    },
+    {
+      "index": 164194,
+      "idea_id": "idea164191",
+      "filename": "idea164191-stderr-observability",
+      "title": "idea164191 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164191-stderr-observability.md"
+    },
+    {
+      "index": 164195,
+      "idea_id": "idea164192",
+      "filename": "idea164192-stderr-test-coverage",
+      "title": "idea164192 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164192-stderr-test-coverage.md"
+    },
+    {
+      "index": 164196,
+      "idea_id": "idea164193",
+      "filename": "idea164193-invoked-observability",
+      "title": "idea164193 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164193-invoked-observability.md"
+    },
+    {
+      "index": 164197,
+      "idea_id": "idea164194",
+      "filename": "idea164194-invoked-test-coverage",
+      "title": "idea164194 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164194-invoked-test-coverage.md"
+    },
+    {
+      "index": 164198,
+      "idea_id": "idea164195",
+      "filename": "idea164195-output-observability",
+      "title": "idea164195 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164195-output-observability.md"
+    },
+    {
+      "index": 164199,
+      "idea_id": "idea164196",
+      "filename": "idea164196-output-test-coverage",
+      "title": "idea164196 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164196-output-test-coverage.md"
+    },
+    {
+      "index": 164200,
+      "idea_id": "idea164197",
+      "filename": "idea164197-root-output-observability",
+      "title": "idea164197 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164197-root-output-observability.md"
+    },
+    {
+      "index": 164201,
+      "idea_id": "idea164198",
+      "filename": "idea164198-root-output-test-coverage",
+      "title": "idea164198 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164198-root-output-test-coverage.md"
+    },
+    {
+      "index": 164202,
+      "idea_id": "idea164199",
+      "filename": "idea164199-stderr-observability",
+      "title": "idea164199 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164199-stderr-observability.md"
+    },
+    {
+      "index": 164203,
+      "idea_id": "idea164200",
+      "filename": "idea164200-stderr-test-coverage",
+      "title": "idea164200 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164200-stderr-test-coverage.md"
+    },
+    {
+      "index": 164204,
+      "idea_id": "idea164201",
+      "filename": "idea164201-invoked-observability",
+      "title": "idea164201 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164201-invoked-observability.md"
+    },
+    {
+      "index": 164205,
+      "idea_id": "idea164202",
+      "filename": "idea164202-invoked-test-coverage",
+      "title": "idea164202 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164202-invoked-test-coverage.md"
+    },
+    {
+      "index": 164206,
+      "idea_id": "idea164203",
+      "filename": "idea164203-private-api-consistency",
+      "title": "idea164203 - private API Consistency",
+      "archetype": "consistency",
+      "component": "private-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164203-private-api-consistency.md"
+    },
+    {
+      "index": 164207,
+      "idea_id": "idea164204",
+      "filename": "idea164204-private-migration-readiness",
+      "title": "idea164204 - private Migration Readiness",
+      "archetype": "readiness",
+      "component": "private-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164204-private-migration-readiness.md"
+    },
+    {
+      "index": 164208,
+      "idea_id": "idea164205",
+      "filename": "idea164205-private-observability",
+      "title": "idea164205 - private Observability",
+      "archetype": "observability",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164205-private-observability.md"
+    },
+    {
+      "index": 164209,
+      "idea_id": "idea164206",
+      "filename": "idea164206-private-security",
+      "title": "idea164206 - private Security",
+      "archetype": "security",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164206-private-security.md"
+    },
+    {
+      "index": 164210,
+      "idea_id": "idea164207",
+      "filename": "idea164207-private-test-coverage",
+      "title": "idea164207 - private Test Coverage",
+      "archetype": "coverage",
+      "component": "private-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164207-private-test-coverage.md"
+    },
+    {
+      "index": 164211,
+      "idea_id": "idea164208",
+      "filename": "idea164208-output-observability",
+      "title": "idea164208 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164208-output-observability.md"
+    },
+    {
+      "index": 164212,
+      "idea_id": "idea164209",
+      "filename": "idea164209-output-test-coverage",
+      "title": "idea164209 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164209-output-test-coverage.md"
+    },
+    {
+      "index": 164213,
+      "idea_id": "idea164210",
+      "filename": "idea164210-root-output-observability",
+      "title": "idea164210 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164210-root-output-observability.md"
+    },
+    {
+      "index": 164214,
+      "idea_id": "idea164211",
+      "filename": "idea164211-root-output-test-coverage",
+      "title": "idea164211 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164211-root-output-test-coverage.md"
+    },
+    {
+      "index": 164215,
+      "idea_id": "idea164212",
+      "filename": "idea164212-stderr-observability",
+      "title": "idea164212 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164212-stderr-observability.md"
+    },
+    {
+      "index": 164216,
+      "idea_id": "idea164213",
+      "filename": "idea164213-stderr-test-coverage",
+      "title": "idea164213 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164213-stderr-test-coverage.md"
+    },
+    {
+      "index": 164217,
+      "idea_id": "idea164214",
+      "filename": "idea164214-build-script-build-hardening",
+      "title": "idea164214 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164214-build-script-build-hardening.md"
+    },
+    {
+      "index": 164218,
+      "idea_id": "idea164215",
+      "filename": "idea164215-build-script-build-performance",
+      "title": "idea164215 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164215-build-script-build-performance.md"
+    },
+    {
+      "index": 164219,
+      "idea_id": "idea164216",
+      "filename": "idea164216-build-script-build-353627ddd480230e-observability",
+      "title": "idea164216 - build-script-build-353627ddd480230e Observability",
+      "archetype": "observability",
+      "component": "build-script-build-353627ddd480230e",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164216-build-script-build-353627ddd480230e-observability.md"
+    },
+    {
+      "index": 164220,
+      "idea_id": "idea164217",
+      "filename": "idea164217-build-script-build-353627ddd480230e-test-coverage",
+      "title": "idea164217 - build-script-build-353627ddd480230e Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-353627ddd480230e-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164217-build-script-build-353627ddd480230e-test-coverage.md"
+    },
+    {
+      "index": 164221,
+      "idea_id": "idea164218",
+      "filename": "idea164218-build-script-build-353627ddd480230e-hardening",
+      "title": "idea164218 - build-script-build-353627ddd480230e Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-353627ddd480230e",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164218-build-script-build-353627ddd480230e-hardening.md"
+    },
+    {
+      "index": 164222,
+      "idea_id": "idea164219",
+      "filename": "idea164219-build-script-build-353627ddd480230e-performance",
+      "title": "idea164219 - build-script-build-353627ddd480230e Performance",
+      "archetype": "performance",
+      "component": "build-script-build-353627ddd480230e",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164219-build-script-build-353627ddd480230e-performance.md"
+    },
+    {
+      "index": 164223,
+      "idea_id": "idea164220",
+      "filename": "idea164220-build-script-build-353627ddd480230e-hardening",
+      "title": "idea164220 - build-script-build-353627ddd480230e Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-353627ddd480230e",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164220-build-script-build-353627ddd480230e-hardening.md"
+    },
+    {
+      "index": 164224,
+      "idea_id": "idea164221",
+      "filename": "idea164221-build-script-build-353627ddd480230e-performance",
+      "title": "idea164221 - build-script-build-353627ddd480230e Performance",
+      "archetype": "performance",
+      "component": "build-script-build-353627ddd480230e",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164221-build-script-build-353627ddd480230e-performance.md"
+    },
+    {
+      "index": 164225,
+      "idea_id": "idea164222",
+      "filename": "idea164222-build-script-build-hardening",
+      "title": "idea164222 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164222-build-script-build-hardening.md"
+    },
+    {
+      "index": 164226,
+      "idea_id": "idea164223",
+      "filename": "idea164223-build-script-build-performance",
+      "title": "idea164223 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164223-build-script-build-performance.md"
+    },
+    {
+      "index": 164227,
+      "idea_id": "idea164224",
+      "filename": "idea164224-invoked-observability",
+      "title": "idea164224 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164224-invoked-observability.md"
+    },
+    {
+      "index": 164228,
+      "idea_id": "idea164225",
+      "filename": "idea164225-invoked-test-coverage",
+      "title": "idea164225 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164225-invoked-test-coverage.md"
+    },
+    {
+      "index": 164229,
+      "idea_id": "idea164226",
+      "filename": "idea164226-private-api-consistency",
+      "title": "idea164226 - private API Consistency",
+      "archetype": "consistency",
+      "component": "private-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164226-private-api-consistency.md"
+    },
+    {
+      "index": 164230,
+      "idea_id": "idea164227",
+      "filename": "idea164227-private-migration-readiness",
+      "title": "idea164227 - private Migration Readiness",
+      "archetype": "readiness",
+      "component": "private-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164227-private-migration-readiness.md"
+    },
+    {
+      "index": 164231,
+      "idea_id": "idea164228",
+      "filename": "idea164228-private-observability",
+      "title": "idea164228 - private Observability",
+      "archetype": "observability",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164228-private-observability.md"
+    },
+    {
+      "index": 164232,
+      "idea_id": "idea164229",
+      "filename": "idea164229-private-security",
+      "title": "idea164229 - private Security",
+      "archetype": "security",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164229-private-security.md"
+    },
+    {
+      "index": 164233,
+      "idea_id": "idea164230",
+      "filename": "idea164230-private-test-coverage",
+      "title": "idea164230 - private Test Coverage",
+      "archetype": "coverage",
+      "component": "private-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164230-private-test-coverage.md"
+    },
+    {
+      "index": 164234,
+      "idea_id": "idea164231",
+      "filename": "idea164231-output-observability",
+      "title": "idea164231 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164231-output-observability.md"
+    },
+    {
+      "index": 164235,
+      "idea_id": "idea164232",
+      "filename": "idea164232-output-test-coverage",
+      "title": "idea164232 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164232-output-test-coverage.md"
+    },
+    {
+      "index": 164236,
+      "idea_id": "idea164233",
+      "filename": "idea164233-root-output-observability",
+      "title": "idea164233 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164233-root-output-observability.md"
+    },
+    {
+      "index": 164237,
+      "idea_id": "idea164234",
+      "filename": "idea164234-root-output-test-coverage",
+      "title": "idea164234 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164234-root-output-test-coverage.md"
+    },
+    {
+      "index": 164238,
+      "idea_id": "idea164235",
+      "filename": "idea164235-stderr-observability",
+      "title": "idea164235 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164235-stderr-observability.md"
+    },
+    {
+      "index": 164239,
+      "idea_id": "idea164236",
+      "filename": "idea164236-stderr-test-coverage",
+      "title": "idea164236 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164236-stderr-test-coverage.md"
+    },
+    {
+      "index": 164240,
+      "idea_id": "idea164237",
+      "filename": "idea164237-build-script-build-hardening",
+      "title": "idea164237 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164237-build-script-build-hardening.md"
+    },
+    {
+      "index": 164241,
+      "idea_id": "idea164238",
+      "filename": "idea164238-build-script-build-performance",
+      "title": "idea164238 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164238-build-script-build-performance.md"
+    },
+    {
+      "index": 164242,
+      "idea_id": "idea164239",
+      "filename": "idea164239-build-script-build-bd66712cb0deb479-observability",
+      "title": "idea164239 - build-script-build-bd66712cb0deb479 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-bd66712cb0deb479",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164239-build-script-build-bd66712cb0deb479-observability.md"
+    },
+    {
+      "index": 164243,
+      "idea_id": "idea164240",
+      "filename": "idea164240-build-script-build-bd66712cb0deb479-test-coverage",
+      "title": "idea164240 - build-script-build-bd66712cb0deb479 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-bd66712cb0deb479-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164240-build-script-build-bd66712cb0deb479-test-coverage.md"
+    },
+    {
+      "index": 164244,
+      "idea_id": "idea164241",
+      "filename": "idea164241-build-script-build-bd66712cb0deb479-hardening",
+      "title": "idea164241 - build-script-build-bd66712cb0deb479 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-bd66712cb0deb479",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164241-build-script-build-bd66712cb0deb479-hardening.md"
+    },
+    {
+      "index": 164245,
+      "idea_id": "idea164242",
+      "filename": "idea164242-build-script-build-bd66712cb0deb479-performance",
+      "title": "idea164242 - build-script-build-bd66712cb0deb479 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-bd66712cb0deb479",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164242-build-script-build-bd66712cb0deb479-performance.md"
+    },
+    {
+      "index": 164246,
+      "idea_id": "idea164243",
+      "filename": "idea164243-build-script-build-bd66712cb0deb479-hardening",
+      "title": "idea164243 - build-script-build-bd66712cb0deb479 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-bd66712cb0deb479",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164243-build-script-build-bd66712cb0deb479-hardening.md"
+    },
+    {
+      "index": 164247,
+      "idea_id": "idea164244",
+      "filename": "idea164244-build-script-build-bd66712cb0deb479-performance",
+      "title": "idea164244 - build-script-build-bd66712cb0deb479 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-bd66712cb0deb479",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164244-build-script-build-bd66712cb0deb479-performance.md"
+    },
+    {
+      "index": 164248,
+      "idea_id": "idea164245",
+      "filename": "idea164245-build-script-build-hardening",
+      "title": "idea164245 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164245-build-script-build-hardening.md"
+    },
+    {
+      "index": 164249,
+      "idea_id": "idea164246",
+      "filename": "idea164246-build-script-build-performance",
+      "title": "idea164246 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164246-build-script-build-performance.md"
+    },
+    {
+      "index": 164250,
+      "idea_id": "idea164247",
+      "filename": "idea164247-build-script-build-hardening",
+      "title": "idea164247 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164247-build-script-build-hardening.md"
+    },
+    {
+      "index": 164251,
+      "idea_id": "idea164248",
+      "filename": "idea164248-build-script-build-performance",
+      "title": "idea164248 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164248-build-script-build-performance.md"
+    },
+    {
+      "index": 164252,
+      "idea_id": "idea164249",
+      "filename": "idea164249-build-script-build-0065990d19f7f46a-observability",
+      "title": "idea164249 - build-script-build-0065990d19f7f46a Observability",
+      "archetype": "observability",
+      "component": "build-script-build-0065990d19f7f46a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164249-build-script-build-0065990d19f7f46a-observability.md"
+    },
+    {
+      "index": 164253,
+      "idea_id": "idea164250",
+      "filename": "idea164250-build-script-build-0065990d19f7f46a-test-coverage",
+      "title": "idea164250 - build-script-build-0065990d19f7f46a Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-0065990d19f7f46a-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164250-build-script-build-0065990d19f7f46a-test-coverage.md"
+    },
+    {
+      "index": 164254,
+      "idea_id": "idea164251",
+      "filename": "idea164251-build-script-build-0065990d19f7f46a-hardening",
+      "title": "idea164251 - build-script-build-0065990d19f7f46a Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-0065990d19f7f46a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164251-build-script-build-0065990d19f7f46a-hardening.md"
+    },
+    {
+      "index": 164255,
+      "idea_id": "idea164252",
+      "filename": "idea164252-build-script-build-0065990d19f7f46a-performance",
+      "title": "idea164252 - build-script-build-0065990d19f7f46a Performance",
+      "archetype": "performance",
+      "component": "build-script-build-0065990d19f7f46a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164252-build-script-build-0065990d19f7f46a-performance.md"
+    },
+    {
+      "index": 164256,
+      "idea_id": "idea164253",
+      "filename": "idea164253-build-script-build-0065990d19f7f46a-hardening",
+      "title": "idea164253 - build-script-build-0065990d19f7f46a Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-0065990d19f7f46a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164253-build-script-build-0065990d19f7f46a-hardening.md"
+    },
+    {
+      "index": 164257,
+      "idea_id": "idea164254",
+      "filename": "idea164254-build-script-build-0065990d19f7f46a-performance",
+      "title": "idea164254 - build-script-build-0065990d19f7f46a Performance",
+      "archetype": "performance",
+      "component": "build-script-build-0065990d19f7f46a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164254-build-script-build-0065990d19f7f46a-performance.md"
+    },
+    {
+      "index": 164258,
+      "idea_id": "idea164255",
+      "filename": "idea164255-build-script-build-hardening",
+      "title": "idea164255 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164255-build-script-build-hardening.md"
+    },
+    {
+      "index": 164259,
+      "idea_id": "idea164256",
+      "filename": "idea164256-build-script-build-performance",
+      "title": "idea164256 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164256-build-script-build-performance.md"
+    },
+    {
+      "index": 164260,
+      "idea_id": "idea164257",
+      "filename": "idea164257-invoked-observability",
+      "title": "idea164257 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164257-invoked-observability.md"
+    },
+    {
+      "index": 164261,
+      "idea_id": "idea164258",
+      "filename": "idea164258-invoked-test-coverage",
+      "title": "idea164258 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164258-invoked-test-coverage.md"
+    },
+    {
+      "index": 164262,
+      "idea_id": "idea164259",
+      "filename": "idea164259-private-api-consistency",
+      "title": "idea164259 - private API Consistency",
+      "archetype": "consistency",
+      "component": "private-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164259-private-api-consistency.md"
+    },
+    {
+      "index": 164263,
+      "idea_id": "idea164260",
+      "filename": "idea164260-private-migration-readiness",
+      "title": "idea164260 - private Migration Readiness",
+      "archetype": "readiness",
+      "component": "private-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164260-private-migration-readiness.md"
+    },
+    {
+      "index": 164264,
+      "idea_id": "idea164261",
+      "filename": "idea164261-private-observability",
+      "title": "idea164261 - private Observability",
+      "archetype": "observability",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164261-private-observability.md"
+    },
+    {
+      "index": 164265,
+      "idea_id": "idea164262",
+      "filename": "idea164262-private-security",
+      "title": "idea164262 - private Security",
+      "archetype": "security",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164262-private-security.md"
+    },
+    {
+      "index": 164266,
+      "idea_id": "idea164263",
+      "filename": "idea164263-private-test-coverage",
+      "title": "idea164263 - private Test Coverage",
+      "archetype": "coverage",
+      "component": "private-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164263-private-test-coverage.md"
+    },
+    {
+      "index": 164267,
+      "idea_id": "idea164264",
+      "filename": "idea164264-output-observability",
+      "title": "idea164264 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164264-output-observability.md"
+    },
+    {
+      "index": 164268,
+      "idea_id": "idea164265",
+      "filename": "idea164265-output-test-coverage",
+      "title": "idea164265 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164265-output-test-coverage.md"
+    },
+    {
+      "index": 164269,
+      "idea_id": "idea164266",
+      "filename": "idea164266-root-output-observability",
+      "title": "idea164266 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164266-root-output-observability.md"
+    },
+    {
+      "index": 164270,
+      "idea_id": "idea164267",
+      "filename": "idea164267-root-output-test-coverage",
+      "title": "idea164267 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164267-root-output-test-coverage.md"
+    },
+    {
+      "index": 164271,
+      "idea_id": "idea164268",
+      "filename": "idea164268-stderr-observability",
+      "title": "idea164268 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164268-stderr-observability.md"
+    },
+    {
+      "index": 164272,
+      "idea_id": "idea164269",
+      "filename": "idea164269-stderr-test-coverage",
+      "title": "idea164269 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164269-stderr-test-coverage.md"
+    },
+    {
+      "index": 164273,
+      "idea_id": "idea164270",
+      "filename": "idea164270-invoked-observability",
+      "title": "idea164270 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164270-invoked-observability.md"
+    },
+    {
+      "index": 164274,
+      "idea_id": "idea164271",
+      "filename": "idea164271-invoked-test-coverage",
+      "title": "idea164271 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164271-invoked-test-coverage.md"
+    },
+    {
+      "index": 164275,
+      "idea_id": "idea164272",
+      "filename": "idea164272-private-api-consistency",
+      "title": "idea164272 - private API Consistency",
+      "archetype": "consistency",
+      "component": "private-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164272-private-api-consistency.md"
+    },
+    {
+      "index": 164276,
+      "idea_id": "idea164273",
+      "filename": "idea164273-private-migration-readiness",
+      "title": "idea164273 - private Migration Readiness",
+      "archetype": "readiness",
+      "component": "private-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164273-private-migration-readiness.md"
+    },
+    {
+      "index": 164277,
+      "idea_id": "idea164274",
+      "filename": "idea164274-private-observability",
+      "title": "idea164274 - private Observability",
+      "archetype": "observability",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164274-private-observability.md"
+    },
+    {
+      "index": 164278,
+      "idea_id": "idea164275",
+      "filename": "idea164275-private-security",
+      "title": "idea164275 - private Security",
+      "archetype": "security",
+      "component": "private",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164275-private-security.md"
+    },
+    {
+      "index": 164279,
+      "idea_id": "idea164276",
+      "filename": "idea164276-private-test-coverage",
+      "title": "idea164276 - private Test Coverage",
+      "archetype": "coverage",
+      "component": "private-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164276-private-test-coverage.md"
+    },
+    {
+      "index": 164280,
+      "idea_id": "idea164277",
+      "filename": "idea164277-output-observability",
+      "title": "idea164277 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164277-output-observability.md"
+    },
+    {
+      "index": 164281,
+      "idea_id": "idea164278",
+      "filename": "idea164278-output-test-coverage",
+      "title": "idea164278 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164278-output-test-coverage.md"
+    },
+    {
+      "index": 164282,
+      "idea_id": "idea164279",
+      "filename": "idea164279-root-output-observability",
+      "title": "idea164279 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164279-root-output-observability.md"
+    },
+    {
+      "index": 164283,
+      "idea_id": "idea164280",
+      "filename": "idea164280-root-output-test-coverage",
+      "title": "idea164280 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164280-root-output-test-coverage.md"
+    },
+    {
+      "index": 164284,
+      "idea_id": "idea164281",
+      "filename": "idea164281-stderr-observability",
+      "title": "idea164281 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164281-stderr-observability.md"
+    },
+    {
+      "index": 164285,
+      "idea_id": "idea164282",
+      "filename": "idea164282-stderr-test-coverage",
+      "title": "idea164282 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164282-stderr-test-coverage.md"
+    },
+    {
+      "index": 164286,
+      "idea_id": "idea164283",
+      "filename": "idea164283-build-script-build-hardening",
+      "title": "idea164283 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164283-build-script-build-hardening.md"
+    },
+    {
+      "index": 164287,
+      "idea_id": "idea164284",
+      "filename": "idea164284-build-script-build-performance",
+      "title": "idea164284 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164284-build-script-build-performance.md"
+    },
+    {
+      "index": 164288,
+      "idea_id": "idea164285",
+      "filename": "idea164285-build-script-build-f4852550f8317e69-observability",
+      "title": "idea164285 - build-script-build-f4852550f8317e69 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-f4852550f8317e69",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164285-build-script-build-f4852550f8317e69-observability.md"
+    },
+    {
+      "index": 164289,
+      "idea_id": "idea164286",
+      "filename": "idea164286-build-script-build-f4852550f8317e69-test-coverage",
+      "title": "idea164286 - build-script-build-f4852550f8317e69 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-f4852550f8317e69-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164286-build-script-build-f4852550f8317e69-test-coverage.md"
+    },
+    {
+      "index": 164290,
+      "idea_id": "idea164287",
+      "filename": "idea164287-build-script-build-f4852550f8317e69-hardening",
+      "title": "idea164287 - build-script-build-f4852550f8317e69 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-f4852550f8317e69",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164287-build-script-build-f4852550f8317e69-hardening.md"
+    },
+    {
+      "index": 164291,
+      "idea_id": "idea164288",
+      "filename": "idea164288-build-script-build-f4852550f8317e69-performance",
+      "title": "idea164288 - build-script-build-f4852550f8317e69 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-f4852550f8317e69",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164288-build-script-build-f4852550f8317e69-performance.md"
+    },
+    {
+      "index": 164292,
+      "idea_id": "idea164289",
+      "filename": "idea164289-build-script-build-f4852550f8317e69-hardening",
+      "title": "idea164289 - build-script-build-f4852550f8317e69 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-f4852550f8317e69",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164289-build-script-build-f4852550f8317e69-hardening.md"
+    },
+    {
+      "index": 164293,
+      "idea_id": "idea164290",
+      "filename": "idea164290-build-script-build-f4852550f8317e69-performance",
+      "title": "idea164290 - build-script-build-f4852550f8317e69 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-f4852550f8317e69",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164290-build-script-build-f4852550f8317e69-performance.md"
+    },
+    {
+      "index": 164294,
+      "idea_id": "idea164291",
+      "filename": "idea164291-build-script-build-hardening",
+      "title": "idea164291 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164291-build-script-build-hardening.md"
+    },
+    {
+      "index": 164295,
+      "idea_id": "idea164292",
+      "filename": "idea164292-build-script-build-performance",
+      "title": "idea164292 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164292-build-script-build-performance.md"
+    },
+    {
+      "index": 164296,
+      "idea_id": "idea164293",
+      "filename": "idea164293-build-script-build-hardening",
+      "title": "idea164293 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164293-build-script-build-hardening.md"
+    },
+    {
+      "index": 164297,
+      "idea_id": "idea164294",
+      "filename": "idea164294-build-script-build-performance",
+      "title": "idea164294 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164294-build-script-build-performance.md"
+    },
+    {
+      "index": 164298,
+      "idea_id": "idea164295",
+      "filename": "idea164295-build-script-build-1f8803e0a4f0d3ff-observability",
+      "title": "idea164295 - build-script-build-1f8803e0a4f0d3ff Observability",
+      "archetype": "observability",
+      "component": "build-script-build-1f8803e0a4f0d3ff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164295-build-script-build-1f8803e0a4f0d3ff-observability.md"
+    },
+    {
+      "index": 164299,
+      "idea_id": "idea164296",
+      "filename": "idea164296-build-script-build-1f8803e0a4f0d3ff-test-coverage",
+      "title": "idea164296 - build-script-build-1f8803e0a4f0d3ff Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-1f8803e0a4f0d3ff-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164296-build-script-build-1f8803e0a4f0d3ff-test-coverage.md"
+    },
+    {
+      "index": 164300,
+      "idea_id": "idea164297",
+      "filename": "idea164297-build-script-build-1f8803e0a4f0d3ff-hardening",
+      "title": "idea164297 - build-script-build-1f8803e0a4f0d3ff Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1f8803e0a4f0d3ff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164297-build-script-build-1f8803e0a4f0d3ff-hardening.md"
+    },
+    {
+      "index": 164301,
+      "idea_id": "idea164298",
+      "filename": "idea164298-build-script-build-1f8803e0a4f0d3ff-performance",
+      "title": "idea164298 - build-script-build-1f8803e0a4f0d3ff Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1f8803e0a4f0d3ff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164298-build-script-build-1f8803e0a4f0d3ff-performance.md"
+    },
+    {
+      "index": 164302,
+      "idea_id": "idea164299",
+      "filename": "idea164299-build-script-build-1f8803e0a4f0d3ff-hardening",
+      "title": "idea164299 - build-script-build-1f8803e0a4f0d3ff Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1f8803e0a4f0d3ff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164299-build-script-build-1f8803e0a4f0d3ff-hardening.md"
+    },
+    {
+      "index": 164303,
+      "idea_id": "idea164300",
+      "filename": "idea164300-build-script-build-1f8803e0a4f0d3ff-performance",
+      "title": "idea164300 - build-script-build-1f8803e0a4f0d3ff Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1f8803e0a4f0d3ff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164300-build-script-build-1f8803e0a4f0d3ff-performance.md"
+    },
+    {
+      "index": 164304,
+      "idea_id": "idea164301",
+      "filename": "idea164301-build-script-build-hardening",
+      "title": "idea164301 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164301-build-script-build-hardening.md"
+    },
+    {
+      "index": 164305,
+      "idea_id": "idea164302",
+      "filename": "idea164302-build-script-build-performance",
+      "title": "idea164302 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164302-build-script-build-performance.md"
+    },
+    {
+      "index": 164306,
+      "idea_id": "idea164303",
+      "filename": "idea164303-invoked-observability",
+      "title": "idea164303 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164303-invoked-observability.md"
+    },
+    {
+      "index": 164307,
+      "idea_id": "idea164304",
+      "filename": "idea164304-invoked-test-coverage",
+      "title": "idea164304 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164304-invoked-test-coverage.md"
+    },
+    {
+      "index": 164308,
+      "idea_id": "idea164305",
+      "filename": "idea164305-output-observability",
+      "title": "idea164305 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164305-output-observability.md"
+    },
+    {
+      "index": 164309,
+      "idea_id": "idea164306",
+      "filename": "idea164306-output-test-coverage",
+      "title": "idea164306 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164306-output-test-coverage.md"
+    },
+    {
+      "index": 164310,
+      "idea_id": "idea164307",
+      "filename": "idea164307-root-output-observability",
+      "title": "idea164307 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164307-root-output-observability.md"
+    },
+    {
+      "index": 164311,
+      "idea_id": "idea164308",
+      "filename": "idea164308-root-output-test-coverage",
+      "title": "idea164308 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164308-root-output-test-coverage.md"
+    },
+    {
+      "index": 164312,
+      "idea_id": "idea164309",
+      "filename": "idea164309-stderr-observability",
+      "title": "idea164309 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164309-stderr-observability.md"
+    },
+    {
+      "index": 164313,
+      "idea_id": "idea164310",
+      "filename": "idea164310-stderr-test-coverage",
+      "title": "idea164310 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164310-stderr-test-coverage.md"
+    },
+    {
+      "index": 164314,
+      "idea_id": "idea164311",
+      "filename": "idea164311-build-script-build-hardening",
+      "title": "idea164311 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164311-build-script-build-hardening.md"
+    },
+    {
+      "index": 164315,
+      "idea_id": "idea164312",
+      "filename": "idea164312-build-script-build-performance",
+      "title": "idea164312 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164312-build-script-build-performance.md"
+    },
+    {
+      "index": 164316,
+      "idea_id": "idea164313",
+      "filename": "idea164313-build-script-build-9710288fcc24bc28-observability",
+      "title": "idea164313 - build-script-build-9710288fcc24bc28 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-9710288fcc24bc28",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164313-build-script-build-9710288fcc24bc28-observability.md"
+    },
+    {
+      "index": 164317,
+      "idea_id": "idea164314",
+      "filename": "idea164314-build-script-build-9710288fcc24bc28-test-coverage",
+      "title": "idea164314 - build-script-build-9710288fcc24bc28 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-9710288fcc24bc28-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164314-build-script-build-9710288fcc24bc28-test-coverage.md"
+    },
+    {
+      "index": 164318,
+      "idea_id": "idea164315",
+      "filename": "idea164315-build-script-build-9710288fcc24bc28-hardening",
+      "title": "idea164315 - build-script-build-9710288fcc24bc28 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-9710288fcc24bc28",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164315-build-script-build-9710288fcc24bc28-hardening.md"
+    },
+    {
+      "index": 164319,
+      "idea_id": "idea164316",
+      "filename": "idea164316-build-script-build-9710288fcc24bc28-performance",
+      "title": "idea164316 - build-script-build-9710288fcc24bc28 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-9710288fcc24bc28",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164316-build-script-build-9710288fcc24bc28-performance.md"
+    },
+    {
+      "index": 164320,
+      "idea_id": "idea164317",
+      "filename": "idea164317-build-script-build-9710288fcc24bc28-hardening",
+      "title": "idea164317 - build-script-build-9710288fcc24bc28 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-9710288fcc24bc28",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164317-build-script-build-9710288fcc24bc28-hardening.md"
+    },
+    {
+      "index": 164321,
+      "idea_id": "idea164318",
+      "filename": "idea164318-build-script-build-9710288fcc24bc28-performance",
+      "title": "idea164318 - build-script-build-9710288fcc24bc28 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-9710288fcc24bc28",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164318-build-script-build-9710288fcc24bc28-performance.md"
+    },
+    {
+      "index": 164322,
+      "idea_id": "idea164319",
+      "filename": "idea164319-build-script-build-hardening",
+      "title": "idea164319 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164319-build-script-build-hardening.md"
+    },
+    {
+      "index": 164323,
+      "idea_id": "idea164320",
+      "filename": "idea164320-build-script-build-performance",
+      "title": "idea164320 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164320-build-script-build-performance.md"
+    },
+    {
+      "index": 164324,
+      "idea_id": "idea164321",
+      "filename": "idea164321-invoked-observability",
+      "title": "idea164321 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164321-invoked-observability.md"
+    },
+    {
+      "index": 164325,
+      "idea_id": "idea164322",
+      "filename": "idea164322-invoked-test-coverage",
+      "title": "idea164322 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164322-invoked-test-coverage.md"
+    },
+    {
+      "index": 164326,
+      "idea_id": "idea164323",
+      "filename": "idea164323-output-observability",
+      "title": "idea164323 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164323-output-observability.md"
+    },
+    {
+      "index": 164327,
+      "idea_id": "idea164324",
+      "filename": "idea164324-output-test-coverage",
+      "title": "idea164324 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164324-output-test-coverage.md"
+    },
+    {
+      "index": 164328,
+      "idea_id": "idea164325",
+      "filename": "idea164325-root-output-observability",
+      "title": "idea164325 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164325-root-output-observability.md"
+    },
+    {
+      "index": 164329,
+      "idea_id": "idea164326",
+      "filename": "idea164326-root-output-test-coverage",
+      "title": "idea164326 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164326-root-output-test-coverage.md"
+    },
+    {
+      "index": 164330,
+      "idea_id": "idea164327",
+      "filename": "idea164327-stderr-observability",
+      "title": "idea164327 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164327-stderr-observability.md"
+    },
+    {
+      "index": 164331,
+      "idea_id": "idea164328",
+      "filename": "idea164328-stderr-test-coverage",
+      "title": "idea164328 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164328-stderr-test-coverage.md"
+    },
+    {
+      "index": 164332,
+      "idea_id": "idea164329",
+      "filename": "idea164329-invoked-observability",
+      "title": "idea164329 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164329-invoked-observability.md"
+    },
+    {
+      "index": 164333,
+      "idea_id": "idea164330",
+      "filename": "idea164330-invoked-test-coverage",
+      "title": "idea164330 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164330-invoked-test-coverage.md"
+    },
+    {
+      "index": 164334,
+      "idea_id": "idea164331",
+      "filename": "idea164331-host-api-consistency",
+      "title": "idea164331 - host API Consistency",
+      "archetype": "consistency",
+      "component": "host-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164331-host-api-consistency.md"
+    },
+    {
+      "index": 164335,
+      "idea_id": "idea164332",
+      "filename": "idea164332-host-migration-readiness",
+      "title": "idea164332 - host Migration Readiness",
+      "archetype": "readiness",
+      "component": "host-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164332-host-migration-readiness.md"
+    },
+    {
+      "index": 164336,
+      "idea_id": "idea164333",
+      "filename": "idea164333-host-observability",
+      "title": "idea164333 - host Observability",
+      "archetype": "observability",
+      "component": "host",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164333-host-observability.md"
+    },
+    {
+      "index": 164337,
+      "idea_id": "idea164334",
+      "filename": "idea164334-host-security",
+      "title": "idea164334 - host Security",
+      "archetype": "security",
+      "component": "host",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164334-host-security.md"
+    },
+    {
+      "index": 164338,
+      "idea_id": "idea164335",
+      "filename": "idea164335-host-test-coverage",
+      "title": "idea164335 - host Test Coverage",
+      "archetype": "coverage",
+      "component": "host-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164335-host-test-coverage.md"
+    },
+    {
+      "index": 164339,
+      "idea_id": "idea164336",
+      "filename": "idea164336-output-observability",
+      "title": "idea164336 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164336-output-observability.md"
+    },
+    {
+      "index": 164340,
+      "idea_id": "idea164337",
+      "filename": "idea164337-output-test-coverage",
+      "title": "idea164337 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164337-output-test-coverage.md"
+    },
+    {
+      "index": 164341,
+      "idea_id": "idea164338",
+      "filename": "idea164338-root-output-observability",
+      "title": "idea164338 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164338-root-output-observability.md"
+    },
+    {
+      "index": 164342,
+      "idea_id": "idea164339",
+      "filename": "idea164339-root-output-test-coverage",
+      "title": "idea164339 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164339-root-output-test-coverage.md"
+    },
+    {
+      "index": 164343,
+      "idea_id": "idea164340",
+      "filename": "idea164340-stderr-observability",
+      "title": "idea164340 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164340-stderr-observability.md"
+    },
+    {
+      "index": 164344,
+      "idea_id": "idea164341",
+      "filename": "idea164341-stderr-test-coverage",
+      "title": "idea164341 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164341-stderr-test-coverage.md"
+    },
+    {
+      "index": 164345,
+      "idea_id": "idea164342",
+      "filename": "idea164342-build-script-build-hardening",
+      "title": "idea164342 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164342-build-script-build-hardening.md"
+    },
+    {
+      "index": 164346,
+      "idea_id": "idea164343",
+      "filename": "idea164343-build-script-build-performance",
+      "title": "idea164343 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164343-build-script-build-performance.md"
+    },
+    {
+      "index": 164347,
+      "idea_id": "idea164344",
+      "filename": "idea164344-build-script-build-82aa94ae42734b0c-observability",
+      "title": "idea164344 - build-script-build-82aa94ae42734b0c Observability",
+      "archetype": "observability",
+      "component": "build-script-build-82aa94ae42734b0c",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164344-build-script-build-82aa94ae42734b0c-observability.md"
+    },
+    {
+      "index": 164348,
+      "idea_id": "idea164345",
+      "filename": "idea164345-build-script-build-82aa94ae42734b0c-test-coverage",
+      "title": "idea164345 - build-script-build-82aa94ae42734b0c Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-82aa94ae42734b0c-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164345-build-script-build-82aa94ae42734b0c-test-coverage.md"
+    },
+    {
+      "index": 164349,
+      "idea_id": "idea164346",
+      "filename": "idea164346-build-script-build-82aa94ae42734b0c-hardening",
+      "title": "idea164346 - build-script-build-82aa94ae42734b0c Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-82aa94ae42734b0c",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164346-build-script-build-82aa94ae42734b0c-hardening.md"
+    },
+    {
+      "index": 164350,
+      "idea_id": "idea164347",
+      "filename": "idea164347-build-script-build-82aa94ae42734b0c-performance",
+      "title": "idea164347 - build-script-build-82aa94ae42734b0c Performance",
+      "archetype": "performance",
+      "component": "build-script-build-82aa94ae42734b0c",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164347-build-script-build-82aa94ae42734b0c-performance.md"
+    },
+    {
+      "index": 164351,
+      "idea_id": "idea164348",
+      "filename": "idea164348-build-script-build-82aa94ae42734b0c-hardening",
+      "title": "idea164348 - build-script-build-82aa94ae42734b0c Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-82aa94ae42734b0c",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164348-build-script-build-82aa94ae42734b0c-hardening.md"
+    },
+    {
+      "index": 164352,
+      "idea_id": "idea164349",
+      "filename": "idea164349-build-script-build-82aa94ae42734b0c-performance",
+      "title": "idea164349 - build-script-build-82aa94ae42734b0c Performance",
+      "archetype": "performance",
+      "component": "build-script-build-82aa94ae42734b0c",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164349-build-script-build-82aa94ae42734b0c-performance.md"
+    },
+    {
+      "index": 164353,
+      "idea_id": "idea164350",
+      "filename": "idea164350-build-script-build-hardening",
+      "title": "idea164350 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164350-build-script-build-hardening.md"
+    },
+    {
+      "index": 164354,
+      "idea_id": "idea164351",
+      "filename": "idea164351-build-script-build-performance",
+      "title": "idea164351 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164351-build-script-build-performance.md"
+    },
+    {
+      "index": 164355,
+      "idea_id": "idea164352",
+      "filename": "idea164352-build-script-build-hardening",
+      "title": "idea164352 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164352-build-script-build-hardening.md"
+    },
+    {
+      "index": 164356,
+      "idea_id": "idea164353",
+      "filename": "idea164353-build-script-build-performance",
+      "title": "idea164353 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164353-build-script-build-performance.md"
+    },
+    {
+      "index": 164357,
+      "idea_id": "idea164354",
+      "filename": "idea164354-build-script-build-83a4af280a4d3d7d-observability",
+      "title": "idea164354 - build-script-build-83a4af280a4d3d7d Observability",
+      "archetype": "observability",
+      "component": "build-script-build-83a4af280a4d3d7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164354-build-script-build-83a4af280a4d3d7d-observability.md"
+    },
+    {
+      "index": 164358,
+      "idea_id": "idea164355",
+      "filename": "idea164355-build-script-build-83a4af280a4d3d7d-test-coverage",
+      "title": "idea164355 - build-script-build-83a4af280a4d3d7d Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-83a4af280a4d3d7d-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164355-build-script-build-83a4af280a4d3d7d-test-coverage.md"
+    },
+    {
+      "index": 164359,
+      "idea_id": "idea164356",
+      "filename": "idea164356-build-script-build-83a4af280a4d3d7d-hardening",
+      "title": "idea164356 - build-script-build-83a4af280a4d3d7d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-83a4af280a4d3d7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164356-build-script-build-83a4af280a4d3d7d-hardening.md"
+    },
+    {
+      "index": 164360,
+      "idea_id": "idea164357",
+      "filename": "idea164357-build-script-build-83a4af280a4d3d7d-performance",
+      "title": "idea164357 - build-script-build-83a4af280a4d3d7d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-83a4af280a4d3d7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164357-build-script-build-83a4af280a4d3d7d-performance.md"
+    },
+    {
+      "index": 164361,
+      "idea_id": "idea164358",
+      "filename": "idea164358-build-script-build-83a4af280a4d3d7d-hardening",
+      "title": "idea164358 - build-script-build-83a4af280a4d3d7d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-83a4af280a4d3d7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164358-build-script-build-83a4af280a4d3d7d-hardening.md"
+    },
+    {
+      "index": 164362,
+      "idea_id": "idea164359",
+      "filename": "idea164359-build-script-build-83a4af280a4d3d7d-performance",
+      "title": "idea164359 - build-script-build-83a4af280a4d3d7d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-83a4af280a4d3d7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164359-build-script-build-83a4af280a4d3d7d-performance.md"
+    },
+    {
+      "index": 164363,
+      "idea_id": "idea164360",
+      "filename": "idea164360-build-script-build-hardening",
+      "title": "idea164360 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164360-build-script-build-hardening.md"
+    },
+    {
+      "index": 164364,
+      "idea_id": "idea164361",
+      "filename": "idea164361-build-script-build-performance",
+      "title": "idea164361 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164361-build-script-build-performance.md"
+    },
+    {
+      "index": 164365,
+      "idea_id": "idea164362",
+      "filename": "idea164362-invoked-observability",
+      "title": "idea164362 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164362-invoked-observability.md"
+    },
+    {
+      "index": 164366,
+      "idea_id": "idea164363",
+      "filename": "idea164363-invoked-test-coverage",
+      "title": "idea164363 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164363-invoked-test-coverage.md"
+    },
+    {
+      "index": 164367,
+      "idea_id": "idea164364",
+      "filename": "idea164364-host-api-consistency",
+      "title": "idea164364 - host API Consistency",
+      "archetype": "consistency",
+      "component": "host-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164364-host-api-consistency.md"
+    },
+    {
+      "index": 164368,
+      "idea_id": "idea164365",
+      "filename": "idea164365-host-migration-readiness",
+      "title": "idea164365 - host Migration Readiness",
+      "archetype": "readiness",
+      "component": "host-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164365-host-migration-readiness.md"
+    },
+    {
+      "index": 164369,
+      "idea_id": "idea164366",
+      "filename": "idea164366-host-observability",
+      "title": "idea164366 - host Observability",
+      "archetype": "observability",
+      "component": "host",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164366-host-observability.md"
+    },
+    {
+      "index": 164370,
+      "idea_id": "idea164367",
+      "filename": "idea164367-host-security",
+      "title": "idea164367 - host Security",
+      "archetype": "security",
+      "component": "host",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164367-host-security.md"
+    },
+    {
+      "index": 164371,
+      "idea_id": "idea164368",
+      "filename": "idea164368-host-test-coverage",
+      "title": "idea164368 - host Test Coverage",
+      "archetype": "coverage",
+      "component": "host-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164368-host-test-coverage.md"
+    },
+    {
+      "index": 164372,
+      "idea_id": "idea164369",
+      "filename": "idea164369-output-observability",
+      "title": "idea164369 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164369-output-observability.md"
+    },
+    {
+      "index": 164373,
+      "idea_id": "idea164370",
+      "filename": "idea164370-output-test-coverage",
+      "title": "idea164370 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164370-output-test-coverage.md"
+    },
+    {
+      "index": 164374,
+      "idea_id": "idea164371",
+      "filename": "idea164371-root-output-observability",
+      "title": "idea164371 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164371-root-output-observability.md"
+    },
+    {
+      "index": 164375,
+      "idea_id": "idea164372",
+      "filename": "idea164372-root-output-test-coverage",
+      "title": "idea164372 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164372-root-output-test-coverage.md"
+    },
+    {
+      "index": 164376,
+      "idea_id": "idea164373",
+      "filename": "idea164373-stderr-observability",
+      "title": "idea164373 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164373-stderr-observability.md"
+    },
+    {
+      "index": 164377,
+      "idea_id": "idea164374",
+      "filename": "idea164374-stderr-test-coverage",
+      "title": "idea164374 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164374-stderr-test-coverage.md"
+    },
+    {
+      "index": 164378,
+      "idea_id": "idea164375",
+      "filename": "idea164375-build-script-build-hardening",
+      "title": "idea164375 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164375-build-script-build-hardening.md"
+    },
+    {
+      "index": 164379,
+      "idea_id": "idea164376",
+      "filename": "idea164376-build-script-build-performance",
+      "title": "idea164376 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164376-build-script-build-performance.md"
+    },
+    {
+      "index": 164380,
+      "idea_id": "idea164377",
+      "filename": "idea164377-build-script-build-1ee6afc9f8e45c6a-observability",
+      "title": "idea164377 - build-script-build-1ee6afc9f8e45c6a Observability",
+      "archetype": "observability",
+      "component": "build-script-build-1ee6afc9f8e45c6a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164377-build-script-build-1ee6afc9f8e45c6a-observability.md"
+    },
+    {
+      "index": 164381,
+      "idea_id": "idea164378",
+      "filename": "idea164378-build-script-build-1ee6afc9f8e45c6a-test-coverage",
+      "title": "idea164378 - build-script-build-1ee6afc9f8e45c6a Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-1ee6afc9f8e45c6a-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164378-build-script-build-1ee6afc9f8e45c6a-test-coverage.md"
+    },
+    {
+      "index": 164382,
+      "idea_id": "idea164379",
+      "filename": "idea164379-build-script-build-1ee6afc9f8e45c6a-hardening",
+      "title": "idea164379 - build-script-build-1ee6afc9f8e45c6a Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1ee6afc9f8e45c6a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164379-build-script-build-1ee6afc9f8e45c6a-hardening.md"
+    },
+    {
+      "index": 164383,
+      "idea_id": "idea164380",
+      "filename": "idea164380-build-script-build-1ee6afc9f8e45c6a-performance",
+      "title": "idea164380 - build-script-build-1ee6afc9f8e45c6a Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1ee6afc9f8e45c6a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164380-build-script-build-1ee6afc9f8e45c6a-performance.md"
+    },
+    {
+      "index": 164384,
+      "idea_id": "idea164381",
+      "filename": "idea164381-build-script-build-1ee6afc9f8e45c6a-hardening",
+      "title": "idea164381 - build-script-build-1ee6afc9f8e45c6a Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1ee6afc9f8e45c6a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164381-build-script-build-1ee6afc9f8e45c6a-hardening.md"
+    },
+    {
+      "index": 164385,
+      "idea_id": "idea164382",
+      "filename": "idea164382-build-script-build-1ee6afc9f8e45c6a-performance",
+      "title": "idea164382 - build-script-build-1ee6afc9f8e45c6a Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1ee6afc9f8e45c6a",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164382-build-script-build-1ee6afc9f8e45c6a-performance.md"
+    },
+    {
+      "index": 164386,
+      "idea_id": "idea164383",
+      "filename": "idea164383-build-script-build-hardening",
+      "title": "idea164383 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164383-build-script-build-hardening.md"
+    },
+    {
+      "index": 164387,
+      "idea_id": "idea164384",
+      "filename": "idea164384-build-script-build-performance",
+      "title": "idea164384 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164384-build-script-build-performance.md"
+    },
+    {
+      "index": 164388,
+      "idea_id": "idea164385",
+      "filename": "idea164385-build-script-build-hardening",
+      "title": "idea164385 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164385-build-script-build-hardening.md"
+    },
+    {
+      "index": 164389,
+      "idea_id": "idea164386",
+      "filename": "idea164386-build-script-build-performance",
+      "title": "idea164386 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164386-build-script-build-performance.md"
+    },
+    {
+      "index": 164390,
+      "idea_id": "idea164387",
+      "filename": "idea164387-build-script-build-5943df3e0a4b0a7d-observability",
+      "title": "idea164387 - build-script-build-5943df3e0a4b0a7d Observability",
+      "archetype": "observability",
+      "component": "build-script-build-5943df3e0a4b0a7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164387-build-script-build-5943df3e0a4b0a7d-observability.md"
+    },
+    {
+      "index": 164391,
+      "idea_id": "idea164388",
+      "filename": "idea164388-build-script-build-5943df3e0a4b0a7d-test-coverage",
+      "title": "idea164388 - build-script-build-5943df3e0a4b0a7d Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-5943df3e0a4b0a7d-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164388-build-script-build-5943df3e0a4b0a7d-test-coverage.md"
+    },
+    {
+      "index": 164392,
+      "idea_id": "idea164389",
+      "filename": "idea164389-build-script-build-5943df3e0a4b0a7d-hardening",
+      "title": "idea164389 - build-script-build-5943df3e0a4b0a7d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-5943df3e0a4b0a7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164389-build-script-build-5943df3e0a4b0a7d-hardening.md"
+    },
+    {
+      "index": 164393,
+      "idea_id": "idea164390",
+      "filename": "idea164390-build-script-build-5943df3e0a4b0a7d-performance",
+      "title": "idea164390 - build-script-build-5943df3e0a4b0a7d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-5943df3e0a4b0a7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164390-build-script-build-5943df3e0a4b0a7d-performance.md"
+    },
+    {
+      "index": 164394,
+      "idea_id": "idea164391",
+      "filename": "idea164391-build-script-build-5943df3e0a4b0a7d-hardening",
+      "title": "idea164391 - build-script-build-5943df3e0a4b0a7d Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-5943df3e0a4b0a7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164391-build-script-build-5943df3e0a4b0a7d-hardening.md"
+    },
+    {
+      "index": 164395,
+      "idea_id": "idea164392",
+      "filename": "idea164392-build-script-build-5943df3e0a4b0a7d-performance",
+      "title": "idea164392 - build-script-build-5943df3e0a4b0a7d Performance",
+      "archetype": "performance",
+      "component": "build-script-build-5943df3e0a4b0a7d",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164392-build-script-build-5943df3e0a4b0a7d-performance.md"
+    },
+    {
+      "index": 164396,
+      "idea_id": "idea164393",
+      "filename": "idea164393-build-script-build-hardening",
+      "title": "idea164393 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164393-build-script-build-hardening.md"
+    },
+    {
+      "index": 164397,
+      "idea_id": "idea164394",
+      "filename": "idea164394-build-script-build-performance",
+      "title": "idea164394 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164394-build-script-build-performance.md"
+    },
+    {
+      "index": 164398,
+      "idea_id": "idea164395",
+      "filename": "idea164395-invoked-observability",
+      "title": "idea164395 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164395-invoked-observability.md"
+    },
+    {
+      "index": 164399,
+      "idea_id": "idea164396",
+      "filename": "idea164396-invoked-test-coverage",
+      "title": "idea164396 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164396-invoked-test-coverage.md"
+    },
+    {
+      "index": 164400,
+      "idea_id": "idea164397",
+      "filename": "idea164397-tests-api-consistency",
+      "title": "idea164397 - tests API Consistency",
+      "archetype": "consistency",
+      "component": "tests-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164397-tests-api-consistency.md"
+    },
+    {
+      "index": 164401,
+      "idea_id": "idea164398",
+      "filename": "idea164398-tests-migration-readiness",
+      "title": "idea164398 - tests Migration Readiness",
+      "archetype": "readiness",
+      "component": "tests-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164398-tests-migration-readiness.md"
+    },
+    {
+      "index": 164402,
+      "idea_id": "idea164399",
+      "filename": "idea164399-tests-observability",
+      "title": "idea164399 - tests Observability",
+      "archetype": "observability",
+      "component": "tests",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164399-tests-observability.md"
+    },
+    {
+      "index": 164403,
+      "idea_id": "idea164400",
+      "filename": "idea164400-tests-security",
+      "title": "idea164400 - tests Security",
+      "archetype": "security",
+      "component": "tests",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164400-tests-security.md"
+    },
+    {
+      "index": 164404,
+      "idea_id": "idea164401",
+      "filename": "idea164401-tests-test-coverage",
+      "title": "idea164401 - tests Test Coverage",
+      "archetype": "coverage",
+      "component": "tests-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164401-tests-test-coverage.md"
+    },
+    {
+      "index": 164405,
+      "idea_id": "idea164402",
+      "filename": "idea164402-output-observability",
+      "title": "idea164402 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164402-output-observability.md"
+    },
+    {
+      "index": 164406,
+      "idea_id": "idea164403",
+      "filename": "idea164403-output-test-coverage",
+      "title": "idea164403 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164403-output-test-coverage.md"
+    },
+    {
+      "index": 164407,
+      "idea_id": "idea164404",
+      "filename": "idea164404-root-output-observability",
+      "title": "idea164404 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164404-root-output-observability.md"
+    },
+    {
+      "index": 164408,
+      "idea_id": "idea164405",
+      "filename": "idea164405-root-output-test-coverage",
+      "title": "idea164405 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164405-root-output-test-coverage.md"
+    },
+    {
+      "index": 164409,
+      "idea_id": "idea164406",
+      "filename": "idea164406-stderr-observability",
+      "title": "idea164406 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164406-stderr-observability.md"
+    },
+    {
+      "index": 164410,
+      "idea_id": "idea164407",
+      "filename": "idea164407-stderr-test-coverage",
+      "title": "idea164407 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164407-stderr-test-coverage.md"
+    },
+    {
+      "index": 164411,
+      "idea_id": "idea164408",
+      "filename": "idea164408-invoked-observability",
+      "title": "idea164408 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164408-invoked-observability.md"
+    },
+    {
+      "index": 164412,
+      "idea_id": "idea164409",
+      "filename": "idea164409-invoked-test-coverage",
+      "title": "idea164409 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164409-invoked-test-coverage.md"
+    },
+    {
+      "index": 164413,
+      "idea_id": "idea164410",
+      "filename": "idea164410-tests-api-consistency",
+      "title": "idea164410 - tests API Consistency",
+      "archetype": "consistency",
+      "component": "tests-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164410-tests-api-consistency.md"
+    },
+    {
+      "index": 164414,
+      "idea_id": "idea164411",
+      "filename": "idea164411-tests-migration-readiness",
+      "title": "idea164411 - tests Migration Readiness",
+      "archetype": "readiness",
+      "component": "tests-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164411-tests-migration-readiness.md"
+    },
+    {
+      "index": 164415,
+      "idea_id": "idea164412",
+      "filename": "idea164412-tests-observability",
+      "title": "idea164412 - tests Observability",
+      "archetype": "observability",
+      "component": "tests",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164412-tests-observability.md"
+    },
+    {
+      "index": 164416,
+      "idea_id": "idea164413",
+      "filename": "idea164413-tests-security",
+      "title": "idea164413 - tests Security",
+      "archetype": "security",
+      "component": "tests",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164413-tests-security.md"
+    },
+    {
+      "index": 164417,
+      "idea_id": "idea164414",
+      "filename": "idea164414-tests-test-coverage",
+      "title": "idea164414 - tests Test Coverage",
+      "archetype": "coverage",
+      "component": "tests-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164414-tests-test-coverage.md"
+    },
+    {
+      "index": 164418,
+      "idea_id": "idea164415",
+      "filename": "idea164415-output-observability",
+      "title": "idea164415 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164415-output-observability.md"
+    },
+    {
+      "index": 164419,
+      "idea_id": "idea164416",
+      "filename": "idea164416-output-test-coverage",
+      "title": "idea164416 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164416-output-test-coverage.md"
+    },
+    {
+      "index": 164420,
+      "idea_id": "idea164417",
+      "filename": "idea164417-root-output-observability",
+      "title": "idea164417 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164417-root-output-observability.md"
+    },
+    {
+      "index": 164421,
+      "idea_id": "idea164418",
+      "filename": "idea164418-root-output-test-coverage",
+      "title": "idea164418 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164418-root-output-test-coverage.md"
+    },
+    {
+      "index": 164422,
+      "idea_id": "idea164419",
+      "filename": "idea164419-stderr-observability",
+      "title": "idea164419 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164419-stderr-observability.md"
+    },
+    {
+      "index": 164423,
+      "idea_id": "idea164420",
+      "filename": "idea164420-stderr-test-coverage",
+      "title": "idea164420 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164420-stderr-test-coverage.md"
+    },
+    {
+      "index": 164424,
+      "idea_id": "idea164421",
+      "filename": "idea164421-build-script-build-hardening",
+      "title": "idea164421 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164421-build-script-build-hardening.md"
+    },
+    {
+      "index": 164425,
+      "idea_id": "idea164422",
+      "filename": "idea164422-build-script-build-performance",
+      "title": "idea164422 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164422-build-script-build-performance.md"
+    },
+    {
+      "index": 164426,
+      "idea_id": "idea164423",
+      "filename": "idea164423-build-script-build-1aaaa6be3ad11f88-observability",
+      "title": "idea164423 - build-script-build-1aaaa6be3ad11f88 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-1aaaa6be3ad11f88",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164423-build-script-build-1aaaa6be3ad11f88-observability.md"
+    },
+    {
+      "index": 164427,
+      "idea_id": "idea164424",
+      "filename": "idea164424-build-script-build-1aaaa6be3ad11f88-test-coverage",
+      "title": "idea164424 - build-script-build-1aaaa6be3ad11f88 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-1aaaa6be3ad11f88-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164424-build-script-build-1aaaa6be3ad11f88-test-coverage.md"
+    },
+    {
+      "index": 164428,
+      "idea_id": "idea164425",
+      "filename": "idea164425-build-script-build-1aaaa6be3ad11f88-hardening",
+      "title": "idea164425 - build-script-build-1aaaa6be3ad11f88 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1aaaa6be3ad11f88",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164425-build-script-build-1aaaa6be3ad11f88-hardening.md"
+    },
+    {
+      "index": 164429,
+      "idea_id": "idea164426",
+      "filename": "idea164426-build-script-build-1aaaa6be3ad11f88-performance",
+      "title": "idea164426 - build-script-build-1aaaa6be3ad11f88 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1aaaa6be3ad11f88",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164426-build-script-build-1aaaa6be3ad11f88-performance.md"
+    },
+    {
+      "index": 164430,
+      "idea_id": "idea164427",
+      "filename": "idea164427-build-script-build-1aaaa6be3ad11f88-hardening",
+      "title": "idea164427 - build-script-build-1aaaa6be3ad11f88 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-1aaaa6be3ad11f88",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164427-build-script-build-1aaaa6be3ad11f88-hardening.md"
+    },
+    {
+      "index": 164431,
+      "idea_id": "idea164428",
+      "filename": "idea164428-build-script-build-1aaaa6be3ad11f88-performance",
+      "title": "idea164428 - build-script-build-1aaaa6be3ad11f88 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-1aaaa6be3ad11f88",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164428-build-script-build-1aaaa6be3ad11f88-performance.md"
+    },
+    {
+      "index": 164432,
+      "idea_id": "idea164429",
+      "filename": "idea164429-build-script-build-hardening",
+      "title": "idea164429 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164429-build-script-build-hardening.md"
+    },
+    {
+      "index": 164433,
+      "idea_id": "idea164430",
+      "filename": "idea164430-build-script-build-performance",
+      "title": "idea164430 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164430-build-script-build-performance.md"
+    },
+    {
+      "index": 164434,
+      "idea_id": "idea164431",
+      "filename": "idea164431-invoked-observability",
+      "title": "idea164431 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164431-invoked-observability.md"
+    },
+    {
+      "index": 164435,
+      "idea_id": "idea164432",
+      "filename": "idea164432-invoked-test-coverage",
+      "title": "idea164432 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164432-invoked-test-coverage.md"
+    },
+    {
+      "index": 164436,
+      "idea_id": "idea164433",
+      "filename": "idea164433-output-observability",
+      "title": "idea164433 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164433-output-observability.md"
+    },
+    {
+      "index": 164437,
+      "idea_id": "idea164434",
+      "filename": "idea164434-output-test-coverage",
+      "title": "idea164434 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164434-output-test-coverage.md"
+    },
+    {
+      "index": 164438,
+      "idea_id": "idea164435",
+      "filename": "idea164435-root-output-observability",
+      "title": "idea164435 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164435-root-output-observability.md"
+    },
+    {
+      "index": 164439,
+      "idea_id": "idea164436",
+      "filename": "idea164436-root-output-test-coverage",
+      "title": "idea164436 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164436-root-output-test-coverage.md"
+    },
+    {
+      "index": 164440,
+      "idea_id": "idea164437",
+      "filename": "idea164437-stderr-observability",
+      "title": "idea164437 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164437-stderr-observability.md"
+    },
+    {
+      "index": 164441,
+      "idea_id": "idea164438",
+      "filename": "idea164438-stderr-test-coverage",
+      "title": "idea164438 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164438-stderr-test-coverage.md"
+    },
+    {
+      "index": 164442,
+      "idea_id": "idea164439",
+      "filename": "idea164439-build-script-build-hardening",
+      "title": "idea164439 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164439-build-script-build-hardening.md"
+    },
+    {
+      "index": 164443,
+      "idea_id": "idea164440",
+      "filename": "idea164440-build-script-build-performance",
+      "title": "idea164440 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164440-build-script-build-performance.md"
+    },
+    {
+      "index": 164444,
+      "idea_id": "idea164441",
+      "filename": "idea164441-build-script-build-eccdffcf5a227cff-observability",
+      "title": "idea164441 - build-script-build-eccdffcf5a227cff Observability",
+      "archetype": "observability",
+      "component": "build-script-build-eccdffcf5a227cff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164441-build-script-build-eccdffcf5a227cff-observability.md"
+    },
+    {
+      "index": 164445,
+      "idea_id": "idea164442",
+      "filename": "idea164442-build-script-build-eccdffcf5a227cff-test-coverage",
+      "title": "idea164442 - build-script-build-eccdffcf5a227cff Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-eccdffcf5a227cff-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164442-build-script-build-eccdffcf5a227cff-test-coverage.md"
+    },
+    {
+      "index": 164446,
+      "idea_id": "idea164443",
+      "filename": "idea164443-build-script-build-eccdffcf5a227cff-hardening",
+      "title": "idea164443 - build-script-build-eccdffcf5a227cff Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-eccdffcf5a227cff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164443-build-script-build-eccdffcf5a227cff-hardening.md"
+    },
+    {
+      "index": 164447,
+      "idea_id": "idea164444",
+      "filename": "idea164444-build-script-build-eccdffcf5a227cff-performance",
+      "title": "idea164444 - build-script-build-eccdffcf5a227cff Performance",
+      "archetype": "performance",
+      "component": "build-script-build-eccdffcf5a227cff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164444-build-script-build-eccdffcf5a227cff-performance.md"
+    },
+    {
+      "index": 164448,
+      "idea_id": "idea164445",
+      "filename": "idea164445-build-script-build-eccdffcf5a227cff-hardening",
+      "title": "idea164445 - build-script-build-eccdffcf5a227cff Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-eccdffcf5a227cff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164445-build-script-build-eccdffcf5a227cff-hardening.md"
+    },
+    {
+      "index": 164449,
+      "idea_id": "idea164446",
+      "filename": "idea164446-build-script-build-eccdffcf5a227cff-performance",
+      "title": "idea164446 - build-script-build-eccdffcf5a227cff Performance",
+      "archetype": "performance",
+      "component": "build-script-build-eccdffcf5a227cff",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164446-build-script-build-eccdffcf5a227cff-performance.md"
+    },
+    {
+      "index": 164450,
+      "idea_id": "idea164447",
+      "filename": "idea164447-build-script-build-hardening",
+      "title": "idea164447 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164447-build-script-build-hardening.md"
+    },
+    {
+      "index": 164451,
+      "idea_id": "idea164448",
+      "filename": "idea164448-build-script-build-performance",
+      "title": "idea164448 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164448-build-script-build-performance.md"
+    },
+    {
+      "index": 164452,
+      "idea_id": "idea164449",
+      "filename": "idea164449-invoked-observability",
+      "title": "idea164449 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164449-invoked-observability.md"
+    },
+    {
+      "index": 164453,
+      "idea_id": "idea164450",
+      "filename": "idea164450-invoked-test-coverage",
+      "title": "idea164450 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164450-invoked-test-coverage.md"
+    },
+    {
+      "index": 164454,
+      "idea_id": "idea164451",
+      "filename": "idea164451-output-observability",
+      "title": "idea164451 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164451-output-observability.md"
+    },
+    {
+      "index": 164455,
+      "idea_id": "idea164452",
+      "filename": "idea164452-output-test-coverage",
+      "title": "idea164452 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164452-output-test-coverage.md"
+    },
+    {
+      "index": 164456,
+      "idea_id": "idea164453",
+      "filename": "idea164453-root-output-observability",
+      "title": "idea164453 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164453-root-output-observability.md"
+    },
+    {
+      "index": 164457,
+      "idea_id": "idea164454",
+      "filename": "idea164454-root-output-test-coverage",
+      "title": "idea164454 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164454-root-output-test-coverage.md"
+    },
+    {
+      "index": 164458,
+      "idea_id": "idea164455",
+      "filename": "idea164455-stderr-observability",
+      "title": "idea164455 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164455-stderr-observability.md"
+    },
+    {
+      "index": 164459,
+      "idea_id": "idea164456",
+      "filename": "idea164456-stderr-test-coverage",
+      "title": "idea164456 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164456-stderr-test-coverage.md"
+    },
+    {
+      "index": 164460,
+      "idea_id": "idea164457",
+      "filename": "idea164457-build-script-build-hardening",
+      "title": "idea164457 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164457-build-script-build-hardening.md"
+    },
+    {
+      "index": 164461,
+      "idea_id": "idea164458",
+      "filename": "idea164458-build-script-build-performance",
+      "title": "idea164458 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164458-build-script-build-performance.md"
+    },
+    {
+      "index": 164462,
+      "idea_id": "idea164459",
+      "filename": "idea164459-build-script-build-38540bf3181b7a31-observability",
+      "title": "idea164459 - build-script-build-38540bf3181b7a31 Observability",
+      "archetype": "observability",
+      "component": "build-script-build-38540bf3181b7a31",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164459-build-script-build-38540bf3181b7a31-observability.md"
+    },
+    {
+      "index": 164463,
+      "idea_id": "idea164460",
+      "filename": "idea164460-build-script-build-38540bf3181b7a31-test-coverage",
+      "title": "idea164460 - build-script-build-38540bf3181b7a31 Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-38540bf3181b7a31-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164460-build-script-build-38540bf3181b7a31-test-coverage.md"
+    },
+    {
+      "index": 164464,
+      "idea_id": "idea164461",
+      "filename": "idea164461-build-script-build-38540bf3181b7a31-hardening",
+      "title": "idea164461 - build-script-build-38540bf3181b7a31 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-38540bf3181b7a31",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164461-build-script-build-38540bf3181b7a31-hardening.md"
+    },
+    {
+      "index": 164465,
+      "idea_id": "idea164462",
+      "filename": "idea164462-build-script-build-38540bf3181b7a31-performance",
+      "title": "idea164462 - build-script-build-38540bf3181b7a31 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-38540bf3181b7a31",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164462-build-script-build-38540bf3181b7a31-performance.md"
+    },
+    {
+      "index": 164466,
+      "idea_id": "idea164463",
+      "filename": "idea164463-build-script-build-38540bf3181b7a31-hardening",
+      "title": "idea164463 - build-script-build-38540bf3181b7a31 Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-38540bf3181b7a31",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164463-build-script-build-38540bf3181b7a31-hardening.md"
+    },
+    {
+      "index": 164467,
+      "idea_id": "idea164464",
+      "filename": "idea164464-build-script-build-38540bf3181b7a31-performance",
+      "title": "idea164464 - build-script-build-38540bf3181b7a31 Performance",
+      "archetype": "performance",
+      "component": "build-script-build-38540bf3181b7a31",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164464-build-script-build-38540bf3181b7a31-performance.md"
+    },
+    {
+      "index": 164468,
+      "idea_id": "idea164465",
+      "filename": "idea164465-build-script-build-hardening",
+      "title": "idea164465 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164465-build-script-build-hardening.md"
+    },
+    {
+      "index": 164469,
+      "idea_id": "idea164466",
+      "filename": "idea164466-build-script-build-performance",
+      "title": "idea164466 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164466-build-script-build-performance.md"
+    },
+    {
+      "index": 164470,
+      "idea_id": "idea164467",
+      "filename": "idea164467-invoked-observability",
+      "title": "idea164467 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164467-invoked-observability.md"
+    },
+    {
+      "index": 164471,
+      "idea_id": "idea164468",
+      "filename": "idea164468-invoked-test-coverage",
+      "title": "idea164468 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164468-invoked-test-coverage.md"
+    },
+    {
+      "index": 164472,
+      "idea_id": "idea164469",
+      "filename": "idea164469-output-observability",
+      "title": "idea164469 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164469-output-observability.md"
+    },
+    {
+      "index": 164473,
+      "idea_id": "idea164470",
+      "filename": "idea164470-output-test-coverage",
+      "title": "idea164470 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164470-output-test-coverage.md"
+    },
+    {
+      "index": 164474,
+      "idea_id": "idea164471",
+      "filename": "idea164471-root-output-observability",
+      "title": "idea164471 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164471-root-output-observability.md"
+    },
+    {
+      "index": 164475,
+      "idea_id": "idea164472",
+      "filename": "idea164472-root-output-test-coverage",
+      "title": "idea164472 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164472-root-output-test-coverage.md"
+    },
+    {
+      "index": 164476,
+      "idea_id": "idea164473",
+      "filename": "idea164473-stderr-observability",
+      "title": "idea164473 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164473-stderr-observability.md"
+    },
+    {
+      "index": 164477,
+      "idea_id": "idea164474",
+      "filename": "idea164474-stderr-test-coverage",
+      "title": "idea164474 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164474-stderr-test-coverage.md"
+    },
+    {
+      "index": 164478,
+      "idea_id": "idea164475",
+      "filename": "idea164475-build-script-build-hardening",
+      "title": "idea164475 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164475-build-script-build-hardening.md"
+    },
+    {
+      "index": 164479,
+      "idea_id": "idea164476",
+      "filename": "idea164476-build-script-build-performance",
+      "title": "idea164476 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164476-build-script-build-performance.md"
+    },
+    {
+      "index": 164480,
+      "idea_id": "idea164477",
+      "filename": "idea164477-build-script-build-757516019e19758b-observability",
+      "title": "idea164477 - build-script-build-757516019e19758b Observability",
+      "archetype": "observability",
+      "component": "build-script-build-757516019e19758b",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164477-build-script-build-757516019e19758b-observability.md"
+    },
+    {
+      "index": 164481,
+      "idea_id": "idea164478",
+      "filename": "idea164478-build-script-build-757516019e19758b-test-coverage",
+      "title": "idea164478 - build-script-build-757516019e19758b Test Coverage",
+      "archetype": "coverage",
+      "component": "build-script-build-757516019e19758b-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164478-build-script-build-757516019e19758b-test-coverage.md"
+    },
+    {
+      "index": 164482,
+      "idea_id": "idea164479",
+      "filename": "idea164479-build-script-build-757516019e19758b-hardening",
+      "title": "idea164479 - build-script-build-757516019e19758b Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-757516019e19758b",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164479-build-script-build-757516019e19758b-hardening.md"
+    },
+    {
+      "index": 164483,
+      "idea_id": "idea164480",
+      "filename": "idea164480-build-script-build-757516019e19758b-performance",
+      "title": "idea164480 - build-script-build-757516019e19758b Performance",
+      "archetype": "performance",
+      "component": "build-script-build-757516019e19758b",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164480-build-script-build-757516019e19758b-performance.md"
+    },
+    {
+      "index": 164484,
+      "idea_id": "idea164481",
+      "filename": "idea164481-build-script-build-757516019e19758b-hardening",
+      "title": "idea164481 - build-script-build-757516019e19758b Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build-757516019e19758b",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164481-build-script-build-757516019e19758b-hardening.md"
+    },
+    {
+      "index": 164485,
+      "idea_id": "idea164482",
+      "filename": "idea164482-build-script-build-757516019e19758b-performance",
+      "title": "idea164482 - build-script-build-757516019e19758b Performance",
+      "archetype": "performance",
+      "component": "build-script-build-757516019e19758b",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164482-build-script-build-757516019e19758b-performance.md"
+    },
+    {
+      "index": 164486,
+      "idea_id": "idea164483",
+      "filename": "idea164483-build-script-build-hardening",
+      "title": "idea164483 - build-script-build Hardening",
+      "archetype": "hardening",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164483-build-script-build-hardening.md"
+    },
+    {
+      "index": 164487,
+      "idea_id": "idea164484",
+      "filename": "idea164484-build-script-build-performance",
+      "title": "idea164484 - build-script-build Performance",
+      "archetype": "performance",
+      "component": "build-script-build",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164484-build-script-build-performance.md"
+    },
+    {
+      "index": 164488,
+      "idea_id": "idea164485",
+      "filename": "idea164485-invoked-observability",
+      "title": "idea164485 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164485-invoked-observability.md"
+    },
+    {
+      "index": 164489,
+      "idea_id": "idea164486",
+      "filename": "idea164486-invoked-test-coverage",
+      "title": "idea164486 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164486-invoked-test-coverage.md"
+    },
+    {
+      "index": 164490,
+      "idea_id": "idea164487",
+      "filename": "idea164487-output-observability",
+      "title": "idea164487 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164487-output-observability.md"
+    },
+    {
+      "index": 164491,
+      "idea_id": "idea164488",
+      "filename": "idea164488-output-test-coverage",
+      "title": "idea164488 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164488-output-test-coverage.md"
+    },
+    {
+      "index": 164492,
+      "idea_id": "idea164489",
+      "filename": "idea164489-root-output-observability",
+      "title": "idea164489 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164489-root-output-observability.md"
+    },
+    {
+      "index": 164493,
+      "idea_id": "idea164490",
+      "filename": "idea164490-root-output-test-coverage",
+      "title": "idea164490 - root-output Test Coverage",
+      "archetype": "coverage",
+      "component": "root-output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164490-root-output-test-coverage.md"
+    },
+    {
+      "index": 164494,
+      "idea_id": "idea164491",
+      "filename": "idea164491-stderr-observability",
+      "title": "idea164491 - stderr Observability",
+      "archetype": "observability",
+      "component": "stderr",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164491-stderr-observability.md"
+    },
+    {
+      "index": 164495,
+      "idea_id": "idea164492",
+      "filename": "idea164492-stderr-test-coverage",
+      "title": "idea164492 - stderr Test Coverage",
+      "archetype": "coverage",
+      "component": "stderr-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164492-stderr-test-coverage.md"
+    },
+    {
+      "index": 164496,
+      "idea_id": "idea164493",
+      "filename": "idea164493-invoked-observability",
+      "title": "idea164493 - invoked Observability",
+      "archetype": "observability",
+      "component": "invoked",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164493-invoked-observability.md"
+    },
+    {
+      "index": 164497,
+      "idea_id": "idea164494",
+      "filename": "idea164494-invoked-test-coverage",
+      "title": "idea164494 - invoked Test Coverage",
+      "archetype": "coverage",
+      "component": "invoked-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164494-invoked-test-coverage.md"
+    },
+    {
+      "index": 164498,
+      "idea_id": "idea164495",
+      "filename": "idea164495-output-observability",
+      "title": "idea164495 - output Observability",
+      "archetype": "observability",
+      "component": "output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164495-output-observability.md"
+    },
+    {
+      "index": 164499,
+      "idea_id": "idea164496",
+      "filename": "idea164496-output-test-coverage",
+      "title": "idea164496 - output Test Coverage",
+      "archetype": "coverage",
+      "component": "output-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164496-output-test-coverage.md"
+    },
+    {
+      "index": 164500,
+      "idea_id": "idea164497",
+      "filename": "idea164497-root-output-observability",
+      "title": "idea164497 - root-output Observability",
+      "archetype": "observability",
+      "component": "root-output",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f16/idea164497-root-output-observability.md"
+    }
+  ],
+  "projects_to_create": 50
+}

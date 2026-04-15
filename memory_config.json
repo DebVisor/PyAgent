@@ -1,0 +1,35 @@
+{
+  "backend": "postgresql",
+  "status": "configured",
+  "switched_from": "holographic",
+  "switched_at": "2026-04-06T12:30:19.589398+00:00",
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "hermes_memory",
+    "user": "postgres",
+    "password": "postgres"
+  },
+  "virtual_paths": {
+    "kv": "Key-value store (O(1) lookup with TTL)",
+    "btree": "B-tree index (sorted range queries)",
+    "linked_list": "Linked lists (ordered sequences)",
+    "graph": "DAG graphs (dependency tracking)",
+    "kanban": "Kanban boards (workflow tracking)",
+    "lessons": "Lessons learned (pattern recurrence)",
+    "code_ledger": "Code metrics (LOC tracking)"
+  },
+  "features": {
+    "transactions": true,
+    "savepoints": true,
+    "acid_compliance": true,
+    "foreign_keys": true,
+    "indexes": true
+  },
+  "memory_system_location": "/home/dev/PyAgent/memory_system",
+  "hermes_integration": {
+    "available": true,
+    "tools_location": "/home/dev/.hermes/hermes-agent/tools",
+    "skills_location": "/home/dev/.hermes/hermes-agent/skills"
+  }
+}

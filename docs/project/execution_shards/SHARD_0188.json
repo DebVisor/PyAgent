@@ -1,0 +1,4510 @@
+{
+  "shard_number": 188,
+  "shard_id": "SHARD_0188",
+  "start_index": 93500,
+  "end_index": 94000,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 93501,
+      "idea_id": "idea093496",
+      "filename": "idea093496-subscriptionfrequency-test-api-consistency",
+      "title": "idea093496 - subscriptionfrequency-test API Consistency",
+      "archetype": "consistency",
+      "component": "subscriptionfrequency-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093496-subscriptionfrequency-test-api-consistency.md"
+    },
+    {
+      "index": 93502,
+      "idea_id": "idea093497",
+      "filename": "idea093497-subscriptionfrequency-test-migration-readiness",
+      "title": "idea093497 - subscriptionfrequency-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "subscriptionfrequency-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093497-subscriptionfrequency-test-migration-readiness.md"
+    },
+    {
+      "index": 93503,
+      "idea_id": "idea093498",
+      "filename": "idea093498-subscriptionfrequency-test-observability",
+      "title": "idea093498 - subscriptionfrequency-test Observability",
+      "archetype": "observability",
+      "component": "subscriptionfrequency-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093498-subscriptionfrequency-test-observability.md"
+    },
+    {
+      "index": 93504,
+      "idea_id": "idea093499",
+      "filename": "idea093499-subscriptionfrequency-test-security",
+      "title": "idea093499 - subscriptionfrequency-test Security",
+      "archetype": "security",
+      "component": "subscriptionfrequency-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093499-subscriptionfrequency-test-security.md"
+    },
+    {
+      "index": 93505,
+      "idea_id": "idea093500",
+      "filename": "idea093500-subscriptionfrequency-test-test-coverage",
+      "title": "idea093500 - subscriptionfrequency-test Test Coverage",
+      "archetype": "coverage",
+      "component": "subscriptionfrequency-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093500-subscriptionfrequency-test-test-coverage.md"
+    },
+    {
+      "index": 93506,
+      "idea_id": "idea093501",
+      "filename": "idea093501-init-developer-experience",
+      "title": "idea093501 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093501-init-developer-experience.md"
+    },
+    {
+      "index": 93507,
+      "idea_id": "idea093502",
+      "filename": "idea093502-init-documentation",
+      "title": "idea093502 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093502-init-documentation.md"
+    },
+    {
+      "index": 93508,
+      "idea_id": "idea093503",
+      "filename": "idea093503-init-hardening",
+      "title": "idea093503 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093503-init-hardening.md"
+    },
+    {
+      "index": 93509,
+      "idea_id": "idea093504",
+      "filename": "idea093504-init-performance",
+      "title": "idea093504 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093504-init-performance.md"
+    },
+    {
+      "index": 93510,
+      "idea_id": "idea093505",
+      "filename": "idea093505-init-resilience",
+      "title": "idea093505 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093505-init-resilience.md"
+    },
+    {
+      "index": 93511,
+      "idea_id": "idea093506",
+      "filename": "idea093506-init-py-hardening",
+      "title": "idea093506 - --init--.py Hardening",
+      "archetype": "hardening",
+      "component": "init-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093506-init-py-hardening.md"
+    },
+    {
+      "index": 93512,
+      "idea_id": "idea093507",
+      "filename": "idea093507-init-py-performance",
+      "title": "idea093507 - --init--.py Performance",
+      "archetype": "performance",
+      "component": "init-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093507-init-py-performance.md"
+    },
+    {
+      "index": 93513,
+      "idea_id": "idea093508",
+      "filename": "idea093508-init-test-api-consistency",
+      "title": "idea093508 - --init---test API Consistency",
+      "archetype": "consistency",
+      "component": "init-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093508-init-test-api-consistency.md"
+    },
+    {
+      "index": 93514,
+      "idea_id": "idea093509",
+      "filename": "idea093509-init-test-migration-readiness",
+      "title": "idea093509 - --init---test Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093509-init-test-migration-readiness.md"
+    },
+    {
+      "index": 93515,
+      "idea_id": "idea093510",
+      "filename": "idea093510-init-test-observability",
+      "title": "idea093510 - --init---test Observability",
+      "archetype": "observability",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093510-init-test-observability.md"
+    },
+    {
+      "index": 93516,
+      "idea_id": "idea093511",
+      "filename": "idea093511-init-test-security",
+      "title": "idea093511 - --init---test Security",
+      "archetype": "security",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093511-init-test-security.md"
+    },
+    {
+      "index": 93517,
+      "idea_id": "idea093512",
+      "filename": "idea093512-init-test-test-coverage",
+      "title": "idea093512 - --init---test Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093512-init-test-test-coverage.md"
+    },
+    {
+      "index": 93518,
+      "idea_id": "idea093513",
+      "filename": "idea093513-access-controller-developer-experience",
+      "title": "idea093513 - access-controller Developer Experience",
+      "archetype": "experience",
+      "component": "access-controller-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093513-access-controller-developer-experience.md"
+    },
+    {
+      "index": 93519,
+      "idea_id": "idea093514",
+      "filename": "idea093514-access-controller-documentation",
+      "title": "idea093514 - access-controller Documentation",
+      "archetype": "documentation",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093514-access-controller-documentation.md"
+    },
+    {
+      "index": 93520,
+      "idea_id": "idea093515",
+      "filename": "idea093515-access-controller-hardening",
+      "title": "idea093515 - access-controller Hardening",
+      "archetype": "hardening",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093515-access-controller-hardening.md"
+    },
+    {
+      "index": 93521,
+      "idea_id": "idea093516",
+      "filename": "idea093516-access-controller-performance",
+      "title": "idea093516 - access-controller Performance",
+      "archetype": "performance",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093516-access-controller-performance.md"
+    },
+    {
+      "index": 93522,
+      "idea_id": "idea093517",
+      "filename": "idea093517-access-controller-resilience",
+      "title": "idea093517 - access-controller Resilience",
+      "archetype": "resilience",
+      "component": "access-controller",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093517-access-controller-resilience.md"
+    },
+    {
+      "index": 93523,
+      "idea_id": "idea093518",
+      "filename": "idea093518-access-controller-py-hardening",
+      "title": "idea093518 - access-controller.py Hardening",
+      "archetype": "hardening",
+      "component": "access-controller-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093518-access-controller-py-hardening.md"
+    },
+    {
+      "index": 93524,
+      "idea_id": "idea093519",
+      "filename": "idea093519-access-controller-py-performance",
+      "title": "idea093519 - access-controller.py Performance",
+      "archetype": "performance",
+      "component": "access-controller-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093519-access-controller-py-performance.md"
+    },
+    {
+      "index": 93525,
+      "idea_id": "idea093520",
+      "filename": "idea093520-access-controller-test-api-consistency",
+      "title": "idea093520 - access-controller-test API Consistency",
+      "archetype": "consistency",
+      "component": "access-controller-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093520-access-controller-test-api-consistency.md"
+    },
+    {
+      "index": 93526,
+      "idea_id": "idea093521",
+      "filename": "idea093521-access-controller-test-migration-readiness",
+      "title": "idea093521 - access-controller-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "access-controller-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093521-access-controller-test-migration-readiness.md"
+    },
+    {
+      "index": 93527,
+      "idea_id": "idea093522",
+      "filename": "idea093522-access-controller-test-observability",
+      "title": "idea093522 - access-controller-test Observability",
+      "archetype": "observability",
+      "component": "access-controller-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093522-access-controller-test-observability.md"
+    },
+    {
+      "index": 93528,
+      "idea_id": "idea093523",
+      "filename": "idea093523-access-controller-test-security",
+      "title": "idea093523 - access-controller-test Security",
+      "archetype": "security",
+      "component": "access-controller-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093523-access-controller-test-security.md"
+    },
+    {
+      "index": 93529,
+      "idea_id": "idea093524",
+      "filename": "idea093524-access-controller-test-test-coverage",
+      "title": "idea093524 - access-controller-test Test Coverage",
+      "archetype": "coverage",
+      "component": "access-controller-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093524-access-controller-test-test-coverage.md"
+    },
+    {
+      "index": 93530,
+      "idea_id": "idea093525",
+      "filename": "idea093525-aggregated-report-developer-experience",
+      "title": "idea093525 - aggregated-report Developer Experience",
+      "archetype": "experience",
+      "component": "aggregated-report-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093525-aggregated-report-developer-experience.md"
+    },
+    {
+      "index": 93531,
+      "idea_id": "idea093526",
+      "filename": "idea093526-aggregated-report-documentation",
+      "title": "idea093526 - aggregated-report Documentation",
+      "archetype": "documentation",
+      "component": "aggregated-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093526-aggregated-report-documentation.md"
+    },
+    {
+      "index": 93532,
+      "idea_id": "idea093527",
+      "filename": "idea093527-aggregated-report-hardening",
+      "title": "idea093527 - aggregated-report Hardening",
+      "archetype": "hardening",
+      "component": "aggregated-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093527-aggregated-report-hardening.md"
+    },
+    {
+      "index": 93533,
+      "idea_id": "idea093528",
+      "filename": "idea093528-aggregated-report-performance",
+      "title": "idea093528 - aggregated-report Performance",
+      "archetype": "performance",
+      "component": "aggregated-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093528-aggregated-report-performance.md"
+    },
+    {
+      "index": 93534,
+      "idea_id": "idea093529",
+      "filename": "idea093529-aggregated-report-resilience",
+      "title": "idea093529 - aggregated-report Resilience",
+      "archetype": "resilience",
+      "component": "aggregated-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093529-aggregated-report-resilience.md"
+    },
+    {
+      "index": 93535,
+      "idea_id": "idea093530",
+      "filename": "idea093530-aggregated-report-test-api-consistency",
+      "title": "idea093530 - aggregated-report-test API Consistency",
+      "archetype": "consistency",
+      "component": "aggregated-report-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093530-aggregated-report-test-api-consistency.md"
+    },
+    {
+      "index": 93536,
+      "idea_id": "idea093531",
+      "filename": "idea093531-aggregated-report-test-migration-readiness",
+      "title": "idea093531 - aggregated-report-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "aggregated-report-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093531-aggregated-report-test-migration-readiness.md"
+    },
+    {
+      "index": 93537,
+      "idea_id": "idea093532",
+      "filename": "idea093532-aggregated-report-test-observability",
+      "title": "idea093532 - aggregated-report-test Observability",
+      "archetype": "observability",
+      "component": "aggregated-report-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093532-aggregated-report-test-observability.md"
+    },
+    {
+      "index": 93538,
+      "idea_id": "idea093533",
+      "filename": "idea093533-aggregated-report-test-security",
+      "title": "idea093533 - aggregated-report-test Security",
+      "archetype": "security",
+      "component": "aggregated-report-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093533-aggregated-report-test-security.md"
+    },
+    {
+      "index": 93539,
+      "idea_id": "idea093534",
+      "filename": "idea093534-aggregated-report-test-test-coverage",
+      "title": "idea093534 - aggregated-report-test Test Coverage",
+      "archetype": "coverage",
+      "component": "aggregated-report-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093534-aggregated-report-test-test-coverage.md"
+    },
+    {
+      "index": 93540,
+      "idea_id": "idea093535",
+      "filename": "idea093535-annotation-manager-developer-experience",
+      "title": "idea093535 - annotation-manager Developer Experience",
+      "archetype": "experience",
+      "component": "annotation-manager-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093535-annotation-manager-developer-experience.md"
+    },
+    {
+      "index": 93541,
+      "idea_id": "idea093536",
+      "filename": "idea093536-annotation-manager-documentation",
+      "title": "idea093536 - annotation-manager Documentation",
+      "archetype": "documentation",
+      "component": "annotation-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093536-annotation-manager-documentation.md"
+    },
+    {
+      "index": 93542,
+      "idea_id": "idea093537",
+      "filename": "idea093537-annotation-manager-hardening",
+      "title": "idea093537 - annotation-manager Hardening",
+      "archetype": "hardening",
+      "component": "annotation-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093537-annotation-manager-hardening.md"
+    },
+    {
+      "index": 93543,
+      "idea_id": "idea093538",
+      "filename": "idea093538-annotation-manager-performance",
+      "title": "idea093538 - annotation-manager Performance",
+      "archetype": "performance",
+      "component": "annotation-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093538-annotation-manager-performance.md"
+    },
+    {
+      "index": 93544,
+      "idea_id": "idea093539",
+      "filename": "idea093539-annotation-manager-resilience",
+      "title": "idea093539 - annotation-manager Resilience",
+      "archetype": "resilience",
+      "component": "annotation-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093539-annotation-manager-resilience.md"
+    },
+    {
+      "index": 93545,
+      "idea_id": "idea093540",
+      "filename": "idea093540-annotation-manager-test-api-consistency",
+      "title": "idea093540 - annotation-manager-test API Consistency",
+      "archetype": "consistency",
+      "component": "annotation-manager-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093540-annotation-manager-test-api-consistency.md"
+    },
+    {
+      "index": 93546,
+      "idea_id": "idea093541",
+      "filename": "idea093541-annotation-manager-test-migration-readiness",
+      "title": "idea093541 - annotation-manager-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "annotation-manager-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093541-annotation-manager-test-migration-readiness.md"
+    },
+    {
+      "index": 93547,
+      "idea_id": "idea093542",
+      "filename": "idea093542-annotation-manager-test-observability",
+      "title": "idea093542 - annotation-manager-test Observability",
+      "archetype": "observability",
+      "component": "annotation-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093542-annotation-manager-test-observability.md"
+    },
+    {
+      "index": 93548,
+      "idea_id": "idea093543",
+      "filename": "idea093543-annotation-manager-test-security",
+      "title": "idea093543 - annotation-manager-test Security",
+      "archetype": "security",
+      "component": "annotation-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093543-annotation-manager-test-security.md"
+    },
+    {
+      "index": 93549,
+      "idea_id": "idea093544",
+      "filename": "idea093544-annotation-manager-test-test-coverage",
+      "title": "idea093544 - annotation-manager-test Test Coverage",
+      "archetype": "coverage",
+      "component": "annotation-manager-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093544-annotation-manager-test-test-coverage.md"
+    },
+    {
+      "index": 93550,
+      "idea_id": "idea093545",
+      "filename": "idea093545-archived-report-developer-experience",
+      "title": "idea093545 - archived-report Developer Experience",
+      "archetype": "experience",
+      "component": "archived-report-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093545-archived-report-developer-experience.md"
+    },
+    {
+      "index": 93551,
+      "idea_id": "idea093546",
+      "filename": "idea093546-archived-report-documentation",
+      "title": "idea093546 - archived-report Documentation",
+      "archetype": "documentation",
+      "component": "archived-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093546-archived-report-documentation.md"
+    },
+    {
+      "index": 93552,
+      "idea_id": "idea093547",
+      "filename": "idea093547-archived-report-hardening",
+      "title": "idea093547 - archived-report Hardening",
+      "archetype": "hardening",
+      "component": "archived-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093547-archived-report-hardening.md"
+    },
+    {
+      "index": 93553,
+      "idea_id": "idea093548",
+      "filename": "idea093548-archived-report-performance",
+      "title": "idea093548 - archived-report Performance",
+      "archetype": "performance",
+      "component": "archived-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093548-archived-report-performance.md"
+    },
+    {
+      "index": 93554,
+      "idea_id": "idea093549",
+      "filename": "idea093549-archived-report-resilience",
+      "title": "idea093549 - archived-report Resilience",
+      "archetype": "resilience",
+      "component": "archived-report",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093549-archived-report-resilience.md"
+    },
+    {
+      "index": 93555,
+      "idea_id": "idea093550",
+      "filename": "idea093550-archived-report-test-api-consistency",
+      "title": "idea093550 - archived-report-test API Consistency",
+      "archetype": "consistency",
+      "component": "archived-report-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093550-archived-report-test-api-consistency.md"
+    },
+    {
+      "index": 93556,
+      "idea_id": "idea093551",
+      "filename": "idea093551-archived-report-test-migration-readiness",
+      "title": "idea093551 - archived-report-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "archived-report-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093551-archived-report-test-migration-readiness.md"
+    },
+    {
+      "index": 93557,
+      "idea_id": "idea093552",
+      "filename": "idea093552-archived-report-test-observability",
+      "title": "idea093552 - archived-report-test Observability",
+      "archetype": "observability",
+      "component": "archived-report-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093552-archived-report-test-observability.md"
+    },
+    {
+      "index": 93558,
+      "idea_id": "idea093553",
+      "filename": "idea093553-archived-report-test-security",
+      "title": "idea093553 - archived-report-test Security",
+      "archetype": "security",
+      "component": "archived-report-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093553-archived-report-test-security.md"
+    },
+    {
+      "index": 93559,
+      "idea_id": "idea093554",
+      "filename": "idea093554-archived-report-test-test-coverage",
+      "title": "idea093554 - archived-report-test Test Coverage",
+      "archetype": "coverage",
+      "component": "archived-report-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093554-archived-report-test-test-coverage.md"
+    },
+    {
+      "index": 93560,
+      "idea_id": "idea093555",
+      "filename": "idea093555-audit-action-developer-experience",
+      "title": "idea093555 - audit-action Developer Experience",
+      "archetype": "experience",
+      "component": "audit-action-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093555-audit-action-developer-experience.md"
+    },
+    {
+      "index": 93561,
+      "idea_id": "idea093556",
+      "filename": "idea093556-audit-action-documentation",
+      "title": "idea093556 - audit-action Documentation",
+      "archetype": "documentation",
+      "component": "audit-action",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093556-audit-action-documentation.md"
+    },
+    {
+      "index": 93562,
+      "idea_id": "idea093557",
+      "filename": "idea093557-audit-action-hardening",
+      "title": "idea093557 - audit-action Hardening",
+      "archetype": "hardening",
+      "component": "audit-action",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093557-audit-action-hardening.md"
+    },
+    {
+      "index": 93563,
+      "idea_id": "idea093558",
+      "filename": "idea093558-audit-action-performance",
+      "title": "idea093558 - audit-action Performance",
+      "archetype": "performance",
+      "component": "audit-action",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093558-audit-action-performance.md"
+    },
+    {
+      "index": 93564,
+      "idea_id": "idea093559",
+      "filename": "idea093559-audit-action-resilience",
+      "title": "idea093559 - audit-action Resilience",
+      "archetype": "resilience",
+      "component": "audit-action",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093559-audit-action-resilience.md"
+    },
+    {
+      "index": 93565,
+      "idea_id": "idea093560",
+      "filename": "idea093560-audit-action-test-api-consistency",
+      "title": "idea093560 - audit-action-test API Consistency",
+      "archetype": "consistency",
+      "component": "audit-action-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093560-audit-action-test-api-consistency.md"
+    },
+    {
+      "index": 93566,
+      "idea_id": "idea093561",
+      "filename": "idea093561-audit-action-test-migration-readiness",
+      "title": "idea093561 - audit-action-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "audit-action-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093561-audit-action-test-migration-readiness.md"
+    },
+    {
+      "index": 93567,
+      "idea_id": "idea093562",
+      "filename": "idea093562-audit-action-test-observability",
+      "title": "idea093562 - audit-action-test Observability",
+      "archetype": "observability",
+      "component": "audit-action-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093562-audit-action-test-observability.md"
+    },
+    {
+      "index": 93568,
+      "idea_id": "idea093563",
+      "filename": "idea093563-audit-action-test-security",
+      "title": "idea093563 - audit-action-test Security",
+      "archetype": "security",
+      "component": "audit-action-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093563-audit-action-test-security.md"
+    },
+    {
+      "index": 93569,
+      "idea_id": "idea093564",
+      "filename": "idea093564-audit-action-test-test-coverage",
+      "title": "idea093564 - audit-action-test Test Coverage",
+      "archetype": "coverage",
+      "component": "audit-action-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093564-audit-action-test-test-coverage.md"
+    },
+    {
+      "index": 93570,
+      "idea_id": "idea093565",
+      "filename": "idea093565-audit-entry-developer-experience",
+      "title": "idea093565 - audit-entry Developer Experience",
+      "archetype": "experience",
+      "component": "audit-entry-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093565-audit-entry-developer-experience.md"
+    },
+    {
+      "index": 93571,
+      "idea_id": "idea093566",
+      "filename": "idea093566-audit-entry-documentation",
+      "title": "idea093566 - audit-entry Documentation",
+      "archetype": "documentation",
+      "component": "audit-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093566-audit-entry-documentation.md"
+    },
+    {
+      "index": 93572,
+      "idea_id": "idea093567",
+      "filename": "idea093567-audit-entry-hardening",
+      "title": "idea093567 - audit-entry Hardening",
+      "archetype": "hardening",
+      "component": "audit-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093567-audit-entry-hardening.md"
+    },
+    {
+      "index": 93573,
+      "idea_id": "idea093568",
+      "filename": "idea093568-audit-entry-performance",
+      "title": "idea093568 - audit-entry Performance",
+      "archetype": "performance",
+      "component": "audit-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093568-audit-entry-performance.md"
+    },
+    {
+      "index": 93574,
+      "idea_id": "idea093569",
+      "filename": "idea093569-audit-entry-resilience",
+      "title": "idea093569 - audit-entry Resilience",
+      "archetype": "resilience",
+      "component": "audit-entry",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093569-audit-entry-resilience.md"
+    },
+    {
+      "index": 93575,
+      "idea_id": "idea093570",
+      "filename": "idea093570-audit-entry-test-api-consistency",
+      "title": "idea093570 - audit-entry-test API Consistency",
+      "archetype": "consistency",
+      "component": "audit-entry-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093570-audit-entry-test-api-consistency.md"
+    },
+    {
+      "index": 93576,
+      "idea_id": "idea093571",
+      "filename": "idea093571-audit-entry-test-migration-readiness",
+      "title": "idea093571 - audit-entry-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "audit-entry-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093571-audit-entry-test-migration-readiness.md"
+    },
+    {
+      "index": 93577,
+      "idea_id": "idea093572",
+      "filename": "idea093572-audit-entry-test-observability",
+      "title": "idea093572 - audit-entry-test Observability",
+      "archetype": "observability",
+      "component": "audit-entry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093572-audit-entry-test-observability.md"
+    },
+    {
+      "index": 93578,
+      "idea_id": "idea093573",
+      "filename": "idea093573-audit-entry-test-security",
+      "title": "idea093573 - audit-entry-test Security",
+      "archetype": "security",
+      "component": "audit-entry-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093573-audit-entry-test-security.md"
+    },
+    {
+      "index": 93579,
+      "idea_id": "idea093574",
+      "filename": "idea093574-audit-entry-test-test-coverage",
+      "title": "idea093574 - audit-entry-test Test Coverage",
+      "archetype": "coverage",
+      "component": "audit-entry-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093574-audit-entry-test-test-coverage.md"
+    },
+    {
+      "index": 93580,
+      "idea_id": "idea093575",
+      "filename": "idea093575-audit-logger-developer-experience",
+      "title": "idea093575 - audit-logger Developer Experience",
+      "archetype": "experience",
+      "component": "audit-logger-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093575-audit-logger-developer-experience.md"
+    },
+    {
+      "index": 93581,
+      "idea_id": "idea093576",
+      "filename": "idea093576-audit-logger-documentation",
+      "title": "idea093576 - audit-logger Documentation",
+      "archetype": "documentation",
+      "component": "audit-logger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093576-audit-logger-documentation.md"
+    },
+    {
+      "index": 93582,
+      "idea_id": "idea093577",
+      "filename": "idea093577-audit-logger-hardening",
+      "title": "idea093577 - audit-logger Hardening",
+      "archetype": "hardening",
+      "component": "audit-logger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093577-audit-logger-hardening.md"
+    },
+    {
+      "index": 93583,
+      "idea_id": "idea093578",
+      "filename": "idea093578-audit-logger-performance",
+      "title": "idea093578 - audit-logger Performance",
+      "archetype": "performance",
+      "component": "audit-logger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093578-audit-logger-performance.md"
+    },
+    {
+      "index": 93584,
+      "idea_id": "idea093579",
+      "filename": "idea093579-audit-logger-resilience",
+      "title": "idea093579 - audit-logger Resilience",
+      "archetype": "resilience",
+      "component": "audit-logger",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093579-audit-logger-resilience.md"
+    },
+    {
+      "index": 93585,
+      "idea_id": "idea093580",
+      "filename": "idea093580-audit-logger-test-api-consistency",
+      "title": "idea093580 - audit-logger-test API Consistency",
+      "archetype": "consistency",
+      "component": "audit-logger-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093580-audit-logger-test-api-consistency.md"
+    },
+    {
+      "index": 93586,
+      "idea_id": "idea093581",
+      "filename": "idea093581-audit-logger-test-migration-readiness",
+      "title": "idea093581 - audit-logger-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "audit-logger-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093581-audit-logger-test-migration-readiness.md"
+    },
+    {
+      "index": 93587,
+      "idea_id": "idea093582",
+      "filename": "idea093582-audit-logger-test-observability",
+      "title": "idea093582 - audit-logger-test Observability",
+      "archetype": "observability",
+      "component": "audit-logger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093582-audit-logger-test-observability.md"
+    },
+    {
+      "index": 93588,
+      "idea_id": "idea093583",
+      "filename": "idea093583-audit-logger-test-security",
+      "title": "idea093583 - audit-logger-test Security",
+      "archetype": "security",
+      "component": "audit-logger-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093583-audit-logger-test-security.md"
+    },
+    {
+      "index": 93589,
+      "idea_id": "idea093584",
+      "filename": "idea093584-audit-logger-test-test-coverage",
+      "title": "idea093584 - audit-logger-test Test Coverage",
+      "archetype": "coverage",
+      "component": "audit-logger-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093584-audit-logger-test-test-coverage.md"
+    },
+    {
+      "index": 93590,
+      "idea_id": "idea093585",
+      "filename": "idea093585-changelog-localizer-developer-experience",
+      "title": "idea093585 - changelog-localizer Developer Experience",
+      "archetype": "experience",
+      "component": "changelog-localizer-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093585-changelog-localizer-developer-experience.md"
+    },
+    {
+      "index": 93591,
+      "idea_id": "idea093586",
+      "filename": "idea093586-changelog-localizer-documentation",
+      "title": "idea093586 - changelog-localizer Documentation",
+      "archetype": "documentation",
+      "component": "changelog-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093586-changelog-localizer-documentation.md"
+    },
+    {
+      "index": 93592,
+      "idea_id": "idea093587",
+      "filename": "idea093587-changelog-localizer-hardening",
+      "title": "idea093587 - changelog-localizer Hardening",
+      "archetype": "hardening",
+      "component": "changelog-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093587-changelog-localizer-hardening.md"
+    },
+    {
+      "index": 93593,
+      "idea_id": "idea093588",
+      "filename": "idea093588-changelog-localizer-performance",
+      "title": "idea093588 - changelog-localizer Performance",
+      "archetype": "performance",
+      "component": "changelog-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093588-changelog-localizer-performance.md"
+    },
+    {
+      "index": 93594,
+      "idea_id": "idea093589",
+      "filename": "idea093589-changelog-localizer-resilience",
+      "title": "idea093589 - changelog-localizer Resilience",
+      "archetype": "resilience",
+      "component": "changelog-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093589-changelog-localizer-resilience.md"
+    },
+    {
+      "index": 93595,
+      "idea_id": "idea093590",
+      "filename": "idea093590-changelog-localizer-py-hardening",
+      "title": "idea093590 - changelog-localizer.py Hardening",
+      "archetype": "hardening",
+      "component": "changelog-localizer-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093590-changelog-localizer-py-hardening.md"
+    },
+    {
+      "index": 93596,
+      "idea_id": "idea093591",
+      "filename": "idea093591-changelog-localizer-py-performance",
+      "title": "idea093591 - changelog-localizer.py Performance",
+      "archetype": "performance",
+      "component": "changelog-localizer-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093591-changelog-localizer-py-performance.md"
+    },
+    {
+      "index": 93597,
+      "idea_id": "idea093592",
+      "filename": "idea093592-changelog-localizer-test-api-consistency",
+      "title": "idea093592 - changelog-localizer-test API Consistency",
+      "archetype": "consistency",
+      "component": "changelog-localizer-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093592-changelog-localizer-test-api-consistency.md"
+    },
+    {
+      "index": 93598,
+      "idea_id": "idea093593",
+      "filename": "idea093593-changelog-localizer-test-migration-readiness",
+      "title": "idea093593 - changelog-localizer-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "changelog-localizer-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093593-changelog-localizer-test-migration-readiness.md"
+    },
+    {
+      "index": 93599,
+      "idea_id": "idea093594",
+      "filename": "idea093594-changelog-localizer-test-observability",
+      "title": "idea093594 - changelog-localizer-test Observability",
+      "archetype": "observability",
+      "component": "changelog-localizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093594-changelog-localizer-test-observability.md"
+    },
+    {
+      "index": 93600,
+      "idea_id": "idea093595",
+      "filename": "idea093595-changelog-localizer-test-security",
+      "title": "idea093595 - changelog-localizer-test Security",
+      "archetype": "security",
+      "component": "changelog-localizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093595-changelog-localizer-test-security.md"
+    },
+    {
+      "index": 93601,
+      "idea_id": "idea093596",
+      "filename": "idea093596-changelog-localizer-test-test-coverage",
+      "title": "idea093596 - changelog-localizer-test Test Coverage",
+      "archetype": "coverage",
+      "component": "changelog-localizer-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093596-changelog-localizer-test-test-coverage.md"
+    },
+    {
+      "index": 93602,
+      "idea_id": "idea093597",
+      "filename": "idea093597-changelog-searcher-developer-experience",
+      "title": "idea093597 - changelog-searcher Developer Experience",
+      "archetype": "experience",
+      "component": "changelog-searcher-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093597-changelog-searcher-developer-experience.md"
+    },
+    {
+      "index": 93603,
+      "idea_id": "idea093598",
+      "filename": "idea093598-changelog-searcher-documentation",
+      "title": "idea093598 - changelog-searcher Documentation",
+      "archetype": "documentation",
+      "component": "changelog-searcher",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093598-changelog-searcher-documentation.md"
+    },
+    {
+      "index": 93604,
+      "idea_id": "idea093599",
+      "filename": "idea093599-changelog-searcher-hardening",
+      "title": "idea093599 - changelog-searcher Hardening",
+      "archetype": "hardening",
+      "component": "changelog-searcher",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093599-changelog-searcher-hardening.md"
+    },
+    {
+      "index": 93605,
+      "idea_id": "idea093600",
+      "filename": "idea093600-changelog-searcher-performance",
+      "title": "idea093600 - changelog-searcher Performance",
+      "archetype": "performance",
+      "component": "changelog-searcher",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093600-changelog-searcher-performance.md"
+    },
+    {
+      "index": 93606,
+      "idea_id": "idea093601",
+      "filename": "idea093601-changelog-searcher-resilience",
+      "title": "idea093601 - changelog-searcher Resilience",
+      "archetype": "resilience",
+      "component": "changelog-searcher",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093601-changelog-searcher-resilience.md"
+    },
+    {
+      "index": 93607,
+      "idea_id": "idea093602",
+      "filename": "idea093602-changelog-searcher-py-hardening",
+      "title": "idea093602 - changelog-searcher.py Hardening",
+      "archetype": "hardening",
+      "component": "changelog-searcher-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093602-changelog-searcher-py-hardening.md"
+    },
+    {
+      "index": 93608,
+      "idea_id": "idea093603",
+      "filename": "idea093603-changelog-searcher-py-performance",
+      "title": "idea093603 - changelog-searcher.py Performance",
+      "archetype": "performance",
+      "component": "changelog-searcher-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093603-changelog-searcher-py-performance.md"
+    },
+    {
+      "index": 93609,
+      "idea_id": "idea093604",
+      "filename": "idea093604-changelog-searcher-test-api-consistency",
+      "title": "idea093604 - changelog-searcher-test API Consistency",
+      "archetype": "consistency",
+      "component": "changelog-searcher-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093604-changelog-searcher-test-api-consistency.md"
+    },
+    {
+      "index": 93610,
+      "idea_id": "idea093605",
+      "filename": "idea093605-changelog-searcher-test-migration-readiness",
+      "title": "idea093605 - changelog-searcher-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "changelog-searcher-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093605-changelog-searcher-test-migration-readiness.md"
+    },
+    {
+      "index": 93611,
+      "idea_id": "idea093606",
+      "filename": "idea093606-changelog-searcher-test-observability",
+      "title": "idea093606 - changelog-searcher-test Observability",
+      "archetype": "observability",
+      "component": "changelog-searcher-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093606-changelog-searcher-test-observability.md"
+    },
+    {
+      "index": 93612,
+      "idea_id": "idea093607",
+      "filename": "idea093607-changelog-searcher-test-security",
+      "title": "idea093607 - changelog-searcher-test Security",
+      "archetype": "security",
+      "component": "changelog-searcher-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093607-changelog-searcher-test-security.md"
+    },
+    {
+      "index": 93613,
+      "idea_id": "idea093608",
+      "filename": "idea093608-changelog-searcher-test-test-coverage",
+      "title": "idea093608 - changelog-searcher-test Test Coverage",
+      "archetype": "coverage",
+      "component": "changelog-searcher-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093608-changelog-searcher-test-test-coverage.md"
+    },
+    {
+      "index": 93614,
+      "idea_id": "idea093609",
+      "filename": "idea093609-changelog-template-developer-experience",
+      "title": "idea093609 - changelog-template Developer Experience",
+      "archetype": "experience",
+      "component": "changelog-template-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093609-changelog-template-developer-experience.md"
+    },
+    {
+      "index": 93615,
+      "idea_id": "idea093610",
+      "filename": "idea093610-changelog-template-documentation",
+      "title": "idea093610 - changelog-template Documentation",
+      "archetype": "documentation",
+      "component": "changelog-template",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093610-changelog-template-documentation.md"
+    },
+    {
+      "index": 93616,
+      "idea_id": "idea093611",
+      "filename": "idea093611-changelog-template-hardening",
+      "title": "idea093611 - changelog-template Hardening",
+      "archetype": "hardening",
+      "component": "changelog-template",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093611-changelog-template-hardening.md"
+    },
+    {
+      "index": 93617,
+      "idea_id": "idea093612",
+      "filename": "idea093612-changelog-template-performance",
+      "title": "idea093612 - changelog-template Performance",
+      "archetype": "performance",
+      "component": "changelog-template",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093612-changelog-template-performance.md"
+    },
+    {
+      "index": 93618,
+      "idea_id": "idea093613",
+      "filename": "idea093613-changelog-template-resilience",
+      "title": "idea093613 - changelog-template Resilience",
+      "archetype": "resilience",
+      "component": "changelog-template",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093613-changelog-template-resilience.md"
+    },
+    {
+      "index": 93619,
+      "idea_id": "idea093614",
+      "filename": "idea093614-changelog-template-test-api-consistency",
+      "title": "idea093614 - changelog-template-test API Consistency",
+      "archetype": "consistency",
+      "component": "changelog-template-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093614-changelog-template-test-api-consistency.md"
+    },
+    {
+      "index": 93620,
+      "idea_id": "idea093615",
+      "filename": "idea093615-changelog-template-test-migration-readiness",
+      "title": "idea093615 - changelog-template-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "changelog-template-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093615-changelog-template-test-migration-readiness.md"
+    },
+    {
+      "index": 93621,
+      "idea_id": "idea093616",
+      "filename": "idea093616-changelog-template-test-observability",
+      "title": "idea093616 - changelog-template-test Observability",
+      "archetype": "observability",
+      "component": "changelog-template-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093616-changelog-template-test-observability.md"
+    },
+    {
+      "index": 93622,
+      "idea_id": "idea093617",
+      "filename": "idea093617-changelog-template-test-security",
+      "title": "idea093617 - changelog-template-test Security",
+      "archetype": "security",
+      "component": "changelog-template-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093617-changelog-template-test-security.md"
+    },
+    {
+      "index": 93623,
+      "idea_id": "idea093618",
+      "filename": "idea093618-changelog-template-test-test-coverage",
+      "title": "idea093618 - changelog-template-test Test Coverage",
+      "archetype": "coverage",
+      "component": "changelog-template-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093618-changelog-template-test-test-coverage.md"
+    },
+    {
+      "index": 93624,
+      "idea_id": "idea093619",
+      "filename": "idea093619-code-issue-developer-experience",
+      "title": "idea093619 - code-issue Developer Experience",
+      "archetype": "experience",
+      "component": "code-issue-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093619-code-issue-developer-experience.md"
+    },
+    {
+      "index": 93625,
+      "idea_id": "idea093620",
+      "filename": "idea093620-code-issue-documentation",
+      "title": "idea093620 - code-issue Documentation",
+      "archetype": "documentation",
+      "component": "code-issue",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093620-code-issue-documentation.md"
+    },
+    {
+      "index": 93626,
+      "idea_id": "idea093621",
+      "filename": "idea093621-code-issue-hardening",
+      "title": "idea093621 - code-issue Hardening",
+      "archetype": "hardening",
+      "component": "code-issue",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093621-code-issue-hardening.md"
+    },
+    {
+      "index": 93627,
+      "idea_id": "idea093622",
+      "filename": "idea093622-code-issue-performance",
+      "title": "idea093622 - code-issue Performance",
+      "archetype": "performance",
+      "component": "code-issue",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093622-code-issue-performance.md"
+    },
+    {
+      "index": 93628,
+      "idea_id": "idea093623",
+      "filename": "idea093623-code-issue-resilience",
+      "title": "idea093623 - code-issue Resilience",
+      "archetype": "resilience",
+      "component": "code-issue",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093623-code-issue-resilience.md"
+    },
+    {
+      "index": 93629,
+      "idea_id": "idea093624",
+      "filename": "idea093624-code-issue-test-api-consistency",
+      "title": "idea093624 - code-issue-test API Consistency",
+      "archetype": "consistency",
+      "component": "code-issue-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093624-code-issue-test-api-consistency.md"
+    },
+    {
+      "index": 93630,
+      "idea_id": "idea093625",
+      "filename": "idea093625-code-issue-test-migration-readiness",
+      "title": "idea093625 - code-issue-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "code-issue-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093625-code-issue-test-migration-readiness.md"
+    },
+    {
+      "index": 93631,
+      "idea_id": "idea093626",
+      "filename": "idea093626-code-issue-test-observability",
+      "title": "idea093626 - code-issue-test Observability",
+      "archetype": "observability",
+      "component": "code-issue-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093626-code-issue-test-observability.md"
+    },
+    {
+      "index": 93632,
+      "idea_id": "idea093627",
+      "filename": "idea093627-code-issue-test-security",
+      "title": "idea093627 - code-issue-test Security",
+      "archetype": "security",
+      "component": "code-issue-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093627-code-issue-test-security.md"
+    },
+    {
+      "index": 93633,
+      "idea_id": "idea093628",
+      "filename": "idea093628-code-issue-test-test-coverage",
+      "title": "idea093628 - code-issue-test Test Coverage",
+      "archetype": "coverage",
+      "component": "code-issue-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093628-code-issue-test-test-coverage.md"
+    },
+    {
+      "index": 93634,
+      "idea_id": "idea093629",
+      "filename": "idea093629-compile-result-developer-experience",
+      "title": "idea093629 - compile-result Developer Experience",
+      "archetype": "experience",
+      "component": "compile-result-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093629-compile-result-developer-experience.md"
+    },
+    {
+      "index": 93635,
+      "idea_id": "idea093630",
+      "filename": "idea093630-compile-result-documentation",
+      "title": "idea093630 - compile-result Documentation",
+      "archetype": "documentation",
+      "component": "compile-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093630-compile-result-documentation.md"
+    },
+    {
+      "index": 93636,
+      "idea_id": "idea093631",
+      "filename": "idea093631-compile-result-hardening",
+      "title": "idea093631 - compile-result Hardening",
+      "archetype": "hardening",
+      "component": "compile-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093631-compile-result-hardening.md"
+    },
+    {
+      "index": 93637,
+      "idea_id": "idea093632",
+      "filename": "idea093632-compile-result-performance",
+      "title": "idea093632 - compile-result Performance",
+      "archetype": "performance",
+      "component": "compile-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093632-compile-result-performance.md"
+    },
+    {
+      "index": 93638,
+      "idea_id": "idea093633",
+      "filename": "idea093633-compile-result-resilience",
+      "title": "idea093633 - compile-result Resilience",
+      "archetype": "resilience",
+      "component": "compile-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093633-compile-result-resilience.md"
+    },
+    {
+      "index": 93639,
+      "idea_id": "idea093634",
+      "filename": "idea093634-compile-result-test-api-consistency",
+      "title": "idea093634 - compile-result-test API Consistency",
+      "archetype": "consistency",
+      "component": "compile-result-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093634-compile-result-test-api-consistency.md"
+    },
+    {
+      "index": 93640,
+      "idea_id": "idea093635",
+      "filename": "idea093635-compile-result-test-migration-readiness",
+      "title": "idea093635 - compile-result-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "compile-result-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093635-compile-result-test-migration-readiness.md"
+    },
+    {
+      "index": 93641,
+      "idea_id": "idea093636",
+      "filename": "idea093636-compile-result-test-observability",
+      "title": "idea093636 - compile-result-test Observability",
+      "archetype": "observability",
+      "component": "compile-result-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093636-compile-result-test-observability.md"
+    },
+    {
+      "index": 93642,
+      "idea_id": "idea093637",
+      "filename": "idea093637-compile-result-test-security",
+      "title": "idea093637 - compile-result-test Security",
+      "archetype": "security",
+      "component": "compile-result-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093637-compile-result-test-security.md"
+    },
+    {
+      "index": 93643,
+      "idea_id": "idea093638",
+      "filename": "idea093638-compile-result-test-test-coverage",
+      "title": "idea093638 - compile-result-test Test Coverage",
+      "archetype": "coverage",
+      "component": "compile-result-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093638-compile-result-test-test-coverage.md"
+    },
+    {
+      "index": 93644,
+      "idea_id": "idea093639",
+      "filename": "idea093639-deduplicationcore-api-consistency",
+      "title": "idea093639 - deduplicationcore API Consistency",
+      "archetype": "consistency",
+      "component": "deduplicationcore-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093639-deduplicationcore-api-consistency.md"
+    },
+    {
+      "index": 93645,
+      "idea_id": "idea093640",
+      "filename": "idea093640-deduplicationcore-migration-readiness",
+      "title": "idea093640 - deduplicationcore Migration Readiness",
+      "archetype": "readiness",
+      "component": "deduplicationcore-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093640-deduplicationcore-migration-readiness.md"
+    },
+    {
+      "index": 93646,
+      "idea_id": "idea093641",
+      "filename": "idea093641-deduplicationcore-observability",
+      "title": "idea093641 - deduplicationcore Observability",
+      "archetype": "observability",
+      "component": "deduplicationcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093641-deduplicationcore-observability.md"
+    },
+    {
+      "index": 93647,
+      "idea_id": "idea093642",
+      "filename": "idea093642-deduplicationcore-security",
+      "title": "idea093642 - deduplicationcore Security",
+      "archetype": "security",
+      "component": "deduplicationcore",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093642-deduplicationcore-security.md"
+    },
+    {
+      "index": 93648,
+      "idea_id": "idea093643",
+      "filename": "idea093643-deduplicationcore-test-coverage",
+      "title": "idea093643 - deduplicationcore Test Coverage",
+      "archetype": "coverage",
+      "component": "deduplicationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093643-deduplicationcore-test-coverage.md"
+    },
+    {
+      "index": 93649,
+      "idea_id": "idea093644",
+      "filename": "idea093644-deduplicationcore-test-api-consistency",
+      "title": "idea093644 - deduplicationcore-test API Consistency",
+      "archetype": "consistency",
+      "component": "deduplicationcore-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093644-deduplicationcore-test-api-consistency.md"
+    },
+    {
+      "index": 93650,
+      "idea_id": "idea093645",
+      "filename": "idea093645-deduplicationcore-test-migration-readiness",
+      "title": "idea093645 - deduplicationcore-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "deduplicationcore-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093645-deduplicationcore-test-migration-readiness.md"
+    },
+    {
+      "index": 93651,
+      "idea_id": "idea093646",
+      "filename": "idea093646-deduplicationcore-test-observability",
+      "title": "idea093646 - deduplicationcore-test Observability",
+      "archetype": "observability",
+      "component": "deduplicationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093646-deduplicationcore-test-observability.md"
+    },
+    {
+      "index": 93652,
+      "idea_id": "idea093647",
+      "filename": "idea093647-deduplicationcore-test-security",
+      "title": "idea093647 - deduplicationcore-test Security",
+      "archetype": "security",
+      "component": "deduplicationcore-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093647-deduplicationcore-test-security.md"
+    },
+    {
+      "index": 93653,
+      "idea_id": "idea093648",
+      "filename": "idea093648-deduplicationcore-test-test-coverage",
+      "title": "idea093648 - deduplicationcore-test Test Coverage",
+      "archetype": "coverage",
+      "component": "deduplicationcore-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093648-deduplicationcore-test-test-coverage.md"
+    },
+    {
+      "index": 93654,
+      "idea_id": "idea093649",
+      "filename": "idea093649-init-developer-experience",
+      "title": "idea093649 - --init-- Developer Experience",
+      "archetype": "experience",
+      "component": "init-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093649-init-developer-experience.md"
+    },
+    {
+      "index": 93655,
+      "idea_id": "idea093650",
+      "filename": "idea093650-init-documentation",
+      "title": "idea093650 - --init-- Documentation",
+      "archetype": "documentation",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093650-init-documentation.md"
+    },
+    {
+      "index": 93656,
+      "idea_id": "idea093651",
+      "filename": "idea093651-init-hardening",
+      "title": "idea093651 - --init-- Hardening",
+      "archetype": "hardening",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093651-init-hardening.md"
+    },
+    {
+      "index": 93657,
+      "idea_id": "idea093652",
+      "filename": "idea093652-init-performance",
+      "title": "idea093652 - --init-- Performance",
+      "archetype": "performance",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093652-init-performance.md"
+    },
+    {
+      "index": 93658,
+      "idea_id": "idea093653",
+      "filename": "idea093653-init-resilience",
+      "title": "idea093653 - --init-- Resilience",
+      "archetype": "resilience",
+      "component": "init",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093653-init-resilience.md"
+    },
+    {
+      "index": 93659,
+      "idea_id": "idea093654",
+      "filename": "idea093654-init-test-api-consistency",
+      "title": "idea093654 - --init---test API Consistency",
+      "archetype": "consistency",
+      "component": "init-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093654-init-test-api-consistency.md"
+    },
+    {
+      "index": 93660,
+      "idea_id": "idea093655",
+      "filename": "idea093655-init-test-migration-readiness",
+      "title": "idea093655 - --init---test Migration Readiness",
+      "archetype": "readiness",
+      "component": "init-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093655-init-test-migration-readiness.md"
+    },
+    {
+      "index": 93661,
+      "idea_id": "idea093656",
+      "filename": "idea093656-init-test-observability",
+      "title": "idea093656 - --init---test Observability",
+      "archetype": "observability",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093656-init-test-observability.md"
+    },
+    {
+      "index": 93662,
+      "idea_id": "idea093657",
+      "filename": "idea093657-init-test-security",
+      "title": "idea093657 - --init---test Security",
+      "archetype": "security",
+      "component": "init-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093657-init-test-security.md"
+    },
+    {
+      "index": 93663,
+      "idea_id": "idea093658",
+      "filename": "idea093658-init-test-test-coverage",
+      "title": "idea093658 - --init---test Test Coverage",
+      "archetype": "coverage",
+      "component": "init-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093658-init-test-test-coverage.md"
+    },
+    {
+      "index": 93664,
+      "idea_id": "idea093659",
+      "filename": "idea093659-deduplication-core-developer-experience",
+      "title": "idea093659 - deduplication-core Developer Experience",
+      "archetype": "experience",
+      "component": "deduplication-core-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093659-deduplication-core-developer-experience.md"
+    },
+    {
+      "index": 93665,
+      "idea_id": "idea093660",
+      "filename": "idea093660-deduplication-core-documentation",
+      "title": "idea093660 - deduplication-core Documentation",
+      "archetype": "documentation",
+      "component": "deduplication-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093660-deduplication-core-documentation.md"
+    },
+    {
+      "index": 93666,
+      "idea_id": "idea093661",
+      "filename": "idea093661-deduplication-core-hardening",
+      "title": "idea093661 - deduplication-core Hardening",
+      "archetype": "hardening",
+      "component": "deduplication-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093661-deduplication-core-hardening.md"
+    },
+    {
+      "index": 93667,
+      "idea_id": "idea093662",
+      "filename": "idea093662-deduplication-core-performance",
+      "title": "idea093662 - deduplication-core Performance",
+      "archetype": "performance",
+      "component": "deduplication-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093662-deduplication-core-performance.md"
+    },
+    {
+      "index": 93668,
+      "idea_id": "idea093663",
+      "filename": "idea093663-deduplication-core-resilience",
+      "title": "idea093663 - deduplication-core Resilience",
+      "archetype": "resilience",
+      "component": "deduplication-core",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093663-deduplication-core-resilience.md"
+    },
+    {
+      "index": 93669,
+      "idea_id": "idea093664",
+      "filename": "idea093664-deduplication-core-py-hardening",
+      "title": "idea093664 - deduplication-core.py Hardening",
+      "archetype": "hardening",
+      "component": "deduplication-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093664-deduplication-core-py-hardening.md"
+    },
+    {
+      "index": 93670,
+      "idea_id": "idea093665",
+      "filename": "idea093665-deduplication-core-py-performance",
+      "title": "idea093665 - deduplication-core.py Performance",
+      "archetype": "performance",
+      "component": "deduplication-core-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093665-deduplication-core-py-performance.md"
+    },
+    {
+      "index": 93671,
+      "idea_id": "idea093666",
+      "filename": "idea093666-deduplication-core-test-api-consistency",
+      "title": "idea093666 - deduplication-core-test API Consistency",
+      "archetype": "consistency",
+      "component": "deduplication-core-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093666-deduplication-core-test-api-consistency.md"
+    },
+    {
+      "index": 93672,
+      "idea_id": "idea093667",
+      "filename": "idea093667-deduplication-core-test-migration-readiness",
+      "title": "idea093667 - deduplication-core-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "deduplication-core-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093667-deduplication-core-test-migration-readiness.md"
+    },
+    {
+      "index": 93673,
+      "idea_id": "idea093668",
+      "filename": "idea093668-deduplication-core-test-observability",
+      "title": "idea093668 - deduplication-core-test Observability",
+      "archetype": "observability",
+      "component": "deduplication-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093668-deduplication-core-test-observability.md"
+    },
+    {
+      "index": 93674,
+      "idea_id": "idea093669",
+      "filename": "idea093669-deduplication-core-test-security",
+      "title": "idea093669 - deduplication-core-test Security",
+      "archetype": "security",
+      "component": "deduplication-core-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093669-deduplication-core-test-security.md"
+    },
+    {
+      "index": 93675,
+      "idea_id": "idea093670",
+      "filename": "idea093670-deduplication-core-test-test-coverage",
+      "title": "idea093670 - deduplication-core-test Test Coverage",
+      "archetype": "coverage",
+      "component": "deduplication-core-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093670-deduplication-core-test-test-coverage.md"
+    },
+    {
+      "index": 93676,
+      "idea_id": "idea093671",
+      "filename": "idea093671-diff-visualizer-developer-experience",
+      "title": "idea093671 - diff-visualizer Developer Experience",
+      "archetype": "experience",
+      "component": "diff-visualizer-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093671-diff-visualizer-developer-experience.md"
+    },
+    {
+      "index": 93677,
+      "idea_id": "idea093672",
+      "filename": "idea093672-diff-visualizer-documentation",
+      "title": "idea093672 - diff-visualizer Documentation",
+      "archetype": "documentation",
+      "component": "diff-visualizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093672-diff-visualizer-documentation.md"
+    },
+    {
+      "index": 93678,
+      "idea_id": "idea093673",
+      "filename": "idea093673-diff-visualizer-hardening",
+      "title": "idea093673 - diff-visualizer Hardening",
+      "archetype": "hardening",
+      "component": "diff-visualizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093673-diff-visualizer-hardening.md"
+    },
+    {
+      "index": 93679,
+      "idea_id": "idea093674",
+      "filename": "idea093674-diff-visualizer-performance",
+      "title": "idea093674 - diff-visualizer Performance",
+      "archetype": "performance",
+      "component": "diff-visualizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093674-diff-visualizer-performance.md"
+    },
+    {
+      "index": 93680,
+      "idea_id": "idea093675",
+      "filename": "idea093675-diff-visualizer-resilience",
+      "title": "idea093675 - diff-visualizer Resilience",
+      "archetype": "resilience",
+      "component": "diff-visualizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093675-diff-visualizer-resilience.md"
+    },
+    {
+      "index": 93681,
+      "idea_id": "idea093676",
+      "filename": "idea093676-diff-visualizer-test-api-consistency",
+      "title": "idea093676 - diff-visualizer-test API Consistency",
+      "archetype": "consistency",
+      "component": "diff-visualizer-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093676-diff-visualizer-test-api-consistency.md"
+    },
+    {
+      "index": 93682,
+      "idea_id": "idea093677",
+      "filename": "idea093677-diff-visualizer-test-migration-readiness",
+      "title": "idea093677 - diff-visualizer-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "diff-visualizer-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093677-diff-visualizer-test-migration-readiness.md"
+    },
+    {
+      "index": 93683,
+      "idea_id": "idea093678",
+      "filename": "idea093678-diff-visualizer-test-observability",
+      "title": "idea093678 - diff-visualizer-test Observability",
+      "archetype": "observability",
+      "component": "diff-visualizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093678-diff-visualizer-test-observability.md"
+    },
+    {
+      "index": 93684,
+      "idea_id": "idea093679",
+      "filename": "idea093679-diff-visualizer-test-security",
+      "title": "idea093679 - diff-visualizer-test Security",
+      "archetype": "security",
+      "component": "diff-visualizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093679-diff-visualizer-test-security.md"
+    },
+    {
+      "index": 93685,
+      "idea_id": "idea093680",
+      "filename": "idea093680-diff-visualizer-test-test-coverage",
+      "title": "idea093680 - diff-visualizer-test Test Coverage",
+      "archetype": "coverage",
+      "component": "diff-visualizer-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093680-diff-visualizer-test-test-coverage.md"
+    },
+    {
+      "index": 93686,
+      "idea_id": "idea093681",
+      "filename": "idea093681-export-format-developer-experience",
+      "title": "idea093681 - export-format Developer Experience",
+      "archetype": "experience",
+      "component": "export-format-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093681-export-format-developer-experience.md"
+    },
+    {
+      "index": 93687,
+      "idea_id": "idea093682",
+      "filename": "idea093682-export-format-documentation",
+      "title": "idea093682 - export-format Documentation",
+      "archetype": "documentation",
+      "component": "export-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093682-export-format-documentation.md"
+    },
+    {
+      "index": 93688,
+      "idea_id": "idea093683",
+      "filename": "idea093683-export-format-hardening",
+      "title": "idea093683 - export-format Hardening",
+      "archetype": "hardening",
+      "component": "export-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093683-export-format-hardening.md"
+    },
+    {
+      "index": 93689,
+      "idea_id": "idea093684",
+      "filename": "idea093684-export-format-performance",
+      "title": "idea093684 - export-format Performance",
+      "archetype": "performance",
+      "component": "export-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093684-export-format-performance.md"
+    },
+    {
+      "index": 93690,
+      "idea_id": "idea093685",
+      "filename": "idea093685-export-format-resilience",
+      "title": "idea093685 - export-format Resilience",
+      "archetype": "resilience",
+      "component": "export-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093685-export-format-resilience.md"
+    },
+    {
+      "index": 93691,
+      "idea_id": "idea093686",
+      "filename": "idea093686-export-format-test-api-consistency",
+      "title": "idea093686 - export-format-test API Consistency",
+      "archetype": "consistency",
+      "component": "export-format-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093686-export-format-test-api-consistency.md"
+    },
+    {
+      "index": 93692,
+      "idea_id": "idea093687",
+      "filename": "idea093687-export-format-test-migration-readiness",
+      "title": "idea093687 - export-format-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "export-format-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093687-export-format-test-migration-readiness.md"
+    },
+    {
+      "index": 93693,
+      "idea_id": "idea093688",
+      "filename": "idea093688-export-format-test-observability",
+      "title": "idea093688 - export-format-test Observability",
+      "archetype": "observability",
+      "component": "export-format-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093688-export-format-test-observability.md"
+    },
+    {
+      "index": 93694,
+      "idea_id": "idea093689",
+      "filename": "idea093689-export-format-test-security",
+      "title": "idea093689 - export-format-test Security",
+      "archetype": "security",
+      "component": "export-format-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093689-export-format-test-security.md"
+    },
+    {
+      "index": 93695,
+      "idea_id": "idea093690",
+      "filename": "idea093690-export-format-test-test-coverage",
+      "title": "idea093690 - export-format-test Test Coverage",
+      "archetype": "coverage",
+      "component": "export-format-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093690-export-format-test-test-coverage.md"
+    },
+    {
+      "index": 93696,
+      "idea_id": "idea093691",
+      "filename": "idea093691-feed-generator-developer-experience",
+      "title": "idea093691 - feed-generator Developer Experience",
+      "archetype": "experience",
+      "component": "feed-generator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093691-feed-generator-developer-experience.md"
+    },
+    {
+      "index": 93697,
+      "idea_id": "idea093692",
+      "filename": "idea093692-feed-generator-documentation",
+      "title": "idea093692 - feed-generator Documentation",
+      "archetype": "documentation",
+      "component": "feed-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093692-feed-generator-documentation.md"
+    },
+    {
+      "index": 93698,
+      "idea_id": "idea093693",
+      "filename": "idea093693-feed-generator-hardening",
+      "title": "idea093693 - feed-generator Hardening",
+      "archetype": "hardening",
+      "component": "feed-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093693-feed-generator-hardening.md"
+    },
+    {
+      "index": 93699,
+      "idea_id": "idea093694",
+      "filename": "idea093694-feed-generator-performance",
+      "title": "idea093694 - feed-generator Performance",
+      "archetype": "performance",
+      "component": "feed-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093694-feed-generator-performance.md"
+    },
+    {
+      "index": 93700,
+      "idea_id": "idea093695",
+      "filename": "idea093695-feed-generator-resilience",
+      "title": "idea093695 - feed-generator Resilience",
+      "archetype": "resilience",
+      "component": "feed-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093695-feed-generator-resilience.md"
+    },
+    {
+      "index": 93701,
+      "idea_id": "idea093696",
+      "filename": "idea093696-feed-generator-test-api-consistency",
+      "title": "idea093696 - feed-generator-test API Consistency",
+      "archetype": "consistency",
+      "component": "feed-generator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093696-feed-generator-test-api-consistency.md"
+    },
+    {
+      "index": 93702,
+      "idea_id": "idea093697",
+      "filename": "idea093697-feed-generator-test-migration-readiness",
+      "title": "idea093697 - feed-generator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "feed-generator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093697-feed-generator-test-migration-readiness.md"
+    },
+    {
+      "index": 93703,
+      "idea_id": "idea093698",
+      "filename": "idea093698-feed-generator-test-observability",
+      "title": "idea093698 - feed-generator-test Observability",
+      "archetype": "observability",
+      "component": "feed-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093698-feed-generator-test-observability.md"
+    },
+    {
+      "index": 93704,
+      "idea_id": "idea093699",
+      "filename": "idea093699-feed-generator-test-security",
+      "title": "idea093699 - feed-generator-test Security",
+      "archetype": "security",
+      "component": "feed-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093699-feed-generator-test-security.md"
+    },
+    {
+      "index": 93705,
+      "idea_id": "idea093700",
+      "filename": "idea093700-feed-generator-test-test-coverage",
+      "title": "idea093700 - feed-generator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "feed-generator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093700-feed-generator-test-test-coverage.md"
+    },
+    {
+      "index": 93706,
+      "idea_id": "idea093701",
+      "filename": "idea093701-filter-criteria-developer-experience",
+      "title": "idea093701 - filter-criteria Developer Experience",
+      "archetype": "experience",
+      "component": "filter-criteria-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093701-filter-criteria-developer-experience.md"
+    },
+    {
+      "index": 93707,
+      "idea_id": "idea093702",
+      "filename": "idea093702-filter-criteria-documentation",
+      "title": "idea093702 - filter-criteria Documentation",
+      "archetype": "documentation",
+      "component": "filter-criteria",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093702-filter-criteria-documentation.md"
+    },
+    {
+      "index": 93708,
+      "idea_id": "idea093703",
+      "filename": "idea093703-filter-criteria-hardening",
+      "title": "idea093703 - filter-criteria Hardening",
+      "archetype": "hardening",
+      "component": "filter-criteria",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093703-filter-criteria-hardening.md"
+    },
+    {
+      "index": 93709,
+      "idea_id": "idea093704",
+      "filename": "idea093704-filter-criteria-performance",
+      "title": "idea093704 - filter-criteria Performance",
+      "archetype": "performance",
+      "component": "filter-criteria",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093704-filter-criteria-performance.md"
+    },
+    {
+      "index": 93710,
+      "idea_id": "idea093705",
+      "filename": "idea093705-filter-criteria-resilience",
+      "title": "idea093705 - filter-criteria Resilience",
+      "archetype": "resilience",
+      "component": "filter-criteria",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093705-filter-criteria-resilience.md"
+    },
+    {
+      "index": 93711,
+      "idea_id": "idea093706",
+      "filename": "idea093706-filter-criteria-test-api-consistency",
+      "title": "idea093706 - filter-criteria-test API Consistency",
+      "archetype": "consistency",
+      "component": "filter-criteria-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093706-filter-criteria-test-api-consistency.md"
+    },
+    {
+      "index": 93712,
+      "idea_id": "idea093707",
+      "filename": "idea093707-filter-criteria-test-migration-readiness",
+      "title": "idea093707 - filter-criteria-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "filter-criteria-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093707-filter-criteria-test-migration-readiness.md"
+    },
+    {
+      "index": 93713,
+      "idea_id": "idea093708",
+      "filename": "idea093708-filter-criteria-test-observability",
+      "title": "idea093708 - filter-criteria-test Observability",
+      "archetype": "observability",
+      "component": "filter-criteria-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093708-filter-criteria-test-observability.md"
+    },
+    {
+      "index": 93714,
+      "idea_id": "idea093709",
+      "filename": "idea093709-filter-criteria-test-security",
+      "title": "idea093709 - filter-criteria-test Security",
+      "archetype": "security",
+      "component": "filter-criteria-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093709-filter-criteria-test-security.md"
+    },
+    {
+      "index": 93715,
+      "idea_id": "idea093710",
+      "filename": "idea093710-filter-criteria-test-test-coverage",
+      "title": "idea093710 - filter-criteria-test Test Coverage",
+      "archetype": "coverage",
+      "component": "filter-criteria-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093710-filter-criteria-test-test-coverage.md"
+    },
+    {
+      "index": 93716,
+      "idea_id": "idea093711",
+      "filename": "idea093711-grafana-generator-developer-experience",
+      "title": "idea093711 - grafana-generator Developer Experience",
+      "archetype": "experience",
+      "component": "grafana-generator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093711-grafana-generator-developer-experience.md"
+    },
+    {
+      "index": 93717,
+      "idea_id": "idea093712",
+      "filename": "idea093712-grafana-generator-documentation",
+      "title": "idea093712 - grafana-generator Documentation",
+      "archetype": "documentation",
+      "component": "grafana-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093712-grafana-generator-documentation.md"
+    },
+    {
+      "index": 93718,
+      "idea_id": "idea093713",
+      "filename": "idea093713-grafana-generator-hardening",
+      "title": "idea093713 - grafana-generator Hardening",
+      "archetype": "hardening",
+      "component": "grafana-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093713-grafana-generator-hardening.md"
+    },
+    {
+      "index": 93719,
+      "idea_id": "idea093714",
+      "filename": "idea093714-grafana-generator-performance",
+      "title": "idea093714 - grafana-generator Performance",
+      "archetype": "performance",
+      "component": "grafana-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093714-grafana-generator-performance.md"
+    },
+    {
+      "index": 93720,
+      "idea_id": "idea093715",
+      "filename": "idea093715-grafana-generator-resilience",
+      "title": "idea093715 - grafana-generator Resilience",
+      "archetype": "resilience",
+      "component": "grafana-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093715-grafana-generator-resilience.md"
+    },
+    {
+      "index": 93721,
+      "idea_id": "idea093716",
+      "filename": "idea093716-grafana-generator-test-api-consistency",
+      "title": "idea093716 - grafana-generator-test API Consistency",
+      "archetype": "consistency",
+      "component": "grafana-generator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093716-grafana-generator-test-api-consistency.md"
+    },
+    {
+      "index": 93722,
+      "idea_id": "idea093717",
+      "filename": "idea093717-grafana-generator-test-migration-readiness",
+      "title": "idea093717 - grafana-generator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "grafana-generator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093717-grafana-generator-test-migration-readiness.md"
+    },
+    {
+      "index": 93723,
+      "idea_id": "idea093718",
+      "filename": "idea093718-grafana-generator-test-observability",
+      "title": "idea093718 - grafana-generator-test Observability",
+      "archetype": "observability",
+      "component": "grafana-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093718-grafana-generator-test-observability.md"
+    },
+    {
+      "index": 93724,
+      "idea_id": "idea093719",
+      "filename": "idea093719-grafana-generator-test-security",
+      "title": "idea093719 - grafana-generator-test Security",
+      "archetype": "security",
+      "component": "grafana-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093719-grafana-generator-test-security.md"
+    },
+    {
+      "index": 93725,
+      "idea_id": "idea093720",
+      "filename": "idea093720-grafana-generator-test-test-coverage",
+      "title": "idea093720 - grafana-generator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "grafana-generator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093720-grafana-generator-test-test-coverage.md"
+    },
+    {
+      "index": 93726,
+      "idea_id": "idea093721",
+      "filename": "idea093721-issue-category-developer-experience",
+      "title": "idea093721 - issue-category Developer Experience",
+      "archetype": "experience",
+      "component": "issue-category-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093721-issue-category-developer-experience.md"
+    },
+    {
+      "index": 93727,
+      "idea_id": "idea093722",
+      "filename": "idea093722-issue-category-documentation",
+      "title": "idea093722 - issue-category Documentation",
+      "archetype": "documentation",
+      "component": "issue-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093722-issue-category-documentation.md"
+    },
+    {
+      "index": 93728,
+      "idea_id": "idea093723",
+      "filename": "idea093723-issue-category-hardening",
+      "title": "idea093723 - issue-category Hardening",
+      "archetype": "hardening",
+      "component": "issue-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093723-issue-category-hardening.md"
+    },
+    {
+      "index": 93729,
+      "idea_id": "idea093724",
+      "filename": "idea093724-issue-category-performance",
+      "title": "idea093724 - issue-category Performance",
+      "archetype": "performance",
+      "component": "issue-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093724-issue-category-performance.md"
+    },
+    {
+      "index": 93730,
+      "idea_id": "idea093725",
+      "filename": "idea093725-issue-category-resilience",
+      "title": "idea093725 - issue-category Resilience",
+      "archetype": "resilience",
+      "component": "issue-category",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093725-issue-category-resilience.md"
+    },
+    {
+      "index": 93731,
+      "idea_id": "idea093726",
+      "filename": "idea093726-issue-category-test-api-consistency",
+      "title": "idea093726 - issue-category-test API Consistency",
+      "archetype": "consistency",
+      "component": "issue-category-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093726-issue-category-test-api-consistency.md"
+    },
+    {
+      "index": 93732,
+      "idea_id": "idea093727",
+      "filename": "idea093727-issue-category-test-migration-readiness",
+      "title": "idea093727 - issue-category-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "issue-category-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093727-issue-category-test-migration-readiness.md"
+    },
+    {
+      "index": 93733,
+      "idea_id": "idea093728",
+      "filename": "idea093728-issue-category-test-observability",
+      "title": "idea093728 - issue-category-test Observability",
+      "archetype": "observability",
+      "component": "issue-category-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093728-issue-category-test-observability.md"
+    },
+    {
+      "index": 93734,
+      "idea_id": "idea093729",
+      "filename": "idea093729-issue-category-test-security",
+      "title": "idea093729 - issue-category-test Security",
+      "archetype": "security",
+      "component": "issue-category-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093729-issue-category-test-security.md"
+    },
+    {
+      "index": 93735,
+      "idea_id": "idea093730",
+      "filename": "idea093730-issue-category-test-test-coverage",
+      "title": "idea093730 - issue-category-test Test Coverage",
+      "archetype": "coverage",
+      "component": "issue-category-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093730-issue-category-test-test-coverage.md"
+    },
+    {
+      "index": 93736,
+      "idea_id": "idea093731",
+      "filename": "idea093731-locale-code-developer-experience",
+      "title": "idea093731 - locale-code Developer Experience",
+      "archetype": "experience",
+      "component": "locale-code-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093731-locale-code-developer-experience.md"
+    },
+    {
+      "index": 93737,
+      "idea_id": "idea093732",
+      "filename": "idea093732-locale-code-documentation",
+      "title": "idea093732 - locale-code Documentation",
+      "archetype": "documentation",
+      "component": "locale-code",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093732-locale-code-documentation.md"
+    },
+    {
+      "index": 93738,
+      "idea_id": "idea093733",
+      "filename": "idea093733-locale-code-hardening",
+      "title": "idea093733 - locale-code Hardening",
+      "archetype": "hardening",
+      "component": "locale-code",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093733-locale-code-hardening.md"
+    },
+    {
+      "index": 93739,
+      "idea_id": "idea093734",
+      "filename": "idea093734-locale-code-performance",
+      "title": "idea093734 - locale-code Performance",
+      "archetype": "performance",
+      "component": "locale-code",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093734-locale-code-performance.md"
+    },
+    {
+      "index": 93740,
+      "idea_id": "idea093735",
+      "filename": "idea093735-locale-code-resilience",
+      "title": "idea093735 - locale-code Resilience",
+      "archetype": "resilience",
+      "component": "locale-code",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093735-locale-code-resilience.md"
+    },
+    {
+      "index": 93741,
+      "idea_id": "idea093736",
+      "filename": "idea093736-locale-code-test-api-consistency",
+      "title": "idea093736 - locale-code-test API Consistency",
+      "archetype": "consistency",
+      "component": "locale-code-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093736-locale-code-test-api-consistency.md"
+    },
+    {
+      "index": 93742,
+      "idea_id": "idea093737",
+      "filename": "idea093737-locale-code-test-migration-readiness",
+      "title": "idea093737 - locale-code-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "locale-code-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093737-locale-code-test-migration-readiness.md"
+    },
+    {
+      "index": 93743,
+      "idea_id": "idea093738",
+      "filename": "idea093738-locale-code-test-observability",
+      "title": "idea093738 - locale-code-test Observability",
+      "archetype": "observability",
+      "component": "locale-code-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093738-locale-code-test-observability.md"
+    },
+    {
+      "index": 93744,
+      "idea_id": "idea093739",
+      "filename": "idea093739-locale-code-test-security",
+      "title": "idea093739 - locale-code-test Security",
+      "archetype": "security",
+      "component": "locale-code-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093739-locale-code-test-security.md"
+    },
+    {
+      "index": 93745,
+      "idea_id": "idea093740",
+      "filename": "idea093740-locale-code-test-test-coverage",
+      "title": "idea093740 - locale-code-test Test Coverage",
+      "archetype": "coverage",
+      "component": "locale-code-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093740-locale-code-test-test-coverage.md"
+    },
+    {
+      "index": 93746,
+      "idea_id": "idea093741",
+      "filename": "idea093741-localized-string-developer-experience",
+      "title": "idea093741 - localized-string Developer Experience",
+      "archetype": "experience",
+      "component": "localized-string-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093741-localized-string-developer-experience.md"
+    },
+    {
+      "index": 93747,
+      "idea_id": "idea093742",
+      "filename": "idea093742-localized-string-documentation",
+      "title": "idea093742 - localized-string Documentation",
+      "archetype": "documentation",
+      "component": "localized-string",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093742-localized-string-documentation.md"
+    },
+    {
+      "index": 93748,
+      "idea_id": "idea093743",
+      "filename": "idea093743-localized-string-hardening",
+      "title": "idea093743 - localized-string Hardening",
+      "archetype": "hardening",
+      "component": "localized-string",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093743-localized-string-hardening.md"
+    },
+    {
+      "index": 93749,
+      "idea_id": "idea093744",
+      "filename": "idea093744-localized-string-performance",
+      "title": "idea093744 - localized-string Performance",
+      "archetype": "performance",
+      "component": "localized-string",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093744-localized-string-performance.md"
+    },
+    {
+      "index": 93750,
+      "idea_id": "idea093745",
+      "filename": "idea093745-localized-string-resilience",
+      "title": "idea093745 - localized-string Resilience",
+      "archetype": "resilience",
+      "component": "localized-string",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093745-localized-string-resilience.md"
+    },
+    {
+      "index": 93751,
+      "idea_id": "idea093746",
+      "filename": "idea093746-localized-string-test-api-consistency",
+      "title": "idea093746 - localized-string-test API Consistency",
+      "archetype": "consistency",
+      "component": "localized-string-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093746-localized-string-test-api-consistency.md"
+    },
+    {
+      "index": 93752,
+      "idea_id": "idea093747",
+      "filename": "idea093747-localized-string-test-migration-readiness",
+      "title": "idea093747 - localized-string-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "localized-string-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093747-localized-string-test-migration-readiness.md"
+    },
+    {
+      "index": 93753,
+      "idea_id": "idea093748",
+      "filename": "idea093748-localized-string-test-observability",
+      "title": "idea093748 - localized-string-test Observability",
+      "archetype": "observability",
+      "component": "localized-string-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093748-localized-string-test-observability.md"
+    },
+    {
+      "index": 93754,
+      "idea_id": "idea093749",
+      "filename": "idea093749-localized-string-test-security",
+      "title": "idea093749 - localized-string-test Security",
+      "archetype": "security",
+      "component": "localized-string-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093749-localized-string-test-security.md"
+    },
+    {
+      "index": 93755,
+      "idea_id": "idea093750",
+      "filename": "idea093750-localized-string-test-test-coverage",
+      "title": "idea093750 - localized-string-test Test Coverage",
+      "archetype": "coverage",
+      "component": "localized-string-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093750-localized-string-test-test-coverage.md"
+    },
+    {
+      "index": 93756,
+      "idea_id": "idea093751",
+      "filename": "idea093751-metrics-collector-developer-experience",
+      "title": "idea093751 - metrics-collector Developer Experience",
+      "archetype": "experience",
+      "component": "metrics-collector-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093751-metrics-collector-developer-experience.md"
+    },
+    {
+      "index": 93757,
+      "idea_id": "idea093752",
+      "filename": "idea093752-metrics-collector-documentation",
+      "title": "idea093752 - metrics-collector Documentation",
+      "archetype": "documentation",
+      "component": "metrics-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093752-metrics-collector-documentation.md"
+    },
+    {
+      "index": 93758,
+      "idea_id": "idea093753",
+      "filename": "idea093753-metrics-collector-hardening",
+      "title": "idea093753 - metrics-collector Hardening",
+      "archetype": "hardening",
+      "component": "metrics-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093753-metrics-collector-hardening.md"
+    },
+    {
+      "index": 93759,
+      "idea_id": "idea093754",
+      "filename": "idea093754-metrics-collector-performance",
+      "title": "idea093754 - metrics-collector Performance",
+      "archetype": "performance",
+      "component": "metrics-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093754-metrics-collector-performance.md"
+    },
+    {
+      "index": 93760,
+      "idea_id": "idea093755",
+      "filename": "idea093755-metrics-collector-resilience",
+      "title": "idea093755 - metrics-collector Resilience",
+      "archetype": "resilience",
+      "component": "metrics-collector",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093755-metrics-collector-resilience.md"
+    },
+    {
+      "index": 93761,
+      "idea_id": "idea093756",
+      "filename": "idea093756-metrics-collector-test-api-consistency",
+      "title": "idea093756 - metrics-collector-test API Consistency",
+      "archetype": "consistency",
+      "component": "metrics-collector-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093756-metrics-collector-test-api-consistency.md"
+    },
+    {
+      "index": 93762,
+      "idea_id": "idea093757",
+      "filename": "idea093757-metrics-collector-test-migration-readiness",
+      "title": "idea093757 - metrics-collector-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "metrics-collector-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093757-metrics-collector-test-migration-readiness.md"
+    },
+    {
+      "index": 93763,
+      "idea_id": "idea093758",
+      "filename": "idea093758-metrics-collector-test-observability",
+      "title": "idea093758 - metrics-collector-test Observability",
+      "archetype": "observability",
+      "component": "metrics-collector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093758-metrics-collector-test-observability.md"
+    },
+    {
+      "index": 93764,
+      "idea_id": "idea093759",
+      "filename": "idea093759-metrics-collector-test-security",
+      "title": "idea093759 - metrics-collector-test Security",
+      "archetype": "security",
+      "component": "metrics-collector-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093759-metrics-collector-test-security.md"
+    },
+    {
+      "index": 93765,
+      "idea_id": "idea093760",
+      "filename": "idea093760-metrics-collector-test-test-coverage",
+      "title": "idea093760 - metrics-collector-test Test Coverage",
+      "archetype": "coverage",
+      "component": "metrics-collector-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093760-metrics-collector-test-test-coverage.md"
+    },
+    {
+      "index": 93766,
+      "idea_id": "idea093761",
+      "filename": "idea093761-permission-level-developer-experience",
+      "title": "idea093761 - permission-level Developer Experience",
+      "archetype": "experience",
+      "component": "permission-level-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093761-permission-level-developer-experience.md"
+    },
+    {
+      "index": 93767,
+      "idea_id": "idea093762",
+      "filename": "idea093762-permission-level-documentation",
+      "title": "idea093762 - permission-level Documentation",
+      "archetype": "documentation",
+      "component": "permission-level",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093762-permission-level-documentation.md"
+    },
+    {
+      "index": 93768,
+      "idea_id": "idea093763",
+      "filename": "idea093763-permission-level-hardening",
+      "title": "idea093763 - permission-level Hardening",
+      "archetype": "hardening",
+      "component": "permission-level",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093763-permission-level-hardening.md"
+    },
+    {
+      "index": 93769,
+      "idea_id": "idea093764",
+      "filename": "idea093764-permission-level-performance",
+      "title": "idea093764 - permission-level Performance",
+      "archetype": "performance",
+      "component": "permission-level",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093764-permission-level-performance.md"
+    },
+    {
+      "index": 93770,
+      "idea_id": "idea093765",
+      "filename": "idea093765-permission-level-resilience",
+      "title": "idea093765 - permission-level Resilience",
+      "archetype": "resilience",
+      "component": "permission-level",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093765-permission-level-resilience.md"
+    },
+    {
+      "index": 93771,
+      "idea_id": "idea093766",
+      "filename": "idea093766-permission-level-test-api-consistency",
+      "title": "idea093766 - permission-level-test API Consistency",
+      "archetype": "consistency",
+      "component": "permission-level-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093766-permission-level-test-api-consistency.md"
+    },
+    {
+      "index": 93772,
+      "idea_id": "idea093767",
+      "filename": "idea093767-permission-level-test-migration-readiness",
+      "title": "idea093767 - permission-level-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "permission-level-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093767-permission-level-test-migration-readiness.md"
+    },
+    {
+      "index": 93773,
+      "idea_id": "idea093768",
+      "filename": "idea093768-permission-level-test-observability",
+      "title": "idea093768 - permission-level-test Observability",
+      "archetype": "observability",
+      "component": "permission-level-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093768-permission-level-test-observability.md"
+    },
+    {
+      "index": 93774,
+      "idea_id": "idea093769",
+      "filename": "idea093769-permission-level-test-security",
+      "title": "idea093769 - permission-level-test Security",
+      "archetype": "security",
+      "component": "permission-level-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093769-permission-level-test-security.md"
+    },
+    {
+      "index": 93775,
+      "idea_id": "idea093770",
+      "filename": "idea093770-permission-level-test-test-coverage",
+      "title": "idea093770 - permission-level-test Test Coverage",
+      "archetype": "coverage",
+      "component": "permission-level-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093770-permission-level-test-test-coverage.md"
+    },
+    {
+      "index": 93776,
+      "idea_id": "idea093771",
+      "filename": "idea093771-release-notes-generator-developer-experience",
+      "title": "idea093771 - release-notes-generator Developer Experience",
+      "archetype": "experience",
+      "component": "release-notes-generator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093771-release-notes-generator-developer-experience.md"
+    },
+    {
+      "index": 93777,
+      "idea_id": "idea093772",
+      "filename": "idea093772-release-notes-generator-documentation",
+      "title": "idea093772 - release-notes-generator Documentation",
+      "archetype": "documentation",
+      "component": "release-notes-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093772-release-notes-generator-documentation.md"
+    },
+    {
+      "index": 93778,
+      "idea_id": "idea093773",
+      "filename": "idea093773-release-notes-generator-hardening",
+      "title": "idea093773 - release-notes-generator Hardening",
+      "archetype": "hardening",
+      "component": "release-notes-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093773-release-notes-generator-hardening.md"
+    },
+    {
+      "index": 93779,
+      "idea_id": "idea093774",
+      "filename": "idea093774-release-notes-generator-performance",
+      "title": "idea093774 - release-notes-generator Performance",
+      "archetype": "performance",
+      "component": "release-notes-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093774-release-notes-generator-performance.md"
+    },
+    {
+      "index": 93780,
+      "idea_id": "idea093775",
+      "filename": "idea093775-release-notes-generator-resilience",
+      "title": "idea093775 - release-notes-generator Resilience",
+      "archetype": "resilience",
+      "component": "release-notes-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093775-release-notes-generator-resilience.md"
+    },
+    {
+      "index": 93781,
+      "idea_id": "idea093776",
+      "filename": "idea093776-release-notes-generator-test-api-consistency",
+      "title": "idea093776 - release-notes-generator-test API Consistency",
+      "archetype": "consistency",
+      "component": "release-notes-generator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093776-release-notes-generator-test-api-consistency.md"
+    },
+    {
+      "index": 93782,
+      "idea_id": "idea093777",
+      "filename": "idea093777-release-notes-generator-test-migration-readiness",
+      "title": "idea093777 - release-notes-generator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "release-notes-generator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093777-release-notes-generator-test-migration-readiness.md"
+    },
+    {
+      "index": 93783,
+      "idea_id": "idea093778",
+      "filename": "idea093778-release-notes-generator-test-observability",
+      "title": "idea093778 - release-notes-generator-test Observability",
+      "archetype": "observability",
+      "component": "release-notes-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093778-release-notes-generator-test-observability.md"
+    },
+    {
+      "index": 93784,
+      "idea_id": "idea093779",
+      "filename": "idea093779-release-notes-generator-test-security",
+      "title": "idea093779 - release-notes-generator-test Security",
+      "archetype": "security",
+      "component": "release-notes-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093779-release-notes-generator-test-security.md"
+    },
+    {
+      "index": 93785,
+      "idea_id": "idea093780",
+      "filename": "idea093780-release-notes-generator-test-test-coverage",
+      "title": "idea093780 - release-notes-generator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "release-notes-generator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093780-release-notes-generator-test-test-coverage.md"
+    },
+    {
+      "index": 93786,
+      "idea_id": "idea093781",
+      "filename": "idea093781-report-aggregator-developer-experience",
+      "title": "idea093781 - report-aggregator Developer Experience",
+      "archetype": "experience",
+      "component": "report-aggregator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093781-report-aggregator-developer-experience.md"
+    },
+    {
+      "index": 93787,
+      "idea_id": "idea093782",
+      "filename": "idea093782-report-aggregator-documentation",
+      "title": "idea093782 - report-aggregator Documentation",
+      "archetype": "documentation",
+      "component": "report-aggregator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093782-report-aggregator-documentation.md"
+    },
+    {
+      "index": 93788,
+      "idea_id": "idea093783",
+      "filename": "idea093783-report-aggregator-hardening",
+      "title": "idea093783 - report-aggregator Hardening",
+      "archetype": "hardening",
+      "component": "report-aggregator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093783-report-aggregator-hardening.md"
+    },
+    {
+      "index": 93789,
+      "idea_id": "idea093784",
+      "filename": "idea093784-report-aggregator-performance",
+      "title": "idea093784 - report-aggregator Performance",
+      "archetype": "performance",
+      "component": "report-aggregator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093784-report-aggregator-performance.md"
+    },
+    {
+      "index": 93790,
+      "idea_id": "idea093785",
+      "filename": "idea093785-report-aggregator-resilience",
+      "title": "idea093785 - report-aggregator Resilience",
+      "archetype": "resilience",
+      "component": "report-aggregator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093785-report-aggregator-resilience.md"
+    },
+    {
+      "index": 93791,
+      "idea_id": "idea093786",
+      "filename": "idea093786-report-aggregator-test-api-consistency",
+      "title": "idea093786 - report-aggregator-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-aggregator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093786-report-aggregator-test-api-consistency.md"
+    },
+    {
+      "index": 93792,
+      "idea_id": "idea093787",
+      "filename": "idea093787-report-aggregator-test-migration-readiness",
+      "title": "idea093787 - report-aggregator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-aggregator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093787-report-aggregator-test-migration-readiness.md"
+    },
+    {
+      "index": 93793,
+      "idea_id": "idea093788",
+      "filename": "idea093788-report-aggregator-test-observability",
+      "title": "idea093788 - report-aggregator-test Observability",
+      "archetype": "observability",
+      "component": "report-aggregator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093788-report-aggregator-test-observability.md"
+    },
+    {
+      "index": 93794,
+      "idea_id": "idea093789",
+      "filename": "idea093789-report-aggregator-test-security",
+      "title": "idea093789 - report-aggregator-test Security",
+      "archetype": "security",
+      "component": "report-aggregator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093789-report-aggregator-test-security.md"
+    },
+    {
+      "index": 93795,
+      "idea_id": "idea093790",
+      "filename": "idea093790-report-aggregator-test-test-coverage",
+      "title": "idea093790 - report-aggregator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-aggregator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093790-report-aggregator-test-test-coverage.md"
+    },
+    {
+      "index": 93796,
+      "idea_id": "idea093791",
+      "filename": "idea093791-report-annotation-developer-experience",
+      "title": "idea093791 - report-annotation Developer Experience",
+      "archetype": "experience",
+      "component": "report-annotation-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093791-report-annotation-developer-experience.md"
+    },
+    {
+      "index": 93797,
+      "idea_id": "idea093792",
+      "filename": "idea093792-report-annotation-documentation",
+      "title": "idea093792 - report-annotation Documentation",
+      "archetype": "documentation",
+      "component": "report-annotation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093792-report-annotation-documentation.md"
+    },
+    {
+      "index": 93798,
+      "idea_id": "idea093793",
+      "filename": "idea093793-report-annotation-hardening",
+      "title": "idea093793 - report-annotation Hardening",
+      "archetype": "hardening",
+      "component": "report-annotation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093793-report-annotation-hardening.md"
+    },
+    {
+      "index": 93799,
+      "idea_id": "idea093794",
+      "filename": "idea093794-report-annotation-performance",
+      "title": "idea093794 - report-annotation Performance",
+      "archetype": "performance",
+      "component": "report-annotation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093794-report-annotation-performance.md"
+    },
+    {
+      "index": 93800,
+      "idea_id": "idea093795",
+      "filename": "idea093795-report-annotation-resilience",
+      "title": "idea093795 - report-annotation Resilience",
+      "archetype": "resilience",
+      "component": "report-annotation",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093795-report-annotation-resilience.md"
+    },
+    {
+      "index": 93801,
+      "idea_id": "idea093796",
+      "filename": "idea093796-report-annotation-test-api-consistency",
+      "title": "idea093796 - report-annotation-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-annotation-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093796-report-annotation-test-api-consistency.md"
+    },
+    {
+      "index": 93802,
+      "idea_id": "idea093797",
+      "filename": "idea093797-report-annotation-test-migration-readiness",
+      "title": "idea093797 - report-annotation-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-annotation-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093797-report-annotation-test-migration-readiness.md"
+    },
+    {
+      "index": 93803,
+      "idea_id": "idea093798",
+      "filename": "idea093798-report-annotation-test-observability",
+      "title": "idea093798 - report-annotation-test Observability",
+      "archetype": "observability",
+      "component": "report-annotation-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093798-report-annotation-test-observability.md"
+    },
+    {
+      "index": 93804,
+      "idea_id": "idea093799",
+      "filename": "idea093799-report-annotation-test-security",
+      "title": "idea093799 - report-annotation-test Security",
+      "archetype": "security",
+      "component": "report-annotation-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093799-report-annotation-test-security.md"
+    },
+    {
+      "index": 93805,
+      "idea_id": "idea093800",
+      "filename": "idea093800-report-annotation-test-test-coverage",
+      "title": "idea093800 - report-annotation-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-annotation-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093800-report-annotation-test-test-coverage.md"
+    },
+    {
+      "index": 93806,
+      "idea_id": "idea093801",
+      "filename": "idea093801-report-api-developer-experience",
+      "title": "idea093801 - report-api Developer Experience",
+      "archetype": "experience",
+      "component": "report-api-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093801-report-api-developer-experience.md"
+    },
+    {
+      "index": 93807,
+      "idea_id": "idea093802",
+      "filename": "idea093802-report-api-documentation",
+      "title": "idea093802 - report-api Documentation",
+      "archetype": "documentation",
+      "component": "report-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093802-report-api-documentation.md"
+    },
+    {
+      "index": 93808,
+      "idea_id": "idea093803",
+      "filename": "idea093803-report-api-hardening",
+      "title": "idea093803 - report-api Hardening",
+      "archetype": "hardening",
+      "component": "report-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093803-report-api-hardening.md"
+    },
+    {
+      "index": 93809,
+      "idea_id": "idea093804",
+      "filename": "idea093804-report-api-performance",
+      "title": "idea093804 - report-api Performance",
+      "archetype": "performance",
+      "component": "report-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093804-report-api-performance.md"
+    },
+    {
+      "index": 93810,
+      "idea_id": "idea093805",
+      "filename": "idea093805-report-api-resilience",
+      "title": "idea093805 - report-api Resilience",
+      "archetype": "resilience",
+      "component": "report-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093805-report-api-resilience.md"
+    },
+    {
+      "index": 93811,
+      "idea_id": "idea093806",
+      "filename": "idea093806-report-api-test-api-consistency",
+      "title": "idea093806 - report-api-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-api-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093806-report-api-test-api-consistency.md"
+    },
+    {
+      "index": 93812,
+      "idea_id": "idea093807",
+      "filename": "idea093807-report-api-test-migration-readiness",
+      "title": "idea093807 - report-api-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-api-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093807-report-api-test-migration-readiness.md"
+    },
+    {
+      "index": 93813,
+      "idea_id": "idea093808",
+      "filename": "idea093808-report-api-test-observability",
+      "title": "idea093808 - report-api-test Observability",
+      "archetype": "observability",
+      "component": "report-api-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093808-report-api-test-observability.md"
+    },
+    {
+      "index": 93814,
+      "idea_id": "idea093809",
+      "filename": "idea093809-report-api-test-security",
+      "title": "idea093809 - report-api-test Security",
+      "archetype": "security",
+      "component": "report-api-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093809-report-api-test-security.md"
+    },
+    {
+      "index": 93815,
+      "idea_id": "idea093810",
+      "filename": "idea093810-report-api-test-test-coverage",
+      "title": "idea093810 - report-api-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-api-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093810-report-api-test-test-coverage.md"
+    },
+    {
+      "index": 93816,
+      "idea_id": "idea093811",
+      "filename": "idea093811-report-archiver-developer-experience",
+      "title": "idea093811 - report-archiver Developer Experience",
+      "archetype": "experience",
+      "component": "report-archiver-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093811-report-archiver-developer-experience.md"
+    },
+    {
+      "index": 93817,
+      "idea_id": "idea093812",
+      "filename": "idea093812-report-archiver-documentation",
+      "title": "idea093812 - report-archiver Documentation",
+      "archetype": "documentation",
+      "component": "report-archiver",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093812-report-archiver-documentation.md"
+    },
+    {
+      "index": 93818,
+      "idea_id": "idea093813",
+      "filename": "idea093813-report-archiver-hardening",
+      "title": "idea093813 - report-archiver Hardening",
+      "archetype": "hardening",
+      "component": "report-archiver",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093813-report-archiver-hardening.md"
+    },
+    {
+      "index": 93819,
+      "idea_id": "idea093814",
+      "filename": "idea093814-report-archiver-performance",
+      "title": "idea093814 - report-archiver Performance",
+      "archetype": "performance",
+      "component": "report-archiver",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093814-report-archiver-performance.md"
+    },
+    {
+      "index": 93820,
+      "idea_id": "idea093815",
+      "filename": "idea093815-report-archiver-resilience",
+      "title": "idea093815 - report-archiver Resilience",
+      "archetype": "resilience",
+      "component": "report-archiver",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093815-report-archiver-resilience.md"
+    },
+    {
+      "index": 93821,
+      "idea_id": "idea093816",
+      "filename": "idea093816-report-archiver-test-api-consistency",
+      "title": "idea093816 - report-archiver-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-archiver-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093816-report-archiver-test-api-consistency.md"
+    },
+    {
+      "index": 93822,
+      "idea_id": "idea093817",
+      "filename": "idea093817-report-archiver-test-migration-readiness",
+      "title": "idea093817 - report-archiver-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-archiver-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093817-report-archiver-test-migration-readiness.md"
+    },
+    {
+      "index": 93823,
+      "idea_id": "idea093818",
+      "filename": "idea093818-report-archiver-test-observability",
+      "title": "idea093818 - report-archiver-test Observability",
+      "archetype": "observability",
+      "component": "report-archiver-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093818-report-archiver-test-observability.md"
+    },
+    {
+      "index": 93824,
+      "idea_id": "idea093819",
+      "filename": "idea093819-report-archiver-test-security",
+      "title": "idea093819 - report-archiver-test Security",
+      "archetype": "security",
+      "component": "report-archiver-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093819-report-archiver-test-security.md"
+    },
+    {
+      "index": 93825,
+      "idea_id": "idea093820",
+      "filename": "idea093820-report-archiver-test-test-coverage",
+      "title": "idea093820 - report-archiver-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-archiver-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093820-report-archiver-test-test-coverage.md"
+    },
+    {
+      "index": 93826,
+      "idea_id": "idea093821",
+      "filename": "idea093821-report-cache-developer-experience",
+      "title": "idea093821 - report-cache Developer Experience",
+      "archetype": "experience",
+      "component": "report-cache-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093821-report-cache-developer-experience.md"
+    },
+    {
+      "index": 93827,
+      "idea_id": "idea093822",
+      "filename": "idea093822-report-cache-documentation",
+      "title": "idea093822 - report-cache Documentation",
+      "archetype": "documentation",
+      "component": "report-cache",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093822-report-cache-documentation.md"
+    },
+    {
+      "index": 93828,
+      "idea_id": "idea093823",
+      "filename": "idea093823-report-cache-hardening",
+      "title": "idea093823 - report-cache Hardening",
+      "archetype": "hardening",
+      "component": "report-cache",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093823-report-cache-hardening.md"
+    },
+    {
+      "index": 93829,
+      "idea_id": "idea093824",
+      "filename": "idea093824-report-cache-performance",
+      "title": "idea093824 - report-cache Performance",
+      "archetype": "performance",
+      "component": "report-cache",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093824-report-cache-performance.md"
+    },
+    {
+      "index": 93830,
+      "idea_id": "idea093825",
+      "filename": "idea093825-report-cache-resilience",
+      "title": "idea093825 - report-cache Resilience",
+      "archetype": "resilience",
+      "component": "report-cache",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093825-report-cache-resilience.md"
+    },
+    {
+      "index": 93831,
+      "idea_id": "idea093826",
+      "filename": "idea093826-report-cache-manager-developer-experience",
+      "title": "idea093826 - report-cache-manager Developer Experience",
+      "archetype": "experience",
+      "component": "report-cache-manager-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093826-report-cache-manager-developer-experience.md"
+    },
+    {
+      "index": 93832,
+      "idea_id": "idea093827",
+      "filename": "idea093827-report-cache-manager-documentation",
+      "title": "idea093827 - report-cache-manager Documentation",
+      "archetype": "documentation",
+      "component": "report-cache-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093827-report-cache-manager-documentation.md"
+    },
+    {
+      "index": 93833,
+      "idea_id": "idea093828",
+      "filename": "idea093828-report-cache-manager-hardening",
+      "title": "idea093828 - report-cache-manager Hardening",
+      "archetype": "hardening",
+      "component": "report-cache-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093828-report-cache-manager-hardening.md"
+    },
+    {
+      "index": 93834,
+      "idea_id": "idea093829",
+      "filename": "idea093829-report-cache-manager-performance",
+      "title": "idea093829 - report-cache-manager Performance",
+      "archetype": "performance",
+      "component": "report-cache-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093829-report-cache-manager-performance.md"
+    },
+    {
+      "index": 93835,
+      "idea_id": "idea093830",
+      "filename": "idea093830-report-cache-manager-resilience",
+      "title": "idea093830 - report-cache-manager Resilience",
+      "archetype": "resilience",
+      "component": "report-cache-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093830-report-cache-manager-resilience.md"
+    },
+    {
+      "index": 93836,
+      "idea_id": "idea093831",
+      "filename": "idea093831-report-cache-manager-test-api-consistency",
+      "title": "idea093831 - report-cache-manager-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-cache-manager-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093831-report-cache-manager-test-api-consistency.md"
+    },
+    {
+      "index": 93837,
+      "idea_id": "idea093832",
+      "filename": "idea093832-report-cache-manager-test-migration-readiness",
+      "title": "idea093832 - report-cache-manager-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-cache-manager-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093832-report-cache-manager-test-migration-readiness.md"
+    },
+    {
+      "index": 93838,
+      "idea_id": "idea093833",
+      "filename": "idea093833-report-cache-manager-test-observability",
+      "title": "idea093833 - report-cache-manager-test Observability",
+      "archetype": "observability",
+      "component": "report-cache-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093833-report-cache-manager-test-observability.md"
+    },
+    {
+      "index": 93839,
+      "idea_id": "idea093834",
+      "filename": "idea093834-report-cache-manager-test-security",
+      "title": "idea093834 - report-cache-manager-test Security",
+      "archetype": "security",
+      "component": "report-cache-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093834-report-cache-manager-test-security.md"
+    },
+    {
+      "index": 93840,
+      "idea_id": "idea093835",
+      "filename": "idea093835-report-cache-manager-test-test-coverage",
+      "title": "idea093835 - report-cache-manager-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-cache-manager-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093835-report-cache-manager-test-test-coverage.md"
+    },
+    {
+      "index": 93841,
+      "idea_id": "idea093836",
+      "filename": "idea093836-report-cache-test-api-consistency",
+      "title": "idea093836 - report-cache-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-cache-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093836-report-cache-test-api-consistency.md"
+    },
+    {
+      "index": 93842,
+      "idea_id": "idea093837",
+      "filename": "idea093837-report-cache-test-migration-readiness",
+      "title": "idea093837 - report-cache-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-cache-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093837-report-cache-test-migration-readiness.md"
+    },
+    {
+      "index": 93843,
+      "idea_id": "idea093838",
+      "filename": "idea093838-report-cache-test-observability",
+      "title": "idea093838 - report-cache-test Observability",
+      "archetype": "observability",
+      "component": "report-cache-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093838-report-cache-test-observability.md"
+    },
+    {
+      "index": 93844,
+      "idea_id": "idea093839",
+      "filename": "idea093839-report-cache-test-security",
+      "title": "idea093839 - report-cache-test Security",
+      "archetype": "security",
+      "component": "report-cache-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093839-report-cache-test-security.md"
+    },
+    {
+      "index": 93845,
+      "idea_id": "idea093840",
+      "filename": "idea093840-report-cache-test-test-coverage",
+      "title": "idea093840 - report-cache-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-cache-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093840-report-cache-test-test-coverage.md"
+    },
+    {
+      "index": 93846,
+      "idea_id": "idea093841",
+      "filename": "idea093841-report-comparator-developer-experience",
+      "title": "idea093841 - report-comparator Developer Experience",
+      "archetype": "experience",
+      "component": "report-comparator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093841-report-comparator-developer-experience.md"
+    },
+    {
+      "index": 93847,
+      "idea_id": "idea093842",
+      "filename": "idea093842-report-comparator-documentation",
+      "title": "idea093842 - report-comparator Documentation",
+      "archetype": "documentation",
+      "component": "report-comparator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093842-report-comparator-documentation.md"
+    },
+    {
+      "index": 93848,
+      "idea_id": "idea093843",
+      "filename": "idea093843-report-comparator-hardening",
+      "title": "idea093843 - report-comparator Hardening",
+      "archetype": "hardening",
+      "component": "report-comparator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093843-report-comparator-hardening.md"
+    },
+    {
+      "index": 93849,
+      "idea_id": "idea093844",
+      "filename": "idea093844-report-comparator-performance",
+      "title": "idea093844 - report-comparator Performance",
+      "archetype": "performance",
+      "component": "report-comparator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093844-report-comparator-performance.md"
+    },
+    {
+      "index": 93850,
+      "idea_id": "idea093845",
+      "filename": "idea093845-report-comparator-resilience",
+      "title": "idea093845 - report-comparator Resilience",
+      "archetype": "resilience",
+      "component": "report-comparator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093845-report-comparator-resilience.md"
+    },
+    {
+      "index": 93851,
+      "idea_id": "idea093846",
+      "filename": "idea093846-report-comparator-test-api-consistency",
+      "title": "idea093846 - report-comparator-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-comparator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093846-report-comparator-test-api-consistency.md"
+    },
+    {
+      "index": 93852,
+      "idea_id": "idea093847",
+      "filename": "idea093847-report-comparator-test-migration-readiness",
+      "title": "idea093847 - report-comparator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-comparator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093847-report-comparator-test-migration-readiness.md"
+    },
+    {
+      "index": 93853,
+      "idea_id": "idea093848",
+      "filename": "idea093848-report-comparator-test-observability",
+      "title": "idea093848 - report-comparator-test Observability",
+      "archetype": "observability",
+      "component": "report-comparator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093848-report-comparator-test-observability.md"
+    },
+    {
+      "index": 93854,
+      "idea_id": "idea093849",
+      "filename": "idea093849-report-comparator-test-security",
+      "title": "idea093849 - report-comparator-test Security",
+      "archetype": "security",
+      "component": "report-comparator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093849-report-comparator-test-security.md"
+    },
+    {
+      "index": 93855,
+      "idea_id": "idea093850",
+      "filename": "idea093850-report-comparator-test-test-coverage",
+      "title": "idea093850 - report-comparator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-comparator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093850-report-comparator-test-test-coverage.md"
+    },
+    {
+      "index": 93856,
+      "idea_id": "idea093851",
+      "filename": "idea093851-report-comparison-developer-experience",
+      "title": "idea093851 - report-comparison Developer Experience",
+      "archetype": "experience",
+      "component": "report-comparison-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093851-report-comparison-developer-experience.md"
+    },
+    {
+      "index": 93857,
+      "idea_id": "idea093852",
+      "filename": "idea093852-report-comparison-documentation",
+      "title": "idea093852 - report-comparison Documentation",
+      "archetype": "documentation",
+      "component": "report-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093852-report-comparison-documentation.md"
+    },
+    {
+      "index": 93858,
+      "idea_id": "idea093853",
+      "filename": "idea093853-report-comparison-hardening",
+      "title": "idea093853 - report-comparison Hardening",
+      "archetype": "hardening",
+      "component": "report-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093853-report-comparison-hardening.md"
+    },
+    {
+      "index": 93859,
+      "idea_id": "idea093854",
+      "filename": "idea093854-report-comparison-performance",
+      "title": "idea093854 - report-comparison Performance",
+      "archetype": "performance",
+      "component": "report-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093854-report-comparison-performance.md"
+    },
+    {
+      "index": 93860,
+      "idea_id": "idea093855",
+      "filename": "idea093855-report-comparison-resilience",
+      "title": "idea093855 - report-comparison Resilience",
+      "archetype": "resilience",
+      "component": "report-comparison",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093855-report-comparison-resilience.md"
+    },
+    {
+      "index": 93861,
+      "idea_id": "idea093856",
+      "filename": "idea093856-report-comparison-test-api-consistency",
+      "title": "idea093856 - report-comparison-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-comparison-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093856-report-comparison-test-api-consistency.md"
+    },
+    {
+      "index": 93862,
+      "idea_id": "idea093857",
+      "filename": "idea093857-report-comparison-test-migration-readiness",
+      "title": "idea093857 - report-comparison-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-comparison-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093857-report-comparison-test-migration-readiness.md"
+    },
+    {
+      "index": 93863,
+      "idea_id": "idea093858",
+      "filename": "idea093858-report-comparison-test-observability",
+      "title": "idea093858 - report-comparison-test Observability",
+      "archetype": "observability",
+      "component": "report-comparison-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093858-report-comparison-test-observability.md"
+    },
+    {
+      "index": 93864,
+      "idea_id": "idea093859",
+      "filename": "idea093859-report-comparison-test-security",
+      "title": "idea093859 - report-comparison-test Security",
+      "archetype": "security",
+      "component": "report-comparison-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093859-report-comparison-test-security.md"
+    },
+    {
+      "index": 93865,
+      "idea_id": "idea093860",
+      "filename": "idea093860-report-comparison-test-test-coverage",
+      "title": "idea093860 - report-comparison-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-comparison-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093860-report-comparison-test-test-coverage.md"
+    },
+    {
+      "index": 93866,
+      "idea_id": "idea093861",
+      "filename": "idea093861-report-exporter-developer-experience",
+      "title": "idea093861 - report-exporter Developer Experience",
+      "archetype": "experience",
+      "component": "report-exporter-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093861-report-exporter-developer-experience.md"
+    },
+    {
+      "index": 93867,
+      "idea_id": "idea093862",
+      "filename": "idea093862-report-exporter-documentation",
+      "title": "idea093862 - report-exporter Documentation",
+      "archetype": "documentation",
+      "component": "report-exporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093862-report-exporter-documentation.md"
+    },
+    {
+      "index": 93868,
+      "idea_id": "idea093863",
+      "filename": "idea093863-report-exporter-hardening",
+      "title": "idea093863 - report-exporter Hardening",
+      "archetype": "hardening",
+      "component": "report-exporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093863-report-exporter-hardening.md"
+    },
+    {
+      "index": 93869,
+      "idea_id": "idea093864",
+      "filename": "idea093864-report-exporter-performance",
+      "title": "idea093864 - report-exporter Performance",
+      "archetype": "performance",
+      "component": "report-exporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093864-report-exporter-performance.md"
+    },
+    {
+      "index": 93870,
+      "idea_id": "idea093865",
+      "filename": "idea093865-report-exporter-resilience",
+      "title": "idea093865 - report-exporter Resilience",
+      "archetype": "resilience",
+      "component": "report-exporter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093865-report-exporter-resilience.md"
+    },
+    {
+      "index": 93871,
+      "idea_id": "idea093866",
+      "filename": "idea093866-report-exporter-test-api-consistency",
+      "title": "idea093866 - report-exporter-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-exporter-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093866-report-exporter-test-api-consistency.md"
+    },
+    {
+      "index": 93872,
+      "idea_id": "idea093867",
+      "filename": "idea093867-report-exporter-test-migration-readiness",
+      "title": "idea093867 - report-exporter-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-exporter-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093867-report-exporter-test-migration-readiness.md"
+    },
+    {
+      "index": 93873,
+      "idea_id": "idea093868",
+      "filename": "idea093868-report-exporter-test-observability",
+      "title": "idea093868 - report-exporter-test Observability",
+      "archetype": "observability",
+      "component": "report-exporter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093868-report-exporter-test-observability.md"
+    },
+    {
+      "index": 93874,
+      "idea_id": "idea093869",
+      "filename": "idea093869-report-exporter-test-security",
+      "title": "idea093869 - report-exporter-test Security",
+      "archetype": "security",
+      "component": "report-exporter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093869-report-exporter-test-security.md"
+    },
+    {
+      "index": 93875,
+      "idea_id": "idea093870",
+      "filename": "idea093870-report-exporter-test-test-coverage",
+      "title": "idea093870 - report-exporter-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-exporter-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093870-report-exporter-test-test-coverage.md"
+    },
+    {
+      "index": 93876,
+      "idea_id": "idea093871",
+      "filename": "idea093871-report-filter-developer-experience",
+      "title": "idea093871 - report-filter Developer Experience",
+      "archetype": "experience",
+      "component": "report-filter-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093871-report-filter-developer-experience.md"
+    },
+    {
+      "index": 93877,
+      "idea_id": "idea093872",
+      "filename": "idea093872-report-filter-documentation",
+      "title": "idea093872 - report-filter Documentation",
+      "archetype": "documentation",
+      "component": "report-filter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093872-report-filter-documentation.md"
+    },
+    {
+      "index": 93878,
+      "idea_id": "idea093873",
+      "filename": "idea093873-report-filter-hardening",
+      "title": "idea093873 - report-filter Hardening",
+      "archetype": "hardening",
+      "component": "report-filter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093873-report-filter-hardening.md"
+    },
+    {
+      "index": 93879,
+      "idea_id": "idea093874",
+      "filename": "idea093874-report-filter-performance",
+      "title": "idea093874 - report-filter Performance",
+      "archetype": "performance",
+      "component": "report-filter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093874-report-filter-performance.md"
+    },
+    {
+      "index": 93880,
+      "idea_id": "idea093875",
+      "filename": "idea093875-report-filter-resilience",
+      "title": "idea093875 - report-filter Resilience",
+      "archetype": "resilience",
+      "component": "report-filter",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093875-report-filter-resilience.md"
+    },
+    {
+      "index": 93881,
+      "idea_id": "idea093876",
+      "filename": "idea093876-report-filter-test-api-consistency",
+      "title": "idea093876 - report-filter-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-filter-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093876-report-filter-test-api-consistency.md"
+    },
+    {
+      "index": 93882,
+      "idea_id": "idea093877",
+      "filename": "idea093877-report-filter-test-migration-readiness",
+      "title": "idea093877 - report-filter-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-filter-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093877-report-filter-test-migration-readiness.md"
+    },
+    {
+      "index": 93883,
+      "idea_id": "idea093878",
+      "filename": "idea093878-report-filter-test-observability",
+      "title": "idea093878 - report-filter-test Observability",
+      "archetype": "observability",
+      "component": "report-filter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093878-report-filter-test-observability.md"
+    },
+    {
+      "index": 93884,
+      "idea_id": "idea093879",
+      "filename": "idea093879-report-filter-test-security",
+      "title": "idea093879 - report-filter-test Security",
+      "archetype": "security",
+      "component": "report-filter-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093879-report-filter-test-security.md"
+    },
+    {
+      "index": 93885,
+      "idea_id": "idea093880",
+      "filename": "idea093880-report-filter-test-test-coverage",
+      "title": "idea093880 - report-filter-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-filter-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093880-report-filter-test-test-coverage.md"
+    },
+    {
+      "index": 93886,
+      "idea_id": "idea093881",
+      "filename": "idea093881-report-format-developer-experience",
+      "title": "idea093881 - report-format Developer Experience",
+      "archetype": "experience",
+      "component": "report-format-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093881-report-format-developer-experience.md"
+    },
+    {
+      "index": 93887,
+      "idea_id": "idea093882",
+      "filename": "idea093882-report-format-documentation",
+      "title": "idea093882 - report-format Documentation",
+      "archetype": "documentation",
+      "component": "report-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093882-report-format-documentation.md"
+    },
+    {
+      "index": 93888,
+      "idea_id": "idea093883",
+      "filename": "idea093883-report-format-hardening",
+      "title": "idea093883 - report-format Hardening",
+      "archetype": "hardening",
+      "component": "report-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093883-report-format-hardening.md"
+    },
+    {
+      "index": 93889,
+      "idea_id": "idea093884",
+      "filename": "idea093884-report-format-performance",
+      "title": "idea093884 - report-format Performance",
+      "archetype": "performance",
+      "component": "report-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093884-report-format-performance.md"
+    },
+    {
+      "index": 93890,
+      "idea_id": "idea093885",
+      "filename": "idea093885-report-format-resilience",
+      "title": "idea093885 - report-format Resilience",
+      "archetype": "resilience",
+      "component": "report-format",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093885-report-format-resilience.md"
+    },
+    {
+      "index": 93891,
+      "idea_id": "idea093886",
+      "filename": "idea093886-report-format-test-api-consistency",
+      "title": "idea093886 - report-format-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-format-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093886-report-format-test-api-consistency.md"
+    },
+    {
+      "index": 93892,
+      "idea_id": "idea093887",
+      "filename": "idea093887-report-format-test-migration-readiness",
+      "title": "idea093887 - report-format-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-format-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093887-report-format-test-migration-readiness.md"
+    },
+    {
+      "index": 93893,
+      "idea_id": "idea093888",
+      "filename": "idea093888-report-format-test-observability",
+      "title": "idea093888 - report-format-test Observability",
+      "archetype": "observability",
+      "component": "report-format-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093888-report-format-test-observability.md"
+    },
+    {
+      "index": 93894,
+      "idea_id": "idea093889",
+      "filename": "idea093889-report-format-test-security",
+      "title": "idea093889 - report-format-test Security",
+      "archetype": "security",
+      "component": "report-format-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093889-report-format-test-security.md"
+    },
+    {
+      "index": 93895,
+      "idea_id": "idea093890",
+      "filename": "idea093890-report-format-test-test-coverage",
+      "title": "idea093890 - report-format-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-format-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093890-report-format-test-test-coverage.md"
+    },
+    {
+      "index": 93896,
+      "idea_id": "idea093891",
+      "filename": "idea093891-report-generator-developer-experience",
+      "title": "idea093891 - report-generator Developer Experience",
+      "archetype": "experience",
+      "component": "report-generator-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093891-report-generator-developer-experience.md"
+    },
+    {
+      "index": 93897,
+      "idea_id": "idea093892",
+      "filename": "idea093892-report-generator-documentation",
+      "title": "idea093892 - report-generator Documentation",
+      "archetype": "documentation",
+      "component": "report-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093892-report-generator-documentation.md"
+    },
+    {
+      "index": 93898,
+      "idea_id": "idea093893",
+      "filename": "idea093893-report-generator-hardening",
+      "title": "idea093893 - report-generator Hardening",
+      "archetype": "hardening",
+      "component": "report-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093893-report-generator-hardening.md"
+    },
+    {
+      "index": 93899,
+      "idea_id": "idea093894",
+      "filename": "idea093894-report-generator-performance",
+      "title": "idea093894 - report-generator Performance",
+      "archetype": "performance",
+      "component": "report-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093894-report-generator-performance.md"
+    },
+    {
+      "index": 93900,
+      "idea_id": "idea093895",
+      "filename": "idea093895-report-generator-resilience",
+      "title": "idea093895 - report-generator Resilience",
+      "archetype": "resilience",
+      "component": "report-generator",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093895-report-generator-resilience.md"
+    },
+    {
+      "index": 93901,
+      "idea_id": "idea093896",
+      "filename": "idea093896-report-generator-cli-developer-experience",
+      "title": "idea093896 - report-generator-cli Developer Experience",
+      "archetype": "experience",
+      "component": "report-generator-cli-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093896-report-generator-cli-developer-experience.md"
+    },
+    {
+      "index": 93902,
+      "idea_id": "idea093897",
+      "filename": "idea093897-report-generator-cli-documentation",
+      "title": "idea093897 - report-generator-cli Documentation",
+      "archetype": "documentation",
+      "component": "report-generator-cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093897-report-generator-cli-documentation.md"
+    },
+    {
+      "index": 93903,
+      "idea_id": "idea093898",
+      "filename": "idea093898-report-generator-cli-hardening",
+      "title": "idea093898 - report-generator-cli Hardening",
+      "archetype": "hardening",
+      "component": "report-generator-cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093898-report-generator-cli-hardening.md"
+    },
+    {
+      "index": 93904,
+      "idea_id": "idea093899",
+      "filename": "idea093899-report-generator-cli-performance",
+      "title": "idea093899 - report-generator-cli Performance",
+      "archetype": "performance",
+      "component": "report-generator-cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093899-report-generator-cli-performance.md"
+    },
+    {
+      "index": 93905,
+      "idea_id": "idea093900",
+      "filename": "idea093900-report-generator-cli-resilience",
+      "title": "idea093900 - report-generator-cli Resilience",
+      "archetype": "resilience",
+      "component": "report-generator-cli",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093900-report-generator-cli-resilience.md"
+    },
+    {
+      "index": 93906,
+      "idea_id": "idea093901",
+      "filename": "idea093901-report-generator-cli-test-api-consistency",
+      "title": "idea093901 - report-generator-cli-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-generator-cli-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093901-report-generator-cli-test-api-consistency.md"
+    },
+    {
+      "index": 93907,
+      "idea_id": "idea093902",
+      "filename": "idea093902-report-generator-cli-test-migration-readiness",
+      "title": "idea093902 - report-generator-cli-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-generator-cli-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093902-report-generator-cli-test-migration-readiness.md"
+    },
+    {
+      "index": 93908,
+      "idea_id": "idea093903",
+      "filename": "idea093903-report-generator-cli-test-observability",
+      "title": "idea093903 - report-generator-cli-test Observability",
+      "archetype": "observability",
+      "component": "report-generator-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093903-report-generator-cli-test-observability.md"
+    },
+    {
+      "index": 93909,
+      "idea_id": "idea093904",
+      "filename": "idea093904-report-generator-cli-test-security",
+      "title": "idea093904 - report-generator-cli-test Security",
+      "archetype": "security",
+      "component": "report-generator-cli-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093904-report-generator-cli-test-security.md"
+    },
+    {
+      "index": 93910,
+      "idea_id": "idea093905",
+      "filename": "idea093905-report-generator-cli-test-test-coverage",
+      "title": "idea093905 - report-generator-cli-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-generator-cli-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093905-report-generator-cli-test-test-coverage.md"
+    },
+    {
+      "index": 93911,
+      "idea_id": "idea093906",
+      "filename": "idea093906-report-generator-test-api-consistency",
+      "title": "idea093906 - report-generator-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-generator-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093906-report-generator-test-api-consistency.md"
+    },
+    {
+      "index": 93912,
+      "idea_id": "idea093907",
+      "filename": "idea093907-report-generator-test-migration-readiness",
+      "title": "idea093907 - report-generator-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-generator-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093907-report-generator-test-migration-readiness.md"
+    },
+    {
+      "index": 93913,
+      "idea_id": "idea093908",
+      "filename": "idea093908-report-generator-test-observability",
+      "title": "idea093908 - report-generator-test Observability",
+      "archetype": "observability",
+      "component": "report-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093908-report-generator-test-observability.md"
+    },
+    {
+      "index": 93914,
+      "idea_id": "idea093909",
+      "filename": "idea093909-report-generator-test-security",
+      "title": "idea093909 - report-generator-test Security",
+      "archetype": "security",
+      "component": "report-generator-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093909-report-generator-test-security.md"
+    },
+    {
+      "index": 93915,
+      "idea_id": "idea093910",
+      "filename": "idea093910-report-generator-test-test-coverage",
+      "title": "idea093910 - report-generator-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-generator-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093910-report-generator-test-test-coverage.md"
+    },
+    {
+      "index": 93916,
+      "idea_id": "idea093911",
+      "filename": "idea093911-report-localizer-developer-experience",
+      "title": "idea093911 - report-localizer Developer Experience",
+      "archetype": "experience",
+      "component": "report-localizer-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093911-report-localizer-developer-experience.md"
+    },
+    {
+      "index": 93917,
+      "idea_id": "idea093912",
+      "filename": "idea093912-report-localizer-documentation",
+      "title": "idea093912 - report-localizer Documentation",
+      "archetype": "documentation",
+      "component": "report-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093912-report-localizer-documentation.md"
+    },
+    {
+      "index": 93918,
+      "idea_id": "idea093913",
+      "filename": "idea093913-report-localizer-hardening",
+      "title": "idea093913 - report-localizer Hardening",
+      "archetype": "hardening",
+      "component": "report-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093913-report-localizer-hardening.md"
+    },
+    {
+      "index": 93919,
+      "idea_id": "idea093914",
+      "filename": "idea093914-report-localizer-performance",
+      "title": "idea093914 - report-localizer Performance",
+      "archetype": "performance",
+      "component": "report-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093914-report-localizer-performance.md"
+    },
+    {
+      "index": 93920,
+      "idea_id": "idea093915",
+      "filename": "idea093915-report-localizer-resilience",
+      "title": "idea093915 - report-localizer Resilience",
+      "archetype": "resilience",
+      "component": "report-localizer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093915-report-localizer-resilience.md"
+    },
+    {
+      "index": 93921,
+      "idea_id": "idea093916",
+      "filename": "idea093916-report-localizer-test-api-consistency",
+      "title": "idea093916 - report-localizer-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-localizer-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093916-report-localizer-test-api-consistency.md"
+    },
+    {
+      "index": 93922,
+      "idea_id": "idea093917",
+      "filename": "idea093917-report-localizer-test-migration-readiness",
+      "title": "idea093917 - report-localizer-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-localizer-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093917-report-localizer-test-migration-readiness.md"
+    },
+    {
+      "index": 93923,
+      "idea_id": "idea093918",
+      "filename": "idea093918-report-localizer-test-observability",
+      "title": "idea093918 - report-localizer-test Observability",
+      "archetype": "observability",
+      "component": "report-localizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093918-report-localizer-test-observability.md"
+    },
+    {
+      "index": 93924,
+      "idea_id": "idea093919",
+      "filename": "idea093919-report-localizer-test-security",
+      "title": "idea093919 - report-localizer-test Security",
+      "archetype": "security",
+      "component": "report-localizer-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093919-report-localizer-test-security.md"
+    },
+    {
+      "index": 93925,
+      "idea_id": "idea093920",
+      "filename": "idea093920-report-localizer-test-test-coverage",
+      "title": "idea093920 - report-localizer-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-localizer-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093920-report-localizer-test-test-coverage.md"
+    },
+    {
+      "index": 93926,
+      "idea_id": "idea093921",
+      "filename": "idea093921-report-manager-api-consistency",
+      "title": "idea093921 - report-manager API Consistency",
+      "archetype": "consistency",
+      "component": "report-manager-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093921-report-manager-api-consistency.md"
+    },
+    {
+      "index": 93927,
+      "idea_id": "idea093922",
+      "filename": "idea093922-report-manager-migration-readiness",
+      "title": "idea093922 - report-manager Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-manager-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093922-report-manager-migration-readiness.md"
+    },
+    {
+      "index": 93928,
+      "idea_id": "idea093923",
+      "filename": "idea093923-report-manager-observability",
+      "title": "idea093923 - report-manager Observability",
+      "archetype": "observability",
+      "component": "report-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093923-report-manager-observability.md"
+    },
+    {
+      "index": 93929,
+      "idea_id": "idea093924",
+      "filename": "idea093924-report-manager-security",
+      "title": "idea093924 - report-manager Security",
+      "archetype": "security",
+      "component": "report-manager",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093924-report-manager-security.md"
+    },
+    {
+      "index": 93930,
+      "idea_id": "idea093925",
+      "filename": "idea093925-report-manager-test-coverage",
+      "title": "idea093925 - report-manager Test Coverage",
+      "archetype": "coverage",
+      "component": "report-manager-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093925-report-manager-test-coverage.md"
+    },
+    {
+      "index": 93931,
+      "idea_id": "idea093926",
+      "filename": "idea093926-report-metadata-developer-experience",
+      "title": "idea093926 - report-metadata Developer Experience",
+      "archetype": "experience",
+      "component": "report-metadata-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093926-report-metadata-developer-experience.md"
+    },
+    {
+      "index": 93932,
+      "idea_id": "idea093927",
+      "filename": "idea093927-report-metadata-documentation",
+      "title": "idea093927 - report-metadata Documentation",
+      "archetype": "documentation",
+      "component": "report-metadata",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093927-report-metadata-documentation.md"
+    },
+    {
+      "index": 93933,
+      "idea_id": "idea093928",
+      "filename": "idea093928-report-metadata-hardening",
+      "title": "idea093928 - report-metadata Hardening",
+      "archetype": "hardening",
+      "component": "report-metadata",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093928-report-metadata-hardening.md"
+    },
+    {
+      "index": 93934,
+      "idea_id": "idea093929",
+      "filename": "idea093929-report-metadata-performance",
+      "title": "idea093929 - report-metadata Performance",
+      "archetype": "performance",
+      "component": "report-metadata",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093929-report-metadata-performance.md"
+    },
+    {
+      "index": 93935,
+      "idea_id": "idea093930",
+      "filename": "idea093930-report-metadata-resilience",
+      "title": "idea093930 - report-metadata Resilience",
+      "archetype": "resilience",
+      "component": "report-metadata",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093930-report-metadata-resilience.md"
+    },
+    {
+      "index": 93936,
+      "idea_id": "idea093931",
+      "filename": "idea093931-report-metadata-test-api-consistency",
+      "title": "idea093931 - report-metadata-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-metadata-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093931-report-metadata-test-api-consistency.md"
+    },
+    {
+      "index": 93937,
+      "idea_id": "idea093932",
+      "filename": "idea093932-report-metadata-test-migration-readiness",
+      "title": "idea093932 - report-metadata-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-metadata-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093932-report-metadata-test-migration-readiness.md"
+    },
+    {
+      "index": 93938,
+      "idea_id": "idea093933",
+      "filename": "idea093933-report-metadata-test-observability",
+      "title": "idea093933 - report-metadata-test Observability",
+      "archetype": "observability",
+      "component": "report-metadata-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093933-report-metadata-test-observability.md"
+    },
+    {
+      "index": 93939,
+      "idea_id": "idea093934",
+      "filename": "idea093934-report-metadata-test-security",
+      "title": "idea093934 - report-metadata-test Security",
+      "archetype": "security",
+      "component": "report-metadata-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093934-report-metadata-test-security.md"
+    },
+    {
+      "index": 93940,
+      "idea_id": "idea093935",
+      "filename": "idea093935-report-metadata-test-test-coverage",
+      "title": "idea093935 - report-metadata-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-metadata-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093935-report-metadata-test-test-coverage.md"
+    },
+    {
+      "index": 93941,
+      "idea_id": "idea093936",
+      "filename": "idea093936-report-metric-developer-experience",
+      "title": "idea093936 - report-metric Developer Experience",
+      "archetype": "experience",
+      "component": "report-metric-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093936-report-metric-developer-experience.md"
+    },
+    {
+      "index": 93942,
+      "idea_id": "idea093937",
+      "filename": "idea093937-report-metric-documentation",
+      "title": "idea093937 - report-metric Documentation",
+      "archetype": "documentation",
+      "component": "report-metric",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093937-report-metric-documentation.md"
+    },
+    {
+      "index": 93943,
+      "idea_id": "idea093938",
+      "filename": "idea093938-report-metric-hardening",
+      "title": "idea093938 - report-metric Hardening",
+      "archetype": "hardening",
+      "component": "report-metric",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093938-report-metric-hardening.md"
+    },
+    {
+      "index": 93944,
+      "idea_id": "idea093939",
+      "filename": "idea093939-report-metric-performance",
+      "title": "idea093939 - report-metric Performance",
+      "archetype": "performance",
+      "component": "report-metric",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093939-report-metric-performance.md"
+    },
+    {
+      "index": 93945,
+      "idea_id": "idea093940",
+      "filename": "idea093940-report-metric-resilience",
+      "title": "idea093940 - report-metric Resilience",
+      "archetype": "resilience",
+      "component": "report-metric",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093940-report-metric-resilience.md"
+    },
+    {
+      "index": 93946,
+      "idea_id": "idea093941",
+      "filename": "idea093941-report-metric-test-api-consistency",
+      "title": "idea093941 - report-metric-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-metric-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093941-report-metric-test-api-consistency.md"
+    },
+    {
+      "index": 93947,
+      "idea_id": "idea093942",
+      "filename": "idea093942-report-metric-test-migration-readiness",
+      "title": "idea093942 - report-metric-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-metric-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093942-report-metric-test-migration-readiness.md"
+    },
+    {
+      "index": 93948,
+      "idea_id": "idea093943",
+      "filename": "idea093943-report-metric-test-observability",
+      "title": "idea093943 - report-metric-test Observability",
+      "archetype": "observability",
+      "component": "report-metric-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093943-report-metric-test-observability.md"
+    },
+    {
+      "index": 93949,
+      "idea_id": "idea093944",
+      "filename": "idea093944-report-metric-test-security",
+      "title": "idea093944 - report-metric-test Security",
+      "archetype": "security",
+      "component": "report-metric-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093944-report-metric-test-security.md"
+    },
+    {
+      "index": 93950,
+      "idea_id": "idea093945",
+      "filename": "idea093945-report-metric-test-test-coverage",
+      "title": "idea093945 - report-metric-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-metric-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093945-report-metric-test-test-coverage.md"
+    },
+    {
+      "index": 93951,
+      "idea_id": "idea093946",
+      "filename": "idea093946-report-permission-developer-experience",
+      "title": "idea093946 - report-permission Developer Experience",
+      "archetype": "experience",
+      "component": "report-permission-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093946-report-permission-developer-experience.md"
+    },
+    {
+      "index": 93952,
+      "idea_id": "idea093947",
+      "filename": "idea093947-report-permission-documentation",
+      "title": "idea093947 - report-permission Documentation",
+      "archetype": "documentation",
+      "component": "report-permission",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093947-report-permission-documentation.md"
+    },
+    {
+      "index": 93953,
+      "idea_id": "idea093948",
+      "filename": "idea093948-report-permission-hardening",
+      "title": "idea093948 - report-permission Hardening",
+      "archetype": "hardening",
+      "component": "report-permission",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093948-report-permission-hardening.md"
+    },
+    {
+      "index": 93954,
+      "idea_id": "idea093949",
+      "filename": "idea093949-report-permission-performance",
+      "title": "idea093949 - report-permission Performance",
+      "archetype": "performance",
+      "component": "report-permission",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093949-report-permission-performance.md"
+    },
+    {
+      "index": 93955,
+      "idea_id": "idea093950",
+      "filename": "idea093950-report-permission-resilience",
+      "title": "idea093950 - report-permission Resilience",
+      "archetype": "resilience",
+      "component": "report-permission",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093950-report-permission-resilience.md"
+    },
+    {
+      "index": 93956,
+      "idea_id": "idea093951",
+      "filename": "idea093951-report-permission-test-api-consistency",
+      "title": "idea093951 - report-permission-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-permission-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093951-report-permission-test-api-consistency.md"
+    },
+    {
+      "index": 93957,
+      "idea_id": "idea093952",
+      "filename": "idea093952-report-permission-test-migration-readiness",
+      "title": "idea093952 - report-permission-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-permission-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093952-report-permission-test-migration-readiness.md"
+    },
+    {
+      "index": 93958,
+      "idea_id": "idea093953",
+      "filename": "idea093953-report-permission-test-observability",
+      "title": "idea093953 - report-permission-test Observability",
+      "archetype": "observability",
+      "component": "report-permission-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093953-report-permission-test-observability.md"
+    },
+    {
+      "index": 93959,
+      "idea_id": "idea093954",
+      "filename": "idea093954-report-permission-test-security",
+      "title": "idea093954 - report-permission-test Security",
+      "archetype": "security",
+      "component": "report-permission-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093954-report-permission-test-security.md"
+    },
+    {
+      "index": 93960,
+      "idea_id": "idea093955",
+      "filename": "idea093955-report-permission-test-test-coverage",
+      "title": "idea093955 - report-permission-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-permission-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093955-report-permission-test-test-coverage.md"
+    },
+    {
+      "index": 93961,
+      "idea_id": "idea093956",
+      "filename": "idea093956-report-scheduler-developer-experience",
+      "title": "idea093956 - report-scheduler Developer Experience",
+      "archetype": "experience",
+      "component": "report-scheduler-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093956-report-scheduler-developer-experience.md"
+    },
+    {
+      "index": 93962,
+      "idea_id": "idea093957",
+      "filename": "idea093957-report-scheduler-documentation",
+      "title": "idea093957 - report-scheduler Documentation",
+      "archetype": "documentation",
+      "component": "report-scheduler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093957-report-scheduler-documentation.md"
+    },
+    {
+      "index": 93963,
+      "idea_id": "idea093958",
+      "filename": "idea093958-report-scheduler-hardening",
+      "title": "idea093958 - report-scheduler Hardening",
+      "archetype": "hardening",
+      "component": "report-scheduler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093958-report-scheduler-hardening.md"
+    },
+    {
+      "index": 93964,
+      "idea_id": "idea093959",
+      "filename": "idea093959-report-scheduler-performance",
+      "title": "idea093959 - report-scheduler Performance",
+      "archetype": "performance",
+      "component": "report-scheduler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093959-report-scheduler-performance.md"
+    },
+    {
+      "index": 93965,
+      "idea_id": "idea093960",
+      "filename": "idea093960-report-scheduler-resilience",
+      "title": "idea093960 - report-scheduler Resilience",
+      "archetype": "resilience",
+      "component": "report-scheduler",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093960-report-scheduler-resilience.md"
+    },
+    {
+      "index": 93966,
+      "idea_id": "idea093961",
+      "filename": "idea093961-report-scheduler-test-api-consistency",
+      "title": "idea093961 - report-scheduler-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-scheduler-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093961-report-scheduler-test-api-consistency.md"
+    },
+    {
+      "index": 93967,
+      "idea_id": "idea093962",
+      "filename": "idea093962-report-scheduler-test-migration-readiness",
+      "title": "idea093962 - report-scheduler-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-scheduler-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093962-report-scheduler-test-migration-readiness.md"
+    },
+    {
+      "index": 93968,
+      "idea_id": "idea093963",
+      "filename": "idea093963-report-scheduler-test-observability",
+      "title": "idea093963 - report-scheduler-test Observability",
+      "archetype": "observability",
+      "component": "report-scheduler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093963-report-scheduler-test-observability.md"
+    },
+    {
+      "index": 93969,
+      "idea_id": "idea093964",
+      "filename": "idea093964-report-scheduler-test-security",
+      "title": "idea093964 - report-scheduler-test Security",
+      "archetype": "security",
+      "component": "report-scheduler-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093964-report-scheduler-test-security.md"
+    },
+    {
+      "index": 93970,
+      "idea_id": "idea093965",
+      "filename": "idea093965-report-scheduler-test-test-coverage",
+      "title": "idea093965 - report-scheduler-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-scheduler-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093965-report-scheduler-test-test-coverage.md"
+    },
+    {
+      "index": 93971,
+      "idea_id": "idea093966",
+      "filename": "idea093966-report-search-engine-developer-experience",
+      "title": "idea093966 - report-search-engine Developer Experience",
+      "archetype": "experience",
+      "component": "report-search-engine-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093966-report-search-engine-developer-experience.md"
+    },
+    {
+      "index": 93972,
+      "idea_id": "idea093967",
+      "filename": "idea093967-report-search-engine-documentation",
+      "title": "idea093967 - report-search-engine Documentation",
+      "archetype": "documentation",
+      "component": "report-search-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093967-report-search-engine-documentation.md"
+    },
+    {
+      "index": 93973,
+      "idea_id": "idea093968",
+      "filename": "idea093968-report-search-engine-hardening",
+      "title": "idea093968 - report-search-engine Hardening",
+      "archetype": "hardening",
+      "component": "report-search-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093968-report-search-engine-hardening.md"
+    },
+    {
+      "index": 93974,
+      "idea_id": "idea093969",
+      "filename": "idea093969-report-search-engine-performance",
+      "title": "idea093969 - report-search-engine Performance",
+      "archetype": "performance",
+      "component": "report-search-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093969-report-search-engine-performance.md"
+    },
+    {
+      "index": 93975,
+      "idea_id": "idea093970",
+      "filename": "idea093970-report-search-engine-resilience",
+      "title": "idea093970 - report-search-engine Resilience",
+      "archetype": "resilience",
+      "component": "report-search-engine",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093970-report-search-engine-resilience.md"
+    },
+    {
+      "index": 93976,
+      "idea_id": "idea093971",
+      "filename": "idea093971-report-search-engine-py-hardening",
+      "title": "idea093971 - report-search-engine.py Hardening",
+      "archetype": "hardening",
+      "component": "report-search-engine-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093971-report-search-engine-py-hardening.md"
+    },
+    {
+      "index": 93977,
+      "idea_id": "idea093972",
+      "filename": "idea093972-report-search-engine-py-performance",
+      "title": "idea093972 - report-search-engine.py Performance",
+      "archetype": "performance",
+      "component": "report-search-engine-py",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093972-report-search-engine-py-performance.md"
+    },
+    {
+      "index": 93978,
+      "idea_id": "idea093973",
+      "filename": "idea093973-report-search-engine-test-api-consistency",
+      "title": "idea093973 - report-search-engine-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-search-engine-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093973-report-search-engine-test-api-consistency.md"
+    },
+    {
+      "index": 93979,
+      "idea_id": "idea093974",
+      "filename": "idea093974-report-search-engine-test-migration-readiness",
+      "title": "idea093974 - report-search-engine-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-search-engine-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093974-report-search-engine-test-migration-readiness.md"
+    },
+    {
+      "index": 93980,
+      "idea_id": "idea093975",
+      "filename": "idea093975-report-search-engine-test-observability",
+      "title": "idea093975 - report-search-engine-test Observability",
+      "archetype": "observability",
+      "component": "report-search-engine-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093975-report-search-engine-test-observability.md"
+    },
+    {
+      "index": 93981,
+      "idea_id": "idea093976",
+      "filename": "idea093976-report-search-engine-test-security",
+      "title": "idea093976 - report-search-engine-test Security",
+      "archetype": "security",
+      "component": "report-search-engine-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093976-report-search-engine-test-security.md"
+    },
+    {
+      "index": 93982,
+      "idea_id": "idea093977",
+      "filename": "idea093977-report-search-engine-test-test-coverage",
+      "title": "idea093977 - report-search-engine-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-search-engine-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093977-report-search-engine-test-test-coverage.md"
+    },
+    {
+      "index": 93983,
+      "idea_id": "idea093978",
+      "filename": "idea093978-report-search-result-developer-experience",
+      "title": "idea093978 - report-search-result Developer Experience",
+      "archetype": "experience",
+      "component": "report-search-result-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093978-report-search-result-developer-experience.md"
+    },
+    {
+      "index": 93984,
+      "idea_id": "idea093979",
+      "filename": "idea093979-report-search-result-documentation",
+      "title": "idea093979 - report-search-result Documentation",
+      "archetype": "documentation",
+      "component": "report-search-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093979-report-search-result-documentation.md"
+    },
+    {
+      "index": 93985,
+      "idea_id": "idea093980",
+      "filename": "idea093980-report-search-result-hardening",
+      "title": "idea093980 - report-search-result Hardening",
+      "archetype": "hardening",
+      "component": "report-search-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093980-report-search-result-hardening.md"
+    },
+    {
+      "index": 93986,
+      "idea_id": "idea093981",
+      "filename": "idea093981-report-search-result-performance",
+      "title": "idea093981 - report-search-result Performance",
+      "archetype": "performance",
+      "component": "report-search-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093981-report-search-result-performance.md"
+    },
+    {
+      "index": 93987,
+      "idea_id": "idea093982",
+      "filename": "idea093982-report-search-result-resilience",
+      "title": "idea093982 - report-search-result Resilience",
+      "archetype": "resilience",
+      "component": "report-search-result",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093982-report-search-result-resilience.md"
+    },
+    {
+      "index": 93988,
+      "idea_id": "idea093983",
+      "filename": "idea093983-report-search-result-test-api-consistency",
+      "title": "idea093983 - report-search-result-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-search-result-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093983-report-search-result-test-api-consistency.md"
+    },
+    {
+      "index": 93989,
+      "idea_id": "idea093984",
+      "filename": "idea093984-report-search-result-test-migration-readiness",
+      "title": "idea093984 - report-search-result-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-search-result-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093984-report-search-result-test-migration-readiness.md"
+    },
+    {
+      "index": 93990,
+      "idea_id": "idea093985",
+      "filename": "idea093985-report-search-result-test-observability",
+      "title": "idea093985 - report-search-result-test Observability",
+      "archetype": "observability",
+      "component": "report-search-result-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093985-report-search-result-test-observability.md"
+    },
+    {
+      "index": 93991,
+      "idea_id": "idea093986",
+      "filename": "idea093986-report-search-result-test-security",
+      "title": "idea093986 - report-search-result-test Security",
+      "archetype": "security",
+      "component": "report-search-result-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093986-report-search-result-test-security.md"
+    },
+    {
+      "index": 93992,
+      "idea_id": "idea093987",
+      "filename": "idea093987-report-search-result-test-test-coverage",
+      "title": "idea093987 - report-search-result-test Test Coverage",
+      "archetype": "coverage",
+      "component": "report-search-result-test-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093987-report-search-result-test-test-coverage.md"
+    },
+    {
+      "index": 93993,
+      "idea_id": "idea093988",
+      "filename": "idea093988-report-subscription-developer-experience",
+      "title": "idea093988 - report-subscription Developer Experience",
+      "archetype": "experience",
+      "component": "report-subscription-developer",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093988-report-subscription-developer-experience.md"
+    },
+    {
+      "index": 93994,
+      "idea_id": "idea093989",
+      "filename": "idea093989-report-subscription-documentation",
+      "title": "idea093989 - report-subscription Documentation",
+      "archetype": "documentation",
+      "component": "report-subscription",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093989-report-subscription-documentation.md"
+    },
+    {
+      "index": 93995,
+      "idea_id": "idea093990",
+      "filename": "idea093990-report-subscription-hardening",
+      "title": "idea093990 - report-subscription Hardening",
+      "archetype": "hardening",
+      "component": "report-subscription",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093990-report-subscription-hardening.md"
+    },
+    {
+      "index": 93996,
+      "idea_id": "idea093991",
+      "filename": "idea093991-report-subscription-performance",
+      "title": "idea093991 - report-subscription Performance",
+      "archetype": "performance",
+      "component": "report-subscription",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093991-report-subscription-performance.md"
+    },
+    {
+      "index": 93997,
+      "idea_id": "idea093992",
+      "filename": "idea093992-report-subscription-resilience",
+      "title": "idea093992 - report-subscription Resilience",
+      "archetype": "resilience",
+      "component": "report-subscription",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093992-report-subscription-resilience.md"
+    },
+    {
+      "index": 93998,
+      "idea_id": "idea093993",
+      "filename": "idea093993-report-subscription-test-api-consistency",
+      "title": "idea093993 - report-subscription-test API Consistency",
+      "archetype": "consistency",
+      "component": "report-subscription-test-api",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093993-report-subscription-test-api-consistency.md"
+    },
+    {
+      "index": 93999,
+      "idea_id": "idea093994",
+      "filename": "idea093994-report-subscription-test-migration-readiness",
+      "title": "idea093994 - report-subscription-test Migration Readiness",
+      "archetype": "readiness",
+      "component": "report-subscription-test-migration",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093994-report-subscription-test-migration-readiness.md"
+    },
+    {
+      "index": 94000,
+      "idea_id": "idea093995",
+      "filename": "idea093995-report-subscription-test-observability",
+      "title": "idea093995 - report-subscription-test Observability",
+      "archetype": "observability",
+      "component": "report-subscription-test",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f09/idea093995-report-subscription-test-observability.md"
+    }
+  ],
+  "projects_to_create": 50
+}

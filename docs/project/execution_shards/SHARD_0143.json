@@ -1,0 +1,4510 @@
+{
+  "shard_number": 143,
+  "shard_id": "SHARD_0143",
+  "start_index": 71000,
+  "end_index": 71500,
+  "idea_count": 500,
+  "ideas": [
+    {
+      "index": 71001,
+      "idea_id": "idea070996",
+      "filename": "idea070996-compliancecategory-errors-hardening",
+      "title": "idea070996 - compliancecategory.errors Hardening",
+      "archetype": "hardening",
+      "component": "compliancecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea070996-compliancecategory-errors-hardening.md"
+    },
+    {
+      "index": 71002,
+      "idea_id": "idea070997",
+      "filename": "idea070997-compliancecategory-errors-performance",
+      "title": "idea070997 - compliancecategory.errors Performance",
+      "archetype": "performance",
+      "component": "compliancecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea070997-compliancecategory-errors-performance.md"
+    },
+    {
+      "index": 71003,
+      "idea_id": "idea070998",
+      "filename": "idea070998-compliancecategory-errors-resilience",
+      "title": "idea070998 - compliancecategory.errors Resilience",
+      "archetype": "resilience",
+      "component": "compliancecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea070998-compliancecategory-errors-resilience.md"
+    },
+    {
+      "index": 71004,
+      "idea_id": "idea070999",
+      "filename": "idea070999-compliancechecker-errors-hardening",
+      "title": "idea070999 - compliancechecker.errors Hardening",
+      "archetype": "hardening",
+      "component": "compliancechecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea070999-compliancechecker-errors-hardening.md"
+    },
+    {
+      "index": 71005,
+      "idea_id": "idea071000",
+      "filename": "idea071000-compliancechecker-errors-performance",
+      "title": "idea071000 - compliancechecker.errors Performance",
+      "archetype": "performance",
+      "component": "compliancechecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071000-compliancechecker-errors-performance.md"
+    },
+    {
+      "index": 71006,
+      "idea_id": "idea071001",
+      "filename": "idea071001-compliancechecker-errors-resilience",
+      "title": "idea071001 - compliancechecker.errors Resilience",
+      "archetype": "resilience",
+      "component": "compliancechecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071001-compliancechecker-errors-resilience.md"
+    },
+    {
+      "index": 71007,
+      "idea_id": "idea071002",
+      "filename": "idea071002-complianceresult-errors-hardening",
+      "title": "idea071002 - complianceresult.errors Hardening",
+      "archetype": "hardening",
+      "component": "complianceresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071002-complianceresult-errors-hardening.md"
+    },
+    {
+      "index": 71008,
+      "idea_id": "idea071003",
+      "filename": "idea071003-complianceresult-errors-performance",
+      "title": "idea071003 - complianceresult.errors Performance",
+      "archetype": "performance",
+      "component": "complianceresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071003-complianceresult-errors-performance.md"
+    },
+    {
+      "index": 71009,
+      "idea_id": "idea071004",
+      "filename": "idea071004-complianceresult-errors-resilience",
+      "title": "idea071004 - complianceresult.errors Resilience",
+      "archetype": "resilience",
+      "component": "complianceresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071004-complianceresult-errors-resilience.md"
+    },
+    {
+      "index": 71010,
+      "idea_id": "idea071005",
+      "filename": "idea071005-conditionalexecutor-errors-hardening",
+      "title": "idea071005 - conditionalexecutor.errors Hardening",
+      "archetype": "hardening",
+      "component": "conditionalexecutor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071005-conditionalexecutor-errors-hardening.md"
+    },
+    {
+      "index": 71011,
+      "idea_id": "idea071006",
+      "filename": "idea071006-conditionalexecutor-errors-performance",
+      "title": "idea071006 - conditionalexecutor.errors Performance",
+      "archetype": "performance",
+      "component": "conditionalexecutor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071006-conditionalexecutor-errors-performance.md"
+    },
+    {
+      "index": 71012,
+      "idea_id": "idea071007",
+      "filename": "idea071007-conditionalexecutor-errors-resilience",
+      "title": "idea071007 - conditionalexecutor.errors Resilience",
+      "archetype": "resilience",
+      "component": "conditionalexecutor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071007-conditionalexecutor-errors-resilience.md"
+    },
+    {
+      "index": 71013,
+      "idea_id": "idea071008",
+      "filename": "idea071008-configagent-errors-hardening",
+      "title": "idea071008 - configagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "configagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071008-configagent-errors-hardening.md"
+    },
+    {
+      "index": 71014,
+      "idea_id": "idea071009",
+      "filename": "idea071009-configagent-errors-performance",
+      "title": "idea071009 - configagent.errors Performance",
+      "archetype": "performance",
+      "component": "configagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071009-configagent-errors-performance.md"
+    },
+    {
+      "index": 71015,
+      "idea_id": "idea071010",
+      "filename": "idea071010-configagent-errors-resilience",
+      "title": "idea071010 - configagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "configagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071010-configagent-errors-resilience.md"
+    },
+    {
+      "index": 71016,
+      "idea_id": "idea071011",
+      "filename": "idea071011-configformat-errors-hardening",
+      "title": "idea071011 - configformat.errors Hardening",
+      "archetype": "hardening",
+      "component": "configformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071011-configformat-errors-hardening.md"
+    },
+    {
+      "index": 71017,
+      "idea_id": "idea071012",
+      "filename": "idea071012-configformat-errors-performance",
+      "title": "idea071012 - configformat.errors Performance",
+      "archetype": "performance",
+      "component": "configformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071012-configformat-errors-performance.md"
+    },
+    {
+      "index": 71018,
+      "idea_id": "idea071013",
+      "filename": "idea071013-configformat-errors-resilience",
+      "title": "idea071013 - configformat.errors Resilience",
+      "archetype": "resilience",
+      "component": "configformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071013-configformat-errors-resilience.md"
+    },
+    {
+      "index": 71019,
+      "idea_id": "idea071014",
+      "filename": "idea071014-confighotreloader-errors-hardening",
+      "title": "idea071014 - confighotreloader.errors Hardening",
+      "archetype": "hardening",
+      "component": "confighotreloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071014-confighotreloader-errors-hardening.md"
+    },
+    {
+      "index": 71020,
+      "idea_id": "idea071015",
+      "filename": "idea071015-confighotreloader-errors-performance",
+      "title": "idea071015 - confighotreloader.errors Performance",
+      "archetype": "performance",
+      "component": "confighotreloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071015-confighotreloader-errors-performance.md"
+    },
+    {
+      "index": 71021,
+      "idea_id": "idea071016",
+      "filename": "idea071016-confighotreloader-errors-resilience",
+      "title": "idea071016 - confighotreloader.errors Resilience",
+      "archetype": "resilience",
+      "component": "confighotreloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071016-confighotreloader-errors-resilience.md"
+    },
+    {
+      "index": 71022,
+      "idea_id": "idea071017",
+      "filename": "idea071017-configloader-errors-hardening",
+      "title": "idea071017 - configloader.errors Hardening",
+      "archetype": "hardening",
+      "component": "configloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071017-configloader-errors-hardening.md"
+    },
+    {
+      "index": 71023,
+      "idea_id": "idea071018",
+      "filename": "idea071018-configloader-errors-performance",
+      "title": "idea071018 - configloader.errors Performance",
+      "archetype": "performance",
+      "component": "configloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071018-configloader-errors-performance.md"
+    },
+    {
+      "index": 71024,
+      "idea_id": "idea071019",
+      "filename": "idea071019-configloader-errors-resilience",
+      "title": "idea071019 - configloader.errors Resilience",
+      "archetype": "resilience",
+      "component": "configloader-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071019-configloader-errors-resilience.md"
+    },
+    {
+      "index": 71025,
+      "idea_id": "idea071020",
+      "filename": "idea071020-configurationmanager-errors-hardening",
+      "title": "idea071020 - configurationmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "configurationmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071020-configurationmanager-errors-hardening.md"
+    },
+    {
+      "index": 71026,
+      "idea_id": "idea071021",
+      "filename": "idea071021-configurationmanager-errors-performance",
+      "title": "idea071021 - configurationmanager.errors Performance",
+      "archetype": "performance",
+      "component": "configurationmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071021-configurationmanager-errors-performance.md"
+    },
+    {
+      "index": 71027,
+      "idea_id": "idea071022",
+      "filename": "idea071022-configurationmanager-errors-resilience",
+      "title": "idea071022 - configurationmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "configurationmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071022-configurationmanager-errors-resilience.md"
+    },
+    {
+      "index": 71028,
+      "idea_id": "idea071023",
+      "filename": "idea071023-conflictresolution-errors-hardening",
+      "title": "idea071023 - conflictresolution.errors Hardening",
+      "archetype": "hardening",
+      "component": "conflictresolution-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071023-conflictresolution-errors-hardening.md"
+    },
+    {
+      "index": 71029,
+      "idea_id": "idea071024",
+      "filename": "idea071024-conflictresolution-errors-performance",
+      "title": "idea071024 - conflictresolution.errors Performance",
+      "archetype": "performance",
+      "component": "conflictresolution-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071024-conflictresolution-errors-performance.md"
+    },
+    {
+      "index": 71030,
+      "idea_id": "idea071025",
+      "filename": "idea071025-conflictresolution-errors-resilience",
+      "title": "idea071025 - conflictresolution.errors Resilience",
+      "archetype": "resilience",
+      "component": "conflictresolution-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071025-conflictresolution-errors-resilience.md"
+    },
+    {
+      "index": 71031,
+      "idea_id": "idea071026",
+      "filename": "idea071026-connectionpool-errors-hardening",
+      "title": "idea071026 - connectionpool.errors Hardening",
+      "archetype": "hardening",
+      "component": "connectionpool-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071026-connectionpool-errors-hardening.md"
+    },
+    {
+      "index": 71032,
+      "idea_id": "idea071027",
+      "filename": "idea071027-connectionpool-errors-performance",
+      "title": "idea071027 - connectionpool.errors Performance",
+      "archetype": "performance",
+      "component": "connectionpool-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071027-connectionpool-errors-performance.md"
+    },
+    {
+      "index": 71033,
+      "idea_id": "idea071028",
+      "filename": "idea071028-connectionpool-errors-resilience",
+      "title": "idea071028 - connectionpool.errors Resilience",
+      "archetype": "resilience",
+      "component": "connectionpool-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071028-connectionpool-errors-resilience.md"
+    },
+    {
+      "index": 71034,
+      "idea_id": "idea071029",
+      "filename": "idea071029-consensusconflictagent-errors-hardening",
+      "title": "idea071029 - consensusconflictagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "consensusconflictagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071029-consensusconflictagent-errors-hardening.md"
+    },
+    {
+      "index": 71035,
+      "idea_id": "idea071030",
+      "filename": "idea071030-consensusconflictagent-errors-performance",
+      "title": "idea071030 - consensusconflictagent.errors Performance",
+      "archetype": "performance",
+      "component": "consensusconflictagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071030-consensusconflictagent-errors-performance.md"
+    },
+    {
+      "index": 71036,
+      "idea_id": "idea071031",
+      "filename": "idea071031-consensusconflictagent-errors-resilience",
+      "title": "idea071031 - consensusconflictagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "consensusconflictagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071031-consensusconflictagent-errors-resilience.md"
+    },
+    {
+      "index": 71037,
+      "idea_id": "idea071032",
+      "filename": "idea071032-consensusengine-errors-hardening",
+      "title": "idea071032 - consensusengine.errors Hardening",
+      "archetype": "hardening",
+      "component": "consensusengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071032-consensusengine-errors-hardening.md"
+    },
+    {
+      "index": 71038,
+      "idea_id": "idea071033",
+      "filename": "idea071033-consensusengine-errors-performance",
+      "title": "idea071033 - consensusengine.errors Performance",
+      "archetype": "performance",
+      "component": "consensusengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071033-consensusengine-errors-performance.md"
+    },
+    {
+      "index": 71039,
+      "idea_id": "idea071034",
+      "filename": "idea071034-consensusengine-errors-resilience",
+      "title": "idea071034 - consensusengine.errors Resilience",
+      "archetype": "resilience",
+      "component": "consensusengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071034-consensusengine-errors-resilience.md"
+    },
+    {
+      "index": 71040,
+      "idea_id": "idea071035",
+      "filename": "idea071035-consensusorchestrator-errors-hardening",
+      "title": "idea071035 - consensusorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "consensusorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071035-consensusorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71041,
+      "idea_id": "idea071036",
+      "filename": "idea071036-consensusorchestrator-errors-performance",
+      "title": "idea071036 - consensusorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "consensusorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071036-consensusorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71042,
+      "idea_id": "idea071037",
+      "filename": "idea071037-consensusorchestrator-errors-resilience",
+      "title": "idea071037 - consensusorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "consensusorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071037-consensusorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71043,
+      "idea_id": "idea071038",
+      "filename": "idea071038-consistencychecker-errors-hardening",
+      "title": "idea071038 - consistencychecker.errors Hardening",
+      "archetype": "hardening",
+      "component": "consistencychecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071038-consistencychecker-errors-hardening.md"
+    },
+    {
+      "index": 71044,
+      "idea_id": "idea071039",
+      "filename": "idea071039-consistencychecker-errors-performance",
+      "title": "idea071039 - consistencychecker.errors Performance",
+      "archetype": "performance",
+      "component": "consistencychecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071039-consistencychecker-errors-performance.md"
+    },
+    {
+      "index": 71045,
+      "idea_id": "idea071040",
+      "filename": "idea071040-consistencychecker-errors-resilience",
+      "title": "idea071040 - consistencychecker.errors Resilience",
+      "archetype": "resilience",
+      "component": "consistencychecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071040-consistencychecker-errors-resilience.md"
+    },
+    {
+      "index": 71046,
+      "idea_id": "idea071041",
+      "filename": "idea071041-consistencyissue-errors-hardening",
+      "title": "idea071041 - consistencyissue.errors Hardening",
+      "archetype": "hardening",
+      "component": "consistencyissue-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071041-consistencyissue-errors-hardening.md"
+    },
+    {
+      "index": 71047,
+      "idea_id": "idea071042",
+      "filename": "idea071042-consistencyissue-errors-performance",
+      "title": "idea071042 - consistencyissue.errors Performance",
+      "archetype": "performance",
+      "component": "consistencyissue-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071042-consistencyissue-errors-performance.md"
+    },
+    {
+      "index": 71048,
+      "idea_id": "idea071043",
+      "filename": "idea071043-consistencyissue-errors-resilience",
+      "title": "idea071043 - consistencyissue.errors Resilience",
+      "archetype": "resilience",
+      "component": "consistencyissue-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071043-consistencyissue-errors-resilience.md"
+    },
+    {
+      "index": 71049,
+      "idea_id": "idea071044",
+      "filename": "idea071044-constants-errors-hardening",
+      "title": "idea071044 - constants.errors Hardening",
+      "archetype": "hardening",
+      "component": "constants-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071044-constants-errors-hardening.md"
+    },
+    {
+      "index": 71050,
+      "idea_id": "idea071045",
+      "filename": "idea071045-constants-errors-performance",
+      "title": "idea071045 - constants.errors Performance",
+      "archetype": "performance",
+      "component": "constants-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071045-constants-errors-performance.md"
+    },
+    {
+      "index": 71051,
+      "idea_id": "idea071046",
+      "filename": "idea071046-constants-errors-resilience",
+      "title": "idea071046 - constants.errors Resilience",
+      "archetype": "resilience",
+      "component": "constants-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071046-constants-errors-resilience.md"
+    },
+    {
+      "index": 71052,
+      "idea_id": "idea071047",
+      "filename": "idea071047-contextagent-errors-hardening",
+      "title": "idea071047 - contextagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071047-contextagent-errors-hardening.md"
+    },
+    {
+      "index": 71053,
+      "idea_id": "idea071048",
+      "filename": "idea071048-contextagent-errors-performance",
+      "title": "idea071048 - contextagent.errors Performance",
+      "archetype": "performance",
+      "component": "contextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071048-contextagent-errors-performance.md"
+    },
+    {
+      "index": 71054,
+      "idea_id": "idea071049",
+      "filename": "idea071049-contextagent-errors-resilience",
+      "title": "idea071049 - contextagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071049-contextagent-errors-resilience.md"
+    },
+    {
+      "index": 71055,
+      "idea_id": "idea071050",
+      "filename": "idea071050-contextannotation-errors-hardening",
+      "title": "idea071050 - contextannotation.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextannotation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071050-contextannotation-errors-hardening.md"
+    },
+    {
+      "index": 71056,
+      "idea_id": "idea071051",
+      "filename": "idea071051-contextannotation-errors-performance",
+      "title": "idea071051 - contextannotation.errors Performance",
+      "archetype": "performance",
+      "component": "contextannotation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071051-contextannotation-errors-performance.md"
+    },
+    {
+      "index": 71057,
+      "idea_id": "idea071052",
+      "filename": "idea071052-contextannotation-errors-resilience",
+      "title": "idea071052 - contextannotation.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextannotation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071052-contextannotation-errors-resilience.md"
+    },
+    {
+      "index": 71058,
+      "idea_id": "idea071053",
+      "filename": "idea071053-contextcompressor-errors-hardening",
+      "title": "idea071053 - contextcompressor.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextcompressor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071053-contextcompressor-errors-hardening.md"
+    },
+    {
+      "index": 71059,
+      "idea_id": "idea071054",
+      "filename": "idea071054-contextcompressor-errors-performance",
+      "title": "idea071054 - contextcompressor.errors Performance",
+      "archetype": "performance",
+      "component": "contextcompressor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071054-contextcompressor-errors-performance.md"
+    },
+    {
+      "index": 71060,
+      "idea_id": "idea071055",
+      "filename": "idea071055-contextcompressor-errors-resilience",
+      "title": "idea071055 - contextcompressor.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextcompressor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071055-contextcompressor-errors-resilience.md"
+    },
+    {
+      "index": 71061,
+      "idea_id": "idea071056",
+      "filename": "idea071056-contextdiff-errors-hardening",
+      "title": "idea071056 - contextdiff.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextdiff-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071056-contextdiff-errors-hardening.md"
+    },
+    {
+      "index": 71062,
+      "idea_id": "idea071057",
+      "filename": "idea071057-contextdiff-errors-performance",
+      "title": "idea071057 - contextdiff.errors Performance",
+      "archetype": "performance",
+      "component": "contextdiff-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071057-contextdiff-errors-performance.md"
+    },
+    {
+      "index": 71063,
+      "idea_id": "idea071058",
+      "filename": "idea071058-contextdiff-errors-resilience",
+      "title": "idea071058 - contextdiff.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextdiff-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071058-contextdiff-errors-resilience.md"
+    },
+    {
+      "index": 71064,
+      "idea_id": "idea071059",
+      "filename": "idea071059-contextdiffer-errors-hardening",
+      "title": "idea071059 - contextdiffer.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextdiffer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071059-contextdiffer-errors-hardening.md"
+    },
+    {
+      "index": 71065,
+      "idea_id": "idea071060",
+      "filename": "idea071060-contextdiffer-errors-performance",
+      "title": "idea071060 - contextdiffer.errors Performance",
+      "archetype": "performance",
+      "component": "contextdiffer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071060-contextdiffer-errors-performance.md"
+    },
+    {
+      "index": 71066,
+      "idea_id": "idea071061",
+      "filename": "idea071061-contextdiffer-errors-resilience",
+      "title": "idea071061 - contextdiffer.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextdiffer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071061-contextdiffer-errors-resilience.md"
+    },
+    {
+      "index": 71067,
+      "idea_id": "idea071062",
+      "filename": "idea071062-contextexporter-errors-hardening",
+      "title": "idea071062 - contextexporter.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextexporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071062-contextexporter-errors-hardening.md"
+    },
+    {
+      "index": 71068,
+      "idea_id": "idea071063",
+      "filename": "idea071063-contextexporter-errors-performance",
+      "title": "idea071063 - contextexporter.errors Performance",
+      "archetype": "performance",
+      "component": "contextexporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071063-contextexporter-errors-performance.md"
+    },
+    {
+      "index": 71069,
+      "idea_id": "idea071064",
+      "filename": "idea071064-contextexporter-errors-resilience",
+      "title": "idea071064 - contextexporter.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextexporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071064-contextexporter-errors-resilience.md"
+    },
+    {
+      "index": 71070,
+      "idea_id": "idea071065",
+      "filename": "idea071065-contextinheritance-errors-hardening",
+      "title": "idea071065 - contextinheritance.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextinheritance-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071065-contextinheritance-errors-hardening.md"
+    },
+    {
+      "index": 71071,
+      "idea_id": "idea071066",
+      "filename": "idea071066-contextinheritance-errors-performance",
+      "title": "idea071066 - contextinheritance.errors Performance",
+      "archetype": "performance",
+      "component": "contextinheritance-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071066-contextinheritance-errors-performance.md"
+    },
+    {
+      "index": 71072,
+      "idea_id": "idea071067",
+      "filename": "idea071067-contextinheritance-errors-resilience",
+      "title": "idea071067 - contextinheritance.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextinheritance-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071067-contextinheritance-errors-resilience.md"
+    },
+    {
+      "index": 71073,
+      "idea_id": "idea071068",
+      "filename": "idea071068-contextpriority-errors-hardening",
+      "title": "idea071068 - contextpriority.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextpriority-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071068-contextpriority-errors-hardening.md"
+    },
+    {
+      "index": 71074,
+      "idea_id": "idea071069",
+      "filename": "idea071069-contextpriority-errors-performance",
+      "title": "idea071069 - contextpriority.errors Performance",
+      "archetype": "performance",
+      "component": "contextpriority-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071069-contextpriority-errors-performance.md"
+    },
+    {
+      "index": 71075,
+      "idea_id": "idea071070",
+      "filename": "idea071070-contextpriority-errors-resilience",
+      "title": "idea071070 - contextpriority.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextpriority-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071070-contextpriority-errors-resilience.md"
+    },
+    {
+      "index": 71076,
+      "idea_id": "idea071071",
+      "filename": "idea071071-contextrecommendation-errors-hardening",
+      "title": "idea071071 - contextrecommendation.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextrecommendation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071071-contextrecommendation-errors-hardening.md"
+    },
+    {
+      "index": 71077,
+      "idea_id": "idea071072",
+      "filename": "idea071072-contextrecommendation-errors-performance",
+      "title": "idea071072 - contextrecommendation.errors Performance",
+      "archetype": "performance",
+      "component": "contextrecommendation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071072-contextrecommendation-errors-performance.md"
+    },
+    {
+      "index": 71078,
+      "idea_id": "idea071073",
+      "filename": "idea071073-contextrecommendation-errors-resilience",
+      "title": "idea071073 - contextrecommendation.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextrecommendation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071073-contextrecommendation-errors-resilience.md"
+    },
+    {
+      "index": 71079,
+      "idea_id": "idea071074",
+      "filename": "idea071074-contextrecommender-errors-hardening",
+      "title": "idea071074 - contextrecommender.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextrecommender-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071074-contextrecommender-errors-hardening.md"
+    },
+    {
+      "index": 71080,
+      "idea_id": "idea071075",
+      "filename": "idea071075-contextrecommender-errors-performance",
+      "title": "idea071075 - contextrecommender.errors Performance",
+      "archetype": "performance",
+      "component": "contextrecommender-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071075-contextrecommender-errors-performance.md"
+    },
+    {
+      "index": 71081,
+      "idea_id": "idea071076",
+      "filename": "idea071076-contextrecommender-errors-resilience",
+      "title": "idea071076 - contextrecommender.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextrecommender-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071076-contextrecommender-errors-resilience.md"
+    },
+    {
+      "index": 71082,
+      "idea_id": "idea071077",
+      "filename": "idea071077-contextsharingmanager-errors-hardening",
+      "title": "idea071077 - contextsharingmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextsharingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071077-contextsharingmanager-errors-hardening.md"
+    },
+    {
+      "index": 71083,
+      "idea_id": "idea071078",
+      "filename": "idea071078-contextsharingmanager-errors-performance",
+      "title": "idea071078 - contextsharingmanager.errors Performance",
+      "archetype": "performance",
+      "component": "contextsharingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071078-contextsharingmanager-errors-performance.md"
+    },
+    {
+      "index": 71084,
+      "idea_id": "idea071079",
+      "filename": "idea071079-contextsharingmanager-errors-resilience",
+      "title": "idea071079 - contextsharingmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextsharingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071079-contextsharingmanager-errors-resilience.md"
+    },
+    {
+      "index": 71085,
+      "idea_id": "idea071080",
+      "filename": "idea071080-contexttag-errors-hardening",
+      "title": "idea071080 - contexttag.errors Hardening",
+      "archetype": "hardening",
+      "component": "contexttag-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071080-contexttag-errors-hardening.md"
+    },
+    {
+      "index": 71086,
+      "idea_id": "idea071081",
+      "filename": "idea071081-contexttag-errors-performance",
+      "title": "idea071081 - contexttag.errors Performance",
+      "archetype": "performance",
+      "component": "contexttag-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071081-contexttag-errors-performance.md"
+    },
+    {
+      "index": 71087,
+      "idea_id": "idea071082",
+      "filename": "idea071082-contexttag-errors-resilience",
+      "title": "idea071082 - contexttag.errors Resilience",
+      "archetype": "resilience",
+      "component": "contexttag-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071082-contexttag-errors-resilience.md"
+    },
+    {
+      "index": 71088,
+      "idea_id": "idea071083",
+      "filename": "idea071083-contexttemplate-errors-hardening",
+      "title": "idea071083 - contexttemplate.errors Hardening",
+      "archetype": "hardening",
+      "component": "contexttemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071083-contexttemplate-errors-hardening.md"
+    },
+    {
+      "index": 71089,
+      "idea_id": "idea071084",
+      "filename": "idea071084-contexttemplate-errors-performance",
+      "title": "idea071084 - contexttemplate.errors Performance",
+      "archetype": "performance",
+      "component": "contexttemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071084-contexttemplate-errors-performance.md"
+    },
+    {
+      "index": 71090,
+      "idea_id": "idea071085",
+      "filename": "idea071085-contexttemplate-errors-resilience",
+      "title": "idea071085 - contexttemplate.errors Resilience",
+      "archetype": "resilience",
+      "component": "contexttemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071085-contexttemplate-errors-resilience.md"
+    },
+    {
+      "index": 71091,
+      "idea_id": "idea071086",
+      "filename": "idea071086-contextversion-errors-hardening",
+      "title": "idea071086 - contextversion.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextversion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071086-contextversion-errors-hardening.md"
+    },
+    {
+      "index": 71092,
+      "idea_id": "idea071087",
+      "filename": "idea071087-contextversion-errors-performance",
+      "title": "idea071087 - contextversion.errors Performance",
+      "archetype": "performance",
+      "component": "contextversion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071087-contextversion-errors-performance.md"
+    },
+    {
+      "index": 71093,
+      "idea_id": "idea071088",
+      "filename": "idea071088-contextversion-errors-resilience",
+      "title": "idea071088 - contextversion.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextversion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071088-contextversion-errors-resilience.md"
+    },
+    {
+      "index": 71094,
+      "idea_id": "idea071089",
+      "filename": "idea071089-contextvisualizer-errors-hardening",
+      "title": "idea071089 - contextvisualizer.errors Hardening",
+      "archetype": "hardening",
+      "component": "contextvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071089-contextvisualizer-errors-hardening.md"
+    },
+    {
+      "index": 71095,
+      "idea_id": "idea071090",
+      "filename": "idea071090-contextvisualizer-errors-performance",
+      "title": "idea071090 - contextvisualizer.errors Performance",
+      "archetype": "performance",
+      "component": "contextvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071090-contextvisualizer-errors-performance.md"
+    },
+    {
+      "index": 71096,
+      "idea_id": "idea071091",
+      "filename": "idea071091-contextvisualizer-errors-resilience",
+      "title": "idea071091 - contextvisualizer.errors Resilience",
+      "archetype": "resilience",
+      "component": "contextvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071091-contextvisualizer-errors-resilience.md"
+    },
+    {
+      "index": 71097,
+      "idea_id": "idea071092",
+      "filename": "idea071092-conversationmanagers-errors-hardening",
+      "title": "idea071092 - conversationmanagers.errors Hardening",
+      "archetype": "hardening",
+      "component": "conversationmanagers-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071092-conversationmanagers-errors-hardening.md"
+    },
+    {
+      "index": 71098,
+      "idea_id": "idea071093",
+      "filename": "idea071093-conversationmanagers-errors-performance",
+      "title": "idea071093 - conversationmanagers.errors Performance",
+      "archetype": "performance",
+      "component": "conversationmanagers-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071093-conversationmanagers-errors-performance.md"
+    },
+    {
+      "index": 71099,
+      "idea_id": "idea071094",
+      "filename": "idea071094-conversationmanagers-errors-resilience",
+      "title": "idea071094 - conversationmanagers.errors Resilience",
+      "archetype": "resilience",
+      "component": "conversationmanagers-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071094-conversationmanagers-errors-resilience.md"
+    },
+    {
+      "index": 71100,
+      "idea_id": "idea071095",
+      "filename": "idea071095-cooperativecommunication-errors-hardening",
+      "title": "idea071095 - cooperativecommunication.errors Hardening",
+      "archetype": "hardening",
+      "component": "cooperativecommunication-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071095-cooperativecommunication-errors-hardening.md"
+    },
+    {
+      "index": 71101,
+      "idea_id": "idea071096",
+      "filename": "idea071096-cooperativecommunication-errors-performance",
+      "title": "idea071096 - cooperativecommunication.errors Performance",
+      "archetype": "performance",
+      "component": "cooperativecommunication-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071096-cooperativecommunication-errors-performance.md"
+    },
+    {
+      "index": 71102,
+      "idea_id": "idea071097",
+      "filename": "idea071097-cooperativecommunication-errors-resilience",
+      "title": "idea071097 - cooperativecommunication.errors Resilience",
+      "archetype": "resilience",
+      "component": "cooperativecommunication-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071097-cooperativecommunication-errors-resilience.md"
+    },
+    {
+      "index": 71103,
+      "idea_id": "idea071098",
+      "filename": "idea071098-coreevolutionguard-errors-hardening",
+      "title": "idea071098 - coreevolutionguard.errors Hardening",
+      "archetype": "hardening",
+      "component": "coreevolutionguard-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071098-coreevolutionguard-errors-hardening.md"
+    },
+    {
+      "index": 71104,
+      "idea_id": "idea071099",
+      "filename": "idea071099-coreevolutionguard-errors-performance",
+      "title": "idea071099 - coreevolutionguard.errors Performance",
+      "archetype": "performance",
+      "component": "coreevolutionguard-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071099-coreevolutionguard-errors-performance.md"
+    },
+    {
+      "index": 71105,
+      "idea_id": "idea071100",
+      "filename": "idea071100-coreevolutionguard-errors-resilience",
+      "title": "idea071100 - coreevolutionguard.errors Resilience",
+      "archetype": "resilience",
+      "component": "coreevolutionguard-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071100-coreevolutionguard-errors-resilience.md"
+    },
+    {
+      "index": 71106,
+      "idea_id": "idea071101",
+      "filename": "idea071101-coreexpansionagent-errors-hardening",
+      "title": "idea071101 - coreexpansionagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "coreexpansionagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071101-coreexpansionagent-errors-hardening.md"
+    },
+    {
+      "index": 71107,
+      "idea_id": "idea071102",
+      "filename": "idea071102-coreexpansionagent-errors-performance",
+      "title": "idea071102 - coreexpansionagent.errors Performance",
+      "archetype": "performance",
+      "component": "coreexpansionagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071102-coreexpansionagent-errors-performance.md"
+    },
+    {
+      "index": 71108,
+      "idea_id": "idea071103",
+      "filename": "idea071103-coreexpansionagent-errors-resilience",
+      "title": "idea071103 - coreexpansionagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "coreexpansionagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071103-coreexpansionagent-errors-resilience.md"
+    },
+    {
+      "index": 71109,
+      "idea_id": "idea071104",
+      "filename": "idea071104-correlationanalyzer-errors-hardening",
+      "title": "idea071104 - correlationanalyzer.errors Hardening",
+      "archetype": "hardening",
+      "component": "correlationanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071104-correlationanalyzer-errors-hardening.md"
+    },
+    {
+      "index": 71110,
+      "idea_id": "idea071105",
+      "filename": "idea071105-correlationanalyzer-errors-performance",
+      "title": "idea071105 - correlationanalyzer.errors Performance",
+      "archetype": "performance",
+      "component": "correlationanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071105-correlationanalyzer-errors-performance.md"
+    },
+    {
+      "index": 71111,
+      "idea_id": "idea071106",
+      "filename": "idea071106-correlationanalyzer-errors-resilience",
+      "title": "idea071106 - correlationanalyzer.errors Resilience",
+      "archetype": "resilience",
+      "component": "correlationanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071106-correlationanalyzer-errors-resilience.md"
+    },
+    {
+      "index": 71112,
+      "idea_id": "idea071107",
+      "filename": "idea071107-coveragetracker-errors-hardening",
+      "title": "idea071107 - coveragetracker.errors Hardening",
+      "archetype": "hardening",
+      "component": "coveragetracker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071107-coveragetracker-errors-hardening.md"
+    },
+    {
+      "index": 71113,
+      "idea_id": "idea071108",
+      "filename": "idea071108-coveragetracker-errors-performance",
+      "title": "idea071108 - coveragetracker.errors Performance",
+      "archetype": "performance",
+      "component": "coveragetracker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071108-coveragetracker-errors-performance.md"
+    },
+    {
+      "index": 71114,
+      "idea_id": "idea071109",
+      "filename": "idea071109-coveragetracker-errors-resilience",
+      "title": "idea071109 - coveragetracker.errors Resilience",
+      "archetype": "resilience",
+      "component": "coveragetracker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071109-coveragetracker-errors-resilience.md"
+    },
+    {
+      "index": 71115,
+      "idea_id": "idea071110",
+      "filename": "idea071110-crossplatformhelper-errors-hardening",
+      "title": "idea071110 - crossplatformhelper.errors Hardening",
+      "archetype": "hardening",
+      "component": "crossplatformhelper-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071110-crossplatformhelper-errors-hardening.md"
+    },
+    {
+      "index": 71116,
+      "idea_id": "idea071111",
+      "filename": "idea071111-crossplatformhelper-errors-performance",
+      "title": "idea071111 - crossplatformhelper.errors Performance",
+      "archetype": "performance",
+      "component": "crossplatformhelper-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071111-crossplatformhelper-errors-performance.md"
+    },
+    {
+      "index": 71117,
+      "idea_id": "idea071112",
+      "filename": "idea071112-crossplatformhelper-errors-resilience",
+      "title": "idea071112 - crossplatformhelper.errors Resilience",
+      "archetype": "resilience",
+      "component": "crossplatformhelper-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071112-crossplatformhelper-errors-resilience.md"
+    },
+    {
+      "index": 71118,
+      "idea_id": "idea071113",
+      "filename": "idea071113-crossrepoanalyzer-errors-hardening",
+      "title": "idea071113 - crossrepoanalyzer.errors Hardening",
+      "archetype": "hardening",
+      "component": "crossrepoanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071113-crossrepoanalyzer-errors-hardening.md"
+    },
+    {
+      "index": 71119,
+      "idea_id": "idea071114",
+      "filename": "idea071114-crossrepoanalyzer-errors-performance",
+      "title": "idea071114 - crossrepoanalyzer.errors Performance",
+      "archetype": "performance",
+      "component": "crossrepoanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071114-crossrepoanalyzer-errors-performance.md"
+    },
+    {
+      "index": 71120,
+      "idea_id": "idea071115",
+      "filename": "idea071115-crossrepoanalyzer-errors-resilience",
+      "title": "idea071115 - crossrepoanalyzer.errors Resilience",
+      "archetype": "resilience",
+      "component": "crossrepoanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071115-crossrepoanalyzer-errors-resilience.md"
+    },
+    {
+      "index": 71121,
+      "idea_id": "idea071116",
+      "filename": "idea071116-crossrepocontext-errors-hardening",
+      "title": "idea071116 - crossrepocontext.errors Hardening",
+      "archetype": "hardening",
+      "component": "crossrepocontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071116-crossrepocontext-errors-hardening.md"
+    },
+    {
+      "index": 71122,
+      "idea_id": "idea071117",
+      "filename": "idea071117-crossrepocontext-errors-performance",
+      "title": "idea071117 - crossrepocontext.errors Performance",
+      "archetype": "performance",
+      "component": "crossrepocontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071117-crossrepocontext-errors-performance.md"
+    },
+    {
+      "index": 71123,
+      "idea_id": "idea071118",
+      "filename": "idea071118-crossrepocontext-errors-resilience",
+      "title": "idea071118 - crossrepocontext.errors Resilience",
+      "archetype": "resilience",
+      "component": "crossrepocontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071118-crossrepocontext-errors-resilience.md"
+    },
+    {
+      "index": 71124,
+      "idea_id": "idea071119",
+      "filename": "idea071119-csvagent-errors-hardening",
+      "title": "idea071119 - csvagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "csvagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071119-csvagent-errors-hardening.md"
+    },
+    {
+      "index": 71125,
+      "idea_id": "idea071120",
+      "filename": "idea071120-csvagent-errors-performance",
+      "title": "idea071120 - csvagent.errors Performance",
+      "archetype": "performance",
+      "component": "csvagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071120-csvagent-errors-performance.md"
+    },
+    {
+      "index": 71126,
+      "idea_id": "idea071121",
+      "filename": "idea071121-csvagent-errors-resilience",
+      "title": "idea071121 - csvagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "csvagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071121-csvagent-errors-resilience.md"
+    },
+    {
+      "index": 71127,
+      "idea_id": "idea071122",
+      "filename": "idea071122-dashboardagent-errors-hardening",
+      "title": "idea071122 - dashboardagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "dashboardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071122-dashboardagent-errors-hardening.md"
+    },
+    {
+      "index": 71128,
+      "idea_id": "idea071123",
+      "filename": "idea071123-dashboardagent-errors-performance",
+      "title": "idea071123 - dashboardagent.errors Performance",
+      "archetype": "performance",
+      "component": "dashboardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071123-dashboardagent-errors-performance.md"
+    },
+    {
+      "index": 71129,
+      "idea_id": "idea071124",
+      "filename": "idea071124-dashboardagent-errors-resilience",
+      "title": "idea071124 - dashboardagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "dashboardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071124-dashboardagent-errors-resilience.md"
+    },
+    {
+      "index": 71130,
+      "idea_id": "idea071125",
+      "filename": "idea071125-dataagent-errors-hardening",
+      "title": "idea071125 - dataagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "dataagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071125-dataagent-errors-hardening.md"
+    },
+    {
+      "index": 71131,
+      "idea_id": "idea071126",
+      "filename": "idea071126-dataagent-errors-performance",
+      "title": "idea071126 - dataagent.errors Performance",
+      "archetype": "performance",
+      "component": "dataagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071126-dataagent-errors-performance.md"
+    },
+    {
+      "index": 71132,
+      "idea_id": "idea071127",
+      "filename": "idea071127-dataagent-errors-resilience",
+      "title": "idea071127 - dataagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "dataagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071127-dataagent-errors-resilience.md"
+    },
+    {
+      "index": 71133,
+      "idea_id": "idea071128",
+      "filename": "idea071128-dataprivacyguardagent-errors-hardening",
+      "title": "idea071128 - dataprivacyguardagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "dataprivacyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071128-dataprivacyguardagent-errors-hardening.md"
+    },
+    {
+      "index": 71134,
+      "idea_id": "idea071129",
+      "filename": "idea071129-dataprivacyguardagent-errors-performance",
+      "title": "idea071129 - dataprivacyguardagent.errors Performance",
+      "archetype": "performance",
+      "component": "dataprivacyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071129-dataprivacyguardagent-errors-performance.md"
+    },
+    {
+      "index": 71135,
+      "idea_id": "idea071130",
+      "filename": "idea071130-dataprivacyguardagent-errors-resilience",
+      "title": "idea071130 - dataprivacyguardagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "dataprivacyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071130-dataprivacyguardagent-errors-resilience.md"
+    },
+    {
+      "index": 71136,
+      "idea_id": "idea071131",
+      "filename": "idea071131-datascienceagent-errors-hardening",
+      "title": "idea071131 - datascienceagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "datascienceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071131-datascienceagent-errors-hardening.md"
+    },
+    {
+      "index": 71137,
+      "idea_id": "idea071132",
+      "filename": "idea071132-datascienceagent-errors-performance",
+      "title": "idea071132 - datascienceagent.errors Performance",
+      "archetype": "performance",
+      "component": "datascienceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071132-datascienceagent-errors-performance.md"
+    },
+    {
+      "index": 71138,
+      "idea_id": "idea071133",
+      "filename": "idea071133-datascienceagent-errors-resilience",
+      "title": "idea071133 - datascienceagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "datascienceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071133-datascienceagent-errors-resilience.md"
+    },
+    {
+      "index": 71139,
+      "idea_id": "idea071134",
+      "filename": "idea071134-dependencyanalyzer-errors-hardening",
+      "title": "idea071134 - dependencyanalyzer.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencyanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071134-dependencyanalyzer-errors-hardening.md"
+    },
+    {
+      "index": 71140,
+      "idea_id": "idea071135",
+      "filename": "idea071135-dependencyanalyzer-errors-performance",
+      "title": "idea071135 - dependencyanalyzer.errors Performance",
+      "archetype": "performance",
+      "component": "dependencyanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071135-dependencyanalyzer-errors-performance.md"
+    },
+    {
+      "index": 71141,
+      "idea_id": "idea071136",
+      "filename": "idea071136-dependencyanalyzer-errors-resilience",
+      "title": "idea071136 - dependencyanalyzer.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencyanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071136-dependencyanalyzer-errors-resilience.md"
+    },
+    {
+      "index": 71142,
+      "idea_id": "idea071137",
+      "filename": "idea071137-dependencycontainer-errors-hardening",
+      "title": "idea071137 - dependencycontainer.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencycontainer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071137-dependencycontainer-errors-hardening.md"
+    },
+    {
+      "index": 71143,
+      "idea_id": "idea071138",
+      "filename": "idea071138-dependencycontainer-errors-performance",
+      "title": "idea071138 - dependencycontainer.errors Performance",
+      "archetype": "performance",
+      "component": "dependencycontainer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071138-dependencycontainer-errors-performance.md"
+    },
+    {
+      "index": 71144,
+      "idea_id": "idea071139",
+      "filename": "idea071139-dependencycontainer-errors-resilience",
+      "title": "idea071139 - dependencycontainer.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencycontainer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071139-dependencycontainer-errors-resilience.md"
+    },
+    {
+      "index": 71145,
+      "idea_id": "idea071140",
+      "filename": "idea071140-dependencygraph-errors-hardening",
+      "title": "idea071140 - dependencygraph.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencygraph-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071140-dependencygraph-errors-hardening.md"
+    },
+    {
+      "index": 71146,
+      "idea_id": "idea071141",
+      "filename": "idea071141-dependencygraph-errors-performance",
+      "title": "idea071141 - dependencygraph.errors Performance",
+      "archetype": "performance",
+      "component": "dependencygraph-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071141-dependencygraph-errors-performance.md"
+    },
+    {
+      "index": 71147,
+      "idea_id": "idea071142",
+      "filename": "idea071142-dependencygraph-errors-resilience",
+      "title": "idea071142 - dependencygraph.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencygraph-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071142-dependencygraph-errors-resilience.md"
+    },
+    {
+      "index": 71148,
+      "idea_id": "idea071143",
+      "filename": "idea071143-dependencygraphagent-errors-hardening",
+      "title": "idea071143 - dependencygraphagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencygraphagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071143-dependencygraphagent-errors-hardening.md"
+    },
+    {
+      "index": 71149,
+      "idea_id": "idea071144",
+      "filename": "idea071144-dependencygraphagent-errors-performance",
+      "title": "idea071144 - dependencygraphagent.errors Performance",
+      "archetype": "performance",
+      "component": "dependencygraphagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071144-dependencygraphagent-errors-performance.md"
+    },
+    {
+      "index": 71150,
+      "idea_id": "idea071145",
+      "filename": "idea071145-dependencygraphagent-errors-resilience",
+      "title": "idea071145 - dependencygraphagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencygraphagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071145-dependencygraphagent-errors-resilience.md"
+    },
+    {
+      "index": 71151,
+      "idea_id": "idea071146",
+      "filename": "idea071146-dependencynode-errors-hardening",
+      "title": "idea071146 - dependencynode.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencynode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071146-dependencynode-errors-hardening.md"
+    },
+    {
+      "index": 71152,
+      "idea_id": "idea071147",
+      "filename": "idea071147-dependencynode-errors-performance",
+      "title": "idea071147 - dependencynode.errors Performance",
+      "archetype": "performance",
+      "component": "dependencynode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071147-dependencynode-errors-performance.md"
+    },
+    {
+      "index": 71153,
+      "idea_id": "idea071148",
+      "filename": "idea071148-dependencynode-errors-resilience",
+      "title": "idea071148 - dependencynode.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencynode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071148-dependencynode-errors-resilience.md"
+    },
+    {
+      "index": 71154,
+      "idea_id": "idea071149",
+      "filename": "idea071149-dependencyresolver-errors-hardening",
+      "title": "idea071149 - dependencyresolver.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencyresolver-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071149-dependencyresolver-errors-hardening.md"
+    },
+    {
+      "index": 71155,
+      "idea_id": "idea071150",
+      "filename": "idea071150-dependencyresolver-errors-performance",
+      "title": "idea071150 - dependencyresolver.errors Performance",
+      "archetype": "performance",
+      "component": "dependencyresolver-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071150-dependencyresolver-errors-performance.md"
+    },
+    {
+      "index": 71156,
+      "idea_id": "idea071151",
+      "filename": "idea071151-dependencyresolver-errors-resilience",
+      "title": "idea071151 - dependencyresolver.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencyresolver-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071151-dependencyresolver-errors-resilience.md"
+    },
+    {
+      "index": 71157,
+      "idea_id": "idea071152",
+      "filename": "idea071152-dependencytype-errors-hardening",
+      "title": "idea071152 - dependencytype.errors Hardening",
+      "archetype": "hardening",
+      "component": "dependencytype-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071152-dependencytype-errors-hardening.md"
+    },
+    {
+      "index": 71158,
+      "idea_id": "idea071153",
+      "filename": "idea071153-dependencytype-errors-performance",
+      "title": "idea071153 - dependencytype.errors Performance",
+      "archetype": "performance",
+      "component": "dependencytype-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071153-dependencytype-errors-performance.md"
+    },
+    {
+      "index": 71159,
+      "idea_id": "idea071154",
+      "filename": "idea071154-dependencytype-errors-resilience",
+      "title": "idea071154 - dependencytype.errors Resilience",
+      "archetype": "resilience",
+      "component": "dependencytype-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071154-dependencytype-errors-resilience.md"
+    },
+    {
+      "index": 71160,
+      "idea_id": "idea071155",
+      "filename": "idea071155-deploymentmanager-errors-hardening",
+      "title": "idea071155 - deploymentmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "deploymentmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071155-deploymentmanager-errors-hardening.md"
+    },
+    {
+      "index": 71161,
+      "idea_id": "idea071156",
+      "filename": "idea071156-deploymentmanager-errors-performance",
+      "title": "idea071156 - deploymentmanager.errors Performance",
+      "archetype": "performance",
+      "component": "deploymentmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071156-deploymentmanager-errors-performance.md"
+    },
+    {
+      "index": 71162,
+      "idea_id": "idea071157",
+      "filename": "idea071157-deploymentmanager-errors-resilience",
+      "title": "idea071157 - deploymentmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "deploymentmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071157-deploymentmanager-errors-resilience.md"
+    },
+    {
+      "index": 71163,
+      "idea_id": "idea071158",
+      "filename": "idea071158-derivedmetric-errors-hardening",
+      "title": "idea071158 - derivedmetric.errors Hardening",
+      "archetype": "hardening",
+      "component": "derivedmetric-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071158-derivedmetric-errors-hardening.md"
+    },
+    {
+      "index": 71164,
+      "idea_id": "idea071159",
+      "filename": "idea071159-derivedmetric-errors-performance",
+      "title": "idea071159 - derivedmetric.errors Performance",
+      "archetype": "performance",
+      "component": "derivedmetric-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071159-derivedmetric-errors-performance.md"
+    },
+    {
+      "index": 71165,
+      "idea_id": "idea071160",
+      "filename": "idea071160-derivedmetric-errors-resilience",
+      "title": "idea071160 - derivedmetric.errors Resilience",
+      "archetype": "resilience",
+      "component": "derivedmetric-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071160-derivedmetric-errors-resilience.md"
+    },
+    {
+      "index": 71166,
+      "idea_id": "idea071161",
+      "filename": "idea071161-derivedmetriccalculator-errors-hardening",
+      "title": "idea071161 - derivedmetriccalculator.errors Hardening",
+      "archetype": "hardening",
+      "component": "derivedmetriccalculator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071161-derivedmetriccalculator-errors-hardening.md"
+    },
+    {
+      "index": 71167,
+      "idea_id": "idea071162",
+      "filename": "idea071162-derivedmetriccalculator-errors-performance",
+      "title": "idea071162 - derivedmetriccalculator.errors Performance",
+      "archetype": "performance",
+      "component": "derivedmetriccalculator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071162-derivedmetriccalculator-errors-performance.md"
+    },
+    {
+      "index": 71168,
+      "idea_id": "idea071163",
+      "filename": "idea071163-derivedmetriccalculator-errors-resilience",
+      "title": "idea071163 - derivedmetriccalculator.errors Resilience",
+      "archetype": "resilience",
+      "component": "derivedmetriccalculator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071163-derivedmetriccalculator-errors-resilience.md"
+    },
+    {
+      "index": 71169,
+      "idea_id": "idea071164",
+      "filename": "idea071164-dialogmanager-errors-hardening",
+      "title": "idea071164 - dialogmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "dialogmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071164-dialogmanager-errors-hardening.md"
+    },
+    {
+      "index": 71170,
+      "idea_id": "idea071165",
+      "filename": "idea071165-dialogmanager-errors-performance",
+      "title": "idea071165 - dialogmanager.errors Performance",
+      "archetype": "performance",
+      "component": "dialogmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071165-dialogmanager-errors-performance.md"
+    },
+    {
+      "index": 71171,
+      "idea_id": "idea071166",
+      "filename": "idea071166-dialogmanager-errors-resilience",
+      "title": "idea071166 - dialogmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "dialogmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071166-dialogmanager-errors-resilience.md"
+    },
+    {
+      "index": 71172,
+      "idea_id": "idea071167",
+      "filename": "idea071167-diffgenerator-errors-hardening",
+      "title": "idea071167 - diffgenerator.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071167-diffgenerator-errors-hardening.md"
+    },
+    {
+      "index": 71173,
+      "idea_id": "idea071168",
+      "filename": "idea071168-diffgenerator-errors-performance",
+      "title": "idea071168 - diffgenerator.errors Performance",
+      "archetype": "performance",
+      "component": "diffgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071168-diffgenerator-errors-performance.md"
+    },
+    {
+      "index": 71174,
+      "idea_id": "idea071169",
+      "filename": "idea071169-diffgenerator-errors-resilience",
+      "title": "idea071169 - diffgenerator.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071169-diffgenerator-errors-resilience.md"
+    },
+    {
+      "index": 71175,
+      "idea_id": "idea071170",
+      "filename": "idea071170-diffoutputformat-errors-hardening",
+      "title": "idea071170 - diffoutputformat.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffoutputformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071170-diffoutputformat-errors-hardening.md"
+    },
+    {
+      "index": 71176,
+      "idea_id": "idea071171",
+      "filename": "idea071171-diffoutputformat-errors-performance",
+      "title": "idea071171 - diffoutputformat.errors Performance",
+      "archetype": "performance",
+      "component": "diffoutputformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071171-diffoutputformat-errors-performance.md"
+    },
+    {
+      "index": 71177,
+      "idea_id": "idea071172",
+      "filename": "idea071172-diffoutputformat-errors-resilience",
+      "title": "idea071172 - diffoutputformat.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffoutputformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071172-diffoutputformat-errors-resilience.md"
+    },
+    {
+      "index": 71178,
+      "idea_id": "idea071173",
+      "filename": "idea071173-diffresult-errors-hardening",
+      "title": "idea071173 - diffresult.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071173-diffresult-errors-hardening.md"
+    },
+    {
+      "index": 71179,
+      "idea_id": "idea071174",
+      "filename": "idea071174-diffresult-errors-performance",
+      "title": "idea071174 - diffresult.errors Performance",
+      "archetype": "performance",
+      "component": "diffresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071174-diffresult-errors-performance.md"
+    },
+    {
+      "index": 71180,
+      "idea_id": "idea071175",
+      "filename": "idea071175-diffresult-errors-resilience",
+      "title": "idea071175 - diffresult.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071175-diffresult-errors-resilience.md"
+    },
+    {
+      "index": 71181,
+      "idea_id": "idea071176",
+      "filename": "idea071176-diffviewmode-errors-hardening",
+      "title": "idea071176 - diffviewmode.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffviewmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071176-diffviewmode-errors-hardening.md"
+    },
+    {
+      "index": 71182,
+      "idea_id": "idea071177",
+      "filename": "idea071177-diffviewmode-errors-performance",
+      "title": "idea071177 - diffviewmode.errors Performance",
+      "archetype": "performance",
+      "component": "diffviewmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071177-diffviewmode-errors-performance.md"
+    },
+    {
+      "index": 71183,
+      "idea_id": "idea071178",
+      "filename": "idea071178-diffviewmode-errors-resilience",
+      "title": "idea071178 - diffviewmode.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffviewmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071178-diffviewmode-errors-resilience.md"
+    },
+    {
+      "index": 71184,
+      "idea_id": "idea071179",
+      "filename": "idea071179-diffviewer-errors-hardening",
+      "title": "idea071179 - diffviewer.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffviewer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071179-diffviewer-errors-hardening.md"
+    },
+    {
+      "index": 71185,
+      "idea_id": "idea071180",
+      "filename": "idea071180-diffviewer-errors-performance",
+      "title": "idea071180 - diffviewer.errors Performance",
+      "archetype": "performance",
+      "component": "diffviewer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071180-diffviewer-errors-performance.md"
+    },
+    {
+      "index": 71186,
+      "idea_id": "idea071181",
+      "filename": "idea071181-diffviewer-errors-resilience",
+      "title": "idea071181 - diffviewer.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffviewer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071181-diffviewer-errors-resilience.md"
+    },
+    {
+      "index": 71187,
+      "idea_id": "idea071182",
+      "filename": "idea071182-diffvisualizer-errors-hardening",
+      "title": "idea071182 - diffvisualizer.errors Hardening",
+      "archetype": "hardening",
+      "component": "diffvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071182-diffvisualizer-errors-hardening.md"
+    },
+    {
+      "index": 71188,
+      "idea_id": "idea071183",
+      "filename": "idea071183-diffvisualizer-errors-performance",
+      "title": "idea071183 - diffvisualizer.errors Performance",
+      "archetype": "performance",
+      "component": "diffvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071183-diffvisualizer-errors-performance.md"
+    },
+    {
+      "index": 71189,
+      "idea_id": "idea071184",
+      "filename": "idea071184-diffvisualizer-errors-resilience",
+      "title": "idea071184 - diffvisualizer.errors Resilience",
+      "archetype": "resilience",
+      "component": "diffvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071184-diffvisualizer-errors-resilience.md"
+    },
+    {
+      "index": 71190,
+      "idea_id": "idea071185",
+      "filename": "idea071185-directstrategy-errors-hardening",
+      "title": "idea071185 - directstrategy.errors Hardening",
+      "archetype": "hardening",
+      "component": "directstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071185-directstrategy-errors-hardening.md"
+    },
+    {
+      "index": 71191,
+      "idea_id": "idea071186",
+      "filename": "idea071186-directstrategy-errors-performance",
+      "title": "idea071186 - directstrategy.errors Performance",
+      "archetype": "performance",
+      "component": "directstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071186-directstrategy-errors-performance.md"
+    },
+    {
+      "index": 71192,
+      "idea_id": "idea071187",
+      "filename": "idea071187-directstrategy-errors-resilience",
+      "title": "idea071187 - directstrategy.errors Resilience",
+      "archetype": "resilience",
+      "component": "directstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071187-directstrategy-errors-resilience.md"
+    },
+    {
+      "index": 71193,
+      "idea_id": "idea071188",
+      "filename": "idea071188-directoragent-errors-hardening",
+      "title": "idea071188 - directoragent.errors Hardening",
+      "archetype": "hardening",
+      "component": "directoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071188-directoragent-errors-hardening.md"
+    },
+    {
+      "index": 71194,
+      "idea_id": "idea071189",
+      "filename": "idea071189-directoragent-errors-performance",
+      "title": "idea071189 - directoragent.errors Performance",
+      "archetype": "performance",
+      "component": "directoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071189-directoragent-errors-performance.md"
+    },
+    {
+      "index": 71195,
+      "idea_id": "idea071190",
+      "filename": "idea071190-directoragent-errors-resilience",
+      "title": "idea071190 - directoragent.errors Resilience",
+      "archetype": "resilience",
+      "component": "directoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071190-directoragent-errors-resilience.md"
+    },
+    {
+      "index": 71196,
+      "idea_id": "idea071191",
+      "filename": "idea071191-diskcache-errors-hardening",
+      "title": "idea071191 - diskcache.errors Hardening",
+      "archetype": "hardening",
+      "component": "diskcache-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071191-diskcache-errors-hardening.md"
+    },
+    {
+      "index": 71197,
+      "idea_id": "idea071192",
+      "filename": "idea071192-diskcache-errors-performance",
+      "title": "idea071192 - diskcache.errors Performance",
+      "archetype": "performance",
+      "component": "diskcache-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071192-diskcache-errors-performance.md"
+    },
+    {
+      "index": 71198,
+      "idea_id": "idea071193",
+      "filename": "idea071193-diskcache-errors-resilience",
+      "title": "idea071193 - diskcache.errors Resilience",
+      "archetype": "resilience",
+      "component": "diskcache-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071193-diskcache-errors-resilience.md"
+    },
+    {
+      "index": 71199,
+      "idea_id": "idea071194",
+      "filename": "idea071194-docgenagent-errors-hardening",
+      "title": "idea071194 - docgenagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "docgenagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071194-docgenagent-errors-hardening.md"
+    },
+    {
+      "index": 71200,
+      "idea_id": "idea071195",
+      "filename": "idea071195-docgenagent-errors-performance",
+      "title": "idea071195 - docgenagent.errors Performance",
+      "archetype": "performance",
+      "component": "docgenagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071195-docgenagent-errors-performance.md"
+    },
+    {
+      "index": 71201,
+      "idea_id": "idea071196",
+      "filename": "idea071196-docgenagent-errors-resilience",
+      "title": "idea071196 - docgenagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "docgenagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071196-docgenagent-errors-resilience.md"
+    },
+    {
+      "index": 71202,
+      "idea_id": "idea071197",
+      "filename": "idea071197-docgenerator-errors-hardening",
+      "title": "idea071197 - docgenerator.errors Hardening",
+      "archetype": "hardening",
+      "component": "docgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071197-docgenerator-errors-hardening.md"
+    },
+    {
+      "index": 71203,
+      "idea_id": "idea071198",
+      "filename": "idea071198-docgenerator-errors-performance",
+      "title": "idea071198 - docgenerator.errors Performance",
+      "archetype": "performance",
+      "component": "docgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071198-docgenerator-errors-performance.md"
+    },
+    {
+      "index": 71204,
+      "idea_id": "idea071199",
+      "filename": "idea071199-docgenerator-errors-resilience",
+      "title": "idea071199 - docgenerator.errors Resilience",
+      "archetype": "resilience",
+      "component": "docgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071199-docgenerator-errors-resilience.md"
+    },
+    {
+      "index": 71205,
+      "idea_id": "idea071200",
+      "filename": "idea071200-docinferenceagent-errors-hardening",
+      "title": "idea071200 - docinferenceagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "docinferenceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071200-docinferenceagent-errors-hardening.md"
+    },
+    {
+      "index": 71206,
+      "idea_id": "idea071201",
+      "filename": "idea071201-docinferenceagent-errors-performance",
+      "title": "idea071201 - docinferenceagent.errors Performance",
+      "archetype": "performance",
+      "component": "docinferenceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071201-docinferenceagent-errors-performance.md"
+    },
+    {
+      "index": 71207,
+      "idea_id": "idea071202",
+      "filename": "idea071202-docinferenceagent-errors-resilience",
+      "title": "idea071202 - docinferenceagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "docinferenceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071202-docinferenceagent-errors-resilience.md"
+    },
+    {
+      "index": 71208,
+      "idea_id": "idea071203",
+      "filename": "idea071203-documentationagent-errors-hardening",
+      "title": "idea071203 - documentationagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "documentationagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071203-documentationagent-errors-hardening.md"
+    },
+    {
+      "index": 71209,
+      "idea_id": "idea071204",
+      "filename": "idea071204-documentationagent-errors-performance",
+      "title": "idea071204 - documentationagent.errors Performance",
+      "archetype": "performance",
+      "component": "documentationagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071204-documentationagent-errors-performance.md"
+    },
+    {
+      "index": 71210,
+      "idea_id": "idea071205",
+      "filename": "idea071205-documentationagent-errors-resilience",
+      "title": "idea071205 - documentationagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "documentationagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071205-documentationagent-errors-resilience.md"
+    },
+    {
+      "index": 71211,
+      "idea_id": "idea071206",
+      "filename": "idea071206-documentationindexeragent-errors-hardening",
+      "title": "idea071206 - documentationindexeragent.errors Hardening",
+      "archetype": "hardening",
+      "component": "documentationindexeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071206-documentationindexeragent-errors-hardening.md"
+    },
+    {
+      "index": 71212,
+      "idea_id": "idea071207",
+      "filename": "idea071207-documentationindexeragent-errors-performance",
+      "title": "idea071207 - documentationindexeragent.errors Performance",
+      "archetype": "performance",
+      "component": "documentationindexeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071207-documentationindexeragent-errors-performance.md"
+    },
+    {
+      "index": 71213,
+      "idea_id": "idea071208",
+      "filename": "idea071208-documentationindexeragent-errors-resilience",
+      "title": "idea071208 - documentationindexeragent.errors Resilience",
+      "archetype": "resilience",
+      "component": "documentationindexeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071208-documentationindexeragent-errors-resilience.md"
+    },
+    {
+      "index": 71214,
+      "idea_id": "idea071209",
+      "filename": "idea071209-dreamstateorchestrator-errors-hardening",
+      "title": "idea071209 - dreamstateorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "dreamstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071209-dreamstateorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71215,
+      "idea_id": "idea071210",
+      "filename": "idea071210-dreamstateorchestrator-errors-performance",
+      "title": "idea071210 - dreamstateorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "dreamstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071210-dreamstateorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71216,
+      "idea_id": "idea071211",
+      "filename": "idea071211-dreamstateorchestrator-errors-resilience",
+      "title": "idea071211 - dreamstateorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "dreamstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071211-dreamstateorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71217,
+      "idea_id": "idea071212",
+      "filename": "idea071212-dynamicdecomposeragent-errors-hardening",
+      "title": "idea071212 - dynamicdecomposeragent.errors Hardening",
+      "archetype": "hardening",
+      "component": "dynamicdecomposeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071212-dynamicdecomposeragent-errors-hardening.md"
+    },
+    {
+      "index": 71218,
+      "idea_id": "idea071213",
+      "filename": "idea071213-dynamicdecomposeragent-errors-performance",
+      "title": "idea071213 - dynamicdecomposeragent.errors Performance",
+      "archetype": "performance",
+      "component": "dynamicdecomposeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071213-dynamicdecomposeragent-errors-performance.md"
+    },
+    {
+      "index": 71219,
+      "idea_id": "idea071214",
+      "filename": "idea071214-dynamicdecomposeragent-errors-resilience",
+      "title": "idea071214 - dynamicdecomposeragent.errors Resilience",
+      "archetype": "resilience",
+      "component": "dynamicdecomposeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071214-dynamicdecomposeragent-errors-resilience.md"
+    },
+    {
+      "index": 71220,
+      "idea_id": "idea071215",
+      "filename": "idea071215-effortestimate-errors-hardening",
+      "title": "idea071215 - effortestimate.errors Hardening",
+      "archetype": "hardening",
+      "component": "effortestimate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071215-effortestimate-errors-hardening.md"
+    },
+    {
+      "index": 71221,
+      "idea_id": "idea071216",
+      "filename": "idea071216-effortestimate-errors-performance",
+      "title": "idea071216 - effortestimate.errors Performance",
+      "archetype": "performance",
+      "component": "effortestimate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071216-effortestimate-errors-performance.md"
+    },
+    {
+      "index": 71222,
+      "idea_id": "idea071217",
+      "filename": "idea071217-effortestimate-errors-resilience",
+      "title": "idea071217 - effortestimate.errors Resilience",
+      "archetype": "resilience",
+      "component": "effortestimate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071217-effortestimate-errors-resilience.md"
+    },
+    {
+      "index": 71223,
+      "idea_id": "idea071218",
+      "filename": "idea071218-effortestimateresult-errors-hardening",
+      "title": "idea071218 - effortestimateresult.errors Hardening",
+      "archetype": "hardening",
+      "component": "effortestimateresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071218-effortestimateresult-errors-hardening.md"
+    },
+    {
+      "index": 71224,
+      "idea_id": "idea071219",
+      "filename": "idea071219-effortestimateresult-errors-performance",
+      "title": "idea071219 - effortestimateresult.errors Performance",
+      "archetype": "performance",
+      "component": "effortestimateresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071219-effortestimateresult-errors-performance.md"
+    },
+    {
+      "index": 71225,
+      "idea_id": "idea071220",
+      "filename": "idea071220-effortestimateresult-errors-resilience",
+      "title": "idea071220 - effortestimateresult.errors Resilience",
+      "archetype": "resilience",
+      "component": "effortestimateresult-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071220-effortestimateresult-errors-resilience.md"
+    },
+    {
+      "index": 71226,
+      "idea_id": "idea071221",
+      "filename": "idea071221-effortestimator-errors-hardening",
+      "title": "idea071221 - effortestimator.errors Hardening",
+      "archetype": "hardening",
+      "component": "effortestimator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071221-effortestimator-errors-hardening.md"
+    },
+    {
+      "index": 71227,
+      "idea_id": "idea071222",
+      "filename": "idea071222-effortestimator-errors-performance",
+      "title": "idea071222 - effortestimator.errors Performance",
+      "archetype": "performance",
+      "component": "effortestimator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071222-effortestimator-errors-performance.md"
+    },
+    {
+      "index": 71228,
+      "idea_id": "idea071223",
+      "filename": "idea071223-effortestimator-errors-resilience",
+      "title": "idea071223 - effortestimator.errors Resilience",
+      "archetype": "resilience",
+      "component": "effortestimator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071223-effortestimator-errors-resilience.md"
+    },
+    {
+      "index": 71229,
+      "idea_id": "idea071224",
+      "filename": "idea071224-emotionalregulationorchestrator-errors-hardening",
+      "title": "idea071224 - emotionalregulationorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "emotionalregulationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071224-emotionalregulationorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71230,
+      "idea_id": "idea071225",
+      "filename": "idea071225-emotionalregulationorchestrator-errors-performance",
+      "title": "idea071225 - emotionalregulationorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "emotionalregulationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071225-emotionalregulationorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71231,
+      "idea_id": "idea071226",
+      "filename": "idea071226-emotionalregulationorchestrator-errors-resilience",
+      "title": "idea071226 - emotionalregulationorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "emotionalregulationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071226-emotionalregulationorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71232,
+      "idea_id": "idea071227",
+      "filename": "idea071227-empathyengineagent-errors-hardening",
+      "title": "idea071227 - empathyengineagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "empathyengineagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071227-empathyengineagent-errors-hardening.md"
+    },
+    {
+      "index": 71233,
+      "idea_id": "idea071228",
+      "filename": "idea071228-empathyengineagent-errors-performance",
+      "title": "idea071228 - empathyengineagent.errors Performance",
+      "archetype": "performance",
+      "component": "empathyengineagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071228-empathyengineagent-errors-performance.md"
+    },
+    {
+      "index": 71234,
+      "idea_id": "idea071229",
+      "filename": "idea071229-empathyengineagent-errors-resilience",
+      "title": "idea071229 - empathyengineagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "empathyengineagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071229-empathyengineagent-errors-resilience.md"
+    },
+    {
+      "index": 71235,
+      "idea_id": "idea071230",
+      "filename": "idea071230-entanglementorchestrator-errors-hardening",
+      "title": "idea071230 - entanglementorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "entanglementorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071230-entanglementorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71236,
+      "idea_id": "idea071231",
+      "filename": "idea071231-entanglementorchestrator-errors-performance",
+      "title": "idea071231 - entanglementorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "entanglementorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071231-entanglementorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71237,
+      "idea_id": "idea071232",
+      "filename": "idea071232-entanglementorchestrator-errors-resilience",
+      "title": "idea071232 - entanglementorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "entanglementorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071232-entanglementorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71238,
+      "idea_id": "idea071233",
+      "filename": "idea071233-entropyguardagent-errors-hardening",
+      "title": "idea071233 - entropyguardagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "entropyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071233-entropyguardagent-errors-hardening.md"
+    },
+    {
+      "index": 71239,
+      "idea_id": "idea071234",
+      "filename": "idea071234-entropyguardagent-errors-performance",
+      "title": "idea071234 - entropyguardagent.errors Performance",
+      "archetype": "performance",
+      "component": "entropyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071234-entropyguardagent-errors-performance.md"
+    },
+    {
+      "index": 71240,
+      "idea_id": "idea071235",
+      "filename": "idea071235-entropyguardagent-errors-resilience",
+      "title": "idea071235 - entropyguardagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "entropyguardagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071235-entropyguardagent-errors-resilience.md"
+    },
+    {
+      "index": 71241,
+      "idea_id": "idea071236",
+      "filename": "idea071236-entryreorderer-errors-hardening",
+      "title": "idea071236 - entryreorderer.errors Hardening",
+      "archetype": "hardening",
+      "component": "entryreorderer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071236-entryreorderer-errors-hardening.md"
+    },
+    {
+      "index": 71242,
+      "idea_id": "idea071237",
+      "filename": "idea071237-entryreorderer-errors-performance",
+      "title": "idea071237 - entryreorderer.errors Performance",
+      "archetype": "performance",
+      "component": "entryreorderer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071237-entryreorderer-errors-performance.md"
+    },
+    {
+      "index": 71243,
+      "idea_id": "idea071238",
+      "filename": "idea071238-entryreorderer-errors-resilience",
+      "title": "idea071238 - entryreorderer.errors Resilience",
+      "archetype": "resilience",
+      "component": "entryreorderer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071238-entryreorderer-errors-resilience.md"
+    },
+    {
+      "index": 71244,
+      "idea_id": "idea071239",
+      "filename": "idea071239-entrytemplate-errors-hardening",
+      "title": "idea071239 - entrytemplate.errors Hardening",
+      "archetype": "hardening",
+      "component": "entrytemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071239-entrytemplate-errors-hardening.md"
+    },
+    {
+      "index": 71245,
+      "idea_id": "idea071240",
+      "filename": "idea071240-entrytemplate-errors-performance",
+      "title": "idea071240 - entrytemplate.errors Performance",
+      "archetype": "performance",
+      "component": "entrytemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071240-entrytemplate-errors-performance.md"
+    },
+    {
+      "index": 71246,
+      "idea_id": "idea071241",
+      "filename": "idea071241-entrytemplate-errors-resilience",
+      "title": "idea071241 - entrytemplate.errors Resilience",
+      "archetype": "resilience",
+      "component": "entrytemplate-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071241-entrytemplate-errors-resilience.md"
+    },
+    {
+      "index": 71247,
+      "idea_id": "idea071242",
+      "filename": "idea071242-environmentdetector-errors-hardening",
+      "title": "idea071242 - environmentdetector.errors Hardening",
+      "archetype": "hardening",
+      "component": "environmentdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071242-environmentdetector-errors-hardening.md"
+    },
+    {
+      "index": 71248,
+      "idea_id": "idea071243",
+      "filename": "idea071243-environmentdetector-errors-performance",
+      "title": "idea071243 - environmentdetector.errors Performance",
+      "archetype": "performance",
+      "component": "environmentdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071243-environmentdetector-errors-performance.md"
+    },
+    {
+      "index": 71249,
+      "idea_id": "idea071244",
+      "filename": "idea071244-environmentdetector-errors-resilience",
+      "title": "idea071244 - environmentdetector.errors Resilience",
+      "archetype": "resilience",
+      "component": "environmentdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071244-environmentdetector-errors-resilience.md"
+    },
+    {
+      "index": 71250,
+      "idea_id": "idea071245",
+      "filename": "idea071245-environmentisolator-errors-hardening",
+      "title": "idea071245 - environmentisolator.errors Hardening",
+      "archetype": "hardening",
+      "component": "environmentisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071245-environmentisolator-errors-hardening.md"
+    },
+    {
+      "index": 71251,
+      "idea_id": "idea071246",
+      "filename": "idea071246-environmentisolator-errors-performance",
+      "title": "idea071246 - environmentisolator.errors Performance",
+      "archetype": "performance",
+      "component": "environmentisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071246-environmentisolator-errors-performance.md"
+    },
+    {
+      "index": 71252,
+      "idea_id": "idea071247",
+      "filename": "idea071247-environmentisolator-errors-resilience",
+      "title": "idea071247 - environmentisolator.errors Resilience",
+      "archetype": "resilience",
+      "component": "environmentisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071247-environmentisolator-errors-resilience.md"
+    },
+    {
+      "index": 71253,
+      "idea_id": "idea071248",
+      "filename": "idea071248-errorbudget-errors-hardening",
+      "title": "idea071248 - errorbudget.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorbudget-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071248-errorbudget-errors-hardening.md"
+    },
+    {
+      "index": 71254,
+      "idea_id": "idea071249",
+      "filename": "idea071249-errorbudget-errors-performance",
+      "title": "idea071249 - errorbudget.errors Performance",
+      "archetype": "performance",
+      "component": "errorbudget-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071249-errorbudget-errors-performance.md"
+    },
+    {
+      "index": 71255,
+      "idea_id": "idea071250",
+      "filename": "idea071250-errorbudget-errors-resilience",
+      "title": "idea071250 - errorbudget.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorbudget-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071250-errorbudget-errors-resilience.md"
+    },
+    {
+      "index": 71256,
+      "idea_id": "idea071251",
+      "filename": "idea071251-errorbudgetmanager-errors-hardening",
+      "title": "idea071251 - errorbudgetmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorbudgetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071251-errorbudgetmanager-errors-hardening.md"
+    },
+    {
+      "index": 71257,
+      "idea_id": "idea071252",
+      "filename": "idea071252-errorbudgetmanager-errors-performance",
+      "title": "idea071252 - errorbudgetmanager.errors Performance",
+      "archetype": "performance",
+      "component": "errorbudgetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071252-errorbudgetmanager-errors-performance.md"
+    },
+    {
+      "index": 71258,
+      "idea_id": "idea071253",
+      "filename": "idea071253-errorbudgetmanager-errors-resilience",
+      "title": "idea071253 - errorbudgetmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorbudgetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071253-errorbudgetmanager-errors-resilience.md"
+    },
+    {
+      "index": 71259,
+      "idea_id": "idea071254",
+      "filename": "idea071254-errorcategory-errors-hardening",
+      "title": "idea071254 - errorcategory.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorcategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071254-errorcategory-errors-hardening.md"
+    },
+    {
+      "index": 71260,
+      "idea_id": "idea071255",
+      "filename": "idea071255-errorcategory-errors-performance",
+      "title": "idea071255 - errorcategory.errors Performance",
+      "archetype": "performance",
+      "component": "errorcategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071255-errorcategory-errors-performance.md"
+    },
+    {
+      "index": 71261,
+      "idea_id": "idea071256",
+      "filename": "idea071256-errorcategory-errors-resilience",
+      "title": "idea071256 - errorcategory.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorcategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071256-errorcategory-errors-resilience.md"
+    },
+    {
+      "index": 71262,
+      "idea_id": "idea071257",
+      "filename": "idea071257-errorcluster-errors-hardening",
+      "title": "idea071257 - errorcluster.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorcluster-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071257-errorcluster-errors-hardening.md"
+    },
+    {
+      "index": 71263,
+      "idea_id": "idea071258",
+      "filename": "idea071258-errorcluster-errors-performance",
+      "title": "idea071258 - errorcluster.errors Performance",
+      "archetype": "performance",
+      "component": "errorcluster-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071258-errorcluster-errors-performance.md"
+    },
+    {
+      "index": 71264,
+      "idea_id": "idea071259",
+      "filename": "idea071259-errorcluster-errors-resilience",
+      "title": "idea071259 - errorcluster.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorcluster-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071259-errorcluster-errors-resilience.md"
+    },
+    {
+      "index": 71265,
+      "idea_id": "idea071260",
+      "filename": "idea071260-errorentry-errors-hardening",
+      "title": "idea071260 - errorentry.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorentry-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071260-errorentry-errors-hardening.md"
+    },
+    {
+      "index": 71266,
+      "idea_id": "idea071261",
+      "filename": "idea071261-errorentry-errors-performance",
+      "title": "idea071261 - errorentry.errors Performance",
+      "archetype": "performance",
+      "component": "errorentry-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071261-errorentry-errors-performance.md"
+    },
+    {
+      "index": 71267,
+      "idea_id": "idea071262",
+      "filename": "idea071262-errorentry-errors-resilience",
+      "title": "idea071262 - errorentry.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorentry-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071262-errorentry-errors-resilience.md"
+    },
+    {
+      "index": 71268,
+      "idea_id": "idea071263",
+      "filename": "idea071263-errorimpact-errors-hardening",
+      "title": "idea071263 - errorimpact.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorimpact-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071263-errorimpact-errors-hardening.md"
+    },
+    {
+      "index": 71269,
+      "idea_id": "idea071264",
+      "filename": "idea071264-errorimpact-errors-performance",
+      "title": "idea071264 - errorimpact.errors Performance",
+      "archetype": "performance",
+      "component": "errorimpact-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071264-errorimpact-errors-performance.md"
+    },
+    {
+      "index": 71270,
+      "idea_id": "idea071265",
+      "filename": "idea071265-errorimpact-errors-resilience",
+      "title": "idea071265 - errorimpact.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorimpact-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071265-errorimpact-errors-resilience.md"
+    },
+    {
+      "index": 71271,
+      "idea_id": "idea071266",
+      "filename": "idea071266-errorpattern-errors-hardening",
+      "title": "idea071266 - errorpattern.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorpattern-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071266-errorpattern-errors-hardening.md"
+    },
+    {
+      "index": 71272,
+      "idea_id": "idea071267",
+      "filename": "idea071267-errorpattern-errors-performance",
+      "title": "idea071267 - errorpattern.errors Performance",
+      "archetype": "performance",
+      "component": "errorpattern-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071267-errorpattern-errors-performance.md"
+    },
+    {
+      "index": 71273,
+      "idea_id": "idea071268",
+      "filename": "idea071268-errorpattern-errors-resilience",
+      "title": "idea071268 - errorpattern.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorpattern-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071268-errorpattern-errors-resilience.md"
+    },
+    {
+      "index": 71274,
+      "idea_id": "idea071269",
+      "filename": "idea071269-errorseverity-errors-hardening",
+      "title": "idea071269 - errorseverity.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorseverity-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071269-errorseverity-errors-hardening.md"
+    },
+    {
+      "index": 71275,
+      "idea_id": "idea071270",
+      "filename": "idea071270-errorseverity-errors-performance",
+      "title": "idea071270 - errorseverity.errors Performance",
+      "archetype": "performance",
+      "component": "errorseverity-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071270-errorseverity-errors-performance.md"
+    },
+    {
+      "index": 71276,
+      "idea_id": "idea071271",
+      "filename": "idea071271-errorseverity-errors-resilience",
+      "title": "idea071271 - errorseverity.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorseverity-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071271-errorseverity-errors-resilience.md"
+    },
+    {
+      "index": 71277,
+      "idea_id": "idea071272",
+      "filename": "idea071272-errorsagent-errors-hardening",
+      "title": "idea071272 - errorsagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "errorsagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071272-errorsagent-errors-hardening.md"
+    },
+    {
+      "index": 71278,
+      "idea_id": "idea071273",
+      "filename": "idea071273-errorsagent-errors-performance",
+      "title": "idea071273 - errorsagent.errors Performance",
+      "archetype": "performance",
+      "component": "errorsagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071273-errorsagent-errors-performance.md"
+    },
+    {
+      "index": 71279,
+      "idea_id": "idea071274",
+      "filename": "idea071274-errorsagent-errors-resilience",
+      "title": "idea071274 - errorsagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "errorsagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071274-errorsagent-errors-resilience.md"
+    },
+    {
+      "index": 71280,
+      "idea_id": "idea071275",
+      "filename": "idea071275-eternalauditagent-errors-hardening",
+      "title": "idea071275 - eternalauditagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "eternalauditagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071275-eternalauditagent-errors-hardening.md"
+    },
+    {
+      "index": 71281,
+      "idea_id": "idea071276",
+      "filename": "idea071276-eternalauditagent-errors-performance",
+      "title": "idea071276 - eternalauditagent.errors Performance",
+      "archetype": "performance",
+      "component": "eternalauditagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071276-eternalauditagent-errors-performance.md"
+    },
+    {
+      "index": 71282,
+      "idea_id": "idea071277",
+      "filename": "idea071277-eternalauditagent-errors-resilience",
+      "title": "idea071277 - eternalauditagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "eternalauditagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071277-eternalauditagent-errors-resilience.md"
+    },
+    {
+      "index": 71283,
+      "idea_id": "idea071278",
+      "filename": "idea071278-ethicsguardrailagent-errors-hardening",
+      "title": "idea071278 - ethicsguardrailagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "ethicsguardrailagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071278-ethicsguardrailagent-errors-hardening.md"
+    },
+    {
+      "index": 71284,
+      "idea_id": "idea071279",
+      "filename": "idea071279-ethicsguardrailagent-errors-performance",
+      "title": "idea071279 - ethicsguardrailagent.errors Performance",
+      "archetype": "performance",
+      "component": "ethicsguardrailagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071279-ethicsguardrailagent-errors-performance.md"
+    },
+    {
+      "index": 71285,
+      "idea_id": "idea071280",
+      "filename": "idea071280-ethicsguardrailagent-errors-resilience",
+      "title": "idea071280 - ethicsguardrailagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "ethicsguardrailagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071280-ethicsguardrailagent-errors-resilience.md"
+    },
+    {
+      "index": 71286,
+      "idea_id": "idea071281",
+      "filename": "idea071281-evolutionengine-errors-hardening",
+      "title": "idea071281 - evolutionengine.errors Hardening",
+      "archetype": "hardening",
+      "component": "evolutionengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071281-evolutionengine-errors-hardening.md"
+    },
+    {
+      "index": 71287,
+      "idea_id": "idea071282",
+      "filename": "idea071282-evolutionengine-errors-performance",
+      "title": "idea071282 - evolutionengine.errors Performance",
+      "archetype": "performance",
+      "component": "evolutionengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071282-evolutionengine-errors-performance.md"
+    },
+    {
+      "index": 71288,
+      "idea_id": "idea071283",
+      "filename": "idea071283-evolutionengine-errors-resilience",
+      "title": "idea071283 - evolutionengine.errors Resilience",
+      "archetype": "resilience",
+      "component": "evolutionengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071283-evolutionengine-errors-resilience.md"
+    },
+    {
+      "index": 71289,
+      "idea_id": "idea071284",
+      "filename": "idea071284-evolutionarypromptagent-errors-hardening",
+      "title": "idea071284 - evolutionarypromptagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "evolutionarypromptagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071284-evolutionarypromptagent-errors-hardening.md"
+    },
+    {
+      "index": 71290,
+      "idea_id": "idea071285",
+      "filename": "idea071285-evolutionarypromptagent-errors-performance",
+      "title": "idea071285 - evolutionarypromptagent.errors Performance",
+      "archetype": "performance",
+      "component": "evolutionarypromptagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071285-evolutionarypromptagent-errors-performance.md"
+    },
+    {
+      "index": 71291,
+      "idea_id": "idea071286",
+      "filename": "idea071286-evolutionarypromptagent-errors-resilience",
+      "title": "idea071286 - evolutionarypromptagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "evolutionarypromptagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071286-evolutionarypromptagent-errors-resilience.md"
+    },
+    {
+      "index": 71292,
+      "idea_id": "idea071287",
+      "filename": "idea071287-excelagent-errors-hardening",
+      "title": "idea071287 - excelagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "excelagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071287-excelagent-errors-hardening.md"
+    },
+    {
+      "index": 71293,
+      "idea_id": "idea071288",
+      "filename": "idea071288-excelagent-errors-performance",
+      "title": "idea071288 - excelagent.errors Performance",
+      "archetype": "performance",
+      "component": "excelagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071288-excelagent-errors-performance.md"
+    },
+    {
+      "index": 71294,
+      "idea_id": "idea071289",
+      "filename": "idea071289-excelagent-errors-resilience",
+      "title": "idea071289 - excelagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "excelagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071289-excelagent-errors-resilience.md"
+    },
+    {
+      "index": 71295,
+      "idea_id": "idea071290",
+      "filename": "idea071290-executioncondition-errors-hardening",
+      "title": "idea071290 - executioncondition.errors Hardening",
+      "archetype": "hardening",
+      "component": "executioncondition-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071290-executioncondition-errors-hardening.md"
+    },
+    {
+      "index": 71296,
+      "idea_id": "idea071291",
+      "filename": "idea071291-executioncondition-errors-performance",
+      "title": "idea071291 - executioncondition.errors Performance",
+      "archetype": "performance",
+      "component": "executioncondition-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071291-executioncondition-errors-performance.md"
+    },
+    {
+      "index": 71297,
+      "idea_id": "idea071292",
+      "filename": "idea071292-executioncondition-errors-resilience",
+      "title": "idea071292 - executioncondition.errors Resilience",
+      "archetype": "resilience",
+      "component": "executioncondition-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071292-executioncondition-errors-resilience.md"
+    },
+    {
+      "index": 71298,
+      "idea_id": "idea071293",
+      "filename": "idea071293-executionprofile-errors-hardening",
+      "title": "idea071293 - executionprofile.errors Hardening",
+      "archetype": "hardening",
+      "component": "executionprofile-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071293-executionprofile-errors-hardening.md"
+    },
+    {
+      "index": 71299,
+      "idea_id": "idea071294",
+      "filename": "idea071294-executionprofile-errors-performance",
+      "title": "idea071294 - executionprofile.errors Performance",
+      "archetype": "performance",
+      "component": "executionprofile-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071294-executionprofile-errors-performance.md"
+    },
+    {
+      "index": 71300,
+      "idea_id": "idea071295",
+      "filename": "idea071295-executionprofile-errors-resilience",
+      "title": "idea071295 - executionprofile.errors Resilience",
+      "archetype": "resilience",
+      "component": "executionprofile-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071295-executionprofile-errors-resilience.md"
+    },
+    {
+      "index": 71301,
+      "idea_id": "idea071296",
+      "filename": "idea071296-executionscheduler-errors-hardening",
+      "title": "idea071296 - executionscheduler.errors Hardening",
+      "archetype": "hardening",
+      "component": "executionscheduler-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071296-executionscheduler-errors-hardening.md"
+    },
+    {
+      "index": 71302,
+      "idea_id": "idea071297",
+      "filename": "idea071297-executionscheduler-errors-performance",
+      "title": "idea071297 - executionscheduler.errors Performance",
+      "archetype": "performance",
+      "component": "executionscheduler-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071297-executionscheduler-errors-performance.md"
+    },
+    {
+      "index": 71303,
+      "idea_id": "idea071298",
+      "filename": "idea071298-executionscheduler-errors-resilience",
+      "title": "idea071298 - executionscheduler.errors Resilience",
+      "archetype": "resilience",
+      "component": "executionscheduler-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071298-executionscheduler-errors-resilience.md"
+    },
+    {
+      "index": 71304,
+      "idea_id": "idea071299",
+      "filename": "idea071299-experimentorchestrator-errors-hardening",
+      "title": "idea071299 - experimentorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "experimentorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071299-experimentorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71305,
+      "idea_id": "idea071300",
+      "filename": "idea071300-experimentorchestrator-errors-performance",
+      "title": "idea071300 - experimentorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "experimentorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071300-experimentorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71306,
+      "idea_id": "idea071301",
+      "filename": "idea071301-experimentorchestrator-errors-resilience",
+      "title": "idea071301 - experimentorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "experimentorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071301-experimentorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71307,
+      "idea_id": "idea071302",
+      "filename": "idea071302-explainabilityagent-errors-hardening",
+      "title": "idea071302 - explainabilityagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "explainabilityagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071302-explainabilityagent-errors-hardening.md"
+    },
+    {
+      "index": 71308,
+      "idea_id": "idea071303",
+      "filename": "idea071303-explainabilityagent-errors-performance",
+      "title": "idea071303 - explainabilityagent.errors Performance",
+      "archetype": "performance",
+      "component": "explainabilityagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071303-explainabilityagent-errors-performance.md"
+    },
+    {
+      "index": 71309,
+      "idea_id": "idea071304",
+      "filename": "idea071304-explainabilityagent-errors-resilience",
+      "title": "idea071304 - explainabilityagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "explainabilityagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071304-explainabilityagent-errors-resilience.md"
+    },
+    {
+      "index": 71310,
+      "idea_id": "idea071305",
+      "filename": "idea071305-exportdestination-errors-hardening",
+      "title": "idea071305 - exportdestination.errors Hardening",
+      "archetype": "hardening",
+      "component": "exportdestination-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071305-exportdestination-errors-hardening.md"
+    },
+    {
+      "index": 71311,
+      "idea_id": "idea071306",
+      "filename": "idea071306-exportdestination-errors-performance",
+      "title": "idea071306 - exportdestination.errors Performance",
+      "archetype": "performance",
+      "component": "exportdestination-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071306-exportdestination-errors-performance.md"
+    },
+    {
+      "index": 71312,
+      "idea_id": "idea071307",
+      "filename": "idea071307-exportdestination-errors-resilience",
+      "title": "idea071307 - exportdestination.errors Resilience",
+      "archetype": "resilience",
+      "component": "exportdestination-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071307-exportdestination-errors-resilience.md"
+    },
+    {
+      "index": 71313,
+      "idea_id": "idea071308",
+      "filename": "idea071308-exportformat-errors-hardening",
+      "title": "idea071308 - exportformat.errors Hardening",
+      "archetype": "hardening",
+      "component": "exportformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071308-exportformat-errors-hardening.md"
+    },
+    {
+      "index": 71314,
+      "idea_id": "idea071309",
+      "filename": "idea071309-exportformat-errors-performance",
+      "title": "idea071309 - exportformat.errors Performance",
+      "archetype": "performance",
+      "component": "exportformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071309-exportformat-errors-performance.md"
+    },
+    {
+      "index": 71315,
+      "idea_id": "idea071310",
+      "filename": "idea071310-exportformat-errors-resilience",
+      "title": "idea071310 - exportformat.errors Resilience",
+      "archetype": "resilience",
+      "component": "exportformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071310-exportformat-errors-resilience.md"
+    },
+    {
+      "index": 71316,
+      "idea_id": "idea071311",
+      "filename": "idea071311-exportedcontext-errors-hardening",
+      "title": "idea071311 - exportedcontext.errors Hardening",
+      "archetype": "hardening",
+      "component": "exportedcontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071311-exportedcontext-errors-hardening.md"
+    },
+    {
+      "index": 71317,
+      "idea_id": "idea071312",
+      "filename": "idea071312-exportedcontext-errors-performance",
+      "title": "idea071312 - exportedcontext.errors Performance",
+      "archetype": "performance",
+      "component": "exportedcontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071312-exportedcontext-errors-performance.md"
+    },
+    {
+      "index": 71318,
+      "idea_id": "idea071313",
+      "filename": "idea071313-exportedcontext-errors-resilience",
+      "title": "idea071313 - exportedcontext.errors Resilience",
+      "archetype": "resilience",
+      "component": "exportedcontext-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071313-exportedcontext-errors-resilience.md"
+    },
+    {
+      "index": 71319,
+      "idea_id": "idea071314",
+      "filename": "idea071314-externalairecorderagent-errors-hardening",
+      "title": "idea071314 - externalairecorderagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "externalairecorderagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071314-externalairecorderagent-errors-hardening.md"
+    },
+    {
+      "index": 71320,
+      "idea_id": "idea071315",
+      "filename": "idea071315-externalairecorderagent-errors-performance",
+      "title": "idea071315 - externalairecorderagent.errors Performance",
+      "archetype": "performance",
+      "component": "externalairecorderagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071315-externalairecorderagent-errors-performance.md"
+    },
+    {
+      "index": 71321,
+      "idea_id": "idea071316",
+      "filename": "idea071316-externalairecorderagent-errors-resilience",
+      "title": "idea071316 - externalairecorderagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "externalairecorderagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071316-externalairecorderagent-errors-resilience.md"
+    },
+    {
+      "index": 71322,
+      "idea_id": "idea071317",
+      "filename": "idea071317-externalimporter-errors-hardening",
+      "title": "idea071317 - externalimporter.errors Hardening",
+      "archetype": "hardening",
+      "component": "externalimporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071317-externalimporter-errors-hardening.md"
+    },
+    {
+      "index": 71323,
+      "idea_id": "idea071318",
+      "filename": "idea071318-externalimporter-errors-performance",
+      "title": "idea071318 - externalimporter.errors Performance",
+      "archetype": "performance",
+      "component": "externalimporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071318-externalimporter-errors-performance.md"
+    },
+    {
+      "index": 71324,
+      "idea_id": "idea071319",
+      "filename": "idea071319-externalimporter-errors-resilience",
+      "title": "idea071319 - externalimporter.errors Resilience",
+      "archetype": "resilience",
+      "component": "externalimporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071319-externalimporter-errors-resilience.md"
+    },
+    {
+      "index": 71325,
+      "idea_id": "idea071320",
+      "filename": "idea071320-externalreporter-errors-hardening",
+      "title": "idea071320 - externalreporter.errors Hardening",
+      "archetype": "hardening",
+      "component": "externalreporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071320-externalreporter-errors-hardening.md"
+    },
+    {
+      "index": 71326,
+      "idea_id": "idea071321",
+      "filename": "idea071321-externalreporter-errors-performance",
+      "title": "idea071321 - externalreporter.errors Performance",
+      "archetype": "performance",
+      "component": "externalreporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071321-externalreporter-errors-performance.md"
+    },
+    {
+      "index": 71327,
+      "idea_id": "idea071322",
+      "filename": "idea071322-externalreporter-errors-resilience",
+      "title": "idea071322 - externalreporter.errors Resilience",
+      "archetype": "resilience",
+      "component": "externalreporter-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071322-externalreporter-errors-resilience.md"
+    },
+    {
+      "index": 71328,
+      "idea_id": "idea071323",
+      "filename": "idea071323-externalreportingclient-errors-hardening",
+      "title": "idea071323 - externalreportingclient.errors Hardening",
+      "archetype": "hardening",
+      "component": "externalreportingclient-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071323-externalreportingclient-errors-hardening.md"
+    },
+    {
+      "index": 71329,
+      "idea_id": "idea071324",
+      "filename": "idea071324-externalreportingclient-errors-performance",
+      "title": "idea071324 - externalreportingclient.errors Performance",
+      "archetype": "performance",
+      "component": "externalreportingclient-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071324-externalreportingclient-errors-performance.md"
+    },
+    {
+      "index": 71330,
+      "idea_id": "idea071325",
+      "filename": "idea071325-externalreportingclient-errors-resilience",
+      "title": "idea071325 - externalreportingclient.errors Resilience",
+      "archetype": "resilience",
+      "component": "externalreportingclient-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071325-externalreportingclient-errors-resilience.md"
+    },
+    {
+      "index": 71331,
+      "idea_id": "idea071326",
+      "filename": "idea071326-extractcodetransformer-errors-hardening",
+      "title": "idea071326 - extractcodetransformer.errors Hardening",
+      "archetype": "hardening",
+      "component": "extractcodetransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071326-extractcodetransformer-errors-hardening.md"
+    },
+    {
+      "index": 71332,
+      "idea_id": "idea071327",
+      "filename": "idea071327-extractcodetransformer-errors-performance",
+      "title": "idea071327 - extractcodetransformer.errors Performance",
+      "archetype": "performance",
+      "component": "extractcodetransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071327-extractcodetransformer-errors-performance.md"
+    },
+    {
+      "index": 71333,
+      "idea_id": "idea071328",
+      "filename": "idea071328-extractcodetransformer-errors-resilience",
+      "title": "idea071328 - extractcodetransformer.errors Resilience",
+      "archetype": "resilience",
+      "component": "extractcodetransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071328-extractcodetransformer-errors-resilience.md"
+    },
+    {
+      "index": 71334,
+      "idea_id": "idea071329",
+      "filename": "idea071329-extractjsontransformer-errors-hardening",
+      "title": "idea071329 - extractjsontransformer.errors Hardening",
+      "archetype": "hardening",
+      "component": "extractjsontransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071329-extractjsontransformer-errors-hardening.md"
+    },
+    {
+      "index": 71335,
+      "idea_id": "idea071330",
+      "filename": "idea071330-extractjsontransformer-errors-performance",
+      "title": "idea071330 - extractjsontransformer.errors Performance",
+      "archetype": "performance",
+      "component": "extractjsontransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071330-extractjsontransformer-errors-performance.md"
+    },
+    {
+      "index": 71336,
+      "idea_id": "idea071331",
+      "filename": "idea071331-extractjsontransformer-errors-resilience",
+      "title": "idea071331 - extractjsontransformer.errors Resilience",
+      "archetype": "resilience",
+      "component": "extractjsontransformer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071331-extractjsontransformer-errors-resilience.md"
+    },
+    {
+      "index": 71337,
+      "idea_id": "idea071332",
+      "filename": "idea071332-featurestoreagent-errors-hardening",
+      "title": "idea071332 - featurestoreagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "featurestoreagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071332-featurestoreagent-errors-hardening.md"
+    },
+    {
+      "index": 71338,
+      "idea_id": "idea071333",
+      "filename": "idea071333-featurestoreagent-errors-performance",
+      "title": "idea071333 - featurestoreagent.errors Performance",
+      "archetype": "performance",
+      "component": "featurestoreagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071333-featurestoreagent-errors-performance.md"
+    },
+    {
+      "index": 71339,
+      "idea_id": "idea071334",
+      "filename": "idea071334-featurestoreagent-errors-resilience",
+      "title": "idea071334 - featurestoreagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "featurestoreagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071334-featurestoreagent-errors-resilience.md"
+    },
+    {
+      "index": 71340,
+      "idea_id": "idea071335",
+      "filename": "idea071335-federatedknowledgeorchestrator-errors-hardening",
+      "title": "idea071335 - federatedknowledgeorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "federatedknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071335-federatedknowledgeorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71341,
+      "idea_id": "idea071336",
+      "filename": "idea071336-federatedknowledgeorchestrator-errors-performance",
+      "title": "idea071336 - federatedknowledgeorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "federatedknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071336-federatedknowledgeorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71342,
+      "idea_id": "idea071337",
+      "filename": "idea071337-federatedknowledgeorchestrator-errors-resilience",
+      "title": "idea071337 - federatedknowledgeorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "federatedknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071337-federatedknowledgeorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71343,
+      "idea_id": "idea071338",
+      "filename": "idea071338-federatedsource-errors-hardening",
+      "title": "idea071338 - federatedsource.errors Hardening",
+      "archetype": "hardening",
+      "component": "federatedsource-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071338-federatedsource-errors-hardening.md"
+    },
+    {
+      "index": 71344,
+      "idea_id": "idea071339",
+      "filename": "idea071339-federatedsource-errors-performance",
+      "title": "idea071339 - federatedsource.errors Performance",
+      "archetype": "performance",
+      "component": "federatedsource-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071339-federatedsource-errors-performance.md"
+    },
+    {
+      "index": 71345,
+      "idea_id": "idea071340",
+      "filename": "idea071340-federatedsource-errors-resilience",
+      "title": "idea071340 - federatedsource.errors Resilience",
+      "archetype": "resilience",
+      "component": "federatedsource-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071340-federatedsource-errors-resilience.md"
+    },
+    {
+      "index": 71346,
+      "idea_id": "idea071341",
+      "filename": "idea071341-federationmode-errors-hardening",
+      "title": "idea071341 - federationmode.errors Hardening",
+      "archetype": "hardening",
+      "component": "federationmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071341-federationmode-errors-hardening.md"
+    },
+    {
+      "index": 71347,
+      "idea_id": "idea071342",
+      "filename": "idea071342-federationmode-errors-performance",
+      "title": "idea071342 - federationmode.errors Performance",
+      "archetype": "performance",
+      "component": "federationmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071342-federationmode-errors-performance.md"
+    },
+    {
+      "index": 71348,
+      "idea_id": "idea071343",
+      "filename": "idea071343-federationmode-errors-resilience",
+      "title": "idea071343 - federationmode.errors Resilience",
+      "archetype": "resilience",
+      "component": "federationmode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071343-federationmode-errors-resilience.md"
+    },
+    {
+      "index": 71349,
+      "idea_id": "idea071344",
+      "filename": "idea071344-feedformat-errors-hardening",
+      "title": "idea071344 - feedformat.errors Hardening",
+      "archetype": "hardening",
+      "component": "feedformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071344-feedformat-errors-hardening.md"
+    },
+    {
+      "index": 71350,
+      "idea_id": "idea071345",
+      "filename": "idea071345-feedformat-errors-performance",
+      "title": "idea071345 - feedformat.errors Performance",
+      "archetype": "performance",
+      "component": "feedformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071345-feedformat-errors-performance.md"
+    },
+    {
+      "index": 71351,
+      "idea_id": "idea071346",
+      "filename": "idea071346-feedformat-errors-resilience",
+      "title": "idea071346 - feedformat.errors Resilience",
+      "archetype": "resilience",
+      "component": "feedformat-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071346-feedformat-errors-resilience.md"
+    },
+    {
+      "index": 71352,
+      "idea_id": "idea071347",
+      "filename": "idea071347-feedgenerator-errors-hardening",
+      "title": "idea071347 - feedgenerator.errors Hardening",
+      "archetype": "hardening",
+      "component": "feedgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071347-feedgenerator-errors-hardening.md"
+    },
+    {
+      "index": 71353,
+      "idea_id": "idea071348",
+      "filename": "idea071348-feedgenerator-errors-performance",
+      "title": "idea071348 - feedgenerator.errors Performance",
+      "archetype": "performance",
+      "component": "feedgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071348-feedgenerator-errors-performance.md"
+    },
+    {
+      "index": 71354,
+      "idea_id": "idea071349",
+      "filename": "idea071349-feedgenerator-errors-resilience",
+      "title": "idea071349 - feedgenerator.errors Resilience",
+      "archetype": "resilience",
+      "component": "feedgenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071349-feedgenerator-errors-resilience.md"
+    },
+    {
+      "index": 71355,
+      "idea_id": "idea071350",
+      "filename": "idea071350-filecategory-errors-hardening",
+      "title": "idea071350 - filecategory.errors Hardening",
+      "archetype": "hardening",
+      "component": "filecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071350-filecategory-errors-hardening.md"
+    },
+    {
+      "index": 71356,
+      "idea_id": "idea071351",
+      "filename": "idea071351-filecategory-errors-performance",
+      "title": "idea071351 - filecategory.errors Performance",
+      "archetype": "performance",
+      "component": "filecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071351-filecategory-errors-performance.md"
+    },
+    {
+      "index": 71357,
+      "idea_id": "idea071352",
+      "filename": "idea071352-filecategory-errors-resilience",
+      "title": "idea071352 - filecategory.errors Resilience",
+      "archetype": "resilience",
+      "component": "filecategory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071352-filecategory-errors-resilience.md"
+    },
+    {
+      "index": 71358,
+      "idea_id": "idea071353",
+      "filename": "idea071353-filelock-errors-hardening",
+      "title": "idea071353 - filelock.errors Hardening",
+      "archetype": "hardening",
+      "component": "filelock-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071353-filelock-errors-hardening.md"
+    },
+    {
+      "index": 71359,
+      "idea_id": "idea071354",
+      "filename": "idea071354-filelock-errors-performance",
+      "title": "idea071354 - filelock.errors Performance",
+      "archetype": "performance",
+      "component": "filelock-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071354-filelock-errors-performance.md"
+    },
+    {
+      "index": 71360,
+      "idea_id": "idea071355",
+      "filename": "idea071355-filelock-errors-resilience",
+      "title": "idea071355 - filelock.errors Resilience",
+      "archetype": "resilience",
+      "component": "filelock-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071355-filelock-errors-resilience.md"
+    },
+    {
+      "index": 71361,
+      "idea_id": "idea071356",
+      "filename": "idea071356-filelockmanager-errors-hardening",
+      "title": "idea071356 - filelockmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "filelockmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071356-filelockmanager-errors-hardening.md"
+    },
+    {
+      "index": 71362,
+      "idea_id": "idea071357",
+      "filename": "idea071357-filelockmanager-errors-performance",
+      "title": "idea071357 - filelockmanager.errors Performance",
+      "archetype": "performance",
+      "component": "filelockmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071357-filelockmanager-errors-performance.md"
+    },
+    {
+      "index": 71363,
+      "idea_id": "idea071358",
+      "filename": "idea071358-filelockmanager-errors-resilience",
+      "title": "idea071358 - filelockmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "filelockmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071358-filelockmanager-errors-resilience.md"
+    },
+    {
+      "index": 71364,
+      "idea_id": "idea071359",
+      "filename": "idea071359-filesystemisolator-errors-hardening",
+      "title": "idea071359 - filesystemisolator.errors Hardening",
+      "archetype": "hardening",
+      "component": "filesystemisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071359-filesystemisolator-errors-hardening.md"
+    },
+    {
+      "index": 71365,
+      "idea_id": "idea071360",
+      "filename": "idea071360-filesystemisolator-errors-performance",
+      "title": "idea071360 - filesystemisolator.errors Performance",
+      "archetype": "performance",
+      "component": "filesystemisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071360-filesystemisolator-errors-performance.md"
+    },
+    {
+      "index": 71366,
+      "idea_id": "idea071361",
+      "filename": "idea071361-filesystemisolator-errors-resilience",
+      "title": "idea071361 - filesystemisolator.errors Resilience",
+      "archetype": "resilience",
+      "component": "filesystemisolator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071361-filesystemisolator-errors-resilience.md"
+    },
+    {
+      "index": 71367,
+      "idea_id": "idea071362",
+      "filename": "idea071362-filtercriteria-errors-hardening",
+      "title": "idea071362 - filtercriteria.errors Hardening",
+      "archetype": "hardening",
+      "component": "filtercriteria-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071362-filtercriteria-errors-hardening.md"
+    },
+    {
+      "index": 71368,
+      "idea_id": "idea071363",
+      "filename": "idea071363-filtercriteria-errors-performance",
+      "title": "idea071363 - filtercriteria.errors Performance",
+      "archetype": "performance",
+      "component": "filtercriteria-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071363-filtercriteria-errors-performance.md"
+    },
+    {
+      "index": 71369,
+      "idea_id": "idea071364",
+      "filename": "idea071364-filtercriteria-errors-resilience",
+      "title": "idea071364 - filtercriteria.errors Resilience",
+      "archetype": "resilience",
+      "component": "filtercriteria-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071364-filtercriteria-errors-resilience.md"
+    },
+    {
+      "index": 71370,
+      "idea_id": "idea071365",
+      "filename": "idea071365-financialagent-errors-hardening",
+      "title": "idea071365 - financialagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "financialagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071365-financialagent-errors-hardening.md"
+    },
+    {
+      "index": 71371,
+      "idea_id": "idea071366",
+      "filename": "idea071366-financialagent-errors-performance",
+      "title": "idea071366 - financialagent.errors Performance",
+      "archetype": "performance",
+      "component": "financialagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071366-financialagent-errors-performance.md"
+    },
+    {
+      "index": 71372,
+      "idea_id": "idea071367",
+      "filename": "idea071367-financialagent-errors-resilience",
+      "title": "idea071367 - financialagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "financialagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071367-financialagent-errors-resilience.md"
+    },
+    {
+      "index": 71373,
+      "idea_id": "idea071368",
+      "filename": "idea071368-fixsuggestion-errors-hardening",
+      "title": "idea071368 - fixsuggestion.errors Hardening",
+      "archetype": "hardening",
+      "component": "fixsuggestion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071368-fixsuggestion-errors-hardening.md"
+    },
+    {
+      "index": 71374,
+      "idea_id": "idea071369",
+      "filename": "idea071369-fixsuggestion-errors-performance",
+      "title": "idea071369 - fixsuggestion.errors Performance",
+      "archetype": "performance",
+      "component": "fixsuggestion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071369-fixsuggestion-errors-performance.md"
+    },
+    {
+      "index": 71375,
+      "idea_id": "idea071370",
+      "filename": "idea071370-fixsuggestion-errors-resilience",
+      "title": "idea071370 - fixsuggestion.errors Resilience",
+      "archetype": "resilience",
+      "component": "fixsuggestion-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071370-fixsuggestion-errors-resilience.md"
+    },
+    {
+      "index": 71376,
+      "idea_id": "idea071371",
+      "filename": "idea071371-fixturefactory-errors-hardening",
+      "title": "idea071371 - fixturefactory.errors Hardening",
+      "archetype": "hardening",
+      "component": "fixturefactory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071371-fixturefactory-errors-hardening.md"
+    },
+    {
+      "index": 71377,
+      "idea_id": "idea071372",
+      "filename": "idea071372-fixturefactory-errors-performance",
+      "title": "idea071372 - fixturefactory.errors Performance",
+      "archetype": "performance",
+      "component": "fixturefactory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071372-fixturefactory-errors-performance.md"
+    },
+    {
+      "index": 71378,
+      "idea_id": "idea071373",
+      "filename": "idea071373-fixturefactory-errors-resilience",
+      "title": "idea071373 - fixturefactory.errors Resilience",
+      "archetype": "resilience",
+      "component": "fixturefactory-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071373-fixturefactory-errors-resilience.md"
+    },
+    {
+      "index": 71379,
+      "idea_id": "idea071374",
+      "filename": "idea071374-fixturegenerator-errors-hardening",
+      "title": "idea071374 - fixturegenerator.errors Hardening",
+      "archetype": "hardening",
+      "component": "fixturegenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071374-fixturegenerator-errors-hardening.md"
+    },
+    {
+      "index": 71380,
+      "idea_id": "idea071375",
+      "filename": "idea071375-fixturegenerator-errors-performance",
+      "title": "idea071375 - fixturegenerator.errors Performance",
+      "archetype": "performance",
+      "component": "fixturegenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071375-fixturegenerator-errors-performance.md"
+    },
+    {
+      "index": 71381,
+      "idea_id": "idea071376",
+      "filename": "idea071376-fixturegenerator-errors-resilience",
+      "title": "idea071376 - fixturegenerator.errors Resilience",
+      "archetype": "resilience",
+      "component": "fixturegenerator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071376-fixturegenerator-errors-resilience.md"
+    },
+    {
+      "index": 71382,
+      "idea_id": "idea071377",
+      "filename": "idea071377-flakinessdetector-errors-hardening",
+      "title": "idea071377 - flakinessdetector.errors Hardening",
+      "archetype": "hardening",
+      "component": "flakinessdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071377-flakinessdetector-errors-hardening.md"
+    },
+    {
+      "index": 71383,
+      "idea_id": "idea071378",
+      "filename": "idea071378-flakinessdetector-errors-performance",
+      "title": "idea071378 - flakinessdetector.errors Performance",
+      "archetype": "performance",
+      "component": "flakinessdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071378-flakinessdetector-errors-performance.md"
+    },
+    {
+      "index": 71384,
+      "idea_id": "idea071379",
+      "filename": "idea071379-flakinessdetector-errors-resilience",
+      "title": "idea071379 - flakinessdetector.errors Resilience",
+      "archetype": "resilience",
+      "component": "flakinessdetector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071379-flakinessdetector-errors-resilience.md"
+    },
+    {
+      "index": 71385,
+      "idea_id": "idea071380",
+      "filename": "idea071380-flakinessreport-errors-hardening",
+      "title": "idea071380 - flakinessreport.errors Hardening",
+      "archetype": "hardening",
+      "component": "flakinessreport-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071380-flakinessreport-errors-hardening.md"
+    },
+    {
+      "index": 71386,
+      "idea_id": "idea071381",
+      "filename": "idea071381-flakinessreport-errors-performance",
+      "title": "idea071381 - flakinessreport.errors Performance",
+      "archetype": "performance",
+      "component": "flakinessreport-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071381-flakinessreport-errors-performance.md"
+    },
+    {
+      "index": 71387,
+      "idea_id": "idea071382",
+      "filename": "idea071382-flakinessreport-errors-resilience",
+      "title": "idea071382 - flakinessreport.errors Resilience",
+      "archetype": "resilience",
+      "component": "flakinessreport-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071382-flakinessreport-errors-resilience.md"
+    },
+    {
+      "index": 71388,
+      "idea_id": "idea071383",
+      "filename": "idea071383-fleetdeployeragent-errors-hardening",
+      "title": "idea071383 - fleetdeployeragent.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleetdeployeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071383-fleetdeployeragent-errors-hardening.md"
+    },
+    {
+      "index": 71389,
+      "idea_id": "idea071384",
+      "filename": "idea071384-fleetdeployeragent-errors-performance",
+      "title": "idea071384 - fleetdeployeragent.errors Performance",
+      "archetype": "performance",
+      "component": "fleetdeployeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071384-fleetdeployeragent-errors-performance.md"
+    },
+    {
+      "index": 71390,
+      "idea_id": "idea071385",
+      "filename": "idea071385-fleetdeployeragent-errors-resilience",
+      "title": "idea071385 - fleetdeployeragent.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleetdeployeragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071385-fleetdeployeragent-errors-resilience.md"
+    },
+    {
+      "index": 71391,
+      "idea_id": "idea071386",
+      "filename": "idea071386-fleeteconomyagent-errors-hardening",
+      "title": "idea071386 - fleeteconomyagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleeteconomyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071386-fleeteconomyagent-errors-hardening.md"
+    },
+    {
+      "index": 71392,
+      "idea_id": "idea071387",
+      "filename": "idea071387-fleeteconomyagent-errors-performance",
+      "title": "idea071387 - fleeteconomyagent.errors Performance",
+      "archetype": "performance",
+      "component": "fleeteconomyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071387-fleeteconomyagent-errors-performance.md"
+    },
+    {
+      "index": 71393,
+      "idea_id": "idea071388",
+      "filename": "idea071388-fleeteconomyagent-errors-resilience",
+      "title": "idea071388 - fleeteconomyagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleeteconomyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071388-fleeteconomyagent-errors-resilience.md"
+    },
+    {
+      "index": 71394,
+      "idea_id": "idea071389",
+      "filename": "idea071389-fleetloadbalancer-errors-hardening",
+      "title": "idea071389 - fleetloadbalancer.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleetloadbalancer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071389-fleetloadbalancer-errors-hardening.md"
+    },
+    {
+      "index": 71395,
+      "idea_id": "idea071390",
+      "filename": "idea071390-fleetloadbalancer-errors-performance",
+      "title": "idea071390 - fleetloadbalancer.errors Performance",
+      "archetype": "performance",
+      "component": "fleetloadbalancer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071390-fleetloadbalancer-errors-performance.md"
+    },
+    {
+      "index": 71396,
+      "idea_id": "idea071391",
+      "filename": "idea071391-fleetloadbalancer-errors-resilience",
+      "title": "idea071391 - fleetloadbalancer.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleetloadbalancer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071391-fleetloadbalancer-errors-resilience.md"
+    },
+    {
+      "index": 71397,
+      "idea_id": "idea071392",
+      "filename": "idea071392-fleetmanager-errors-hardening",
+      "title": "idea071392 - fleetmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071392-fleetmanager-errors-hardening.md"
+    },
+    {
+      "index": 71398,
+      "idea_id": "idea071393",
+      "filename": "idea071393-fleetmanager-errors-performance",
+      "title": "idea071393 - fleetmanager.errors Performance",
+      "archetype": "performance",
+      "component": "fleetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071393-fleetmanager-errors-performance.md"
+    },
+    {
+      "index": 71399,
+      "idea_id": "idea071394",
+      "filename": "idea071394-fleetmanager-errors-resilience",
+      "title": "idea071394 - fleetmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleetmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071394-fleetmanager-errors-resilience.md"
+    },
+    {
+      "index": 71400,
+      "idea_id": "idea071395",
+      "filename": "idea071395-fleettelemetryvisualizer-errors-hardening",
+      "title": "idea071395 - fleettelemetryvisualizer.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleettelemetryvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071395-fleettelemetryvisualizer-errors-hardening.md"
+    },
+    {
+      "index": 71401,
+      "idea_id": "idea071396",
+      "filename": "idea071396-fleettelemetryvisualizer-errors-performance",
+      "title": "idea071396 - fleettelemetryvisualizer.errors Performance",
+      "archetype": "performance",
+      "component": "fleettelemetryvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071396-fleettelemetryvisualizer-errors-performance.md"
+    },
+    {
+      "index": 71402,
+      "idea_id": "idea071397",
+      "filename": "idea071397-fleettelemetryvisualizer-errors-resilience",
+      "title": "idea071397 - fleettelemetryvisualizer.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleettelemetryvisualizer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071397-fleettelemetryvisualizer-errors-resilience.md"
+    },
+    {
+      "index": 71403,
+      "idea_id": "idea071398",
+      "filename": "idea071398-fleetwebui-errors-hardening",
+      "title": "idea071398 - fleetwebui.errors Hardening",
+      "archetype": "hardening",
+      "component": "fleetwebui-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071398-fleetwebui-errors-hardening.md"
+    },
+    {
+      "index": 71404,
+      "idea_id": "idea071399",
+      "filename": "idea071399-fleetwebui-errors-performance",
+      "title": "idea071399 - fleetwebui.errors Performance",
+      "archetype": "performance",
+      "component": "fleetwebui-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071399-fleetwebui-errors-performance.md"
+    },
+    {
+      "index": 71405,
+      "idea_id": "idea071400",
+      "filename": "idea071400-fleetwebui-errors-resilience",
+      "title": "idea071400 - fleetwebui.errors Resilience",
+      "archetype": "resilience",
+      "component": "fleetwebui-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071400-fleetwebui-errors-resilience.md"
+    },
+    {
+      "index": 71406,
+      "idea_id": "idea071401",
+      "filename": "idea071401-formulaengine-errors-hardening",
+      "title": "idea071401 - formulaengine.errors Hardening",
+      "archetype": "hardening",
+      "component": "formulaengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071401-formulaengine-errors-hardening.md"
+    },
+    {
+      "index": 71407,
+      "idea_id": "idea071402",
+      "filename": "idea071402-formulaengine-errors-performance",
+      "title": "idea071402 - formulaengine.errors Performance",
+      "archetype": "performance",
+      "component": "formulaengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071402-formulaengine-errors-performance.md"
+    },
+    {
+      "index": 71408,
+      "idea_id": "idea071403",
+      "filename": "idea071403-formulaengine-errors-resilience",
+      "title": "idea071403 - formulaengine.errors Resilience",
+      "archetype": "resilience",
+      "component": "formulaengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071403-formulaengine-errors-resilience.md"
+    },
+    {
+      "index": 71409,
+      "idea_id": "idea071404",
+      "filename": "idea071404-formulavalidation-errors-hardening",
+      "title": "idea071404 - formulavalidation.errors Hardening",
+      "archetype": "hardening",
+      "component": "formulavalidation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071404-formulavalidation-errors-hardening.md"
+    },
+    {
+      "index": 71410,
+      "idea_id": "idea071405",
+      "filename": "idea071405-formulavalidation-errors-performance",
+      "title": "idea071405 - formulavalidation.errors Performance",
+      "archetype": "performance",
+      "component": "formulavalidation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071405-formulavalidation-errors-performance.md"
+    },
+    {
+      "index": 71411,
+      "idea_id": "idea071406",
+      "filename": "idea071406-formulavalidation-errors-resilience",
+      "title": "idea071406 - formulavalidation.errors Resilience",
+      "archetype": "resilience",
+      "component": "formulavalidation-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071406-formulavalidation-errors-resilience.md"
+    },
+    {
+      "index": 71412,
+      "idea_id": "idea071407",
+      "filename": "idea071407-fractalknowledgeorchestrator-errors-hardening",
+      "title": "idea071407 - fractalknowledgeorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "fractalknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071407-fractalknowledgeorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71413,
+      "idea_id": "idea071408",
+      "filename": "idea071408-fractalknowledgeorchestrator-errors-performance",
+      "title": "idea071408 - fractalknowledgeorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "fractalknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071408-fractalknowledgeorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71414,
+      "idea_id": "idea071409",
+      "filename": "idea071409-fractalknowledgeorchestrator-errors-resilience",
+      "title": "idea071409 - fractalknowledgeorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "fractalknowledgeorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071409-fractalknowledgeorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71415,
+      "idea_id": "idea071410",
+      "filename": "idea071410-fractalorchestrator-errors-hardening",
+      "title": "idea071410 - fractalorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "fractalorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071410-fractalorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71416,
+      "idea_id": "idea071411",
+      "filename": "idea071411-fractalorchestrator-errors-performance",
+      "title": "idea071411 - fractalorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "fractalorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071411-fractalorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71417,
+      "idea_id": "idea071412",
+      "filename": "idea071412-fractalorchestrator-errors-resilience",
+      "title": "idea071412 - fractalorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "fractalorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071412-fractalorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71418,
+      "idea_id": "idea071413",
+      "filename": "idea071413-gpuscalingmanager-errors-hardening",
+      "title": "idea071413 - gpuscalingmanager.errors Hardening",
+      "archetype": "hardening",
+      "component": "gpuscalingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071413-gpuscalingmanager-errors-hardening.md"
+    },
+    {
+      "index": 71419,
+      "idea_id": "idea071414",
+      "filename": "idea071414-gpuscalingmanager-errors-performance",
+      "title": "idea071414 - gpuscalingmanager.errors Performance",
+      "archetype": "performance",
+      "component": "gpuscalingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071414-gpuscalingmanager-errors-performance.md"
+    },
+    {
+      "index": 71420,
+      "idea_id": "idea071415",
+      "filename": "idea071415-gpuscalingmanager-errors-resilience",
+      "title": "idea071415 - gpuscalingmanager.errors Resilience",
+      "archetype": "resilience",
+      "component": "gpuscalingmanager-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071415-gpuscalingmanager-errors-resilience.md"
+    },
+    {
+      "index": 71421,
+      "idea_id": "idea071416",
+      "filename": "idea071416-generatedcode-errors-hardening",
+      "title": "idea071416 - generatedcode.errors Hardening",
+      "archetype": "hardening",
+      "component": "generatedcode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071416-generatedcode-errors-hardening.md"
+    },
+    {
+      "index": 71422,
+      "idea_id": "idea071417",
+      "filename": "idea071417-generatedcode-errors-performance",
+      "title": "idea071417 - generatedcode.errors Performance",
+      "archetype": "performance",
+      "component": "generatedcode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071417-generatedcode-errors-performance.md"
+    },
+    {
+      "index": 71423,
+      "idea_id": "idea071418",
+      "filename": "idea071418-generatedcode-errors-resilience",
+      "title": "idea071418 - generatedcode.errors Resilience",
+      "archetype": "resilience",
+      "component": "generatedcode-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071418-generatedcode-errors-resilience.md"
+    },
+    {
+      "index": 71424,
+      "idea_id": "idea071419",
+      "filename": "idea071419-genetichardeningagent-errors-hardening",
+      "title": "idea071419 - genetichardeningagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "genetichardeningagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071419-genetichardeningagent-errors-hardening.md"
+    },
+    {
+      "index": 71425,
+      "idea_id": "idea071420",
+      "filename": "idea071420-genetichardeningagent-errors-performance",
+      "title": "idea071420 - genetichardeningagent.errors Performance",
+      "archetype": "performance",
+      "component": "genetichardeningagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071420-genetichardeningagent-errors-performance.md"
+    },
+    {
+      "index": 71426,
+      "idea_id": "idea071421",
+      "filename": "idea071421-genetichardeningagent-errors-resilience",
+      "title": "idea071421 - genetichardeningagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "genetichardeningagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071421-genetichardeningagent-errors-resilience.md"
+    },
+    {
+      "index": 71427,
+      "idea_id": "idea071422",
+      "filename": "idea071422-gitbranchprocessor-errors-hardening",
+      "title": "idea071422 - gitbranchprocessor.errors Hardening",
+      "archetype": "hardening",
+      "component": "gitbranchprocessor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071422-gitbranchprocessor-errors-hardening.md"
+    },
+    {
+      "index": 71428,
+      "idea_id": "idea071423",
+      "filename": "idea071423-gitbranchprocessor-errors-performance",
+      "title": "idea071423 - gitbranchprocessor.errors Performance",
+      "archetype": "performance",
+      "component": "gitbranchprocessor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071423-gitbranchprocessor-errors-performance.md"
+    },
+    {
+      "index": 71429,
+      "idea_id": "idea071424",
+      "filename": "idea071424-gitbranchprocessor-errors-resilience",
+      "title": "idea071424 - gitbranchprocessor.errors Resilience",
+      "archetype": "resilience",
+      "component": "gitbranchprocessor-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071424-gitbranchprocessor-errors-resilience.md"
+    },
+    {
+      "index": 71430,
+      "idea_id": "idea071425",
+      "filename": "idea071425-globalcontextengine-errors-hardening",
+      "title": "idea071425 - globalcontextengine.errors Hardening",
+      "archetype": "hardening",
+      "component": "globalcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071425-globalcontextengine-errors-hardening.md"
+    },
+    {
+      "index": 71431,
+      "idea_id": "idea071426",
+      "filename": "idea071426-globalcontextengine-errors-performance",
+      "title": "idea071426 - globalcontextengine.errors Performance",
+      "archetype": "performance",
+      "component": "globalcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071426-globalcontextengine-errors-performance.md"
+    },
+    {
+      "index": 71432,
+      "idea_id": "idea071427",
+      "filename": "idea071427-globalcontextengine-errors-resilience",
+      "title": "idea071427 - globalcontextengine.errors Resilience",
+      "archetype": "resilience",
+      "component": "globalcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071427-globalcontextengine-errors-resilience.md"
+    },
+    {
+      "index": 71433,
+      "idea_id": "idea071428",
+      "filename": "idea071428-goagent-errors-hardening",
+      "title": "idea071428 - goagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "goagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071428-goagent-errors-hardening.md"
+    },
+    {
+      "index": 71434,
+      "idea_id": "idea071429",
+      "filename": "idea071429-goagent-errors-performance",
+      "title": "idea071429 - goagent.errors Performance",
+      "archetype": "performance",
+      "component": "goagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071429-goagent-errors-performance.md"
+    },
+    {
+      "index": 71435,
+      "idea_id": "idea071430",
+      "filename": "idea071430-goagent-errors-resilience",
+      "title": "idea071430 - goagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "goagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071430-goagent-errors-resilience.md"
+    },
+    {
+      "index": 71436,
+      "idea_id": "idea071431",
+      "filename": "idea071431-governanceagent-errors-hardening",
+      "title": "idea071431 - governanceagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "governanceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071431-governanceagent-errors-hardening.md"
+    },
+    {
+      "index": 71437,
+      "idea_id": "idea071432",
+      "filename": "idea071432-governanceagent-errors-performance",
+      "title": "idea071432 - governanceagent.errors Performance",
+      "archetype": "performance",
+      "component": "governanceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071432-governanceagent-errors-performance.md"
+    },
+    {
+      "index": 71438,
+      "idea_id": "idea071433",
+      "filename": "idea071433-governanceagent-errors-resilience",
+      "title": "idea071433 - governanceagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "governanceagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071433-governanceagent-errors-resilience.md"
+    },
+    {
+      "index": 71439,
+      "idea_id": "idea071434",
+      "filename": "idea071434-gracefulshutdown-errors-hardening",
+      "title": "idea071434 - gracefulshutdown.errors Hardening",
+      "archetype": "hardening",
+      "component": "gracefulshutdown-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071434-gracefulshutdown-errors-hardening.md"
+    },
+    {
+      "index": 71440,
+      "idea_id": "idea071435",
+      "filename": "idea071435-gracefulshutdown-errors-performance",
+      "title": "idea071435 - gracefulshutdown.errors Performance",
+      "archetype": "performance",
+      "component": "gracefulshutdown-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071435-gracefulshutdown-errors-performance.md"
+    },
+    {
+      "index": 71441,
+      "idea_id": "idea071436",
+      "filename": "idea071436-gracefulshutdown-errors-resilience",
+      "title": "idea071436 - gracefulshutdown.errors Resilience",
+      "archetype": "resilience",
+      "component": "gracefulshutdown-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071436-gracefulshutdown-errors-resilience.md"
+    },
+    {
+      "index": 71442,
+      "idea_id": "idea071437",
+      "filename": "idea071437-graphcontextengine-errors-hardening",
+      "title": "idea071437 - graphcontextengine.errors Hardening",
+      "archetype": "hardening",
+      "component": "graphcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071437-graphcontextengine-errors-hardening.md"
+    },
+    {
+      "index": 71443,
+      "idea_id": "idea071438",
+      "filename": "idea071438-graphcontextengine-errors-performance",
+      "title": "idea071438 - graphcontextengine.errors Performance",
+      "archetype": "performance",
+      "component": "graphcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071438-graphcontextengine-errors-performance.md"
+    },
+    {
+      "index": 71444,
+      "idea_id": "idea071439",
+      "filename": "idea071439-graphcontextengine-errors-resilience",
+      "title": "idea071439 - graphcontextengine.errors Resilience",
+      "archetype": "resilience",
+      "component": "graphcontextengine-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071439-graphcontextengine-errors-resilience.md"
+    },
+    {
+      "index": 71445,
+      "idea_id": "idea071440",
+      "filename": "idea071440-graphmemoryagent-errors-hardening",
+      "title": "idea071440 - graphmemoryagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "graphmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071440-graphmemoryagent-errors-hardening.md"
+    },
+    {
+      "index": 71446,
+      "idea_id": "idea071441",
+      "filename": "idea071441-graphmemoryagent-errors-performance",
+      "title": "idea071441 - graphmemoryagent.errors Performance",
+      "archetype": "performance",
+      "component": "graphmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071441-graphmemoryagent-errors-performance.md"
+    },
+    {
+      "index": 71447,
+      "idea_id": "idea071442",
+      "filename": "idea071442-graphmemoryagent-errors-resilience",
+      "title": "idea071442 - graphmemoryagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "graphmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071442-graphmemoryagent-errors-resilience.md"
+    },
+    {
+      "index": 71448,
+      "idea_id": "idea071443",
+      "filename": "idea071443-graphrelationalagent-errors-hardening",
+      "title": "idea071443 - graphrelationalagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "graphrelationalagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071443-graphrelationalagent-errors-hardening.md"
+    },
+    {
+      "index": 71449,
+      "idea_id": "idea071444",
+      "filename": "idea071444-graphrelationalagent-errors-performance",
+      "title": "idea071444 - graphrelationalagent.errors Performance",
+      "archetype": "performance",
+      "component": "graphrelationalagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071444-graphrelationalagent-errors-performance.md"
+    },
+    {
+      "index": 71450,
+      "idea_id": "idea071445",
+      "filename": "idea071445-graphrelationalagent-errors-resilience",
+      "title": "idea071445 - graphrelationalagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "graphrelationalagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071445-graphrelationalagent-errors-resilience.md"
+    },
+    {
+      "index": 71451,
+      "idea_id": "idea071446",
+      "filename": "idea071446-groupingstrategy-errors-hardening",
+      "title": "idea071446 - groupingstrategy.errors Hardening",
+      "archetype": "hardening",
+      "component": "groupingstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071446-groupingstrategy-errors-hardening.md"
+    },
+    {
+      "index": 71452,
+      "idea_id": "idea071447",
+      "filename": "idea071447-groupingstrategy-errors-performance",
+      "title": "idea071447 - groupingstrategy.errors Performance",
+      "archetype": "performance",
+      "component": "groupingstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071447-groupingstrategy-errors-performance.md"
+    },
+    {
+      "index": 71453,
+      "idea_id": "idea071448",
+      "filename": "idea071448-groupingstrategy-errors-resilience",
+      "title": "idea071448 - groupingstrategy.errors Resilience",
+      "archetype": "resilience",
+      "component": "groupingstrategy-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071448-groupingstrategy-errors-resilience.md"
+    },
+    {
+      "index": 71454,
+      "idea_id": "idea071449",
+      "filename": "idea071449-hitlconnector-errors-hardening",
+      "title": "idea071449 - hitlconnector.errors Hardening",
+      "archetype": "hardening",
+      "component": "hitlconnector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071449-hitlconnector-errors-hardening.md"
+    },
+    {
+      "index": 71455,
+      "idea_id": "idea071450",
+      "filename": "idea071450-hitlconnector-errors-performance",
+      "title": "idea071450 - hitlconnector.errors Performance",
+      "archetype": "performance",
+      "component": "hitlconnector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071450-hitlconnector-errors-performance.md"
+    },
+    {
+      "index": 71456,
+      "idea_id": "idea071451",
+      "filename": "idea071451-hitlconnector-errors-resilience",
+      "title": "idea071451 - hitlconnector.errors Resilience",
+      "archetype": "resilience",
+      "component": "hitlconnector-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071451-hitlconnector-errors-resilience.md"
+    },
+    {
+      "index": 71457,
+      "idea_id": "idea071452",
+      "filename": "idea071452-handyagent-errors-hardening",
+      "title": "idea071452 - handyagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "handyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071452-handyagent-errors-hardening.md"
+    },
+    {
+      "index": 71458,
+      "idea_id": "idea071453",
+      "filename": "idea071453-handyagent-errors-performance",
+      "title": "idea071453 - handyagent.errors Performance",
+      "archetype": "performance",
+      "component": "handyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071453-handyagent-errors-performance.md"
+    },
+    {
+      "index": 71459,
+      "idea_id": "idea071454",
+      "filename": "idea071454-handyagent-errors-resilience",
+      "title": "idea071454 - handyagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "handyagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071454-handyagent-errors-resilience.md"
+    },
+    {
+      "index": 71460,
+      "idea_id": "idea071455",
+      "filename": "idea071455-headerpanel-errors-hardening",
+      "title": "idea071455 - headerpanel.errors Hardening",
+      "archetype": "hardening",
+      "component": "headerpanel-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071455-headerpanel-errors-hardening.md"
+    },
+    {
+      "index": 71461,
+      "idea_id": "idea071456",
+      "filename": "idea071456-headerpanel-errors-performance",
+      "title": "idea071456 - headerpanel.errors Performance",
+      "archetype": "performance",
+      "component": "headerpanel-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071456-headerpanel-errors-performance.md"
+    },
+    {
+      "index": 71462,
+      "idea_id": "idea071457",
+      "filename": "idea071457-headerpanel-errors-resilience",
+      "title": "idea071457 - headerpanel.errors Resilience",
+      "archetype": "resilience",
+      "component": "headerpanel-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071457-headerpanel-errors-resilience.md"
+    },
+    {
+      "index": 71463,
+      "idea_id": "idea071458",
+      "filename": "idea071458-healthchecker-errors-hardening",
+      "title": "idea071458 - healthchecker.errors Hardening",
+      "archetype": "hardening",
+      "component": "healthchecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071458-healthchecker-errors-hardening.md"
+    },
+    {
+      "index": 71464,
+      "idea_id": "idea071459",
+      "filename": "idea071459-healthchecker-errors-performance",
+      "title": "idea071459 - healthchecker.errors Performance",
+      "archetype": "performance",
+      "component": "healthchecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071459-healthchecker-errors-performance.md"
+    },
+    {
+      "index": 71465,
+      "idea_id": "idea071460",
+      "filename": "idea071460-healthchecker-errors-resilience",
+      "title": "idea071460 - healthchecker.errors Resilience",
+      "archetype": "resilience",
+      "component": "healthchecker-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071460-healthchecker-errors-resilience.md"
+    },
+    {
+      "index": 71466,
+      "idea_id": "idea071461",
+      "filename": "idea071461-healthstatus-errors-hardening",
+      "title": "idea071461 - healthstatus.errors Hardening",
+      "archetype": "hardening",
+      "component": "healthstatus-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071461-healthstatus-errors-hardening.md"
+    },
+    {
+      "index": 71467,
+      "idea_id": "idea071462",
+      "filename": "idea071462-healthstatus-errors-performance",
+      "title": "idea071462 - healthstatus.errors Performance",
+      "archetype": "performance",
+      "component": "healthstatus-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071462-healthstatus-errors-performance.md"
+    },
+    {
+      "index": 71468,
+      "idea_id": "idea071463",
+      "filename": "idea071463-healthstatus-errors-resilience",
+      "title": "idea071463 - healthstatus.errors Resilience",
+      "archetype": "resilience",
+      "component": "healthstatus-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071463-healthstatus-errors-resilience.md"
+    },
+    {
+      "index": 71469,
+      "idea_id": "idea071464",
+      "filename": "idea071464-heartbeatorchestrator-errors-hardening",
+      "title": "idea071464 - heartbeatorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "heartbeatorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071464-heartbeatorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71470,
+      "idea_id": "idea071465",
+      "filename": "idea071465-heartbeatorchestrator-errors-performance",
+      "title": "idea071465 - heartbeatorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "heartbeatorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071465-heartbeatorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71471,
+      "idea_id": "idea071466",
+      "filename": "idea071466-heartbeatorchestrator-errors-resilience",
+      "title": "idea071466 - heartbeatorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "heartbeatorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071466-heartbeatorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71472,
+      "idea_id": "idea071467",
+      "filename": "idea071467-hierarchicalmemoryagent-errors-hardening",
+      "title": "idea071467 - hierarchicalmemoryagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "hierarchicalmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071467-hierarchicalmemoryagent-errors-hardening.md"
+    },
+    {
+      "index": 71473,
+      "idea_id": "idea071468",
+      "filename": "idea071468-hierarchicalmemoryagent-errors-performance",
+      "title": "idea071468 - hierarchicalmemoryagent.errors Performance",
+      "archetype": "performance",
+      "component": "hierarchicalmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071468-hierarchicalmemoryagent-errors-performance.md"
+    },
+    {
+      "index": 71474,
+      "idea_id": "idea071469",
+      "filename": "idea071469-hierarchicalmemoryagent-errors-resilience",
+      "title": "idea071469 - hierarchicalmemoryagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "hierarchicalmemoryagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071469-hierarchicalmemoryagent-errors-resilience.md"
+    },
+    {
+      "index": 71475,
+      "idea_id": "idea071470",
+      "filename": "idea071470-holographiccontextagent-errors-hardening",
+      "title": "idea071470 - holographiccontextagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "holographiccontextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071470-holographiccontextagent-errors-hardening.md"
+    },
+    {
+      "index": 71476,
+      "idea_id": "idea071471",
+      "filename": "idea071471-holographiccontextagent-errors-performance",
+      "title": "idea071471 - holographiccontextagent.errors Performance",
+      "archetype": "performance",
+      "component": "holographiccontextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071471-holographiccontextagent-errors-performance.md"
+    },
+    {
+      "index": 71477,
+      "idea_id": "idea071472",
+      "filename": "idea071472-holographiccontextagent-errors-resilience",
+      "title": "idea071472 - holographiccontextagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "holographiccontextagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071472-holographiccontextagent-errors-resilience.md"
+    },
+    {
+      "index": 71478,
+      "idea_id": "idea071473",
+      "filename": "idea071473-holographicstateorchestrator-errors-hardening",
+      "title": "idea071473 - holographicstateorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "holographicstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071473-holographicstateorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71479,
+      "idea_id": "idea071474",
+      "filename": "idea071474-holographicstateorchestrator-errors-performance",
+      "title": "idea071474 - holographicstateorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "holographicstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071474-holographicstateorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71480,
+      "idea_id": "idea071475",
+      "filename": "idea071475-holographicstateorchestrator-errors-resilience",
+      "title": "idea071475 - holographicstateorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "holographicstateorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071475-holographicstateorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71481,
+      "idea_id": "idea071476",
+      "filename": "idea071476-idiomextractoragent-errors-hardening",
+      "title": "idea071476 - idiomextractoragent.errors Hardening",
+      "archetype": "hardening",
+      "component": "idiomextractoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071476-idiomextractoragent-errors-hardening.md"
+    },
+    {
+      "index": 71482,
+      "idea_id": "idea071477",
+      "filename": "idea071477-idiomextractoragent-errors-performance",
+      "title": "idea071477 - idiomextractoragent.errors Performance",
+      "archetype": "performance",
+      "component": "idiomextractoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071477-idiomextractoragent-errors-performance.md"
+    },
+    {
+      "index": 71483,
+      "idea_id": "idea071478",
+      "filename": "idea071478-idiomextractoragent-errors-resilience",
+      "title": "idea071478 - idiomextractoragent.errors Resilience",
+      "archetype": "resilience",
+      "component": "idiomextractoragent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071478-idiomextractoragent-errors-resilience.md"
+    },
+    {
+      "index": 71484,
+      "idea_id": "idea071479",
+      "filename": "idea071479-immuneresponseorchestrator-errors-hardening",
+      "title": "idea071479 - immuneresponseorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "immuneresponseorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071479-immuneresponseorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71485,
+      "idea_id": "idea071480",
+      "filename": "idea071480-immuneresponseorchestrator-errors-performance",
+      "title": "idea071480 - immuneresponseorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "immuneresponseorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071480-immuneresponseorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71486,
+      "idea_id": "idea071481",
+      "filename": "idea071481-immuneresponseorchestrator-errors-resilience",
+      "title": "idea071481 - immuneresponseorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "immuneresponseorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071481-immuneresponseorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71487,
+      "idea_id": "idea071482",
+      "filename": "idea071482-immunesystemagent-errors-hardening",
+      "title": "idea071482 - immunesystemagent.errors Hardening",
+      "archetype": "hardening",
+      "component": "immunesystemagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071482-immunesystemagent-errors-hardening.md"
+    },
+    {
+      "index": 71488,
+      "idea_id": "idea071483",
+      "filename": "idea071483-immunesystemagent-errors-performance",
+      "title": "idea071483 - immunesystemagent.errors Performance",
+      "archetype": "performance",
+      "component": "immunesystemagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071483-immunesystemagent-errors-performance.md"
+    },
+    {
+      "index": 71489,
+      "idea_id": "idea071484",
+      "filename": "idea071484-immunesystemagent-errors-resilience",
+      "title": "idea071484 - immunesystemagent.errors Resilience",
+      "archetype": "resilience",
+      "component": "immunesystemagent-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071484-immunesystemagent-errors-resilience.md"
+    },
+    {
+      "index": 71490,
+      "idea_id": "idea071485",
+      "filename": "idea071485-immunizationorchestrator-errors-hardening",
+      "title": "idea071485 - immunizationorchestrator.errors Hardening",
+      "archetype": "hardening",
+      "component": "immunizationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071485-immunizationorchestrator-errors-hardening.md"
+    },
+    {
+      "index": 71491,
+      "idea_id": "idea071486",
+      "filename": "idea071486-immunizationorchestrator-errors-performance",
+      "title": "idea071486 - immunizationorchestrator.errors Performance",
+      "archetype": "performance",
+      "component": "immunizationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071486-immunizationorchestrator-errors-performance.md"
+    },
+    {
+      "index": 71492,
+      "idea_id": "idea071487",
+      "filename": "idea071487-immunizationorchestrator-errors-resilience",
+      "title": "idea071487 - immunizationorchestrator.errors Resilience",
+      "archetype": "resilience",
+      "component": "immunizationorchestrator-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071487-immunizationorchestrator-errors-resilience.md"
+    },
+    {
+      "index": 71493,
+      "idea_id": "idea071488",
+      "filename": "idea071488-impactanalyzer-errors-hardening",
+      "title": "idea071488 - impactanalyzer.errors Hardening",
+      "archetype": "hardening",
+      "component": "impactanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071488-impactanalyzer-errors-hardening.md"
+    },
+    {
+      "index": 71494,
+      "idea_id": "idea071489",
+      "filename": "idea071489-impactanalyzer-errors-performance",
+      "title": "idea071489 - impactanalyzer.errors Performance",
+      "archetype": "performance",
+      "component": "impactanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071489-impactanalyzer-errors-performance.md"
+    },
+    {
+      "index": 71495,
+      "idea_id": "idea071490",
+      "filename": "idea071490-impactanalyzer-errors-resilience",
+      "title": "idea071490 - impactanalyzer.errors Resilience",
+      "archetype": "resilience",
+      "component": "impactanalyzer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071490-impactanalyzer-errors-resilience.md"
+    },
+    {
+      "index": 71496,
+      "idea_id": "idea071491",
+      "filename": "idea071491-impactscorer-errors-hardening",
+      "title": "idea071491 - impactscorer.errors Hardening",
+      "archetype": "hardening",
+      "component": "impactscorer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071491-impactscorer-errors-hardening.md"
+    },
+    {
+      "index": 71497,
+      "idea_id": "idea071492",
+      "filename": "idea071492-impactscorer-errors-performance",
+      "title": "idea071492 - impactscorer.errors Performance",
+      "archetype": "performance",
+      "component": "impactscorer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071492-impactscorer-errors-performance.md"
+    },
+    {
+      "index": 71498,
+      "idea_id": "idea071493",
+      "filename": "idea071493-impactscorer-errors-resilience",
+      "title": "idea071493 - impactscorer.errors Resilience",
+      "archetype": "resilience",
+      "component": "impactscorer-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071493-impactscorer-errors-resilience.md"
+    },
+    {
+      "index": 71499,
+      "idea_id": "idea071494",
+      "filename": "idea071494-importsource-errors-hardening",
+      "title": "idea071494 - importsource.errors Hardening",
+      "archetype": "hardening",
+      "component": "importsource-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071494-importsource-errors-hardening.md"
+    },
+    {
+      "index": 71500,
+      "idea_id": "idea071495",
+      "filename": "idea071495-importsource-errors-performance",
+      "title": "idea071495 - importsource.errors Performance",
+      "archetype": "performance",
+      "component": "importsource-errors",
+      "file_path": "/home/dev/PyAgent/docs/project/ideas/f07/idea071495-importsource-errors-performance.md"
+    }
+  ],
+  "projects_to_create": 50
+}

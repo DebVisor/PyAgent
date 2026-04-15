@@ -1,0 +1,1782 @@
+{
+  "enforce_vram_quota": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\auction.rs",
+    "line": 6
+  },
+  "calculate_vcg_auction": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\auction.rs",
+    "line": 12
+  },
+  "calculate_vcg_prices": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\auction.rs",
+    "line": 50
+  },
+  "calculate_bid_priority_score": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\economy.rs",
+    "line": 5
+  },
+  "calculate_agreement_score": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\consensus.rs",
+    "line": 42
+  },
+  "select_committee": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\byzantine.rs",
+    "line": 33
+  },
+  "get_required_quorum": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\byzantine.rs",
+    "line": 59
+  },
+  "detect_deviating_hashes": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\byzantine.rs",
+    "line": 69
+  },
+  "aggregate_score_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\consensus.rs",
+    "line": 66
+  },
+  "calculate_consensus_winner": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\consensus.rs",
+    "line": 6
+  },
+  "calculate_gpu_surcharge": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\economy.rs",
+    "line": 11
+  },
+  "extract_graph_entities_regex": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\graph.rs",
+    "line": 8
+  },
+  "generate_mermaid_graph": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\graph.rs",
+    "line": 48
+  },
+  "detect_cycles_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\graph.rs",
+    "line": 85
+  },
+  "filter_active_topology_relationships": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\graph.rs",
+    "line": 126
+  },
+  "extract_python_symbols": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\knowledge.rs",
+    "line": 6
+  },
+  "extract_markdown_backlinks": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\knowledge.rs",
+    "line": 21
+  },
+  "generate_failure_hash": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\lesson.rs",
+    "line": 6
+  },
+  "detect_cultural_issues": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\localization.rs",
+    "line": 7
+  },
+  "translate_key_terms": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\localization.rs",
+    "line": 30
+  },
+  "calculate_new_utility": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\memory.rs",
+    "line": 6
+  },
+  "filter_relevant_memories": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\memory.rs",
+    "line": 12
+  },
+  "create_episode_struct": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\memory.rs",
+    "line": 34
+  },
+  "calculate_decay_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\pruning.rs",
+    "line": 5
+  },
+  "calculate_superposition_weights": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\quantum.rs",
+    "line": 4
+  },
+  "simulate_interference_pattern": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\quantum.rs",
+    "line": 29
+  },
+  "evaluate_bypass": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\redqueen.rs",
+    "line": 6
+  },
+  "filter_relevant_insights": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\redqueen.rs",
+    "line": 23
+  },
+  "execute_dcap_cycle": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\research.rs",
+    "line": 6
+  },
+  "analyze_paper": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\research.rs",
+    "line": 33
+  },
+  "draft_tool_code": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\research.rs",
+    "line": 40
+  },
+  "aggregate_search_results": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\search.rs",
+    "line": 6
+  },
+  "detect_failed_agents_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 122
+  },
+  "calculate_synaptic_weight": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\synapse.rs",
+    "line": 5
+  },
+  "generate_heuristic_plan": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\agents\\task.rs",
+    "line": 5
+  },
+  "calculate_complexity_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 146
+  },
+  "calculate_cyclomatic_complexity": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\analysis.rs",
+    "line": 31
+  },
+  "get_imports_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\analysis.rs",
+    "line": 38
+  },
+  "spawn_task": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\async_runtime.rs",
+    "line": 72
+  },
+  "set_timeout": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\async_runtime.rs",
+    "line": 89
+  },
+  "create_queue": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\async_runtime.rs",
+    "line": 116
+  },
+  "calculate_vcg_prices_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\auction.rs",
+    "line": 21
+  },
+  "generate_cache_key": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\auth.rs",
+    "line": 6
+  },
+  "generate_challenge": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\security\\auth_helpers.rs",
+    "line": 6
+  },
+  "generate_auth_proof": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\security\\auth_helpers.rs",
+    "line": 15
+  },
+  "verify_auth_proof": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\auth.rs",
+    "line": 43
+  },
+  "is_proof_expired": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\auth.rs",
+    "line": 50
+  },
+  "identify_blind_spots": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\autonomy.rs",
+    "line": 5
+  },
+  "calculate_daemon_sleep_interval": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\autonomy.rs",
+    "line": 18
+  },
+  "generate_self_improvement_plan": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\autonomy.rs",
+    "line": 30
+  },
+  "verify_fleet_health": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\convergence.rs",
+    "line": 6
+  },
+  "get_error_code": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\error_mapping.rs",
+    "line": 6
+  },
+  "get_error_documentation_link": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\error_mapping.rs",
+    "line": 43
+  },
+  "generate_agent_id": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\identity.rs",
+    "line": 8
+  },
+  "sign_payload": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\identity.rs",
+    "line": 23
+  },
+  "verify_signature": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\identity.rs",
+    "line": 33
+  },
+  "validate_identity": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\identity.rs",
+    "line": 43
+  },
+  "parse_config_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\io.rs",
+    "line": 22
+  },
+  "mask_sensitive_logs": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\logging.rs",
+    "line": 5
+  },
+  "build_log_entry_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\logging.rs",
+    "line": 33
+  },
+  "redact_pii": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\privacy.rs",
+    "line": 5
+  },
+  "calculate_decay": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\pruning.rs",
+    "line": 5
+  },
+  "is_in_refractory": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\pruning.rs",
+    "line": 14
+  },
+  "update_weight_on_fire_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\pruning.rs",
+    "line": 20
+  },
+  "should_prune": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\pruning.rs",
+    "line": 30
+  },
+  "calculate_backoff": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\resilience.rs",
+    "line": 6
+  },
+  "should_attempt_recovery": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\resilience.rs",
+    "line": 40
+  },
+  "evaluate_state_transition": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\resilience.rs",
+    "line": 46
+  },
+  "calculate_anchoring_fallback": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\verification.rs",
+    "line": 6
+  },
+  "check_latent_reasoning": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\base\\verification.rs",
+    "line": 40
+  },
+  "load_config_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\config.rs",
+    "line": 22
+  },
+  "parse_config_fragment_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\config.rs",
+    "line": 45
+  },
+  "merge_configs_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\config.rs",
+    "line": 62
+  },
+  "establish_native_connection": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\connectivity.rs",
+    "line": 18
+  },
+  "transfer_binary_payload": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\connectivity.rs",
+    "line": 25
+  },
+  "check_health_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\connectivity.rs",
+    "line": 32
+  },
+  "dp_stats_aggregate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 18
+  },
+  "wave_sync_check_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 51
+  },
+  "load_balance_select_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 57
+  },
+  "multi_node_coordinate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 73
+  },
+  "evaluate_formula": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 7
+  },
+  "to_json_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\fs.rs",
+    "line": 73
+  },
+  "save_json_atomic_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\fs.rs",
+    "line": 86
+  },
+  "batch_exists_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\fs.rs",
+    "line": 106
+  },
+  "discover_files_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\fs.rs",
+    "line": 116
+  },
+  "fused_packkv_attention_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\attention.rs",
+    "line": 9
+  },
+  "arc_cache_balance_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 5
+  },
+  "compute_block_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 44
+  },
+  "batch_block_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 73
+  },
+  "lru_evict_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 96
+  },
+  "lfu_evict_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 126
+  },
+  "block_table_lookup_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 220
+  },
+  "block_pool_evict_lru_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 255
+  },
+  "compute_arc_target_size_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 285
+  },
+  "compute_arc_target_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 320
+  },
+  "block_hash_compute_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 371
+  },
+  "compute_lru_eviction_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 401
+  },
+  "cache_hit_score_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 429
+  },
+  "block_table_slot_mapping_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 457
+  },
+  "arc_adaptation_delta_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 483
+  },
+  "calculate_blocks_needed_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 525
+  },
+  "compute_block_eviction_order_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 544
+  },
+  "encoder_cache_lru_evict_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\cache.rs",
+    "line": 577
+  },
+  "all_reduce_sum_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 7
+  },
+  "kv_transfer_metadata_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 100
+  },
+  "p2c_select_worker_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 186
+  },
+  "async_output_merge_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 280
+  },
+  "dp_rank_coordinate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 314
+  },
+  "kv_metrics_aggregate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\distributed.rs",
+    "line": 356
+  },
+  "prepare_positions_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 7
+  },
+  "expand_idx_mapping_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 41
+  },
+  "cudagraph_key_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 58
+  },
+  "softmax_stable_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 97
+  },
+  "persistent_gemm_tile_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 118
+  },
+  "attention_dispatch_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 151
+  },
+  "dynamic_ntk_alpha_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 238
+  },
+  "batch_descriptor_key_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 321
+  },
+  "cudagraph_stats_compute_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 393
+  },
+  "dispatch_decision_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 451
+  },
+  "compute_optimal_graph_sizes_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\engine.rs",
+    "line": 565
+  },
+  "blake3_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 13
+  },
+  "perceptual_hash_distance_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 26
+  },
+  "compute_block_hashes_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 45
+  },
+  "compute_block_hashes_batched_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 66
+  },
+  "find_prefix_match_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 104
+  },
+  "multi_modal_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 125
+  },
+  "encoder_content_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 171
+  },
+  "lru_evict_candidates_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 187
+  },
+  "arc_cache_priority_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\hashing.rs",
+    "line": 200
+  },
+  "linearize_chat_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\input.rs",
+    "line": 35
+  },
+  "estimate_tokens_from_messages_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\input.rs",
+    "line": 203
+  },
+  "truncate_chat_history_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\input.rs",
+    "line": 220
+  },
+  "parallel_scan_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 97
+  },
+  "silu_activation_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 172
+  },
+  "mla_compress_kv_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 188
+  },
+  "mla_head_mapping_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 218
+  },
+  "mean_pool_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 237
+  },
+  "cls_pool_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 269
+  },
+  "last_token_pool_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 275
+  },
+  "matryoshka_truncate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 292
+  },
+  "attention_pool_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\layers.rs",
+    "line": 314
+  },
+  "lora_scaling_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 9
+  },
+  "lora_delta_compute_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 26
+  },
+  "lora_adapter_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 55
+  },
+  "lora_latency_percentile_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 98
+  },
+  "lora_adapter_lru_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 115
+  },
+  "apply_lora_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 135
+  },
+  "apply_ia3_scaling_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\lora.rs",
+    "line": 143
+  },
+  "calculate_memory_pressure_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\memory.rs",
+    "line": 10
+  },
+  "blocks_to_free_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\memory.rs",
+    "line": 32
+  },
+  "batch_write_indices_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\memory.rs",
+    "line": 104
+  },
+  "gpu_memory_snapshot_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\memory.rs",
+    "line": 163
+  },
+  "log_softmax_stable_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\metrics.rs",
+    "line": 9
+  },
+  "compute_perplexity_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\metrics.rs",
+    "line": 38
+  },
+  "compute_entropy_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\metrics.rs",
+    "line": 50
+  },
+  "batch_logprobs_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\metrics.rs",
+    "line": 62
+  },
+  "counter_increment_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\metrics.rs",
+    "line": 168
+  },
+  "moe_expert_choice_route_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\moe.rs",
+    "line": 45
+  },
+  "soft_moe_route_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\moe.rs",
+    "line": 136
+  },
+  "compute_load_imbalance_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\moe.rs",
+    "line": 228
+  },
+  "compute_log_to_phy_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\moe.rs",
+    "line": 251
+  },
+  "aggregate_expert_loads_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\moe.rs",
+    "line": 283
+  },
+  "advanced_ngram_propose_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\ngram.rs",
+    "line": 37
+  },
+  "build_ngram_index_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\ngram.rs",
+    "line": 89
+  },
+  "build_suffix_array_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\ngram.rs",
+    "line": 156
+  },
+  "ngram_propose_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\ngram.rs",
+    "line": 208
+  },
+  "prompt_lookup_propose_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\ngram.rs",
+    "line": 311
+  },
+  "platform_fingerprint_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 10
+  },
+  "check_capability_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 37
+  },
+  "estimate_memory_footprint_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 54
+  },
+  "parse_response_json_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 67
+  },
+  "encode_sse_event_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 118
+  },
+  "render_simple_template_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 140
+  },
+  "detect_chat_template_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 203
+  },
+  "find_placeholders_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 239
+  },
+  "hash_conversation_context_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 259
+  },
+  "generate_cache_salt_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\platform.rs",
+    "line": 284
+  },
+  "pool_sequences_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\pooling.rs",
+    "line": 5
+  },
+  "attention_weighted_pool_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\pooling.rs",
+    "line": 80
+  },
+  "sort_requests_by_priority_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\queue.rs",
+    "line": 9
+  },
+  "architecture_fingerprint_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\registry.rs",
+    "line": 9
+  },
+  "detect_architecture_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\registry.rs",
+    "line": 59
+  },
+  "apply_bad_words_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\filtering.rs",
+    "line": 7
+  },
+  "apply_whitelist_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\filtering.rs",
+    "line": 23
+  },
+  "batch_apply_penalties_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\filtering.rs",
+    "line": 40
+  },
+  "fill_token_bitmask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 64
+  },
+  "apply_grammar_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 220
+  },
+  "batch_fill_bitmask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 236
+  },
+  "xgrammar_bitmask_fill_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 249
+  },
+  "grammar_cache_key_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 264
+  },
+  "batch_update_indices_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 281
+  },
+  "batch_grammar_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\grammar.rs",
+    "line": 425
+  },
+  "eagle_extrapolate_hidden_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\speculative.rs",
+    "line": 245
+  },
+  "prompt_lookup_propose_spec_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\inference\\sampling\\speculative.rs",
+    "line": 406
+  },
+  "tree_verification_paths_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\speculative.rs",
+    "line": 422
+  },
+  "extract_accepted_path_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\speculative.rs",
+    "line": 525
+  },
+  "rank_completions_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 5
+  },
+  "compute_diversity_penalty_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 33
+  },
+  "apply_temperature_schedule_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 57
+  },
+  "adaptive_top_k_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 124
+  },
+  "apply_top_k_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 77
+  },
+  "apply_top_p_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 175
+  },
+  "batch_topk_topp_sample_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 211
+  },
+  "apply_typical_sampling_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 301
+  },
+  "apply_min_p_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 355
+  },
+  "generate_sample_seeds_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\sampling\\strategies.rs",
+    "line": 456
+  },
+  "calculate_throughput_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 10
+  },
+  "ema_update_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 55
+  },
+  "token_budget_check_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 83
+  },
+  "stream_sync_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 112
+  },
+  "event_query_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 119
+  },
+  "preemption_score_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 130
+  },
+  "compute_fair_schedule_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\scheduler.rs",
+    "line": 177
+  },
+  "compute_percentiles_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 10
+  },
+  "detect_anomalies_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 35
+  },
+  "compute_cache_hit_rate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 58
+  },
+  "aggregate_iteration_stats_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 109
+  },
+  "aggregate_token_metrics_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 140
+  },
+  "kv_cache_metrics_aggregate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 162
+  },
+  "memory_pressure_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\stats.rs",
+    "line": 269
+  },
+  "batch_estimate_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tokenizer.rs",
+    "line": 71
+  },
+  "tokenizer_cache_key_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tokenizer.rs",
+    "line": 82
+  },
+  "fast_token_count_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tokenizer.rs",
+    "line": 101
+  },
+  "truncate_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tokenizer.rs",
+    "line": 118
+  },
+  "count_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tokenizer.rs",
+    "line": 144
+  },
+  "detect_tool_format_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tools.rs",
+    "line": 50
+  },
+  "parse_tool_arguments_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tools.rs",
+    "line": 71
+  },
+  "validate_partial_json_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tools.rs",
+    "line": 196
+  },
+  "constraint_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tools.rs",
+    "line": 217
+  },
+  "parse_mcp_tool_call_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\tools.rs",
+    "line": 237
+  },
+  "weight_hash_compute_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 7
+  },
+  "validate_weight_shapes_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 45
+  },
+  "compute_shard_assignment_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 79
+  },
+  "validate_shard_shapes_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 114
+  },
+  "tensorizer_checksum_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 141
+  },
+  "pack_tensor_metadata_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\inference\\weights.rs",
+    "line": 154
+  },
+  "page_copy_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\kv.rs",
+    "line": 18
+  },
+  "block_manager_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\kv.rs",
+    "line": 29
+  },
+  "block_table_cp_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\kv.rs",
+    "line": 44
+  },
+  "kv_block_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\kv.rs",
+    "line": 59
+  },
+  "search_vector_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 51
+  },
+  "aggregate_metrics_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 20
+  },
+  "rolling_avg_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 33
+  },
+  "calculate_percentiles_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 49
+  },
+  "percentiles": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 111
+  },
+  "aggregate_metrics": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 117
+  },
+  "rolling_avg": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 123
+  },
+  "calculate_pearson_correlation": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 129
+  },
+  "predict_linear": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\metrics.rs",
+    "line": 152
+  },
+  "resample_audio_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 11
+  },
+  "audio_noise_suppression_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 42
+  },
+  "calculate_audio_direction_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 55
+  },
+  "audio_mix_tracks_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 85
+  },
+  "calculate_mel_features_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 114
+  },
+  "audio_quantize_int8_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\audio.rs",
+    "line": 137
+  },
+  "project_modality_embeddings_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\container.rs",
+    "line": 202
+  },
+  "calculate_multimodal_fusion_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\container.rs",
+    "line": 291
+  },
+  "calculate_av_alignment_score_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\container.rs",
+    "line": 322
+  },
+  "consistent_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\distributed.rs",
+    "line": 14
+  },
+  "select_worker_lb_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\distributed.rs",
+    "line": 35
+  },
+  "json_schema_to_regex_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\grammar.rs",
+    "line": 11
+  },
+  "regex_match_prefix_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\grammar.rs",
+    "line": 98
+  },
+  "grammar_next_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\grammar.rs",
+    "line": 146
+  },
+  "overlay_vision_feeds_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\composite.rs",
+    "line": 43
+  },
+  "extract_vision_roi_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\composite.rs",
+    "line": 139
+  },
+  "apply_vision_filter_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\filters.rs",
+    "line": 6
+  },
+  "match_vision_color_profiles_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\filters.rs",
+    "line": 40
+  },
+  "image_resize_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\processing.rs",
+    "line": 7
+  },
+  "normalize_pixels_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\processing.rs",
+    "line": 73
+  },
+  "image_grid_split_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\processing.rs",
+    "line": 102
+  },
+  "calculate_vision_saliency_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\processing.rs",
+    "line": 135
+  },
+  "extract_video_frames_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\stream.rs",
+    "line": 7
+  },
+  "detect_motion_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\stream.rs",
+    "line": 69
+  },
+  "detect_visual_scene_change_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\stream.rs",
+    "line": 92
+  },
+  "calculate_temporal_entropy_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\multimodal\\image\\stream.rs",
+    "line": 117
+  },
+  "mux_channels_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\mux.rs",
+    "line": 49
+  },
+  "demux_channels_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\mux.rs",
+    "line": 73
+  },
+  "synchronize_channels_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\mux.rs",
+    "line": 126
+  },
+  "generate_synthetic_snippets": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\neural\\inference_utils.rs",
+    "line": 51
+  },
+  "vectorize_text_insight": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\neural\\inference_utils.rs",
+    "line": 84
+  },
+  "generate_neural_response": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\neural\\inference_utils.rs",
+    "line": 91
+  },
+  "average_feature_vectors": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\neural\\ops.rs",
+    "line": 42
+  },
+  "attention_softmax_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\attention.rs",
+    "line": 6
+  },
+  "gqa_expand_kv_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\attention.rs",
+    "line": 47
+  },
+  "request_status_transition_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\lifecycle.rs",
+    "line": 6
+  },
+  "lora_merge_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\lora.rs",
+    "line": 8
+  },
+  "lora_forward_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\lora.rs",
+    "line": 55
+  },
+  "dequantize_int4_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\quantization.rs",
+    "line": 77
+  },
+  "pack_int4_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\quantization.rs",
+    "line": 104
+  },
+  "compute_scales_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\quantization.rs",
+    "line": 119
+  },
+  "batch_dequantize_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\quantization.rs",
+    "line": 161
+  },
+  "top_k_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\sampling.rs",
+    "line": 6
+  },
+  "top_p_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\sampling.rs",
+    "line": 31
+  },
+  "gumbel_sample_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\sampling.rs",
+    "line": 72
+  },
+  "beam_score_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\sampling.rs",
+    "line": 114
+  },
+  "check_stop_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\utils.rs",
+    "line": 5
+  },
+  "hash_block_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\utils.rs",
+    "line": 29
+  },
+  "validate_utf8_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\utils.rs",
+    "line": 105
+  },
+  "detokenize_batch_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\quantlora\\utils.rs",
+    "line": 114
+  },
+  "request_priority_compute_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\scheduling.rs",
+    "line": 23
+  },
+  "deadline_urgency_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\scheduling.rs",
+    "line": 31
+  },
+  "find_literal_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 63
+  },
+  "encrypt_data": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\security\\crypto.rs",
+    "line": 123
+  },
+  "decrypt_data": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\security\\crypto.rs",
+    "line": 176
+  },
+  "current_key_version": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\security\\crypto.rs",
+    "line": 287
+  },
+  "gather_metrics": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\security\\crypto.rs",
+    "line": 364
+  },
+  "calculate_baseline": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 6
+  },
+  "check_regression": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 16
+  },
+  "score_efficiency": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 41
+  },
+  "calculate_priority_score": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 51
+  },
+  "calculate_token_estimate": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 58
+  },
+  "deduplicate_entries": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 65
+  },
+  "normalize_response": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 80
+  },
+  "assess_response_quality": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\general.rs",
+    "line": 95
+  },
+  "select_best_model": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\metrics.rs",
+    "line": 28
+  },
+  "calculate_p95": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\metrics.rs",
+    "line": 63
+  },
+  "calculate_optimization_priority": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\profiling.rs",
+    "line": 5
+  },
+  "calculate_stability_score": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\stability.rs",
+    "line": 6
+  },
+  "is_in_stasis": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\stability.rs",
+    "line": 24
+  },
+  "get_healing_threshold": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\stability.rs",
+    "line": 41
+  },
+  "create_span_context": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\tracing.rs",
+    "line": 6
+  },
+  "calculate_latency_breakdown": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\stats\\tracing.rs",
+    "line": 16
+  },
+  "apply_template_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\processing.rs",
+    "line": 64
+  },
+  "apply_template": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\template.rs",
+    "line": 31
+  },
+  "analyze_code_quality_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 6
+  },
+  "count_untyped_functions_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 39
+  },
+  "analyze_tech_debt_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 105
+  },
+  "validate_semver_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 189
+  },
+  "analyze_failure_strategy_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\analysis.rs",
+    "line": 195
+  },
+  "calculate_coupling_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\graph.rs",
+    "line": 5
+  },
+  "normalize_and_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 7
+  },
+  "fast_cache_key_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 21
+  },
+  "fast_prefix_key_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 36
+  },
+  "partition_to_shards_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 45
+  },
+  "calculate_shard_id_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 63
+  },
+  "merge_knowledge_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 74
+  },
+  "filter_stable_knowledge_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\knowledge.rs",
+    "line": 90
+  },
+  "match_patterns_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\matching.rs",
+    "line": 11
+  },
+  "bulk_match_patterns_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\matching.rs",
+    "line": 27
+  },
+  "check_suppression_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\matching.rs",
+    "line": 60
+  },
+  "scan_lines_multi_pattern_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\text\\matching.rs",
+    "line": 88
+  },
+  "batch_scan_files_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\text\\matching.rs",
+    "line": 113
+  },
+  "apply_patterns_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\matching.rs",
+    "line": 169
+  },
+  "scan_compliance_patterns_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\text\\matching.rs",
+    "line": 204
+  },
+  "tokenize_and_index_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\text\\nlp.rs",
+    "line": 9
+  },
+  "tokenize_query_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 33
+  },
+  "calculate_text_similarity_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 48
+  },
+  "word_frequencies_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 160
+  },
+  "deduplicate_strings_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 176
+  },
+  "cosine_similarity_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 217
+  },
+  "calculate_jaccard_set_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\nlp.rs",
+    "line": 281
+  },
+  "apply_simple_fixes_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\processing.rs",
+    "line": 79
+  },
+  "bulk_replace_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\processing.rs",
+    "line": 94
+  },
+  "bulk_replace_files_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\processing.rs",
+    "line": 113
+  },
+  "scan_workspace_quality_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\processing.rs",
+    "line": 134
+  },
+  "search_content_scored_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\search.rs",
+    "line": 5
+  },
+  "extract_versions_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\search.rs",
+    "line": 25
+  },
+  "linear_forecast_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 4
+  },
+  "calculate_weighted_load_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 103
+  },
+  "calculate_variance_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 138
+  },
+  "select_best_agent_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 153
+  },
+  "calculate_sum_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 173
+  },
+  "calculate_avg_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 178
+  },
+  "calculate_min_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 186
+  },
+  "calculate_max_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 197
+  },
+  "calculate_median_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 208
+  },
+  "calculate_p95_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 222
+  },
+  "calculate_p99_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 233
+  },
+  "calculate_stddev_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 244
+  },
+  "calculate_pearson_correlation_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\text\\stats.rs",
+    "line": 257
+  },
+  "get_utc_timestamp_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\time.rs",
+    "line": 20
+  },
+  "transport_quic_supported": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\channel\\quic.rs",
+    "line": 23
+  },
+  "transport_quic_info": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\channel\\quic.rs",
+    "line": 29
+  },
+  "generate_node_identity": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\identity.rs",
+    "line": 85
+  },
+  "get_node_id": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\identity.rs",
+    "line": 94
+  },
+  "transport_sign": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\identity.rs",
+    "line": 157
+  },
+  "transport_verify": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\identity.rs",
+    "line": 167
+  },
+  "transport_recv": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\transport\\peer\\link.rs",
+    "line": 86
+  },
+  "prune_directory_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\fs.rs",
+    "line": 7
+  },
+  "deep_clean_pycache_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\fs.rs",
+    "line": 32
+  },
+  "fast_hash": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 10
+  },
+  "xxhash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 22
+  },
+  "fast_cache_hash_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 34
+  },
+  "calculate_interaction_shard_md5": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 50
+  },
+  "generate_hash": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 63
+  },
+  "verify_integrity": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 72
+  },
+  "bulk_hash_files_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 79
+  },
+  "get_adler32_shard": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\hash.rs",
+    "line": 93
+  },
+  "json_count_leaves_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 8
+  },
+  "json_iter_leaves_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 26
+  },
+  "json_flatten_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 57
+  },
+  "json_depth_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 101
+  },
+  "json_get_path_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 124
+  },
+  "json_validate_leaves_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\json.rs",
+    "line": 168
+  },
+  "cdiv_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 110
+  },
+  "next_power_of_2_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 127
+  },
+  "prev_power_of_2_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 139
+  },
+  "round_up_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 148
+  },
+  "round_down_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 166
+  },
+  "atomic_counter_add_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 175
+  },
+  "batch_cdiv_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 181
+  },
+  "batch_next_power_of_2_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 190
+  },
+  "calculate_statistical_significance": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 203
+  },
+  "calculate_jaccard_similarity": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\math.rs",
+    "line": 241
+  },
+  "calculate_metrics_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\metrics.rs",
+    "line": 6
+  },
+  "cache_hit_ratio_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\metrics.rs",
+    "line": 60
+  },
+  "structured_counter_diff_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\metrics.rs",
+    "line": 70
+  },
+  "parse_bing_results": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\search.rs",
+    "line": 8
+  },
+  "parse_google_results": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\search.rs",
+    "line": 28
+  },
+  "parse_ddg_results": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\search.rs",
+    "line": 44
+  },
+  "calculate_stochastic_failures": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\sim.rs",
+    "line": 10
+  },
+  "apply_latency_spike": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\sim.rs",
+    "line": 20
+  },
+  "score_tool_relevance": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\sim.rs",
+    "line": 30
+  },
+  "generate_openapi_spec": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\system.rs",
+    "line": 7
+  },
+  "parse_adb_devices_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\system.rs",
+    "line": 29
+  },
+  "detect_cloud_provider_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\system.rs",
+    "line": 50
+  },
+  "flatten_env_vars": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\system.rs",
+    "line": 75
+  },
+  "validate_tensor_shape_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 7
+  },
+  "compute_logits_mask_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 33
+  },
+  "apply_temperature_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 62
+  },
+  "apply_repetition_penalty_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 97
+  },
+  "encode_slice_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 129
+  },
+  "msgpack_encode_tensor_meta_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\tensor.rs",
+    "line": 145
+  },
+  "compress_python_regex": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 6
+  },
+  "summarize_markdown": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 18
+  },
+  "ensure_safety_flags_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 30
+  },
+  "dedupe_log_messages_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 97
+  },
+  "format_progress_bar": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 127
+  },
+  "format_results_block": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 137
+  },
+  "estimate_tokens_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 146
+  },
+  "to_snake_case_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\text.rs",
+    "line": 157
+  },
+  "validate_prompt_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\utils\\validation.rs",
+    "line": 5
+  },
+  "json_schema_validate_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\validation.rs",
+    "line": 20
+  },
+  "validate_content_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\validation.rs",
+    "line": 34
+  },
+  "scan_changed_files": {
+    "file": "c:\\Dev\\PyAgent\\rust_core\\src\\watcher.rs",
+    "line": 21
+  },
+  "workspace_init_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 18
+  },
+  "workspace_alloc_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 24
+  },
+  "ubatch_slice_optimal_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 42
+  },
+  "ubatch_get_stats_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 61
+  },
+  "memory_profile_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 69
+  },
+  "buffer_recycle_acquire_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\workspace.rs",
+    "line": 78
+  },
+  "nixl_rdma_checkpoint_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 38
+  },
+  "nixl_rdma_write_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 90
+  },
+  "nixl_rdma_read_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\distributed.rs",
+    "line": 109
+  },
+  "verify_message_signature_rust": {
+    "file": "c:\\Dev\\PyAgent\\rust_lib\\src\\security\\firewall.rs",
+    "line": 23
+  }
+}
